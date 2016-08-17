@@ -1,11 +1,6 @@
 Content
 
-1. Logging in
-  1. LDAP (hopefully we will know what they have to tell IT to be included or what have you)
-    1. MT: we should add all current users to the appropriate group and make sure IT knows what to do when the request comes in.
-  1. Are per-project groups necessary?
-    1. MT: No
-  1. Roles? Admins, techs.
+1. [Logging in](1-logging-in.md)
 1. Creating projects
   1. organisational details of projects?
       1. projects vs subprojects
