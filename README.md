@@ -1,2 +1,2 @@
-# miso-lims-oicr
-OICR specific configuration including continuous integration settings.
+# miso-docs-oicr
+OICR-specific training materials
