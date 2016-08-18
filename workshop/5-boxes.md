@@ -1,11 +1,3 @@
-
-#Incoming samples
-For our incoming samples, we're going to have 5 of them, numbered 0001
-to 0005. Everyone will have a unique project to work under.
-
-
-...
-
 #Boxes
 Boxes hold samples, libraries, and pools. They do not track reagents or
 primers. Boxes are separated into _uses_ for different kinds of storage
@@ -17,8 +9,8 @@ by a standard row letter + column number format (_e.g._, C05).
 
 The goal is to create a box for the samples created in the previous step.
 
-1. From the naviation panel, choose _List Boxes_ and then _Add Box_
-1. Enter an alias starting with the project name followed by “_OUTBOX”.
+1. From the navigation panel, choose _List Boxes_ and then _Add Box_.
+1. Enter an alias starting with the project name followed by “\_OUTBOX”.
 1. Enter the description “gDNA ready for sequencing for <project>”.
 1. Select “DNA” for the _Use_ and “8×12” for _Size_.
 1. Click _Save_.
@@ -51,17 +43,3 @@ disappear from the original.
 1. Click _Lookup_ and _Update Position_.
 1. Return to the _List Boxes_ page and find your project outbox.
 1. Verify that the sample was removed from the outbox.
-
-#Libraries
-A _library_ is made from one sample for a single target _platform_ and
-has a specific _design_ associated with it that decides teh _selection_
-and _strategies_ used to make the library. A library may also have _tag
-barcodes_ (primers) and QC information.
-
-1. On the _List Samples_ page, select the gDNA samples to turn into
-libraries.
-1. From the _Bulk actions_ drop down, select _Propagate (library) selected_.
-1. A table will appear. Enter the library information from the table below.
-1. Choose _Save_.
-
-TODO library data tab
