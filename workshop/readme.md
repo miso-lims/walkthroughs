@@ -6,7 +6,7 @@ Content
   1. Are per-project groups necessary?
     1. MT: No
   1. Roles? Admins, techs.
-1. [Creating projects](1-projects.md)
+1. [Creating projects](2-projects.md)
   1. organisational details of projects?
       1. projects vs subprojects
       1. access control associated with projects
