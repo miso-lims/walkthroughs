@@ -1,11 +1,6 @@
 Content
 
-1. Logging in
-  1. LDAP (hopefully we will know what they have to tell IT to be included or what have you)
-    1. MT: we should add all current users to the appropriate group and make sure IT knows what to do when the request comes in.
-  1. Are per-project groups necessary?
-    1. MT: No
-  1. Roles? Admins, techs.
+1. [Logging in](1-logging-in.md)
 1. [Creating projects](2-projects.md)
   1. organisational details of projects?
       1. projects vs subprojects
@@ -13,7 +8,7 @@ Content
       1. studies (what they are for)
   1. shortnames vs names → pinery implications
       1. MT: Lab doesn't use pinery
-1. Incoming samples
+1. [Incoming samples](3-incoming.md)
   1. identity & data model stuff
       1. permission inheritance
       1. institutes and labs
@@ -33,25 +28,11 @@ Content
       1. QC information
   1. bulk HoT interface
       1. MT: same as c?
-1. boxes: store samples and libraries, NOT reagents, inventory, primers, etc.
-  1. data model
-  1. collect created samples into a box
-1. libraries
-  1. library/dilution/pool data model
-  1. QC information
+1. [Boxes](5-boxes.md)
+1. [Libraries](6-libraries.md)
   1. should emPCRs be mentioned?
   1. library design
-  1. note that second barcode is optional in dual-index barcodes
-  1. searching
-  1. bulk HoT propagate
-  1. add libraries to a box
-      1. can we get a handscanner for demo? Is that worth it?
-1. pools & dilutions
-  1. ghostiness of dilutions
-  1. pools as sequencable entities
-  1. ready to run
-      1. low quality libraries
-  1. create a pool
+1. [Pools](7-pools.md)
 1. runs and orders
   1. goals of the data model
   1. create order on a pool
@@ -69,3 +50,13 @@ Content
   1. consumables
   1. alerts? Does anyone care?
   1. PacBio?
+
+Presentation stuff
+
+* give everyone one two stickies/flags: one to indicate done, the other for distress
+* 15 min lecture + 15 min doing things
+* no more than 2h blocks
+* save presentation using Camtasia (save whole thing, then edit out working sessions)
+* check with communications re video upload, CBW does its own thing
+* don't demo (let them work through the instructions)
+* put diagram of workflow in presentation with highlighted section (like we had on the wiki)
