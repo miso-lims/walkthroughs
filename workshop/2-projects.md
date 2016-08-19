@@ -23,84 +23,88 @@ button where you can find basic information about the current page.
 
 ## Creating a new project
 
-After logging in, click the _My Projects_ tab at the top of the MISO
-dashboard. Select the _Add Project_ button at the top right corner. The Create
-Project page will display with a number of fields that you can fill out.
+1. After logging in, click the _My Projects_ tab at the top of the MISO
+dashboard. 
+1. Select the _Add Project_ button at the top right corner. 
 
-### Project Information section
+The Create Project page will display with a number of fields that you can fill out.
 
-**Project ID** and **Name** are set by MISO once the Project is saved, so you can
-ignore those fields for now.
-
-Enter a unique **Alias**. The alias is a name, chosen by us, that is associated
+1. Ignore Project ID and Name, since they are set by MISO once the Project is saved.
+1. Enter a unique _Alias_. The alias is a name, chosen by us, that is associated
 with a project. The aliases must be a unique and contain only letters or
-numbers. It cannot contain spaces or punctuation.
-
-* alias: `DoIt4Science` (be creative!)
-
-Enter a **Short Name** for your project. The short name should be 2-5 letters in
+numbers. It cannot contain spaces or punctuation. e.g. `DoIt4Science` (be creative!)
+1. Enter a _Short Name_ for your project. The short name should be 2-5 letters in
 all CAPS and related to the project alias. This short name will be used to
-automatically generate sample and library names. 
+automatically generate sample and library names. e.g. short name: `DI4S`
+1. In the _Description_ field, enter `MISO training workshop [Date]`
+1. Choose the amount of _Progress_ that your project has accomplished:
+  * Unknown : I was told to enter this data and I does what they tells me.
+  * Active : We are receiving/have received samples and are actively working on
+    this project.
+  * Inactive : Project is not yet done, but waiting for external collaborators,
+    REB approval, papers to be published, etc.
+  * Cancelled : Project was scrapped because we didn't get funding/samples/REB
+    approval.
+  * Proposed : Project Initiation form has been received and is awaiting go-ahead
+    by Genomics leadership.
+  * Pending : We are waiting for the project to start.
+  * Approved : Project has been approved by Genomics leadership.
 
-* e.g. short name: `DI4S`
-
-In the **Description** field, enter `MISO training workshop [Date]`
-
-Choose the amount of **Progress** that your project has accomplished:
-
-* Unknown : I was told to enter this data and I does what they tells me.
-* Active : We are receiving/have received samples and are actively working on
-  this project.
-* Inactive : Project is not yet done, but waiting for external collaborators,
-  REB approval, papers to be published, etc.
-* Cancelled : Project was scrapped because we didn't get funding/samples/REB
-  approval.
-* Proposed : Project Initiation form has been received and is awaiting go-ahead
-  by Genomics leadership.
-* Pending : We are waiting for the project to start.
-* Approved : Project has been approved by Genomics leadership.
-
-Select the **reference genome** `Human hg19 random`. This should be the primary
+1. Select the _Reference Genome_ `Human hg19 random`. This should be the primary
 species that will be sequenced in the course of the project. Xenografts count
 as human.
+1. In the Permissions section, select `your name` from the _Owner_ drop-down.
+1. Make sure that _Allow all internal users access?_ is selected.
 
-### Tracked Issues section
+<table border=1><tr><td><img alt="Create Project DI4S" src="pics/create-di4s.png"/></td></tr></table>
 
-Not functional. This can link MISO to our [JIRA](http://jira.oicr.on.ca) ticketing system.
-
-### Permissions section
-
-Allows you to set the owner and visibility of the project to different users and groups. In the future, this may be used to restrict access to certain projects. 
-
-Select your name from the **Owner** drop-down.
-
-Make sure that **Allow all internal users access?** is ticked.
-
-### Saving
-
-<table border=1><tr><td>
-<img alt="Create Project DI4S" src="pics/create-di4s.png"/> 
-</td></tr></table>
-
-Click the _Save_ button at the upper right. 
+1. Click the _Save_ button at the upper right. 
 
 Upon save, you will be taken to the Edit Project page, where you can see the
 project you just created. Notice that the Project ID and Name now have values.
 The Project ID will be an integer, and the Name will begin with PRO. These are
 specific to this project and used by MISO to track the project internally.
 
+### Add a Study
+
+In order to make sure MISO is SRA-compliant, you must add a Study to your Project. Studies are legacy objects that are not really used in the current system, but need to be added anyway.
+
+1. Click on the _Studies_ section to expand the section.
+1. Hover over the _Options_ menu at the top right of the Studies table, and
+   click _Add new Study_.
+1. Much like creating a Project, enter:
+  1. Alias (letters and numbers only)
+  1. Description
+  1. Select a Study Type from the drop-down menu (Unless you are certain of the sequencing type, select `Other`).
+1. Click the _Save_ button at the upper right.
+
+
+## My Projects tab
+
+1. Click again on the _My Projects_ tab. 
+
+You will see a list of all of the projects you have access to in MISO.
+
+1. Find the project you just created in the list. You can sort any column in the
+table by clicking the column header. You can also search for your project by
+any of the displayed columns and the table will filter as you type. 
+1. Click on the link in the Project Name, Short Name or Alias (they all go to the
+same page).
+
 
 ## Edit Project page
 
-Click again on the _My Projects_ tab. You will see a list of all of the
-projects you have access to in MISO.
+The Edit Project page is used for viewing basic information about a project as
+well as all of the entities associated with that project, such as the samples,
+libraries, pools, and runs.
 
-Find the project you just created in the list. You can sort any column in the
-table by clicking the column header. You can also search for your project by
-any of the displayed columns and the table will filter as you type. 
+Once you create different entities for your project like Samples, Libraries,
+Library Dilutions, Pools and Runs, you can view and search them on this page.
+Each section can be expanded by clicking on its name or the arrow next to it.
+The tables under each section can be sorted by the column header or searched
+using the field in the upper right. The _Options_ menu above the search bar
+contains actions you can perform on the entities in the project.
 
-Click on the link in the Project Name, Short Name or Alias (they all go to the
-same page).
 
 
 ### Add a project overview
@@ -112,31 +116,25 @@ numbers of samples from each and indicate how many of them passed quality
 control and what stage of preparation has been completed. Project overviews are
 optional and only used to indicate overall progress on the My Projects page.
 
-Click _Add Overview_ at the right side under the Project Information. In the
-pop-up, enter a principal investigator (`You Yourname`!)
-For **No. proposed samples*, enter `5`. Click the _Add Overview_ button.
+1. Click _Add Overview_ at the right side under the Project Information. 
+1. In the pop-up, enter a principal investigator (`You Yourname`!)
+1. In **No. proposed samples*, enter `5`. 
+1. Click the _Add Overview_ button.
 
 The Edit Project page will reload and now there will be a table with your name
 under the Project Information. You can fill in other values if you wish, or
 leave them blank for now. You can also select the checkboxes below the table to
-show that certain stages have been completed. 
-
-Remember to press the _Save_ button after you are finished editing.
-
-
-### Other sections on the Edit Project page
-
-Click the _Project Files_ section on the Edit Project page. Here you can add
-attach any necessary documents to the project (e.g. Project Information form,
-REB).
+show that certain stages have been completed. Remember to press the _Save_
+button after you are finished editing.
 
 
-Once you create different entities for your project like Samples, Libraries,
-Library Dilutions, Pools and Runs, you can view and search them on this page.
-Each section can be expanded by clicking on its name or the arrow next to it.
-The tables under each section can be sorted by the column header or searched
-using the field in the upper right. The _Options_ menu above the search bar
-contains actions you can perform on the entities in the project.
+### Add Project Files
+
+In the Project Files section, you can add attach any necessary documents to the
+project (e.g. Project Information form, REB).
+
+1. Click the _Project Files_ section on the Edit Project page.
+1. Find a document or image that is appropriate for your study 
 
 Now that your project has been created, continue to make your first samples.
 
