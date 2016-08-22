@@ -27,7 +27,7 @@ button where you can find basic information about the current page.
 dashboard. 
 1. Select the _Add Project_ button at the top right corner. 
 
-The Create Project page will display with a number of fields that you can fill out.
+The _Create Project_ page will display with a number of fields that you can fill out.
 
 1. Ignore Project ID and Name, since they are set by MISO once the Project is saved.
 1. Enter a unique _Alias_. The alias is a name, chosen by us, that is associated
@@ -53,21 +53,21 @@ automatically generate sample and library names. e.g. short name: `DI4S`
 1. Select the _Reference Genome_ `Human hg19 random`. This should be the primary
 species that will be sequenced in the course of the project. Xenografts count
 as human.
-1. In the Permissions section, select `your name` from the _Owner_ drop-down.
+1. In the _Permissions_ section, select `your name` from the _Owner_ drop-down.
 1. Make sure that _Allow all internal users access?_ is selected.
 
 <table border=1><tr><td><img alt="Create Project DI4S" src="pics/create-di4s.png"/></td></tr></table>
 
 1. Click the _Save_ button at the upper right. 
 
-Upon save, you will be taken to the Edit Project page, where you can see the
+Upon save, you will be taken to the _Edit Project_ page, where you can see the
 project you just created. Notice that the Project ID and Name now have values.
 The Project ID will be an integer, and the Name will begin with PRO. These are
 specific to this project and used by MISO to track the project internally.
 
 ### Add a Study
 
-In order to make sure MISO is SRA-compliant, you must add a Study to your Project. Studies are legacy objects that are not really used in the current system, but need to be added anyway.
+In order to make sure MISO is SRA-compliant, you must add a _Study_ to your Project. Studies are legacy objects that are not really used in the current system, but need to be added anyway.
 
 1. Click on the _Studies_ section to expand the section.
 1. Hover over the _Options_ menu at the top right of the Studies table, and
@@ -94,12 +94,12 @@ same page).
 
 ## Edit Project page
 
-The Edit Project page is used for viewing basic information about a project as
+The _Edit Project_ page is used for viewing basic information about a project as
 well as all of the entities associated with that project, such as the samples,
 libraries, pools, and runs.
 
-Once you create different entities for your project like Samples, Libraries,
-Library Dilutions, Pools and Runs, you can view and search them on this page.
+Once you create different entities for your project like _Samples, Libraries,
+Library Dilutions, Pools_ and _Runs_, you can view and search them on this page.
 Each section can be expanded by clicking on its name or the arrow next to it.
 The tables under each section can be sorted by the column header or searched
 using the field in the upper right. The _Options_ menu above the search bar
@@ -109,7 +109,7 @@ contains actions you can perform on the entities in the project.
 
 ### Add a project overview
 
-Project overviews allow you to specify the origin of a specific set of samples
+_Project Overviews_ specify the origin of a specific set of samples
 that are part of the project. For example, if you are receiving some samples
 from a clinician and other samples from a hospital, you can enter the expected
 numbers of samples from each and indicate how many of them passed quality
@@ -130,7 +130,7 @@ button after you are finished editing.
 
 ### Add Project Files
 
-In the Project Files section, you can add attach any necessary documents to the
+In the _Project Files_ section, you can add attach any necessary documents to the
 project (e.g. Project Information form, REB).
 
 1. Click the _Project Files_ section on the Edit Project page.
