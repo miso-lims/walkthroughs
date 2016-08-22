@@ -33,13 +33,7 @@ Content
   1. should emPCRs be mentioned?
   1. library design
 1. [Pools](7-pools.md)
-1. runs and orders
-  1. goals of the data model
-  1. create order on a pool
-  1. talk about notification server
-  1. create PC, populate it, attach it to a run
-      1. HA: we should talk to sequencing team and figure out how they want the protocol to run – do you create a PC, populate it, and attach it to a run, or do you wait for the run and PC to be auto-created and then populate it?
-  1. unfulfilled orders page
+1. [Runs and Orders](8-runs.md)
 1. my account/admin stuff
   1. I'm not sure if we should bother
   1. institutes and labs

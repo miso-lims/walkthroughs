@@ -16,7 +16,7 @@ To see the dilutions for a library, view that library's page.
 ##Pools
 
 1. On the _List Pools_ page, under the _Illumina_ tab, select _Options_ → _Add Pool_.
-1. Enter an alias and description for the pool and the target concentration. Illumina will be selected by default for the type.
+1. Enter the alias as the project name followed by `_POOL` and description for the pool and the target concentration. Illumina will be selected by default for the type.
 1. Check _Ready to Run_.
 1. Use the search box to find the dilutions created previously.
 1. For each dilution, press the _+_ button to add the dilution to the pool.
