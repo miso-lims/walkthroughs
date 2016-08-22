@@ -2,7 +2,7 @@
 
 A _Project_ contains information about a set of _Studies_ that may comprise many
 different _Samples_, _Experiments_ and _Runs_. Samples are attached to Projects as
-they are often processed into _Dilutions_, which are then _Pool_ed and sequenced.
+they are often processed into _Dilutions_, which are then _Pooled_ and sequenced.
 Projects also have Overviews, which hold information about a Project proposal.
 In this part of this workshop, we'll create projects, set permissions, and
 familiarize ourselves with the project overview page.
