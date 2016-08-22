@@ -1,8 +1,8 @@
 # Projects
 
-A Project contains information about a set of Studies that may comprise many
-different Samples, Experiments and Runs. Samples are attached to Projects as
-they are often processed into Dilutions, which are then Pooled and sequenced.
+A _Project_ contains information about a set of _Studies_ that may comprise many
+different _Samples_, _Experiments_ and _Runs_. Samples are attached to Projects as
+they are often processed into _Dilutions_, which are then _Pool_ed and sequenced.
 Projects also have Overviews, which hold information about a Project proposal.
 In this part of this workshop, we'll create projects, set permissions, and
 familiarize ourselves with the project overview page.
@@ -114,15 +114,15 @@ that are part of the project. For example, if you are receiving some samples
 from a clinician and other samples from a hospital, you can enter the expected
 numbers of samples from each and indicate how many of them passed quality
 control and what stage of preparation has been completed. Project overviews are
-optional and only used to indicate overall progress on the My Projects page.
+optional and only used to indicate overall progress on the _My Projects_ page.
 
 1. Click _Add Overview_ at the right side under the Project Information. 
 1. In the pop-up, enter a principal investigator (`You Yourname`!)
-1. In **No. proposed samples*, enter `5`. 
+1. In _No. proposed samples_, enter `5`. 
 1. Click the _Add Overview_ button.
 
-The Edit Project page will reload and now there will be a table with your name
-under the Project Information. You can fill in other values if you wish, or
+The _Edit Project_ page will reload and now there will be a table with your name
+under the _Project Information_ section. You can fill in other values if you wish, or
 leave them blank for now. You can also select the checkboxes below the table to
 show that certain stages have been completed. Remember to press the _Save_
 button after you are finished editing.
