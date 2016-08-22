@@ -1,7 +1,7 @@
 Content
 
 1. [Logging in](1-logging-in.md)
-1. Creating projects
+1. [Creating projects](2-projects.md)
   1. organisational details of projects?
       1. projects vs subprojects
       1. access control associated with projects
