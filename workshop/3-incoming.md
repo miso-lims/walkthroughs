@@ -135,6 +135,13 @@ the word "Primary".
 1. Fill in the columns in the same way for: _Sample Type_, _Sex_, _Tissue
 Origin_, _Tissue Type_, _Times Received_, _Tube Number_, and _Material_.
 
+<table border="1"><tr><td>
+<img src="pics/fill-down-1.png"/>
+</td><td>
+<img src="pics/fill-down-2.png"/>
+</td></tr></table>
+
+
 Some fields cannot be filled down, so enter each of those separately.
 
 1. In the _Description_ field, add a number to each row starting with 1, i.e..
