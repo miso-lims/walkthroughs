@@ -38,7 +38,7 @@ by entering a single Sample for reference tissue from the Identity "ID1".
 across the top. Ensure that _Single_ is selected.
 1. In the _Sample Information_ section, enter or select the following:
   1. Project: Select the project you created in the last exercise.
-  1. Leave the _Alias_ blank. This will be auto-generated based on other
+  1. Alias: leave blank. This will be auto-generated based on other
 information in this form.
   1. Description: `Reference 1`.
   1. Scientific Name: `Homo sapiens`.
@@ -116,7 +116,7 @@ the table.
 
 Enter the following values into the **first row only**.
 
-1. Leave _Sample Alias_ blank. Again, this will be automatically generated from
+1. Sample Alias: leave blank. Again, this will be automatically generated from
 the rest of the table.
 1. Select or enter the following fields: 
   1. Description: `Primary`.
@@ -184,7 +184,7 @@ purposes.
 across the top. Ensure that _Single_ is selected.
 1. In the _Sample Information_ section, enter or select the following:
   1. Project: Select the project you created in the last exercise.
-  1. Leave the _Alias_ blank. This will be auto-generated based on other
+  1. Alias: leave blank. This will be auto-generated based on other
 information in this form.
   1. Description: `Stock 2`.
   1. Scientific Name: `Homo sapiens`.
