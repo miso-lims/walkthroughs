@@ -16,7 +16,16 @@ Note that for dual-index barcodes, only the first barcode needs to be
 specified. The second is optional.
 
 ##Design
-TODO wax poetic
+MISO has two important pieces of information about how a library was generated:
+the _selection_ (_e.g._, PCR, cDNA) and the _strategy_ (_e.g._, WGS, WXS,
+amplicon). For libraries made though a workflow, the reasonable set of options
+is much smaller. A _design_ captures both a selection and strategy and the list
+of allowed designs is limited based on the sample type (_e.g._, a cDNA sample
+can only have SM, WT, or MR library designs and these lock the selection and
+strategy type accordingly).
+
+If the design is selected and the _alias_ field is left blank, a name will be
+automatically generated with the correct suffix.
 
 ##Quality control
 There are three pieces of quality control information for a library in MISO:
