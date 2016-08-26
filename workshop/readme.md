@@ -18,27 +18,13 @@ Content
   1. single interface
       1. MT: ??
   1. synthetic/ghost entities
-1. Samples
-  1. searching!
-  1. individual edit sample
-  1. Bulk edit samples (HoT)
-  1. propagating and data model (especially tissue processing data model)
-      1. kits?
-      1. group IDs
-      1. QC information
-  1. bulk HoT interface
-      1. MT: same as c?
+1. [Samples](4-samples.md)
 1. [Boxes](5-boxes.md)
 1. [Libraries](6-libraries.md)
   1. should emPCRs be mentioned?
   1. library design
 1. [Pools](7-pools.md)
 1. [Runs and Orders](8-runs.md)
-1. my account/admin stuff
-  1. I'm not sure if we should bother
-  1. institutes and labs
-  1. tissue origin/material/types
-  1. sample purposes
 1. Things that need to go somewhere:
   1. experiments!
   1. consumables
