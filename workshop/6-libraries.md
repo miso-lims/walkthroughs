@@ -5,12 +5,18 @@ and _strategies_ used to make the library. A library may also have _tag
 barcodes_ (primers) and QC information.
 
 1. On the _List Samples_ page, enter your project name into the search box.
-1. Check the gDNA samples to turn into libraries.
+1. Check the gDNA aliquot samples to turn into libraries.
 1. From the _Bulk actions_ drop down, select _Propagate (library) selected_.
-1. A table will appear. Enter the library information from the table below.
+1. A table will appear. Enter the library information:
+  * _Description_: Library #, where # is the sample number
+  * _Platform_: Illumina
+  * _Type_: Mate Pair
+  * _Library Design_: WG
+  * _Barcode Kit_: Nextera Dual Index
+  * _Index 1_ and _Index 2_: Select any indices you wish
+  * _Volume_: 100
+  * _Kit_: Agilent SureSelect XT2
 1. Choose _Save_.
-
-TODO library data tab
 
 Note that for dual-index barcodes, only the first barcode needs to be
 specified. The second is optional.

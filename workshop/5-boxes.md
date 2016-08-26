@@ -10,7 +10,7 @@ by a standard row letter + column number format (_e.g._, C05).
 The goal is to create a box for the samples created in the previous step.
 
 1. From the navigation panel, choose _List Boxes_ and then _Add Box_.
-1. Enter an alias starting with the project name followed by “\_OUTBOX”.
+1. Enter an alias starting with the project name followed by `_OUTBOX`.
 1. Enter the description “gDNA ready for sequencing for <project>”.
 1. Select “DNA” for the _Use_ and “8×12” for _Size_.
 1. Click _Save_.
@@ -29,7 +29,7 @@ contents or the _List Boxes_ page.
 1. On the _List Boxes_ page, choose the _DNA_ tab.
 1. Either scroll through the list or use the search box to find the box
 you created.
-1. In that box, select the 0005 sample and click _Trash Tube_. This will
+1. In that box, select the `_0002_Br_P_nn_1-1_D_S1` sample and click _Trash Tube_. This will
 set the sample's volume to be zero and marked as “emptied”.
 1. Go to the _List Pools_ page and search for one of the samples you've
 created.
@@ -38,8 +38,8 @@ created.
 An item can only exist in one box. If assigned to a new box, it will
 disappear from the original.
 
-1. On the _List Boxes_ page, find the “TUTORIAL” box.
-1. Choose an empty position and enter the barcode “<PROJECT>0005”.
+1. On the _List Boxes_ page, find the _TUTORIAL_ box.
+1. Choose an empty position and enter the barcode `_S4` (_e.g._, `DI4S_S4`).
 1. Click _Lookup_ and _Update Position_.
 1. Return to the _List Boxes_ page and find your project outbox.
 1. Verify that the sample was removed from the outbox.
