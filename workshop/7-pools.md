@@ -8,7 +8,8 @@ Dilutions can be made in bulk from libraries.
 
 1. On the _List Libraries_ page, check all the libraries just created.
 1. From the _Bulk actions_ drop down, select _Make dilutions from selected_ and click _Go_.
-1. Enter the concentrations of the dilutions.
+1. Enter the concentrations of the dilutions (use any number you wish).
+1. Click _Save_.
 
 Dilutions are a bit ephemeral in MISO: there is no list for all the dilutions.
 To see the dilutions for a library, view that library's page.
