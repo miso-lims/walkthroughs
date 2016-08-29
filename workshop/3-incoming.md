@@ -218,8 +218,4 @@ exist except for sample tracking purposes!". This message means that the Tissue
 does not exist in a freezer at OICR. Eventually these _ghost samples_ will be
 hidden from the MISO interface.
 
-
-
-[Back](readme.md)
-
-
+[Back](2-projects.md) [Home](readme.md) [Next](4-samples.md)

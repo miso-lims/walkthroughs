@@ -43,3 +43,5 @@ disappear from the original.
 1. Click _Lookup_ and _Update Position_.
 1. Return to the _List Boxes_ page and find your project outbox.
 1. Verify that the sample was removed from the outbox.
+
+[Back](4-samples.md) [Home](readme.md) [Next](6-libraries.md)

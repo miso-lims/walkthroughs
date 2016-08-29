@@ -80,3 +80,5 @@ Libraries can also be placed in boxes.
 1. Select an unused position and enter a matrix barcode from the table above.
 1. Click _Lookup_ and then _Update position_.
 1. Repeat for the remaining libraries.
+
+[Back](5-boxes.md) [Home](readme.md) [Next](7-pools.md)

@@ -31,3 +31,5 @@ Only pools marked as ready to run will be visible when making flow cells.
 
 This pool has a low quality library in it and this will be highlighted when
 adding it to the flow cell.
+
+[Back](6-libraries.md) [Home](readme.md) [Next](8-runs.md)

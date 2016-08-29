@@ -138,4 +138,4 @@ project (e.g. Project Information form, REB).
 
 Now that your project has been created, continue to make your first samples.
 
-[Back](readme.md)
+[Back](1-logging-in.md) [Home](readme.md) [Next](3-incoming.md)
