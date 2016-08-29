@@ -45,6 +45,8 @@ summed when displayed on this page.
 ## Working with a Run
 After the run has been detected by MISO, it needs to be associated with the pools.
 
+<img src="pics/flow-cell.svg"/>
+
 1. From the _List Runs_ page, find the run assigned to you for this tutorial.
 1. Under the _Containers_ section, find the pool previously created and double click to assign it to the partition.
 1. Choose a study associated with the project and click _Select Study_.

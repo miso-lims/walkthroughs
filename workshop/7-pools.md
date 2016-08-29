@@ -6,6 +6,8 @@ container_ (flowcell) in MISO. A dilution must be made and then many dilutions
 ##Dilutions
 Dilutions can be made in bulk from libraries.
 
+<img src="pics/flow-dilution.svg"/>
+
 1. On the _List Libraries_ page, check all the libraries just created.
 1. From the _Bulk actions_ drop down, select _Make dilutions from selected_ and click _Go_.
 1. Enter the concentrations of the dilutions.
@@ -14,6 +16,8 @@ Dilutions are a bit ephemeral in MISO: there is no list for all the dilutions.
 To see the dilutions for a library, view that library's page.
 
 ##Pools
+
+<img src="pics/flow-pool.svg"/>
 
 1. On the _List Pools_ page, under the _Illumina_ tab, select _Options_ → _Add Pool_.
 1. Enter the alias as the project name followed by `_POOL` and description for the pool and the target concentration. Illumina will be selected by default for the type.
