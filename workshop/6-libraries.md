@@ -4,6 +4,8 @@ has a specific _design_ associated with it that decides the _selection_
 and _strategies_ used to make the library. A library may also have _tag
 barcodes_ (primers) and QC information.
 
+<img src="pics/flow-library.svg"/>
+
 1. On the _List Samples_ page, enter your project name into the search box.
 1. Check the gDNA aliquot samples to turn into libraries.
 1. From the _Bulk actions_ drop down, select _Propagate (library) selected_.

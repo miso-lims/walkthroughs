@@ -28,6 +28,8 @@ _Create Sample_ page.
 In this workshop, we will create six Samples with four different Identities in
 the Project you created in the last session. 
 
+<img src="pics/flow-sample1.svg"/>
+
 ## Entering a single Sample
 
 There are two ways of entering Samples into MISO: Single and Bulk. We will start

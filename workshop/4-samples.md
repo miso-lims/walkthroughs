@@ -6,6 +6,8 @@ Group IDs may be assigned at any time and are copied when propagating. Different
 QC information is available at each step. For instance, STR status is attached
 to the stock.
 
+<img src="pics/flow-sample2.svg"/>
+
 For the tissue samples created previously (by bulk and single entry), we will create stocks for library preparation.
 
 1. On the _List Samples_ page, enter your project name in the search box.
