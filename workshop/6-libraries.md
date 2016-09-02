@@ -12,8 +12,9 @@ barcodes_ (primers) and QC information.
 1. A table will appear. Enter the library information:
   * _Description_: Library #, where # is the sample number
   * _Platform_: Illumina
-  * _Type_: Mate Pair
-  * _Library Design_: WG
+  * _Type_: Paired End
+  * _Selection_: PCR
+  * _Strategy_: WGS
   * _Barcode Kit_: Nextera Dual Index
   * _Index 1_ and _Index 2_: Select any indices you wish
   * _Volume_: 100
