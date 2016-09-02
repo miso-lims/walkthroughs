@@ -109,8 +109,8 @@ Next, we will create four more Samples using the much faster bulk method.
 across the top. Ensure that _Bulk_ is selected.
 1. _Select project_ dropdown: select your project.
 1. _Select class_ dropdown: `Primary Tumor Tissue`.
+1. _Number of samples_ text box: `4`.
 1. Click _Make Table_.
-1. In the pop-up that asks for number of samples, enter `4` and click _OK_.
 
 A table will appear with the requested number of samples in table format. We
 will fill in the first row and use the quick-fill option to fill in the rest of
