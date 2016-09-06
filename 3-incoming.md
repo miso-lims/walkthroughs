@@ -51,7 +51,7 @@ information in this form.
   1. Scientific Name: `Homo sapiens`.
   1. Sample Type: select any from the drop-down.
 1. In the _Identity_ section, enter the 
-  1. External name : `ID1`. This is the individual number.
+  1. External name : project short name `_ID1` (_e.g._, `DI4S_ID1`). This is the individual number.
   1. Sex: Select any item from the dropdown.
 1. In the _Details_ section, select the _Sample Class_ `Reference Tissue`.
 1. In the _Tissue_ section, select or enter the following to create a reference Sample.
