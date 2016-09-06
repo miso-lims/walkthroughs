@@ -15,7 +15,7 @@ and _strategies_ used to make the library. A library may also have _indices_
 1. Check the gDNA aliquot samples to turn into libraries.
 1. From the _Bulk actions_ drop down, select _Propagate (library) selected_.
 1. A table will appear. Enter the library information:
-  * _Alias_: The sample alias, library type, insert size, library design (_e.g._, `DI4S_0001_Br_P_PE_318_EX`)
+  * _Alias_: The sample alias up to the tissue, library type, insert size, library design (_e.g._, `DI4S_0001_Br_P_PE_318_EX`)
   * _Description_: Library #, where # is the sample number
   * _Platform_: Illumina
   * _Type_: Paired End
@@ -38,9 +38,6 @@ is much smaller. A _design_ captures both a selection and strategy and the list
 of allowed designs is limited based on the sample type (_e.g._, a cDNA sample
 can only have SM, WT, or MR library designs and these lock the selection and
 strategy type accordingly).
-
-If the design is selected and the _alias_ field is left blank, a name will be
-automatically generated with the correct suffix.
 
 ## Quality control
 There are three pieces of quality control information for a library in MISO:
