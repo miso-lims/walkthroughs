@@ -15,6 +15,7 @@ and _strategies_ used to make the library. A library may also have _indices_
 1. Check the gDNA aliquot samples to turn into libraries.
 1. From the _Bulk actions_ drop down, select _Propagate (library) selected_.
 1. A table will appear. Enter the library information:
+  * _Alias_: The sample alias, library type, insert size, library design (_e.g._, `DI4S_0001_Br_P_PE_318_EX`)
   * _Description_: Library #, where # is the sample number
   * _Platform_: Illumina
   * _Type_: Paired End

@@ -38,7 +38,7 @@ the Project you created in the last session.
 ## Entering a single Sample
 
 There are two ways of entering Samples into MISO: Single and Bulk. We will start
-by entering a single Sample for reference tissue from the Identity "ID1".
+by entering a single Sample for reference tissue from the Identity `ID1`.
 
 1. On the left hand menu under _Tracking_, click _List Samples_.
 1. Click the _Add Sample_ button on the right hand side. There are two tabs
@@ -163,8 +163,9 @@ copy and paste the list from a spreadsheet. In this case, enter the project
 short name followed by P#. For example:`DI4S_P1`, `DI4S_P2`, `DI4S_P3`, `DI4S_P4`
 1. _External Name_: copy the list below by selecting it with your mouse, right
 clicking and selecting _Copy_. Then click on the first cell in the top row of
-_External Name_ and press Ctrl+v on your keyboard to paste.
-<br/>`ID1`<br/>`ID2`<br/>`ID3`<br/>`ID4`
+_External Name_ and press Ctrl+V on your keyboard to paste, the replace `DI4S`
+with your own project name.
+<br/>`DI4S_ID1`<br/>`DI4S_ID2`<br/>`DI4S_ID3`<br/>`DI4S_ID4`
 1. _Ext. Inst. Identifier_: add a number to each row starting from 2, i.e..
 `BioBankID 2`, `BioBankID 3`, `BioBankID 4`, `BioBankID 5`.
 1. Click _Save_ at the upper right hand corner.
@@ -177,8 +178,8 @@ there should be nine Samples:
 * 1 Reference Sample
 * 4 Primary Samples
 
-Notice also that because you used the same _External Name_ `ID1` for two
-samples, reference and primary, they have the same Identity.
+Notice also that because you used the same _External Name_, ending in `ID1`,
+for two samples, reference and primary, they have the same Identity.
 
 ## Receiving Stock
 
@@ -197,7 +198,7 @@ information in this form.
   1. Scientific Name: `Homo sapiens`.
   1. Sample Type: select any from the drop-down.
 1. In the _Identity_ section, enter the
-  1. External name : `ID2`.
+  1. External name : project name `_ID2`.
   1. Sex: Select any item from the dropdown.
 1. In the _Details_ section, select the _Sample Class_: `gDNA (stock)`.
 1. In the _Tissue_ section, select or enter the following to create a reference
