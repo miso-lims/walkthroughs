@@ -1,8 +1,8 @@
 #Libraries
 A _library_ is made from one sample for a single target _platform_ and
 has a specific _design_ associated with it that decides the _selection_
-and _strategies_ used to make the library. A library may also have _tag
-barcodes_ (primers) and QC information.
+and _strategies_ used to make the library. A library may also have _indices_
+(primers) and QC information.
 
 <img src="pics/flow-library.svg"/>
 
@@ -15,13 +15,13 @@ barcodes_ (primers) and QC information.
   * _Type_: Paired End
   * _Selection_: PCR
   * _Strategy_: WGS
-  * _Barcode Kit_: Nextera Dual Index
+  * _Index Kit_: Nextera Dual Index
   * _Index 1_ and _Index 2_: Select any indices you wish
   * _Volume_: 100
   * _Kit_: Agilent SureSelect XT2
 1. Choose _Save_.
 
-Note that for dual-index barcodes, only the first barcode needs to be
+Note that for dual-index libraries, only the first index needs to be
 specified. The second is optional.
 
 ##Design

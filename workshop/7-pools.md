@@ -1,6 +1,6 @@
 # Pools and Dilutions
-A library cannot be directly loaded into a _partition_ (lane) in a _partition
-container_ (flowcell) in MISO. A dilution must be made and then many dilutions
+A library cannot be directly loaded into a _lane_ in a _sequencing container_
+(flowcell/SMRTcell) in MISO. A dilution must be made and then many dilutions
 (or just one) can be mixed into a _pool_ for sequencing.
 
 ##Dilutions
