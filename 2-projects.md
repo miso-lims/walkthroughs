@@ -1,3 +1,8 @@
+---
+layout: page
+title: Projects
+---
+
 # Projects
 
 A _Project_ contains information about a set of _Studies_ that may comprise many
@@ -56,7 +61,9 @@ as human.
 1. In the _Permissions_ section, select `your name` from the _Owner_ drop-down.
 1. Make sure that _Allow all internal users access?_ is selected.
 
-<table border=1><tr><td><img alt="Create Project DI4S" src="pics/create-di4s.png"/></td></tr></table>
+<table border="1"><tr><td>
+  <img alt="Create Project DI4S" src="pics/create-di4s.png"/>
+</td></tr></table>
 
 1. Click the _Save_ button at the upper right. 
 
@@ -138,4 +145,4 @@ project (e.g. Project Information form, REB).
 
 Now that your project has been created, continue to make your first samples.
 
-[Back](1-logging-in.md) [Home](readme.md) [Next](3-incoming.md)
+[Back](1-logging-in) [Home](index) [Next](3-incoming)

@@ -1,4 +1,9 @@
-#Incoming samples
+---
+layout: page
+title: Incoming samples
+---
+
+# Incoming samples
 
 A _Sample_ contains information about the material upon which the sequencing
 experiments are to be based. Samples can be used in any number of sequencing
@@ -218,4 +223,4 @@ exist except for sample tracking purposes!". This message means that the Tissue
 does not exist in a freezer at OICR. Eventually these _ghost samples_ will be
 hidden from the MISO interface.
 
-[Back](2-projects.md) [Home](readme.md) [Next](4-samples.md)
+[Back](2-projects) [Home](index) [Next](4-samples)

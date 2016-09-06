@@ -1,4 +1,9 @@
-#Boxes
+---
+layout: page
+title: Using Boxes
+---
+
+# Boxes
 Boxes hold samples, libraries, and pools. They do not track reagents or
 primers. Boxes are separated into _uses_ for different kinds of storage
 (_e.g._, tissue samples versus extracted DNA), but there is no check
@@ -22,7 +27,7 @@ Normally a hand scanner would be used.
 
 In the lab, it's also possible to use _Options_ → _Scan Box_.
 
-##Using Boxes
+## Using Boxes
 Boxes can be found either from the library/sample/sample page of their
 contents or the _List Boxes_ page.
 
@@ -44,4 +49,4 @@ disappear from the original.
 1. Return to the _List Boxes_ page and find your project outbox.
 1. Verify that the sample was removed from the outbox.
 
-[Back](4-samples.md) [Home](readme.md) [Next](6-libraries.md)
+[Back](4-samples) [Home](index) [Next](6-libraries)
