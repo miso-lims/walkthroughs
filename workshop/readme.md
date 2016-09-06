@@ -25,11 +25,7 @@ Content
   1. library design
 1. [Pools](7-pools.md)
 1. [Runs and Orders](8-runs.md)
-1. Things that need to go somewhere:
-  1. experiments!
-  1. consumables
-  1. alerts? Does anyone care?
-  1. PacBio?
+1. [Sequencers](9-sequencers.md)
 
 Presentation stuff
 

@@ -33,4 +33,4 @@ and wish to update the QC status of the samples.
 ## Creating Aliquots
 Propagate again from the _gDNA (stock)_ samples to _gDNA (aliquot)_. Use _Library_ as the sample purpose.
 
-[Back](readme.md)
+[Back](3-incoming.md) [Home](readme.md) [Next](5-boxes.md)

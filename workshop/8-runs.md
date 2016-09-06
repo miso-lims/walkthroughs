@@ -55,3 +55,5 @@ After the run has been detected by MISO, it needs to be associated with the pool
 1. Click on the _List Orders_ page and verify that the _Remaining_ column now show 1 for the pool.
 
 The validation field is used only by cBot; leave it blank.
+
+[Back](7-pools.md) [Home](readme.md) [Next](9-sequencers.md)
