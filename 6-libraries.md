@@ -1,4 +1,9 @@
-#Libraries
+---
+layout: page
+title: Libraries
+---
+
+# Libraries
 A _library_ is made from one sample for a single target _platform_ and
 has a specific _design_ associated with it that decides the _selection_
 and _strategies_ used to make the library. A library may also have _indices_
@@ -24,7 +29,7 @@ and _strategies_ used to make the library. A library may also have _indices_
 Note that for dual-index libraries, only the first index needs to be
 specified. The second is optional.
 
-##Design
+## Design
 MISO has two important pieces of information about how a library was generated:
 the _selection_ (_e.g._, PCR, cDNA) and the _strategy_ (_e.g._, WGS, WXS,
 amplicon). For libraries made though a workflow, the reasonable set of options
@@ -36,14 +41,14 @@ strategy type accordingly).
 If the design is selected and the _alias_ field is left blank, a name will be
 automatically generated with the correct suffix.
 
-##Quality control
+## Quality control
 There are three pieces of quality control information for a library in MISO:
 
 1. The quantitative QC values (library QC)
 1. The overall pre-sequencing quality control (QC passed)
 1. The post-sequencing quality control (low quality library)
 
-###Library QC
+### Library QC
 After measuring the insert size or concentration, this information can be
 entered. There is no bulk entry for this information, it must be entered per
 library at this time.
@@ -53,7 +58,7 @@ library at this time.
 1. Enter the insert size or concentration and the instrument used to perform the measurement.
 1. Click _Add_.
 
-###QC passed
+### QC passed
 The QC passed is a simple pass/fail for a library to decide if it is good
 enough for sequencing.
 
@@ -61,7 +66,7 @@ enough for sequencing.
 1. Change _QC passed_ from _Unknown_ to _True_.
 1. Click _Save_.
 
-###Low Quality Library
+### Low Quality Library
 Not every library realises its full potential. After sequencing, sometimes
 problems are discovered in libraries that need to be sequenced again. The
 “low-quality library” indicator causes any pool containing this library to be
@@ -81,4 +86,4 @@ Libraries can also be placed in boxes.
 1. Click _Lookup_ and then _Update position_.
 1. Repeat for the remaining libraries.
 
-[Back](5-boxes.md) [Home](readme.md) [Next](7-pools.md)
+[Back](5-boxes) [Home](index) [Next](7-pools)

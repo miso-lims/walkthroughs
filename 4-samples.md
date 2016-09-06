@@ -1,3 +1,8 @@
+---
+layout: page
+title: Propagating Samples
+---
+
 # Propagating Samples
 Samples in MISO exist for each step in the tissue preparation: from identity,
 to tissue, optionally though tissue preparation, to stock, to aliquot. At each
@@ -33,4 +38,4 @@ and wish to update the QC status of the samples.
 ## Creating Aliquots
 Propagate again from the _gDNA (stock)_ samples to _gDNA (aliquot)_. Use _Library_ as the sample purpose.
 
-[Back](3-incoming.md) [Home](readme.md) [Next](5-boxes.md)
+[Back](3-incoming) [Home](index) [Next](5-boxes)

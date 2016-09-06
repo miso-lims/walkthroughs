@@ -1,3 +1,8 @@
+---
+layout: page
+title: Sequencers
+---
+
 # Sequencers
 Each sequencer has a service record.
 
@@ -14,4 +19,4 @@ Each sequencer has a service record.
 
 After saving, it is also possible to attach files to the record. Look under the _Attachments_ heading.
 
-[Back](8-runs.md) [Home](readme.md)
+[Back](8-runs) [Home](index)

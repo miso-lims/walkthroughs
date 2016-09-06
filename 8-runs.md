@@ -1,3 +1,8 @@
+---
+layout: page
+title: Runs and Orders
+---
+
 # Runs and Orders
 MISO supports runs from both Illumina and PacBio sequencers (and others that
 are no longer used), so the terminology is intentionally different from
@@ -56,4 +61,4 @@ After the run has been detected by MISO, it needs to be associated with the pool
 
 The validation field is used only by cBot; leave it blank.
 
-[Back](7-pools.md) [Home](readme.md) [Next](9-sequencers.md)
+[Back](7-pools) [Home](index) [Next](9-sequencers)

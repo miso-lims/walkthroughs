@@ -1,4 +1,9 @@
-# Logging In
+---
+layout: page
+title: Logging In
+---
+
+#  Logging In
 
 Much like the old Geospiza LIMS, you need to log in to MISO LIMS in order to
 make changes to any LIMS entities. Logging in lets us record any changes you
@@ -21,4 +26,4 @@ If all goes well, you should see the MISO Dashboard and see a message at the
 top right: "Logged in as: **jdoe**".
 
 
-[Home](readme.md) [Next](2-project.md)
+[Home](index) |  [Next](2-projects)
