@@ -3,7 +3,7 @@ layout: page
 title: Sequencers
 ---
 
-# Sequencers
+# 9. Sequencers
 Each sequencer has a service record.
 
 1. Select _List Sequencers_.

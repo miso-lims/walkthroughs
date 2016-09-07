@@ -3,7 +3,7 @@ layout: page
 title: Incoming samples
 ---
 
-# Incoming samples
+# 3. Incoming samples
 
 A _Sample_ contains information about the material upon which the sequencing
 experiments are to be based. Samples can be used in any number of sequencing
@@ -35,7 +35,7 @@ the Project you created in the last session.
 
 <img src="pics/flow-sample1.svg"/>
 
-## Entering a single Sample
+## 3.1 Entering a single Sample
 
 There are two ways of entering Samples into MISO: Single and Bulk. We will start
 by entering a single Sample for reference tissue from the Identity `ID1`.
@@ -72,7 +72,7 @@ lines. For more information about Sample nomenclature, see <a
 href="https://wiki.oicr.on.ca/display/MCPHERSON/LIMS+Guidelines#LIMSGuidelines-SampleNomenclature"
 target="_new">Sample Nomenclature</a>.
 
-### Enter a matrix tube barcode
+### 3.1.1 Enter a matrix tube barcode
 
 After saving the Sample, you will be able to enter the barcode for the tube.
 
@@ -86,7 +86,7 @@ later in the Box section.
 
 The page will re-load with the 2D barcode at the top right.
 
-## Automatically created Samples
+## 3.2 Automatically created Samples
 
 1. Click the _My Projects_ tab at the top and select your project from the list.
 1. Open the _Samples_ section on the _Edit Project_ page to see your newly
@@ -105,7 +105,7 @@ used in this Project. Other types of Samples are created automatically depending
 on how you propagate them through to libraries. Some of them will be addressed
 in the following tutorials.
 
-## Bulk create Samples
+## 3.3 Bulk create Samples
 
 Next, we will create four more Samples using the much faster bulk method.
 
@@ -181,7 +181,7 @@ there should be nine Samples:
 Notice also that because you used the same _External Name_, ending in `ID1`,
 for two samples, reference and primary, they have the same Identity.
 
-## Receiving Stock
+## 3.3 Receiving Stock
 
 The process for receiving Stock DNA is very similar to receiving tissue, but it
 creates _ghost samples_, which do not exist but are in MISO for sample tracking

@@ -3,12 +3,12 @@ layout: page
 title: Pools and Dilutions
 ---
 
-# Pools and Dilutions
+# 7. Pools and Dilutions
 A library cannot be directly loaded into a _lane_ in a _sequencing container_
 (flowcell/SMRTcell) in MISO. A dilution must be made and then many dilutions
 (or just one) can be mixed into a _pool_ for sequencing.
 
-## Dilutions
+## 7.1 Dilutions
 Dilutions can be made in bulk from libraries.
 
 <img src="pics/flow-dilution.svg"/>
@@ -21,7 +21,7 @@ Dilutions can be made in bulk from libraries.
 Dilutions are a bit ephemeral in MISO: there is no list for all the dilutions.
 To see the dilutions for a library, view that library's page.
 
-## Pools
+## 7.2 Pools
 
 <img src="pics/flow-pool.svg"/>
 

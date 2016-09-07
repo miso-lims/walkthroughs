@@ -3,7 +3,7 @@ layout: page
 title: Propagating Samples
 ---
 
-# Propagating Samples
+# 4. Propagating Samples
 Samples in MISO exist for each step in the tissue preparation: from identity,
 to tissue, optionally though tissue preparation, to stock, to aliquot. At each
 step, the possible options are limited based on the established workflows.
@@ -25,7 +25,7 @@ For the tissue samples created previously (by bulk and single entry), we will cr
 1. Click _Save_.
 
 
-## Bulk Editing
+## 4.1 Bulk Editing
 Samples can be edited in bulk. Assume that we have done some quality control
 and wish to update the QC status of the samples.
 
@@ -35,7 +35,7 @@ and wish to update the QC status of the samples.
 1. Change the _QC passed_ column to `true` for all rows.
 1. Click _Save_.
 
-## Creating Aliquots
+## 4.2 Creating Aliquots
 Propagate again from the _gDNA (stock)_ samples to _gDNA (aliquot)_. Use _Library_ as the sample purpose.
 
 [Back](3-incoming) [Home](index) [Next](5-boxes)
