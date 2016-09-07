@@ -16,12 +16,13 @@ to the stock.
 For the tissue samples created previously (by bulk and single entry), we will create stocks for library preparation.
 
 1. On the _List Samples_ page, enter your project name in the search box.
-1. Check the boxes for the tissue samples (not the received stocks).
+1. Check the boxes for the tissue samples (not the received stocks). They will
+have names that end in two hyphenated numbers, like `DI4S_0001_Ly_R_nn_1-1`.
 1. From the _Bulk actions_ dropdown at the bottom, select _Propagate (sample) selected_.
 1. A new dropdown will appear. Select _gDNA (stock)_ and click _Go_.
 1. Fill out the table:
-  * _Description_: Stock #, where # is the sample number
-  * _Matrix Barcode_: Project short name \_S#, where # is the sample name (_e.g._, `DI4S_S1`)
+  * _Description_: Stock #, where # is the individual number (e.g. Stock 2 for DI4S_0002)
+  * _Matrix Barcode_: (Project short name)\_S#, where # is the ?????????????? (_e.g._, `DI4S_S1`)
 1. Click _Save_.
 
 

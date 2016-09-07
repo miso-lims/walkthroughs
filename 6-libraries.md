@@ -27,6 +27,8 @@ and _strategies_ used to make the library. A library may also have _indices_
   * _Kit_: Agilent SureSelect XT2
 1. Choose _Save_.
 
+** Add a matrix barcode. **
+
 Note that for dual-index libraries, only the first index needs to be
 specified. The second is optional.
 
@@ -64,7 +66,7 @@ enough for sequencing.
 1. Change _QC passed_ from _Unknown_ to _True_.
 1. Click _Save_.
 
-### 6.2.3 Low Quality Library
+### 6.2.3 Low Quality Sequencing
 Not every library realises its full potential. After sequencing, sometimes
 problems are discovered in libraries that need to be sequenced again. The
 “low-quality library” indicator causes any pool containing this library to be

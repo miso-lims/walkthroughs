@@ -80,9 +80,11 @@ In order to make sure MISO is SRA-compliant, you must add a _Study_ to your Proj
 1. Hover over the _Options_ menu at the top right of the Studies table, and
    click _Add new Study_.
 1. Much like creating a Project, enter:
-  1. Alias (letters and numbers only)
-  1. Description
-  1. Select a Study Type from the drop-down menu (Unless you are certain of the sequencing type, select `Other`).
+  1. Alias (letters and numbers only): this can have any name, but make sure
+it is recognizable as belonging to your Project.
+  1. Description: any free-text description
+  1. Select a Study Type from the drop-down menu : Unless you are certain of the
+sequencing type, select `Other`.
 1. Click the _Save_ button at the upper right.
 
 
