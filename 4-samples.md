@@ -22,9 +22,10 @@ have names that end in two hyphenated numbers, like `DI4S_0001_Ly_R_nn_1-1`.
 1. A new dropdown will appear. Select _gDNA (stock)_ and click _Go_.
 1. Fill out the table:
   * _Description_: Stock #, where # is the individual number (e.g. Stock 2 for DI4S_0002)
-  * _Matrix Barcode_: (Project short name)\_S#, where # is the ?????????????? (_e.g._, `DI4S_S1`)
+  * _Matrix Barcode_: (Project short name)\_S#(_e.g._, `DI4S_S1`)
 1. Click _Save_.
 
+**TODO: assign barcodes**
 
 ## 4.1 Bulk Editing
 Samples can be edited in bulk. Assume that we have done some quality control
