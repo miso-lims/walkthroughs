@@ -3,7 +3,7 @@ layout: page
 title: Libraries
 ---
 
-# Libraries
+# 6. Libraries
 A _library_ is made from one sample for a single target _platform_ and
 has a specific _design_ associated with it that decides the _selection_
 and _strategies_ used to make the library. A library may also have _indices_
@@ -27,10 +27,12 @@ and _strategies_ used to make the library. A library may also have _indices_
   * _Kit_: Agilent SureSelect XT2
 1. Choose _Save_.
 
+** Add a matrix barcode. **
+
 Note that for dual-index libraries, only the first index needs to be
 specified. The second is optional.
 
-## Design
+## 6.1 Design
 MISO has two important pieces of information about how a library was generated:
 the _selection_ (_e.g._, PCR, cDNA) and the _strategy_ (_e.g._, WGS, WXS,
 amplicon). For libraries made though a workflow, the reasonable set of options
@@ -39,14 +41,14 @@ of allowed designs is limited based on the sample type (_e.g._, a cDNA sample
 can only have SM, WT, or MR library designs and these lock the selection and
 strategy type accordingly).
 
-## Quality control
+## 6.2 Quality control
 There are three pieces of quality control information for a library in MISO:
 
 1. The quantitative QC values (library QC)
 1. The overall pre-sequencing quality control (QC passed)
 1. The post-sequencing quality control (low quality library)
 
-### Library QC
+### 6.2.1 Library QC
 After measuring the insert size or concentration, this information can be
 entered. There is no bulk entry for this information, it must be entered per
 library at this time.
@@ -56,7 +58,7 @@ library at this time.
 1. Enter the insert size or concentration and the instrument used to perform the measurement.
 1. Click _Add_.
 
-### QC passed
+### 6.2.2 QC passed
 The QC passed is a simple pass/fail for a library to decide if it is good
 enough for sequencing.
 
@@ -64,7 +66,7 @@ enough for sequencing.
 1. Change _QC passed_ from _Unknown_ to _True_.
 1. Click _Save_.
 
-### Low Quality Library
+### 6.2.3 Low Quality Sequencing
 Not every library realises its full potential. After sequencing, sometimes
 problems are discovered in libraries that need to be sequenced again. The
 “low-quality library” indicator causes any pool containing this library to be
@@ -76,7 +78,7 @@ flagged, in case it will be sequenced again.
 
 In later exercises, this library will be marked as suspect.
 
-## Boxes
+## 6.3 Boxes
 Libraries can also be placed in boxes.
 
 1. From the _List Boxes_ page, find the project-specific box created before.

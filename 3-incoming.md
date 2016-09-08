@@ -3,7 +3,7 @@ layout: page
 title: Incoming samples
 ---
 
-# Incoming samples
+# 3. Incoming samples
 
 A _Sample_ contains information about the material upon which the sequencing
 experiments are to be based. Samples can be used in any number of sequencing
@@ -35,7 +35,7 @@ the Project you created in the last session.
 
 <img src="pics/flow-sample1.svg"/>
 
-## Entering a single Sample
+## 3.1 Entering a single Sample
 
 There are two ways of entering Samples into MISO: Single and Bulk. We will start
 by entering a single Sample for reference tissue from the Identity `ID1`.
@@ -49,9 +49,10 @@ across the top. Ensure that _Single_ is selected.
 information in this form.
   1. Description: `Reference 1`.
   1. Scientific Name: `Homo sapiens`.
-  1. Sample Type: select any from the drop-down.
+  1. Sample Type: select `Reference Tissue` from the drop-down.
 1. In the _Identity_ section, enter the 
-  1. External name : project short name `_ID1` (_e.g._, `DI4S_ID1`). This is the individual number.
+  1. External name : project short name `_ID1` (_e.g._, `DI4S_ID1`). This is the
+individual number.
   1. Sex: Select any item from the dropdown.
 1. In the _Details_ section, select the _Sample Class_ `Reference Tissue`.
 1. In the _Tissue_ section, select or enter the following to create a reference Sample.
@@ -65,14 +66,15 @@ It may also be left blank.
 1. At the upper right hand side, click _Save_.
 
 Upon saving, a number of fields will be filled in, including the Alias. The
-Alias will be in the form DI4S\_0001\_Le\_R\_nn\_1-1: (Project Short
+Tissue 
+Alias will be in the form DI4S\_0001\_Ly\_R\_nn\_1-1: (Project Short
 Name)\_(Individual ID)\_(Tissue Origin)\_(Tissue Type)\_(Passage number)\_(Times
 Received)\_(Tube Number). Passage number is only required for Xenografts and Cell
 lines. For more information about Sample nomenclature, see <a
 href="https://wiki.oicr.on.ca/display/MCPHERSON/LIMS+Guidelines#LIMSGuidelines-SampleNomenclature"
 target="_new">Sample Nomenclature</a>.
 
-### Enter a matrix tube barcode
+### 3.1.1 Enter a matrix tube barcode
 
 After saving the Sample, you will be able to enter the barcode for the tube.
 
@@ -86,7 +88,7 @@ later in the Box section.
 
 The page will re-load with the 2D barcode at the top right.
 
-## Automatically created Samples
+## 3.2 Automatically created Samples
 
 1. Click the _My Projects_ tab at the top and select your project from the list.
 1. Open the _Samples_ section on the _Edit Project_ page to see your newly
@@ -101,11 +103,12 @@ following exercises.))
 You only created a single Sample but at least two are in this list: the
 Reference tissue as well as the Identity. The Identity sample was automatically
 created because you provided an _External name_ that had not been previously
-used in this Project. Other types of Samples are created automatically depending
+used in this Project, and has a name in the format (Project short
+name)\_(Individual number), e.g. DI4S_0001. Other types of Samples are created automatically depending
 on how you propagate them through to libraries. Some of them will be addressed
 in the following tutorials.
 
-## Bulk create Samples
+## 3.3 Bulk create Samples
 
 Next, we will create four more Samples using the much faster bulk method.
 
@@ -156,15 +159,16 @@ Origin_, _Tissue Type_, _Times Received_, _Tube Number_, and _Material_.
 
 Some fields cannot be filled down, so enter each of those separately.
 
-1. _Description_: add a number to each row starting with 1, i.e..
-`Primary 1`, `Primary 2`, `Primary 3`, `Primary 4`.
+1. _Description_: Copying and pasting from Excel and Word is supported. Go to
+http://pastebin.com/uQXhafqJ and copy the list of descriptions by selecting it
+with your mouse, right clicking and selecting _Copy_. Then click on the first
+cell in the top row of _External Name_ and press Ctrl+V on your keyboard to
+paste.
 1. _Matrix Barcode_: you would normally use a hand-scanner or
-copy and paste the list from a spreadsheet. In this case, enter the project
-short name followed by P#. For example:`DI4S_P1`, `DI4S_P2`, `DI4S_P3`, `DI4S_P4`
-1. _External Name_: copy the list below by selecting it with your mouse, right
-clicking and selecting _Copy_. Then click on the first cell in the top row of
-_External Name_ and press Ctrl+V on your keyboard to paste, the replace `DI4S`
-with your own project name.
+copy and paste a list of barcodes from a spreadsheet. In this case, enter the project
+short name followed by P and a number. The fill down functionality does not
+auto-increment, so these need to be typed. For example:`DI4S_P1`, `DI4S_P2`, `DI4S_P3`, `DI4S_P4`
+1. _External Name_:  replace `DI4S` with your own project name.
 <br/>`DI4S_ID1`<br/>`DI4S_ID2`<br/>`DI4S_ID3`<br/>`DI4S_ID4`
 1. _Ext. Inst. Identifier_: add a number to each row starting from 2, i.e..
 `BioBankID 2`, `BioBankID 3`, `BioBankID 4`, `BioBankID 5`.
@@ -181,11 +185,13 @@ there should be nine Samples:
 Notice also that because you used the same _External Name_, ending in `ID1`,
 for two samples, reference and primary, they have the same Identity.
 
-## Receiving Stock
+## 3.3 Receiving Stock DNA/RNA
 
-The process for receiving Stock DNA is very similar to receiving tissue, but it
-creates _ghost samples_, which do not exist but are in MISO for sample tracking
-purposes.
+The process for receiving Stock DNA is very similar to receiving
+tissue. Every stock derives from a Tissue, which originated from an
+Identity. MISO will create the tissue for you when you enter a Stock. These
+samples are known as _ghost samples_, which do not exist at OICR but are in MISO
+for sample tracking purposes.
 
 1. On the left hand menu under _Tracking_, click _List Samples_.
 1. Click the _Add Sample_ button on the right hand side. There are two tabs
@@ -212,11 +218,15 @@ Sample.
   1. Tube Number: `1`
 1. At the upper right hand side, click _Save_.
 
+Stock aliases are created from their tissue alias by appending _D_S# or _R_S#.
+For example, the first DNA stock that derives from a tissue `DI4S_0002_Ly_R_nn_1-1` has
+the name `DI4S_0002_Ly_R_nn_1-1_D_S1`.
+
 After saving, go back to your project page and look at the samples that were
 automatically created. Although you received Stock DNA, it has created a Tissue
 for you as well.
 
-1. Click on the Sample with the alias similar to `DI4S_0002_nn_R_nn_1-1`. It
+1. Click on the Tissue  with the alias similar to `DI4S_0002_nn_R_nn_1-1`. It
 should have a _Sample Description_ that says only "Tissue".
 
 At the top, you will see a grey section with the warning: "This entity does not

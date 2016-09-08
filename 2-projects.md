@@ -3,7 +3,7 @@ layout: page
 title: Projects
 ---
 
-# Projects
+# 2. Projects
 
 A _Project_ contains information about a set of _Studies_ that may comprise many
 different _Samples_, _Experiments_ and _Runs_. Samples are attached to Projects as
@@ -26,7 +26,7 @@ libraries and other entities.
 button where you can find basic information about the current page.
 
 
-## Creating a new project
+## 2.1 Creating a new project
 
 1. After logging in, click the _My Projects_ tab at the top of the MISO
 dashboard. 
@@ -72,7 +72,7 @@ project you just created. Notice that the Project ID and Name now have values.
 The Project ID will be an integer, and the Name will begin with PRO. These are
 specific to this project and used by MISO to track the project internally.
 
-### Add a Study
+### 2.1.1 Add a Study
 
 In order to make sure MISO is SRA-compliant, you must add a _Study_ to your Project. Studies are legacy objects that are not really used in the current system, but need to be added anyway.
 
@@ -80,13 +80,15 @@ In order to make sure MISO is SRA-compliant, you must add a _Study_ to your Proj
 1. Hover over the _Options_ menu at the top right of the Studies table, and
    click _Add new Study_.
 1. Much like creating a Project, enter:
-  1. Alias (letters and numbers only)
-  1. Description
-  1. Select a Study Type from the drop-down menu (Unless you are certain of the sequencing type, select `Other`).
+  1. Alias (letters and numbers only): this can have any name, but make sure
+it is recognizable as belonging to your Project.
+  1. Description: any free-text description
+  1. Select a Study Type from the drop-down menu : Unless you are certain of the
+sequencing type, select `Other`.
 1. Click the _Save_ button at the upper right.
 
 
-## My Projects tab
+## 2.2 My Projects tab
 
 1. Click again on the _My Projects_ tab. 
 
@@ -99,7 +101,7 @@ any of the displayed columns and the table will filter as you type.
 same page).
 
 
-## Edit Project page
+## 2.3 Edit Project page
 
 The _Edit Project_ page is used for viewing basic information about a project as
 well as all of the entities associated with that project, such as the samples,
@@ -114,7 +116,7 @@ contains actions you can perform on the entities in the project.
 
 
 
-### Add a project overview
+### 2.3.1 Add a project overview
 
 _Project Overviews_ specify the origin of a specific set of samples
 that are part of the project. For example, if you are receiving some samples
@@ -135,7 +137,7 @@ show that certain stages have been completed. Remember to press the _Save_
 button after you are finished editing.
 
 
-### Add Project Files
+### 2.3.2 Add Project Files
 
 In the _Project Files_ section, you can add attach any necessary documents to the
 project (e.g. Project Information form, REB).

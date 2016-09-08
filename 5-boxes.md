@@ -3,7 +3,7 @@ layout: page
 title: Using Boxes
 ---
 
-# Boxes
+# 5. Boxes
 Boxes hold samples, libraries, and pools. They do not track reagents or
 primers. Boxes are separated into _uses_ for different kinds of storage
 (_e.g._, tissue samples versus extracted DNA), but there is no check

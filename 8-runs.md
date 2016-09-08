@@ -3,7 +3,7 @@ layout: page
 title: Runs and Orders
 ---
 
-# Runs and Orders
+# 8. Runs and Orders
 MISO supports runs from both Illumina and PacBio sequencers (and others that
 are no longer used), so the terminology is intentionally different from
 vendor-specific terminology. A _sequencing container_ is a cartridge loaded into
@@ -23,7 +23,7 @@ pools need to be sequenced. An order, associated with a pool, describes how
 much sequencing is to be done. With the run information, MISO can track whether
 all the sequencing required for a particular pool has been completed.
 
-## Creating an Order
+## 8.1 Creating an Order
 Orders include the pool to be sequenced, the quantity of sequencing
 required (counted in lanes/SMRT cells), and the sequencing chemistry
 required (on Illumina).
@@ -47,7 +47,7 @@ transitions to _Completed_.
 A pool can have many orders. Orders for the same platform and chemistry are
 summed when displayed on this page.
 
-## Working with a Run
+## 8.2 Working with a Run
 After the run has been detected by MISO, it needs to be associated with the pools.
 
 <img src="pics/flow-cell.svg"/>
