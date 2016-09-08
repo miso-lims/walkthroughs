@@ -110,7 +110,8 @@ in the following tutorials.
 
 ## 3.3 Bulk create Samples
 
-Next, we will create four more Samples using the much faster bulk method.
+Next, we will create four more Samples using the much faster bulk method. The
+four samples will be the Primary Tumour Tissue for individuals 1-5.
 
 1. On the left hand menu under _Tracking_, click _List Samples_.
 1. Click the _Add Sample_ button on the right hand side. There are two tabs
@@ -185,13 +186,17 @@ there should be nine Samples:
 Notice also that because you used the same _External Name_, ending in `ID1`,
 for two samples, reference and primary, they have the same Identity.
 
-## 3.3 Receiving Stock DNA/RNA
+## 3.4 Receiving Stock DNA/RNA
 
 The process for receiving Stock DNA is very similar to receiving
 tissue. Every stock derives from a Tissue, which originated from an
 Identity. MISO will create the tissue for you when you enter a Stock. These
 samples are known as _ghost samples_, which do not exist at OICR but are in MISO
 for sample tracking purposes.
+
+In this section, we will 'receive' a single Stock DNA tube from individual 2's
+reference tumour.
+
 
 1. On the left hand menu under _Tracking_, click _List Samples_.
 1. Click the _Add Sample_ button on the right hand side. There are two tabs
