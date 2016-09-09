@@ -59,13 +59,6 @@ followed by `_POOL` (e.g. `PROJ_POOL`)
 1. For each dilution, press the _+_ button to add the dilution to the pool.
 1. Click _Save_.
 
-Only pools marked as ready to run will be visible when making sequencing
-containers (which associate flowcell/SMRTcell Runs with pools).
-
-## TODO: fixme
-This pool has a low quality library in it and this will be highlighted when
-adding it to the flow cell.
-
 ## 8.1 Creating an Order
 Orders are created on the pool to be sequenced, and include the quantity of sequencing
 required (counted in lanes/SMRT cells), and the sequencing chemistry

@@ -55,4 +55,22 @@ Now check on the Order.
 shows 1 for the pool.
 
 
+### 8.5 Low Quality Sequencing
+Not every library realises its full potential. After sequencing, specific
+libraries can be flagged as having low sequencing quality. The
+"Low Quality Sequencing" indicator causes any pool containing this library to be
+flagged, so that it can be checked before it is sequenced again.
+
+1. From the _List Libraries_ page, find the `PROJ_0002_Ly_R_PE_300_EX` library
+and click the link.
+1. Check _Low Quality Sequencing_.
+1. Click _Save_.
+
+Now if the Pool containing that Library is added to a Sequencing Container, it
+will be flagged red.
+
+1. Go back to your Run page.
+1. Find your pool using the search box. It will be flagged red.
+
+
 [Back](7-pools) [Home](index) [Next](9-sequencers)

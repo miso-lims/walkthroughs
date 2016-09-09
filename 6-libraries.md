@@ -95,18 +95,8 @@ the search box and click the sample link.
 1. Click _Save_.
 
 ### 6.2.3 Low Quality Sequencing
-Not every library realises its full potential. After sequencing, specific
-libraries can be flagged as having low sequencing quality. The
-"Low Quality Sequencing" indicator causes any pool containing this library to be
-flagged, so that it can be checked before it is sequenced again.
-
-1. From the _List Libraries_ page, find the `PROJ_0002_Ly_R_PE_300_EX` library and click the link.
-1. Check _Low Quality Sequencing_.
-1. Click _Save_.
-
-In later exercises, this library will be marked as suspect.
-
-**TODO** Was it????
+Libraries can be marked as having low sequencing quality, which will be shown
+after the _Run_ exercises.
 
 ## 6.3 Boxes
 Libraries can also be placed in boxes.
