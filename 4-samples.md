@@ -20,7 +20,8 @@ For the tissue samples created previously (by bulk and single entry), we will cr
 For three of the tissues you created in the previous section, create a stock.
 
 1. On the _List Samples_ page, enter your project name in the search box.
-1. Check the boxes for the tissue samples. They will
+<<<<<<< HEAD
+1. Check the boxes for the tissue samples (not the received stock). They will
 have names that end in two hyphenated numbers, like `PROJ_0001_Ly_R_nn_1-1`:
   * `PROJ_0001_Br_P_nn_1-1`
   * `PROJ_0001_Ly_R_nn_1-1`
@@ -34,6 +35,7 @@ have names that end in two hyphenated numbers, like `PROJ_0001_Ly_R_nn_1-1`:
     - `PROJ_P1_St`
     - `PROJ_R1_St`
     - `PROJ_P2_St`
+  * _Vol._: `300`
 1. Click _Save_.
 
 Upon successful save, a green status will show at the top that says "Saved 3
@@ -56,7 +58,9 @@ the samples that end in D_S1:
   * `PROJ_0002_Br_P_nn_1-1_D_S1`
   * `PROJ_0002_Ly_R_nn_1-1_D_S1`
 1. From the _Bulk actions_ dropdown at the bottom, select _Update selected_ and click _Go_.
+<<<<<<< HEAD
 1. Change the _QC passed_ column to `true` for all rows.
+1. Change the _QC Detail_ column to `Ready` for all rows.
 1. Enter the missing _Matrix Barcode_, e.g. `PROJ_R2_St`
 1. Click _Save_.
 

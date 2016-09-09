@@ -48,19 +48,21 @@ across the top. Ensure that _Single_ is selected.
   1. Alias: leave blank. This will be auto-generated based on other
 information in this form.
   1. Description: `Reference 1`.
+  1. Date of Receipt: Select a date
   1. Scientific Name: `Homo sapiens`.
-  1. Sample Type: select `Reference Tissue` from the drop-down.
+  1. Sample Type: select `GENOMIC` from the drop-down.
 1. In the _Identity_ section, enter the 
   1. External name : project short name `_ID1` (_e.g._, `PROJ_ID1`). This is the
-individual number.
+name given to the tissue by the external institute that the tissue came from.
   1. Sex: Select any item from the dropdown.
 1. In the _Details_ section, select the _Sample Class_ `Reference Tissue`.
 1. In the _Tissue_ section, select or enter the following to create a reference Sample.
-  1. Tissue Origin: `Lymphocyte`
-  1. Tissue Type: `Reference or non-tumour, non-diseased tissue sample`
+  1. Tissue Origin: `Ly (Lymphocyte)`
+  1. Tissue Type: `R (Reference or non-tumour, non-diseased tissue sample)`
   1. Tissue Material: Select any from the drop-down.
   1. External Institute Identifier: `BioBankID 1`. This is the Biobank ID or Tube ID.
 It may also be left blank.
+  1. Lab: Select `BioBank (University Health Network)` from the drop-down.
   1. Times Received: `1`
   1. Tube Number: `1`
 1. At the upper right hand side, click _Save_.
@@ -131,24 +133,26 @@ Enter the following values into the **first row only**.
 the rest of the table.
 1. Select or enter the following fields: 
   1. Description: `Primary`.
-  1. Sample Type: select any item from the drop-down.
+  1. Date of Receipt: select a date
+  1. Sample Type: select `GENOMIC` from the drop-down.
   1. Sex: select any item from the drop-down.
-  1. Tissue Origin: `Br`
-  1. Tissue Type: `P`
+  1. Tissue Origin: select `Br (Breast)` from the drop-down.
+  1. Tissue Type: select `P (Primary Tumour)` from the drop-down.
   1. Times Received: 1
   1. Tube Number: 1
-  1. Material_: Select any item from the drop down.
+  1. Lab_: select `BioBank (University Health Network)` from the drop-down.
   1. Ext. Inst. Identifier: `BioBankID`
+  1. Material: Select any item from the drop down.
 
 
 Now we will fill in the rest of the table. Like in Excel, you can fill down a
 column by double-clicking the square at the lower right hand side of a selected
 cell. You can also click and drag to only fill in a certain number of cells.
 
-1. Click the _Description_ cell in the first row. A blue square will appear at
+1. Click the _Sample Type_ cell in the first row. A blue square will appear at
 the lower right hand side. Double click it to fill in the rest of the table with
 the word "Primary". 
-1. Fill in the columns in the same way for: _Sample Type_, _Sex_, _Tissue
+1. Fill in the columns in the same way for: _Sex_, _Tissue
 Origin_, _Tissue Type_, _Times Received_, _Tube Number_, and _Material_.
 
 <table border="1"><tr><td>
@@ -160,11 +164,6 @@ Origin_, _Tissue Type_, _Times Received_, _Tube Number_, and _Material_.
 
 Some fields cannot be filled down, so enter each of those separately.
 
-1. _Description_: Copying and pasting from Excel and Word is supported. Go to
-http://pastebin.com/uQXhafqJ and copy the list of descriptions by selecting it
-with your mouse, right clicking and selecting _Copy_. Then click on the first
-cell in the top row of _External Name_ and press Ctrl+V on your keyboard to
-paste.
 1. _Matrix Barcode_: you would normally use a hand-scanner or
 copy and paste a list of barcodes from a spreadsheet. In this case, enter the project
 short name followed by P and a number. The fill down functionality does not
@@ -177,6 +176,14 @@ auto-increment, so these need to be typed. For example:`PROJ_P1`, `PROJ_P2`, `PR
 1. _Ext. Inst. Identifier_: add a number to each row starting from 2, i.e..
 `BioBankID 2`, `BioBankID 3`, `BioBankID 4`, `BioBankID 5`.
 1. Click _Save_ at the upper right hand corner.
+
+Copying and pasting from Excel and Word is supported.
+
+1. _Description_: Go to
+http://pastebin.com/uQXhafqJ and copy the list of descriptions by selecting it
+with your mouse, right clicking and selecting _Copy_. Then click on the first
+cell in the top row of _Description_ and press Ctrl+V on your keyboard to
+paste.
 
 If everything is correct, the _Alias_ will be auto-generated for each row and
 the samples will be saved. If you navigate back to your _Edit Project_ page,
@@ -208,9 +215,11 @@ across the top. Ensure that _Single_ is selected.
   1. Project: Select the project you created in the last exercise.
   1. Alias: leave blank. This will be auto-generated based on other
 information in this form.
-  1. Description: `Stock 2`.
+  1. Description: `Stock 1`.
+  1. Date of receipt: select a date.
   1. Scientific Name: `Homo sapiens`.
-  1. Sample Type: select any from the drop-down.
+  1. Sample Type: select `GENOMIC` from the drop-down.
+  1. Volume (µl): `300`
 1. In the _Identity_ section, enter the
   1. External name : project name `_ID2`.
   1. Sex: Select any item from the dropdown.
@@ -218,15 +227,16 @@ information in this form.
 1. In the _Tissue_ section, select or enter the following to create a reference
 Sample.
   1. Tissue Class: `Reference Tissue`
-  1. Tissue Origin: `Unknown`
-  1. Tissue Type: `Reference or non-tumour, non-diseased tissue sample`
+  1. Tissue Origin: `nn (Unknown)`
+  1. Tissue Type: `R (Reference or non-tumour, non-diseased tissue sample)`
   1. Tissue Material: Select any from the drop-down.
   1. External Institute Identifier: `BioBankID 6`.
+  1. Lab: `BioBank (University Health Network)`.
   1. Times Received: `1`
   1. Tube Number: `1`
 1. At the upper right hand side, click _Save_.
 
-Stock aliases are created from their tissue alias by appending _D_S# or _R_S#.
+Stock aliases are created from their tissue alias by appending _\_D\_S#_ or _\_R\_S#_.
 For example, the first DNA stock that derives from a tissue `PROJ_0002_Ly_R_nn_1-1` has
 the name `PROJ_0002_Ly_R_nn_1-1_D_S1`.
 
