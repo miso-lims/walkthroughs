@@ -15,16 +15,20 @@ and _strategies_ used to make the library. A library may also have _indices_
 1. Check the gDNA aliquot samples to turn into libraries.
 1. From the _Bulk actions_ drop down, select _Propagate (library) selected_.
 1. A table will appear. Enter the library information:
-  * _Alias_: The sample alias up to the tissue, library type, insert size, library design (_e.g._, `DI4S_0001_Br_P_PE_318_EX`)
+  * _Library Alias_: The sample alias up to the tissue type (R or P), library
+  type, insert size, library design (_e.g._, `DI4S_0001_Br_P_PE_318_WG`).
+  For more information about Library nomenclature, see
+  <a href="https://wiki.oicr.on.ca/display/MCPHERSON/LIMS+Guidelines#LIMSGuidelines-LibraryNomenclature" 
+  target="_new">Library Nomenclature</a>.
   * _Description_: Library #, where # is the sample number
   * _Platform_: Illumina
   * _Type_: Paired End
   * _Selection_: PCR
-  * _Strategy_: WGS
+  * _Strategy_: AMPLICON
   * _Index Kit_: Nextera Dual Index
   * _Index 1_ and _Index 2_: Select any indices you wish
   * _Volume_: 100
-  * _Kit_: Agilent SureSelect XT2
+  * _Kit_: KAPA Hyper Prep
 1. Choose _Save_.
 
 ** Add a matrix barcode. **
