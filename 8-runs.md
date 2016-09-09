@@ -30,8 +30,7 @@ However, this function does not work reliably under load (as when ~20 people
 look at runs at the same time during this tutorial), so it may not load. This
 functionality will be redesigned in the near future.
 
-**TODO: Add an image of what it looks like when it loads. It is not working for
-me at present.**
+<a href="pics/interop.png"><img src="pics/interop.png"/></a>
 
 ## 8.4 Adding a sequencing container to a run
 
@@ -47,8 +46,13 @@ _Sequencing Container_.
 1. Click the _Select Study_ button on the Lane to accept the default Study.
 1. If the flowcell is being stored, enter the location.
 1. Click _Save_.
-1. Click on the _List Orders_ page and verify that the _Remaining_ column now show 1 for the pool.
 
 The validation field is used only by cBot; leave it blank.
+
+Now check on the Order.
+
+1. Click on the _List Orders_ page and verify that the _Remaining_ column now
+shows 1 for the pool.
+
 
 [Back](7-pools) [Home](index) [Next](9-sequencers)

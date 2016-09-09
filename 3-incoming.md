@@ -51,7 +51,7 @@ information in this form.
   1. Scientific Name: `Homo sapiens`.
   1. Sample Type: select `Reference Tissue` from the drop-down.
 1. In the _Identity_ section, enter the 
-  1. External name : project short name `_ID1` (_e.g._, `DI4S_ID1`). This is the
+  1. External name : project short name `_ID1` (_e.g._, `PROJ_ID1`). This is the
 individual number.
   1. Sex: Select any item from the dropdown.
 1. In the _Details_ section, select the _Sample Class_ `Reference Tissue`.
@@ -67,7 +67,7 @@ It may also be left blank.
 
 Upon saving, a number of fields will be filled in, including the Alias. The
 Tissue 
-Alias will be in the form DI4S\_0001\_Ly\_R\_nn\_1-1: (Project Short
+Alias will be in the form PROJ\_0001\_Ly\_R\_nn\_1-1: (Project Short
 Name)\_(Individual ID)\_(Tissue Origin)\_(Tissue Type)\_(Passage number)\_(Times
 Received)\_(Tube Number). Passage number is only required for Xenografts and Cell
 lines. For more information about Sample nomenclature, see <a
@@ -82,7 +82,7 @@ After saving the Sample, you will be able to enter the barcode for the tube.
 the blue _ID_ box at the top right hand corner.
 1. Select _Assign New Barcode_ from the menu.
 1. Use the hand-scanner or type a barcode into the pop-up. For this exercise,
-enter your Project Short Name and _R1. e.g. `DI4S_R1`. We will use this barcode
+enter your Project Short Name and _R1. e.g. `PROJ_R1`. We will use this barcode
 later in the Box section.
 1. Click _Save_ on the pop-up.
 
@@ -104,7 +104,7 @@ You only created a single Sample but at least two are in this list: the
 Reference tissue as well as the Identity. The Identity sample was automatically
 created because you provided an _External name_ that had not been previously
 used in this Project, and has a name in the format (Project short
-name)\_(Individual number), e.g. DI4S_0001. Other types of Samples are created automatically depending
+name)\_(Individual number), e.g. PROJ_0001. Other types of Samples are created automatically depending
 on how you propagate them through to libraries. Some of them will be addressed
 in the following tutorials.
 
@@ -168,9 +168,12 @@ paste.
 1. _Matrix Barcode_: you would normally use a hand-scanner or
 copy and paste a list of barcodes from a spreadsheet. In this case, enter the project
 short name followed by P and a number. The fill down functionality does not
-auto-increment, so these need to be typed. For example:`DI4S_P1`, `DI4S_P2`, `DI4S_P3`, `DI4S_P4`
-1. _External Name_:  replace `DI4S` with your own project name.
-<br/>`DI4S_ID1`<br/>`DI4S_ID2`<br/>`DI4S_ID3`<br/>`DI4S_ID4`
+auto-increment, so these need to be typed. For example:`PROJ_P1`, `PROJ_P2`, `PROJ_P3`, `PROJ_P4`
+1. _External Name_:  replace `PROJ` with your own project name.
+  - `PROJ_ID1`
+  - `PROJ_ID2`
+  - `PROJ_ID3`
+  - `PROJ_ID4`
 1. _Ext. Inst. Identifier_: add a number to each row starting from 2, i.e..
 `BioBankID 2`, `BioBankID 3`, `BioBankID 4`, `BioBankID 5`.
 1. Click _Save_ at the upper right hand corner.
@@ -194,7 +197,7 @@ Identity. MISO will create the tissue for you when you enter a Stock. These
 samples are known as _ghost samples_, which do not exist at OICR but are in MISO
 for sample tracking purposes.
 
-In this section, we will 'receive' a single Stock DNA tube from individual 2's
+In this section, we will 'receive' a single Stock DNA tube from individual 2
 reference tumour.
 
 
@@ -224,14 +227,14 @@ Sample.
 1. At the upper right hand side, click _Save_.
 
 Stock aliases are created from their tissue alias by appending _D_S# or _R_S#.
-For example, the first DNA stock that derives from a tissue `DI4S_0002_Ly_R_nn_1-1` has
-the name `DI4S_0002_Ly_R_nn_1-1_D_S1`.
+For example, the first DNA stock that derives from a tissue `PROJ_0002_Ly_R_nn_1-1` has
+the name `PROJ_0002_Ly_R_nn_1-1_D_S1`.
 
 After saving, go back to your project page and look at the samples that were
 automatically created. Although you received Stock DNA, it has created a Tissue
 for you as well.
 
-1. Click on the Tissue  with the alias similar to `DI4S_0002_nn_R_nn_1-1`. It
+1. Click on the Tissue  with the alias similar to `PROJ_0002_nn_R_nn_1-1`. It
 should have a _Sample Description_ that says only "Tissue".
 
 At the top, you will see a grey section with the warning: "This entity does not

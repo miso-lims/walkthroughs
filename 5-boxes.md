@@ -17,11 +17,11 @@ The goal is to create a box for the samples created in the previous step.
 1. From the navigation panel, choose _List Boxes_ and then _Add Box_.
 1. On the _Create Box_ page, enter the information:
   1. Alias: A short name for the box. Enter your short name followed by
-     `_OUTBOX` (e.g. DI4S_BOX)
+     `_OUTBOX` (e.g. PROJ\_OUTBOX)
   1. _Description_: a human description of the box purpose  “gDNA ready for
     library prep for <project>”.
-  1. _Use_: The contents of the box. Select “DNA”.
-  1. _Size_: Select “8 × 12 scannable”.
+  1. _Use_: The contents of the box. Select `DNA`.
+  1. _Size_: Select `8 x 12 scannable`.
 1. Click _Save_.
 
 Upon clicking save, a graphic of the box will appear. You can now load your
@@ -32,14 +32,14 @@ the tissues, stocks and aliquots you made in the previous steps.
 1. Enter a matrix barcode into the box on the right and click _Lookup_.
 Normally a hand scanner would be used. For this exercise, use this handy
 reference list:
-  * _PROJ_\_P1\_St
-  * _PROJ_\_P2\_St
-  * _PROJ_\_R1\_St
-  * _PROJ_\_R2\_St
-  * _PROJ_\_P1\_Al
-  * _PROJ_\_P2\_Al
-  * _PROJ_\_R1\_Al
-  * _PROJ_\_R2\_Al
+  * `PROJ_P1_St`
+  * `PROJ_P2_St`
+  * `PROJ_R1_St`
+  * `PROJ_R2_St`
+  * `PROJ_P1_Al`
+  * `PROJ_P2_Al`
+  * `PROJ_R1_Al`
+  * `PROJ_R2_Al`
 1. Click _Update Position_. 
   * &#9888; The _Save_ button does not work for individual positions, only for
     _Box Information_.
@@ -59,9 +59,9 @@ Boxes can be found either from the Sample or Library page or the _List Boxes_ pa
 
 1. On the _List Sample_ page, enter your project name.
 1. Click on the alias for individual 2 primary stock, i.e.
-`_0002_Br_P_nn_1-1_D_S1`.
+`PROJ_0002_Br_P_nn_1-1_D_S1`.
 1. The Box and position is listed under _Location_ near the top of the _Sample
-Information_ section. Click on the link to go to the Box (e.g. `DI4S_OUTBOX,
+Information_ section. Click on the link to go to the Box (e.g. `PROJ_OUTBOX,
 A03`).
 
 Boxes can be used to store Samples, Libraries and Pools and one box can store all
@@ -75,7 +75,7 @@ used up. Trashing the tube sets the volume of the sample to 0 and marks it as
 "emptied".
 
 1. From the list below the box, find the location of the
-`_0002_Br_P_nn_1-1_D_S1` sample.
+`PROJ_0002_Br_P_nn_1-1_D_S1` sample.
 1. Open the sample page in a new tab by clicking on the Sample link (Right click
 on the link and select "Open in new tab").
 1. Go back to the Box page if necessary. Select the sample you just opened in
@@ -91,10 +91,9 @@ disappear from the original.
 
 1. In the current tab, go to the _List Boxes_ page, find the _TUTORIAL_ box. This box was previously
 created by the MISO developers for the tutorial..
-1. Choose an empty position and enter your barcode ending in `_P1_Al` (_e.g._,
-`DI4S_P1_Al`).
+1. Choose an empty position and enter your barcode ending in `PROJ_P1_Al` (e.g., `PROJ_P1_Al`).
 1. Click _Lookup_ and _Update Position_.
-1. Go back to the first tab with your _PROJ_\_OUTBOX Box and refresh the
+1. Go back to the first tab with your `PROJ_OUTBOX` Box and refresh the
 browser, or return to the _List Boxes_ page and find your project outbox. The
 sample was removed from the outbox.
 

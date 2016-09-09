@@ -20,10 +20,10 @@ In this exercise, we will create 4 library dilutions from the libraries we
 made previously.
 
 1. On the _List Libraries_ page, check all the libraries just created.
-  - `_0001_Br_P_PE_300_EX`
-  - `_0001_Ly_R_PE_300_EX`
-  - `_0002_Br_P_PE_300_EX`
-  - `_0002_Ly_R_PE_300_EX`
+  - `PROJ_0001_Br_P_PE_300_EX`
+  - `PROJ_0001_Ly_R_PE_300_EX`
+  - `PROJ_0002_Br_P_PE_300_EX`
+  - `PROJ_0002_Ly_R_PE_300_EX`
 1. From the _Bulk actions_ drop down, select _Make dilutions from selected_ and click _Go_.
 1. Enter the concentrations of the dilutions (use any number you wish).
 1. Click _Save_.
@@ -45,7 +45,8 @@ of 4.
 
 1. On the _List Pools_ page, under the _Illumina_ tab, select _Options_ → _Add Pool_.
 1. Enter the _Pool Information_:
-  1. _Alias_: A short description of the pool contents. Enter the project name followed by `_POOL`
+  1. _Alias_: A short description of the pool contents. Enter the project name
+followed by `_POOL` (e.g. `PROJ_POOL`)
   1. _Description_: A longer free-text description of the pool. 
   1. _Platform Type_: Leave `Illumina` selected.
   1. _Desired Concentration_: Enter a concentration.

@@ -21,17 +21,19 @@ For three of the tissues you created in the previous section, create a stock.
 
 1. On the _List Samples_ page, enter your project name in the search box.
 1. Check the boxes for the tissue samples. They will
-have names that end in two hyphenated numbers, like `DI4S_0001_Ly_R_nn_1-1`:
-* Individual 1, primary tissue: \_0001\_Br\_P\_nn\_1-1
-* Individual 1, reference tissue: \_0001\_Ly\_R\_nn\_1-1
-* Individual 2, primary tissue: \_0002\_Br\_P\_nn\_1-1
+have names that end in two hyphenated numbers, like `PROJ_0001_Ly_R_nn_1-1`:
+  * `PROJ_0001_Br_P_nn_1-1`
+  * `PROJ_0001_Ly_R_nn_1-1`
+  * `PROJ_0002_Br_P_nn_1-1`
 1. From the _Bulk actions_ dropdown at the bottom, select _Propagate (sample) selected_.
 1. A new dropdown will appear. Select _gDNA (stock)_ and click _Go_.
 1. Fill out the table:
   * _Description_: Free text description. In this case, use "Stock (Tissue
-  Type)(Individual)". (e.g. `Stock P2` for DI4S_0002_Br_P_nn_1-1)
-  * _Matrix Barcode_: (Project short name)\_(Tissue Type)(Individual\_St (_e.g._,
-  `DI4S_P2_St` for DI4S_0002_Br_P_nn_1-1)
+  Type)(Individual)". (e.g. `Stock P2` for `PROJ_0002_Br_P_nn_1-1`)
+  * _Matrix Barcode_: (Project short name)\_(Tissue Type)(Individual)\_St,
+    - `PROJ_P1_St`
+    - `PROJ_R1_St`
+    - `PROJ_P2_St`
 1. Click _Save_.
 
 Upon successful save, a green status will show at the top that says "Saved 3
@@ -49,13 +51,13 @@ part 3 of this tutorial.
 1. On the _List Samples_ page, enter your project name in the search box.
 1. Check the boxes for the stock samples (propagated and received). These are
 the samples that end in D_S1:
-* 0001_Br_P_nn_1-1_D_S1
-* 0001_Ly_R_nn_1-1_D_S1
-* 0002_Br_P_nn_1-1_D_S1
-* 0002_Ly_R_nn_1-1_D_S1
+  * `PROJ_0001_Br_P_nn_1-1_D_S1`
+  * `PROJ_0001_Ly_R_nn_1-1_D_S1`
+  * `PROJ_0002_Br_P_nn_1-1_D_S1`
+  * `PROJ_0002_Ly_R_nn_1-1_D_S1`
 1. From the _Bulk actions_ dropdown at the bottom, select _Update selected_ and click _Go_.
 1. Change the _QC passed_ column to `true` for all rows.
-1. Enter the missing _Matrix Barcode_, e.g. `DI4S_R2_St`
+1. Enter the missing _Matrix Barcode_, e.g. `PROJ_R2_St`
 1. Click _Save_.
 
 Upon successful save, a green status will show at the top that says "Saved 4
@@ -65,26 +67,29 @@ items.".
 Propagate again from the 4 _gDNA (stock)_ samples to _gDNA (aliquot)_.
 
 1. On the _List Samples_ page, enter your project name in the search box.
-1. Check the boxes for the stock samples. They will have names that end in D_S1,
-like `DI4S_0001_Ly_R_nn_1-1_D_S1`:
-* Individual 1, primary tissue: \_0001\_Br\_P\_nn\_1-1_D_S1
-* Individual 1, reference tissue: \_0001\_Ly\_R\_nn\_1-1_D_S1
-* Individual 2, primary tissue: \_0002\_Br\_P\_nn\_1-1_D_S1
-* Individual 2, reference tissue: \_0002\_Ly\_R\_nn\_1-1_D_S1
+1. Check the boxes for the stock samples. They will have names that end in
+`D_S1`:
+  * `PROJ_0001_Br_P_nn_1-1_D_S1`
+  * `PROJ_0001_Ly_R_nn_1-1_D_S1`
+  * `PROJ_0002_Br_P_nn_1-1_D_S1`
+  * `PROJ_0002_Ly_R_nn_1-1_D_S1`
 1. From the _Bulk actions_ dropdown at the bottom, select _Propagate (sample) selected_.
 1. A new dropdown will appear. Select _gDNA (aliquot)_ and click _Go_.
 1. Fill out the table:
   * _Sample Alias_: Skip this field. It will be automatically filled in upon
   save.
   * _Description_: Free text description. In this case, use "Aliquot (Tissue
-  Type)(Individual)". (e.g. `Aliquot P2` for DI4S_0002_Br_P_nn_1-1_D_S1)
-  * _Matrix Barcode_: (Project short name)\_(Tissue Type)(Individual\_Al (_e.g._,
-  `DI4S_P2_Al` for DI4S_0002_Br_P_nn_1-1_D_S1)
+  Type)(Individual)". (e.g. `Aliquot P2` for `PROJ_0002_Br_P_nn_1-1_D_S1`)
+  * _Matrix Barcode_: (Project short name)\_(Tissue Type)(Individual)\_Al
+    * `PROJ_P1_Al`
+    * `PROJ_R1_Al`
+    * `PROJ_P2_Al`
+    * `PROJ_R2_Al`
   * _Purpose_: Select `Library`
 1. Click _Save_.
 
 Upon successful save, a green status will show at the top that says "Saved 4
-items". The Sample Alias will have been filled in with aliases that end in D_1
+items". The Sample Alias will have been filled in with aliases that end in D\_1
 (for each first aliquot of that stock).
 
 
