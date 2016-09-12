@@ -25,17 +25,17 @@ Qscores over 30, and cluster density.
 
 Under the _InterOp Metrics_ section, you will see a loading animation. After a
 few seconds to load, this page will show information from the sequencer about
-the run progress. 
+the run progress.
 However, this function does not work reliably under load (as when ~20 people
 look at runs at the same time during this tutorial), so it may not load. This
 functionality will be redesigned in the near future.
 
-<a href="pics/interop.png"><img src="pics/interop.png"/></a>
+<a style="width:100%;" href="pics/interop.png"><img src="pics/interop.png"/></a>
 
 ## 8.4 Adding a sequencing container to a run
 
 The Run (representing an instrument run) is associated with Pools using a
-_Sequencing Container_. 
+_Sequencing Container_.
 
 <img src="pics/flow-cell.svg"/>
 
