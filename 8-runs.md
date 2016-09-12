@@ -14,7 +14,7 @@ instrument Run and contains one or more lanes. Each _lane_ (e.g. Illumina lane,
 PacBio SMRT cell) in the container is loaded with exactly one _Pool_.
 Runs and Containers can be associated as soon as the sequencer has started.
 
-## 8.2 Viewing Run statistics
+## 8.1 Viewing Run statistics
 About five minutes after an instrument begins sequencing, MISO will detect it
 and create a _Run_. As sequencing continues, MISO will pull back information
 about the quality of the run similar to the on-instrument applications like SAV.
@@ -25,17 +25,17 @@ Qscores over 30, and cluster density.
 
 Under the _InterOp Metrics_ section, you will see a loading animation. After a
 few seconds to load, this page will show information from the sequencer about
-the run progress. 
+the run progress.
 However, this function does not work reliably under load (as when ~20 people
 look at runs at the same time during this tutorial), so it may not load. This
 functionality will be redesigned in the near future.
 
-<a href="pics/interop.png"><img src="pics/interop.png"/></a>
+<a style="width:100%;" href="pics/interop.png"><img src="pics/interop.png"/></a>
 
-## 8.4 Adding a sequencing container to a run
+## 8.2 Adding a sequencing container to a run
 
 The Run (representing an instrument run) is associated with Pools using a
-_Sequencing Container_. 
+_Sequencing Container_.
 
 <img src="pics/flow-cell.svg"/>
 
@@ -55,7 +55,7 @@ Now check on the Order.
 shows 1 for the pool.
 
 
-### 8.5 Low Quality Sequencing
+### 8.3 Low Quality Sequencing
 Not every library realises its full potential. After sequencing, specific
 libraries can be flagged as having low sequencing quality. The
 "Low Quality Sequencing" indicator causes any pool containing this library to be
