@@ -100,7 +100,7 @@ created samples.
 using the widget on the MISO front page. At the moment, searching on the _List
 Samples_ page is quite slow but you are welcome to try using that page to view
 your samples. The widget is fast but does not show enough information for the
-following exercises.))
+following exercises.)
 
 You only created a single Sample but at least two are in this list: the
 Reference tissue as well as the Identity. The Identity sample was automatically
