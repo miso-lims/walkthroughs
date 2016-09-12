@@ -33,7 +33,7 @@ _Create Sample_ page.
 In this workshop, we will create six Samples with four different Identities in
 the Project you created in the last session.
 
-<img src="pics/flow-sample1.svg"/>
+<img src="pics/flow-tissue-rx.svg"/>
 
 ## 3.1 Entering a single Sample
 
@@ -208,6 +208,8 @@ for sample tracking purposes.
 In this section, we will 'receive' a single Stock DNA tube from individual 2
 reference tumour.
 
+
+<img src="pics/flow-stock-rx.svg"/>
 
 1. On the left hand menu under _Tracking_, click _List Samples_.
 1. Click the _Add Sample_ button on the right hand side. There are two tabs
