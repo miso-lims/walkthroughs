@@ -11,7 +11,7 @@ Group IDs may be assigned at any time and are copied when propagating. Different
 QC information is available at each step. For instance, STR status is attached
 to the stock.
 
-<img src="pics/flow-sample2.svg"/>
+<img src="pics/flow-stock.svg"/>
 
 For the tissue samples created previously (by bulk and single entry), we will create stocks for library preparation.
 
@@ -94,5 +94,7 @@ Upon successful save, a green status will show at the top that says "Saved 4
 items". The Sample Alias will have been filled in with aliases that end in D\_1
 (for each first aliquot of that stock).
 
+
+<img src="pics/flow-aliquot.svg"/>
 
 [Back](3-incoming) [Home](index) [Next](5-boxes)

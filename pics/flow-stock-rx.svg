@@ -13,7 +13,7 @@
    height="112"
    id="svg2"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="flow-cell.svg">
+   sodipodi:docname="flow-stock-rx.svg">
   <metadata
      id="metadata382">
     <rdf:RDF>
@@ -40,7 +40,7 @@
      id="namedview380"
      showgrid="false"
      inkscape:zoom="2"
-     inkscape:cx="317.63601"
+     inkscape:cx="338.80311"
      inkscape:cy="23.071068"
      inkscape:window-x="461"
      inkscape:window-y="241"
@@ -174,7 +174,7 @@
      stroke-miterlimit="10"
      id="sample2"
      inkscape:connector-curvature="0"
-     style="fill:#9fc5e8;fill-opacity:1;stroke:#333333;stroke-width:2;stroke-miterlimit:10" />
+     style="fill:#eeeeee;fill-opacity:1;stroke:#333333;stroke-width:2;stroke-miterlimit:10" />
   <text
      style="font-style:normal;font-weight:normal;font-size:12px;line-height:14px;font-family:Arial;fill:#000000;stroke:none"
      id="text98"
@@ -213,7 +213,7 @@
      stroke-miterlimit="10"
      id="library"
      inkscape:connector-curvature="0"
-     style="fill:#9fc5e8;fill-opacity:1;stroke:#333333;stroke-width:2;stroke-miterlimit:10" />
+     style="fill:#eeeeee;fill-opacity:1;stroke:#333333;stroke-width:2;stroke-miterlimit:10" />
   <text
      style="font-style:normal;font-weight:normal;font-size:12px;line-height:14px;font-family:Arial;fill:#000000;stroke:none"
      id="text186"
@@ -229,7 +229,7 @@
      stroke-miterlimit="10"
      id="dilution"
      inkscape:connector-curvature="0"
-     style="fill:#9fc5e8;fill-opacity:1;stroke:#333333;stroke-width:2;stroke-miterlimit:10" />
+     style="fill:#eeeeee;fill-opacity:1;stroke:#333333;stroke-width:2;stroke-miterlimit:10" />
   <text
      style="font-style:normal;font-weight:normal;font-size:12px;line-height:14px;font-family:Arial;fill:#000000;stroke:none"
      id="text230"
@@ -245,7 +245,7 @@
      stroke-miterlimit="10"
      id="pool"
      inkscape:connector-curvature="0"
-     style="fill:#9fc5e8;fill-opacity:1;stroke:#333333;stroke-width:2;stroke-miterlimit:10" />
+     style="fill:#eeeeee;fill-opacity:1;stroke:#333333;stroke-width:2;stroke-miterlimit:10" />
   <rect
      x="532"
      y="23"
@@ -268,7 +268,7 @@
      stroke-miterlimit="10"
      id="flowcell"
      inkscape:connector-curvature="0"
-     style="fill:#9fc5e8;fill-opacity:1;stroke:#333333;stroke-width:2;stroke-miterlimit:10" />
+     style="fill:#eeeeee;fill-opacity:1;stroke:#333333;stroke-width:2;stroke-miterlimit:10" />
   <text
      style="font-style:normal;font-weight:normal;font-size:12px;line-height:14px;font-family:Arial;fill:#000000;stroke:none"
      id="text318"
@@ -316,7 +316,7 @@
      stroke-miterlimit="10"
      d="m 233,29.5 6.66667,0 6.66666,0 6.66667,0" />
   <path
-     style="fill:#9fc5e8;fill-opacity:1;stroke:#333333;stroke-width:2;stroke-miterlimit:10"
+     style="fill:#d9e6f3;fill-opacity:1;stroke:#333333;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:2,2;stroke-dashoffset:0"
      inkscape:connector-curvature="0"
      id="path6984"
      stroke-miterlimit="10"
