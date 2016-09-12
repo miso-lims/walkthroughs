@@ -30,7 +30,7 @@ However, this function does not work reliably under load (as when ~20 people
 look at runs at the same time during this tutorial), so it may not load. This
 functionality will be redesigned in the near future.
 
-<a style="width:100%;" href="pics/interop.png"><img src="pics/interop.png"/></a>
+<a href="pics/interop.png"><img style="width:100%;" src="pics/interop.png"/></a>
 
 ## 8.2 Adding a sequencing container to a run
 
