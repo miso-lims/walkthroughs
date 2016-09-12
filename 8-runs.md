@@ -3,62 +3,74 @@ layout: page
 title: Runs and Orders
 ---
 
-# 8. Runs and Orders
+# 8. Runs and Sequencing Containers
 MISO supports runs from both Illumina and PacBio sequencers (and others that
-are no longer used), so the terminology is intentionally different from
-vendor-specific terminology. A _sequencing container_ is a cartridge loaded into
-a sequencer (_e.g._, flow cell, SMRT cell pack). Each _lane_ (_e.g._,
-Illumina lane, PacBio SMRT cell) is loaded with exactly one _pool_. MISO assumes that a
-_sequencing container_ can be reused even if this isn't possible. Every time a
-sequencer is loaded and sequencing begins, a _run_ is created. Runs can be
-created manually, but usually they are picked up automatically from the
-instrument.
+are no longer used at OICR), so the terms used for instrument runs and
+associated libraries are intentionally different from those used by the vendor.
+Every time a sequencer is loaded and sequencing begins,
+a _Run_ is created. Runs are picked up automatically from the instrument.
+A _Sequencing Container_ is the link between the library information and the
+instrument Run and contains one or more lanes. Each _lane_ (e.g. Illumina lane,
+PacBio SMRT cell) in the container is loaded with exactly one _Pool_.
+Runs and Containers can be associated as soon as the sequencer has started.
 
-The sequencing container must be connected to the run since it is the only link
-between the samples/libraries and the runs. This information can be associated
-as soon as the sequencer has started.
+## 8.2 Viewing Run statistics
+About five minutes after an instrument begins sequencing, MISO will detect it
+and create a _Run_. As sequencing continues, MISO will pull back information
+about the quality of the run similar to the on-instrument applications like SAV.
+This includes statistics like percent pass filter, the percent of bases with
+Qscores over 30, and cluster density.
 
-_Orders_ are meant to provide book-keeping and project management for what
-pools need to be sequenced. An order, associated with a pool, describes how
-much sequencing is to be done. With the run information, MISO can track whether
-all the sequencing required for a particular pool has been completed.
+1. From the _List Runs_ page, find the run assigned to you for this tutorial.
 
-## 8.1 Creating an Order
-Orders include the pool to be sequenced, the quantity of sequencing
-required (counted in lanes/SMRT cells), and the sequencing chemistry
-required (on Illumina).
+Under the _InterOp Metrics_ section, you will see a loading animation. After a
+few seconds to load, this page will show information from the sequencer about
+the run progress. 
+However, this function does not work reliably under load (as when ~20 people
+look at runs at the same time during this tutorial), so it may not load. This
+functionality will be redesigned in the near future.
 
-1. From the _List Pools_ page, find the pool created for this project.
-1. Under the _Orders_ heading, fill in the new order box for `2` lanes, on `Illumina - Illumina HiSeq 2500`, with the `v4 2×126` chemistry.
-1. Click _Add_.
-1. The order will now be visible in the _Orders_ section.
-1. From the navigation menu, choose _List Orders_.
-1. Verify that the pool is listed in the _Unfulfilled_ tab.
+<a href="pics/interop.png"><img src="pics/interop.png"/></a>
 
-The _List Orders_ page will be used by the sequencing team to decide what to
-sequence. Columns on this page will disappear if there are no entries (_e.g._,
-the _Failed_ column will not be shown if there are no failed runs). When enough
-lanes have been sequenced, the row will disappear from the _Unfulfilled_ tab,
-but remain in the _All_ tab. A run is created shortly after the sequencer
-starts (typically 5 minutes) and the lanes currently being sequenced will be
-marked as in-progress and remain on the _Unfulfilled_ tab until the run
-transitions to _Completed_.
+## 8.4 Adding a sequencing container to a run
 
-A pool can have many orders. Orders for the same platform and chemistry are
-summed when displayed on this page.
-
-## 8.2 Working with a Run
-After the run has been detected by MISO, it needs to be associated with the pools.
+The Run (representing an instrument run) is associated with Pools using a
+_Sequencing Container_. 
 
 <img src="pics/flow-cell.svg"/>
 
-1. From the _List Runs_ page, find the run assigned to you for this tutorial.
-1. Under the _Containers_ section, find the pool previously created and double click to assign it to the lane.
-1. Choose a study associated with the project and click _Select Study_.
-1. If the lane container is being stored, also enter the location.
+1. On the Run assigned to you, scroll down to the _Containers_ section.
+1. Search for the pool you previously created and double click to assign it to
+   the lane. If you did not tick the _Ready to Run_ box when creating the Pool, you
+   may need to untick this option next to the search field.
+1. Click the _Select Study_ button on the Lane to accept the default Study.
+1. If the flowcell is being stored, enter the location.
 1. Click _Save_.
-1. Click on the _List Orders_ page and verify that the _Remaining_ column now show 1 for the pool.
 
 The validation field is used only by cBot; leave it blank.
+
+Now check on the Order.
+
+1. Click on the _List Orders_ page and verify that the _Remaining_ column now
+shows 1 for the pool.
+
+
+### 8.5 Low Quality Sequencing
+Not every library realises its full potential. After sequencing, specific
+libraries can be flagged as having low sequencing quality. The
+"Low Quality Sequencing" indicator causes any pool containing this library to be
+flagged, so that it can be checked before it is sequenced again.
+
+1. From the _List Libraries_ page, find the `PROJ_0002_Ly_R_PE_300_EX` library
+and click the link.
+1. Check _Low Quality Sequencing_.
+1. Click _Save_.
+
+Now if the Pool containing that Library is added to a Sequencing Container, it
+will be flagged red.
+
+1. Go back to your Run page.
+1. Find your pool using the search box. It will be flagged red.
+
 
 [Back](7-pools) [Home](index) [Next](9-sequencers)

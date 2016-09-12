@@ -9,7 +9,7 @@ A _Project_ contains information about a set of _Studies_ that may comprise many
 different _Samples_, _Experiments_ and _Runs_. Samples are attached to Projects as
 they are often processed into _Dilutions_, which are then _Pooled_ and sequenced.
 Projects also have Overviews, which hold information about a Project proposal.
-In this part of this workshop, we'll create projects, set permissions, and
+In this part of this workshop, we will create projects, set permissions, and
 familiarize ourselves with the project overview page.
 
 Projects represent a sequencing effort toward a particular goal, usually led by
@@ -22,7 +22,7 @@ in order to determine the impact of each on data quality.
 In this workshop, you will make your own project where you will create samples,
 libraries and other entities.
 
-:question: Most pages have a "Quick Help" tab at the top right under the Save
+Most pages have a "Quick Help" tab at the top right under the Save
 button where you can find basic information about the current page.
 
 
@@ -48,7 +48,7 @@ automatically generate sample and library names. e.g. short name: `DI4S`
     this project.
   * Inactive : Project is not yet done, but waiting for external collaborators,
     REB approval, papers to be published, etc.
-  * Cancelled : Project was scrapped because we didn't get funding/samples/REB
+  * Cancelled : Project was scrapped because we did not get funding/samples/REB
     approval.
   * Proposed : Project Initiation form has been received and is awaiting go-ahead
     by Genomics leadership.
