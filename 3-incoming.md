@@ -180,7 +180,7 @@ auto-increment, so these need to be typed. For example:`PROJ_P1`, `PROJ_P2`, `PR
     Copying and pasting from Excel and Word is supported.
 
     Go to
-http://pastebin.com/uQXhafqJ and copy the list of descriptions by selecting it
+[http://pastebin.com/uQXhafqJ](http://pastebin.com/uQXhafqJ) and copy the list of descriptions by selecting it
 with your mouse, right clicking and selecting _Copy_. Then click on the first
 cell in the top row of _Description_ and press Ctrl+V on your keyboard to
 paste.
