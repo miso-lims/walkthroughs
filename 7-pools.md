@@ -59,7 +59,7 @@ followed by `_POOL` (e.g. `PROJ_POOL`)
 1. For each dilution, press the _+_ button to add the dilution to the pool.
 1. Click _Save_.
 
-## 8.1 Creating an Order
+## 7.3 Creating an Order
 Orders are created on the pool to be sequenced, and include the quantity of sequencing
 required (counted in lanes/SMRT cells), and the sequencing chemistry
 required (on Illumina).
@@ -73,7 +73,7 @@ _Orders_ heading.
   - _Sequencing Parameters_: Select `v4 2×126` chemistry.
 1. Click _Add_. The order will now be visible in the _Orders_ section.
 
-### 8.1.1  Checking for unfulfilled orders
+### 7.3.1  Checking for unfulfilled orders
 The _List Orders_ page is used to decide what needs to be sequenced.
 
 1. From the navigation menu, choose _List Orders_.
