@@ -21,7 +21,7 @@ about the quality of the run similar to the on-instrument applications like SAV.
 This includes statistics like percent pass filter, the percent of bases with
 Qscores over 30, and cluster density.
 
-1. From the _List Runs_ page, find the run assigned to you for this tutorial.
+1. From the _Runs_ page, find the run assigned to you for this tutorial.
 
 Under the _InterOp Metrics_ section, you will see a loading animation. After a
 few seconds to load, this page will show information from the sequencer about
@@ -51,7 +51,7 @@ The validation field is used only by cBot; leave it blank.
 
 Now check on the Order.
 
-1. Click on the _List Orders_ page and verify that the _Remaining_ column now
+1. Click on the _Orders_ page and verify that the _Remaining_ column now
 shows 1 for the pool.
 
 
@@ -61,7 +61,7 @@ libraries can be flagged as having low sequencing quality. The
 "Low Quality Sequencing" indicator causes any pool containing this library to be
 flagged, so that it can be checked before it is sequenced again.
 
-1. From the _List Libraries_ page, find the `PROJ_0002_Ly_R_PE_300_EX` library
+1. From the _Libraries_ page, find the `PROJ_0002_Ly_R_PE_300_EX` library
 and click the link.
 1. Check _Low Quality Sequencing_.
 1. Click _Save_.

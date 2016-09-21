@@ -6,7 +6,7 @@ title: Sequencers
 # 9. Sequencers
 Each sequencer has a service record.
 
-1. Select _List Sequencers_.
+1. Select _Sequencers_.
 1. Choose an individual sequencer.
 1. Use the blue arrow to expand the _Service Records_ section.
 1. From _Options_, choose _Add Sequencer Record_.
