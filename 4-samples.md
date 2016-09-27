@@ -19,7 +19,7 @@ For the tissue samples created previously (by bulk and single entry), we will cr
 
 For three of the tissues you created in the previous section, create a stock.
 
-1. On the _List Samples_ page, enter your project name in the search box.
+1. On the _Samples_ page, enter your project name in the search box.
 1. Check the boxes for the tissue samples (not the received stock). They will
 have names that end in two hyphenated numbers, like `PROJ_0001_Ly_R_nn_1-1`:
   * `PROJ_0001_Br_P_nn_1-1`
@@ -49,7 +49,7 @@ In this case we will update several fields of 4 stock samples. We will use the
 stocks we entered in the previous step as well as the reference stock entered in
 part 3 of this tutorial.
 
-1. On the _List Samples_ page, enter your project name in the search box.
+1. On the _Samples_ page, enter your project name in the search box.
 1. Check the boxes for the stock samples (propagated and received). These are
 the samples that end in D_S1:
   * `PROJ_0001_Br_P_nn_1-1_D_S1`
@@ -68,7 +68,7 @@ items.".
 ## 4.3 Creating Aliquots
 Propagate again from the 4 _gDNA (stock)_ samples to _gDNA (aliquot)_.
 
-1. On the _List Samples_ page, enter your project name in the search box.
+1. On the _Samples_ page, enter your project name in the search box.
 1. Check the boxes for the stock samples. They will have names that end in
 `D_S1`:
   * `PROJ_0001_Br_P_nn_1-1_D_S1`

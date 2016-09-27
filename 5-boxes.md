@@ -14,7 +14,7 @@ by a standard row letter + column number format (_e.g._, C05).
 
 The goal is to create a box for the samples created in the previous step.
 
-1. From the navigation panel, choose _List Boxes_ and then _Add Box_.
+1. From the navigation panel, choose _Boxes_ and then _Add Box_.
 1. On the _Create Box_ page, enter the information:
   1. Alias: A short name for the box. Enter your short name followed by
      `_OUTBOX` (e.g. PROJ\_OUTBOX)
@@ -55,9 +55,9 @@ tutorial.
 
 ## Using Boxes
 
-Boxes can be found either from the Sample or Library page or the _List Boxes_ page.
+Boxes can be found either from the Sample or Library page or the _Boxes_ page.
 
-1. On the _List Sample_ page, enter your project name.
+1. On the _Sample_ page, enter your project name.
 1. Click on the alias for individual 2 primary stock, i.e.
 `PROJ_0002_Br_P_nn_1-1_D_S1`.
 1. The Box and position is listed under _Location_ near the top of the _Sample
@@ -89,12 +89,12 @@ and the _Emptied_ box will be ticked.
 An item can only exist in one box. If assigned to a new box, it will
 disappear from the original.
 
-1. In the current tab, go to the _List Boxes_ page, find the _TUTORIAL_ box. This box was previously
+1. In the current tab, go to the _Boxes_ page, find the _TUTORIAL_ box. This box was previously
 created by the MISO developers for the tutorial..
 1. Choose an empty position and enter your barcode ending in `PROJ_P1_Al` (e.g., `PROJ_P1_Al`).
 1. Click _Lookup_ and _Update Position_.
 1. Go back to the first tab with your `PROJ_OUTBOX` Box and refresh the
-browser, or return to the _List Boxes_ page and find your project outbox. The
+browser, or return to the _Boxes_ page and find your project outbox. The
 sample was removed from the outbox.
 
 

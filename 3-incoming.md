@@ -40,7 +40,7 @@ the Project you created in the last session.
 There are two ways of entering Samples into MISO: Single and Bulk. We will start
 by entering a single Sample for reference tissue from the Identity `ID1`.
 
-1. On the left hand menu under _Tracking_, click _List Samples_.
+1. On the left hand menu under _Tracking_, click _Samples_.
 1. Click the _Add Sample_ button on the right hand side. There are two tabs
 across the top. Ensure that _Single_ is selected.
 1. In the _Sample Information_ section, enter or select the following:
@@ -96,9 +96,9 @@ The page will re-load with the 2D barcode at the top right.
 1. Open the _Samples_ section on the _Edit Project_ page to see your newly
 created samples.
 
-(You can also find your samples by searching on the _List Samples_ page or by
-using the widget on the MISO front page. At the moment, searching on the _List
-Samples_ page is quite slow but you are welcome to try using that page to view
+(You can also find your samples by searching on the _Samples_ page or by
+using the widget on the MISO front page. At the moment, searching on the 
+_Samples_ page is quite slow but you are welcome to try using that page to view
 your samples. The widget is fast but does not show enough information for the
 following exercises.)
 
@@ -115,7 +115,7 @@ in the following tutorials.
 Next, we will create four more Samples using the much faster bulk method. The
 four samples will be the Primary Tumour Tissue for individuals 1-5.
 
-1. On the left hand menu under _Tracking_, click _List Samples_.
+1. On the left hand menu under _Tracking_, click _Samples_.
 1. Click the _Add Sample_ button on the right hand side. There are two tabs
 across the top. Ensure that _Bulk_ is selected.
 1. _Select project_ dropdown: select your project.
@@ -211,7 +211,7 @@ reference tumour.
 
 <img src="pics/flow-stock-rx.svg"/>
 
-1. On the left hand menu under _Tracking_, click _List Samples_.
+1. On the left hand menu under _Tracking_, click _Samples_.
 1. Click the _Add Sample_ button on the right hand side. There are two tabs
 across the top. Ensure that _Single_ is selected.
 1. In the _Sample Information_ section, enter or select the following:

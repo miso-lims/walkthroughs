@@ -24,7 +24,7 @@ strategy type accordingly).
 In this section, you will use the aliquots you created already and create
 libraries.
 
-1. On the _List Samples_ page, enter your project name into the search box.
+1. On the _Samples_ page, enter your project name into the search box.
 1. Check the gDNA aliquot samples to turn into libraries. These samples are the
 ones that end in `_D_1`:
   - `PROJ_0001_Br_P_nn_1-1_D_1`
@@ -74,7 +74,7 @@ After measuring the insert size or concentration, this information can be
 entered into each library. There is no bulk entry for this information yet, it must
 be entered for each library.
 
-1. From the _List Libraries_ page, find the `PROJ_0001_Br_P_PE_300_EX` library using
+1. From the _Libraries_ page, find the `PROJ_0001_Br_P_PE_300_EX` library using
 the search box and click the sample link.
 1. On the right side of the _QCs_ heading, select _Options_ → _Add Library QC_.
 1. Enter the information in the row:
@@ -89,7 +89,7 @@ the search box and click the sample link.
 _QC Passed_ is a simple pass/fail flag for a library to decide if it is good
 enough for sequencing. If not measured, this can be left as "Unknown".
 
-1. From the _List Libraries_ page, find the `PROJ_0001_Br_P_PE_300_EX` library using 
+1. From the _Libraries_ page, find the `PROJ_0001_Br_P_PE_300_EX` library using 
 the search box and click the sample link.
 1. Change _QC passed_ from _Unknown_ to _True_.
 1. Click _Save_.
@@ -101,7 +101,7 @@ after the _Run_ exercises.
 ## 6.3 Boxes
 Libraries can also be placed in boxes.
 
-1. From the _List Boxes_ page, find the project-specific box you created before,
+1. From the _Boxes_ page, find the project-specific box you created before,
 e.g. `PROJ_OUTBOX`.
 1. Select an unused position and enter a library matrix barcode _PROJ_\_P1\_Li,
 e.g. `PROJ_P1_Li`.
