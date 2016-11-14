@@ -50,7 +50,8 @@ information in this form.
   1. Description: `Reference 1`.
   1. Date of Receipt: Select a date
   1. Scientific Name: `Homo sapiens`.
-  1. Sample Type: select `GENOMIC` from the drop-down.
+  1. Sample Type: select `GENOMIC` from the drop down.
+  1. QC Status: select `Ready` from the drop down.
 1. In the _Identity_ section:
   1. External names : 
     1. Click _Find or Create Identity_.
@@ -149,6 +150,7 @@ the rest of the table.
   1. Lab: select `BioBank (University Health Network)` from the drop-down.
   1. Ext. Inst. Identifier: `BioBankID`
   1. Material: Select any item from the drop down.
+  1. QC Status: Select `Ready` from the drop down.
 
 
 Now we will fill in the rest of the table. Like in Excel, you can fill down a
@@ -232,6 +234,7 @@ information in this form.
   1. Date of receipt: select a date.
   1. Scientific Name: `Homo sapiens`.
   1. Sample Type: select `GENOMIC` from the drop-down.
+  1. QC Status: select `Ready` from the drop-down.
   1. Volume (µl): `300`
 1. In the _Identity_ section, enter the
   1. External name : project name `_ID2`.

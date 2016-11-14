@@ -57,8 +57,7 @@ the samples that end in D_S1:
   * `PROJ_0002_Br_P_nn_1-1_D_S1`
   * `PROJ_0002_Ly_R_nn_1-1_D_S1`
 1. From the _Bulk actions_ dropdown at the bottom, select _Update selected_ and click _Go_.
-1. Change the _QC passed_ column to `true` for all rows.
-1. Change the _QC Detail_ column to `Ready` for all rows.
+1. Change the _QC Status_ column to `Ready` for all rows.
 1. Enter the missing _Matrix Barcode_, e.g. `PROJ_R2_St`
 1. Click _Save_.
 
