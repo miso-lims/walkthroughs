@@ -51,9 +51,15 @@ information in this form.
   1. Date of Receipt: Select a date
   1. Scientific Name: `Homo sapiens`.
   1. Sample Type: select `GENOMIC` from the drop-down.
-1. In the _Identity_ section, enter the
-  1. External name : project short name `_ID1` (_e.g._, `PROJ_ID1`). This is the
-name given to the tissue by the external institute that the tissue came from.
+1. In the _Identity_ section:
+  1. External names : 
+    1. Click _Find or Create Identity_.
+    1. In the pop-up window, enter external name: project short name `_ID1` 
+(_e.g._, `PROJ_ID2`). This is the name given to the donor by the external 
+institute that the tissue came from.
+    1. Click _Validate External Name(s)_.
+    1. From the dropdown, select `First Receipt`.
+    1. Click _Select_.
   1. Sex: Select any item from the dropdown.
 1. In the _Details_ section, select the _Sample Class_ `Reference Tissue`.
 1. In the _Tissue_ section, select or enter the following to create a reference Sample.
@@ -173,6 +179,10 @@ auto-increment, so these need to be typed. For example:`PROJ_P1`, `PROJ_P2`, `PR
   - `PROJ_ID2`
   - `PROJ_ID3`
   - `PROJ_ID4`
+  1. Click _Look up Identities_ (above the top left corner of the table).
+  1. Select `First Receipt` from the dropdown menu in each cell of the `Identity Alias` column. 
+Since these are all first receipt, you may fill them down after selecting it in the top row. If 
+the identities already existed, you would have to select them individually.
 1. _Ext. Inst. Identifier_: add a number to each row starting from 2, i.e..
 `BioBankID 2`, `BioBankID 3`, `BioBankID 4`, `BioBankID 5`.
 1. _Description_:
