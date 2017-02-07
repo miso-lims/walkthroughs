@@ -12,13 +12,26 @@
 escape }}{% endif %} -- MISO OICR Workshop</title>
     <link rel="stylesheet" type="text/css" href="./bootstrap.css" />
   </head>
+  <div class="container">
+  
+
   <body>
     <div class="container">
+      <div class="row">
+        <div id="header" class="col-sm-12">
+          {% include header.html %}
+        </div>
+      </div>
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           {{ content }}
         </div>
       </div>
+      <div class="row">
+        <div id="footer" class="col-sm-12">
+           {% include footer.html %}
+        </div>
+      </div> 
     </div>
   </body>
 </html>
