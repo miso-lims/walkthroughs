@@ -1,37 +1,11 @@
 ---
+layout: default
 ---
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="last-modified" content="{{ site.time }}">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="search-domain" value="{{ site.github.url | replace_first:'http:', 'https:' }}">
-    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title |
-escape }}{% endif %} -- MISO OICR Workshop</title>
-    <link rel="stylesheet" type="text/css" href="./bootstrap.css" />
-  </head>
-  <div class="container">
-  
 
-  <body>
-    <div class="container">
-      <div class="row">
-        <div id="header" class="col-sm-12">
-          {% include header.html %}
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-          {{ content }}
-        </div>
-      </div>
-      <div class="row">
-        <div id="footer" class="col-sm-12">
-           {% include footer.html %}
-        </div>
-      </div> 
-    </div>
-  </body>
-</html>
+<div class="page-header">
+    <h2>{{ page.title }}
+        {% if page.subtitle %}<small>{{ page.subtitle }}</small>{% endif %}
+    </h2>
+</div>
+
+{{ content }}

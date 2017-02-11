@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Logging In
----
+category: walkthrough
+title: 1. Logging In
 
-# 1. Logging In
+---
 
 Much like the old Geospiza LIMS, you need to log in to MISO LIMS in order to
 make changes to any LIMS entities. Logging in lets us record any changes you

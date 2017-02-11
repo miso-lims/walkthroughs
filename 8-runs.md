@@ -1,9 +1,8 @@
 ---
 layout: page
-title: Runs and Orders
+title: Runs and Sequencing Containers
 ---
 
-# 8. Runs and Sequencing Containers
 MISO supports runs from both Illumina and PacBio sequencers (and others that
 are no longer used at OICR), so the terms used for instrument runs and
 associated libraries are intentionally different from those used by the vendor.

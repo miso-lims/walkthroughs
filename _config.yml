@@ -1,6 +1,8 @@
 # Site title and subtitle. This is used in _includes/header.html
 title: 'MISO'
 subtitle: 'An open-source LIMS for NGS sequencing centres'
+miso_flavour: 'OICR'
+miso_colour: 'rgb(56,121,59)'
 
 # URL to source code, used in _includes/footer.html
 codeurl: 'https://github.com/TGAC/miso-lims'

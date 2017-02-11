@@ -1,9 +1,8 @@
 ---
 layout: page
-title: Propagating Samples
+title: 4. Propagating Samples
 ---
 
-# 4. Propagating Samples
 Samples in MISO exist for each step in the tissue preparation: from identity,
 to tissue, optionally though tissue preparation, to stock, to aliquot. At each
 step, the possible options are limited based on the established workflows.

@@ -1,9 +1,8 @@
 ---
 layout: page
-title: Sequencers
+title: 9. Sequencers
 ---
 
-# 9. Sequencers
 Each sequencer has a service record.
 
 1. Select _Sequencers_.
