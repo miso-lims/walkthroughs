@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width">
+
+        <title>MISO : 6. Libraries</title>
+        <meta name="description" content="An open-source LIMS for NGS sequencing centres">
+
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/miso-docs-oicr/styles/main.css">
+    </head>
+    <body>
+<a href="https://github.com/TGAC/miso-lims"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
+
+
+        <div class="container">
+            <div class="row">
+                <div id="header" class="col-sm-12">
+                    <h2><a class="brand" href="/miso-docs-oicr/"><img src="/miso-docs-oicr/pics/MISO.png"/>MISO</a>
+    <small>An open-source LIMS for NGS sequencing centres</small>
+</h2>
+<span class="badge" style="position: relative;left:25px;bottom:20px;background:rgb(56,121,59);">OICR</span>
+
+                </div>
+            </div>
+
+            <div class="row">
+                
+                
+                    <div id="content" class="col-sm-12">
+                        <div class="page-header">
+    <h2>6. Libraries
+        
+    </h2>
+</div>
+
+<p>A <em>library</em> is made from one sample for a single target <em>platform</em> and
+has a specific <em>design</em> associated with it that decides the <em>selection</em>
+and <em>strategies</em> used to make the library. A library may also have <em>indices</em>
+(primers) and QC information.</p>
+
+<p><img src="pics/flow-library.svg" /></p>
+
+<p>MISO stores two important pieces of information about how a library was generated:
+the <em>selection</em> (e.g., PCR, cDNA) and the <em>strategy</em> (e.g., WGS, WXS,
+amplicon). A <em>design</em> captures both a selection and strategy and the list
+of allowed designs is limited based on the sample type (<em>e.g.</em>, a cDNA sample
+can only have SM, WT, or MR library designs and these lock the selection and
+strategy type accordingly).</p>
+
+<h2 id="bulk-propagate-aliquots-into-libraries">6.1 Bulk propagate aliquots into libraries</h2>
+
+<p>In this section, you will use the aliquots you created already and create
+libraries.</p>
+
+<ol>
+  <li>On the <em>Samples</em> page, enter your project name into the search box.</li>
+  <li>Check the gDNA aliquot samples to turn into libraries. These samples are the
+ones that end in <code class="highlighter-rouge">_D_1</code>:
+    <ul>
+      <li><code class="highlighter-rouge">PROJ_0001_Br_P_nn_1-1_D_1</code></li>
+      <li><code class="highlighter-rouge">PROJ_0001_Ly_R_nn_1-1_D_1</code></li>
+      <li><code class="highlighter-rouge">PROJ_0002_Br_P_nn_1-1_D_1</code></li>
+      <li><code class="highlighter-rouge">PROJ_0002_Ly_R_nn_1-1_D_1</code></li>
+    </ul>
+  </li>
+  <li>From the <em>Bulk actions</em> drop down, select <em>Propagate (library) selected</em>.</li>
+  <li>A table will appear. Enter the library information:
+    <ul>
+      <li><em>Library Alias</em>: The sample alias up to the tissue type (R or P), library
+  type, insert size, library design (<em>e.g.</em>, <code class="highlighter-rouge">DI4S_0001_Br_P_PE_318_WG</code>).
+  For more information about Library nomenclature, see
+  <a href="https://wiki.oicr.on.ca/display/MCPHERSON/LIMS+Guidelines#LIMSGuidelines-LibraryNomenclature" target="_new">Library Nomenclature</a>.
+  &#9888; This alias does not automatically fill in yet, so it must be entered:</li>
+      <li><code class="highlighter-rouge">PROJ_0001_Br_P_PE_300_EX</code></li>
+      <li><code class="highlighter-rouge">PROJ_0001_Ly_R_PE_300_EX</code></li>
+      <li><code class="highlighter-rouge">PROJ_0002_Br_P_PE_300_EX</code></li>
+      <li><code class="highlighter-rouge">PROJ_0002_Ly_R_PE_300_EX</code></li>
+      <li><em>Description</em>: Library (Tissue type)(individual), e.g. <code class="highlighter-rouge">Library P1</code></li>
+      <li><em>Matrix Barcode</em>: As before, usually this would be scanned by the hand
+ scanner. In this tutorial, enter matrix barcodes in the form (Short
+name)_(Tissue type)(Individual)_Li, e.g. <code class="highlighter-rouge">PROJ_P1_Li</code>.</li>
+      <li><em>Platform</em>: Illumina</li>
+      <li><em>Type</em>: Paired End</li>
+      <li><em>Selection</em>: PCR</li>
+      <li><em>Strategy</em>: AMPLICON</li>
+      <li><em>Index Kit</em>: Nextera Dual Index</li>
+      <li><em>Index 1</em> and <em>Index 2</em>: Select any combination of indices you wish.
+ Select different indices for each library. Selecting the same index for two
+ different libraries will make you unable to pool those two libraries
+ together later.</li>
+      <li><em>Volume</em>: 100</li>
+      <li><em>Kit</em>: KAPA Hyper Prep</li>
+    </ul>
+  </li>
+  <li>Choose <em>Save</em>.</li>
+</ol>
+
+<p>Note that for dual-index libraries, only the first index needs to be
+specified. The second is optional.</p>
+
+<h2 id="quality-control">6.1 Quality control</h2>
+<p>There are three way to indicate library quality in MISO: 1)
+Enter quantitative QC values under the <em>Library QC</em> section; 2) The overall pre-sequencing quality
+flag <em>QC passed</em>; and 3) The post-sequencing quality control <em>Low quality
+library</em>.</p>
+
+<h3 id="library-qc">6.2.1 Library QC</h3>
+<p>After measuring the insert size or concentration, this information can be
+entered into each library. There is no bulk entry for this information yet, it must
+be entered for each library.</p>
+
+<ol>
+  <li>From the <em>Libraries</em> page, find the <code class="highlighter-rouge">PROJ_0001_Br_P_PE_300_EX</code> library using
+the search box and click the sample link.</li>
+  <li>On the right side of the <em>QCs</em> heading, select <em>Options</em> → <em>Add Library QC</em>.</li>
+  <li>Enter the information in the row:</li>
+  <li><em>QC Date</em>: Select a date.</li>
+  <li><em>Method</em>: Choose a QC instrument.</li>
+  <li><em>Results</em>: Enter the measurement.</li>
+  <li><em>Insert Size</em>: Enter the measured insert size.</li>
+  <li>Click <em>Add</em>.</li>
+</ol>
+
+<h3 id="qc-passed">6.2.2 QC passed</h3>
+<p><em>QC Passed</em> is a simple pass/fail flag for a library to decide if it is good
+enough for sequencing. If not measured, this can be left as &quot;Unknown&quot;.</p>
+
+<ol>
+  <li>From the <em>Libraries</em> page, find the <code class="highlighter-rouge">PROJ_0001_Br_P_PE_300_EX</code> library using 
+the search box and click the sample link.</li>
+  <li>Change <em>QC passed</em> from <em>Unknown</em> to <em>True</em>.</li>
+  <li>Click <em>Save</em>.</li>
+</ol>
+
+<h3 id="low-quality-sequencing">6.2.3 Low Quality Sequencing</h3>
+<p>Libraries can be marked as having low sequencing quality, which will be shown
+after the <em>Run</em> exercises.</p>
+
+<h2 id="boxes">6.3 Boxes</h2>
+<p>Libraries can also be placed in boxes.</p>
+
+<ol>
+  <li>From the <em>Boxes</em> page, find the project-specific box you created before,
+e.g. <code class="highlighter-rouge">PROJ_OUTBOX</code>.</li>
+  <li>Select an unused position and enter a library matrix barcode <em>PROJ</em>_P1_Li,
+e.g. <code class="highlighter-rouge">PROJ_P1_Li</code>.</li>
+  <li>Click <em>Lookup</em> and then <em>Update position</em>.</li>
+  <li>Repeat for the remaining libraries:
+    <ul>
+      <li><code class="highlighter-rouge">PROJ_R1_Li</code></li>
+      <li><code class="highlighter-rouge">PROJ_P2_Li</code></li>
+      <li><code class="highlighter-rouge">PROJ_R2_Li</code></li>
+    </ul>
+  </li>
+</ol>
+
+<p><a href="5-boxes">Back</a> <a href="index">Home</a> <a href="7-pools">Next</a></p>
+
+
+                    </div>
+                
+            </div>
+
+            
+
+            <div class="row">
+                <div id="footer" class="col-sm-12">
+                    Documentation for <a href="https://github.com/TGAC/miso-lims">MISO</a> developed by the <a href="http://labs.oicr.on.ca/genome-sequence-informatics/">Genome Sequence Informatics</a> group at <a href="http://oicr.on.ca">Ontario Institute for Cancer Research</a>
+
+
+                </div>
+            </div>
+        </div>
+
+        <script src="/miso-docs-oicr/styles/navigation.js"></script>
+
+    </body>
+</html>

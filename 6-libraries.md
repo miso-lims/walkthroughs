@@ -1,9 +1,8 @@
 ---
 layout: page
-title: Libraries
+title: 6. Libraries
 ---
 
-# 6. Libraries
 A _library_ is made from one sample for a single target _platform_ and
 has a specific _design_ associated with it that decides the _selection_
 and _strategies_ used to make the library. A library may also have _indices_

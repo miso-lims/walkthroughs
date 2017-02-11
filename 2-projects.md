@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Projects
+category: walkthrough
+title: 2. Projects
 ---
 
-# 2. Projects
 
 A _Project_ contains information about a set of _Studies_ that may comprise many
 different _Samples_, _Experiments_ and _Runs_. Samples are attached to Projects as

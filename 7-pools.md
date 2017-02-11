@@ -1,9 +1,8 @@
 ---
 layout: page
-title: Pools and Dilutions
+title: 7. Dilutions, Pools, and Orders
 ---
 
-# 7. Dilutions, Pools and Orders
 A library cannot be directly loaded into a _lane_ in a _sequencing container_
 (flowcell/SMRTcell) in MISO. A dilution must be made and then many dilutions
 (or just one) can be mixed into a _pool_ for sequencing.

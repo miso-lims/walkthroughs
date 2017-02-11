@@ -1,9 +1,7 @@
 ---
 layout: page
-title: Incoming samples
+title: 3. Incoming samples
 ---
-
-# 3. Incoming samples
 
 A _Sample_ contains information about the material upon which the sequencing
 experiments are to be based. Samples can be used in any number of sequencing
