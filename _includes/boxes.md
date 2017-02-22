@@ -1,7 +1,3 @@
----
-layout: page
-title: 5. Using Boxes
----
 
 Boxes hold samples, libraries, and pools. They do not track reagents or
 primers. Boxes are separated into _uses_ for different kinds of storage

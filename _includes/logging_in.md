@@ -1,10 +1,3 @@
----
-layout: page
-category: walkthrough
-title: 1. Logging In
-
----
-
 Much like the old Geospiza LIMS, you need to log in to MISO LIMS in order to
 make changes to any LIMS entities. Logging in lets us record any changes you
 make and also allows us to set appropriate permissions.
@@ -23,5 +16,3 @@ MISO uses the same username and password as your OICR email account.
 If all goes well, you should see the MISO Dashboard and see a message at the
 top right: "Logged in as: **jdoe**".
 
-
-[Home](index) [Next](2-projects)

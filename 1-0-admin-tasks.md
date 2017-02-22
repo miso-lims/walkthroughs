@@ -1,9 +1,32 @@
 ---
 layout: page
 category: walkthrough
-title: 2. Projects
+title: 1. Logging In
+
 ---
 
+<div id="toc">
+Table of Contents
+<ol>
+    <li><a href="#login">Logging In</a></li>
+    <li><a href="#proj">Creating Projects</a></li>
+    <li><a href="#perms">Setting Project permissions</a></li>
+    <li><a href="#inst">Adding new instruments</a></li>
+    <li><a href="#reports">Creating project and monthly reports</a></li>
+</ol>
+</div>
+
+
+<a name="login"/>
+
+# 1. Logging in
+
+{% include logging_in.md %}
+
+
+<a name="proj"/>
+
+# 2. Creating projects
 
 A _Project_ contains information about a set of _Studies_ that may comprise many
 different _Samples_, _Experiments_ and _Runs_. Samples are attached to Projects as
@@ -147,4 +170,16 @@ project (e.g. Project Information form, REB).
 
 Now that your project has been created, continue to make your first samples.
 
-[Back](1-logging-in) [Home](index) [Next](3-incoming)
+
+<a name="perms"/>
+
+# Setting Project permissions
+
+<a name="inst"/>
+
+# Adding new instruments
+
+<a name="reports"/>
+
+# Creating project and monthly reports
+
