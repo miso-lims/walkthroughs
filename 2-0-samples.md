@@ -55,7 +55,7 @@ the Project you created in the last session.
 
 <img src="pics/flow-tissue-rx.svg"/>
 
-## 2.1 Entering a single Sample
+## 2.1 Entering a single Tissue
 
 There are two ways of entering Samples into MISO: Single and Bulk. We will start
 by entering a single Sample for reference tissue from the Identity `ID1`.
@@ -100,7 +100,7 @@ Alias will be in the form PROJ\_0001\_Ly\_R\_nn\_1-1: (Project Short
 Name)\_(Individual ID)\_(Tissue Origin)\_(Tissue Type)\_(Passage number)\_(Times
 Received)\_(Tube Number). Passage number is only required for Xenografts and Cell
 lines. For more information about Sample nomenclature, see <a
-href="https://wiki.oicr.on.ca/display/MCPHERSON/LIMS+Guidelines#LIMSGuidelines-SampleNomenclature"
+href="https://wiki.oicr.on.ca/display/GENOMICS/LIMS+Guidelines#LIMSGuidelines-SampleNomenclature"
 target="_new">Sample Nomenclature</a>.
 
 ### 2.1.1 Enter a matrix tube barcode
@@ -137,7 +137,7 @@ name)\_(Individual number), e.g. PROJ_0001. Other types of Samples are created a
 on how you propagate them through to libraries. Some of them will be addressed
 in the following tutorials.
 
-## 2.3 Bulk create Samples
+## 2.3 Entering bulk Tissues
 
 Next, we will create four more Samples using the much faster bulk method. The
 four samples will be the Primary Tumour Tissue for individuals 1-5.
@@ -308,26 +308,22 @@ For the tissue samples created previously (by bulk and single entry), we will cr
 For three of the tissues you created in the previous section, create a stock.
 
 1. On the _Samples_ page, enter your project name in the search box.
-1. Check the boxes for the tissue samples (not the received stock). They will
-have names that end in two hyphenated numbers, like `PROJ_0001_Ly_R_nn_1-1`:
-  * `PROJ_0001_Br_P_nn_1-1`
-  * `PROJ_0001_Ly_R_nn_1-1`
-  * `PROJ_0002_Br_P_nn_1-1`
+1. Check the boxes for the tissue samples (not the received stock)
+that you created in sections 2.1 and 2.3. 
+They will
+have names that end in two hyphenated numbers, like `PROJ_0001_Ly_R_nn_1-1`.
 1. From the _Bulk actions_ dropdown at the bottom, select _Propagate (sample) selected_.
 1. A new dropdown will appear. Select _gDNA (stock)_ and click _Go_.
 1. Fill out the table:
   * _Description_: Free text description. In this case, use "Stock (Tissue
   Type)(Individual)". (e.g. `Stock P2` for `PROJ_0002_Br_P_nn_1-1`)
-  * _Matrix Barcode_: (Project short name)\_(Tissue Type)(Individual)\_St,
-    - `PROJ_P1_St`
-    - `PROJ_R1_St`
-    - `PROJ_P2_St`
+  * _Matrix Barcode_: choose a barcode for each stock and record it on your worksheet.<img src="pics/blue_pencil.png">
   * _Vol._: `300`
 1. Click _Save_.
 
 Upon successful save, a green status will show at the top that says "Saved 3
 items". The Sample Alias will have been filled in with aliases that end in D_S1
-(for each first DNA stock of that tissue).
+(for each first DNA stock of that tissue). Record the aliases in your worksheet. <img src="pics/blue_pencil.png">
 
 ## 3.2 Bulk Editing
 Samples can be edited in bulk. Assume that we have done some quality control
@@ -338,15 +334,13 @@ stocks we entered in the previous step as well as the reference stock entered in
 part 3 of this tutorial.
 
 1. On the _Samples_ page, enter your project name in the search box.
-1. Check the boxes for the stock samples (propagated and received). These are
-the samples that end in D_S1:
-  * `PROJ_0001_Br_P_nn_1-1_D_S1`
-  * `PROJ_0001_Ly_R_nn_1-1_D_S1`
-  * `PROJ_0002_Br_P_nn_1-1_D_S1`
-  * `PROJ_0002_Ly_R_nn_1-1_D_S1`
+1. Check the boxes for the stock samples (propagated and received). 
+that you created in sections 2.4 and 3.1.
+These are
+the samples that end in D_S1.
 1. From the _Bulk actions_ dropdown at the bottom, select _Update selected_ and click _Go_.
 1. Change the _QC Status_ column to `Ready` for all rows.
-1. Enter the missing _Matrix Barcode_, e.g. `PROJ_R2_St`
+1. Enter the a _Matrix Barcode_ for the stock entered in section 3.4 and record it on your worksheet. <img src="pics/blue_pencil.png">
 1. Click _Save_.
 
 Upon successful save, a green status will show at the top that says "Saved 4
@@ -357,11 +351,7 @@ Propagate again from the 4 _gDNA (stock)_ samples to _gDNA (aliquot)_.
 
 1. On the _Samples_ page, enter your project name in the search box.
 1. Check the boxes for the stock samples. They will have names that end in
-`D_S1`:
-  * `PROJ_0001_Br_P_nn_1-1_D_S1`
-  * `PROJ_0001_Ly_R_nn_1-1_D_S1`
-  * `PROJ_0002_Br_P_nn_1-1_D_S1`
-  * `PROJ_0002_Ly_R_nn_1-1_D_S1`
+`D_S1`.
 1. From the _Bulk actions_ dropdown at the bottom, select _Propagate (sample) selected_.
 1. A new dropdown will appear. Select _gDNA (aliquot)_ and click _Go_.
 1. Fill out the table:
@@ -369,17 +359,13 @@ Propagate again from the 4 _gDNA (stock)_ samples to _gDNA (aliquot)_.
   save.
   * _Description_: Free text description. In this case, use "Aliquot (Tissue
   Type)(Individual)". (e.g. `Aliquot P2` for `PROJ_0002_Br_P_nn_1-1_D_S1`)
-  * _Matrix Barcode_: (Project short name)\_(Tissue Type)(Individual)\_Al
-    * `PROJ_P1_Al`
-    * `PROJ_R1_Al`
-    * `PROJ_P2_Al`
-    * `PROJ_R2_Al`
+  * _Matrix Barcode_: choose a barcode for each aliquot and record it on your worksheet. <img src="pics/blue_pencil.png">
   * _Purpose_: Select `Library`
 1. Click _Save_.
 
 Upon successful save, a green status will show at the top that says "Saved 4
 items". The Sample Alias will have been filled in with aliases that end in D\_1
-(for each first aliquot of that stock).
+(for each first aliquot of that stock). Record these on your worksheet. <img src="pics/blue_pencil.png">
 
 
 <img src="pics/flow-aliquot.svg"/>

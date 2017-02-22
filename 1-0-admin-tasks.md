@@ -51,6 +51,8 @@ button where you can find basic information about the current page.
 
 ## 2.1 Creating a new project
 
+To create a new project:
+
 1. After logging in, click the _My Projects_ tab at the top of the MISO
 dashboard. 
 1. Select the _Add Project_ button at the top right corner. 
@@ -84,9 +86,7 @@ as human.
 1. In the _Permissions_ section, select `your name` from the _Owner_ drop-down.
 1. Make sure that _Allow all internal users access?_ is selected.
 
-<table border="1"><tr><td>
-  <img alt="Create Project DI4S" src="pics/create-di4s.png"/>
-</td></tr></table>
+<img alt="Create Project DI4S" src="pics/create-di4s.png" id="figure"/>
 
 1. Click the _Save_ button at the upper right. 
 
