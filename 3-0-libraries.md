@@ -1,7 +1,7 @@
 ---
 layout: page
 category: walkthrough
-title: 1. Logging In
+title: Libraries tutorial
 
 ---
 
@@ -18,6 +18,11 @@ Table of Contents
    <li><a href="#trouble">Troubleshooting</a></li>
 </ol>
 </div>
+
+<div id="infobox">
+Download the worksheet for this section here: <a href="3-0-libraries-worksheet">Libraries Worksheet</a>.
+</div>
+
 
 <a name="login"/>
 

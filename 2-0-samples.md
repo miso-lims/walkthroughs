@@ -1,7 +1,7 @@
 ---
 layout: page
 category: walkthrough
-title: 1. Logging In
+title: Samples Tutorial
 
 ---
 
@@ -16,6 +16,11 @@ Table of Contents
     <li><a href="#trouble">Troubleshooting</a></li>
 </ol>
 </div>
+
+<div id="infobox">
+Download the worksheet for this section here: <a href="2-0-samples-worksheet">Samples Worksheet</a>.
+</div>
+
 
 <a name="login"/>
 
@@ -74,16 +79,18 @@ information in this form.
   1. Sample Type: select `GENOMIC` from the drop down.
   1. QC Status: select `Ready` from the drop down.
 1. In the _Identity_ section:
-  1. External names : 
+  1. External names : this is the name of the *individual*, whether internal or external. 
+     For example, an external identifier would be "Morgan" (internally we refer to her as plain ol' MORG_0001).
     1. Click _Find or Create Identity_.
     1. In the pop-up window, enter external name: project short name `_ID1` 
 (_e.g._, `PROJ_ID2`). This is the name given to the donor by the external 
-institute that the tissue came from.
+institute that the tissue came from. Record this in your worksheet. <img src="pics/blue_pencil.png">
     1. Click _Validate External Name(s)_.
     1. From the dropdown, select `First Receipt`.
     1. Click _Select_.
   1. Sex: Select any item from the dropdown.
-1. In the _Details_ section, select the _Sample Class_ `Reference Tissue`.
+1. In the _Details_ section, select the _Sample Class_ `Reference Tissue`. 
+   Record the class in your worksheet. <img src="pics/blue_pencil.png">
 1. In the _Tissue_ section, select or enter the following to create a reference Sample.
   1. Tissue Origin: `Ly (Lymphocyte)`
   1. Tissue Type: `R (Reference or non-tumour, non-diseased tissue sample)`
@@ -102,7 +109,9 @@ Name)\_(Individual ID)\_(Tissue Origin)\_(Tissue Type)\_(Passage number)\_(Times
 Received)\_(Tube Number). Passage number is only required for Xenografts and Cell
 lines. For more information about Sample nomenclature, see <a
 href="https://wiki.oicr.on.ca/display/GENOMICS/LIMS+Guidelines#LIMSGuidelines-SampleNomenclature"
-target="_new">Sample Nomenclature</a>.
+target="_new">Sample Nomenclature</a> on the GENOMICS wiki.
+
+Record the alias in your worksheet. <img src="pics/blue_pencil.png"> 
 
 ### 2.1.1 Enter a matrix tube barcode
 
@@ -111,9 +120,8 @@ After saving the Sample, you will be able to enter the barcode for the tube.
 1. On the _Edit Sample_ page for the sample you just created, click the arrow next to
 the blue _ID_ box at the top right hand corner.
 1. Select _Assign New Barcode_ from the menu.
-1. Use the hand-scanner or type a barcode into the pop-up. For this exercise,
-enter your Project Short Name and _R1. e.g. `PROJ_R1`. We will use this barcode
-later in the Box section.
+1. Use the hand-scanner or type a barcode into the pop-up.
+   Record the barcode in your worksheet. <img src="pics/blue_pencil.png">
 1. Click _Save_ on the pop-up.
 
 The page will re-load with the 2D barcode at the top right.
@@ -194,10 +202,10 @@ Origin_, _Tissue Type_, _Times Received_, _Tube Number_, and _Material_.
 Some fields cannot be filled down, so enter each of those separately.
 
 1. _Matrix Barcode_: you would normally use a hand-scanner or
-copy and paste a list of barcodes from a spreadsheet. In this case, enter the project
-short name followed by P and a number. The fill down functionality does not
-auto-increment, so these need to be typed. For example:`PROJ_P1`, `PROJ_P2`, `PROJ_P3`, `PROJ_P4`
-1. _External Name_:  replace `PROJ` with your own project name.
+copy and paste a list of barcodes from a spreadsheet. 
+For each sample, select a barcode and scan or type it in and record it in your worksheet. <img src="pics/blue_pencil.png">
+1. _External Name_:  Again, this is the name of the *individual*, whether internal or external.
+  Here's a suggested list. Replace `PROJ` with your own project name.
   - `PROJ_ID1`
   - `PROJ_ID2`
   - `PROJ_ID3`
@@ -208,26 +216,22 @@ Since these are all first receipt, you may fill them down after selecting it in 
 the identities already existed, you would have to select them individually.
 1. _Ext. Inst. Identifier_: add a number to each row starting from 2, i.e..
 `BioBankID 2`, `BioBankID 3`, `BioBankID 4`, `BioBankID 5`.
-1. _Description_:
-
-    Copying and pasting from Excel and Word is supported.
-
-    Go to
-[http://pastebin.com/uQXhafqJ](http://pastebin.com/uQXhafqJ) and copy the list of descriptions by selecting it
-with your mouse, right clicking and selecting _Copy_. Then click on the first
-cell in the top row of _Description_ and press Ctrl+V on your keyboard to
-paste.
+1. _Description_: Copying and pasting from Excel and Word is supported. 
+   Copy something from anywhere and press Ctrl+V on your keyboard to
+   paste.
 1. Click _Save_ at the upper right hand corner.
 
 If everything is correct, the _Alias_ will be auto-generated for each row and
-the samples will be saved. If you navigate back to your _Edit Project_ page,
+the samples will be saved. 
+Record the external identity, class, alias and barcode in your worksheet. <img src="pics/blue_pencil.png">
+If you navigate back to your _Edit Project_ page,
 there should be nine Samples:
 
 * 4 Identity Samples
 * 1 Reference Sample
 * 4 Primary Samples
 
-Notice also that because you used the same _External Name_, ending in `ID1`,
+Notice also that if you used the same _External Name_, ending in `ID1`,
 for two samples, reference and primary, they have the same Identity.
 
 ## 2.4 Receiving Stock DNA/RNA
@@ -273,6 +277,8 @@ Sample.
   1. Tube Number: `1`
 1. At the upper right hand side, click _Save_.
 
+When you click 'Save', the aliases will be filled in. 
+Record the external identity, class, alias and barcode in your worksheet. <img src="pics/blue_pencil.png">
 Stock aliases are created from their tissue alias by appending _\_D\_S#_ or _\_R\_S#_.
 For example, the first DNA stock that derives from a tissue `PROJ_0002_Ly_R_nn_1-1` has
 the name `PROJ_0002_Ly_R_nn_1-1_D_S1`.
@@ -294,6 +300,9 @@ hidden from the MISO interface.
 # 2.5 Receiving Libraries
 
 
+#TODO Content here!
+
+
 # 3. Propagating Samples
 
 Samples in MISO exist for each step in the tissue preparation: from identity,
@@ -307,6 +316,7 @@ to the stock.
 
 ## 3.1 Propagating to Tissue Processing
 
+#TODO
 
 ## 3.2 Bulk Propagate Samples
 
@@ -382,10 +392,13 @@ items". The Sample Alias will have been filled in with aliases that end in D\_1
 
 # 4. Adding Sample QCs
 
+#TODO
 
 <a name="boxes"/>
 
 # 5. Working with Boxes
+
+#TODO customize for samples
 
 {% include boxes.md %}
 
@@ -393,6 +406,8 @@ items". The Sample Alias will have been filled in with aliases that end in D\_1
 <a name="trouble"/>
 
 # Troubleshooting
+
+#TODO 
 
 1. How do you work with multiple samples derived from the same identity (i.e. DNA and RNA from one tissue slide, DNA from metastasis and control)
 1. How do I correct a sample that has the wrong information, e.g. wrong tissue type?

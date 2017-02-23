@@ -44,6 +44,12 @@ code {
     border: 1px solid black;
 }
 
+#infobox {
+    background-color:#EEEEFF;
+    margin: 20px;
+    border: 5px solid #EEEEFF;
+}
+
 #header {
     border-bottom: 1px solid #eee;
     margin-bottom: 20px;

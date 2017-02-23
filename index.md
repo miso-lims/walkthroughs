@@ -23,6 +23,8 @@ on the main MISO page.
 
 # Tutorials By Team
 
+These tutorials have associated worksheets, linked at the top of the tutorial. Sections to record in the worksheet are marked with a blue pencil. <img src="pics/blue_pencil.png">
+
 1. [Admin tasks](1-0-admin-tasks)
 1. [Samples](2-0-samples)
 1. [Libraries](3-0-libraries)

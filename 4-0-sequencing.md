@@ -1,7 +1,7 @@
 ---
 layout: page
 category: walkthrough
-title: 1. Logging In
+title: Sequencing tutorial
 
 ---
 
@@ -17,6 +17,11 @@ Table of Contents
    <li><a href="#service">Adding Service Records</a></li>
 </ol>
 </div>
+
+<div id="infobox">
+Download the worksheet for this section here: <a href="4-0-sequencing-worksheet">Sequencing Worksheet</a>.
+</div>
+
 
 <a name="login"/>
 
