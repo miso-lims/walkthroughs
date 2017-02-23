@@ -1,9 +1,36 @@
 ---
 layout: page
 category: walkthrough
-title: 2. Projects
+title: Administration tasks
+
 ---
 
+<div id="toc">
+Table of Contents
+<ol>
+    <li><a href="#login">Logging In</a></li>
+    <li><a href="#proj">Creating Projects</a></li>
+    <li><a href="#perms">Creating groups and adding users to them</a></li>
+    <li><a href="#inst">Adding new instruments</a></li>
+    <li><a href="#reports">Creating project and monthly reports</a></li>
+</ol>
+</div>
+
+<div id="infobox">
+Download the worksheet for this section here: <a href="1-0-admin-tasks-worksheet">Admin tasks Worksheet</a>. 
+</div>
+
+
+<a name="login"/>
+
+# 1. Logging in
+
+{% include logging_in.md %}
+
+
+<a name="proj"/>
+
+# 2. Creating projects
 
 A _Project_ contains information about a set of _Studies_ that may comprise many
 different _Samples_, _Experiments_ and _Runs_. Samples are attached to Projects as
@@ -28,6 +55,8 @@ button where you can find basic information about the current page.
 
 ## 2.1 Creating a new project
 
+To create a new project:
+
 1. After logging in, click the _My Projects_ tab at the top of the MISO
 dashboard. 
 1. Select the _Add Project_ button at the top right corner. 
@@ -37,10 +66,12 @@ The _Create Project_ page will display with a number of fields that you can fill
 1. Ignore Project ID and Name, since they are set by MISO once the Project is saved.
 1. Enter a unique _Alias_. The alias is a name, chosen by us, that is associated
 with a project. The aliases must be a unique and contain only letters or
-numbers. It cannot contain spaces or punctuation. e.g. `DoIt4Science` (be creative!)
+numbers. It cannot contain spaces or punctuation. e.g. `DoIt4Science` (be creative!).
+Record this alias in your worksheet. <img src="pics/blue_pencil.png">
 1. Enter a _Short Name_ for your project. The short name should be 2-5 letters in
 all CAPS and related to the project alias. This short name will be used to
-automatically generate sample and library names. e.g. short name: `DI4S`
+automatically generate sample and library names. e.g. short name: `DI4S`.
+Record the short name in your worksheet. <img src="pics/blue_pencil.png">
 1. In the _Description_ field, enter `MISO training workshop [Date]`
 1. Choose the amount of _Progress_ that your project has accomplished:
   * Unknown : I was told to enter this data and I does what they tells me.
@@ -61,9 +92,7 @@ as human.
 1. In the _Permissions_ section, select `your name` from the _Owner_ drop-down.
 1. Make sure that _Allow all internal users access?_ is selected.
 
-<table border="1"><tr><td>
-  <img alt="Create Project DI4S" src="pics/create-di4s.png"/>
-</td></tr></table>
+<img alt="Create Project DI4S" src="pics/create-di4s.png" id="figure"/>
 
 1. Click the _Save_ button at the upper right. 
 
@@ -147,4 +176,18 @@ project (e.g. Project Information form, REB).
 
 Now that your project has been created, continue to make your first samples.
 
-[Back](1-logging-in) [Home](index) [Next](3-incoming)
+
+
+<a name="perms"/>
+
+# 3. Creating groups and adding users to them
+
+<a name="inst"/>
+
+# 4. Adding new instruments
+
+<a name="reports"/>
+
+# 5. Creating project and monthly reports
+
+

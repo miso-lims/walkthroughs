@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width">
+
+        <title>MISO : Libraries tutorial</title>
+        <meta name="description" content="An open-source LIMS for NGS sequencing centres">
+
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/miso-docs-oicr/styles/main.css">
+    </head>
+    <body>
+<a href="https://github.com/TGAC/miso-lims"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
+
+
+        <div class="container">
+            <div class="row">
+                <div id="header" class="col-sm-12">
+                    <h2><a class="brand" href="/miso-docs-oicr/"><img src="/miso-docs-oicr/pics/MISO.png"/>MISO</a>
+    <small>An open-source LIMS for NGS sequencing centres</small>
+</h2>
+<span class="badge" style="position: relative;left:25px;bottom:20px;background:rgb(56,121,59);">OICR</span>
+
+                </div>
+            </div>
+
+            <div class="row">
+                
+                
+                    <div id="content" class="col-sm-12">
+                        <div class="page-header">
+    <h2>Libraries tutorial
+        
+    </h2>
+</div>
+
+<div id="toc">
+Table of Contents
+<ol>
+   <li><a href="#login">Logging In</a></li>
+   <li><a href="#props1">Propagating aliquots to libraries</a></li>
+   <li><a href="#qcs">Adding Library QCs</a></li>
+   <li><a href="#props2">Propagating libraries to dilutions</a></li>
+   <li><a href="#boxes">Working with Boxes</a></li>
+   <li><a href="#pools">Creating Pools</a></li>
+   <li><a href="#orders">Ordering sequencing</a></li>
+   <li><a href="#trouble">Troubleshooting</a></li>
+</ol>
+</div>
+
+<div id="infobox">
+Download the worksheet for this section here: <a href="3-0-libraries-worksheet">Libraries Worksheet</a>.
+</div>
+
+<p><a name="login"></a></p>
+
+<h1 id="logging-in">1. Logging in</h1>
+
+<p>Much like the old Geospiza LIMS, you need to log in to MISO LIMS in order to
+make changes to any LIMS entities. Logging in lets us record any changes you
+make and also allows us to set appropriate permissions.</p>
+
+<p>If you were able to log in to Geospiza LIMS, you already have the correct
+permissions and can proceed to logging in. If you are a new user, you will need
+to contact <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#104;&#101;&#108;&#112;&#100;&#101;&#115;&#107;&#064;&#111;&#105;&#099;&#114;&#046;&#111;&#110;&#046;&#099;&#097;">&#104;&#101;&#108;&#112;&#100;&#101;&#115;&#107;&#064;&#111;&#105;&#099;&#114;&#046;&#111;&#110;&#046;&#099;&#097;</a> so that they put you into the appropriate
+Active Directory group, <code class="highlighter-rouge">MISO_ROLE_INTERNAL</code>.</p>
+
+<hr />
+
+<p>Try to log in now:</p>
+
+<ol>
+  <li>Click on <a href="http://miso.gsi.oicr.on.ca" target="\_new">http://miso.gsi.oicr.on.ca</a>.</li>
+  <li>Enter your
+username (e.g. jdoe) and password and click the Login button.
+MISO uses the same username and password as your OICR email account.</li>
+</ol>
+
+<p>If all goes well, you should see the MISO Dashboard and see a message at the
+top right: &quot;Logged in as: <strong>jdoe</strong>&quot;.</p>
+
+<p><a name="props1"></a></p>
+
+<h1 id="propagating-aliquots-to-libraries">2. Propagating aliquots to libraries</h1>
+
+<p>A <em>library</em> is made from one sample for a single target <em>platform</em> and
+has a specific <em>design</em> associated with it that decides the <em>selection</em>
+and <em>strategies</em> used to make the library. A library may also have <em>indices</em>
+(primers) and QC information.</p>
+
+<p><img src="pics/flow-library.svg" /></p>
+
+<p>MISO stores two important pieces of information about how a library was generated:
+the <em>selection</em> (e.g., PCR, cDNA) and the <em>strategy</em> (e.g., WGS, WXS,
+amplicon). A <em>design</em> captures both a selection and strategy and the list
+of allowed designs is limited based on the sample type (<em>e.g.</em>, a cDNA sample
+can only have SM, WT, or MR library designs and these lock the selection and
+strategy type accordingly).</p>
+
+<h2 id="bulk-propagate-aliquots-into-libraries">2.1 Bulk propagate aliquots into libraries</h2>
+
+<p>In this section, you will use the aliquots you created already and create
+libraries.</p>
+
+<ol>
+  <li>On the <em>Samples</em> page, enter your project name into the search box.</li>
+  <li>Check the gDNA aliquot samples to turn into libraries. These samples are the
+ones that end in <code class="highlighter-rouge">_D_1</code>:
+    <ul>
+      <li><code class="highlighter-rouge">PROJ_0001_Br_P_nn_1-1_D_1</code></li>
+      <li><code class="highlighter-rouge">PROJ_0001_Ly_R_nn_1-1_D_1</code></li>
+      <li><code class="highlighter-rouge">PROJ_0002_Br_P_nn_1-1_D_1</code></li>
+      <li><code class="highlighter-rouge">PROJ_0002_Ly_R_nn_1-1_D_1</code></li>
+    </ul>
+  </li>
+  <li>From the <em>Bulk actions</em> drop down, select <em>Propagate (library) selected</em>.</li>
+  <li>A table will appear. Enter the library information:
+    <ul>
+      <li><em>Library Alias</em>: The sample alias up to the tissue type (R or P), library
+  type, insert size, library design (<em>e.g.</em>, <code class="highlighter-rouge">DI4S_0001_Br_P_PE_318_WG</code>).
+  For more information about Library nomenclature, see
+  <a href="https://wiki.oicr.on.ca/display/MCPHERSON/LIMS+Guidelines#LIMSGuidelines-LibraryNomenclature" target="_new">Library Nomenclature</a>.
+  &#9888; This alias does not automatically fill in yet, so it must be entered:</li>
+      <li><code class="highlighter-rouge">PROJ_0001_Br_P_PE_300_EX</code></li>
+      <li><code class="highlighter-rouge">PROJ_0001_Ly_R_PE_300_EX</code></li>
+      <li><code class="highlighter-rouge">PROJ_0002_Br_P_PE_300_EX</code></li>
+      <li><code class="highlighter-rouge">PROJ_0002_Ly_R_PE_300_EX</code></li>
+      <li><em>Description</em>: Library (Tissue type)(individual), e.g. <code class="highlighter-rouge">Library P1</code></li>
+      <li><em>Matrix Barcode</em>: As before, usually this would be scanned by the hand
+ scanner. In this tutorial, enter matrix barcodes in the form (Short
+name)_(Tissue type)(Individual)_Li, e.g. <code class="highlighter-rouge">PROJ_P1_Li</code>.</li>
+      <li><em>Platform</em>: Illumina</li>
+      <li><em>Type</em>: Paired End</li>
+      <li><em>Selection</em>: PCR</li>
+      <li><em>Strategy</em>: AMPLICON</li>
+      <li><em>Index Kit</em>: Nextera Dual Index</li>
+      <li><em>Index 1</em> and <em>Index 2</em>: Select any combination of indices you wish.
+ Select different indices for each library. Selecting the same index for two
+ different libraries will make you unable to pool those two libraries
+ together later.</li>
+      <li><em>Volume</em>: 100</li>
+      <li><em>Kit</em>: KAPA Hyper Prep</li>
+    </ul>
+  </li>
+  <li>Choose <em>Save</em>.</li>
+</ol>
+
+<p>Note that for dual-index libraries, only the first index needs to be
+specified. The second is optional.</p>
+
+<p><a name="qcs"></a></p>
+
+<h1 id="quality-control">3. Quality control</h1>
+<p>There are three way to indicate library quality in MISO: 1)
+Enter quantitative QC values under the <em>Library QC</em> section; 2) The overall pre-sequencing quality
+flag <em>QC passed</em>; and 3) The post-sequencing quality control <em>Low quality
+library</em>.</p>
+
+<h2 id="library-qc">3.1 Library QC</h2>
+<p>After measuring the insert size or concentration, this information can be
+entered into each library. There is no bulk entry for this information yet, it must
+be entered for each library.</p>
+
+<ol>
+  <li>From the <em>Libraries</em> page, find the <code class="highlighter-rouge">PROJ_0001_Br_P_PE_300_EX</code> library using
+the search box and click the sample link.</li>
+  <li>On the right side of the <em>QCs</em> heading, select <em>Options</em> → <em>Add Library QC</em>.</li>
+  <li>Enter the information in the row:</li>
+  <li><em>QC Date</em>: Select a date.</li>
+  <li><em>Method</em>: Choose a QC instrument.</li>
+  <li><em>Results</em>: Enter the measurement.</li>
+  <li><em>Insert Size</em>: Enter the measured insert size.</li>
+  <li>Click <em>Add</em>.</li>
+</ol>
+
+<h2 id="qc-passed">3.2 QC passed</h2>
+<p><em>QC Passed</em> is a simple pass/fail flag for a library to decide if it is good
+enough for sequencing. If not measured, this can be left as &quot;Unknown&quot;.</p>
+
+<ol>
+  <li>From the <em>Libraries</em> page, find the <code class="highlighter-rouge">PROJ_0001_Br_P_PE_300_EX</code> library using 
+the search box and click the sample link.</li>
+  <li>Change <em>QC passed</em> from <em>Unknown</em> to <em>True</em>.</li>
+  <li>Click <em>Save</em>.</li>
+</ol>
+
+<h2 id="low-quality-sequencing">3.3 Low Quality Sequencing</h2>
+<p>Libraries can be marked as having low sequencing quality, which will be shown
+after the <em>Run</em> exercises.</p>
+
+<p><a name="boxes"></a></p>
+
+<h1 id="boxes">4. Boxes</h1>
+<p>Libraries can also be placed in boxes.</p>
+
+<ol>
+  <li>From the <em>Boxes</em> page, find the project-specific box you created before,
+e.g. <code class="highlighter-rouge">PROJ_OUTBOX</code>.</li>
+  <li>Select an unused position and enter a library matrix barcode <em>PROJ</em>_P1_Li,
+e.g. <code class="highlighter-rouge">PROJ_P1_Li</code>.</li>
+  <li>Click <em>Lookup</em> and then <em>Update position</em>.</li>
+  <li>Repeat for the remaining libraries:
+    <ul>
+      <li><code class="highlighter-rouge">PROJ_R1_Li</code></li>
+      <li><code class="highlighter-rouge">PROJ_P2_Li</code></li>
+      <li><code class="highlighter-rouge">PROJ_R2_Li</code></li>
+    </ul>
+  </li>
+</ol>
+
+<p>Boxes hold samples, libraries, and pools. They do not track reagents or
+primers. Boxes are separated into <em>uses</em> for different kinds of storage
+(<em>e.g.</em>, tissue samples versus extracted DNA), but there is no check
+that items in a box match. Each box also has a <em>size</em> that includes the
+physical dimensions of the box as well as whether the box is compatible
+with the VisionMate scanner. Every <em>position</em> in the box is identified
+by a standard row letter + column number format (<em>e.g.</em>, C05).</p>
+
+<hr />
+
+<p>In this exercise, we are going to put the things in the box that you made in
+the previous exercises. Depending on whether you have been creating samples or
+libraries, some of these fields will be different.</p>
+
+<p>First, create a new box:</p>
+
+<ol>
+  <li>From the navigation panel, choose <em>Boxes</em> and then <em>Add Box</em>.</li>
+  <li>On the <em>Create Box</em> page, enter the information:</li>
+  <li>Alias: A short name for the box. Record this name in your worksheet. <img src="pics/blue_pencil.png" /></li>
+  <li><em>Description</em>: a human description of the box purpose  “gDNA ready for
+    library prep for <project>”.</project></li>
+  <li><em>Use</em>: The contents of the box. Select an appropriate use for your entities.</li>
+  <li><em>Size</em>: Select <code class="highlighter-rouge">8 x 12 scannable</code>.</li>
+  <li>Click <em>Save</em>.</li>
+</ol>
+
+<p>Upon clicking save, a graphic of the box will appear.</p>
+
+<p><img src="pics/5-empty-box.png" id="figure" /></p>
+
+<p>You can now fill the box with the tissues, stocks, aliquots, libraries, or
+pools you made in previous steps.</p>
+
+<ol>
+  <li>Click on a position in the displayed <em>Contents</em> grid.</li>
+  <li>Enter a matrix barcode into the box on the right and click <em>Lookup</em>.
+Normally a hand scanner would be used.</li>
+  <li>Click <em>Update Position</em>.
+    <ul>
+      <li>&#9888; The <em>Save</em> button at the top of the page does not work for
+ individual positions, only for <em>Box Information</em>.</li>
+    </ul>
+  </li>
+  <li>Repeat for as many samples/libraries/pools as you want.</li>
+</ol>
+
+<p>The table below the box diagram shows the position and information for the
+currently selected sample. If you would like to see all of the samples in the
+table, click the <em>List all Box Contents</em> button at the top right of the table.</p>
+
+<p>In the lab, it is possible to use <em>Options</em> &gt; <em>Scan Box</em> to use the plate
+scanner and update all positions at once, but that will not be covered in this
+tutorial.</p>
+
+<h2 id="using-boxes">Using Boxes</h2>
+
+<p>Boxes can be found either from the Sample or Library page or the <em>Boxes</em> page.</p>
+
+<ol>
+  <li>On the <em>Sample</em> page, search for one of your sample or library aliases and click on the alias to load the page.</li>
+  <li>The Box and position is listed under <em>Location</em> near the top of the <em>Sample
+Information</em> section. Click on the link to go to the Box (e.g. <code class="highlighter-rouge">PROJ_OUTBOX,
+A03</code>).</li>
+</ol>
+
+<p>Boxes can be used to store Samples, Libraries and Pools and one box can store all
+three types.</p>
+
+<h3 id="removing-and-discarding-tubes">Removing and discarding tubes</h3>
+
+<p>When you have a position selected, you can also either remove the tube from the
+box (setting its location to &quot;Unknown&quot;) or discard the tube, meaning it has been
+used up. Discarding the tube sets the volume of the sample to 0 and marks it as
+&quot;discarded&quot;,and removes it from its box.</p>
+
+<ol>
+  <li>Click on one of the positions in the box with a tube. The position, alias,
+and barcode will appear to the right or below the box graphic. 
+Right-click on the alias and pick &quot;Open in new tab&quot; to load the details page.</li>
+  <li>Go back to the Box page in the other tab. Make sure the tube is still selected in
+the Box and click <em>Discard Tube</em>. Click &quot;OK&quot; in the pop-up.</li>
+  <li>Go to the other tab with the Details page and click the browser refresh
+button. The <em>Location</em> field will show as blank, <em>Volume</em> will be set to 0.0,
+and the <em>Discarded</em> box will be ticked.</li>
+</ol>
+
+<h3 id="moving-samples-around-in-boxes">Moving samples around in boxes</h3>
+
+<p>An item can only exist in one box. If assigned to a new box, it will
+disappear from the original.</p>
+
+<ol>
+  <li>In the current tab, go to the <em>Boxes</em> page, find the <em>TUTORIAL</em> box. This box was previously
+created by the MISO developers for the tutorial.</li>
+  <li>Choose an empty position and enter one of your barcodes.</li>
+  <li>Click <em>Lookup</em> and <em>Update Position</em>.</li>
+  <li>Go back to your own Box and refresh the page. The sample was removed.</li>
+</ol>
+
+<p><a name="props2"></a></p>
+
+<h1 id="propagating-libraries-to-dilutions">5. Propagating libraries to dilutions</h1>
+
+<p>A library cannot be directly loaded into a <em>lane</em> in a <em>sequencing container</em>
+(flowcell/SMRTcell) in MISO. A dilution must be made and then many dilutions
+(or just one) can be mixed into a <em>pool</em> for sequencing.</p>
+
+<p><em>Orders</em> are requests for sequencing pools a certain number of times. They are
+used to keep track of sequencing progress for project management and book-keeping.</p>
+
+<h2 id="bulk-creating-library-dilutions">5.1 Bulk creating Library Dilutions</h2>
+<p>Dilutions can be made in bulk from libraries.</p>
+
+<p><img src="pics/flow-dilution.svg" /></p>
+
+<p>In this exercise, we will create 4 library dilutions from the libraries we
+made previously.</p>
+
+<ol>
+  <li>On the <em>Libraries</em> page, check all the libraries just created.
+    <ul>
+      <li><code class="highlighter-rouge">PROJ_0001_Br_P_PE_300_EX</code></li>
+      <li><code class="highlighter-rouge">PROJ_0001_Ly_R_PE_300_EX</code></li>
+      <li><code class="highlighter-rouge">PROJ_0002_Br_P_PE_300_EX</code></li>
+      <li><code class="highlighter-rouge">PROJ_0002_Ly_R_PE_300_EX</code></li>
+    </ul>
+  </li>
+  <li>From the <em>Bulk actions</em> drop down, select <em>Make dilutions from selected</em> and click <em>Go</em>.</li>
+  <li>Enter the concentrations of the dilutions (use any number you wish).</li>
+  <li>Click <em>Save</em>.</li>
+</ol>
+
+<p>Dilutions are a bit ephemeral in MISO: there is no list for all the dilutions.
+To see the dilutions for a library, view the library page. At present,
+Dilutions cannot be saved in Boxes.</p>
+
+<p><a name="pools"></a></p>
+
+<h1 id="creating-pools">6. Creating Pools</h1>
+
+<p>Pools are the last step for libraries before sequencing and represent the
+entity that is loaded onto the flowcell lane or SMRTcell. A &quot;pool&quot; can have one or more
+library dilutions in it. They are equivalent to &quot;worksets&quot; in Geospiza, but are
+required for every lane of sequencing.</p>
+
+<p><img src="pics/flow-pool.svg" /></p>
+
+<p>Here we will all all of the dilutions we added previously to make a single pool
+of 4.</p>
+
+<ol>
+  <li>On the <em>Pools</em> page, under the <em>Illumina</em> tab, select <em>Options</em> → <em>Add Pool</em>.</li>
+  <li>Enter the <em>Pool Information</em>:</li>
+  <li><em>Alias</em>: A short description of the pool contents. Enter the project name
+followed by <code class="highlighter-rouge">_POOL</code> (e.g. <code class="highlighter-rouge">PROJ_POOL</code>)</li>
+  <li><em>Description</em>: A longer free-text description of the pool.</li>
+  <li><em>Platform Type</em>: Leave <code class="highlighter-rouge">Illumina</code> selected.</li>
+  <li><em>Desired Concentration</em>: Enter a concentration.</li>
+  <li><em>Creation Date</em>: Select a date.</li>
+  <li><em>Ready to Run</em>: Whether or not the pool is ready for sequencing. This flag
+is used together with the Order to show the pool is ready to be sequenced.
+Tick this box.</li>
+  <li><em>Volume</em>: Enter a pool volume.</li>
+  <li>In the <em>Pooled Elements</em> section, use the search box to find the dilutions created previously.</li>
+  <li>For each dilution, press the <em>+</em> button to add the dilution to the pool.</li>
+  <li>Click <em>Save</em>.</li>
+</ol>
+
+<p><a name="orders"></a></p>
+
+<h1 id="ordering-sequencing">7. Ordering sequencing</h1>
+
+<p>Orders are created on the pool to be sequenced, and include the quantity of sequencing
+required (counted in lanes/SMRT cells), and the sequencing chemistry
+required (on Illumina).</p>
+
+<ol>
+  <li>On the Edit Pool page for the pool you just created, scroll down to the
+<em>Orders</em> heading.</li>
+  <li>Fill in the new order box:
+    <ul>
+      <li><em>Partitions</em>: the number of lanes/cells that should run for this pool. Enter
+<code class="highlighter-rouge">2</code></li>
+      <li><em>Platform</em>: Select the instrument for sequencing. <code class="highlighter-rouge">Illumina - Illumina HiSeq 2500</code></li>
+      <li><em>Sequencing Parameters</em>: Select <code class="highlighter-rouge">v4 2×126</code> chemistry.</li>
+    </ul>
+  </li>
+  <li>Click <em>Add</em>. The order will now be visible in the <em>Orders</em> section.</li>
+</ol>
+
+<h3 id="checking-for-unfulfilled-orders">7.1  Checking for unfulfilled orders</h3>
+<p>The <em>Orders</em> page is used to decide what needs to be sequenced.</p>
+
+<ol>
+  <li>From the navigation menu, choose <em>Orders</em>.</li>
+  <li>Verify that the pool you just created is listed in the <em>Unfulfilled</em> tab.</li>
+</ol>
+
+<p>Columns on this page will disappear if there are no entries (<em>e.g.</em>,
+the <em>Failed</em> column will not be shown if there are no failed runs). When enough
+lanes have been sequenced, the row will disappear from the <em>Unfulfilled</em> tab,
+but remain in the <em>All</em> tab. Lanes currently being sequenced will be marked as
+in-progress and remain on the <em>Unfulfilled</em> tab until the run transitions to
+<em>Completed</em>.</p>
+
+<p>A pool can have many orders. Orders for the same platform and chemistry are
+summed when displayed on this page.</p>
+
+<p><a name="trouble"></a></p>
+
+<h1 id="troubleshooting">Troubleshooting</h1>
+
+<ol>
+  <li>How do I correct an index on a library?</li>
+  <li>What if I assign a library to the wrong parent aliquot?</li>
+  <li>What if I forget to put a library dilution in a pool?</li>
+  <li>How do I change the targeted sequencing type on a library?</li>
+  <li>How can I add a new targeted sequencing type, kit, or anything else in drop-down menus?</li>
+  <li>How do I make bulk orders?</li>
+  <li>How are matrix tube barcodes assigned to tubes?</li>
+  <li>What is the importance of selecting a study (?) since it prevents the Sequencing stage from adding pools to the lane containers?</li>
+</ol>
+
+
+                    </div>
+                
+            </div>
+
+            
+
+            <div class="row">
+                <div id="footer" class="col-sm-12">
+                    Documentation for <a href="https://github.com/TGAC/miso-lims">MISO</a> developed by the <a href="http://labs.oicr.on.ca/genome-sequence-informatics/">Genome Sequence Informatics</a> group at <a href="http://oicr.on.ca">Ontario Institute for Cancer Research</a>
+
+
+                </div>
+            </div>
+        </div>
+
+        <script src="/miso-docs-oicr/styles/navigation.js"></script>
+
+    </body>
+</html>

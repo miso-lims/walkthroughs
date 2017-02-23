@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width">
+
+        <title>MISO : Original Walkthrough</title>
+        <meta name="description" content="An open-source LIMS for NGS sequencing centres">
+
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/miso-docs-oicr/styles/main.css">
+    </head>
+    <body>
+<a href="https://github.com/TGAC/miso-lims"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
+
+
+        <div class="container">
+            <div class="row">
+                <div id="header" class="col-sm-12">
+                    <h2><a class="brand" href="/miso-docs-oicr/"><img src="/miso-docs-oicr/pics/MISO.png"/>MISO</a>
+    <small>An open-source LIMS for NGS sequencing centres</small>
+</h2>
+<span class="badge" style="position: relative;left:25px;bottom:20px;background:rgb(56,121,59);">OICR</span>
+
+                </div>
+            </div>
+
+            <div class="row">
+                
+                
+                    <div id="content" class="col-sm-12">
+                        <div class="page-header">
+    <h2>Original Walkthrough
+        
+    </h2>
+</div>
+
+<div id="toc">
+Table of Contents
+<ol>
+   <li><a href="#1">Logging In</a></li>
+   <li><a href="#2">Projects</a></li>
+   <li><a href="#3">Incoming Samples</a></li>
+   <li><a href="#4">Propagating Samples</a></li>
+   <li><a href="#5">Using Boxes</a></li>
+   <li><a href="#6">Libraries</a></li>
+   <li><a href="#7">Dilutions, Pools, and Orders</a></li>
+   <li><a href="#8">Runs and Sequencing Containers</a></li>
+   <li><a href="#9">Sequencers</a></li>
+</ol>
+</div>
+
+<p><a name="1"></a></p>
+
+<h1 id="logging-in">1. Logging In</h1>
+
+<p>Much like the old Geospiza LIMS, you need to log in to MISO LIMS in order to
+make changes to any LIMS entities. Logging in lets us record any changes you
+make and also allows us to set appropriate permissions.</p>
+
+<p>If you were able to log in to Geospiza LIMS, you already have the correct
+permissions and can proceed to logging in. If you are a new user, you will need
+to contact <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#104;&#101;&#108;&#112;&#100;&#101;&#115;&#107;&#064;&#111;&#105;&#099;&#114;&#046;&#111;&#110;&#046;&#099;&#097;">&#104;&#101;&#108;&#112;&#100;&#101;&#115;&#107;&#064;&#111;&#105;&#099;&#114;&#046;&#111;&#110;&#046;&#099;&#097;</a> so that they put you into the appropriate
+Active Directory group, <code class="highlighter-rouge">MISO_ROLE_INTERNAL</code>.</p>
+
+<ol>
+  <li>Click on <a href="http://miso.gsi.oicr.on.ca" target="\_new">http://miso.gsi.oicr.on.ca</a>.</li>
+  <li>Enter your
+username (e.g. jdoe) and password and click the Login button.
+MISO uses the same username and password as your OICR email account.</li>
+</ol>
+
+<p>If all goes well, you should see the MISO Dashboard and see a message at the
+top right: &quot;Logged in as: <strong>jdoe</strong>&quot;.</p>
+
+<p><a name="22"></a><a href="#">top</a></p>
+
+<h1 id="projects">2. Projects</h1>
+
+<p>A <em>Project</em> contains information about a set of <em>Studies</em> that may comprise many
+different <em>Samples</em>, <em>Experiments</em> and <em>Runs</em>. Samples are attached to Projects as
+they are often processed into <em>Dilutions</em>, which are then <em>Pooled</em> and sequenced.
+Projects also have Overviews, which hold information about a Project proposal.
+In this part of this workshop, we will create projects, set permissions, and
+familiarize ourselves with the project overview page.</p>
+
+<p>Projects represent a sequencing effort toward a particular goal, usually led by
+a particular group or principal investigator. For example, the PCSI project is
+sequencing pancreatic tumors, references, cell lines and xenografts as part of
+the International Cancer Genome Consortium, and the FFPER project sequences
+samples from a bio-bank with a number of different preparations and treatments
+in order to determine the impact of each on data quality.</p>
+
+<p>In this workshop, you will make your own project where you will create samples,
+libraries and other entities.</p>
+
+<p>Most pages have a &quot;Quick Help&quot; tab at the top right under the Save
+button where you can find basic information about the current page.</p>
+
+<h2 id="creating-a-new-project">2.1 Creating a new project</h2>
+
+<ol>
+  <li>After logging in, click the <em>My Projects</em> tab at the top of the MISO
+dashboard.</li>
+  <li>Select the <em>Add Project</em> button at the top right corner.</li>
+</ol>
+
+<p>The <em>Create Project</em> page will display with a number of fields that you can fill out.</p>
+
+<ol>
+  <li>Ignore Project ID and Name, since they are set by MISO once the Project is saved.</li>
+  <li>Enter a unique <em>Alias</em>. The alias is a name, chosen by us, that is associated
+with a project. The aliases must be a unique and contain only letters or
+numbers. It cannot contain spaces or punctuation. e.g. <code class="highlighter-rouge">DoIt4Science</code> (be creative!)</li>
+  <li>Enter a <em>Short Name</em> for your project. The short name should be 2-5 letters in
+all CAPS and related to the project alias. This short name will be used to
+automatically generate sample and library names. e.g. short name: <code class="highlighter-rouge">DI4S</code></li>
+  <li>In the <em>Description</em> field, enter <code class="highlighter-rouge">MISO training workshop [Date]</code></li>
+  <li>Choose the amount of <em>Progress</em> that your project has accomplished:
+    <ul>
+      <li>Unknown : I was told to enter this data and I does what they tells me.</li>
+      <li>Active : We are receiving/have received samples and are actively working on
+ this project.</li>
+      <li>Inactive : Project is not yet done, but waiting for external collaborators,
+ REB approval, papers to be published, etc.</li>
+      <li>Cancelled : Project was scrapped because we did not get funding/samples/REB
+ approval.</li>
+      <li>Proposed : Project Initiation form has been received and is awaiting go-ahead
+ by Genomics leadership.</li>
+      <li>Pending : We are waiting for the project to start.</li>
+      <li>Approved : Project has been approved by Genomics leadership.</li>
+    </ul>
+  </li>
+  <li>Select the <em>Reference Genome</em> <code class="highlighter-rouge">Human hg19 random</code>. This should be the primary
+species that will be sequenced in the course of the project. Xenografts count
+as human.</li>
+  <li>In the <em>Permissions</em> section, select <code class="highlighter-rouge">your name</code> from the <em>Owner</em> drop-down.</li>
+  <li>Make sure that <em>Allow all internal users access?</em> is selected.</li>
+</ol>
+
+<table border="1"><tr><td>
+  <img alt="Create Project DI4S" src="pics/create-di4s.png" />
+</td></tr></table>
+
+<ol>
+  <li>Click the <em>Save</em> button at the upper right.</li>
+</ol>
+
+<p>Upon save, you will be taken to the <em>Edit Project</em> page, where you can see the
+project you just created. Notice that the Project ID and Name now have values.
+The Project ID will be an integer, and the Name will begin with PRO. These are
+specific to this project and used by MISO to track the project internally.</p>
+
+<h3 id="add-a-study">2.1.1 Add a Study</h3>
+
+<p>In order to make sure MISO is SRA-compliant, you must add a <em>Study</em> to your Project. Studies are legacy objects that are not really used in the current system, but need to be added anyway.</p>
+
+<ol>
+  <li>Click on the <em>Studies</em> section to expand the section.</li>
+  <li>Hover over the <em>Options</em> menu at the top right of the Studies table, and
+click <em>Add new Study</em>.</li>
+  <li>Much like creating a Project, enter:</li>
+  <li>Alias (letters and numbers only): this can have any name, but make sure
+it is recognizable as belonging to your Project.</li>
+  <li>Description: any free-text description</li>
+  <li>Select a Study Type from the drop-down menu : Unless you are certain of the
+sequencing type, select <code class="highlighter-rouge">Other</code>.</li>
+  <li>Click the <em>Save</em> button at the upper right.</li>
+</ol>
+
+<h2 id="my-projects-tab">2.2 My Projects tab</h2>
+
+<ol>
+  <li>Click again on the <em>My Projects</em> tab.</li>
+</ol>
+
+<p>You will see a list of all of the projects you have access to in MISO.</p>
+
+<ol>
+  <li>Find the project you just created in the list. You can sort any column in the
+table by clicking the column header. You can also search for your project by
+any of the displayed columns and the table will filter as you type.</li>
+  <li>Click on the link in the Project Name, Short Name or Alias (they all go to the
+same page).</li>
+</ol>
+
+<h2 id="edit-project-page">2.3 Edit Project page</h2>
+
+<p>The <em>Edit Project</em> page is used for viewing basic information about a project as
+well as all of the entities associated with that project, such as the samples,
+libraries, pools, and runs.</p>
+
+<p>Once you create different entities for your project like <em>Samples, Libraries,
+Library Dilutions, Pools</em> and <em>Runs</em>, you can view and search them on this page.
+Each section can be expanded by clicking on its name or the arrow next to it.
+The tables under each section can be sorted by the column header or searched
+using the field in the upper right. The <em>Options</em> menu above the search bar
+contains actions you can perform on the entities in the project.</p>
+
+<h3 id="add-a-project-overview">2.3.1 Add a project overview</h3>
+
+<p><em>Project Overviews</em> specify the origin of a specific set of samples
+that are part of the project. For example, if you are receiving some samples
+from a clinician and other samples from a hospital, you can enter the expected
+numbers of samples from each and indicate how many of them passed quality
+control and what stage of preparation has been completed. Project overviews are
+optional and only used to indicate overall progress on the <em>My Projects</em> page.</p>
+
+<ol>
+  <li>Click <em>Add Overview</em> at the right side under the Project Information.</li>
+  <li>In the pop-up, enter a principal investigator (<code class="highlighter-rouge">You Yourname</code>!)</li>
+  <li>In <em>No. proposed samples</em>, enter <code class="highlighter-rouge">5</code>.</li>
+  <li>Click the <em>Add Overview</em> button.</li>
+</ol>
+
+<p>The <em>Edit Project</em> page will reload and now there will be a table with your name
+under the <em>Project Information</em> section. You can fill in other values if you wish, or
+leave them blank for now. You can also select the checkboxes below the table to
+show that certain stages have been completed. Remember to press the <em>Save</em>
+button after you are finished editing.</p>
+
+<h3 id="add-project-files">2.3.2 Add Project Files</h3>
+
+<p>In the <em>Project Files</em> section, you can add attach any necessary documents to the
+project (e.g. Project Information form, REB).</p>
+
+<ol>
+  <li>Click the <em>Project Files</em> section on the Edit Project page.</li>
+  <li>Find a document or image that is appropriate for your study</li>
+</ol>
+
+<p>Now that your project has been created, continue to make your first samples.</p>
+
+<p><a name="3"></a><a href="#">top</a></p>
+
+<h1 id="incoming-samples">3. Incoming samples</h1>
+
+<p>A <em>Sample</em> contains information about the material upon which the sequencing
+experiments are to be based. Samples can be used in any number of sequencing
+<em>Experiments</em> in the form of a <em>Library</em> that is often processed further into
+pooled <em>Dilutions.</em></p>
+
+<p>Every received Sample must have an <em>Identity</em>. The Identity corresponds to the
+individual or organism with whom the sample originated, i.e. the donor. MISO
+requires you to assign an external name, which is usually an identifier from
+another institution like a Donor ID.</p>
+
+<p>When material is received for sequencing, it can be in many different forms,
+called <em>Sample Classes</em> in MISO. Here are the classes of Sample that can be
+received:</p>
+
+<ul>
+  <li>Cell line</li>
+  <li>Tumour tissue (Primary or Metastatic)</li>
+  <li>Reference tissue</li>
+  <li>Xenograft tissue</li>
+  <li>gDNA (untreated or whole genome amplified)</li>
+  <li>cDNA</li>
+  <li>whole RNA</li>
+</ul>
+
+<p>Depending on which Sample Class is chosen, more or less fields appear on the
+<em>Create Sample</em> page.</p>
+
+<p>In this workshop, we will create six Samples with four different Identities in
+the Project you created in the last session.</p>
+
+<p><img src="pics/flow-tissue-rx.svg" /></p>
+
+<h2 id="entering-a-single-sample">3.1 Entering a single Sample</h2>
+
+<p>There are two ways of entering Samples into MISO: Single and Bulk. We will start
+by entering a single Sample for reference tissue from the Identity <code class="highlighter-rouge">ID1</code>.</p>
+
+<ol>
+  <li>On the left hand menu under <em>Tracking</em>, click <em>Samples</em>.</li>
+  <li>Click the <em>Add Sample</em> button on the right hand side. There are two tabs
+across the top. Ensure that <em>Single</em> is selected.</li>
+  <li>In the <em>Sample Information</em> section, enter or select the following:</li>
+  <li>Project: Select the project you created in the last exercise.</li>
+  <li>Alias: leave blank. This will be auto-generated based on other
+information in this form.</li>
+  <li>Description: <code class="highlighter-rouge">Reference 1</code>.</li>
+  <li>Date of Receipt: Select a date</li>
+  <li>Scientific Name: <code class="highlighter-rouge">Homo sapiens</code>.</li>
+  <li>Sample Type: select <code class="highlighter-rouge">GENOMIC</code> from the drop down.</li>
+  <li>QC Status: select <code class="highlighter-rouge">Ready</code> from the drop down.</li>
+  <li>In the <em>Identity</em> section:</li>
+  <li>External names : 
+    1. Click <em>Find or Create Identity</em>.
+    1. In the pop-up window, enter external name: project short name <code class="highlighter-rouge">_ID1</code> 
+(<em>e.g.</em>, <code class="highlighter-rouge">PROJ_ID2</code>). This is the name given to the donor by the external 
+institute that the tissue came from.
+    1. Click <em>Validate External Name(s)</em>.
+    1. From the dropdown, select <code class="highlighter-rouge">First Receipt</code>.
+    1. Click <em>Select</em>.</li>
+  <li>Sex: Select any item from the dropdown.</li>
+  <li>In the <em>Details</em> section, select the <em>Sample Class</em> <code class="highlighter-rouge">Reference Tissue</code>.</li>
+  <li>In the <em>Tissue</em> section, select or enter the following to create a reference Sample.</li>
+  <li>Tissue Origin: <code class="highlighter-rouge">Ly (Lymphocyte)</code></li>
+  <li>Tissue Type: <code class="highlighter-rouge">R (Reference or non-tumour, non-diseased tissue sample)</code></li>
+  <li>Tissue Material: Select any from the drop-down.</li>
+  <li>External Institute Identifier: <code class="highlighter-rouge">BioBankID 1</code>. This is the Biobank ID or Tube ID.
+It may also be left blank.</li>
+  <li>Lab: Select <code class="highlighter-rouge">BioBank (University Health Network)</code> from the drop-down.</li>
+  <li>Times Received: <code class="highlighter-rouge">1</code></li>
+  <li>Tube Number: <code class="highlighter-rouge">1</code></li>
+  <li>At the upper right hand side, click <em>Save</em>.</li>
+</ol>
+
+<p>Upon saving, a number of fields will be filled in, including the Alias. The
+Tissue
+Alias will be in the form PROJ_0001_Ly_R_nn_1-1: (Project Short
+Name)_(Individual ID)_(Tissue Origin)_(Tissue Type)_(Passage number)_(Times
+Received)_(Tube Number). Passage number is only required for Xenografts and Cell
+lines. For more information about Sample nomenclature, see <a href="https://wiki.oicr.on.ca/display/MCPHERSON/LIMS+Guidelines#LIMSGuidelines-SampleNomenclature" target="_new">Sample Nomenclature</a>.</p>
+
+<h3 id="enter-a-matrix-tube-barcode">3.1.1 Enter a matrix tube barcode</h3>
+
+<p>After saving the Sample, you will be able to enter the barcode for the tube.</p>
+
+<ol>
+  <li>On the <em>Edit Sample</em> page for the sample you just created, click the arrow next to
+the blue <em>ID</em> box at the top right hand corner.</li>
+  <li>Select <em>Assign New Barcode</em> from the menu.</li>
+  <li>Use the hand-scanner or type a barcode into the pop-up. For this exercise,
+enter your Project Short Name and _R1. e.g. <code class="highlighter-rouge">PROJ_R1</code>. We will use this barcode
+later in the Box section.</li>
+  <li>Click <em>Save</em> on the pop-up.</li>
+</ol>
+
+<p>The page will re-load with the 2D barcode at the top right.</p>
+
+<h2 id="automatically-created-samples">3.2 Automatically created Samples</h2>
+
+<ol>
+  <li>Click the <em>My Projects</em> tab at the top and select your project from the list.</li>
+  <li>Open the <em>Samples</em> section on the <em>Edit Project</em> page to see your newly
+created samples.</li>
+</ol>
+
+<p>(You can also find your samples by searching on the <em>Samples</em> page or by
+using the widget on the MISO front page. At the moment, searching on the 
+<em>Samples</em> page is quite slow but you are welcome to try using that page to view
+your samples. The widget is fast but does not show enough information for the
+following exercises.)</p>
+
+<p>You only created a single Sample but at least two are in this list: the
+Reference tissue as well as the Identity. The Identity sample was automatically
+created because you provided an <em>External name</em> that had not been previously
+used in this Project, and has a name in the format (Project short
+name)_(Individual number), e.g. PROJ_0001. Other types of Samples are created automatically depending
+on how you propagate them through to libraries. Some of them will be addressed
+in the following tutorials.</p>
+
+<h2 id="bulk-create-samples">3.3 Bulk create Samples</h2>
+
+<p>Next, we will create four more Samples using the much faster bulk method. The
+four samples will be the Primary Tumour Tissue for individuals 1-5.</p>
+
+<ol>
+  <li>On the left hand menu under <em>Tracking</em>, click <em>Samples</em>.</li>
+  <li>Click the <em>Add Sample</em> button on the right hand side. There are two tabs
+across the top. Ensure that <em>Bulk</em> is selected.</li>
+  <li><em>Select project</em> dropdown: select your project.</li>
+  <li><em>Select class</em> dropdown: <code class="highlighter-rouge">Primary Tumor Tissue</code>.</li>
+  <li><em>Number of samples</em> text box: <code class="highlighter-rouge">4</code>.</li>
+  <li>Click <em>Make Table</em>.</li>
+</ol>
+
+<p>A table will appear with the requested number of samples in table format. We
+will fill in the first row and use the quick-fill option to fill in the rest of
+the table.</p>
+
+<p>Enter the following values into the <strong>first row only</strong>.</p>
+
+<ol>
+  <li>Sample Alias: leave blank. Again, this will be automatically generated from
+the rest of the table.</li>
+  <li>Select or enter the following fields:</li>
+  <li>Description: <code class="highlighter-rouge">Primary</code>.</li>
+  <li>Date of Receipt: select a date</li>
+  <li>Sample Type: select <code class="highlighter-rouge">GENOMIC</code> from the drop-down.</li>
+  <li>Sex: select any item from the drop-down.</li>
+  <li>Tissue Origin: select <code class="highlighter-rouge">Br (Breast)</code> from the drop-down.</li>
+  <li>Tissue Type: select <code class="highlighter-rouge">P (Primary Tumour)</code> from the drop-down.</li>
+  <li>Times Received: 1</li>
+  <li>Tube Number: 1</li>
+  <li>Lab: select <code class="highlighter-rouge">BioBank (University Health Network)</code> from the drop-down.</li>
+  <li>Ext. Inst. Identifier: <code class="highlighter-rouge">BioBankID</code></li>
+  <li>Material: Select any item from the drop down.</li>
+  <li>QC Status: Select <code class="highlighter-rouge">Ready</code> from the drop down.</li>
+</ol>
+
+<p>Now we will fill in the rest of the table. Like in Excel, you can fill down a
+column by double-clicking the square at the lower right hand side of a selected
+cell. You can also click and drag to only fill in a certain number of cells.</p>
+
+<ol>
+  <li>Click the <em>Sample Type</em> cell in the first row. A blue square will appear at
+the lower right hand side. Double click it to fill in the rest of the table with
+the word &quot;Primary&quot;.</li>
+  <li>Fill in the columns in the same way for: <em>Sex</em>, <em>Tissue
+Origin</em>, <em>Tissue Type</em>, <em>Times Received</em>, <em>Tube Number</em>, and <em>Material</em>.</li>
+</ol>
+
+<table border="1"><tr><td>
+<img src="pics/fill-down-1.png" />
+</td><td>
+<img src="pics/fill-down-2.png" />
+</td></tr></table>
+
+<p>Some fields cannot be filled down, so enter each of those separately.</p>
+
+<ol>
+  <li><em>Matrix Barcode</em>: you would normally use a hand-scanner or
+copy and paste a list of barcodes from a spreadsheet. In this case, enter the project
+short name followed by P and a number. The fill down functionality does not
+auto-increment, so these need to be typed. For example:<code class="highlighter-rouge">PROJ_P1</code>, <code class="highlighter-rouge">PROJ_P2</code>, <code class="highlighter-rouge">PROJ_P3</code>, <code class="highlighter-rouge">PROJ_P4</code></li>
+  <li><em>External Name</em>:  replace <code class="highlighter-rouge">PROJ</code> with your own project name.
+    <ul>
+      <li><code class="highlighter-rouge">PROJ_ID1</code></li>
+      <li><code class="highlighter-rouge">PROJ_ID2</code></li>
+      <li><code class="highlighter-rouge">PROJ_ID3</code></li>
+      <li><code class="highlighter-rouge">PROJ_ID4</code></li>
+    </ul>
+  </li>
+  <li>Click <em>Look up Identities</em> (above the top left corner of the table).</li>
+  <li>Select <code class="highlighter-rouge">First Receipt</code> from the dropdown menu in each cell of the <code class="highlighter-rouge">Identity Alias</code> column. 
+Since these are all first receipt, you may fill them down after selecting it in the top row. If 
+the identities already existed, you would have to select them individually.</li>
+  <li><em>Ext. Inst. Identifier</em>: add a number to each row starting from 2, i.e..
+<code class="highlighter-rouge">BioBankID 2</code>, <code class="highlighter-rouge">BioBankID 3</code>, <code class="highlighter-rouge">BioBankID 4</code>, <code class="highlighter-rouge">BioBankID 5</code>.</li>
+  <li>
+    <p><em>Description</em>:</p>
+
+    <p>Copying and pasting from Excel and Word is supported.</p>
+
+    <p>Go to
+<a href="http://pastebin.com/uQXhafqJ">http://pastebin.com/uQXhafqJ</a> and copy the list of descriptions by selecting it
+with your mouse, right clicking and selecting <em>Copy</em>. Then click on the first
+cell in the top row of <em>Description</em> and press Ctrl+V on your keyboard to
+paste.</p>
+  </li>
+  <li>Click <em>Save</em> at the upper right hand corner.</li>
+</ol>
+
+<p>If everything is correct, the <em>Alias</em> will be auto-generated for each row and
+the samples will be saved. If you navigate back to your <em>Edit Project</em> page,
+there should be nine Samples:</p>
+
+<ul>
+  <li>4 Identity Samples</li>
+  <li>1 Reference Sample</li>
+  <li>4 Primary Samples</li>
+</ul>
+
+<p>Notice also that because you used the same <em>External Name</em>, ending in <code class="highlighter-rouge">ID1</code>,
+for two samples, reference and primary, they have the same Identity.</p>
+
+<h2 id="receiving-stock-dnarna">3.4 Receiving Stock DNA/RNA</h2>
+
+<p>The process for receiving Stock DNA is very similar to receiving
+tissue. Every stock derives from a Tissue, which originated from an
+Identity. MISO will create the tissue for you when you enter a Stock. These
+samples are known as <em>ghost samples</em>, which do not exist at OICR but are in MISO
+for sample tracking purposes.</p>
+
+<p>In this section, we will &#39;receive&#39; a single Stock DNA tube from individual 2
+reference tumour.</p>
+
+<p><img src="pics/flow-stock-rx.svg" /></p>
+
+<ol>
+  <li>On the left hand menu under <em>Tracking</em>, click <em>Samples</em>.</li>
+  <li>Click the <em>Add Sample</em> button on the right hand side. There are two tabs
+across the top. Ensure that <em>Single</em> is selected.</li>
+  <li>In the <em>Sample Information</em> section, enter or select the following:</li>
+  <li>Project: Select the project you created in the last exercise.</li>
+  <li>Alias: leave blank. This will be auto-generated based on other
+information in this form.</li>
+  <li>Description: <code class="highlighter-rouge">Stock 1</code>.</li>
+  <li>Date of receipt: select a date.</li>
+  <li>Scientific Name: <code class="highlighter-rouge">Homo sapiens</code>.</li>
+  <li>Sample Type: select <code class="highlighter-rouge">GENOMIC</code> from the drop-down.</li>
+  <li>QC Status: select <code class="highlighter-rouge">Ready</code> from the drop-down.</li>
+  <li>Volume (µl): <code class="highlighter-rouge">300</code></li>
+  <li>In the <em>Identity</em> section, enter the</li>
+  <li>External name : project name <code class="highlighter-rouge">_ID2</code>.</li>
+  <li>Sex: Select any item from the dropdown.</li>
+  <li>In the <em>Details</em> section, select the <em>Sample Class</em>: <code class="highlighter-rouge">gDNA (stock)</code>.</li>
+  <li>In the <em>Tissue</em> section, select or enter the following to create a reference
+Sample.</li>
+  <li>Tissue Class: <code class="highlighter-rouge">Reference Tissue</code></li>
+  <li>Tissue Origin: <code class="highlighter-rouge">nn (Unknown)</code></li>
+  <li>Tissue Type: <code class="highlighter-rouge">R (Reference or non-tumour, non-diseased tissue sample)</code></li>
+  <li>Tissue Material: Select any from the drop-down.</li>
+  <li>External Institute Identifier: <code class="highlighter-rouge">BioBankID 6</code>.</li>
+  <li>Lab: <code class="highlighter-rouge">BioBank (University Health Network)</code>.</li>
+  <li>Times Received: <code class="highlighter-rouge">1</code></li>
+  <li>Tube Number: <code class="highlighter-rouge">1</code></li>
+  <li>At the upper right hand side, click <em>Save</em>.</li>
+</ol>
+
+<p>Stock aliases are created from their tissue alias by appending <em>_D_S#</em> or <em>_R_S#</em>.
+For example, the first DNA stock that derives from a tissue <code class="highlighter-rouge">PROJ_0002_Ly_R_nn_1-1</code> has
+the name <code class="highlighter-rouge">PROJ_0002_Ly_R_nn_1-1_D_S1</code>.</p>
+
+<p>After saving, go back to your project page and look at the samples that were
+automatically created. Although you received Stock DNA, it has created a Tissue
+for you as well.</p>
+
+<ol>
+  <li>Click on the Tissue  with the alias similar to <code class="highlighter-rouge">PROJ_0002_nn_R_nn_1-1</code>. It
+should have a <em>Sample Description</em> that says only &quot;Tissue&quot;.</li>
+</ol>
+
+<p>At the top, you will see a grey section with the warning: &quot;This entity does not
+exist except for sample tracking purposes!&quot;. This message means that the Tissue
+does not exist in a freezer at OICR. Eventually these <em>ghost samples</em> will be
+hidden from the MISO interface.</p>
+
+<p><a name="4"></a><a href="#">top</a></p>
+
+<h1 id="propagating-samples">4. Propagating Samples</h1>
+
+<p>Samples in MISO exist for each step in the tissue preparation: from identity,
+to tissue, optionally though tissue preparation, to stock, to aliquot. At each
+step, the possible options are limited based on the established workflows.
+Group IDs may be assigned at any time and are copied when propagating. Different
+QC information is available at each step. For instance, STR status is attached
+to the stock.</p>
+
+<p><img src="pics/flow-stock.svg" /></p>
+
+<p>For the tissue samples created previously (by bulk and single entry), we will create stocks for library preparation.</p>
+
+<h2 id="bulk-propagate-samples">4.1 Bulk Propagate Samples</h2>
+
+<p>For three of the tissues you created in the previous section, create a stock.</p>
+
+<ol>
+  <li>On the <em>Samples</em> page, enter your project name in the search box.</li>
+  <li>Check the boxes for the tissue samples (not the received stock). They will
+have names that end in two hyphenated numbers, like <code class="highlighter-rouge">PROJ_0001_Ly_R_nn_1-1</code>:
+    <ul>
+      <li><code class="highlighter-rouge">PROJ_0001_Br_P_nn_1-1</code></li>
+      <li><code class="highlighter-rouge">PROJ_0001_Ly_R_nn_1-1</code></li>
+      <li><code class="highlighter-rouge">PROJ_0002_Br_P_nn_1-1</code></li>
+    </ul>
+  </li>
+  <li>From the <em>Bulk actions</em> dropdown at the bottom, select <em>Propagate (sample) selected</em>.</li>
+  <li>A new dropdown will appear. Select <em>gDNA (stock)</em> and click <em>Go</em>.</li>
+  <li>Fill out the table:
+    <ul>
+      <li><em>Description</em>: Free text description. In this case, use &quot;Stock (Tissue
+  Type)(Individual)&quot;. (e.g. <code class="highlighter-rouge">Stock P2</code> for <code class="highlighter-rouge">PROJ_0002_Br_P_nn_1-1</code>)</li>
+      <li><em>Matrix Barcode</em>: (Project short name)_(Tissue Type)(Individual)_St,</li>
+      <li><code class="highlighter-rouge">PROJ_P1_St</code></li>
+      <li><code class="highlighter-rouge">PROJ_R1_St</code></li>
+      <li><code class="highlighter-rouge">PROJ_P2_St</code></li>
+      <li><em>Vol.</em>: <code class="highlighter-rouge">300</code></li>
+    </ul>
+  </li>
+  <li>Click <em>Save</em>.</li>
+</ol>
+
+<p>Upon successful save, a green status will show at the top that says &quot;Saved 3
+items&quot;. The Sample Alias will have been filled in with aliases that end in D_S1
+(for each first DNA stock of that tissue).</p>
+
+<h2 id="bulk-editing">4.2 Bulk Editing</h2>
+<p>Samples can be edited in bulk. Assume that we have done some quality control
+and wish to update the QC status of the samples.</p>
+
+<p>In this case we will update several fields of 4 stock samples. We will use the
+stocks we entered in the previous step as well as the reference stock entered in
+part 3 of this tutorial.</p>
+
+<ol>
+  <li>On the <em>Samples</em> page, enter your project name in the search box.</li>
+  <li>Check the boxes for the stock samples (propagated and received). These are
+the samples that end in D_S1:
+    <ul>
+      <li><code class="highlighter-rouge">PROJ_0001_Br_P_nn_1-1_D_S1</code></li>
+      <li><code class="highlighter-rouge">PROJ_0001_Ly_R_nn_1-1_D_S1</code></li>
+      <li><code class="highlighter-rouge">PROJ_0002_Br_P_nn_1-1_D_S1</code></li>
+      <li><code class="highlighter-rouge">PROJ_0002_Ly_R_nn_1-1_D_S1</code></li>
+    </ul>
+  </li>
+  <li>From the <em>Bulk actions</em> dropdown at the bottom, select <em>Update selected</em> and click <em>Go</em>.</li>
+  <li>Change the <em>QC Status</em> column to <code class="highlighter-rouge">Ready</code> for all rows.</li>
+  <li>Enter the missing <em>Matrix Barcode</em>, e.g. <code class="highlighter-rouge">PROJ_R2_St</code></li>
+  <li>Click <em>Save</em>.</li>
+</ol>
+
+<p>Upon successful save, a green status will show at the top that says &quot;Saved 4
+items.&quot;.</p>
+
+<h2 id="creating-aliquots">4.3 Creating Aliquots</h2>
+<p>Propagate again from the 4 <em>gDNA (stock)</em> samples to <em>gDNA (aliquot)</em>.</p>
+
+<ol>
+  <li>On the <em>Samples</em> page, enter your project name in the search box.</li>
+  <li>Check the boxes for the stock samples. They will have names that end in
+<code class="highlighter-rouge">D_S1</code>:
+    <ul>
+      <li><code class="highlighter-rouge">PROJ_0001_Br_P_nn_1-1_D_S1</code></li>
+      <li><code class="highlighter-rouge">PROJ_0001_Ly_R_nn_1-1_D_S1</code></li>
+      <li><code class="highlighter-rouge">PROJ_0002_Br_P_nn_1-1_D_S1</code></li>
+      <li><code class="highlighter-rouge">PROJ_0002_Ly_R_nn_1-1_D_S1</code></li>
+    </ul>
+  </li>
+  <li>From the <em>Bulk actions</em> dropdown at the bottom, select <em>Propagate (sample) selected</em>.</li>
+  <li>A new dropdown will appear. Select <em>gDNA (aliquot)</em> and click <em>Go</em>.</li>
+  <li>Fill out the table:
+    <ul>
+      <li><em>Sample Alias</em>: Skip this field. It will be automatically filled in upon
+  save.</li>
+      <li><em>Description</em>: Free text description. In this case, use &quot;Aliquot (Tissue
+  Type)(Individual)&quot;. (e.g. <code class="highlighter-rouge">Aliquot P2</code> for <code class="highlighter-rouge">PROJ_0002_Br_P_nn_1-1_D_S1</code>)</li>
+      <li><em>Matrix Barcode</em>: (Project short name)_(Tissue Type)(Individual)_Al</li>
+      <li><code class="highlighter-rouge">PROJ_P1_Al</code></li>
+      <li><code class="highlighter-rouge">PROJ_R1_Al</code></li>
+      <li><code class="highlighter-rouge">PROJ_P2_Al</code></li>
+      <li><code class="highlighter-rouge">PROJ_R2_Al</code></li>
+      <li><em>Purpose</em>: Select <code class="highlighter-rouge">Library</code></li>
+    </ul>
+  </li>
+  <li>Click <em>Save</em>.</li>
+</ol>
+
+<p>Upon successful save, a green status will show at the top that says &quot;Saved 4
+items&quot;. The Sample Alias will have been filled in with aliases that end in D_1
+(for each first aliquot of that stock).</p>
+
+<p><img src="pics/flow-aliquot.svg" /></p>
+
+<p><a name="5"></a><a href="#">top</a></p>
+
+<h1 id="using-boxes">5. Using Boxes</h1>
+
+<p>Boxes hold samples, libraries, and pools. They do not track reagents or
+primers. Boxes are separated into <em>uses</em> for different kinds of storage
+(<em>e.g.</em>, tissue samples versus extracted DNA), but there is no check
+that items in a box match. Each box also has a <em>size</em> that includes the
+physical dimensions of the box as well as whether the box is compatible
+with the VisionMate scanner. Every <em>position</em> in the box is identified
+by a standard row letter + column number format (<em>e.g.</em>, C05).</p>
+
+<p>The goal is to create a box for the samples created in the previous step.</p>
+
+<ol>
+  <li>From the navigation panel, choose <em>Boxes</em> and then <em>Add Box</em>.</li>
+  <li>On the <em>Create Box</em> page, enter the information:</li>
+  <li>Alias: A short name for the box. Enter your short name followed by
+<code class="highlighter-rouge">_OUTBOX</code> (e.g. PROJ_OUTBOX)</li>
+  <li><em>Description</em>: a human description of the box purpose  “gDNA ready for
+    library prep for <project>”.</project></li>
+  <li><em>Use</em>: The contents of the box. Select <code class="highlighter-rouge">DNA</code>.</li>
+  <li><em>Size</em>: Select <code class="highlighter-rouge">8 x 12 scannable</code>.</li>
+  <li>Click <em>Save</em>.</li>
+</ol>
+
+<p>Upon clicking save, a graphic of the box will appear. You can now load your
+samples into the box. All types of samples can be entered in the box, including
+the tissues, stocks and aliquots you made in the previous steps.</p>
+
+<ol>
+  <li>Click on a position in the displayed <em>Contents</em> grid.</li>
+  <li>Enter a matrix barcode into the box on the right and click <em>Lookup</em>.
+Normally a hand scanner would be used. For this exercise, use this handy
+reference list:
+    <ul>
+      <li><code class="highlighter-rouge">PROJ_P1_St</code></li>
+      <li><code class="highlighter-rouge">PROJ_P2_St</code></li>
+      <li><code class="highlighter-rouge">PROJ_R1_St</code></li>
+      <li><code class="highlighter-rouge">PROJ_R2_St</code></li>
+      <li><code class="highlighter-rouge">PROJ_P1_Al</code></li>
+      <li><code class="highlighter-rouge">PROJ_P2_Al</code></li>
+      <li><code class="highlighter-rouge">PROJ_R1_Al</code></li>
+      <li><code class="highlighter-rouge">PROJ_R2_Al</code></li>
+    </ul>
+  </li>
+  <li>Click <em>Update Position</em>.
+    <ul>
+      <li>&#9888; The <em>Save</em> button does not work for individual positions, only for
+ <em>Box Information</em>.</li>
+    </ul>
+  </li>
+  <li>Repeat for all the samples listed above.</li>
+</ol>
+
+<p>The table below the box diagram shows the position and information for the
+currently selected sample. If you would like to see all of the samples in the
+table, click the <em>List all Box Contents</em> button at the top right of the table.</p>
+
+<p>In the lab, it is possible to use <em>Options</em> &gt; <em>Scan Box</em> to use the plate
+scanner and update all positions at once, but that will not be covered in this
+tutorial.</p>
+
+<h2 id="using-boxes-1">Using Boxes</h2>
+
+<p>Boxes can be found either from the Sample or Library page or the <em>Boxes</em> page.</p>
+
+<ol>
+  <li>On the <em>Sample</em> page, enter your project name.</li>
+  <li>Click on the alias for individual 2 primary stock, i.e.
+<code class="highlighter-rouge">PROJ_0002_Br_P_nn_1-1_D_S1</code>.</li>
+  <li>The Box and position is listed under <em>Location</em> near the top of the <em>Sample
+Information</em> section. Click on the link to go to the Box (e.g. <code class="highlighter-rouge">PROJ_OUTBOX,
+A03</code>).</li>
+</ol>
+
+<p>Boxes can be used to store Samples, Libraries and Pools and one box can store all
+three types.</p>
+
+<h3 id="removing-and-trashing-tubes">Removing and trashing tubes</h3>
+
+<p>When you have a position selected, you can also either remove the tube from the
+box (setting its location to &quot;Unknown&quot;) or trash the tube, meaning it has been
+used up. Trashing the tube sets the volume of the sample to 0 and marks it as
+&quot;emptied&quot;.</p>
+
+<ol>
+  <li>From the list below the box, find the location of the
+<code class="highlighter-rouge">PROJ_0002_Br_P_nn_1-1_D_S1</code> sample.</li>
+  <li>Open the sample page in a new tab by clicking on the Sample link (Right click
+on the link and select &quot;Open in new tab&quot;).</li>
+  <li>Go back to the Box page if necessary. Select the sample you just opened in
+the Box and click <em>Trash Tube</em>. Click &quot;OK&quot; in the pop-up.</li>
+  <li>Go to the other tab with the <em>Edit Sample</em> page and click the browser refresh
+button. The <em>Location</em> field will show as blank, <em>Volume</em> will be set to 0.0,
+and the <em>Emptied</em> box will be ticked.</li>
+</ol>
+
+<h3 id="moving-samples-around-in-boxes">Moving samples around in boxes</h3>
+
+<p>An item can only exist in one box. If assigned to a new box, it will
+disappear from the original.</p>
+
+<ol>
+  <li>In the current tab, go to the <em>Boxes</em> page, find the <em>TUTORIAL</em> box. This box was previously
+created by the MISO developers for the tutorial..</li>
+  <li>Choose an empty position and enter your barcode ending in <code class="highlighter-rouge">PROJ_P1_Al</code> (e.g., <code class="highlighter-rouge">PROJ_P1_Al</code>).</li>
+  <li>Click <em>Lookup</em> and <em>Update Position</em>.</li>
+  <li>Go back to the first tab with your <code class="highlighter-rouge">PROJ_OUTBOX</code> Box and refresh the
+browser, or return to the <em>Boxes</em> page and find your project outbox. The
+sample was removed from the outbox.</li>
+</ol>
+
+<p><a name="6"></a><a href="#">top</a></p>
+
+<h1 id="libraries">6. Libraries</h1>
+
+<p>A <em>library</em> is made from one sample for a single target <em>platform</em> and
+has a specific <em>design</em> associated with it that decides the <em>selection</em>
+and <em>strategies</em> used to make the library. A library may also have <em>indices</em>
+(primers) and QC information.</p>
+
+<p><img src="pics/flow-library.svg" /></p>
+
+<p>MISO stores two important pieces of information about how a library was generated:
+the <em>selection</em> (e.g., PCR, cDNA) and the <em>strategy</em> (e.g., WGS, WXS,
+amplicon). A <em>design</em> captures both a selection and strategy and the list
+of allowed designs is limited based on the sample type (<em>e.g.</em>, a cDNA sample
+can only have SM, WT, or MR library designs and these lock the selection and
+strategy type accordingly).</p>
+
+<h2 id="bulk-propagate-aliquots-into-libraries">6.1 Bulk propagate aliquots into libraries</h2>
+
+<p>In this section, you will use the aliquots you created already and create
+libraries.</p>
+
+<ol>
+  <li>On the <em>Samples</em> page, enter your project name into the search box.</li>
+  <li>Check the gDNA aliquot samples to turn into libraries. These samples are the
+ones that end in <code class="highlighter-rouge">_D_1</code>:
+    <ul>
+      <li><code class="highlighter-rouge">PROJ_0001_Br_P_nn_1-1_D_1</code></li>
+      <li><code class="highlighter-rouge">PROJ_0001_Ly_R_nn_1-1_D_1</code></li>
+      <li><code class="highlighter-rouge">PROJ_0002_Br_P_nn_1-1_D_1</code></li>
+      <li><code class="highlighter-rouge">PROJ_0002_Ly_R_nn_1-1_D_1</code></li>
+    </ul>
+  </li>
+  <li>From the <em>Bulk actions</em> drop down, select <em>Propagate (library) selected</em>.</li>
+  <li>A table will appear. Enter the library information:
+    <ul>
+      <li><em>Library Alias</em>: The sample alias up to the tissue type (R or P), library
+  type, insert size, library design (<em>e.g.</em>, <code class="highlighter-rouge">DI4S_0001_Br_P_PE_318_WG</code>).
+  For more information about Library nomenclature, see
+  <a href="https://wiki.oicr.on.ca/display/MCPHERSON/LIMS+Guidelines#LIMSGuidelines-LibraryNomenclature" target="_new">Library Nomenclature</a>.
+  &#9888; This alias does not automatically fill in yet, so it must be entered:</li>
+      <li><code class="highlighter-rouge">PROJ_0001_Br_P_PE_300_EX</code></li>
+      <li><code class="highlighter-rouge">PROJ_0001_Ly_R_PE_300_EX</code></li>
+      <li><code class="highlighter-rouge">PROJ_0002_Br_P_PE_300_EX</code></li>
+      <li><code class="highlighter-rouge">PROJ_0002_Ly_R_PE_300_EX</code></li>
+      <li><em>Description</em>: Library (Tissue type)(individual), e.g. <code class="highlighter-rouge">Library P1</code></li>
+      <li><em>Matrix Barcode</em>: As before, usually this would be scanned by the hand
+ scanner. In this tutorial, enter matrix barcodes in the form (Short
+name)_(Tissue type)(Individual)_Li, e.g. <code class="highlighter-rouge">PROJ_P1_Li</code>.</li>
+      <li><em>Platform</em>: Illumina</li>
+      <li><em>Type</em>: Paired End</li>
+      <li><em>Selection</em>: PCR</li>
+      <li><em>Strategy</em>: AMPLICON</li>
+      <li><em>Index Kit</em>: Nextera Dual Index</li>
+      <li><em>Index 1</em> and <em>Index 2</em>: Select any combination of indices you wish.
+ Select different indices for each library. Selecting the same index for two
+ different libraries will make you unable to pool those two libraries
+ together later.</li>
+      <li><em>Volume</em>: 100</li>
+      <li><em>Kit</em>: KAPA Hyper Prep</li>
+    </ul>
+  </li>
+  <li>Choose <em>Save</em>.</li>
+</ol>
+
+<p>Note that for dual-index libraries, only the first index needs to be
+specified. The second is optional.</p>
+
+<h2 id="quality-control">6.1 Quality control</h2>
+<p>There are three way to indicate library quality in MISO: 1)
+Enter quantitative QC values under the <em>Library QC</em> section; 2) The overall pre-sequencing quality
+flag <em>QC passed</em>; and 3) The post-sequencing quality control <em>Low quality
+library</em>.</p>
+
+<h3 id="library-qc">6.2.1 Library QC</h3>
+<p>After measuring the insert size or concentration, this information can be
+entered into each library. There is no bulk entry for this information yet, it must
+be entered for each library.</p>
+
+<ol>
+  <li>From the <em>Libraries</em> page, find the <code class="highlighter-rouge">PROJ_0001_Br_P_PE_300_EX</code> library using
+the search box and click the sample link.</li>
+  <li>On the right side of the <em>QCs</em> heading, select <em>Options</em> → <em>Add Library QC</em>.</li>
+  <li>Enter the information in the row:</li>
+  <li><em>QC Date</em>: Select a date.</li>
+  <li><em>Method</em>: Choose a QC instrument.</li>
+  <li><em>Results</em>: Enter the measurement.</li>
+  <li><em>Insert Size</em>: Enter the measured insert size.</li>
+  <li>Click <em>Add</em>.</li>
+</ol>
+
+<h3 id="qc-passed">6.2.2 QC passed</h3>
+<p><em>QC Passed</em> is a simple pass/fail flag for a library to decide if it is good
+enough for sequencing. If not measured, this can be left as &quot;Unknown&quot;.</p>
+
+<ol>
+  <li>From the <em>Libraries</em> page, find the <code class="highlighter-rouge">PROJ_0001_Br_P_PE_300_EX</code> library using 
+the search box and click the sample link.</li>
+  <li>Change <em>QC passed</em> from <em>Unknown</em> to <em>True</em>.</li>
+  <li>Click <em>Save</em>.</li>
+</ol>
+
+<h3 id="low-quality-sequencing">6.2.3 Low Quality Sequencing</h3>
+<p>Libraries can be marked as having low sequencing quality, which will be shown
+after the <em>Run</em> exercises.</p>
+
+<h2 id="boxes">6.3 Boxes</h2>
+<p>Libraries can also be placed in boxes.</p>
+
+<ol>
+  <li>From the <em>Boxes</em> page, find the project-specific box you created before,
+e.g. <code class="highlighter-rouge">PROJ_OUTBOX</code>.</li>
+  <li>Select an unused position and enter a library matrix barcode <em>PROJ</em>_P1_Li,
+e.g. <code class="highlighter-rouge">PROJ_P1_Li</code>.</li>
+  <li>Click <em>Lookup</em> and then <em>Update position</em>.</li>
+  <li>Repeat for the remaining libraries:
+    <ul>
+      <li><code class="highlighter-rouge">PROJ_R1_Li</code></li>
+      <li><code class="highlighter-rouge">PROJ_P2_Li</code></li>
+      <li><code class="highlighter-rouge">PROJ_R2_Li</code></li>
+    </ul>
+  </li>
+</ol>
+
+<p><a name="7"></a><a href="#">top</a></p>
+
+<h1 id="dilutions-pools-and-orders">7. Dilutions, Pools, and Orders</h1>
+
+<p>A library cannot be directly loaded into a <em>lane</em> in a <em>sequencing container</em>
+(flowcell/SMRTcell) in MISO. A dilution must be made and then many dilutions
+(or just one) can be mixed into a <em>pool</em> for sequencing.</p>
+
+<p><em>Orders</em> are requests for sequencing pools a certain number of times. They are
+used to keep track of sequencing progress for project management and book-keeping.</p>
+
+<h2 id="bulk-creating-library-dilutions">7.1 Bulk creating Library Dilutions</h2>
+<p>Dilutions can be made in bulk from libraries.</p>
+
+<p><img src="pics/flow-dilution.svg" /></p>
+
+<p>In this exercise, we will create 4 library dilutions from the libraries we
+made previously.</p>
+
+<ol>
+  <li>On the <em>Libraries</em> page, check all the libraries just created.
+    <ul>
+      <li><code class="highlighter-rouge">PROJ_0001_Br_P_PE_300_EX</code></li>
+      <li><code class="highlighter-rouge">PROJ_0001_Ly_R_PE_300_EX</code></li>
+      <li><code class="highlighter-rouge">PROJ_0002_Br_P_PE_300_EX</code></li>
+      <li><code class="highlighter-rouge">PROJ_0002_Ly_R_PE_300_EX</code></li>
+    </ul>
+  </li>
+  <li>From the <em>Bulk actions</em> drop down, select <em>Make dilutions from selected</em> and click <em>Go</em>.</li>
+  <li>Enter the concentrations of the dilutions (use any number you wish).</li>
+  <li>Click <em>Save</em>.</li>
+</ol>
+
+<p>Dilutions are a bit ephemeral in MISO: there is no list for all the dilutions.
+To see the dilutions for a library, view the library page. At present,
+Dilutions cannot be saved in Boxes.</p>
+
+<h2 id="pools">7.2 Pools</h2>
+<p>Pools are the last step for libraries before sequencing and represent the
+entity that is loaded onto the flowcell lane or SMRTcell. A &quot;pool&quot; can have one or more
+library dilutions in it. They are equivalent to &quot;worksets&quot; in Geospiza, but are
+required for every lane of sequencing.</p>
+
+<p><img src="pics/flow-pool.svg" /></p>
+
+<p>Here we will all all of the dilutions we added previously to make a single pool
+of 4.</p>
+
+<ol>
+  <li>On the <em>Pools</em> page, under the <em>Illumina</em> tab, select <em>Options</em> → <em>Add Pool</em>.</li>
+  <li>Enter the <em>Pool Information</em>:</li>
+  <li><em>Alias</em>: A short description of the pool contents. Enter the project name
+followed by <code class="highlighter-rouge">_POOL</code> (e.g. <code class="highlighter-rouge">PROJ_POOL</code>)</li>
+  <li><em>Description</em>: A longer free-text description of the pool.</li>
+  <li><em>Platform Type</em>: Leave <code class="highlighter-rouge">Illumina</code> selected.</li>
+  <li><em>Desired Concentration</em>: Enter a concentration.</li>
+  <li><em>Creation Date</em>: Select a date.</li>
+  <li><em>Ready to Run</em>: Whether or not the pool is ready for sequencing. This flag
+is used together with the Order to show the pool is ready to be sequenced.
+Tick this box.</li>
+  <li><em>Volume</em>: Enter a pool volume.</li>
+  <li>In the <em>Pooled Elements</em> section, use the search box to find the dilutions created previously.</li>
+  <li>For each dilution, press the <em>+</em> button to add the dilution to the pool.</li>
+  <li>Click <em>Save</em>.</li>
+</ol>
+
+<h2 id="creating-an-order">7.3 Creating an Order</h2>
+<p>Orders are created on the pool to be sequenced, and include the quantity of sequencing
+required (counted in lanes/SMRT cells), and the sequencing chemistry
+required (on Illumina).</p>
+
+<ol>
+  <li>On the Edit Pool page for the pool you just created, scroll down to the
+<em>Orders</em> heading.</li>
+  <li>Fill in the new order box:
+    <ul>
+      <li><em>Partitions</em>: the number of lanes/cells that should run for this pool. Enter
+<code class="highlighter-rouge">2</code></li>
+      <li><em>Platform</em>: Select the instrument for sequencing. <code class="highlighter-rouge">Illumina - Illumina HiSeq 2500</code></li>
+      <li><em>Sequencing Parameters</em>: Select <code class="highlighter-rouge">v4 2×126</code> chemistry.</li>
+    </ul>
+  </li>
+  <li>Click <em>Add</em>. The order will now be visible in the <em>Orders</em> section.</li>
+</ol>
+
+<h3 id="checking-for-unfulfilled-orders">7.3.1  Checking for unfulfilled orders</h3>
+<p>The <em>Orders</em> page is used to decide what needs to be sequenced.</p>
+
+<ol>
+  <li>From the navigation menu, choose <em>Orders</em>.</li>
+  <li>Verify that the pool you just created is listed in the <em>Unfulfilled</em> tab.</li>
+</ol>
+
+<p>Columns on this page will disappear if there are no entries (<em>e.g.</em>,
+the <em>Failed</em> column will not be shown if there are no failed runs). When enough
+lanes have been sequenced, the row will disappear from the <em>Unfulfilled</em> tab,
+but remain in the <em>All</em> tab. Lanes currently being sequenced will be marked as
+in-progress and remain on the <em>Unfulfilled</em> tab until the run transitions to
+<em>Completed</em>.</p>
+
+<p>A pool can have many orders. Orders for the same platform and chemistry are
+summed when displayed on this page.</p>
+
+<p><a name="8"></a><a href="#">top</a></p>
+
+<h1 id="runs-and-sequencing-containers">8. Runs and Sequencing Containers</h1>
+
+<p>MISO supports runs from both Illumina and PacBio sequencers (and others that
+are no longer used at OICR), so the terms used for instrument runs and
+associated libraries are intentionally different from those used by the vendor.
+Every time a sequencer is loaded and sequencing begins,
+a <em>Run</em> is created. Runs are picked up automatically from the instrument.
+A <em>Sequencing Container</em> is the link between the library information and the
+instrument Run and contains one or more lanes. Each <em>lane</em> (e.g. Illumina lane,
+PacBio SMRT cell) in the container is loaded with exactly one <em>Pool</em>.
+Runs and Containers can be associated as soon as the sequencer has started.</p>
+
+<h2 id="viewing-run-statistics">8.1 Viewing Run statistics</h2>
+<p>About five minutes after an instrument begins sequencing, MISO will detect it
+and create a <em>Run</em>. As sequencing continues, MISO will pull back information
+about the quality of the run similar to the on-instrument applications like SAV.
+This includes statistics like percent pass filter, the percent of bases with
+Qscores over 30, and cluster density.</p>
+
+<ol>
+  <li>From the <em>Runs</em> page, find the run assigned to you for this tutorial.</li>
+</ol>
+
+<p>Under the <em>InterOp Metrics</em> section, you will see a loading animation. After a
+few seconds to load, this page will show information from the sequencer about
+the run progress.
+However, this function does not work reliably under load (as when ~20 people
+look at runs at the same time during this tutorial), so it may not load. This
+functionality will be redesigned in the near future.</p>
+
+<p><a href="pics/interop.png"><img style="width:100%;" src="pics/interop.png" /></a></p>
+
+<h2 id="adding-a-sequencing-container-to-a-run">8.2 Adding a sequencing container to a run</h2>
+
+<p>The Run (representing an instrument run) is associated with Pools using a
+<em>Sequencing Container</em>.</p>
+
+<p><img src="pics/flow-cell.svg" /></p>
+
+<ol>
+  <li>On the Run assigned to you, scroll down to the <em>Containers</em> section.</li>
+  <li>Search for the pool you previously created and double click to assign it to
+the lane. If you did not tick the <em>Ready to Run</em> box when creating the Pool, you
+may need to untick this option next to the search field.</li>
+  <li>Click the <em>Select Study</em> button on the Lane to accept the default Study.</li>
+  <li>If the flowcell is being stored, enter the location.</li>
+  <li>Click <em>Save</em>.</li>
+</ol>
+
+<p>The validation field is used only by cBot; leave it blank.</p>
+
+<p>Now check on the Order.</p>
+
+<ol>
+  <li>Click on the <em>Orders</em> page and verify that the <em>Remaining</em> column now
+shows 1 for the pool.</li>
+</ol>
+
+<h3 id="low-quality-sequencing-1">8.3 Low Quality Sequencing</h3>
+<p>Not every library realises its full potential. After sequencing, specific
+libraries can be flagged as having low sequencing quality. The
+&quot;Low Quality Sequencing&quot; indicator causes any pool containing this library to be
+flagged, so that it can be checked before it is sequenced again.</p>
+
+<ol>
+  <li>From the <em>Libraries</em> page, find the <code class="highlighter-rouge">PROJ_0002_Ly_R_PE_300_EX</code> library
+and click the link.</li>
+  <li>Check <em>Low Quality Sequencing</em>.</li>
+  <li>Click <em>Save</em>.</li>
+</ol>
+
+<p>Now if the Pool containing that Library is added to a Sequencing Container, it
+will be flagged red.</p>
+
+<ol>
+  <li>Go back to your Run page.</li>
+  <li>Find your pool using the search box. It will be flagged red.</li>
+</ol>
+
+<p><a name="9"></a><a href="#">top</a></p>
+
+<h1 id="sequencers">9. Sequencers</h1>
+
+<p>Each sequencer has a service record.</p>
+
+<ol>
+  <li>Select <em>Sequencers</em>.</li>
+  <li>Choose an individual sequencer.</li>
+  <li>Use the blue arrow to expand the <em>Service Records</em> section.</li>
+  <li>From <em>Options</em>, choose <em>Add Sequencer Record</em>.</li>
+  <li>Fill in the form as follows:
+    <ul>
+      <li><em>Title</em>: a short description of the work (<em>e.g.</em>, <code class="highlighter-rouge">Remove gremlin from sequencer</code>)</li>
+      <li><em>Description</em>: a long description of the work (<em>e.g.</em>, <code class="highlighter-rouge">A gremlin was found outside of the terrible 80s movie. It had developed a taste for polymerase.</code>)</li>
+      <li><em>Serviced By</em>: your name</li>
+      <li><em>Service Date</em>: the current date</li>
+    </ul>
+  </li>
+  <li>Click <em>Save</em>.</li>
+</ol>
+
+<p>After saving, it is also possible to attach files to the record. Look under the <em>Attachments</em> heading.</p>
+
+<p><a href="#">top</a></p>
+
+
+                    </div>
+                
+            </div>
+
+            
+
+            <div class="row">
+                <div id="footer" class="col-sm-12">
+                    Documentation for <a href="https://github.com/TGAC/miso-lims">MISO</a> developed by the <a href="http://labs.oicr.on.ca/genome-sequence-informatics/">Genome Sequence Informatics</a> group at <a href="http://oicr.on.ca">Ontario Institute for Cancer Research</a>
+
+
+                </div>
+            </div>
+        </div>
+
+        <script src="/miso-docs-oicr/styles/navigation.js"></script>
+
+    </body>
+</html>
