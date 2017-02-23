@@ -13,6 +13,7 @@ Table of Contents
     <li><a href="#props">Propagating Samples</a></li>
     <li><a href="#qcs">Adding Sample QCs</a></li>
     <li><a href="#boxes">Working with Boxes</a></li>
+    <li><a href="#trouble">Troubleshooting</a></li>
 </ol>
 </div>
 
@@ -290,6 +291,9 @@ hidden from the MISO interface.
 
 <a name="props">
 
+# 2.5 Receiving Libraries
+
+
 # 3. Propagating Samples
 
 Samples in MISO exist for each step in the tissue preparation: from identity,
@@ -301,9 +305,12 @@ to the stock.
 
 <img src="pics/flow-stock.svg"/>
 
-For the tissue samples created previously (by bulk and single entry), we will create stocks for library preparation.
+## 3.1 Propagating to Tissue Processing
 
-## 3.1 Bulk Propagate Samples
+
+## 3.2 Bulk Propagate Samples
+
+For the tissue samples created previously (by bulk and single entry), we will create stocks for library preparation.
 
 For three of the tissues you created in the previous section, create a stock.
 
@@ -383,4 +390,13 @@ items". The Sample Alias will have been filled in with aliases that end in D\_1
 {% include boxes.md %}
 
 
+<a name="trouble"/>
+
+# Troubleshooting
+
+1. How do you work with multiple samples derived from the same identity (i.e. DNA and RNA from one tissue slide, DNA from metastasis and control)
+1. How do I correct a sample that has the wrong information, e.g. wrong tissue type?
+1. What if I need to change the parent of a sample? (e.g. for swaps)
+1. What do I have to enter if receiving a pre-made library?
+1. How can I add a new tissue type, tissue origin,  or add anything else in drop-down menus?
 

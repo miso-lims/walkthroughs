@@ -134,3 +134,11 @@ Each sequencer has a service record.
 
 After saving, it is also possible to attach files to the record. Look under the _Attachments_ heading.
 
+<a name="trouble"/>
+
+# Troubleshooting
+
+1. When instruments break down, how do you log failures into the system?
+1. How do you assigning single lane failures (if possible)?
+1. How you fail flowcells? Or how does MISO detect failed runs?
+1. How do you scan out libraries from inbox to outbox?

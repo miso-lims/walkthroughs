@@ -15,6 +15,7 @@ Table of Contents
    <li><a href="#boxes">Working with Boxes</a></li>
    <li><a href="#pools">Creating Pools</a></li>
    <li><a href="#orders">Ordering sequencing</a></li>
+   <li><a href="#trouble">Troubleshooting</a></li>
 </ol>
 </div>
 
@@ -238,3 +239,15 @@ _Completed_.
 A pool can have many orders. Orders for the same platform and chemistry are
 summed when displayed on this page.
 
+<a name="trouble"/>
+
+# Troubleshooting
+
+1. How do I correct an index on a library?
+1. What if I assign a library to the wrong parent aliquot?
+1. What if I forget to put a library dilution in a pool?
+1. How do I change the targeted sequencing type on a library?
+1. How can I add a new targeted sequencing type, kit, or anything else in drop-down menus?
+1. How do I make bulk orders?
+1. How are matrix tube barcodes assigned to tubes?
+1. What is the importance of selecting a study (?) since it prevents the Sequencing stage from adding pools to the lane containers?
