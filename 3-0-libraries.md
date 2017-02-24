@@ -256,3 +256,6 @@ summed when displayed on this page.
 1. How do I make bulk orders?
 1. How are matrix tube barcodes assigned to tubes?
 1. What is the importance of selecting a study (?) since it prevents the Sequencing stage from adding pools to the lane containers?
+
+< <a href="2-0-samples">Samples tutorial</a> | <a href="index">Home</a> | <a href="4-0-sequencing">Sequencing tutorial</a> >
+

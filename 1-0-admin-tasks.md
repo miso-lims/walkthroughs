@@ -191,3 +191,4 @@ Now that your project has been created, continue to make your first samples.
 # 5. Creating project and monthly reports
 
 
+<a href="index">Home</a> | <a href="2-0-samples">Samples tutorial</a> > 

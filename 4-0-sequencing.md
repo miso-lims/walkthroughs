@@ -15,6 +15,7 @@ Table of Contents
    <li><a href="#pools">Adding Pools to Runs</a></li>
    <li><a href="#boxes">Working with Boxes</a></li>
    <li><a href="#service">Adding Service Records</a></li>
+   <li><a href="#trouble">Troubleshooting</a></li>
 </ol>
 </div>
 
@@ -147,3 +148,5 @@ After saving, it is also possible to attach files to the record. Look under the 
 1. How do you assigning single lane failures (if possible)?
 1. How you fail flowcells? Or how does MISO detect failed runs?
 1. How do you scan out libraries from inbox to outbox?
+
+< <a href="3-0-libraries">Libraries tutorial</a> | <a href="index">Home</a>

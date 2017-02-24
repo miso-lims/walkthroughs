@@ -415,3 +415,4 @@ items". The Sample Alias will have been filled in with aliases that end in D\_1
 1. What do I have to enter if receiving a pre-made library?
 1. How can I add a new tissue type, tissue origin,  or add anything else in drop-down menus?
 
+< <a href="1-0-admin-tasks">Admin tasks tutorial</a> | <a href="index">Home</a> | <a href="3-0-libraries">Libraries tutorial</a> >
