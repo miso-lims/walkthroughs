@@ -73,14 +73,13 @@ ones that end in `_D_1`:
       - `PROJ_0001_Ly_R_PE_300_EX`
       - `PROJ_0002_Br_P_PE_300_EX`
       - `PROJ_0002_Ly_R_PE_300_EX`
-  * _Description_: Library (Tissue type)(individual), e.g. `Library P1`
   * _Matrix Barcode_: As before, usually this would be scanned by the hand
     scanner. In this tutorial, enter matrix barcodes in the form (Short
 name)_(Tissue type)(Individual)_Li, e.g. `PROJ_P1_Li`.
+  * _Description_: Library (Tissue type)(individual), e.g. `Library P1`
+  * _Design_: EX
   * _Platform_: Illumina
   * _Type_: Paired End
-  * _Selection_: PCR
-  * _Strategy_: AMPLICON
   * _Index Kit_: Nextera Dual Index
   * _Index 1_ and _Index 2_: Select any combination of indices you wish.
     Select different indices for each library. Selecting the same index for two
@@ -207,9 +206,9 @@ followed by `_POOL` (e.g. `PROJ_POOL`)
      is used together with the Order to show the pool is ready to be sequenced.
      Tick this box.
   1. _Volume_: Enter a pool volume.
+1. Click _Save_.
 1. In the _Pooled Elements_ section, use the search box to find the dilutions created previously.
 1. For each dilution, press the _+_ button to add the dilution to the pool.
-1. Click _Save_.
 
 <a name="orders"/>
 
@@ -221,12 +220,13 @@ required (on Illumina).
 
 1. On the Edit Pool page for the pool you just created, scroll down to the
 _Orders_ heading.
+1. Click _Add Order_:
 1. Fill in the new order box:
   - _Partitions_: the number of lanes/cells that should run for this pool. Enter
 `2`
   - _Platform_: Select the instrument for sequencing. `Illumina - Illumina HiSeq 2500`
   - _Sequencing Parameters_: Select `v4 2×126` chemistry.
-1. Click _Add_. The order will now be visible in the _Orders_ section.
+1. Click _Save_. The order will now be visible in the _Orders_ section.
 
 ### 7.1  Checking for unfulfilled orders
 The _Orders_ page is used to decide what needs to be sequenced.
