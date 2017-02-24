@@ -251,12 +251,93 @@ server properties file.
 
 # 5. Creating project and monthly reports
 
-MISO has some basic reporting capabilities. However, it also seems to contain
-dragons which periodically kill all of MISO when they are disturbed. Please
-avoid the _Reports_ tab so as not to anger the dragons.
+MISO has some basic reporting capabilities.
 
-<img src="pics/dragon.jpg">
-Image by Muratt Yalcin from [In the Company of
-Dragons](http://www.drivethrurpg.com/product/133090/In-The-Company-of-Dragons-PFRPG)
+## 5.1 Generate a project report
+
+Generate a project report to see which samples and libraries have been
+sequenced.
+
+1. Click the _Reports_ tab at the top of the page.
+1. In the _Projects Report_ tab, enter *AMLXP* in the _Name, Alias, Description
+   Contains_ filter box.
+1. Click the _Search_ button.
+1. Select the *PRO1* project.
+1. Click the _Generate Report_ button.
+1. Scroll down to view the report.
+
+Notes:
+* If you have generated a report and now wish to search using different criteria,
+  click the _Reset_ button to dismiss the report and select different samples or
+search again.
+* Some libraries are listed twice, with no associated run for one of them. We
+  are not yet sure why this happens.
+* It is possible to download a CSV or Excel copy of the table data, but PDF
+  does not appear to be working at this time.
+
+## Generating a project - run - lane report
+
+* Generating a _Project - Run - Lane Report_ throws an error at this time.
+
+## 5.2 Generate a samples report
+
+Generate a samples report to see the QC status (Passed, Failed, Unknown) for
+samples.
+
+1. Click the _Samples Report_ tab on the _Reports_ page.
+1. In the _Created From_ box, enter *01/09/2016*. In the _To_ box, enter
+   *30/09/2016*.
+1. Click the _Search_ button.
+1. Select the desired samples for the report.
+1. Click the _Generate Report_ button.
+1. Scroll down to view the report.
+
+Notes:
+* The date sort is currently based off of the _Received Date_ entered on a sample, so it
+  will not track samples which were propagated as opposed to received, or samples for
+  which a _Received Date_ was not entered.
+* If you have generated a report and now wish to search using different criteria,
+  click the _Reset_ button to dismiss the report and select different samples or 
+search again.
+
+
+## 5.3 Generate a libraries report
+
+Generate a libraries report to see the QC status (Passed, Failed, Unknown) for
+libraries.
+
+1. Click the _Libraries Report_ tab on the _Reports_ page.
+1. In the _Created From_ box, enter *01/01/2017*. In the _To_ box, enter
+   *24/02/2017*.
+1. Click the _Search_ button.
+1. Select the desired libraries for the report.
+1. Click the _Generate Report_ button.
+1. Scroll down to view the report.
+
+Notes:
+* For this report, you must enter a _From_ and a _To_ date. Failure to enter one
+  or both dates will cause the page to error, and you will need to refresh it.
+
+
+## 5.4 Generate a runs report
+
+Generate a runs report to see the runs from a given time period.
+
+1. Click the _Runs Report_ tab on the _Reports_ page.
+1. In the _Started From_ box, enter *01/12/2016*. In the _To_ box, enter
+   *31/12/2016*.
+1. Click the _Search_ button.
+1. Select the desired runs for the report.
+1. Click the _Generate Report_ button.
+1. Scroll down to view the report.
+
+Notes:
+* If you have generated a report and now wish to search with different criteria,
+  click the _Reset_ button to dismiss the report and select different samples or
+search again.
+
+## Viewing the resource calendar
+
+* Viewing the resource calendar does not appear to work at this time.
 
 <a href="index">Home</a> | <a href="2-0-samples">Samples tutorial</a> > 
