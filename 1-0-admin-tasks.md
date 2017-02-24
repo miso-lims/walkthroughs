@@ -33,11 +33,11 @@ Download the worksheet for this section here: <a href="1-0-admin-tasks-worksheet
 # 2. Creating projects
 
 A _Project_ contains information about a set of _Studies_ that may comprise many
-different _Samples_, _Experiments_ and _Runs_. Samples are attached to Projects as
-they are often processed into _Dilutions_, which are then _Pooled_ and sequenced.
-Projects also have Overviews, which hold information about a Project proposal.
-In this part of this workshop, we will create projects, set permissions, and
-familiarize ourselves with the project overview page.
+different _Samples_, _Experiments_ and _Runs_. Samples are attached to Projects and
+they are often processed into _Libraries_ and then _Dilutions_, which are then 
+_Pooled_ and sequenced. Projects also have Overviews, which hold information about 
+a Project proposal. In this part of this workshop, we will create projects, set 
+permissions, and familiarize ourselves with the project overview page.
 
 Projects represent a sequencing effort toward a particular goal, usually led by
 a particular group or principal investigator. For example, the PCSI project is
@@ -53,7 +53,7 @@ Most pages have a "Quick Help" tab at the top right under the Save
 button where you can find basic information about the current page.
 
 
-## 2.1 Creating a new project
+## 2.1 Create a new project
 
 To create a new project:
 
@@ -61,7 +61,7 @@ To create a new project:
 dashboard. 
 1. Select the _Add Project_ button at the top right corner. 
 
-The _Create Project_ page will display with a number of fields that you can fill out.
+The _Create Project_ page will display with a number of fields that you can fill in.
 
 1. Ignore Project ID and Name, since they are set by MISO once the Project is saved.
 1. Enter a unique _Alias_. The alias is a name, chosen by us, that is associated
@@ -182,13 +182,81 @@ Now that your project has been created, continue to make your first samples.
 
 # 3. Creating groups and adding users to them
 
+_Groups_ permit fine-grained control over who has view and/or edit access to an
+item in MISO. There are default groups in MISO for "all internal users", as well
+as for RunWatchers, ProjectWatchers and PoolWatchers. In theory, members of a
+Watcher group will be notified by email of all events on members of that group
+(ie. a Pool is set to Ready To Run; a Run is marked as Complete). However, these
+features are not yet be fully functional. 
+
+## 3.1 Create a Group
+
+To create a new group:
+
+1. Select the _Groups_ link in the left-hand menu.
+1. Select the _Add Group_ link near the top right corner.
+
+The _Edit Group_ page will display a number of fields that you can fill in.
+1. Enter a unique _Name_. The name must contain only letters or numbers. It
+   cannot contain spaces or punctuation.
+1. Enter a _Description_ of your group.
+1. Select your user as the only member of your group.
+1. Click the _Save_ button at the upper right.
+
+## 3.2 Update your project's permissions 
+
+Return to your new project's page and update the permissions:
+1. Click the _Permissions_ section divider to expand it.
+1. Click the _Allow all itnernal users access?_ box to deselect it.
+1. Select your new group in both the _Groups (read)_ and _Groups (write)_
+   sections.
+1. Click the _Save_ button at the upper right.
+1. Click the _My Projects_ tab at the top of the page.
+1. Partner with someone else who has completed these steps and compare the
+   projects on your pages. You should be unable to view the other person's
+project.
+
+Return to your new project's page and update the permissions once more:
+1. Click the _Permissions_ section divider to expand it.
+1. Click the _Allow all itnernal users access?_ box to select it.
+1. Click the _Save_ button at the upper right.
+
 <a name="inst"/>
 
 # 4. Adding new instruments
+
+New sequencing machines must be added to MISO and to
+the notification server so that MISO can be made aware of their output.
+
+## 4.1 Add a new sequencer 
+
+1. Click the _My Account_ tab at the top of the page.
+1. Click _Configure_ in the _Sequencing Machines_ section.
+1. Click the _Add Sequencer_ link in the top right corner.
+1. Fill in the fields of the new row that is inserted at the top of the table:
+    * _Name_: enter a short and unique name (letters and numbers only)
+    * _Platform_: select a platform from the dropdown menu
+    * _Hostname_: enter "localhost" (without the quotes)
+1. Click _Add_ to save the new sequencer.
+
+## 4.2 Make the notification server aware of the sequencer's output
+
+1. Create a JIRA ticket under the _GSI Lab Tracking (GLT)_ project. Give the
+   name of the new sequencing machine and indicate that the purpose of the
+ticket is to add the sequencing machine's output folder to the notification
+server properties file.
+
 
 <a name="reports"/>
 
 # 5. Creating project and monthly reports
 
+MISO has some basic reporting capabilities. However, it also seems to contain
+dragons which periodically kill all of MISO when they are disturbed. Please
+avoid the _Reports_ tab so as not to anger the dragons.
+
+<img src="pics/dragon.jpg">
+Image by Muratt Yalcin from [In the Company of
+Dragons](http://www.drivethrurpg.com/product/133090/In-The-Company-of-Dragons-PFRPG)
 
 <a href="index">Home</a> | <a href="2-0-samples">Samples tutorial</a> > 
