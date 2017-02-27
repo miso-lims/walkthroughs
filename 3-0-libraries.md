@@ -252,8 +252,8 @@ summed when displayed on this page.
 The index can be changed on either the individual library page or the bulk edit page.
 
 1. From _Tracking_, _Library_, select the library that needs to be changed.
-1. If necessary, change _Index Family_. If selected, the indices will be erase.
-1. Select the correct index under _Indicies_. If the family supports it, another drop down will appear.
+1. If necessary, change _Index Family_. If selected, the indices will be erased.
+1. Select the correct index under _Indices_. If the index family supports dual barcoding, another drop down will appear.
 
 ## What if I assign a library to the wrong parent aliquot?
 Please email gsi@oicr.on.ca or file a JIRA ticket in GSI Common to get assistance from the MISO team.
@@ -288,7 +288,7 @@ Kits can be added easily:
 1. From _Tracking_, _Kits_, select the type of kit you want to add.
 1. Click _Create Kit Descriptor_.
 1. Fill in the form. The _Stock Level_ is not currently used, so leave it at zero.
-1. Carefully select the _Kit Type_ and _Platform_. This will decide where the kit is displayed.
+1. Carefully select the _Kit Type_ and _Platform_. This will determine what the kit can be used for.
 1. Click _Save_.
 
 ## How do I make bulk orders?
@@ -313,8 +313,10 @@ To change many libraries:
 1. Repeat for all the libraries.
 1. Click _Save_.
 
-## What is the importance of selecting a study since it prevents the Sequencing stage from adding pools to the lane containers?
-The study is important for submitting to the ERA. Although we are not using that feature of MISO, there's no easy way to disable it.
+## What is the importance of selecting a study since it prevents the sequencing stage from adding pools to the lane containers?
+The study is important for submitting to the ERA. Although we are not using
+that feature of MISO, it's required that all projects have at least one study
+and that it is required when adding a pool to a lane.
 
 < <a href="2-0-samples">Samples tutorial</a> | <a href="index">Home</a> | <a href="4-0-sequencing">Sequencing tutorial</a> >
 
