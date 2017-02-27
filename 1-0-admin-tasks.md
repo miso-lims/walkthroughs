@@ -183,11 +183,8 @@ Now that your project has been created, continue to make your first samples.
 # 3. Creating groups and adding users to them
 
 _Groups_ permit fine-grained control over who has view and/or edit access to an
-item in MISO. There are default groups in MISO for "all internal users", as well
-as for RunWatchers, ProjectWatchers and PoolWatchers. In theory, members of a
-Watcher group will be notified by email of all events on members of that group
-(ie. a Pool is set to Ready To Run; a Run is marked as Complete). However, these
-features are not yet be fully functional. 
+item in MISO. There is a default group in MISO for "all internal users".
+There are also groups for Watchers, but these features are not yet fully functional. 
 
 ## 3.1 Create a Group
 
@@ -207,7 +204,7 @@ The _Edit Group_ page will display a number of fields that you can fill in.
 
 Return to your new project's page and update the permissions:
 1. Click the _Permissions_ section divider to expand it.
-1. Click the _Allow all itnernal users access?_ box to deselect it.
+1. Click the _Allow all internal users access?_ box to deselect it.
 1. Select your new group in both the _Groups (read)_ and _Groups (write)_
    sections.
 1. Click the _Save_ button at the upper right.
@@ -225,8 +222,20 @@ Return to your new project's page and update the permissions once more:
 
 # 4. Adding new instruments
 
-New sequencing machines must be added to MISO and to
-the notification server so that MISO can be made aware of their output.
+New sequencing machines must be added to MISO and to the notification server 
+so that MISO can be made aware of their output.
+
+## 4.1 Add a new model of sequencer
+
+If MISO does not yet have this type of sequencer in the database, you will need 
+to contact your MISO administrator to put the new model into MISO before you can 
+add a new sequencer of that model.
+
+1. Create a JIRA ticket under the _GSI Common_ project to add the new sequencer 
+model to MISO. Include the following information:
+* Sequencer manufacturer (Platform)
+* Model
+* Standard read lengths you anticipate using for sequencing (_e.g._ 1.250, 2x126)
 
 ## 4.1 Add a new sequencer 
 
@@ -234,17 +243,16 @@ the notification server so that MISO can be made aware of their output.
 1. Click _Configure_ in the _Sequencing Machines_ section.
 1. Click the _Add Sequencer_ link in the top right corner.
 1. Fill in the fields of the new row that is inserted at the top of the table:
-    * _Name_: enter a short and unique name (letters and numbers only)
+    * _Name_: enter the serial number (case-sensitive)
     * _Platform_: select a platform from the dropdown menu
-    * _Hostname_: enter "localhost" (without the quotes)
+    * _Hostname_: enter `localhost`
 1. Click _Add_ to save the new sequencer.
 
 ## 4.2 Make the notification server aware of the sequencer's output
 
-1. Create a JIRA ticket under the _GSI Lab Tracking (GLT)_ project. Give the
-   name of the new sequencing machine and indicate that the purpose of the
-ticket is to add the sequencing machine's output folder to the notification
-server properties file.
+1. Create a JIRA ticket under the _GSI Common_ project. Give the name of the new 
+sequencing machine and indicate that the purpose of the ticket is to add the 
+sequencing machine's output folder to the notification server properties file.
 
 
 <a name="reports"/>
@@ -256,7 +264,7 @@ dragons which periodically kill all of MISO when they are disturbed. Please
 avoid the _Reports_ tab so as not to anger the dragons.
 
 <img src="pics/dragon.jpg">
-Image by Muratt Yalcin from [In the Company of
+Art by Muratt Yalcin for [In the Company of
 Dragons](http://www.drivethrurpg.com/product/133090/In-The-Company-of-Dragons-PFRPG)
 
 <a href="index">Home</a> | <a href="2-0-samples">Samples tutorial</a> > 
