@@ -256,7 +256,7 @@ The index can be changed on either the individual library page or the bulk edit 
 1. Select the correct index under _Indicies_. If the family supports it, another drop down will appear.
 
 ## What if I assign a library to the wrong parent aliquot?
-File a ticket in JIRA with the names of the library and aliquot and we will change it.
+Please email gsi@oicr.on.ca or file a JIRA ticket in GSI Common to get assistance from the MISO team.
 
 ## What if I forget to put a library dilution in a pool?
 If the library dilution has not been created:
@@ -281,7 +281,7 @@ Targeted sequencing is connected to the dilution since the same library can be u
 1. Under the _Edit_ column, click _Save_.
 
 ## How can I add a new targeted sequencing type, kit, or anything else in drop-down menus?
-For targeted sequencing and indices, file a ticket and we will add them.
+For targeted sequencing and indices, please email gsi@oicr.on.ca or file a JIRA ticket in GSI Common to get assistance from the MISO team.
 
 Kits can be added easily:
 
