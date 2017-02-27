@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Libraries worksheet
+title: Sequencing worksheet
 ---
 
 
