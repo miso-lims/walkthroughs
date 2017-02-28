@@ -454,7 +454,8 @@ Please email gsi@oicr.on.ca or file a JIRA ticket in GSI Common to get assistanc
 MISO does not yet accept direct receipt of libraries. In cases where libraries are
 received, you are required to first create the aliquot and then propagate the library from it.
 The aliquot may be created by using the Create Sample page (single or bulk), or by propagating
-from an existing tissue or stock Sample. Propagating libraries is detailed in a later tutorial.
+from an existing tissue or stock Sample. Propagating libraries is detailed in a later tutorial:
+[Propagating aliquots to libraries](3-0-libraries#props1)
 
 **How can I add a new tissue type, tissue origin,  or add anything else in drop-down menus?**
 
