@@ -222,8 +222,8 @@ Return to your new project's page and update the permissions once more:
 
 # 4. Adding new instruments
 
-New sequencing machines must be added to MISO and to the notification server 
-so that MISO can be made aware of their output.
+New sequencing machines must be added to MISO so that MISO can be made aware of the
+runs that use them.
 
 ## 4.1 Add a new model of sequencer
 
@@ -231,11 +231,11 @@ If MISO does not yet have this type of sequencer in the database, you will need
 to contact your MISO administrator to put the new model into MISO before you can 
 add a new sequencer of that model.
 
-1. Create a JIRA ticket under the _GSI Common_ project to add the new sequencer 
+1. Please email gsi@oicr.on.ca or file a JIRA ticket in _GSI Common_ to add the new sequencer 
 model to MISO. Include the following information:
-* Sequencer manufacturer (Platform)
-* Model
-* Standard read lengths you anticipate using for sequencing (_e.g._ 1.250, 2x126)
+    * Sequencer manufacturer (Platform)
+    * Model
+    * Standard read lengths you anticipate using for sequencing (_e.g._ 1.250, 2x126)
 
 ## 4.1 Add a new sequencer 
 
@@ -248,10 +248,10 @@ model to MISO. Include the following information:
     * _Hostname_: enter `localhost`
 1. Click _Add_ to save the new sequencer.
 
-## 4.2 Make the notification server aware of the sequencer's output
+## 4.2 Set up MISO to be aware of aware of the sequencer's output
 
-1. Create a JIRA ticket under the _GSI Common_ project. Give the name of the new 
-sequencing machine and indicate that the purpose of the ticket is to add the 
+1. Please email gsi@oicr.on.ca or file a JIRA ticket in _GSI Common_. Give the name of the new 
+sequencing machine and indicate that you would like GSI to add the 
 sequencing machine's output folder to the notification server properties file.
 
 
@@ -261,7 +261,8 @@ sequencing machine's output folder to the notification server properties file.
 
 MISO has some basic reporting capabilities. However, it also seems to contain
 dragons which periodically kill all of MISO when they are disturbed. Please
-avoid the _Reports_ tab so as not to anger the dragons.
+avoid the _Reports_ tab so as not to anger the dragons. If you require a report, 
+please email gsi@oicr.on.ca for assistance.
 
 <img src="pics/dragon.jpg">
 Art by Muratt Yalcin for [In the Company of
