@@ -12,7 +12,7 @@ Table of Contents
    <li><a href="#props1">Propagating aliquots to libraries</a></li>
    <li><a href="#qcs">Adding Library QCs</a></li>
    <li><a href="#props2">Propagating libraries to dilutions</a></li>
-   <li><a href="#boxes">Working with Boxes</a></li>
+   <li><a href="#boxes">Scanning libraries into your outbox</a></li>
    <li><a href="#pools">Creating Pools</a></li>
    <li><a href="#orders">Ordering sequencing</a></li>
    <li><a href="#trouble">Troubleshooting</a></li>
@@ -48,10 +48,14 @@ of allowed designs is limited based on the sample type (_e.g._, a cDNA sample
 can only have SM, WT, or MR library designs and these lock the selection and
 strategy type accordingly).
 
+## 2.0 Scan aliquots into your inbox
+
+{% include inboxes.md %}
+
 
 ## 2.1 Bulk propagate aliquots into libraries
 
-In this section, you will use the aliquots you created already and create
+In this section, you will use the aliquots created already and create
 libraries.
 
 1. On the _Samples_ page, enter your project name into the search box.
@@ -131,26 +135,14 @@ after the _Run_ exercises.
 
 <a name="boxes"/>
 
-# 4. Boxes
-Libraries can also be placed in boxes.
+# 4. Scanning libraries into your outbox
 
-1. From the _Boxes_ page, find the project-specific box you created before,
-e.g. `PROJ_OUTBOX`.
-1. Select an unused position and enter a library matrix barcode _PROJ_\_P1\_Li,
-e.g. `PROJ_P1_Li`.
-1. Click _Lookup_ and then _Update position_.
-1. Repeat for the remaining libraries:
-  - `PROJ_R1_Li`
-  - `PROJ_P2_Li`
-  - `PROJ_R2_Li`
-
-{% include boxes.md %}
+{% include outboxes.md %}
 
 
 <a name="props2"/>
 
 # 5. Propagating libraries to dilutions
-
 
 A library cannot be directly loaded into a _lane_ in a _sequencing container_
 (flowcell/SMRTcell) in MISO. A dilution must be made and then many dilutions

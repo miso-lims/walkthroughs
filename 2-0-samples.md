@@ -12,7 +12,7 @@ Table of Contents
     <li><a href="#receipt">Receiving Samples</a></li>
     <li><a href="#props">Propagating Samples</a></li>
     <li><a href="#qcs">Adding Sample QCs</a></li>
-    <li><a href="#boxes">Working with Boxes</a></li>
+    <li><a href="#boxes">Scanning samples into the outbox</a></li>
     <li><a href="#trouble">Troubleshooting</a></li>
 </ol>
 </div>
@@ -303,6 +303,10 @@ hidden from the MISO interface.
 #TODO Content here!
 
 
+# 2.6 Scanning Matrix Tubes into a Box
+
+{% include inboxes.md %}
+
 # 3. Propagating Samples
 
 Samples in MISO exist for each step in the tissue preparation: from identity,
@@ -396,11 +400,9 @@ items". The Sample Alias will have been filled in with aliases that end in D\_1
 
 <a name="boxes"/>
 
-# 5. Working with Boxes
+# 5. Scanning samples into outboxes
 
-#TODO customize for samples
-
-{% include boxes.md %}
+{% include outboxes.md %}
 
 
 <a name="trouble"/>
