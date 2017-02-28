@@ -12,7 +12,7 @@ Table of Contents
     <li><a href="#receipt">Receiving Samples</a></li>
     <li><a href="#props">Propagating Samples</a></li>
     <li><a href="#qcs">Adding Sample QCs</a></li>
-    <li><a href="#boxes">Working with Boxes</a></li>
+    <li><a href="#boxes">Scanning samples into the outbox</a></li>
     <li><a href="#trouble">Troubleshooting</a></li>
 </ol>
 </div>
@@ -295,6 +295,13 @@ hidden from the MISO interface.
 <a name="props">
 
 
+# 2.5 Scanning tissues and stocks into a Box
+
+In this section we will add the stocks and tissues you just received into your
+inbox for further work. 
+
+{% include inboxes.md %}
+
 # 3. Propagating Samples
 
 Samples in MISO exist for each step in the tissue preparation: from identity,
@@ -416,9 +423,12 @@ _Add Sample QC_.
 
 <a name="boxes"/>
 
-# 5. Working with Boxes
+# 5. Scanning aliquots into outboxes
 
-{% include boxes.md %}
+Finally, scan the aliquots you made into the outbox so the libraries team can
+take over.
+
+{% include outboxes.md %}
 
 
 <a name="trouble"/>

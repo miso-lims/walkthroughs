@@ -13,7 +13,7 @@ Table of Contents
    <li><a href="#nruns">Creating Runs from scratch</a></li>
    <li><a href="#aruns">Working with automatically created runs</a></li>
    <li><a href="#pools">Adding Pools to Runs</a></li>
-   <li><a href="#boxes">Working with Boxes</a></li>
+   <li><a href="#boxes">Scanning libraries into your outbox</a></li>
    <li><a href="#service">Adding Service Records</a></li>
    <li><a href="#trouble">Troubleshooting</a></li>
 </ol>
@@ -37,6 +37,13 @@ Download the worksheet for this section here: <a href="4-0-sequencing-worksheet"
 {% include uorders.md %}
 
 <a name="nruns"/>
+
+## 2.0 Scan libraries into your inbox
+
+First, scan the libraries from the libraries team into your inbox for further
+work.
+
+{% include inboxes.md %}
 
 # Creating runs from scratch
 
@@ -116,9 +123,11 @@ will be flagged red.
 
 <a name="boxes"/>
 
-# Working with boxes
+# Scanning libraries/pools into your outbox
 
-{% include boxes.md %}
+Lastly, place the libraries/pools in your outbox for storage.
+
+{% include outboxes.md %}
 
 
 <a name="service"/>
