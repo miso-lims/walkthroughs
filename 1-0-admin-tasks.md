@@ -222,8 +222,8 @@ Return to your new project's page and update the permissions once more:
 
 # 4. Adding new instruments
 
-New sequencing machines must be added to MISO and to the notification server 
-so that MISO can be made aware of their output.
+New sequencing machines must be added to MISO so that MISO can be made aware of the
+runs that use them.
 
 ## 4.1 Add a new model of sequencer
 
@@ -248,7 +248,7 @@ model to MISO. Include the following information:
     * _Hostname_: enter `localhost`
 1. Click _Add_ to save the new sequencer.
 
-## 4.2 Make the notification server aware of the sequencer's output
+## 4.2 Set up MISO to be aware of aware of the sequencer's output
 
 1. Please email gsi@oicr.on.ca or file a JIRA ticket in _GSI Common_. Give the name of the new 
 sequencing machine and indicate that you would like GSI to add the 
