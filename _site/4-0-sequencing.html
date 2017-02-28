@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width">
+
+        <title>MISO : Sequencing tutorial</title>
+        <meta name="description" content="An open-source LIMS for NGS sequencing centres">
+
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/miso-docs-oicr/styles/main.css">
+    </head>
+    <body>
+<a href="https://github.com/TGAC/miso-lims"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
+
+
+        <div class="container">
+            <div class="row">
+                <div id="header" class="col-sm-12">
+                    <h2><a class="brand" href="/miso-docs-oicr/"><img src="/miso-docs-oicr/pics/MISO.png"/>MISO</a>
+    <small>An open-source LIMS for NGS sequencing centres</small>
+</h2>
+<span class="badge" style="position: relative;left:25px;bottom:20px;background:rgb(56,121,59);">OICR</span>
+
+                </div>
+            </div>
+
+            <div class="row">
+                
+                
+                    <div id="content" class="col-sm-12">
+                        <div class="page-header">
+    <h2>Sequencing tutorial
+        
+    </h2>
+</div>
+
+<div id="toc">
+Table of Contents
+<ol>
+   <li><a href="#login">Logging In</a></li>
+   <li><a href="#orders">Checking for sequencing Orders</a></li>
+   <li><a href="#nruns">Creating Runs from scratch</a></li>
+   <li><a href="#aruns">Working with automatically created runs</a></li>
+   <li><a href="#pools">Adding Pools to Runs</a></li>
+   <li><a href="#boxes">Working with Boxes</a></li>
+   <li><a href="#service">Adding Service Records</a></li>
+   <li><a href="#trouble">Troubleshooting</a></li>
+</ol>
+</div>
+
+<div id="infobox">
+Download the worksheet for this section here: <a href="4-0-sequencing-worksheet">Sequencing Worksheet</a>.
+</div>
+
+<p><a name="login"></a></p>
+
+<h1 id="logging-in">1. Logging in</h1>
+
+<p>Much like the old Geospiza LIMS, you need to log in to MISO LIMS in order to
+make changes to any LIMS entities. Logging in lets us record any changes you
+make and also allows us to set appropriate permissions.</p>
+
+<p>If you were able to log in to Geospiza LIMS, you already have the correct
+permissions and can proceed to logging in. If you are a new user, you will need
+to contact <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#104;&#101;&#108;&#112;&#100;&#101;&#115;&#107;&#064;&#111;&#105;&#099;&#114;&#046;&#111;&#110;&#046;&#099;&#097;">&#104;&#101;&#108;&#112;&#100;&#101;&#115;&#107;&#064;&#111;&#105;&#099;&#114;&#046;&#111;&#110;&#046;&#099;&#097;</a> so that they put you into the appropriate
+Active Directory group, <code class="highlighter-rouge">MISO_ROLE_INTERNAL</code>.</p>
+
+<hr />
+
+<p>Try to log in now:</p>
+
+<ol>
+  <li>Click on <a href="http://miso.gsi.oicr.on.ca" target="\_new">http://miso.gsi.oicr.on.ca</a>.</li>
+  <li>Enter your
+username (e.g. jdoe) and password and click the Login button.
+MISO uses the same username and password as your OICR email account.</li>
+</ol>
+
+<p>If all goes well, you should see the MISO Dashboard and see a message at the
+top right: &quot;Logged in as: <strong>jdoe</strong>&quot;.</p>
+
+<p><a name="orders"></a></p>
+
+<h1 id="checking-for-unfulfilled-orders">2. Checking for unfulfilled orders</h1>
+
+<p>The <em>Orders</em> page is used to decide what needs to be sequenced.</p>
+
+<ol>
+  <li>From the navigation menu, choose <em>Orders</em>.</li>
+  <li>Verify that the pool you just created is listed in the <em>Unfulfilled</em> tab.</li>
+</ol>
+
+<p>Columns on this page will disappear if there are no entries (<em>e.g.</em>,
+the <em>Failed</em> column will not be shown if there are no failed runs). When enough
+lanes have been sequenced, the row will disappear from the <em>Unfulfilled</em> tab,
+but remain in the <em>All</em> tab. Lanes currently being sequenced will be marked as
+in-progress and remain on the <em>Unfulfilled</em> tab until the run transitions to
+<em>Completed</em>.</p>
+
+<p>A pool can have many orders. Orders for the same platform and chemistry are
+summed when displayed on this page.</p>
+
+<p><a name="nruns"></a></p>
+
+<h1 id="creating-runs-from-scratch">Creating runs from scratch</h1>
+
+<p>MISO supports runs from both Illumina and PacBio sequencers (and others that
+are no longer used at OICR), so the terms used for instrument runs and
+associated libraries are intentionally different from those used by the vendor.
+Every time a sequencer is loaded and sequencing begins,
+a <em>Run</em> is created. Runs are picked up automatically from the instrument.
+A <em>Sequencing Container</em> is the link between the library information and the
+instrument Run and contains one or more lanes. Each <em>lane</em> (e.g. Illumina lane,
+PacBio SMRT cell) in the container is loaded with exactly one <em>Pool</em>.
+Runs and Containers can be associated as soon as the sequencer has started.</p>
+
+<p><a name="aruns"></a></p>
+
+<h1 id="working-with-automatically-created-runs">Working with automatically created runs</h1>
+
+<p>About five minutes after an instrument begins sequencing, MISO will detect it
+and create a <em>Run</em>. As sequencing continues, MISO will pull back information
+about the quality of the run similar to the on-instrument applications like SAV.
+This includes statistics like percent pass filter, the percent of bases with
+Qscores over 30, and cluster density.</p>
+
+<ol>
+  <li>From the <em>Runs</em> page, find the run assigned to you for this tutorial.</li>
+</ol>
+
+<p>Under the <em>InterOp Metrics</em> section, you will see a loading animation. After a
+few seconds to load, this page will show information from the sequencer about
+the run progress.
+However, this function does not work reliably under load (as when ~20 people
+look at runs at the same time during this tutorial), so it may not load. This
+functionality will be redesigned in the near future.</p>
+
+<p><a href="pics/interop.png"><img style="width:100%;" src="pics/interop.png" /></a></p>
+
+<p><a name="pools"></a></p>
+
+<h1 id="adding-pools-to-runs">Adding pools to runs</h1>
+
+<p>The Run (representing an instrument run) is associated with Pools using a
+<em>Sequencing Container</em>.</p>
+
+<p><img src="pics/flow-cell.svg" /></p>
+
+<ol>
+  <li>On the Run assigned to you, scroll down to the <em>Containers</em> section.</li>
+  <li>Search for the pool you previously created and double click to assign it to
+the lane. If you did not tick the <em>Ready to Run</em> box when creating the Pool, you
+may need to untick this option next to the search field.</li>
+  <li>Click the <em>Select Study</em> button on the Lane to accept the default Study.</li>
+  <li>If the flowcell is being stored, enter the location.</li>
+  <li>Click <em>Save</em>.</li>
+</ol>
+
+<p>The validation field is used only by cBot; leave it blank.</p>
+
+<p>Now check on the Order.</p>
+
+<ol>
+  <li>Click on the <em>Orders</em> page and verify that the <em>Remaining</em> column now
+shows 1 for the pool.</li>
+</ol>
+
+<h2 id="low-quality-sequencing">8.3 Low Quality Sequencing</h2>
+<p>Not every library realises its full potential. After sequencing, specific
+libraries can be flagged as having low sequencing quality. The
+&quot;Low Quality Sequencing&quot; indicator causes any pool containing this library to be
+flagged, so that it can be checked before it is sequenced again.</p>
+
+<ol>
+  <li>From the <em>Libraries</em> page, find the <code class="highlighter-rouge">PROJ_0002_Ly_R_PE_300_EX</code> library
+and click the link.</li>
+  <li>Check <em>Low Quality Sequencing</em>.</li>
+  <li>Click <em>Save</em>.</li>
+</ol>
+
+<p>Now if the Pool containing that Library is added to a Sequencing Container, it
+will be flagged red.</p>
+
+<ol>
+  <li>Go back to your Run page.</li>
+  <li>Find your pool using the search box. It will be flagged red.</li>
+</ol>
+
+<p><a name="boxes"></a></p>
+
+<h1 id="working-with-boxes">Working with boxes</h1>
+
+<p>Boxes hold samples, libraries, and pools. They do not track reagents or
+primers. Boxes are separated into <em>uses</em> for different kinds of storage
+(<em>e.g.</em>, tissue samples versus extracted DNA), but there is no check
+that items in a box match. Each box also has a <em>size</em> that includes the
+physical dimensions of the box as well as whether the box is compatible
+with the VisionMate scanner. Every <em>position</em> in the box is identified
+by a standard row letter + column number format (<em>e.g.</em>, C05).</p>
+
+<hr />
+
+<p>In this exercise, we are going to put the things in the box that you made in
+the previous exercises. Depending on whether you have been creating samples or
+libraries, some of these fields will be different.</p>
+
+<p>First, create a new box:</p>
+
+<ol>
+  <li>From the navigation panel, choose <em>Boxes</em> and then <em>Add Box</em>.</li>
+  <li>On the <em>Create Box</em> page, enter the information:</li>
+  <li>Alias: A short name for the box. Record this name in your worksheet. <img src="pics/blue_pencil.png" /></li>
+  <li><em>Description</em>: a human description of the box purpose  “gDNA ready for
+    library prep for <project>”.</project></li>
+  <li><em>Use</em>: The contents of the box. Select an appropriate use for your entities.</li>
+  <li><em>Size</em>: Select <code class="highlighter-rouge">8 x 12 scannable</code>.</li>
+  <li>Click <em>Save</em>.</li>
+</ol>
+
+<p>Upon clicking save, a graphic of the box will appear.</p>
+
+<p><img src="pics/5-empty-box.png" id="figure" /></p>
+
+<p>You can now fill the box with the tissues, stocks, aliquots, libraries, or
+pools you made in previous steps.</p>
+
+<ol>
+  <li>Click on a position in the displayed <em>Contents</em> grid.</li>
+  <li>Enter a matrix barcode into the box on the right and click <em>Lookup</em>.
+Normally a hand scanner would be used.</li>
+  <li>Click <em>Update Position</em>.
+    <ul>
+      <li>&#9888; The <em>Save</em> button at the top of the page does not work for
+ individual positions, only for <em>Box Information</em>.</li>
+    </ul>
+  </li>
+  <li>Repeat for as many samples/libraries/pools as you want.</li>
+</ol>
+
+<p>The table below the box diagram shows the position and information for the
+currently selected sample. If you would like to see all of the samples in the
+table, click the <em>List all Box Contents</em> button at the top right of the table.</p>
+
+<p>In the lab, it is possible to use <em>Options</em> &gt; <em>Scan Box</em> to use the plate
+scanner and update all positions at once, but that will not be covered in this
+tutorial.</p>
+
+<h2 id="using-boxes">Using Boxes</h2>
+
+<p>Boxes can be found either from the Sample or Library page or the <em>Boxes</em> page.</p>
+
+<ol>
+  <li>On the <em>Sample</em> page, search for one of your sample or library aliases and click on the alias to load the page.</li>
+  <li>The Box and position is listed under <em>Location</em> near the top of the <em>Sample
+Information</em> section. Click on the link to go to the Box (e.g. <code class="highlighter-rouge">PROJ_OUTBOX,
+A03</code>).</li>
+</ol>
+
+<p>Boxes can be used to store Samples, Libraries and Pools and one box can store all
+three types.</p>
+
+<h3 id="removing-and-discarding-tubes">Removing and discarding tubes</h3>
+
+<p>When you have a position selected, you can also either remove the tube from the
+box (setting its location to &quot;Unknown&quot;) or discard the tube, meaning it has been
+used up. Discarding the tube sets the volume of the sample to 0 and marks it as
+&quot;discarded&quot;,and removes it from its box.</p>
+
+<ol>
+  <li>Click on one of the positions in the box with a tube. The position, alias,
+and barcode will appear to the right or below the box graphic. 
+Right-click on the alias and pick &quot;Open in new tab&quot; to load the details page.</li>
+  <li>Go back to the Box page in the other tab. Make sure the tube is still selected in
+the Box and click <em>Discard Tube</em>. Click &quot;OK&quot; in the pop-up.</li>
+  <li>Go to the other tab with the Details page and click the browser refresh
+button. The <em>Location</em> field will show as blank, <em>Volume</em> will be set to 0.0,
+and the <em>Discarded</em> box will be ticked.</li>
+</ol>
+
+<h3 id="moving-samples-around-in-boxes">Moving samples around in boxes</h3>
+
+<p>An item can only exist in one box. If assigned to a new box, it will
+disappear from the original.</p>
+
+<ol>
+  <li>In the current tab, go to the <em>Boxes</em> page, find the <em>TUTORIAL</em> box. This box was previously
+created by the MISO developers for the tutorial.</li>
+  <li>Choose an empty position and enter one of your barcodes.</li>
+  <li>Click <em>Lookup</em> and <em>Update Position</em>.</li>
+  <li>Go back to your own Box and refresh the page. The sample was removed.</li>
+</ol>
+
+<p><a name="service"></a></p>
+
+<h1 id="adding-instrument-service-records">Adding instrument service records</h1>
+
+<p>Each sequencer has a service record.</p>
+
+<ol>
+  <li>Select <em>Sequencers</em>.</li>
+  <li>Choose an individual sequencer.</li>
+  <li>Use the blue arrow to expand the <em>Service Records</em> section.</li>
+  <li>From <em>Options</em>, choose <em>Add Sequencer Record</em>.</li>
+  <li>Fill in the form as follows:
+    <ul>
+      <li><em>Title</em>: a short description of the work (<em>e.g.</em>, <code class="highlighter-rouge">Remove gremlin from sequencer</code>)</li>
+      <li><em>Description</em>: a long description of the work (<em>e.g.</em>, <code class="highlighter-rouge">A gremlin was found outside of the terrible 80s movie. It had developed a taste for polymerase.</code>)</li>
+      <li><em>Serviced By</em>: your name</li>
+      <li><em>Service Date</em>: the current date</li>
+    </ul>
+  </li>
+  <li>Click <em>Save</em>.</li>
+</ol>
+
+<p>After saving, it is also possible to attach files to the record. Look under the <em>Attachments</em> heading.</p>
+
+<p><a name="trouble"></a></p>
+
+<h1 id="troubleshooting">Troubleshooting</h1>
+
+<ol>
+  <li>When instruments break down, how do you log failures into the system?</li>
+  <li>How do you assigning single lane failures (if possible)?</li>
+  <li>How you fail flowcells? Or how does MISO detect failed runs?</li>
+  <li>How do you scan out libraries from inbox to outbox?</li>
+</ol>
+
+<table>
+  <tbody>
+    <tr>
+      <td>&lt; <a href="3-0-libraries">Libraries tutorial</a></td>
+      <td><a href="index">Home</a></td>
+    </tr>
+  </tbody>
+</table>
+
+
+                    </div>
+                
+            </div>
+
+            
+
+            <div class="row">
+                <div id="footer" class="col-sm-12">
+                    Documentation for <a href="https://github.com/TGAC/miso-lims">MISO</a> developed by the <a href="http://labs.oicr.on.ca/genome-sequence-informatics/">Genome Sequence Informatics</a> group at <a href="http://oicr.on.ca">Ontario Institute for Cancer Research</a>
+
+
+                </div>
+            </div>
+        </div>
+
+        <script src="/miso-docs-oicr/styles/navigation.js"></script>
+
+    </body>
+</html>

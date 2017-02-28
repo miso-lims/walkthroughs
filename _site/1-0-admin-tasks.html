@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width">
 
-        <title>MISO : 2. Projects</title>
+        <title>MISO : Administration tasks</title>
         <meta name="description" content="An open-source LIMS for NGS sequencing centres">
 
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
@@ -31,10 +31,56 @@
                 
                     <div id="content" class="col-sm-12">
                         <div class="page-header">
-    <h2>2. Projects
+    <h2>Administration tasks
         
     </h2>
 </div>
+
+<div id="toc">
+Table of Contents
+<ol>
+    <li><a href="#login">Logging In</a></li>
+    <li><a href="#proj">Creating Projects</a></li>
+    <li><a href="#perms">Creating groups and adding users to them</a></li>
+    <li><a href="#inst">Adding new instruments</a></li>
+    <li><a href="#reports">Creating project and monthly reports</a></li>
+</ol>
+</div>
+
+<div id="infobox">
+Download the worksheet for this section here: <a href="1-0-admin-tasks-worksheet">Admin tasks Worksheet</a>. 
+</div>
+
+<p><a name="login"></a></p>
+
+<h1 id="logging-in">1. Logging in</h1>
+
+<p>Much like the old Geospiza LIMS, you need to log in to MISO LIMS in order to
+make changes to any LIMS entities. Logging in lets us record any changes you
+make and also allows us to set appropriate permissions.</p>
+
+<p>If you were able to log in to Geospiza LIMS, you already have the correct
+permissions and can proceed to logging in. If you are a new user, you will need
+to contact <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#104;&#101;&#108;&#112;&#100;&#101;&#115;&#107;&#064;&#111;&#105;&#099;&#114;&#046;&#111;&#110;&#046;&#099;&#097;">&#104;&#101;&#108;&#112;&#100;&#101;&#115;&#107;&#064;&#111;&#105;&#099;&#114;&#046;&#111;&#110;&#046;&#099;&#097;</a> so that they put you into the appropriate
+Active Directory group, <code class="highlighter-rouge">MISO_ROLE_INTERNAL</code>.</p>
+
+<hr />
+
+<p>Try to log in now:</p>
+
+<ol>
+  <li>Click on <a href="http://miso.gsi.oicr.on.ca" target="\_new">http://miso.gsi.oicr.on.ca</a>.</li>
+  <li>Enter your
+username (e.g. jdoe) and password and click the Login button.
+MISO uses the same username and password as your OICR email account.</li>
+</ol>
+
+<p>If all goes well, you should see the MISO Dashboard and see a message at the
+top right: &quot;Logged in as: <strong>jdoe</strong>&quot;.</p>
+
+<p><a name="proj"></a></p>
+
+<h1 id="creating-projects">2. Creating projects</h1>
 
 <p>A <em>Project</em> contains information about a set of <em>Studies</em> that may comprise many
 different <em>Samples</em>, <em>Experiments</em> and <em>Runs</em>. Samples are attached to Projects as
@@ -58,6 +104,8 @@ button where you can find basic information about the current page.</p>
 
 <h2 id="creating-a-new-project">2.1 Creating a new project</h2>
 
+<p>To create a new project:</p>
+
 <ol>
   <li>After logging in, click the <em>My Projects</em> tab at the top of the MISO
 dashboard.</li>
@@ -70,10 +118,12 @@ dashboard.</li>
   <li>Ignore Project ID and Name, since they are set by MISO once the Project is saved.</li>
   <li>Enter a unique <em>Alias</em>. The alias is a name, chosen by us, that is associated
 with a project. The aliases must be a unique and contain only letters or
-numbers. It cannot contain spaces or punctuation. e.g. <code class="highlighter-rouge">DoIt4Science</code> (be creative!)</li>
+numbers. It cannot contain spaces or punctuation. e.g. <code class="highlighter-rouge">DoIt4Science</code> (be creative!).
+Record this alias in your worksheet. <img src="pics/blue_pencil.png" /></li>
   <li>Enter a <em>Short Name</em> for your project. The short name should be 2-5 letters in
 all CAPS and related to the project alias. This short name will be used to
-automatically generate sample and library names. e.g. short name: <code class="highlighter-rouge">DI4S</code></li>
+automatically generate sample and library names. e.g. short name: <code class="highlighter-rouge">DI4S</code>.
+Record the short name in your worksheet. <img src="pics/blue_pencil.png" /></li>
   <li>In the <em>Description</em> field, enter <code class="highlighter-rouge">MISO training workshop [Date]</code></li>
   <li>Choose the amount of <em>Progress</em> that your project has accomplished:
     <ul>
@@ -97,9 +147,7 @@ as human.</li>
   <li>Make sure that <em>Allow all internal users access?</em> is selected.</li>
 </ol>
 
-<table border="1"><tr><td>
-  <img alt="Create Project DI4S" src="pics/create-di4s.png" />
-</td></tr></table>
+<p><img alt="Create Project DI4S" src="pics/create-di4s.png" id="figure" /></p>
 
 <ol>
   <li>Click the <em>Save</em> button at the upper right.</li>
@@ -190,7 +238,26 @@ project (e.g. Project Information form, REB).</p>
 
 <p>Now that your project has been created, continue to make your first samples.</p>
 
-<p><a href="1-logging-in">Back</a> <a href="index">Home</a> <a href="3-incoming">Next</a></p>
+<p><a name="perms"></a></p>
+
+<h1 id="creating-groups-and-adding-users-to-them">3. Creating groups and adding users to them</h1>
+
+<p><a name="inst"></a></p>
+
+<h1 id="adding-new-instruments">4. Adding new instruments</h1>
+
+<p><a name="reports"></a></p>
+
+<h1 id="creating-project-and-monthly-reports">5. Creating project and monthly reports</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="index">Home</a></td>
+      <td><a href="2-0-samples">Samples tutorial</a> &gt;</td>
+    </tr>
+  </tbody>
+</table>
 
 
                     </div>

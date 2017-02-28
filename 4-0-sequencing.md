@@ -1,7 +1,51 @@
 ---
 layout: page
-title: Runs and Sequencing Containers
+category: walkthrough
+title: Sequencing tutorial
+
 ---
+
+<div id="toc">
+Table of Contents
+<ol>
+   <li><a href="#login">Logging In</a></li>
+   <li><a href="#orders">Checking for sequencing Orders</a></li>
+   <li><a href="#nruns">Creating Runs from scratch</a></li>
+   <li><a href="#aruns">Working with automatically created runs</a></li>
+   <li><a href="#pools">Adding Pools to Runs</a></li>
+   <li><a href="#boxes">Scanning libraries into your outbox</a></li>
+   <li><a href="#service">Adding Service Records</a></li>
+   <li><a href="#trouble">Troubleshooting</a></li>
+</ol>
+</div>
+
+<div id="infobox">
+Download the worksheet for this section here: <a href="4-0-sequencing-worksheet">Sequencing Worksheet</a>.
+</div>
+
+
+<a name="login"/>
+
+# 1. Logging in
+
+{% include logging_in.md %}
+
+<a name="orders"/>
+
+# 2. Checking for unfulfilled orders
+
+{% include uorders.md %}
+
+<a name="nruns"/>
+
+## 2.0 Scan libraries into your inbox
+
+First, scan the libraries from the libraries team into your inbox for further
+work.
+
+{% include inboxes.md %}
+
+# Creating runs from scratch
 
 MISO supports runs from both Illumina and PacBio sequencers (and others that
 are no longer used at OICR), so the terms used for instrument runs and
@@ -13,7 +57,10 @@ instrument Run and contains one or more lanes. Each _lane_ (e.g. Illumina lane,
 PacBio SMRT cell) in the container is loaded with exactly one _Pool_.
 Runs and Containers can be associated as soon as the sequencer has started.
 
-## 8.1 Viewing Run statistics
+<a name="aruns"/>
+
+# Working with automatically created runs
+
 About five minutes after an instrument begins sequencing, MISO will detect it
 and create a _Run_. As sequencing continues, MISO will pull back information
 about the quality of the run similar to the on-instrument applications like SAV.
@@ -31,7 +78,10 @@ functionality will be redesigned in the near future.
 
 <a href="pics/interop.png"><img style="width:100%;" src="pics/interop.png"/></a>
 
-## 8.2 Adding a sequencing container to a run
+
+<a name="pools"/>
+
+# Adding pools to runs
 
 The Run (representing an instrument run) is associated with Pools using a
 _Sequencing Container_.
@@ -54,7 +104,7 @@ Now check on the Order.
 shows 1 for the pool.
 
 
-### 8.3 Low Quality Sequencing
+## 8.3 Low Quality Sequencing
 Not every library realises its full potential. After sequencing, specific
 libraries can be flagged as having low sequencing quality. The
 "Low Quality Sequencing" indicator causes any pool containing this library to be
@@ -71,5 +121,41 @@ will be flagged red.
 1. Go back to your Run page.
 1. Find your pool using the search box. It will be flagged red.
 
+<a name="boxes"/>
 
-[Back](7-pools) [Home](index) [Next](9-sequencers)
+# Scanning libraries/pools into your outbox
+
+Lastly, place the libraries/pools in your outbox for storage.
+
+{% include outboxes.md %}
+
+
+<a name="service"/>
+
+# Adding instrument service records
+
+Each sequencer has a service record.
+
+1. Select _Sequencers_.
+1. Choose an individual sequencer.
+1. Use the blue arrow to expand the _Service Records_ section.
+1. From _Options_, choose _Add Sequencer Record_.
+1. Fill in the form as follows:
+  * _Title_: a short description of the work (_e.g._, `Remove gremlin from sequencer`)
+  * _Description_: a long description of the work (_e.g._, `A gremlin was found outside of the terrible 80s movie. It had developed a taste for polymerase.`)
+  * _Serviced By_: your name
+  * _Service Date_: the current date
+1. Click _Save_.
+
+After saving, it is also possible to attach files to the record. Look under the _Attachments_ heading.
+
+<a name="trouble"/>
+
+# Troubleshooting
+
+1. When instruments break down, how do you log failures into the system?
+1. How do you assigning single lane failures (if possible)?
+1. How you fail flowcells? Or how does MISO detect failed runs?
+1. How do you scan out libraries from inbox to outbox?
+
+< <a href="3-0-libraries">Libraries tutorial</a> | <a href="index">Home</a>

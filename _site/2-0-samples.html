@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width">
 
-        <title>MISO : 3. Incoming samples</title>
+        <title>MISO : Samples Tutorial</title>
         <meta name="description" content="An open-source LIMS for NGS sequencing centres">
 
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
@@ -31,10 +31,56 @@
                 
                     <div id="content" class="col-sm-12">
                         <div class="page-header">
-    <h2>3. Incoming samples
+    <h2>Samples Tutorial
         
     </h2>
 </div>
+
+<div id="toc">
+Table of Contents
+<ol>
+    <li><a href="#login">Logging In</a></li>
+    <li><a href="#receipt">Receiving Samples</a></li>
+    <li><a href="#props">Propagating Samples</a></li>
+    <li><a href="#qcs">Adding Sample QCs</a></li>
+    <li><a href="#boxes">Working with Boxes</a></li>
+    <li><a href="#trouble">Troubleshooting</a></li>
+</ol>
+</div>
+
+<div id="infobox">
+Download the worksheet for this section here: <a href="2-0-samples-worksheet">Samples Worksheet</a>.
+</div>
+
+<p><a name="login"></a></p>
+
+<h1 id="logging-in">1. Logging in</h1>
+<p>Much like the old Geospiza LIMS, you need to log in to MISO LIMS in order to
+make changes to any LIMS entities. Logging in lets us record any changes you
+make and also allows us to set appropriate permissions.</p>
+
+<p>If you were able to log in to Geospiza LIMS, you already have the correct
+permissions and can proceed to logging in. If you are a new user, you will need
+to contact <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#104;&#101;&#108;&#112;&#100;&#101;&#115;&#107;&#064;&#111;&#105;&#099;&#114;&#046;&#111;&#110;&#046;&#099;&#097;">&#104;&#101;&#108;&#112;&#100;&#101;&#115;&#107;&#064;&#111;&#105;&#099;&#114;&#046;&#111;&#110;&#046;&#099;&#097;</a> so that they put you into the appropriate
+Active Directory group, <code class="highlighter-rouge">MISO_ROLE_INTERNAL</code>.</p>
+
+<hr />
+
+<p>Try to log in now:</p>
+
+<ol>
+  <li>Click on <a href="http://miso.gsi.oicr.on.ca" target="\_new">http://miso.gsi.oicr.on.ca</a>.</li>
+  <li>Enter your
+username (e.g. jdoe) and password and click the Login button.
+MISO uses the same username and password as your OICR email account.</li>
+</ol>
+
+<p>If all goes well, you should see the MISO Dashboard and see a message at the
+top right: &quot;Logged in as: <strong>jdoe</strong>&quot;.</p>
+
+<p><a name="receipt"></a></p>
+
+<h1 id="receiving-samples">2. Receiving samples</h1>
 
 <p>A <em>Sample</em> contains information about the material upon which the sequencing
 experiments are to be based. Samples can be used in any number of sequencing
@@ -68,7 +114,7 @@ the Project you created in the last session.</p>
 
 <p><img src="pics/flow-tissue-rx.svg" /></p>
 
-<h2 id="entering-a-single-sample">3.1 Entering a single Sample</h2>
+<h2 id="entering-a-single-tissue">2.1 Entering a single Tissue</h2>
 
 <p>There are two ways of entering Samples into MISO: Single and Bulk. We will start
 by entering a single Sample for reference tissue from the Identity <code class="highlighter-rouge">ID1</code>.</p>
@@ -87,16 +133,18 @@ information in this form.</li>
   <li>Sample Type: select <code class="highlighter-rouge">GENOMIC</code> from the drop down.</li>
   <li>QC Status: select <code class="highlighter-rouge">Ready</code> from the drop down.</li>
   <li>In the <em>Identity</em> section:</li>
-  <li>External names : 
+  <li>External names : this is the name of the <em>individual</em>, whether internal or external. 
+For example, an external identifier would be &quot;Morgan&quot; (internally we refer to her as plain ol&#39; MORG_0001).
     1. Click <em>Find or Create Identity</em>.
     1. In the pop-up window, enter external name: project short name <code class="highlighter-rouge">_ID1</code> 
 (<em>e.g.</em>, <code class="highlighter-rouge">PROJ_ID2</code>). This is the name given to the donor by the external 
-institute that the tissue came from.
+institute that the tissue came from. Record this in your worksheet. <img src="pics/blue_pencil.png" />
     1. Click <em>Validate External Name(s)</em>.
     1. From the dropdown, select <code class="highlighter-rouge">First Receipt</code>.
     1. Click <em>Select</em>.</li>
   <li>Sex: Select any item from the dropdown.</li>
-  <li>In the <em>Details</em> section, select the <em>Sample Class</em> <code class="highlighter-rouge">Reference Tissue</code>.</li>
+  <li>In the <em>Details</em> section, select the <em>Sample Class</em> <code class="highlighter-rouge">Reference Tissue</code>. 
+Record the class in your worksheet. <img src="pics/blue_pencil.png" /></li>
   <li>In the <em>Tissue</em> section, select or enter the following to create a reference Sample.</li>
   <li>Tissue Origin: <code class="highlighter-rouge">Ly (Lymphocyte)</code></li>
   <li>Tissue Type: <code class="highlighter-rouge">R (Reference or non-tumour, non-diseased tissue sample)</code></li>
@@ -114,9 +162,11 @@ Tissue
 Alias will be in the form PROJ_0001_Ly_R_nn_1-1: (Project Short
 Name)_(Individual ID)_(Tissue Origin)_(Tissue Type)_(Passage number)_(Times
 Received)_(Tube Number). Passage number is only required for Xenografts and Cell
-lines. For more information about Sample nomenclature, see <a href="https://wiki.oicr.on.ca/display/MCPHERSON/LIMS+Guidelines#LIMSGuidelines-SampleNomenclature" target="_new">Sample Nomenclature</a>.</p>
+lines. For more information about Sample nomenclature, see <a href="https://wiki.oicr.on.ca/display/GENOMICS/LIMS+Guidelines#LIMSGuidelines-SampleNomenclature" target="_new">Sample Nomenclature</a> on the GENOMICS wiki.</p>
 
-<h3 id="enter-a-matrix-tube-barcode">3.1.1 Enter a matrix tube barcode</h3>
+<p>Record the alias in your worksheet. <img src="pics/blue_pencil.png" /></p>
+
+<h3 id="enter-a-matrix-tube-barcode">2.1.1 Enter a matrix tube barcode</h3>
 
 <p>After saving the Sample, you will be able to enter the barcode for the tube.</p>
 
@@ -124,15 +174,14 @@ lines. For more information about Sample nomenclature, see <a href="https://wiki
   <li>On the <em>Edit Sample</em> page for the sample you just created, click the arrow next to
 the blue <em>ID</em> box at the top right hand corner.</li>
   <li>Select <em>Assign New Barcode</em> from the menu.</li>
-  <li>Use the hand-scanner or type a barcode into the pop-up. For this exercise,
-enter your Project Short Name and _R1. e.g. <code class="highlighter-rouge">PROJ_R1</code>. We will use this barcode
-later in the Box section.</li>
+  <li>Use the hand-scanner or type a barcode into the pop-up.
+Record the barcode in your worksheet. <img src="pics/blue_pencil.png" /></li>
   <li>Click <em>Save</em> on the pop-up.</li>
 </ol>
 
 <p>The page will re-load with the 2D barcode at the top right.</p>
 
-<h2 id="automatically-created-samples">3.2 Automatically created Samples</h2>
+<h2 id="automatically-created-samples">2.2 Automatically created Samples</h2>
 
 <ol>
   <li>Click the <em>My Projects</em> tab at the top and select your project from the list.</li>
@@ -154,7 +203,7 @@ name)_(Individual number), e.g. PROJ_0001. Other types of Samples are created au
 on how you propagate them through to libraries. Some of them will be addressed
 in the following tutorials.</p>
 
-<h2 id="bulk-create-samples">3.3 Bulk create Samples</h2>
+<h2 id="entering-bulk-tissues">2.3 Entering bulk Tissues</h2>
 
 <p>Next, we will create four more Samples using the much faster bulk method. The
 four samples will be the Primary Tumour Tissue for individuals 1-5.</p>
@@ -215,10 +264,10 @@ Origin</em>, <em>Tissue Type</em>, <em>Times Received</em>, <em>Tube Number</em>
 
 <ol>
   <li><em>Matrix Barcode</em>: you would normally use a hand-scanner or
-copy and paste a list of barcodes from a spreadsheet. In this case, enter the project
-short name followed by P and a number. The fill down functionality does not
-auto-increment, so these need to be typed. For example:<code class="highlighter-rouge">PROJ_P1</code>, <code class="highlighter-rouge">PROJ_P2</code>, <code class="highlighter-rouge">PROJ_P3</code>, <code class="highlighter-rouge">PROJ_P4</code></li>
-  <li><em>External Name</em>:  replace <code class="highlighter-rouge">PROJ</code> with your own project name.
+copy and paste a list of barcodes from a spreadsheet. 
+For each sample, select a barcode and scan or type it in and record it in your worksheet. <img src="pics/blue_pencil.png" /></li>
+  <li><em>External Name</em>:  Again, this is the name of the <em>individual</em>, whether internal or external.
+  Here&#39;s a suggested list. Replace <code class="highlighter-rouge">PROJ</code> with your own project name.
     <ul>
       <li><code class="highlighter-rouge">PROJ_ID1</code></li>
       <li><code class="highlighter-rouge">PROJ_ID2</code></li>
@@ -232,22 +281,16 @@ Since these are all first receipt, you may fill them down after selecting it in 
 the identities already existed, you would have to select them individually.</li>
   <li><em>Ext. Inst. Identifier</em>: add a number to each row starting from 2, i.e..
 <code class="highlighter-rouge">BioBankID 2</code>, <code class="highlighter-rouge">BioBankID 3</code>, <code class="highlighter-rouge">BioBankID 4</code>, <code class="highlighter-rouge">BioBankID 5</code>.</li>
-  <li>
-    <p><em>Description</em>:</p>
-
-    <p>Copying and pasting from Excel and Word is supported.</p>
-
-    <p>Go to
-<a href="http://pastebin.com/uQXhafqJ">http://pastebin.com/uQXhafqJ</a> and copy the list of descriptions by selecting it
-with your mouse, right clicking and selecting <em>Copy</em>. Then click on the first
-cell in the top row of <em>Description</em> and press Ctrl+V on your keyboard to
-paste.</p>
-  </li>
+  <li><em>Description</em>: Copying and pasting from Excel and Word is supported. 
+Copy something from anywhere and press Ctrl+V on your keyboard to
+paste.</li>
   <li>Click <em>Save</em> at the upper right hand corner.</li>
 </ol>
 
 <p>If everything is correct, the <em>Alias</em> will be auto-generated for each row and
-the samples will be saved. If you navigate back to your <em>Edit Project</em> page,
+the samples will be saved. 
+Record the external identity, class, alias and barcode in your worksheet. <img src="pics/blue_pencil.png" />
+If you navigate back to your <em>Edit Project</em> page,
 there should be nine Samples:</p>
 
 <ul>
@@ -256,10 +299,10 @@ there should be nine Samples:</p>
   <li>4 Primary Samples</li>
 </ul>
 
-<p>Notice also that because you used the same <em>External Name</em>, ending in <code class="highlighter-rouge">ID1</code>,
+<p>Notice also that if you used the same <em>External Name</em>, ending in <code class="highlighter-rouge">ID1</code>,
 for two samples, reference and primary, they have the same Identity.</p>
 
-<h2 id="receiving-stock-dnarna">3.4 Receiving Stock DNA/RNA</h2>
+<h2 id="receiving-stock-dnarna">2.4 Receiving Stock DNA/RNA</h2>
 
 <p>The process for receiving Stock DNA is very similar to receiving
 tissue. Every stock derives from a Tissue, which originated from an
@@ -303,7 +346,9 @@ Sample.</li>
   <li>At the upper right hand side, click <em>Save</em>.</li>
 </ol>
 
-<p>Stock aliases are created from their tissue alias by appending <em>_D_S#</em> or <em>_R_S#</em>.
+<p>When you click &#39;Save&#39;, the aliases will be filled in. 
+Record the external identity, class, alias and barcode in your worksheet. <img src="pics/blue_pencil.png" />
+Stock aliases are created from their tissue alias by appending <em>_D_S#</em> or <em>_R_S#</em>.
 For example, the first DNA stock that derives from a tissue <code class="highlighter-rouge">PROJ_0002_Ly_R_nn_1-1</code> has
 the name <code class="highlighter-rouge">PROJ_0002_Ly_R_nn_1-1_D_S1</code>.</p>
 
@@ -321,7 +366,242 @@ exist except for sample tracking purposes!&quot;. This message means that the Ti
 does not exist in a freezer at OICR. Eventually these <em>ghost samples</em> will be
 hidden from the MISO interface.</p>
 
-<p><a href="2-projects">Back</a> <a href="index">Home</a> <a href="4-samples">Next</a></p>
+<p><a name="props"></a></p>
+
+<h1 id="receiving-libraries">2.5 Receiving Libraries</h1>
+
+<p>#TODO Content here!</p>
+
+<h1 id="propagating-samples">3. Propagating Samples</h1>
+
+<p>Samples in MISO exist for each step in the tissue preparation: from identity,
+to tissue, optionally though tissue preparation, to stock, to aliquot. At each
+step, the possible options are limited based on the established workflows.
+Group IDs may be assigned at any time and are copied when propagating. Different
+QC information is available at each step. For instance, STR status is attached
+to the stock.</p>
+
+<p><img src="pics/flow-stock.svg" /></p>
+
+<h2 id="propagating-to-tissue-processing">3.1 Propagating to Tissue Processing</h2>
+
+<p>#TODO</p>
+
+<h2 id="bulk-propagate-samples">3.2 Bulk Propagate Samples</h2>
+
+<p>For the tissue samples created previously (by bulk and single entry), we will create stocks for library preparation.</p>
+
+<p>For three of the tissues you created in the previous section, create a stock.</p>
+
+<ol>
+  <li>On the <em>Samples</em> page, enter your project name in the search box.</li>
+  <li>Check the boxes for the tissue samples (not the received stock)
+that you created in sections 2.1 and 2.3. 
+They will
+have names that end in two hyphenated numbers, like <code class="highlighter-rouge">PROJ_0001_Ly_R_nn_1-1</code>.</li>
+  <li>From the <em>Bulk actions</em> dropdown at the bottom, select <em>Propagate (sample) selected</em>.</li>
+  <li>A new dropdown will appear. Select <em>gDNA (stock)</em> and click <em>Go</em>.</li>
+  <li>Fill out the table:
+    <ul>
+      <li><em>Description</em>: Free text description. In this case, use &quot;Stock (Tissue
+  Type)(Individual)&quot;. (e.g. <code class="highlighter-rouge">Stock P2</code> for <code class="highlighter-rouge">PROJ_0002_Br_P_nn_1-1</code>)</li>
+      <li><em>Matrix Barcode</em>: choose a barcode for each stock and record it on your worksheet.<img src="pics/blue_pencil.png" /></li>
+      <li><em>Vol.</em>: <code class="highlighter-rouge">300</code></li>
+    </ul>
+  </li>
+  <li>Click <em>Save</em>.</li>
+</ol>
+
+<p>Upon successful save, a green status will show at the top that says &quot;Saved 3
+items&quot;. The Sample Alias will have been filled in with aliases that end in D_S1
+(for each first DNA stock of that tissue). Record the aliases in your worksheet. <img src="pics/blue_pencil.png" /></p>
+
+<h2 id="bulk-editing">3.2 Bulk Editing</h2>
+<p>Samples can be edited in bulk. Assume that we have done some quality control
+and wish to update the QC status of the samples.</p>
+
+<p>In this case we will update several fields of 4 stock samples. We will use the
+stocks we entered in the previous step as well as the reference stock entered in
+part 3 of this tutorial.</p>
+
+<ol>
+  <li>On the <em>Samples</em> page, enter your project name in the search box.</li>
+  <li>Check the boxes for the stock samples (propagated and received). 
+that you created in sections 2.4 and 3.1.
+These are
+the samples that end in D_S1.</li>
+  <li>From the <em>Bulk actions</em> dropdown at the bottom, select <em>Update selected</em> and click <em>Go</em>.</li>
+  <li>Change the <em>QC Status</em> column to <code class="highlighter-rouge">Ready</code> for all rows.</li>
+  <li>Enter the a <em>Matrix Barcode</em> for the stock entered in section 3.4 and record it on your worksheet. <img src="pics/blue_pencil.png" /></li>
+  <li>Click <em>Save</em>.</li>
+</ol>
+
+<p>Upon successful save, a green status will show at the top that says &quot;Saved 4
+items.&quot;.</p>
+
+<h2 id="creating-aliquots">3.3 Creating Aliquots</h2>
+<p>Propagate again from the 4 <em>gDNA (stock)</em> samples to <em>gDNA (aliquot)</em>.</p>
+
+<ol>
+  <li>On the <em>Samples</em> page, enter your project name in the search box.</li>
+  <li>Check the boxes for the stock samples. They will have names that end in
+<code class="highlighter-rouge">D_S1</code>.</li>
+  <li>From the <em>Bulk actions</em> dropdown at the bottom, select <em>Propagate (sample) selected</em>.</li>
+  <li>A new dropdown will appear. Select <em>gDNA (aliquot)</em> and click <em>Go</em>.</li>
+  <li>Fill out the table:
+    <ul>
+      <li><em>Sample Alias</em>: Skip this field. It will be automatically filled in upon
+  save.</li>
+      <li><em>Description</em>: Free text description. In this case, use &quot;Aliquot (Tissue
+  Type)(Individual)&quot;. (e.g. <code class="highlighter-rouge">Aliquot P2</code> for <code class="highlighter-rouge">PROJ_0002_Br_P_nn_1-1_D_S1</code>)</li>
+      <li><em>Matrix Barcode</em>: choose a barcode for each aliquot and record it on your worksheet. <img src="pics/blue_pencil.png" /></li>
+      <li><em>Purpose</em>: Select <code class="highlighter-rouge">Library</code></li>
+    </ul>
+  </li>
+  <li>Click <em>Save</em>.</li>
+</ol>
+
+<p>Upon successful save, a green status will show at the top that says &quot;Saved 4
+items&quot;. The Sample Alias will have been filled in with aliases that end in D_1
+(for each first aliquot of that stock). Record these on your worksheet. <img src="pics/blue_pencil.png" /></p>
+
+<p><img src="pics/flow-aliquot.svg" /></p>
+
+<p><a name="qcs"></a></p>
+
+<h1 id="adding-sample-qcs">4. Adding Sample QCs</h1>
+
+<p>#TODO</p>
+
+<p><a name="boxes"></a></p>
+
+<h1 id="working-with-boxes">5. Working with Boxes</h1>
+
+<p>#TODO customize for samples</p>
+
+<p>Boxes hold samples, libraries, and pools. They do not track reagents or
+primers. Boxes are separated into <em>uses</em> for different kinds of storage
+(<em>e.g.</em>, tissue samples versus extracted DNA), but there is no check
+that items in a box match. Each box also has a <em>size</em> that includes the
+physical dimensions of the box as well as whether the box is compatible
+with the VisionMate scanner. Every <em>position</em> in the box is identified
+by a standard row letter + column number format (<em>e.g.</em>, C05).</p>
+
+<hr />
+
+<p>In this exercise, we are going to put the things in the box that you made in
+the previous exercises. Depending on whether you have been creating samples or
+libraries, some of these fields will be different.</p>
+
+<p>First, create a new box:</p>
+
+<ol>
+  <li>From the navigation panel, choose <em>Boxes</em> and then <em>Add Box</em>.</li>
+  <li>On the <em>Create Box</em> page, enter the information:</li>
+  <li>Alias: A short name for the box. Record this name in your worksheet. <img src="pics/blue_pencil.png" /></li>
+  <li><em>Description</em>: a human description of the box purpose  “gDNA ready for
+    library prep for <project>”.</project></li>
+  <li><em>Use</em>: The contents of the box. Select an appropriate use for your entities.</li>
+  <li><em>Size</em>: Select <code class="highlighter-rouge">8 x 12 scannable</code>.</li>
+  <li>Click <em>Save</em>.</li>
+</ol>
+
+<p>Upon clicking save, a graphic of the box will appear.</p>
+
+<p><img src="pics/5-empty-box.png" id="figure" /></p>
+
+<p>You can now fill the box with the tissues, stocks, aliquots, libraries, or
+pools you made in previous steps.</p>
+
+<ol>
+  <li>Click on a position in the displayed <em>Contents</em> grid.</li>
+  <li>Enter a matrix barcode into the box on the right and click <em>Lookup</em>.
+Normally a hand scanner would be used.</li>
+  <li>Click <em>Update Position</em>.
+    <ul>
+      <li>&#9888; The <em>Save</em> button at the top of the page does not work for
+ individual positions, only for <em>Box Information</em>.</li>
+    </ul>
+  </li>
+  <li>Repeat for as many samples/libraries/pools as you want.</li>
+</ol>
+
+<p>The table below the box diagram shows the position and information for the
+currently selected sample. If you would like to see all of the samples in the
+table, click the <em>List all Box Contents</em> button at the top right of the table.</p>
+
+<p>In the lab, it is possible to use <em>Options</em> &gt; <em>Scan Box</em> to use the plate
+scanner and update all positions at once, but that will not be covered in this
+tutorial.</p>
+
+<h2 id="using-boxes">Using Boxes</h2>
+
+<p>Boxes can be found either from the Sample or Library page or the <em>Boxes</em> page.</p>
+
+<ol>
+  <li>On the <em>Sample</em> page, search for one of your sample or library aliases and click on the alias to load the page.</li>
+  <li>The Box and position is listed under <em>Location</em> near the top of the <em>Sample
+Information</em> section. Click on the link to go to the Box (e.g. <code class="highlighter-rouge">PROJ_OUTBOX,
+A03</code>).</li>
+</ol>
+
+<p>Boxes can be used to store Samples, Libraries and Pools and one box can store all
+three types.</p>
+
+<h3 id="removing-and-discarding-tubes">Removing and discarding tubes</h3>
+
+<p>When you have a position selected, you can also either remove the tube from the
+box (setting its location to &quot;Unknown&quot;) or discard the tube, meaning it has been
+used up. Discarding the tube sets the volume of the sample to 0 and marks it as
+&quot;discarded&quot;,and removes it from its box.</p>
+
+<ol>
+  <li>Click on one of the positions in the box with a tube. The position, alias,
+and barcode will appear to the right or below the box graphic. 
+Right-click on the alias and pick &quot;Open in new tab&quot; to load the details page.</li>
+  <li>Go back to the Box page in the other tab. Make sure the tube is still selected in
+the Box and click <em>Discard Tube</em>. Click &quot;OK&quot; in the pop-up.</li>
+  <li>Go to the other tab with the Details page and click the browser refresh
+button. The <em>Location</em> field will show as blank, <em>Volume</em> will be set to 0.0,
+and the <em>Discarded</em> box will be ticked.</li>
+</ol>
+
+<h3 id="moving-samples-around-in-boxes">Moving samples around in boxes</h3>
+
+<p>An item can only exist in one box. If assigned to a new box, it will
+disappear from the original.</p>
+
+<ol>
+  <li>In the current tab, go to the <em>Boxes</em> page, find the <em>TUTORIAL</em> box. This box was previously
+created by the MISO developers for the tutorial.</li>
+  <li>Choose an empty position and enter one of your barcodes.</li>
+  <li>Click <em>Lookup</em> and <em>Update Position</em>.</li>
+  <li>Go back to your own Box and refresh the page. The sample was removed.</li>
+</ol>
+
+<p><a name="trouble"></a></p>
+
+<h1 id="troubleshooting">Troubleshooting</h1>
+
+<p>#TODO</p>
+
+<ol>
+  <li>How do you work with multiple samples derived from the same identity (i.e. DNA and RNA from one tissue slide, DNA from metastasis and control)</li>
+  <li>How do I correct a sample that has the wrong information, e.g. wrong tissue type?</li>
+  <li>What if I need to change the parent of a sample? (e.g. for swaps)</li>
+  <li>What do I have to enter if receiving a pre-made library?</li>
+  <li>How can I add a new tissue type, tissue origin,  or add anything else in drop-down menus?</li>
+</ol>
+
+<table>
+  <tbody>
+    <tr>
+      <td>&lt; <a href="1-0-admin-tasks">Admin tasks tutorial</a></td>
+      <td><a href="index">Home</a></td>
+      <td><a href="3-0-libraries">Libraries tutorial</a> &gt;</td>
+    </tr>
+  </tbody>
+</table>
 
 
                     </div>

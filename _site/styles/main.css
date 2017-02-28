@@ -4,7 +4,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.4em;
+    font-size: 1.22em;
     font-weight: bold;
 }
 
@@ -38,6 +38,16 @@ pre {
 
 code {
     color: inherit;
+}
+
+#figure {
+    border: 1px solid black;
+}
+
+#infobox {
+    background-color:#EEEEFF;
+    margin: 20px;
+    border: 5px solid #EEEEFF;
 }
 
 #header {
@@ -79,6 +89,12 @@ code {
     padding-right: 0;
 }
 
+#toc {
+    width:300px;
+    padding:5px;
+    background-color:#EEEEFF;
+    border:1px solid #5970B2;
+}
 body.rtl {
 	direction: rtl;
 }
