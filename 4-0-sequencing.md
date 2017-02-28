@@ -38,7 +38,10 @@ Download the worksheet for this section here: <a href="4-0-sequencing-worksheet"
 
 <a name="nruns"/>
 
-## 2.0 Scan aliquots into your inbox
+## 2.0 Scan libraries into your inbox
+
+First, scan the libraries from the libraries team into your inbox for further
+work.
 
 {% include inboxes.md %}
 
@@ -121,6 +124,8 @@ will be flagged red.
 <a name="boxes"/>
 
 # Scanning libraries/pools into your outbox
+
+Lastly, place the libraries/pools in your outbox for storage.
 
 {% include outboxes.md %}
 

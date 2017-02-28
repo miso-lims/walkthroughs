@@ -1,5 +1,5 @@
 
-Finally, update the _TUTORIALOUTBOX_ with your samples/libraries/pools to
+Finally, update the _TUTORIAL\_OUTBOX_ with your samples/libraries/pools to
 pass them on to the next team or to put them into storage.
 
 ### Removing and discarding tubes

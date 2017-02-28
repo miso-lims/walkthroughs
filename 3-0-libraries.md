@@ -50,6 +50,9 @@ strategy type accordingly).
 
 ## 2.0 Scan aliquots into your inbox
 
+First, we accept the aliquots made by the samples team and put them into your
+inbox.
+
 {% include inboxes.md %}
 
 
@@ -136,6 +139,9 @@ after the _Run_ exercises.
 <a name="boxes"/>
 
 # 4. Scanning libraries into your outbox
+
+Scan the libraries you just created into the outbox for the sequencing team to
+use.
 
 {% include outboxes.md %}
 

@@ -303,7 +303,10 @@ hidden from the MISO interface.
 #TODO Content here!
 
 
-# 2.6 Scanning Matrix Tubes into a Box
+# 2.5 Scanning tissues and stocks into a Box
+
+In this section we will add the stocks and tissues you just received into your
+inbox for further work. 
 
 {% include inboxes.md %}
 
@@ -400,7 +403,10 @@ items". The Sample Alias will have been filled in with aliases that end in D\_1
 
 <a name="boxes"/>
 
-# 5. Scanning samples into outboxes
+# 5. Scanning aliquots into outboxes
+
+Finally, scan the aliquots you made into the outbox so the libraries team can
+take over.
 
 {% include outboxes.md %}
 
