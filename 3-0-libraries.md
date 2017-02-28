@@ -127,7 +127,7 @@ the search box and click the sample link.
 _QC Passed_ is a simple pass/fail flag for a library to decide if it is good
 enough for sequencing. If not measured, this can be left as "Unknown".
 
-1. From the _Libraries_ page, find the `PROJ_0001_Br_P_PE_300_EX` library using 
+1. From the _Libraries_ page, find the `PROJ_0001_Br_P_PE_300_EX` library using
 the search box and click the sample link.
 1. Change _QC passed_ from _Unknown_ to _True_.
 1. Click _Save_.
@@ -155,7 +155,7 @@ A library cannot be directly loaded into a _lane_ in a _sequencing container_
 (or just one) can be mixed into a _pool_ for sequencing.
 
 _Orders_ are requests for sequencing pools a certain number of times. They are
-used to keep track of sequencing progress for project management and book-keeping. 
+used to keep track of sequencing progress for project management and book-keeping.
 
 ## 5.1 Bulk creating Library Dilutions
 Dilutions can be made in bulk from libraries.
@@ -196,7 +196,7 @@ of 4.
 1. Enter the _Pool Information_:
   1. _Alias_: A short description of the pool contents. Enter the project name
 followed by `_POOL` (e.g. `PROJ_POOL`)
-  1. _Description_: A longer free-text description of the pool. 
+  1. _Description_: A longer free-text description of the pool.
   1. _Platform Type_: Leave `Illumina` selected.
   1. _Desired Concentration_: Enter a concentration.
   1. _Creation Date_: Select a date.
@@ -246,14 +246,75 @@ summed when displayed on this page.
 
 # Troubleshooting
 
-1. How do I correct an index on a library?
-1. What if I assign a library to the wrong parent aliquot?
-1. What if I forget to put a library dilution in a pool?
-1. How do I change the targeted sequencing type on a library?
-1. How can I add a new targeted sequencing type, kit, or anything else in drop-down menus?
-1. How do I make bulk orders?
-1. How are matrix tube barcodes assigned to tubes?
-1. What is the importance of selecting a study (?) since it prevents the Sequencing stage from adding pools to the lane containers?
+## How do I correct an index on a library?
+The index can be changed on either the individual library page or the bulk edit page.
+
+1. From _Tracking_, _Library_, select the library that needs to be changed.
+1. If necessary, change _Index Family_. If selected, the indices will be erased.
+1. Select the correct index under _Indices_. If the index family supports dual barcoding, another drop down will appear.
+
+## What if I assign a library to the wrong parent aliquot?
+Please email gsi@oicr.on.ca or file a JIRA ticket in GSI Common to get assistance from the MISO team.
+
+## What if I forget to put a library dilution in a pool?
+If the library dilution has not been created:
+
+1. From _Tracking_, _Library_, select the library that needs to be added.
+1. In the _Library Dilution_ section, hover over _Options_ and select _Add Library Dilution_.
+1. Fill out the new row in the table, then click _Add_.
+
+Once the dilution exists:
+
+1. From _Tracking_, _Pool_, select the pool that needs the additional library dilution.
+1. In the _Pool Elements_ section, find the second table, labelled _Select poolable elements_.
+1. Enter the library name, library alias, or dilution name in the _Search_ box.
+1. Find the correct dilution in the list and click the plus button beside it.
+
+## How do I change the targeted sequencing type on a library?
+Targeted sequencing is connected to the dilution since the same library can be used for multiple targeted sequencing panels.
+
+1. From _Tracking_, _Library_, select the library that needs to be changed.
+1. In the _Library Dilution_ section, under the _Edit_ column, click the pencil beside the dilution that needs to be changed.
+1. Select a new _Targeted Sequencing_ from the list.
+1. Under the _Edit_ column, click _Save_.
+
+## How can I add a new targeted sequencing type, kit, or anything else in drop-down menus?
+For targeted sequencing and indices, please email gsi@oicr.on.ca or file a JIRA ticket in GSI Common to get assistance from the MISO team.
+
+Kits can be added easily:
+
+1. From _Tracking_, _Kits_, select the type of kit you want to add.
+1. Click _Create Kit Descriptor_.
+1. Fill in the form. The _Stock Level_ is not currently used, so leave it at zero.
+1. Carefully select the _Kit Type_ and _Platform_. This will determine what the kit can be used for.
+1. Click _Save_.
+
+## How do I make bulk orders?
+Alas, this is not possible yet.
+
+## How are matrix tube barcodes assigned to tubes?
+Barcodes can be assigned on an individual edit page or in bulk.
+
+To change a single library:
+
+1. From _Tracking_, _Library_, select the library that needs to be changed.
+1. In the top right, you will see a box labelled _Barcode_.
+1. Hover over the down arrow and select _Update Barcode_.
+1. Scan the barcode.
+1. Click _Save_.
+
+To change many libraries:
+
+1. From _Tracking_, _Library_, check the box beside each library that needs to be changed.
+1. From _Bulk actions_, choose _Update selected_ and click _Go_.
+1. Select the cell in the _Matrix Barcode_ column for the library and scan the barcode.
+1. Repeat for all the libraries.
+1. Click _Save_.
+
+## What is the importance of selecting a study since it prevents the sequencing stage from adding pools to the lane containers?
+The study is important for submitting to the ERA. Although we are not using
+that feature of MISO, it's required that all projects have at least one study
+and that it is required when adding a pool to a lane.
 
 < <a href="2-0-samples">Samples tutorial</a> | <a href="index">Home</a> | <a href="4-0-sequencing">Sequencing tutorial</a> >
 
