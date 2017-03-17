@@ -10,6 +10,7 @@ Table of Contents
 <ol>
     <li><a href="#login">Logging In</a></li>
     <li><a href="#proj">Creating Projects</a></li>
+    <li><a href="#users">Adding Users</a></li>
     <li><a href="#perms">Creating groups and adding users to them</a></li>
     <li><a href="#inst">Adding new instruments</a></li>
     <li><a href="#reports">Creating project and monthly reports</a></li>
@@ -177,16 +178,27 @@ project (e.g. Project Information form, REB).
 Now that your project has been created, continue to make your first samples.
 
 
+<a name="users"/>
+
+# 3. Adding Users
+
+OICR uses Active Directory authentication for MISO. Users must be added by IT; once added,
+they can then log in to MISO using their email credentials.
+
+1. Please email helpdesk@oicr.on.ca and CC Morgan Taschuk to request that the user be added to MISO LIMS by 
+making them part of the following Active Directory groups:
+    * If the person is to be added as an admin: `MISO_ROLE_ADMIN` and `MISO_ROLE_INTERNAL` groups.
+    * If the person is not to be given admin access: `MISO_ROLE_INTERNAL` group.
 
 <a name="perms"/>
 
-# 3. Creating groups and adding users to them
+# 4. Creating groups and adding users to them
 
 _Groups_ permit fine-grained control over who has view and/or edit access to an
 item in MISO. There is a default group in MISO for "all internal users".
 There are also groups for Watchers, but these features are not yet fully functional. 
 
-## 3.1 Create a Group
+## 4.1 Create a Group
 
 To create a new group:
 
@@ -200,7 +212,7 @@ The _Edit Group_ page will display a number of fields that you can fill in.
 1. Select your user as the only member of your group.
 1. Click the _Save_ button at the upper right.
 
-## 3.2 Update your project's permissions 
+## 4.2 Update your project's permissions 
 
 Return to your new project's page and update the permissions:
 1. Click the _Permissions_ section divider to expand it.
@@ -220,12 +232,12 @@ Return to your new project's page and update the permissions once more:
 
 <a name="inst"/>
 
-# 4. Adding new instruments
+# 5. Adding new instruments
 
 New sequencing machines must be added to MISO so that MISO can be made aware of the
 runs that use them.
 
-## 4.1 Add a new model of sequencer
+## 5.1 Add a new model of sequencer
 
 If MISO does not yet have this type of sequencer in the database, you will need 
 to contact your MISO administrator to put the new model into MISO before you can 
@@ -237,7 +249,7 @@ model to MISO. Include the following information:
     * Model
     * Standard read lengths you anticipate using for sequencing (_e.g._ 1.250, 2x126)
 
-## 4.1 Add a new sequencer 
+## 5.1 Add a new sequencer 
 
 1. Click the _My Account_ tab at the top of the page.
 1. Click _Configure_ in the _Sequencing Machines_ section.
@@ -248,7 +260,7 @@ model to MISO. Include the following information:
     * _Hostname_: enter `localhost`
 1. Click _Add_ to save the new sequencer.
 
-## 4.2 Set up MISO to be aware of aware of the sequencer's output
+## 5.2 Set up MISO to be aware of aware of the sequencer's output
 
 1. Please email gsi@oicr.on.ca or file a JIRA ticket in _GSI Common_. Give the name of the new 
 sequencing machine and indicate that you would like GSI to add the 
@@ -257,15 +269,11 @@ sequencing machine's output folder to the notification server properties file.
 
 <a name="reports"/>
 
-# 5. Creating project and monthly reports
+# 6. Creating project and monthly reports
 
 MISO has some basic reporting capabilities. However, it also seems to contain
-dragons which periodically kill all of MISO when they are disturbed. Please
-avoid the _Reports_ tab so as not to anger the dragons. If you require a report, 
+dragons which periodically kill all of MISO when they are disturbed. If you require a report, 
 please email gsi@oicr.on.ca for assistance.
 
-<img src="pics/dragon.jpg">
-Art by Muratt Yalcin for [In the Company of
-Dragons](http://www.drivethrurpg.com/product/133090/In-The-Company-of-Dragons-PFRPG)
 
 <a href="index">Home</a> | <a href="2-0-samples">Samples tutorial</a> > 
