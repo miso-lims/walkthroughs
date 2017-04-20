@@ -5,15 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width">
 
-        <title>MISO : Administration tasks</title>
+        <title>MISO : Project Coordinator tasks</title>
         <meta name="description" content="An open-source LIMS for NGS sequencing centres">
 
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="/miso-docs-oicr/styles/main.css">
     </head>
     <body>
-<a href="https://github.com/TGAC/miso-lims"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
-
 
         <div class="container">
             <div class="row">
@@ -31,7 +29,7 @@
                 
                     <div id="content" class="col-sm-12">
                         <div class="page-header">
-    <h2>Administration tasks
+    <h2>Project Coordinator tasks
         
     </h2>
 </div>
@@ -41,14 +39,11 @@ Table of Contents
 <ol>
     <li><a href="#login">Logging In</a></li>
     <li><a href="#proj">Creating Projects</a></li>
-    <li><a href="#perms">Creating groups and adding users to them</a></li>
-    <li><a href="#inst">Adding new instruments</a></li>
-    <li><a href="#reports">Creating project and monthly reports</a></li>
 </ol>
 </div>
 
 <div id="infobox">
-Download the worksheet for this section here: <a href="1-0-admin-tasks-worksheet">Admin tasks Worksheet</a>. 
+Download the worksheet for this section here: <a href="1-0-project-coordination-worksheet">Project coordination Worksheet</a>. 
 </div>
 
 <p><a name="login"></a></p>
@@ -78,16 +73,16 @@ MISO uses the same username and password as your OICR email account.</li>
 <p>If all goes well, you should see the MISO Dashboard and see a message at the
 top right: &quot;Logged in as: <strong>jdoe</strong>&quot;.</p>
 
-<p><a name="proj"></a></p>
+<p><a name="proj" href="#" id="toplink">top</a></p>
 
 <h1 id="creating-projects">2. Creating projects</h1>
 
 <p>A <em>Project</em> contains information about a set of <em>Studies</em> that may comprise many
-different <em>Samples</em>, <em>Experiments</em> and <em>Runs</em>. Samples are attached to Projects as
-they are often processed into <em>Dilutions</em>, which are then <em>Pooled</em> and sequenced.
-Projects also have Overviews, which hold information about a Project proposal.
-In this part of this workshop, we will create projects, set permissions, and
-familiarize ourselves with the project overview page.</p>
+different <em>Samples</em>, <em>Experiments</em> and <em>Runs</em>. Samples are attached to Projects and
+they are often processed into <em>Libraries</em> and then <em>Dilutions</em>, which are then 
+<em>Pooled</em> and sequenced. Projects also have Overviews, which hold information about 
+a Project proposal. In this part of this workshop, we will create projects, set 
+permissions, and familiarize ourselves with the project overview page.</p>
 
 <p>Projects represent a sequencing effort toward a particular goal, usually led by
 a particular group or principal investigator. For example, the PCSI project is
@@ -102,7 +97,7 @@ libraries and other entities.</p>
 <p>Most pages have a &quot;Quick Help&quot; tab at the top right under the Save
 button where you can find basic information about the current page.</p>
 
-<h2 id="creating-a-new-project">2.1 Creating a new project</h2>
+<h2 id="create-a-new-project">2.1 Create a new project</h2>
 
 <p>To create a new project:</p>
 
@@ -112,7 +107,7 @@ dashboard.</li>
   <li>Select the <em>Add Project</em> button at the top right corner.</li>
 </ol>
 
-<p>The <em>Create Project</em> page will display with a number of fields that you can fill out.</p>
+<p>The <em>Create Project</em> page will display with a number of fields that you can fill in.</p>
 
 <ol>
   <li>Ignore Project ID and Name, since they are set by MISO once the Project is saved.</li>
@@ -238,21 +233,10 @@ project (e.g. Project Information form, REB).</p>
 
 <p>Now that your project has been created, continue to make your first samples.</p>
 
-<p><a name="perms"></a></p>
-
-<h1 id="creating-groups-and-adding-users-to-them">3. Creating groups and adding users to them</h1>
-
-<p><a name="inst"></a></p>
-
-<h1 id="adding-new-instruments">4. Adding new instruments</h1>
-
-<p><a name="reports"></a></p>
-
-<h1 id="creating-project-and-monthly-reports">5. Creating project and monthly reports</h1>
-
 <table>
   <tbody>
     <tr>
+      <td>&lt; <a href="0-0-admin-tasks">Admin tasks tutorial</a></td>
       <td><a href="index">Home</a></td>
       <td><a href="2-0-samples">Samples tutorial</a> &gt;</td>
     </tr>

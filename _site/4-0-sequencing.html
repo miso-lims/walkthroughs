@@ -12,8 +12,6 @@
         <link rel="stylesheet" href="/miso-docs-oicr/styles/main.css">
     </head>
     <body>
-<a href="https://github.com/TGAC/miso-lims"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
-
 
         <div class="container">
             <div class="row">
@@ -44,8 +42,8 @@ Table of Contents
    <li><a href="#nruns">Creating Runs from scratch</a></li>
    <li><a href="#aruns">Working with automatically created runs</a></li>
    <li><a href="#pools">Adding Pools to Runs</a></li>
-   <li><a href="#boxes">Working with Boxes</a></li>
-   <li><a href="#service">Adding Service Records</a></li>
+   <li><a href="#boxes">Scanning libraries into your outbox</a></li>
+   <li><a href="#service">Adding Service Records to Sequencers</a></li>
    <li><a href="#trouble">Troubleshooting</a></li>
 </ol>
 </div>
@@ -81,7 +79,7 @@ MISO uses the same username and password as your OICR email account.</li>
 <p>If all goes well, you should see the MISO Dashboard and see a message at the
 top right: &quot;Logged in as: <strong>jdoe</strong>&quot;.</p>
 
-<p><a name="orders"></a></p>
+<p><a name="orders" href="#" id="toplink">top</a></p>
 
 <h1 id="checking-for-unfulfilled-orders">2. Checking for unfulfilled orders</h1>
 
@@ -102,95 +100,12 @@ in-progress and remain on the <em>Unfulfilled</em> tab until the run transitions
 <p>A pool can have many orders. Orders for the same platform and chemistry are
 summed when displayed on this page.</p>
 
-<p><a name="nruns"></a></p>
+<p><a name="nruns" href="#" id="toplink">top</a></p>
 
-<h1 id="creating-runs-from-scratch">Creating runs from scratch</h1>
+<h2 id="scan-libraries-into-your-inbox">2.1 Scan libraries into your inbox</h2>
 
-<p>MISO supports runs from both Illumina and PacBio sequencers (and others that
-are no longer used at OICR), so the terms used for instrument runs and
-associated libraries are intentionally different from those used by the vendor.
-Every time a sequencer is loaded and sequencing begins,
-a <em>Run</em> is created. Runs are picked up automatically from the instrument.
-A <em>Sequencing Container</em> is the link between the library information and the
-instrument Run and contains one or more lanes. Each <em>lane</em> (e.g. Illumina lane,
-PacBio SMRT cell) in the container is loaded with exactly one <em>Pool</em>.
-Runs and Containers can be associated as soon as the sequencer has started.</p>
-
-<p><a name="aruns"></a></p>
-
-<h1 id="working-with-automatically-created-runs">Working with automatically created runs</h1>
-
-<p>About five minutes after an instrument begins sequencing, MISO will detect it
-and create a <em>Run</em>. As sequencing continues, MISO will pull back information
-about the quality of the run similar to the on-instrument applications like SAV.
-This includes statistics like percent pass filter, the percent of bases with
-Qscores over 30, and cluster density.</p>
-
-<ol>
-  <li>From the <em>Runs</em> page, find the run assigned to you for this tutorial.</li>
-</ol>
-
-<p>Under the <em>InterOp Metrics</em> section, you will see a loading animation. After a
-few seconds to load, this page will show information from the sequencer about
-the run progress.
-However, this function does not work reliably under load (as when ~20 people
-look at runs at the same time during this tutorial), so it may not load. This
-functionality will be redesigned in the near future.</p>
-
-<p><a href="pics/interop.png"><img style="width:100%;" src="pics/interop.png" /></a></p>
-
-<p><a name="pools"></a></p>
-
-<h1 id="adding-pools-to-runs">Adding pools to runs</h1>
-
-<p>The Run (representing an instrument run) is associated with Pools using a
-<em>Sequencing Container</em>.</p>
-
-<p><img src="pics/flow-cell.svg" /></p>
-
-<ol>
-  <li>On the Run assigned to you, scroll down to the <em>Containers</em> section.</li>
-  <li>Search for the pool you previously created and double click to assign it to
-the lane. If you did not tick the <em>Ready to Run</em> box when creating the Pool, you
-may need to untick this option next to the search field.</li>
-  <li>Click the <em>Select Study</em> button on the Lane to accept the default Study.</li>
-  <li>If the flowcell is being stored, enter the location.</li>
-  <li>Click <em>Save</em>.</li>
-</ol>
-
-<p>The validation field is used only by cBot; leave it blank.</p>
-
-<p>Now check on the Order.</p>
-
-<ol>
-  <li>Click on the <em>Orders</em> page and verify that the <em>Remaining</em> column now
-shows 1 for the pool.</li>
-</ol>
-
-<h2 id="low-quality-sequencing">8.3 Low Quality Sequencing</h2>
-<p>Not every library realises its full potential. After sequencing, specific
-libraries can be flagged as having low sequencing quality. The
-&quot;Low Quality Sequencing&quot; indicator causes any pool containing this library to be
-flagged, so that it can be checked before it is sequenced again.</p>
-
-<ol>
-  <li>From the <em>Libraries</em> page, find the <code class="highlighter-rouge">PROJ_0002_Ly_R_PE_300_EX</code> library
-and click the link.</li>
-  <li>Check <em>Low Quality Sequencing</em>.</li>
-  <li>Click <em>Save</em>.</li>
-</ol>
-
-<p>Now if the Pool containing that Library is added to a Sequencing Container, it
-will be flagged red.</p>
-
-<ol>
-  <li>Go back to your Run page.</li>
-  <li>Find your pool using the search box. It will be flagged red.</li>
-</ol>
-
-<p><a name="boxes"></a></p>
-
-<h1 id="working-with-boxes">Working with boxes</h1>
+<p>First, scan the libraries from the libraries team into your inbox for further
+work.</p>
 
 <p>Boxes hold samples, libraries, and pools. They do not track reagents or
 primers. Boxes are separated into <em>uses</em> for different kinds of storage
@@ -202,11 +117,11 @@ by a standard row letter + column number format (<em>e.g.</em>, C05).</p>
 
 <hr />
 
-<p>In this exercise, we are going to put the things in the box that you made in
-the previous exercises. Depending on whether you have been creating samples or
-libraries, some of these fields will be different.</p>
+<p>In this exercise, we are going to take tissues/samples/libraries from the
+previous team/collaborator by scanning them out of the previous box and into a
+newly created &#39;inbox&#39;.</p>
 
-<p>First, create a new box:</p>
+<p>First, create a new box. This box will be your &#39;inbox&#39;.</p>
 
 <ol>
   <li>From the navigation panel, choose <em>Boxes</em> and then <em>Add Box</em>.</li>
@@ -224,12 +139,11 @@ libraries, some of these fields will be different.</p>
 <p><img src="pics/5-empty-box.png" id="figure" /></p>
 
 <p>You can now fill the box with the tissues, stocks, aliquots, libraries, or
-pools you made in previous steps.</p>
+pools that were made in previous steps. Collect the appropriate matrix tubes/barcodes now.</p>
 
 <ol>
   <li>Click on a position in the displayed <em>Contents</em> grid.</li>
-  <li>Enter a matrix barcode into the box on the right and click <em>Lookup</em>.
-Normally a hand scanner would be used.</li>
+  <li>Enter a matrix barcode into the box on the right and click <em>Lookup</em>.</li>
   <li>Click <em>Update Position</em>.
     <ul>
       <li>&#9888; The <em>Save</em> button at the top of the page does not work for
@@ -261,6 +175,128 @@ A03</code>).</li>
 <p>Boxes can be used to store Samples, Libraries and Pools and one box can store all
 three types.</p>
 
+<h1 id="creating-runs-from-scratch">3. Creating runs from scratch</h1>
+
+<p>MISO supports runs from both Illumina and PacBio sequencers (and others that
+are no longer used at OICR), so the terms used for instrument runs and
+associated libraries are intentionally different from those used by the vendor.
+Every time a sequencer is loaded and sequencing begins,
+a <em>Run</em> is created. Runs are picked up automatically from the instrument.
+A <em>Sequencing Container</em> is the link between the library information and the
+instrument Run and contains one or more lanes. Each <em>lane</em> (e.g. Illumina lane,
+PacBio SMRT cell) in the container is loaded with exactly one <em>Pool</em>.  Runs and
+Containers can be associated as soon as the Run and Container are both created.</p>
+
+<h2 id="create-a-container">3.1 Create a Container</h2>
+
+<ol>
+  <li>On the <em>Sequencing Containers</em> page, click the <em>Add Sequencing Container</em> button near the top right corner of the page.</li>
+  <li>Select <em>Illumina</em> platform.</li>
+  <li>Select <em>NB551056</em> from the sequencers dropdown menu. Only active (non-reired) sequencers are available on the dropdown menu.</li>
+  <li>Enter the short name of your project as the serial number (<em>e.g.</em> <code class="highlighter-rouge">PROJ</code>, <code class="highlighter-rouge">PCSI</code>, <code class="highlighter-rouge">FFPE</code>). Click <em>Lookup</em> to confirm that this name is unique to MISO.</li>
+  <li>Click <em>Save</em> in the upper right corner of the page.</li>
+</ol>
+
+<h2 id="create-a-run">3.2 Create a Run</h2>
+
+<ol>
+  <li>On the <em>Runs</em> page, click the <em>Add Run</em> button near the top right corner of the page.</li>
+  <li>Select <em>Illumina</em> platform.</li>
+  <li>Select <em>NB551056</em> from the sequencers dropdown menu. Only active (non-reired) sequencers are available on the dropdown menu.</li>
+  <li>Enter a unique and memorable <em>Alias</em> for your run.</li>
+  <li>In the <em>Run Path</em> field, enter <code class="highlighter-rouge">path</code> as the file path to the sequencer output.</li>
+  <li>Check <em>Paired End</em>.</li>
+  <li>Select the <em>Running</em> status. Note that if MISO does not automatically detect runs from this sequencer, all status updates will have to be entered manually.</li>
+  <li>In the <em>Containers</em> section, enter the serial number of the container you have just created. Click the <em>Lookup</em> button and confirm the container.</li>
+  <li>Click <em>Save</em> in the upper right corner of the page.</li>
+</ol>
+
+<p><a name="aruns" href="#" id="toplink">top</a></p>
+
+<h1 id="working-with-automatically-created-runs">4. Working with automatically created runs</h1>
+
+<p>About five minutes after an instrument begins imaging, MISO will detect it
+and create a <em>Run</em>. As sequencing continues, MISO will pull back information
+about the quality of the run similar to the on-instrument applications like SAV.
+This includes statistics like percent pass filter, the percent of bases with
+Qscores over 30, and cluster density.</p>
+
+<ol>
+  <li>From the <em>Runs</em> page, find the run assigned to you for this tutorial.</li>
+</ol>
+
+<p>Under the <em>InterOp Metrics</em> section, you will see a loading animation. After a
+few seconds to load, this page will show information from the sequencer about
+the run progress.
+However, this function does not work reliably under load (as when ~20 people
+look at runs at the same time during this tutorial), so it may not load. This
+functionality will be redesigned in the near future.</p>
+
+<p><a href="pics/interop.png"><img style="width:100%;" src="pics/interop.png" /></a></p>
+
+<p><a name="pools" href="#" id="toplink">top</a></p>
+
+<h1 id="adding-pools-to-runs">5. Adding pools to runs</h1>
+
+<p>The Run (representing an instrument run) is associated with Pools using a
+<em>Sequencing Container</em>.</p>
+
+<p><img src="pics/flow-cell.svg" /></p>
+
+<h2 id="add-a-pool-to-a-run">5.1 Add a pool to a run</h2>
+
+<ol>
+  <li>On the Run assigned to you, scroll down to the <em>Containers</em> section.</li>
+  <li>Search for the pool you previously created and double click to assign it to
+the lane. If you did not tick the <em>Ready to Run</em> box when creating the Pool, you
+may need to untick the <em>Only Ready to Run pools?</em> option next to the Available Pools search field.</li>
+  <li>Click the <em>Select Study</em> button on the Lane to accept the default Study for
+your project.</li>
+  <li>Click <em>Save</em>.</li>
+</ol>
+
+<p>The location and validation fields can be changed on the <em>Edit Container</em> page.
+Leave them blank for now.</p>
+
+<p>Now check on the Order.</p>
+
+<ol>
+  <li>Click on the <em>Orders</em> page and verify that the <em>Remaining</em> column now
+shows 1 for the pool you added to the run.</li>
+</ol>
+
+<p><a name="lowQuality" href="#" id="toplink">top</a></p>
+
+<h2 id="mark-a-library-as-low-quality">5.1 Mark a library as Low Quality</h2>
+<p>Not every library realises its full potential. After sequencing, specific
+libraries can be flagged as having low sequencing quality. The
+&quot;Low Quality Sequencing&quot; indicator causes any pool containing this library to be
+flagged, so that it can be checked before it is sequenced again.</p>
+
+<ol>
+  <li>From the <em>Libraries</em> page, find the <code class="highlighter-rouge">PROJ_0002_Ly_R_PE_300_EX</code> library
+and click the link.</li>
+  <li>Check <em>Low Quality Sequencing</em>.</li>
+  <li>Click <em>Save</em>.</li>
+</ol>
+
+<p>Now if the Pool containing that Library is added to a Sequencing Container, it
+will be flagged red.</p>
+
+<ol>
+  <li>Go back to your Run page.</li>
+  <li>Find your pool using the search box. It will be flagged red.</li>
+</ol>
+
+<p><a name="boxes" href="#" id="toplink">top</a></p>
+
+<h1 id="scanning-librariespools-into-your-outbox">6. Scanning libraries/pools into your outbox</h1>
+
+<p>Lastly, place the libraries/pools in your outbox for storage.</p>
+
+<p>Finally, update the <em>TUTORIAL_OUTBOX</em> with your samples/libraries/pools to
+pass them on to the next team or to put them into storage.</p>
+
 <h3 id="removing-and-discarding-tubes">Removing and discarding tubes</h3>
 
 <p>When you have a position selected, you can also either remove the tube from the
@@ -279,24 +315,25 @@ button. The <em>Location</em> field will show as blank, <em>Volume</em> will be 
 and the <em>Discarded</em> box will be ticked.</li>
 </ol>
 
-<h3 id="moving-samples-around-in-boxes">Moving samples around in boxes</h3>
+<h3 id="moving-items-around-in-boxes">Moving items around in boxes</h3>
 
 <p>An item can only exist in one box. If assigned to a new box, it will
 disappear from the original.</p>
 
 <ol>
-  <li>In the current tab, go to the <em>Boxes</em> page, find the <em>TUTORIAL</em> box. This box was previously
+  <li>In the current tab, go to the <em>Boxes</em> page, find the <em>TUTORIAL_OUTBOX</em> box. This box was previously
 created by the MISO developers for the tutorial.</li>
   <li>Choose an empty position and enter one of your barcodes.</li>
   <li>Click <em>Lookup</em> and <em>Update Position</em>.</li>
   <li>Go back to your own Box and refresh the page. The sample was removed.</li>
+  <li>Repeat this process for the rest of the samples/libraries that you are transferring to the next team.</li>
 </ol>
 
-<p><a name="service"></a></p>
+<p><a name="service" href="#" id="toplink">top</a></p>
 
-<h1 id="adding-instrument-service-records">Adding instrument service records</h1>
+<h1 id="adding-service-records-to-sequencers">7. Adding Service Records to Sequencers</h1>
 
-<p>Each sequencer has a service record.</p>
+<p>Each sequencer can have one or more associated service records.</p>
 
 <ol>
   <li>Select <em>Sequencers</em>.</li>
@@ -316,15 +353,28 @@ created by the MISO developers for the tutorial.</li>
 
 <p>After saving, it is also possible to attach files to the record. Look under the <em>Attachments</em> heading.</p>
 
-<p><a name="trouble"></a></p>
+<p><a name="trouble" href="#" id="toplink">top</a></p>
 
-<h1 id="troubleshooting">Troubleshooting</h1>
+<h1 id="troubleshooting">8. Troubleshooting</h1>
 
 <ol>
-  <li>When instruments break down, how do you log failures into the system?</li>
-  <li>How do you assigning single lane failures (if possible)?</li>
-  <li>How you fail flowcells? Or how does MISO detect failed runs?</li>
-  <li>How do you scan out libraries from inbox to outbox?</li>
+  <li>When instruments break down, how do you log failures into the system?
+    <ul>
+      <li>Add a service record as in <a href="#service">7: Adding Service Records to Sequencers</a></li>
+    </ul>
+  </li>
+  <li>How do you assign single lane failures (if possible)?
+    <ul>
+      <li>It is possible to add a RunQC which allows you to select one or more lanes, but adding one does not change the Orders count for the pool in that lane (ie. it does not &quot;requeue&quot; the pool). At this time, please go to the Edit Pool page for the pool in the lane and add another Order for the number of lanes and sequencing parameters requested.</li>
+    </ul>
+  </li>
+  <li>How you fail flowcells? Or how does MISO detect failed runs?
+    <ul>
+      <li>If MISO automatically detects runs from this sequencer, then in most cases MISO will automatically detect failed runs if the run has begun sequencing.</li>
+      <li>If MISO does not automatically detect runs from this sequencer or you note that MISO has not detected that the run has failed, then you must select the <code class="highlighter-rouge">Failed</code> status on the Edit Run page, and enter a completion date.</li>
+      <li>If the pool contains a single library and you know that the library is of low enough quality that sequencing should not be attempted again, follow the steps to <a href="#lowQuality">mark a library as Low Quality</a>.</li>
+    </ul>
+  </li>
 </ol>
 
 <table>
