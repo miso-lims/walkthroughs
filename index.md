@@ -3,7 +3,7 @@ layout: default
 title: "Getting Started with OICR MISO"
 ---
 
-This walkthrough is intended for new users of [OICR](oicr.on.ca)'s MISO flavour. 
+This walkthrough is intended for new users of [OICR](http://oicr.on.ca)'s MISO flavour. 
 For the original flavour, see [Getting Started](http://tgac.github.io/miso-lims/)
 on the main MISO page.
 
