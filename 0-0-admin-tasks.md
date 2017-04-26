@@ -79,7 +79,7 @@ add a new sequencer of that model.
 model to MISO. Include the following information:
     * Sequencer manufacturer (Platform)
     * Model
-    * Standard read lengths you anticipate using for sequencing (_e.g._ 1.250, 2x126)
+    * Standard read lengths you anticipate using for sequencing (_e.g._ 1x250, 2x126)
 
 ## 4.1 Add a new sequencer 
 
