@@ -95,6 +95,12 @@ code {
     background-color:#EEEEFF;
     border:1px solid #5970B2;
 }
+
+#toplink {
+    font-size:0.8em;
+    float: right;
+}
+
 body.rtl {
 	direction: rtl;
 }

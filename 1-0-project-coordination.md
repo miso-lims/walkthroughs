@@ -1,7 +1,7 @@
 ---
 layout: page
 category: walkthrough
-title: Administration tasks
+title: Project Coordinator tasks
 
 ---
 
@@ -10,15 +10,11 @@ Table of Contents
 <ol>
     <li><a href="#login">Logging In</a></li>
     <li><a href="#proj">Creating Projects</a></li>
-    <li><a href="#users">Adding Users</a></li>
-    <li><a href="#perms">Creating groups and adding users to them</a></li>
-    <li><a href="#inst">Adding new instruments</a></li>
-    <li><a href="#reports">Creating project and monthly reports</a></li>
 </ol>
 </div>
 
 <div id="infobox">
-Download the worksheet for this section here: <a href="1-0-admin-tasks-worksheet">Admin tasks Worksheet</a>. 
+Download the worksheet for this section here: <a href="1-0-project-coordination-worksheet">Project coordination Worksheet</a>. 
 </div>
 
 
@@ -29,7 +25,7 @@ Download the worksheet for this section here: <a href="1-0-admin-tasks-worksheet
 {% include logging_in.md %}
 
 
-<a name="proj"/>
+<a name="proj" href="#" id="toplink">top</a>
 
 # 2. Creating projects
 
@@ -178,102 +174,4 @@ project (e.g. Project Information form, REB).
 Now that your project has been created, continue to make your first samples.
 
 
-<a name="users"/>
-
-# 3. Adding Users
-
-OICR uses Active Directory authentication for MISO. Users must be added by IT; once added,
-they can then log in to MISO using their email credentials.
-
-1. Please email helpdesk@oicr.on.ca and CC Morgan Taschuk to request that the user be added to MISO LIMS by 
-making them part of the following Active Directory groups:
-    * If the person is to be added as an admin: `MISO_ROLE_ADMIN` and `MISO_ROLE_INTERNAL` groups.
-    * If the person is not to be given admin access: `MISO_ROLE_INTERNAL` group.
-
-<a name="perms"/>
-
-# 4. Creating groups and adding users to them
-
-_Groups_ permit fine-grained control over who has view and/or edit access to an
-item in MISO. There is a default group in MISO for "all internal users".
-There are also groups for Watchers, but these features are not yet fully functional. 
-
-## 4.1 Create a Group
-
-To create a new group:
-
-1. Select the _Groups_ link in the left-hand menu.
-1. Select the _Add Group_ link near the top right corner.
-
-The _Edit Group_ page will display a number of fields that you can fill in.
-1. Enter a unique _Name_. The name must contain only letters or numbers. It
-   cannot contain spaces or punctuation.
-1. Enter a _Description_ of your group.
-1. Select your user as the only member of your group.
-1. Click the _Save_ button at the upper right.
-
-## 4.2 Update your project's permissions 
-
-Return to your new project's page and update the permissions:
-1. Click the _Permissions_ section divider to expand it.
-1. Click the _Allow all internal users access?_ box to deselect it.
-1. Select your new group in both the _Groups (read)_ and _Groups (write)_
-   sections.
-1. Click the _Save_ button at the upper right.
-1. Click the _My Projects_ tab at the top of the page.
-1. Partner with someone else who has completed these steps and compare the
-   projects on your pages. You should be unable to view the other person's
-project.
-
-Return to your new project's page and update the permissions once more:
-1. Click the _Permissions_ section divider to expand it.
-1. Click the _Allow all itnernal users access?_ box to select it.
-1. Click the _Save_ button at the upper right.
-
-<a name="inst"/>
-
-# 5. Adding new instruments
-
-New sequencing machines must be added to MISO so that MISO can be made aware of the
-runs that use them.
-
-## 5.1 Add a new model of sequencer
-
-If MISO does not yet have this type of sequencer in the database, you will need 
-to contact your MISO administrator to put the new model into MISO before you can 
-add a new sequencer of that model.
-
-1. Please email gsi@oicr.on.ca or file a JIRA ticket in _GSI Common_ to add the new sequencer 
-model to MISO. Include the following information:
-    * Sequencer manufacturer (Platform)
-    * Model
-    * Standard read lengths you anticipate using for sequencing (_e.g._ 1.250, 2x126)
-
-## 5.1 Add a new sequencer 
-
-1. Click the _My Account_ tab at the top of the page.
-1. Click _Configure_ in the _Sequencing Machines_ section.
-1. Click the _Add Sequencer_ link in the top right corner.
-1. Fill in the fields of the new row that is inserted at the top of the table:
-    * _Name_: enter the serial number (case-sensitive)
-    * _Platform_: select a platform from the dropdown menu
-    * _Hostname_: enter `localhost`
-1. Click _Add_ to save the new sequencer.
-
-## 5.2 Set up MISO to be aware of aware of the sequencer's output
-
-1. Please email gsi@oicr.on.ca or file a JIRA ticket in _GSI Common_. Give the name of the new 
-sequencing machine and indicate that you would like GSI to add the 
-sequencing machine's output folder to the notification server properties file.
-
-
-<a name="reports"/>
-
-# 6. Creating project and monthly reports
-
-MISO has some basic reporting capabilities. However, it also seems to contain
-dragons which periodically kill all of MISO when they are disturbed. If you require a report, 
-please email gsi@oicr.on.ca for assistance.
-
-
-<a href="index">Home</a> | <a href="2-0-samples">Samples tutorial</a> > 
+< <a href="0-0-admin-tasks">Admin tasks tutorial</a> | <a href="index">Home</a> | <a href="2-0-samples">Samples tutorial</a> > 

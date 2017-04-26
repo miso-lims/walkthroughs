@@ -30,13 +30,13 @@ Download the worksheet for this section here: <a href="4-0-sequencing-worksheet"
 
 {% include logging_in.md %}
 
-<a name="orders"/>
+<a name="orders" href="#" id="toplink">top</a>
 
 # 2. Checking for unfulfilled orders
 
 {% include uorders.md %}
 
-<a name="nruns"/>
+<a name="nruns" href="#" id="toplink">top</a>
 
 ## 2.1 Scan libraries into your inbox
 
@@ -77,7 +77,7 @@ Containers can be associated as soon as the Run and Container are both created.
 1. In the _Containers_ section, enter the serial number of the container you have just created. Click the _Lookup_ button and confirm the container.
 1. Click _Save_ in the upper right corner of the page.
 
-<a name="aruns"/>
+<a name="aruns" href="#" id="toplink">top</a>
 
 # 4. Working with automatically created runs
 
@@ -99,7 +99,7 @@ functionality will be redesigned in the near future.
 <a href="pics/interop.png"><img style="width:100%;" src="pics/interop.png"/></a>
 
 
-<a name="pools"/>
+<a name="pools" href="#" id="toplink">top</a>
 
 # 5. Adding pools to runs
 
@@ -126,7 +126,7 @@ Now check on the Order.
 1. Click on the _Orders_ page and verify that the _Remaining_ column now
 shows 1 for the pool you added to the run.
 
-<a name="lowQuality"/>
+<a name="lowQuality" href="#" id="toplink">top</a>
 
 ## 5.1 Mark a library as Low Quality
 Not every library realises its full potential. After sequencing, specific
@@ -145,7 +145,7 @@ will be flagged red.
 1. Go back to your Run page.
 1. Find your pool using the search box. It will be flagged red.
 
-<a name="boxes"/>
+<a name="boxes" href="#" id="toplink">top</a>
 
 # 6. Scanning libraries/pools into your outbox
 
@@ -154,7 +154,7 @@ Lastly, place the libraries/pools in your outbox for storage.
 {% include outboxes.md %}
 
 
-<a name="service"/>
+<a name="service" href="#" id="toplink">top</a>
 
 # 7. Adding Service Records to Sequencers
 
@@ -173,7 +173,7 @@ Each sequencer can have one or more associated service records.
 
 After saving, it is also possible to attach files to the record. Look under the _Attachments_ heading.
 
-<a name="trouble"/>
+<a name="trouble" href="#" id="toplink">top</a>
 
 # 8. Troubleshooting
 

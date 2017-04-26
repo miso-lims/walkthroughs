@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Admin tasks worksheet
+title: Project coordination worksheet
 ---
 
 
 
-<img src="pics/blue_pencil.png"> Worksheet to accompany [Admin tasks tutorial](1-0-admin-tasks).
+<img src="pics/blue_pencil.png"> Worksheet to accompany [Project coordination tutorial](1-0-project-coordination).
 
 ## 2.1 Creating a new project
 

@@ -27,7 +27,7 @@ Download the worksheet for this section here: <a href="2-0-samples-worksheet">Sa
 # 1. Logging in
 {% include logging_in.md %}
 
-<a name="receipt"/>
+<a name="receipt" href="#" id="toplink">top</a>
 
 # 2. Receiving samples
 
@@ -292,7 +292,7 @@ exist except for sample tracking purposes!". This message means that the Tissue
 does not exist in a freezer at OICR. Eventually these _ghost samples_ will be
 hidden from the MISO interface.
 
-<a name="props">
+
 
 
 # 2.5 Scanning tissues and stocks into a Box
@@ -301,6 +301,8 @@ In this section we will add the stocks and tissues you just received into your
 inbox for further work. 
 
 {% include inboxes.md %}
+
+<a name="props" href="#" id="toplink">top</a>
 
 # 3. Propagating Samples
 
@@ -401,7 +403,7 @@ items". The Sample Alias will have been filled in with aliases that end in D\_1
 <img src="pics/flow-aliquot.svg"/>
 
 
-<a name="qcs"/>
+<a name="qcs" href="#" id="toplink">top</a>
 
 # 4. Sample QCs
 
@@ -421,7 +423,7 @@ _Add Sample QC_.
 1. _Results_: 50
 1. Click _Add_. The QC will be added to the table
 
-<a name="boxes"/>
+<a name="boxes" href="#" id="toplink">top</a>
 
 # 5. Scanning aliquots into outboxes
 
@@ -431,7 +433,7 @@ take over.
 {% include outboxes.md %}
 
 
-<a name="trouble"/>
+<a name="trouble" href="#" id="toplink">top</a>
 
 # Troubleshooting
 
@@ -471,4 +473,4 @@ from an existing tissue or stock Sample. Propagating libraries is detailed in a 
 
 Please email gsi@oicr.on.ca or file a JIRA ticket in GSI Common to get assistance from the MISO team.
 
-< <a href="1-0-admin-tasks">Admin tasks tutorial</a> | <a href="index">Home</a> | <a href="3-0-libraries">Libraries tutorial</a> >
+< <a href="1-0-project-coordination">Project coordination tutorial</a> | <a href="index">Home</a> | <a href="3-0-libraries">Libraries tutorial</a> >

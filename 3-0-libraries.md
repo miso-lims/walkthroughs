@@ -30,7 +30,7 @@ Download the worksheet for this section here: <a href="3-0-libraries-worksheet">
 
 {% include logging_in.md %}
 
-<a name="props1"/>
+<a name="props1" href="#" id="toplink">top</a>
 
 # 2. Propagating aliquots to libraries
 
@@ -99,7 +99,7 @@ name)_(Tissue type)(Individual)_Li, e.g. `PROJ_P1_Li`.
 Note that for dual-index libraries, only the first index needs to be
 specified. The second is optional.
 
-<a name="qcs"/>
+<a name="qcs" href="#" id="toplink">top</a>
 
 # 3. Quality control
 There are three way to indicate library quality in MISO: 1)
@@ -136,7 +136,7 @@ the search box and click the sample link.
 Libraries can be marked as having low sequencing quality, which will be shown
 after the _Run_ exercises.
 
-<a name="boxes"/>
+<a name="boxes" href="#" id="toplink">top</a>
 
 # 4. Scanning libraries into your outbox
 
@@ -146,7 +146,7 @@ use.
 {% include outboxes.md %}
 
 
-<a name="props2"/>
+<a name="props2" href="#" id="toplink">top</a>
 
 # 5. Propagating libraries to dilutions
 
@@ -178,7 +178,7 @@ Dilutions are a bit ephemeral in MISO: there is no list for all the dilutions.
 To see the dilutions for a library, view the library page. At present,
 Dilutions cannot be saved in Boxes.
 
-<a name="pools"/>
+<a name="pools"  href="#" id="toplink">top</a>
 
 # 6. Creating Pools
 
@@ -208,7 +208,7 @@ followed by `_POOL` (e.g. `PROJ_POOL`)
 1. In the _Pooled Elements_ section, use the search box to find the dilutions created previously.
 1. For each dilution, press the _+_ button to add the dilution to the pool.
 
-<a name="orders"/>
+<a name="orders"  href="#" id="toplink">top</a>
 
 # 7. Ordering sequencing
 
@@ -242,7 +242,7 @@ _Completed_.
 A pool can have many orders. Orders for the same platform and chemistry are
 summed when displayed on this page.
 
-<a name="trouble"/>
+<a name="trouble" href="#" id="toplink">top</a>
 
 # Troubleshooting
 
