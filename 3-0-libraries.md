@@ -206,7 +206,8 @@ followed by `_POOL` (e.g. `PROJ_POOL`)
   1. _Volume_: Enter a pool volume.
 1. Click _Save_.
 1. In the _Pooled Elements_ section, use the search box to find the dilutions created previously.
-1. For each dilution, press the _+_ button to add the dilution to the pool.
+1. For each dilution, check the box beside the dilution.
+1. Just above the table, click _Add Selected_ to add the checked dilutions to the pool.
 
 <a name="orders"  href="#" id="toplink">top</a>
 
