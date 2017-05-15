@@ -1,1 +1,3 @@
 language: ruby
+git:
+  depth: 3
