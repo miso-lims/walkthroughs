@@ -4,3 +4,5 @@ git:
 rvm:
   - 2.2
 cache: bundler
+script:
+  - bundle exec jekyll build
