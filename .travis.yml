@@ -1,3 +1,5 @@
 language: ruby
 git:
   depth: 3
+rvm:
+  - 2.2
