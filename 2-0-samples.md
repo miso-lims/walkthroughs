@@ -68,7 +68,7 @@ by entering a single Sample for reference tissue from the Identity `ID1`.
 
 1. On the left hand menu under _Tracking_, click _Samples_.
 1. Click the _Add Sample_ button on the right hand side. There are two tabs
-across the top. Ensure that _Single_ is selected.
+   across the top. Ensure that _Single_ is selected.
 1. In the _Sample Information_ section, enter or select the following:
     1. Project: Select the project you created in the last exercise.
     1. Alias: leave blank. This will be auto-generated based on other
@@ -195,7 +195,9 @@ _Tissue Type_, _Times Received_, _Tube Number_, and _Material_.
 </td></tr></table>
 
 
-Some fields cannot be filled down, so enter each of those separately.
+Some fields cannot be filled down, so enter each of those separately. If you
+have a label with an incrementing number (_e.g._, `PROJ_0001_X`,
+`PROJ_0002_X`), enter two rows, select them, then double click the blue square.
 
 1. _Matrix Barcode_: you would normally use a hand-scanner or
 copy and paste a list of barcodes from a spreadsheet. 
