@@ -196,8 +196,8 @@ _Tissue Type_, _Times Received_, _Tube Number_, and _Material_.
 
 
 Some fields cannot be filled down, so enter each of those separately. If you
-have a label with an incrementing number (_e.g._, `PROJ_0001_X`,
-`PROJ_0002_X`), enter two rows, select them, then double click the blue square.
+have a label with an incrementing number (_e.g._, `PROJ_1`,
+`PROJ_2`), enter two rows, select them, then double click the blue square.
 
 1. _Matrix Barcode_: you would normally use a hand-scanner or
 copy and paste a list of barcodes from a spreadsheet. 
