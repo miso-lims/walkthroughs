@@ -119,7 +119,6 @@ the search box and click the sample link.
   1. _QC Date_: Select a date.
   1. _Method_: Choose a QC instrument.
   1. _Results_: Enter the measurement.
-  1. _Insert Size_: Enter the measured insert size.
 1. Click _Add_.
 
 

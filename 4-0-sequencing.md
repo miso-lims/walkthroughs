@@ -61,21 +61,22 @@ Containers can be associated as soon as the Run and Container are both created.
 
 1. On the _Sequencing Containers_ page, click the _Add Sequencing Container_ button near the top right corner of the page.
 1. Select _Illumina_ platform.
-1. Select _NB551056_ from the sequencers dropdown menu. Only active (non-reired) sequencers are available on the dropdown menu.
-1. Enter the short name of your project as the serial number (_e.g._ `PROJ`, `PCSI`, `FFPE`). Click _Lookup_ to confirm that this name is unique to MISO.
+1. Select _NB551056 (NextSeq 550)_ from the sequencers dropdown menu. Only active (non-retired) sequencers are available on the dropdown menu.
+1. Enter the short name of your project as the flowcell serial number (_e.g._ `PROJ`, `PCSI`, `FFPE`). Click _Lookup_ to confirm that this name is unique to MISO.
 1. Click _Save_ in the upper right corner of the page.
 
 ## 3.2 Create a Run
 
 1. On the _Runs_ page, click the _Add Run_ button near the top right corner of the page.
 1. Select _Illumina_ platform.
-1. Select _NB551056_ from the sequencers dropdown menu. Only active (non-reired) sequencers are available on the dropdown menu.
+1. Select _NB551056 (NextSeq 550)_ from the sequencers dropdown menu. Only active (non-retired) sequencers are available on the dropdown menu.
 1. Enter a unique and memorable _Alias_ for your run.
 1. In the _Run Path_ field, enter `path` as the file path to the sequencer output.
 1. Check _Paired End_.
 1. Select the _Running_ status. Note that if MISO does not automatically detect runs from this sequencer, all status updates will have to be entered manually.
-1. In the _Containers_ section, enter the serial number of the container you have just created. Click the _Lookup_ button and confirm the container.
 1. Click _Save_ in the upper right corner of the page.
+1. In the _Containers_ section, click the _Add Container_ button.
+1. Enter the flow cell serial number of the container you have just created and click the _Add_ button.
 
 <a name="aruns" href="#" id="toplink">top</a>
 
@@ -115,7 +116,7 @@ _Sequencing Container_.
    the lane. If you did not tick the _Ready to Run_ box when creating the Pool, you
    may need to untick the _Only Ready to Run pools?_ option next to the Available Pools search field.
 1. Click the _Select Study_ button on the Lane to accept the default Study for
-   your project.
+   your project. This may not be necessary if a study has already been associated with the pool.
 1. Click _Save_.
 
 The location and validation fields can be changed on the _Edit Container_ page.
