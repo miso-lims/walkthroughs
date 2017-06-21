@@ -45,10 +45,7 @@ When material is received for sequencing, it can be in many different forms,
 called _Sample Classes_ in MISO. Here are the classes of Sample that can be
 received:
 
-* Cell line
-* Tumour tissue (Primary or Metastatic)
-* Reference tissue
-* Xenograft tissue
+* Tissue
 * gDNA (untreated or whole genome amplified)
 * cDNA
 * whole RNA
@@ -89,17 +86,17 @@ institute that the tissue came from. Record this in your worksheet. <img src="pi
         1. From the dropdown, select `First Receipt`.
         1. Click _Select_.
     1. Sex: Select any item from the dropdown.
-1. In the _Details_ section, select the _Sample Class_ `Reference Tissue`. 
+1. In the _Details_ section, select the _Sample Class_ `Tissue`. 
    Record the class in your worksheet. <img src="pics/blue_pencil.png">
 1. In the _Tissue_ section, select or enter the following to create a reference Sample.
     1. Tissue Origin: `Ly (Lymphocyte)`
     1. Tissue Type: `R (Reference or non-tumour, non-diseased tissue sample)`
     1. Tissue Material: Select any from the drop-down.
+    1. Times Received: `1`
+    1. Tube Number: `1`
     1. External Institute Identifier: `BioBankID 1`. This is the Biobank ID or Tube ID.
 It may also be left blank.
     1. Lab: Select `BioBank (University Health Network)` from the drop-down.
-    1. Times Received: `1`
-    1. Tube Number: `1`
 1. At the upper right hand side, click _Save_.
 
 Upon saving, a number of fields will be filled in, including the Alias. The Tissue
@@ -146,13 +143,13 @@ in the following tutorials.
 ## 2.3 Entering bulk Tissues
 
 Next, we will create four more Samples using the much faster bulk method. The
-four samples will be the Primary Tumour Tissue for individuals 1-5.
+four samples will be the Tissue for individuals 1-5.
 
 1. On the left hand menu under _Tracking_, click _Samples_.
 1. Click the _Add Sample_ button on the right hand side. There are two tabs
 across the top. Ensure that _Bulk_ is selected.
 1. _Select project_ dropdown: select your project.
-1. _Select class_ dropdown: `Primary Tumor Tissue`.
+1. _Select class_ dropdown: `Tissue`.
 1. _Number of samples_ text box: `4`.
 1. Click _Make Table_.
 
@@ -227,8 +224,7 @@ If you navigate back to your _Edit Project_ page,
 there should be nine Samples:
 
 * 4 Identity Samples
-* 1 Reference Tissue Sample
-* 4 Primary Tumor Tissue Samples
+* 5 Tissue Samples (1 Reference and 4 Primary Tumor)
 
 ## 2.4 Receiving Stock DNA/RNA
 
@@ -267,7 +263,7 @@ automatically in the dropdown menu
 1. In the _Details_ section, select the _Sample Class_: `gDNA (stock)`.
 1. In the _Tissue_ section, select or enter the following to create a (ghost) reference
 Sample.
-    1. Tissue Class: `Reference Tissue`
+    1. Tissue Class: `Tissue`
     1. Tissue Origin: `nn (Unknown)`
     1. Tissue Type: `R (Reference or non-tumour, non-diseased tissue sample)`
     1. Tissue Material: Select any from the drop-down.
@@ -323,17 +319,18 @@ Tissue processing is an optional step between the Tissue and Stock levels of the
 sample hierarchy. It includes steps such as slides and laser capture microdissections
 created from the tissue.
 
-Create a CV Slide from one of your Tissue samples.
+Create a Slide from one of your Tissue samples.
 
 1. On the _Sample_ page, enter your project name in the search box.
 1. Check the box for the lymphocyte reference tissue you created in exercise 2.1.
 (_e.g._ `PROJ_0001_Ly_R_nn_1-1`)
 1. From the _Bulk actions_ dropdown at the bottom, select _Propagate (sample) selected_.
-1. A new dropdown will appear. Select _CV Slide_ and click _Go_.
+1. A new dropdown will appear. Select _Slide_ and click _Go_.
 1. Fill out the table:
   * _Description_: CV Slides
   * _Slides_: 3
   * _Discards_: 0
+  * _Stain_: Cresyl Violet
 1. Click _Save_.
 
 Upon successful save, a green status will show at the top that says "Saved 1
@@ -346,7 +343,7 @@ For three of the tissue samples created previously (by bulk entry), we will
 create stocks for library preparation.
 
 1. On the _Samples_ page, enter your project name in the search box.
-1. Check the boxes for any three of the the Primary Tumor Tissue samples (not the Reference Tissues)
+1. Check the boxes for any three of the the tumor tissue samples (not the reference tissues)
 that you created in section 2.3. They will have names that end with `_Br_P_nn_1-1`.
 1. From the _Bulk actions_ dropdown at the bottom, select _Propagate (sample) selected_.
 1. A new dropdown will appear. Select _gDNA (stock)_ and click _Go_.

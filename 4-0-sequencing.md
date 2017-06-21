@@ -74,6 +74,7 @@ Containers can be associated as soon as the Run and Container are both created.
 1. In the _Run Path_ field, enter `path` as the file path to the sequencer output.
 1. Check _Paired End_.
 1. Select the _Running_ status. Note that if MISO does not automatically detect runs from this sequencer, all status updates will have to be entered manually.
+1. Enter a date into _Start Date_.
 1. Click _Save_ in the upper right corner of the page.
 1. In the _Containers_ section, click the _Add Container_ button.
 1. Enter the flow cell serial number of the container you have just created and click the _Add_ button.
