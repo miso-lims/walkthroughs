@@ -70,16 +70,10 @@ ones that end in `_D_1`:
   - `PROJ_0002_Ly_R_nn_1-1_D_1`
 1. From the _Bulk actions_ drop down, select _Propagate (library) selected_.
 1. A table will appear. Enter the library information:
-  * _Library Alias_: The sample alias up to the tissue type (R or P), library
-  type, insert size, library design (_e.g._, `DI4S_0001_Br_P_PE_318_WG`).
+  * _Library Alias_: Leave blank as this will be filled in automatically.
   For more information about Library nomenclature, see
   <a href="https://wiki.oicr.on.ca/display/MCPHERSON/LIMS+Guidelines#LIMSGuidelines-LibraryNomenclature" 
   target="_new">Library Nomenclature</a>.
-  &#9888; This alias does not automatically fill in yet, so it must be entered:
-      - `PROJ_0001_Br_P_PE_300_EX`
-      - `PROJ_0001_Ly_R_PE_300_EX`
-      - `PROJ_0002_Br_P_PE_300_EX`
-      - `PROJ_0002_Ly_R_PE_300_EX`
   * _Matrix Barcode_: As before, usually this would be scanned by the hand
     scanner. In this tutorial, enter matrix barcodes in the form (Short
 name)_(Tissue type)(Individual)_Li, e.g. `PROJ_P1_Li`.
@@ -92,6 +86,7 @@ name)_(Tissue type)(Individual)_Li, e.g. `PROJ_P1_Li`.
     Select different indices for each library. Selecting the same index for two
     different libraries will make you unable to pool those two libraries
     together later.
+  * _Size_: 300
   * _Volume_: 100
   * _Kit_: KAPA Hyper Prep
 1. Choose _Save_.
@@ -169,13 +164,12 @@ made previously.
   - `PROJ_0001_Ly_R_PE_300_EX`
   - `PROJ_0002_Br_P_PE_300_EX`
   - `PROJ_0002_Ly_R_PE_300_EX`
-1. From the _Bulk actions_ drop down, select _Make dilutions from selected_ and click _Go_.
+1. From the toolbar, select _Make dilutions_.
 1. Enter the concentrations of the dilutions (use any number you wish).
+1. Ether the current date for the creation date.
 1. Click _Save_.
 
-Dilutions are a bit ephemeral in MISO: there is no list for all the dilutions.
-To see the dilutions for a library, view the library page. At present,
-Dilutions cannot be saved in Boxes.
+At present, Dilutions cannot be saved in Boxes.
 
 <a name="pools"  href="#" id="toplink">top</a>
 
@@ -191,22 +185,19 @@ required for every lane of sequencing.
 Here we will all all of the dilutions we added previously to make a single pool
 of 4.
 
-1. On the _Pools_ page, under the _Illumina_ tab, select _Options_ → _Add Pool_.
-1. Enter the _Pool Information_:
+1. On the _Dilutions_ page, select the dilutions created.
+1. From the toolbar, click _Pool Together_.
+1. Enter the pool information:
   1. _Alias_: A short description of the pool contents. Enter the project name
 followed by `_POOL` (e.g. `PROJ_POOL`)
   1. _Description_: A longer free-text description of the pool.
-  1. _Platform Type_: Leave `Illumina` selected.
-  1. _Desired Concentration_: Enter a concentration.
   1. _Creation Date_: Select a date.
+  1. _Concentration_: Enter a concentration.
+  1. _Volume_: Enter a pool volume.
   1. _Ready to Run_: Whether or not the pool is ready for sequencing. This flag
      is used together with the Order to show the pool is ready to be sequenced.
-     Tick this box.
-  1. _Volume_: Enter a pool volume.
+     Make sure this is _True_.
 1. Click _Save_.
-1. In the _Pooled Elements_ section, use the search box to find the dilutions created previously.
-1. For each dilution, check the box beside the dilution.
-1. Just above the table, click _Add Selected_ to add the checked dilutions to the pool.
 
 <a name="orders"  href="#" id="toplink">top</a>
 
@@ -216,8 +207,9 @@ Orders are created on the pool to be sequenced, and include the quantity of sequ
 required (counted in lanes/SMRT cells), and the sequencing chemistry
 required (on Illumina).
 
-1. On the Edit Pool page for the pool you just created, scroll down to the
-_Orders_ heading.
+1. Under _Tracking_, select _Pools_.
+1. Find the pool you just created and click on it.
+1. On the Edit Pool page, scroll down to the _Orders_ heading.
 1. Click _Add Order_:
 1. Fill in the new order box:
   - _Partitions_: the number of lanes/cells that should run for this pool. Enter
@@ -306,7 +298,7 @@ To change a single library:
 To change many libraries:
 
 1. From _Tracking_, _Library_, check the box beside each library that needs to be changed.
-1. From _Bulk actions_, choose _Update selected_ and click _Go_.
+1. From the toolbar, click _Edit_.
 1. Select the cell in the _Matrix Barcode_ column for the library and scan the barcode.
 1. Repeat for all the libraries.
 1. Click _Save_.
