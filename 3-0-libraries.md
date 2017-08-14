@@ -212,16 +212,16 @@ of 4 samples.
 
 1. If you are still on the bulk dilutions page from section **5.1**, click the
 _Propagate_ button at the top left of the table. Continue to step 2. Otherwise:
-  1. On the _Dilutions_ page, select the dilutions created.
-  1. From the toolbar, click _Pool Together_.
+    1. On the _Dilutions_ page, select the dilutions created.
+    1. From the toolbar, click _Pool Together_.
 1. Enter the pool information:
-  1. _Alias_: A short description of the pool contents. Enter the project name
+  * _Alias_: A short description of the pool contents. Enter the project name
 followed by `_POOL` (e.g. `PROJ_POOL`)
-  1. _Description_: A longer free-text description of the pool.
-  1. _Creation Date_: Select a date.
-  1. _Concentration_: Enter a concentration.
-  1. _Volume_: Enter a pool volume.
-  1. _Ready to Run_: Whether or not the pool is ready for sequencing. This flag
+  * _Description_: A longer free-text description of the pool.
+  * _Creation Date_: Select a date.
+  * _Concentration_: Enter a concentration.
+  * _Volume_: Enter a pool volume.
+  * _Ready to Run_: Whether or not the pool is ready for sequencing. This flag
      is used together with the Order to show the pool is ready to be sequenced.
      Make sure this is _True_.
 1. Click _Save_.
