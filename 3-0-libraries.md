@@ -97,6 +97,31 @@ name)_(Tissue type)(Individual)_Li, e.g. `PROJ_P1_Li`.
 Note that for dual-index libraries, only the first index needs to be
 specified. The second is optional.
 
+
+## 2.2 Bulk propagate aliquots to libraries from Box page
+
+In this section, you will use the aliquots created already and create libraries.
+These libraries can be sorted based on the parent sample's location within the box,
+and indices can be added based on the box position.
+
+1. On the _Boxes_ page, find your box and click on its link.
+1. Select all the aliquots in your box by either control-clicking all the aliquots
+in the box (command-click on a Mac). If the aliquots are all in one row or column,
+you can click on the row/column header to select all items in that row or column. 
+Use control-click (or command-click) to select more than one row or column.
+1. Click the _Propagate_ button at the top left of the box contents table. If the 
+top left of the box contents table indicates that more than one type of element is
+selected, de-select the non-aliquot tubes and then click _Propagate_.
+1. Choose _1_ replicate.
+1. Click _Propagate_.
+1. From the bulk libraries table, you can now sort the libraries you are creating
+based on their parent sample's position within the box. Sorting can be done by 
+rows (`A01`, `A02`, `B01`, `B02`, ...) or columns (`A01`, `B01`, `A02`, `B02`, ...).
+  * This may be useful when using the Sciclone robot to create libraries and add 
+indices at a particular plate location. Once the libraries are sorted based on the
+parent sample's location, the indices can be copy-pasted in the order that the 
+robot requires.
+
 <a name="qcs" href="#" id="toplink">top</a>
 
 # 3. Quality control
