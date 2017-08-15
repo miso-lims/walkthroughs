@@ -56,7 +56,7 @@ To create a new project:
 
 1. After logging in, click the _My Projects_ tab at the top of the MISO
 dashboard. 
-1. Select the _Add Project_ button at the top right corner. 
+1. Select the _Add_ button at the top right corner. 
 
 The _Create Project_ page will display with a number of fields that you can fill in.
 

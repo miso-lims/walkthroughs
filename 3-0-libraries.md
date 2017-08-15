@@ -37,7 +37,7 @@ Download the worksheet for this section here: <a href="3-0-libraries-worksheet">
 A _library_ is made from one sample for a single target _platform_ and
 has a specific _design_ associated with it that decides the _selection_
 and _strategies_ used to make the library. A library may also have _indices_
-(primers) and QC information.
+(primers/sequencing barcodes/molecular IDs) and QC information.
 
 <img src="pics/flow-library.svg"/>
 
@@ -68,8 +68,11 @@ ones that end in `_D_1`:
   - `PROJ_0001_Ly_R_nn_1-1_D_1`
   - `PROJ_0002_Br_P_nn_1-1_D_1`
   - `PROJ_0002_Ly_R_nn_1-1_D_1`
-1. From the _Bulk actions_ drop down, select _Propagate (library) selected_.
+1. Click the _Propagate_ button at the top left of the table.
+1. Choose _1_ replicate.
+1. Click _Propagate_.
 1. A table will appear. Enter the library information:
+  * _Library Name_: Leave blank as this will be filled in automatically after save.
   * _Library Alias_: Leave blank as this will be filled in automatically.
   For more information about Library nomenclature, see
   <a href="https://wiki.oicr.on.ca/display/MCPHERSON/LIMS+Guidelines#LIMSGuidelines-LibraryNomenclature" 
@@ -84,15 +87,40 @@ name)_(Tissue type)(Individual)_Li, e.g. `PROJ_P1_Li`.
   * _Index Kit_: Nextera Dual Index
   * _Index 1_ and _Index 2_: Select any combination of indices you wish.
     Select different indices for each library. Selecting the same index for two
-    different libraries will make you unable to pool those two libraries
+    different libraries will it unwise to pool those two libraries
     together later.
-  * _Size_: 300
+  * _Size (bp)_: 300
   * _Volume_: 100
   * _Kit_: KAPA Hyper Prep
 1. Choose _Save_.
 
 Note that for dual-index libraries, only the first index needs to be
 specified. The second is optional.
+
+
+## 2.2 Bulk propagate aliquots to libraries from Box page
+
+In this section, you will use the aliquots created already and create libraries.
+These libraries can be sorted based on the parent sample's location within the box,
+and indices can be added based on the box position.
+
+1. On the _Boxes_ page, find your box and click on its link.
+1. Select all the aliquots in your box by either control-clicking all the aliquots
+in the box (command-click on a Mac). If the aliquots are all in one row or column,
+you can click on the row/column header to select all items in that row or column. 
+Use control-click (or command-click) to select more than one row or column.
+1. Click the _Propagate_ button at the top left of the box contents table. If the 
+top left of the box contents table indicates that more than one type of element is
+selected, de-select the non-aliquot tubes and then click _Propagate_.
+1. Choose _1_ replicate.
+1. Click _Propagate_.
+1. From the bulk libraries table, you can now sort the libraries you are creating
+based on their parent sample's position within the box. Sorting can be done by 
+rows (`A01`, `A02`, `B01`, `B02`, ...) or columns (`A01`, `B01`, `A02`, `B02`, ...).
+  * This may be useful when using the Sciclone robot to create libraries and add 
+indices at a particular plate location. Once the libraries are sorted based on the
+parent sample's location, the indices can be copy-pasted in the order that the 
+robot requires.
 
 <a name="qcs" href="#" id="toplink">top</a>
 
@@ -107,14 +135,12 @@ After measuring the insert size or concentration, this information can be
 entered into each library. There is no bulk entry for this information yet, it must
 be entered for each library.
 
-1. From the _Libraries_ page, find the `PROJ_0001_Br_P_PE_300_EX` library using
-the search box and click the sample link.
-1. On the right side of the _QCs_ heading, select _Options_ → _Add Library QC_.
-1. Enter the information in the row:
-  1. _QC Date_: Select a date.
-  1. _Method_: Choose a QC instrument.
-  1. _Results_: Enter the measurement.
-1. Click _Add_.
+1. From the _Libraries_ page, check the `PROJ_0001_Br_P_PE_300_EX` library. 
+1. Click the _Edit_ button at the top left of the table.
+1. Enter the following (note that the QC date will be the current date):
+  1. _New Qubit_: `5.72`
+  1. _New TapeStation_: `300`
+1. Click _Save_.
 
 
 ## 3.2 QC passed
@@ -165,11 +191,11 @@ made previously.
   - `PROJ_0002_Br_P_PE_300_EX`
   - `PROJ_0002_Ly_R_PE_300_EX`
 1. From the toolbar, select _Make dilutions_.
-1. Enter the concentrations of the dilutions (use any number you wish).
-1. Ether the current date for the creation date.
+1. Enter the dilution information:
+  * _Conc._: (use any number you wish)
+  * _Creation Date_: (use the current date)
 1. Click _Save_.
 
-At present, Dilutions cannot be saved in Boxes.
 
 <a name="pools"  href="#" id="toplink">top</a>
 
@@ -177,24 +203,25 @@ At present, Dilutions cannot be saved in Boxes.
 
 Pools are the last step for libraries before sequencing and represent the
 entity that is loaded onto the flowcell lane or SMRTcell. A "pool" can have one or more
-library dilutions in it. They are equivalent to "worksets" in Geospiza, but are
-required for every lane of sequencing.
+library dilutions in it. Every lane of sequencing contains only one pool. 
 
 <img src="pics/flow-pool.svg"/>
 
-Here we will all all of the dilutions we added previously to make a single pool
-of 4.
+Here we will pool all of the dilutions we added previously to make a single pool
+of 4 dilutions.
 
-1. On the _Dilutions_ page, select the dilutions created.
-1. From the toolbar, click _Pool Together_.
+1. If you are still on the bulk dilutions page from section **5.1**, click the
+_Propagate_ button at the top left of the table. Continue to step 2. Otherwise:
+    1. On the _Dilutions_ page, select the dilutions created.
+    1. From the toolbar, click _Pool Together_.
 1. Enter the pool information:
-  1. _Alias_: A short description of the pool contents. Enter the project name
+  * _Alias_: A short description of the pool contents. Enter the project name
 followed by `_POOL` (e.g. `PROJ_POOL`)
-  1. _Description_: A longer free-text description of the pool.
-  1. _Creation Date_: Select a date.
-  1. _Concentration_: Enter a concentration.
-  1. _Volume_: Enter a pool volume.
-  1. _Ready to Run_: Whether or not the pool is ready for sequencing. This flag
+  * _Description_: A longer free-text description of the pool.
+  * _Creation Date_: Select a date.
+  * _Concentration_: Enter a concentration.
+  * _Volume_: Enter a pool volume.
+  * _Ready to Run_: Whether or not the pool is ready for sequencing. This flag
      is used together with the Order to show the pool is ready to be sequenced.
      Make sure this is _True_.
 1. Click _Save_.

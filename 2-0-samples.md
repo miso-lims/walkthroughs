@@ -33,8 +33,8 @@ Download the worksheet for this section here: <a href="2-0-samples-worksheet">Sa
 
 A _Sample_ contains information about the material upon which the sequencing
 experiments are to be based. Samples can be used in any number of sequencing
-_Experiments_ in the form of a _Library_ that is often processed further into
-pooled _Dilutions._
+_Experiments_ in the form of a _Library_ that is processed further into
+single or pooled _Dilutions._
 
 Every received Sample must have an _Identity_. The Identity corresponds to the
 individual or organism with whom the sample originated, i.e. the donor. MISO
@@ -46,11 +46,13 @@ called _Sample Classes_ in MISO. Here are the classes of Sample that can be
 received:
 
 * Tissue
+* Curls
+* Slides
 * gDNA (untreated or whole genome amplified)
 * cDNA
 * whole RNA
 
-Depending on which Sample Class is chosen, more or less fields appear on the
+Depending on which Sample Class is chosen, more or fewer fields appear on the
 _Create Sample_ page.
 
 In this workshop, we will create six Samples with four different Identities in
@@ -58,45 +60,48 @@ the Project you created in the last session.
 
 <img src="pics/flow-tissue-rx.svg"/>
 
-## 2.1 Entering a single Tissue
+## 2.1 Entering a Tissue
 
-There are two ways of entering Samples into MISO: Single and Bulk. We will start
-by entering a single Sample for reference tissue from the Identity `ID1`.
+All samples in MISO are entered using the bulk entry screen. We will start by 
+entering a single Sample for reference tissue from the Identity `ID1`.
 
 1. On the left hand menu under _Tracking_, click _Samples_.
-1. Click the _Add Sample_ button on the right hand side. There are two tabs
-   across the top. Ensure that _Single_ is selected.
-1. In the _Sample Information_ section, enter or select the following:
-    1. Project: Select the project you created in the last exercise.
-    1. Alias: leave blank. This will be auto-generated based on other
+1. Click the _Create_ button at the top left of the table.
+1. Select Sample Class _Tissue_ and Quantity _1_.
+1. Click _Create_.
+1. Enter or select the following in the table:
+    1. _Sample Name_: leave blank. This will be auto-generated after save.
+    1. _Sample Alias_: leave blank. This will be auto-generated based on other
 information in this form.
-    1. Description: `Reference 1`.
-    1. Date of Receipt: Select a date
-    1. Scientific Name: `Homo sapiens`.
-    1. Sample Type: select `GENOMIC` from the drop down.
-    1. QC Status: select `Ready` from the drop down.
-1. In the _Identity_ section:
-    1. External names : this is the name of the *individual*, whether internal or external. 
-     For example, an external identifier would be "Morgan" (internally we refer to her as plain ol' MORG_0001).
-        1. Click _Find or Create Identity_.
-        1. In the pop-up window, enter external name: project short name `_ID1` 
-(_e.g._, `PROJ_ID2`). This is the name given to the donor by the external 
-institute that the tissue came from. Record this in your worksheet. <img src="pics/blue_pencil.png">
-        1. Click _Validate External Name(s)_.
-        1. From the dropdown, select `First Receipt`.
-        1. Click _Select_.
-    1. Sex: Select any item from the dropdown.
-1. In the _Details_ section, select the _Sample Class_ `Tissue`. 
-   Record the class in your worksheet. <img src="pics/blue_pencil.png">
-1. In the _Tissue_ section, select or enter the following to create a reference Sample.
-    1. Tissue Origin: `Ly (Lymphocyte)`
-    1. Tissue Type: `R (Reference or non-tumour, non-diseased tissue sample)`
-    1. Tissue Material: Select any from the drop-down.
-    1. Times Received: `1`
-    1. Tube Number: `1`
-    1. External Institute Identifier: `BioBankID 1`. This is the Biobank ID or Tube ID.
+    1. _Description_: `Reference 1`.
+    1. _Date of Receipt_: Select a date
+    1. _Scientific Name_: `Homo sapiens`.
+    1. _Sample Type_: select `GENOMIC` from the drop down.
+1. _Matrix Barcode_: Use the hand-scanner or type a barcode into the pop-up.
+   Record the barcode in your worksheet. <img src="pics/blue_pencil.png">
+1. Project: Select the project you created in the last exercise.
+1. _External Name_: this is the name of the *individual donor*, whether internal or 
+    external. For example, an external name would be "Morgan" (internally we refer to 
+    her as plain ol' MORG_0001).
+    1. Enter project short name `_ID1` in the _External Name_ field, and record this in
+   your worksheet.  <img src="pics/blue_pencil.png"> 
+    * Once you enter an external name, MISO will go and find any existing donors with 
+    external name(s) that match this, and will add them to the dropdown menu for the 
+   _Identity Alias_ field.
+    * If there are no existing donors with the exact external name, the option of 
+    `First Receipt (project short name)` will be available. 
+    2. Select `First Receipt (project short name)` for the _Identity Alias_.
+    1. _Donor Sex_: Select any item from the dropdown.
+1. Enter or select the following in the table:
+    1. _Tissue Origin_: `Ly (Lymphocyte)`
+    1. _Tissue Type_: `R (Reference or non-tumour, non-diseased tissue sample)`
+    1. _Times Received_: `1`
+    1. _Tube Number_: `1`
+    1. _Lab_: Select `BioBank (University Health Network)` from the dropdown.
+    1. _Ext. Inst. Identifier_: `BioBankID 1`. This is the Biobank ID or Tube ID.
 It may also be left blank.
-    1. Lab: Select `BioBank (University Health Network)` from the drop-down.
+    1. _Material_: Select any from the drop-down.
+    1. _QC Status_: select `Ready` from the drop down.
 1. At the upper right hand side, click _Save_.
 
 Upon saving, a number of fields will be filled in, including the Alias. The Tissue
@@ -108,19 +113,6 @@ href="https://wiki.oicr.on.ca/display/GENOMICS/LIMS+Guidelines#LIMSGuidelines-Sa
 target="_new">Sample Nomenclature</a> on the GENOMICS wiki.
 
 Record the alias in your worksheet. <img src="pics/blue_pencil.png"> 
-
-### 2.1.1 Enter a matrix tube barcode
-
-After saving the Sample, you will be able to enter the barcode for the tube.
-
-1. On the _Edit Sample_ page for the sample you just created, click the arrow inside
-the blue _Barcode_ box at the top right hand corner.
-1. Select _Update Barcode_ from the menu.
-1. Use the hand-scanner or type a barcode into the pop-up.
-   Record the barcode in your worksheet. <img src="pics/blue_pencil.png">
-1. Click _Save_ on the pop-up.
-
-The page will re-load with the 2D barcode at the top right.
 
 ## 2.2 Automatically created Samples
 
@@ -142,16 +134,14 @@ in the following tutorials.
 
 ## 2.3 Entering bulk Tissues
 
-Next, we will create four more Samples using the much faster bulk method. The
-four samples will be the Tissue for individuals 1-5.
+Next, we will create four more Tissue Samples for individuals 1-5.
 
-1. On the left hand menu under _Tracking_, click _Samples_.
-1. Click the _Add Sample_ button on the right hand side. There are two tabs
-across the top. Ensure that _Bulk_ is selected.
-1. _Select project_ dropdown: select your project.
-1. _Select class_ dropdown: `Tissue`.
-1. _Number of samples_ text box: `4`.
-1. Click _Make Table_.
+1. If you are still on the Project page from section **2.2**, click the
+_Create_ button at the top left of the table. Continue to step 2. Otherwise:
+    1. On the left hand menu under _Tracking_, click _Samples_.
+    1. Click the _Create_ button at the top left of the table.
+1. Select Sample Class _Tissue_ and Quantity _4_.
+1. Click _Create_.
 
 A table will appear with the requested number of samples in table format. We
 will fill in the first row and use the quick-fill option to fill in the rest of
@@ -159,20 +149,24 @@ the table.
 
 Enter the following values into the **first row only**.
 
-1. Sample Alias: leave blank. Again, this will be automatically generated from
+1. _Sample Name_: leave blank. This will be automatically generated after save.
+1. _Sample Alias_: leave blank. Again, this will be automatically generated from
 the rest of the table.
 1. Select or enter the following data in the first row:
-    1. Date of Receipt: select a date
-    1. Sample Type: select `GENOMIC` from the drop-down.
-    1. Sex: select any item from the drop-down.
-    1. Tissue Origin: select `Br (Breast)` from the drop-down.
-    1. Tissue Type: select `P (Primary Tumour)` from the drop-down.
-    1. Times Received: 1
-    1. Tube Number: 1
-    1. Lab: select `BioBank (University Health Network)` from the drop-down.
-    1. Ext. Inst. Identifier: `BioBankID`
-    1. Material: Select any item from the drop down.
-    1. QC Status: Select `Ready` from the drop down.
+  * _Date of Receipt_: select a date
+  * _Sample Type_: select `GENOMIC` from the drop-down.
+  * _Project_: if you chose to create new samples from the Project page,
+  the project will already be entered. If you chose to create new samples
+  from the Samples page, select your project from the drop-down.
+  * _Donor Sex_: select any item from the drop-down.
+  * _Tissue Origin_: select `Br (Breast)` from the drop-down.
+  * _Tissue Type_: select `P (Primary Tumour)` from the drop-down.
+  * _Times Received_: 1
+  * _Tube Number_: 1
+  * _Lab_: select `BioBank (University Health Network)` from the drop-down.
+  * _Ext. Inst. Identifier_: `BioBankID 2`
+  * _Material_: Select any item from the drop down.
+  * _QC Status_: Select `Ready` from the drop down.
 
 
 Now we will fill in the rest of the table. Like in Excel, you can fill down a
@@ -182,8 +176,9 @@ cell. You can also click and drag to only fill in a certain number of cells.
 1. Click the _Date of Receipt_ cell in the first row. A blue square will appear at
 the lower right hand side. Double click it to fill in the rest of the column with
 the same date.
-1. Fill in the columns in the same way for: _Sample Type_, _Sex_, _Tissue Origin_,
-_Tissue Type_, _Times Received_, _Tube Number_, and _Material_.
+1. Fill in the columns in the same way for: _Sample Type_, _Project_ (if not already
+filled out), _Sex_, _Tissue Origin_, _Tissue Type_, _Times Received_, _Tube Number_,
+ and _Material_.
 
 <table border="1"><tr><td>
 <img src="pics/fill-down-1.png"/>
@@ -191,33 +186,32 @@ _Tissue Type_, _Times Received_, _Tube Number_, and _Material_.
 <img src="pics/fill-down-2.png"/>
 </td></tr></table>
 
+1. _Description_: Copying and pasting from Excel and Word is supported. 
+   Copy something from anywhere and press Ctrl+V on your keyboard to paste.
 
-Some fields cannot be filled down, so enter each of those separately. If you
-have a label with an incrementing number (_e.g._, `PROJ_1`,
-`PROJ_2`), enter two rows, select them, then double click the blue square.
-
-1. _Matrix Barcode_: you would normally use a hand-scanner or
-copy and paste a list of barcodes from a spreadsheet. 
-For each sample, select a barcode, scan or type it in, and record it in your worksheet. <img src="pics/blue_pencil.png">
+1. _Matrix Barcode_: you would normally use a hand-scanner or copy and paste a list of 
+barcodes from a spreadsheet. For each sample, select a barcode, scan or type it in, and record 
+it in your worksheet. <img src="pics/blue_pencil.png">
 1. _External Name_:  Again, this is the name of the *individual*, whether internal or external.
 Here's a suggested list. Replace `PROJ` with your own project name.
     - `PROJ_ID1`
     - `PROJ_ID2`
     - `PROJ_ID3`
     - `PROJ_ID4`
-    1. Click _Look up Identities_ (above the top left corner of the table).
-    1. Because you've already created an Identity with the external name `PROJ_ID1`, it is found as a match
+  1. Because you've already created an Identity with the external name `PROJ_ID1`, it is found as a match
 to the external name you entered for the top row. In the `Identity Alias` dropdown menu for the first row,
 select the existing Identity.
-    1. Select `First Receipt` from the dropdown menu in each remaining cell of the `Identity Alias` column. 
-1. _Ext. Inst. Identifier_: add a number to each row starting from 2, i.e..
-`BioBankID 2`, `BioBankID 3`, `BioBankID 4`, `BioBankID 5`.
-1. _Description_: Copying and pasting from Excel and Word is supported. 
-   Copy something from anywhere and press Ctrl+V on your keyboard to
-   paste.
+  1. Select `First Receipt` from the dropdown menu in each remaining cell of the `Identity Alias` column. 
+
+Some fields cannot be filled down, so enter each of those separately. If you
+have a label with an incrementing number (_e.g._, `1`, `2`), enter two rows, select them, 
+then double click the blue square.
+
+1. _Ext. Inst. Identifier_: enter `BioBankID 2` in the second row. Select the _Ext. Inst. Identifier_
+fields for rows 1 and 2, then double click the blue square to fill down rows 3 and 4.
 1. Click _Save_ at the upper right hand corner.
 
-If everything is correct, the _Alias_ will be auto-generated for each row and
+If everything is correct, the _Sample Alias_ and _Sample Name_ will be auto-generated for each row and
 the samples will be saved. 
 Record the external identity, class, alias and barcode in your worksheet. <img src="pics/blue_pencil.png">
 If you navigate back to your _Edit Project_ page,
@@ -235,42 +229,39 @@ samples are known as _ghost samples_, which do not exist at OICR but are in MISO
 for sample tracking purposes.
 
 In this section, we will 'receive' a single Stock DNA tube from individual 2
-reference tumour.
+reference material.
 
 
 <img src="pics/flow-stock-rx.svg"/>
 
 1. On the left hand menu under _Tracking_, click _Samples_.
-1. Click the _Add Sample_ button on the right hand side. There are two tabs
-across the top. Ensure that _Single_ is selected.
+1. Click the _Create_ button at the top left of the table.
+1. Select Sample Class _Tissue_ and Quantity _1_.
+1. Click _Create_.
 1. In the _Sample Information_ section, enter or select the following:
-    1. Project: Select the project you created in the last exercise.
-    1. Alias: leave blank. This will be auto-generated based on other
+  * _Sample Name_: leave blank. This will be auto-generated after save.  
+  * _Sample Alias_: leave blank. This will be auto-generated based on other
 information in this form.
-    1. Description: `Stock 1`.
-    1. Date of receipt: select a date.
-    1. Scientific Name: `Homo sapiens`.
-    1. Sample Type: select `GENOMIC` from the drop-down.
-    1. QC Status: select `Ready` from the drop-down.
-    1. Volume (µl): `300`
-1. In the _Identity_ section
-    1. Click _Find or Create Identity_.
-    1. In the pop-up window, enter external name: project short name `_ID2`
-    1. Click _Validate External Name(s)_. The existing Identity should be selected
-automatically in the dropdown menu
-    1. Click _Select_.
-    1. Sex: Select any item from the dropdown.
-1. In the _Details_ section, select the _Sample Class_: `gDNA (stock)`.
-1. In the _Tissue_ section, select or enter the following to create a (ghost) reference
-Sample.
-    1. Tissue Class: `Tissue`
-    1. Tissue Origin: `nn (Unknown)`
-    1. Tissue Type: `R (Reference or non-tumour, non-diseased tissue sample)`
-    1. Tissue Material: Select any from the drop-down.
-    1. External Institute Identifier: `BioBankID 6`.
-    1. Lab: `BioBank (University Health Network)`.
-    1. Times Received: `1`
-    1. Tube Number: `1`
+  * _Description_: `Stock 1`.
+  * _Date of receipt_: select a date.
+  * _Sample Type_: select `GENOMIC` from the drop-down.
+  * _Scientific Name_: `Homo sapiens`.
+  * _Project_: Select your project.
+1. _External Name_: project short name `_ID2`.
+  * _Identity Alias_: The existing identity should be selected automatically 
+in the dropdown menu.
+1. Enter the following values:
+  * _Donor Sex_: Select any item from the dropdown.
+  * _Tissue Class_: `Tissue`
+  * _Tissue Origin_: `nn (Unknown)`
+  * _Tissue Type_: `R (Reference or non-tumour, non-diseased tissue sample)`
+  * _Ext. Inst. Identifier_: `BioBankID 6`.
+  * _Lab_: `BioBank (University Health Network)`.
+  * _Times Received_: `1`
+  * _Tube Number_: `1`
+  * _STR Status_: select any value from the dropdown menu.
+  * _Volume (µl)_: `300`
+  * _QC Status_: select `Ready` from the dropdown.
 1. At the upper right hand side, click _Save_.
 
 When you click 'Save', the aliases will be filled in. 
@@ -324,17 +315,19 @@ Create a Slide from one of your Tissue samples.
 1. On the _Sample_ page, enter your project name in the search box.
 1. Check the box for the lymphocyte reference tissue you created in exercise 2.1.
 (_e.g._ `PROJ_0001_Ly_R_nn_1-1`)
-1. From the _Bulk actions_ dropdown at the bottom, select _Propagate (sample) selected_.
-1. A new dropdown will appear. Select _Slide_ and click _Go_.
+1. Click _Propagate_ button at the top left of the table.
+1. Enter _1_ replicates to _Slide_.
+1. Click _Propagate_.
 1. Fill out the table:
   * _Description_: CV Slides
   * _Slides_: 3
   * _Discards_: 0
   * _Stain_: Cresyl Violet
+  * _QC Status_: Ready
 1. Click _Save_.
 
 Upon successful save, a green status will show at the top that says "Saved 1
-items". The Sample Alias will have been filled in with an alias that ends in CV01.
+items". The Sample Alias will have been filled in with an alias that ends in SL01.
 Record the alias in your worksheet. <img src="pics/blue_pencil.png">
 
 ## 3.2 Bulk Propagate Samples
@@ -345,13 +338,16 @@ create stocks for library preparation.
 1. On the _Samples_ page, enter your project name in the search box.
 1. Check the boxes for any three of the the tumor tissue samples (not the reference tissues)
 that you created in section 2.3. They will have names that end with `_Br_P_nn_1-1`.
-1. From the _Bulk actions_ dropdown at the bottom, select _Propagate (sample) selected_.
-1. A new dropdown will appear. Select _gDNA (stock)_ and click _Go_.
+1. Click _Propagate_ button at the top left of the table.
+1. Enter _1_ replicates to _gDNA (stock)_.
+1. Click _Propagate_.
 1. Fill out the table:
   * _Description_: Free text description. In this case, use "Stock (Tissue
   Type)(Individual)". (e.g. `Stock P2` for `PROJ_0002_Br_P_nn_1-1`)
   * _Matrix Barcode_: choose a barcode for each stock and record it on your worksheet.<img src="pics/blue_pencil.png">
+  * _STR Status_: select any value from the drop-down
   * _Vol._: `300`
+  * _QC Status_: Ready
 1. Click _Save_.
 
 Upon successful save, a green status will show at the top that says "Saved 3
@@ -366,10 +362,14 @@ In this case we will update several fields of 4 stock samples. We will use the
 stocks we entered in the previous step as well as the reference stock entered in
 part 3 of this tutorial.
 
-1. On the _Samples_ page, enter your project name in the search box.
-1. Check the boxes for the stock samples (propagated and received) that you created in
-sections 2.4 and 3.1. These are the samples with aliases that end with `_D_S1`.
-1. From the _Bulk actions_ dropdown at the bottom, select _Update selected_ and click _Go_.
+1. Select the samples you wish to edit:
+  * If you are continuing from the end of section **3.2 Bulk Propagate Samples**, do not
+  navigate away from the page. At the top left of the table after saving samples, click
+  the _Edit_ button. Continue to step 2. Otherwise, select samples using the following:
+    1. On the _Samples_ page, enter your project name in the search box.
+    1. Check the boxes for the stock samples (propagated and received) that you created in
+    sections 2.4 and 3.1. These are the samples with aliases that end with `_D_S1`.
+    1. From the _Bulk actions_ dropdown at the bottom, select _Update selected_ and click _Go_.
 1. Change the _QC Status_ column to `Ready` for all rows.
 1. Enter a _Matrix Barcode_ for the stock entered in section 2.4 and record it on your worksheet. <img src="pics/blue_pencil.png">
 1. Click _Save_.
@@ -380,11 +380,17 @@ items.".
 ## 3.4 Creating Aliquots
 Propagate again from the 4 _gDNA (stock)_ samples to _gDNA (aliquot)_.
 
-1. On the _Samples_ page, enter your project name in the search box.
-1. Check the boxes for the stock samples. They will have names that end in
-`_D_S1`.
-1. From the _Bulk actions_ dropdown at the bottom, select _Propagate (sample) selected_.
-1. A new dropdown will appear. Select _gDNA (aliquot)_ and click _Go_.
+1. If you are continuing from the end of section **3.3 Bulk Editing**, do not
+  navigate away from the page. 
+    1. At the top left of the table after saving samples, click the _Propagate_ button. 
+    1. Enter _1_ for the number of replicates (child samples to be created from each parent)
+    and _gDNA (aliquot)_ for the type of child sample. Continue to step 3.
+1. Otherwise, select samples using the following:
+    1. On the _Samples_ page, enter your project name in the search box.
+    1. Check the boxes for the stock samples. They will have names that end in
+    `_D_S1`.
+    1. From the _Bulk actions_ dropdown at the bottom, select _Propagate (sample) selected_.
+    1. A new dropdown will appear. Select _1_ replicate of _gDNA (aliquot)_ and click _Go_.
 1. Fill out the table:
   * _Sample Alias_: Skip this field. It will be automatically filled in upon
   save.
@@ -395,7 +401,8 @@ Propagate again from the 4 _gDNA (stock)_ samples to _gDNA (aliquot)_.
 1. Click _Save_.
 
 Upon successful save, a green status will show at the top that says "Saved 4
-items". The Sample Alias will have been filled in with aliases that end in D\_1
+items". Buttons to allow editing the samples or propagating them will show at the top of
+the table. The Sample Alias will have been filled in with aliases that end in D\_1
 (for each first aliquot of that stock). Record these on your worksheet. <img src="pics/blue_pencil.png">
 
 

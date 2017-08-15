@@ -89,16 +89,12 @@ about the quality of the run similar to the on-instrument applications like SAV.
 This includes statistics like percent pass filter, the percent of bases with
 Qscores over 30, and cluster density.
 
-1. From the _Runs_ page, find the run assigned to you for this tutorial.
+1. From the _Runs_ page, find the run assigned to you for this tutorial. Click
+on the run alias to go to the run page.
+1. Scroll down to the _Metrics_ section and examine the sequencing metrics for
+this run.
 
-Under the _InterOp Metrics_ section, you will see a loading animation. After a
-few seconds to load, this page will show information from the sequencer about
-the run progress.
-However, this function does not work reliably under load (as when ~20 people
-look at runs at the same time during this tutorial), so it may not load. This
-functionality will be redesigned in the near future.
-
-<a href="pics/interop.png"><img style="width:100%;" src="pics/interop.png"/></a>
+<a href="pics/metrics.png"><img style="width:100%;" src="pics/metrics.png"/></a>
 
 
 <a name="pools" href="#" id="toplink">top</a>
@@ -114,7 +110,7 @@ _Sequencing Container_.
 
 1. On the Run assigned to you, scroll down to the _Containers_ section.
 1. Search for the pool you previously created and double click to assign it to
-   the lane. If you did not tick the _Ready to Run_ box when creating the Pool, you
+   the lane. If you did not mark the pool as _Ready to Run_ when creating it, you
    may need to untick the _Only Ready to Run pools?_ option next to the Available Pools search field.
 1. Click the _Select Study_ button on the Lane to accept the default Study for
    your project. This may not be necessary if a study has already been associated with the pool.
