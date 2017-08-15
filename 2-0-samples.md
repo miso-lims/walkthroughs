@@ -255,7 +255,6 @@ in the dropdown menu.
   * _Tissue Class_: `Tissue`
   * _Tissue Origin_: `nn (Unknown)`
   * _Tissue Type_: `R (Reference or non-tumour, non-diseased tissue sample)`
-  * _Tissue Material_: Select any from the drop-down.
   * _Ext. Inst. Identifier_: `BioBankID 6`.
   * _Lab_: `BioBank (University Health Network)`.
   * _Times Received_: `1`

@@ -37,7 +37,7 @@ Download the worksheet for this section here: <a href="3-0-libraries-worksheet">
 A _library_ is made from one sample for a single target _platform_ and
 has a specific _design_ associated with it that decides the _selection_
 and _strategies_ used to make the library. A library may also have _indices_
-(primers/barcodes/molecular IDs) and QC information.
+(primers/sequencing barcodes/molecular IDs) and QC information.
 
 <img src="pics/flow-library.svg"/>
 
@@ -191,7 +191,7 @@ made previously.
   - `PROJ_0002_Br_P_PE_300_EX`
   - `PROJ_0002_Ly_R_PE_300_EX`
 1. From the toolbar, select _Make dilutions_.
-1. Enter the idilution information:
+1. Enter the dilution information:
   * _Conc._: (use any number you wish)
   * _Creation Date_: (use the current date)
 1. Click _Save_.
@@ -207,8 +207,8 @@ library dilutions in it. Every lane of sequencing contains only one pool.
 
 <img src="pics/flow-pool.svg"/>
 
-Here we will all all of the dilutions we added previously to make a single pool
-of 4 samples.
+Here we will pool all of the dilutions we added previously to make a single pool
+of 4 dilutions.
 
 1. If you are still on the bulk dilutions page from section **5.1**, click the
 _Propagate_ button at the top left of the table. Continue to step 2. Otherwise:
