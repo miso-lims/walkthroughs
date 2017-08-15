@@ -75,8 +75,8 @@ entering a single Sample for reference tissue from the Identity `ID1`.
 information in this form.
     1. _Description_: `Reference 1`.
     1. _Date of Receipt_: Select a date
-    1. _Scientific Name_: `Homo sapiens`.
     1. _Sample Type_: select `GENOMIC` from the drop down.
+    1. _Scientific Name_: `Homo sapiens`.
 1. _Matrix Barcode_: Use the hand-scanner or type a barcode into the pop-up.
    Record the barcode in your worksheet. <img src="pics/blue_pencil.png">
 1. Project: Select the project you created in the last exercise.
@@ -236,7 +236,7 @@ reference material.
 
 1. On the left hand menu under _Tracking_, click _Samples_.
 1. Click the _Create_ button at the top left of the table.
-1. Select Sample Class _Tissue_ and Quantity _1_.
+1. Select Sample Class _gDNA (stock)_ and Quantity _1_.
 1. Click _Create_.
 1. In the _Sample Information_ section, enter or select the following:
   * _Sample Name_: leave blank. This will be auto-generated after save.  
@@ -252,15 +252,14 @@ information in this form.
 in the dropdown menu.
 1. Enter the following values:
   * _Donor Sex_: Select any item from the dropdown.
-  * _Tissue Class_: `Tissue`
   * _Tissue Origin_: `nn (Unknown)`
   * _Tissue Type_: `R (Reference or non-tumour, non-diseased tissue sample)`
-  * _Ext. Inst. Identifier_: `BioBankID 6`.
-  * _Lab_: `BioBank (University Health Network)`.
   * _Times Received_: `1`
   * _Tube Number_: `1`
+  * _Lab_: `BioBank (University Health Network)`.
+  * _Ext. Inst. Identifier_: `BioBankID 6`.
   * _STR Status_: select any value from the dropdown menu.
-  * _Volume (µl)_: `300`
+  * _Vol. (µl)_: `300`
   * _QC Status_: select `Ready` from the dropdown.
 1. At the upper right hand side, click _Save_.
 
@@ -346,7 +345,7 @@ that you created in section 2.3. They will have names that end with `_Br_P_nn_1-
   Type)(Individual)". (e.g. `Stock P2` for `PROJ_0002_Br_P_nn_1-1`)
   * _Matrix Barcode_: choose a barcode for each stock and record it on your worksheet.<img src="pics/blue_pencil.png">
   * _STR Status_: select any value from the drop-down
-  * _Vol._: `300`
+  * _Vol. (µl)_: `300`
   * _QC Status_: Ready
 1. Click _Save_.
 
