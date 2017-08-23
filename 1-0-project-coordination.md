@@ -103,8 +103,7 @@ specific to this project and used by MISO to track the project internally.
 In order to make sure MISO is SRA-compliant, you must add a _Study_ to your Project. Studies are legacy objects that are not really used in the current system, but need to be added anyway.
 
 1. Click on the _Studies_ section to expand the section.
-1. Hover over the _Options_ menu at the top right of the Studies table, and
-   click _Add new Study_.
+1. Click _Add_ at the top left of the table.
 1. Much like creating a Project, enter:
   1. Alias (letters and numbers only): this can have any name, but make sure
 it is recognizable as belonging to your Project.

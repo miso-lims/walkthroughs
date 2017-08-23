@@ -164,7 +164,6 @@ the rest of the table.
   * _Times Received_: 1
   * _Tube Number_: 1
   * _Lab_: select `BioBank (University Health Network)` from the drop-down.
-  * _Ext. Inst. Identifier_: `BioBankID 2`
   * _Material_: Select any item from the drop down.
   * _QC Status_: Select `Ready` from the drop down.
 
@@ -346,7 +345,7 @@ that you created in section 2.3. They will have names that end with `_Br_P_nn_1-
   * _Matrix Barcode_: choose a barcode for each stock and record it on your worksheet.<img src="pics/blue_pencil.png">
   * _STR Status_: select any value from the drop-down
   * _Vol. (µl)_: `300`
-  * _QC Status_: Ready
+  * _QC Status_: `Not Ready`
 1. Click _Save_.
 
 Upon successful save, a green status will show at the top that says "Saved 3
@@ -369,6 +368,7 @@ part 3 of this tutorial.
     1. Check the boxes for the stock samples (propagated and received) that you created in
     sections 2.4 and 3.1. These are the samples with aliases that end with `_D_S1`.
     1. From the _Bulk actions_ dropdown at the bottom, select _Update selected_ and click _Go_.
+1. Add a _Conc._ value: any number
 1. Change the _QC Status_ column to `Ready` for all rows.
 1. Enter a _Matrix Barcode_ for the stock entered in section 2.4 and record it on your worksheet. <img src="pics/blue_pencil.png">
 1. Click _Save_.
@@ -396,6 +396,7 @@ Propagate again from the 4 _gDNA (stock)_ samples to _gDNA (aliquot)_.
   * _Description_: Free text description. In this case, use "Aliquot (Tissue
   Type)(Individual)". (e.g. `Aliquot P2` for `PROJ_0002_Br_P_nn_1-1_D_S1`)
   * _Matrix Barcode_: choose a barcode for each aliquot and record it on your worksheet. <img src="pics/blue_pencil.png">
+  * _QC Status_: Select `Ready`
   * _Purpose_: Select `Library`
 1. Click _Save_.
 
