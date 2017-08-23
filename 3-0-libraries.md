@@ -69,8 +69,8 @@ ones that end in `_D_1`:
   - `PROJ_0002_Br_P_nn_1-1_D_1`
   - `PROJ_0002_Ly_R_nn_1-1_D_1`
 1. Click the _Propagate_ button at the top left of the table.
-1. Note that "Propagate to libraries" is the title of the box, as aliquots can only
-be propagated to libraries. Choose _1_ replicate.
+1. Note that "Propagate to libraries" is the title of the box, as gDNA aliquot 
+samples can only be propagated to libraries. Choose _1_ replicate.
 1. Click _Propagate_.
 1. A table will appear. Enter the library information:
   * _Library Name_: Leave blank as this will be filled in automatically after save.
