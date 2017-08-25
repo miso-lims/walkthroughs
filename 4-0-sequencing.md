@@ -59,22 +59,23 @@ Containers can be associated as soon as the Run and Container are both created.
 
 ## 3.1 Create a Container
 
-1. On the _Sequencing Containers_ page, click the _Add Sequencing Container_ button near the top right corner of the page.
+1. On the _Sequencing Containers_ page, click the _Add_ button near the top left of the table.
 1. Select _Illumina_ platform.
-1. Select _NB551056 (NextSeq 550)_ from the sequencers dropdown menu. Only active (non-retired) sequencers are available on the dropdown menu.
+1. Select _NextSeq 550_ from the sequencer model dropdown menu. Only active (non-retired) sequencer models are available on the dropdown menu.
 1. Enter the short name of your project as the flowcell serial number (_e.g._ `PROJ`, `PCSI`, `FFPE`). Click _Lookup_ to confirm that this name is unique to MISO.
 1. Click _Save_ in the upper right corner of the page.
 
 ## 3.2 Create a Run
 
-1. On the _Runs_ page, click the _Add Run_ button near the top right corner of the page.
-1. Select _Illumina_ platform.
-1. Select _NB551056 (NextSeq 550)_ from the sequencers dropdown menu. Only active (non-retired) sequencers are available on the dropdown menu.
+1. On the _Runs_ page, select the Illumina platform and click the _Add Illumina Run_ button near the top left corner of the table.
+1. Select _NB551056_ from the sequencers dropdown menu. Only active (non-retired) sequencers are available on the dropdown menu.
 1. Enter a unique and memorable _Alias_ for your run.
 1. In the _Run Path_ field, enter `path` as the file path to the sequencer output.
 1. Check _Paired End_.
 1. Select the _Running_ status. Note that if MISO does not automatically detect runs from this sequencer, all status updates will have to be entered manually.
 1. Enter a date into _Start Date_.
+1. Click _Save_ in the upper right corner of the page.
+1. Select _Sequencing Parameters_ `High 2×151`, near the top of the Run section.
 1. Click _Save_ in the upper right corner of the page.
 1. In the _Containers_ section, click the _Add Container_ button.
 1. Enter the flow cell serial number of the container you have just created and click the _Add_ button.

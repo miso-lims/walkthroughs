@@ -69,7 +69,8 @@ ones that end in `_D_1`:
   - `PROJ_0002_Br_P_nn_1-1_D_1`
   - `PROJ_0002_Ly_R_nn_1-1_D_1`
 1. Click the _Propagate_ button at the top left of the table.
-1. Choose _1_ replicate.
+1. Note that "Propagate to libraries" is the title of the box, as gDNA aliquot 
+samples can only be propagated to libraries. Choose _1_ replicate.
 1. Click _Propagate_.
 1. A table will appear. Enter the library information:
   * _Library Name_: Leave blank as this will be filled in automatically after save.
@@ -89,9 +90,9 @@ name)_(Tissue type)(Individual)_Li, e.g. `PROJ_P1_Li`.
     Select different indices for each library. Selecting the same index for two
     different libraries will it unwise to pool those two libraries
     together later.
+  * _Kit_: KAPA Hyper Prep
   * _Size (bp)_: 300
   * _Volume_: 100
-  * _Kit_: KAPA Hyper Prep
 1. Choose _Save_.
 
 Note that for dual-index libraries, only the first index needs to be
@@ -191,6 +192,8 @@ made previously.
   - `PROJ_0002_Br_P_PE_300_EX`
   - `PROJ_0002_Ly_R_PE_300_EX`
 1. From the toolbar, select _Make dilutions_.
+  * Note that the _Make dilutions_ option is available after bulk creating 
+or bulk editing libraries.
 1. Enter the dilution information:
   * _Conc._: (use any number you wish)
   * _Creation Date_: (use the current date)
@@ -234,18 +237,20 @@ Orders are created on the pool to be sequenced, and include the quantity of sequ
 required (counted in lanes/SMRT cells), and the sequencing chemistry
 required (on Illumina).
 
+## 7.1 Creating an Order
+
 1. Under _Tracking_, select _Pools_.
 1. Find the pool you just created and click on it.
-1. On the Edit Pool page, scroll down to the _Orders_ heading.
+1. On the Edit Pool page, scroll down to the _Requested Orders_ heading.
 1. Click _Add Order_:
 1. Fill in the new order box:
-  - _Partitions_: the number of lanes/cells that should run for this pool. Enter
-`2`
-  - _Platform_: Select the instrument for sequencing. `Illumina - Illumina HiSeq 2500`
-  - _Sequencing Parameters_: Select `v4 2×126` chemistry.
+  - _Partitions_: the number of lanes/cells that should run for this pool. (May also 
+have a sequencing platform-specific label, like "lane" or "cell".) Enter `2`.
+  - _Platform_: Select the instrument for sequencing. `Illumina - NextSeq 550`.
+  - _Sequencing Parameters_: Select `High 2×151` chemistry.
 1. Click _Save_. The order will now be visible in the _Orders_ section.
 
-### 7.1  Checking for unfulfilled orders
+## 7.2  Checking for unfulfilled orders
 The _Orders_ page is used to decide what needs to be sequenced.
 
 1. From the navigation menu, choose _Orders_.
