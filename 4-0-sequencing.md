@@ -53,31 +53,30 @@ associated libraries are intentionally different from those used by the vendor.
 Every time a sequencer is loaded and sequencing begins,
 a _Run_ is created. Runs are picked up automatically from the instrument.
 A _Sequencing Container_ is the link between the library information and the
-instrument Run and contains one or more lanes. Each _lane_ (e.g. Illumina lane,
-PacBio SMRT cell) in the container is loaded with exactly one _Pool_.  Runs and
+instrument Run and contains one or more lanes. Each Illumina lane, or
+PacBio SMRT cell in the container is loaded with exactly one _Pool_.  Runs and
 Containers can be associated as soon as the Run and Container are both created. 
 
 ## 3.1 Create a Container
 
-1. On the _Sequencing Containers_ page, click the _Add_ button near the top left of the table.
-1. Select _Illumina_ platform.
-1. Select _NextSeq 550_ from the sequencer model dropdown menu. Only active (non-retired) sequencer models are available on the dropdown menu.
-1. Enter the short name of your project as the flowcell serial number (_e.g._ `PROJ`, `PCSI`, `FFPE`). Click _Lookup_ to confirm that this name is unique to MISO.
+1. On the _Sequencing Containers_ page, click the _Create Flowcell_ button near the top left of the table.
+1. Select _NextSeq 550_ platform. Only active (non-retired) models are available.
+1. Select _4 Lane_ for the size of the container.
+1. Enter the short name of your project as the serial number (_e.g._ `PROJ`, `PCSI`, `FFPE`).
 1. Click _Save_ in the upper right corner of the page.
 
 ## 3.2 Create a Run
 
-1. On the _Runs_ page, select the Illumina platform and click the _Add Illumina Run_ button near the top left corner of the table.
-1. Select _NB551056_ from the sequencers dropdown menu. Only active (non-retired) sequencers are available on the dropdown menu.
+1. On the _Runs_ page, select the Illumina platform and click the _Create Illumina Run_ button near the top left corner of the table.
+1. Select _NB551056 (NextSeq 550)_ from the sequencers list. Only active (non-retired) sequencers are available.
 1. Enter a unique and memorable _Alias_ for your run.
 1. In the _Run Path_ field, enter `path` as the file path to the sequencer output.
+1. Select _Sequencing Parameters_ `High 2×151`, near the top of the Run section.
 1. Check _Paired End_.
 1. Select the _Running_ status. Note that if MISO does not automatically detect runs from this sequencer, all status updates will have to be entered manually.
 1. Enter a date into _Start Date_.
 1. Click _Save_ in the upper right corner of the page.
-1. Select _Sequencing Parameters_ `High 2×151`, near the top of the Run section.
-1. Click _Save_ in the upper right corner of the page.
-1. In the _Containers_ section, click the _Add Container_ button.
+1. In the _Flow Cell_ section, click the _Add Flow Cell_ button.
 1. Enter the flow cell serial number of the container you have just created and click the _Add_ button.
 
 <a name="aruns" href="#" id="toplink">top</a>
@@ -109,16 +108,11 @@ _Sequencing Container_.
 
 ## 5.1 Add a pool to a run
 
-1. On the Run assigned to you, scroll down to the _Containers_ section.
-1. Search for the pool you previously created and double click to assign it to
-   the lane. If you did not mark the pool as _Ready to Run_ when creating it, you
-   may need to untick the _Only Ready to Run pools?_ option next to the Available Pools search field.
-1. Click the _Select Study_ button on the Lane to accept the default Study for
-   your project. This may not be necessary if a study has already been associated with the pool.
-1. Click _Save_.
-
-The location and validation fields can be changed on the _Edit Container_ page.
-Leave them blank for now.
+1. On the Run assigned to you, scroll down to the _Lanes_ section.
+1. Check the first the lane.
+1. Click _Assign Pool_ from the toolbar.
+1. Search for the pool you previously created. Try _Outstanding Orders (Matched Chemistry)_.
+1. Click the pool from the list.
 
 Now check on the Order.
 
@@ -139,12 +133,22 @@ and click the link.
 1. Click _Save_.
 
 Now if the Pool containing that Library is added to a Sequencing Container, it
-will be flagged red.
+will be flagged.
 
 1. Go back to your Run page.
-1. Find your pool using the search box. It will be flagged red.
+1. Find your pool using the lanes table. It will be flagged red.
 
 <a name="boxes" href="#" id="toplink">top</a>
+
+## 5.2 Setting Per-Lane QCs
+Sometimes a particular lane is bad. MISO allows setting a per-lane QC. This does _not_ prevent analysis. Contact GSI when a lane should not be analysed.
+
+1. Go to your run page.
+1. Check the first run.
+1. Click _Set QC_ from the toolbar.
+1. Pick _Failed: Other problem_.
+1. Enter a description of the problem.
+1. Click _Set_.
 
 # 6. Scanning libraries/pools into your outbox
 

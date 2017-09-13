@@ -85,7 +85,7 @@ name)_(Tissue type)(Individual)_Li, e.g. `PROJ_P1_Li`.
   * _Design_: EX
   * _Platform_: Illumina
   * _Type_: Paired End
-  * _Index Kit_: Nextera Dual Index
+  * _Index Kit_: Nextera DNA Dual Index
   * _Index 1_ and _Index 2_: Select any combination of indices you wish.
     Select different indices for each library. Selecting the same index for two
     different libraries will it unwise to pool those two libraries
@@ -213,8 +213,7 @@ library dilutions in it. Every lane of sequencing contains only one pool.
 Here we will pool all of the dilutions we added previously to make a single pool
 of 4 dilutions.
 
-1. If you are still on the bulk dilutions page from section **5.1**, click the
-_Propagate_ button at the top left of the table. Continue to step 2. Otherwise:
+1. If you are still on the bulk dilutions page from section **5.1**, continue to step 2.
     1. On the _Dilutions_ page, select the dilutions created.
     1. From the toolbar, click _Pool Together_.
 1. Enter the pool information:
@@ -240,27 +239,31 @@ required (on Illumina).
 ## 7.1 Creating an Order
 
 1. Under _Tracking_, select _Pools_.
-1. Find the pool you just created and click on it.
-1. On the Edit Pool page, scroll down to the _Requested Orders_ heading.
-1. Click _Add Order_:
+1. Check the pool you just created.
+1. From the toolbar, click _Create Order_:
+1. Select the instrument for sequencing: `NextSeq 550`
 1. Fill in the new order box:
-  - _Partitions_: the number of lanes/cells that should run for this pool. (May also 
-have a sequencing platform-specific label, like "lane" or "cell".) Enter `2`.
-  - _Platform_: Select the instrument for sequencing. `Illumina - NextSeq 550`.
   - _Sequencing Parameters_: Select `High 2×151` chemistry.
-1. Click _Save_. The order will now be visible in the _Orders_ section.
+  - _Lane Count_: the number of lanes that should run for this pool. Enter `2`.
+1. Click _Save_.
+1. Click on the pool you just added an order to.
+1. The order will now be visible in the _Requested Orders_ section.
+1. The outstanding sequencing required will be visible under _Order Status_.
+
+The language will vary depending on the platform (_i.e._, PacBio containers
+will show _SMRTcell Count_ instead of _Lane Count_).
 
 ## 7.2  Checking for unfulfilled orders
 The _Orders_ page is used to decide what needs to be sequenced.
 
 1. From the navigation menu, choose _Orders_.
-1. Verify that the pool you just created is listed in the _Unfulfilled_ tab.
+1. Verify that the pool you just created is listed in the _Active_ tab.
 
 Columns on this page will disappear if there are no entries (_e.g._,
 the _Failed_ column will not be shown if there are no failed runs). When enough
-lanes have been sequenced, the row will disappear from the _Unfulfilled_ tab,
+lanes have been sequenced, the row will disappear from the _Active_ tab,
 but remain in the _All_ tab. Lanes currently being sequenced will be marked as
-in-progress and remain on the _Unfulfilled_ tab until the run transitions to
+in-progress and remain on the _Active_ tab until the run transitions to
 _Completed_.
 
 A pool can have many orders. Orders for the same platform and chemistry are
@@ -283,24 +286,24 @@ Please email gsi@oicr.on.ca or file a JIRA ticket in GSI Common to get assistanc
 ## What if I forget to put a library dilution in a pool?
 If the library dilution has not been created:
 
-1. From _Tracking_, _Library_, select the library that needs to be added.
-1. In the _Library Dilution_ section, hover over _Options_ and select _Add Library Dilution_.
-1. Fill out the new row in the table, then click _Add_.
+1. From _Tracking_, _Library_, check the library that needs to be added.
+1. From the toolbar, click _Make Dilution_.
+1. Fill out the new row in the table, then click _Save_.
 
 Once the dilution exists:
 
 1. From _Tracking_, _Pool_, select the pool that needs the additional library dilution.
-1. In the _Pool Elements_ section, find the second table, labelled _Select poolable elements_.
-1. Enter the library name, library alias, or dilution name in the _Search_ box.
-1. Find the correct dilution in the list and click the plus button beside it.
+1. In the _Available Dilutions_ section, enter the library name, library alias, or dilution name in the _Search_ box.
+1. Find the correct dilution in the list and check it.
+1. Click _Add_ on the toolbar.
 
 ## How do I change the targeted sequencing type on a library?
 Targeted sequencing is connected to the dilution since the same library can be used for multiple targeted sequencing panels.
 
-1. From _Tracking_, _Library_, select the library that needs to be changed.
-1. In the _Library Dilution_ section, under the _Edit_ column, click the pencil beside the dilution that needs to be changed.
+1. From _Tracking_, _Dilutions_, check the library dilutions that need to be changed.
+1. From the toolbar, click _Edit_.
 1. Select a new _Targeted Sequencing_ from the list.
-1. Under the _Edit_ column, click _Save_.
+1. Click _Save_.
 
 ## How can I add a new targeted sequencing type, kit, or anything else in drop-down menus?
 For targeted sequencing and indices, please email gsi@oicr.on.ca or file a JIRA ticket in GSI Common to get assistance from the MISO team.
@@ -314,7 +317,12 @@ Kits can be added easily:
 1. Click _Save_.
 
 ## How do I make bulk orders?
-Alas, this is not possible yet.
+Making orders in bulk require the order be consistent for all pools.
+
+1. From _Tracking_, _Pools_, select all the pools needing an order.
+1. Click _Create Order_, and enter the information as for a single order.
+
+A new order will be create for each pool with the same information.
 
 ## How are matrix tube barcodes assigned to tubes?
 Barcodes can be assigned on an individual edit page or in bulk.
@@ -322,8 +330,7 @@ Barcodes can be assigned on an individual edit page or in bulk.
 To change a single library:
 
 1. From _Tracking_, _Library_, select the library that needs to be changed.
-1. In the top right, you will see a box labelled _Barcode_.
-1. Hover over the down arrow and select _Update Barcode_.
+1. Clear the field labelled _Matrix Barcode_.
 1. Scan the barcode.
 1. Click _Save_.
 

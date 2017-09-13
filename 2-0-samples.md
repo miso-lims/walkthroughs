@@ -98,7 +98,7 @@ information in this form.
     1. _Times Received_: `1`
     1. _Tube Number_: `1`
     1. _Lab_: Select `BioBank (University Health Network)` from the dropdown.
-    1. _Ext. Inst. Identifier_: `BioBankID 1`. This is the Biobank ID or Tube ID.
+    1. _Secondary ID_: `BioBankID 1`. This is the Biobank ID or Tube ID.
 It may also be left blank.
     1. _Material_: Select any from the drop-down.
     1. _QC Status_: select `Ready` from the drop down.
@@ -421,13 +421,19 @@ sample, but there are plans to add bulk QC in the near future.
 Add a QC for one of your existing aliquots.
 
 1. On the _Samples_ page, enter your project name in the search box.
-1. Click on one of your gDNA aliquots. Its alias should end with `_D_1`.
-1. Near the bottom of the page, beside the QCs heading, click _Options_ and select
-_Add Sample QC_.
-1. For _QC Date_, select today's date
-1. _Method_: QuBit
-1. _Results_: 50
-1. Click _Add_. The QC will be added to the table
+1. Check one or more of your gDNA aliquots. Its alias should end with `_D_1`.
+1. Click _Add QCs_ from the toolbar.
+1. Leave _QCs per Sample_ as 1 and click _Add_.
+1. For _QC Date_, select today's date and fill down.
+1. For _Type, select _QuBit_ and fill down.
+1. For _Result_, enter 50 and fill down.
+1. Click _Save_.
+
+The QCs will now be visible on the sample's individual page.
+
+1. On the _Samples_ page, enter your project name in the search box.
+1. Click one of the sample you previously selected.
+1. In the _QCs_ table, the Qubit results should now appear in the QCs table.
 
 <a name="boxes" href="#" id="toplink">top</a>
 
@@ -458,7 +464,7 @@ checkboxes on the left, and choose a bulk action from the menu at the bottom.
 Most sample attributes may be modified either individually, or in bulk. To access the
 _Edit Sample_ page for a single sample, click the sample's name or alias on the _Samples_ page.
 To bulk edit a set of samples, click the checkboxes next to them on the _Samples_ page, choose
-_Update Selected_ from the _Bulk actions_ menu, and click _Go_.
+_Edit_ from the toolbar.
 
 For attributes which cannot be changed via MISO (e.g. Sample Class), please email gsi@oicr.on.ca
 or file a JIRA ticket in GSI Common to get assistance from the MISO team.
@@ -471,12 +477,18 @@ Please email gsi@oicr.on.ca or file a JIRA ticket in GSI Common to get assistanc
 
 MISO does not yet accept direct receipt of libraries. In cases where libraries are
 received, you are required to first create the aliquot and then propagate the library from it.
-The aliquot may be created by using the Create Sample page (single or bulk), or by propagating
+The aliquot may be created by using the _Create_ button, or by propagating
 from an existing tissue or stock Sample. Propagating libraries is detailed in a later tutorial:
 [Propagating aliquots to libraries](3-0-libraries#props1)
 
-**How can I add a new tissue type, tissue origin,  or add anything else in drop-down menus?**
+**How can I add a new lab, tissue material, tissue type, tissue origin, or add anything else in drop-down menus?**
+Some of these items can be added directly:
 
-Please email gsi@oicr.on.ca or file a JIRA ticket in GSI Common to get assistance from the MISO team.
+1. From the _Institute Defaults_ section of the menu, click the category of interest.
+1. Click _Add_ from the toolbar.
+1. Enter the appropriate information.
+1. Click _Create_.
+
+If the category is not in that list, please email gsi@oicr.on.ca or file a JIRA ticket in GSI Common to get assistance from the MISO team.
 
 < <a href="1-0-project-coordination">Project coordination tutorial</a> | <a href="index">Home</a> | <a href="3-0-libraries">Libraries tutorial</a> >

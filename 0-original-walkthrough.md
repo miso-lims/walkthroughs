@@ -29,7 +29,7 @@ make and also allows us to set appropriate permissions.
 
 If you were able to log in to Geospiza LIMS, you already have the correct
 permissions and can proceed to logging in. If you are a new user, you will need
-to contact <helpdesk@oicr.on.ca> so that they put you into the appropriate
+to contact <ithelpdesk@oicr.on.ca> so that they put you into the appropriate
 Active Directory group, `MISO_ROLE_INTERNAL`.
 
 1. Click on <a href="http://miso.gsi.oicr.on.ca"
