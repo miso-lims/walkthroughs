@@ -206,7 +206,7 @@ Some fields cannot be filled down, so enter each of those separately. If you
 have a label with an incrementing number (_e.g._, `1`, `2`), enter two rows, select them, 
 then double click the blue square.
 
-1. _Ext. Inst. Identifier_: enter `BioBankID 2` in the second row. Select the _Ext. Inst. Identifier_
+1. _Secondary ID_: enter `BioBankID 2` in the second row. Select the _Secondary Identifier_
 fields for rows 1 and 2, then double click the blue square to fill down rows 3 and 4.
 1. Click _Save_ at the upper right hand corner.
 
@@ -256,7 +256,7 @@ in the dropdown menu.
   * _Times Received_: `1`
   * _Tube Number_: `1`
   * _Lab_: `BioBank (University Health Network)`.
-  * _Ext. Inst. Identifier_: `BioBankID 6`.
+  * _Secondary ID_: `BioBankID 6`.
   * _STR Status_: select any value from the dropdown menu.
   * _Vol. (µl)_: `300`
   * _QC Status_: select `Ready` from the dropdown.
@@ -367,7 +367,7 @@ part 3 of this tutorial.
     1. On the _Samples_ page, enter your project name in the search box.
     1. Check the boxes for the stock samples (propagated and received) that you created in
     sections 2.4 and 3.1. These are the samples with aliases that end with `_D_S1`.
-    1. From the _Bulk actions_ dropdown at the bottom, select _Update selected_ and click _Go_.
+1. Click the _Edit_ button at the top left of the table.
 1. Add a _Conc._ value: any number
 1. Change the _QC Status_ column to `Ready` for all rows.
 1. Enter a _Matrix Barcode_ for the stock entered in section 2.4 and record it on your worksheet. <img src="pics/blue_pencil.png">
@@ -416,7 +416,7 @@ the table. The Sample Alias will have been filled in with aliases that end in D\
 Several QC methods are supported in MISO. Currently they must be entered individually per
 sample, but there are plans to add bulk QC in the near future.
 
-## 4.1 Adding Sample QCs
+## 4.1 Adding Individual Sample QCs
 
 Add a QC for one of your existing aliquots.
 
@@ -425,7 +425,7 @@ Add a QC for one of your existing aliquots.
 1. Click _Add QCs_ from the toolbar.
 1. Leave _QCs per Sample_ as 1 and click _Add_.
 1. For _QC Date_, select today's date and fill down.
-1. For _Type, select _QuBit_ and fill down.
+1. For _Type_, select _Qubit_ and fill down.
 1. For _Result_, enter 50 and fill down.
 1. Click _Save_.
 
@@ -434,6 +434,21 @@ The QCs will now be visible on the sample's individual page.
 1. On the _Samples_ page, enter your project name in the search box.
 1. Click one of the sample you previously selected.
 1. In the _QCs_ table, the Qubit results should now appear in the QCs table.
+
+## 4.2 Adding Bulk Sample QCs
+
+1. Select the samples you wish to edit:
+  * If you are continuing from the end of section **3.4** do not navigate away from the page. At the top left of the table after saving samples, click the _Add QCs_ button. Continue to step 2. Otherwise, select samples using the following:
+  1. On the _Samples_ page, enter your project name in the search box.
+  1. Check the boxes for the stock samples that you created in section 3.2.
+  1. Click _Add QCs_ at the top left of the table. 
+1. Enter `1` QC per sample and click _Add_.
+1. _Date_: enter today's date
+1. _Type_: `Qubit`
+1. _Result_: `33`
+1. Click _Save_.
+
+
 
 <a name="boxes" href="#" id="toplink">top</a>
 
@@ -463,8 +478,8 @@ checkboxes on the left, and choose a bulk action from the menu at the bottom.
 
 Most sample attributes may be modified either individually, or in bulk. To access the
 _Edit Sample_ page for a single sample, click the sample's name or alias on the _Samples_ page.
-To bulk edit a set of samples, click the checkboxes next to them on the _Samples_ page, choose
-_Edit_ from the toolbar.
+To bulk edit a set of samples, click the checkboxes next to them on the _Samples_ page and click
+_Edit_ at the top left of the table.
 
 For attributes which cannot be changed via MISO (e.g. Sample Class), please email gsi@oicr.on.ca
 or file a JIRA ticket in GSI Common to get assistance from the MISO team.
@@ -488,7 +503,5 @@ Some of these items can be added directly:
 1. Click _Add_ from the toolbar.
 1. Enter the appropriate information.
 1. Click _Create_.
-
-If the category is not in that list, please email gsi@oicr.on.ca or file a JIRA ticket in GSI Common to get assistance from the MISO team.
 
 < <a href="1-0-project-coordination">Project coordination tutorial</a> | <a href="index">Home</a> | <a href="3-0-libraries">Libraries tutorial</a> >

@@ -133,14 +133,17 @@ library_.
 
 ## 3.1 Library QC
 After measuring the insert size or concentration, this information can be
-entered into each library. There is no bulk entry for this information yet, it must
-be entered for each library.
+entered into each library.
 
-1. From the _Libraries_ page, check the `PROJ_0001_Br_P_PE_300_EX` library. 
-1. Click the _Edit_ button at the top left of the table.
-1. Enter the following (note that the QC date will be the current date):
-  1. _New Qubit_: `5.72`
-  1. _New TapeStation_: `300`
+1. Select the libraries you wish to edit:
+  * If you are continuing from the end of sections **2.1** or **2.2**, do not navigate away from the page. At the top left of the table after saving libraries, click the _Add QCs_ button. Continue to step 2. Otherwise, select libraries using the following:
+  1. On the _Libraries_ page, enter your project name in the search box.
+  1. Check the boxes for the libraries that you created in sections **2.1** or **2.2**.
+  1. Click _Add QCs_ at the top left of the table. 
+1. Enter `1` QC per library and click _Add_.
+1. _Date_: enter today's date
+1. _Type_: `qPCR`
+1. _Result_: `22`
 1. Click _Save_.
 
 
@@ -210,12 +213,15 @@ library dilutions in it. Every lane of sequencing contains only one pool.
 
 <img src="pics/flow-pool.svg"/>
 
+## 6.1 Bulk creating a Pool
+
 Here we will pool all of the dilutions we added previously to make a single pool
 of 4 dilutions.
 
-1. If you are still on the bulk dilutions page from section **5.1**, continue to step 2.
-    1. On the _Dilutions_ page, select the dilutions created.
-    1. From the toolbar, click _Pool Together_.
+1. Select the dilutions you wish to pool:
+  * If you are still on the bulk dilutions page from section **5.1** do not navigate away from the page. Continue to step 2. Otherwise, select dilutions using the following:
+  1. On the _Dilutions_ page, select the dilutions created.
+1. From the toolbar at the top left, click _Pool Together_.
 1. Enter the pool information:
   * _Alias_: A short description of the pool contents. Enter the project name
 followed by `_POOL` (e.g. `PROJ_POOL`)
@@ -238,8 +244,9 @@ required (on Illumina).
 
 ## 7.1 Creating an Order
 
-1. Under _Tracking_, select _Pools_.
-1. Check the pool you just created.
+1. Select the pools you wish to create orders for:
+  * If you are still on the bulk pools page from section **6.1** do not navigate away from the page. Continue to step 2. Otherwise, select pools using the following:
+  1. On the  _Pools_ page, select the pool you just created.
 1. From the toolbar, click _Create Order_:
 1. Select the instrument for sequencing: `NextSeq 550`
 1. Fill in the new order box:
