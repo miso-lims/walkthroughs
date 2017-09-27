@@ -59,7 +59,7 @@ Containers can be associated as soon as the Run and Container are both created.
 
 ## 3.1 Create a Container
 
-1. On the _Sequencing Containers_ page, click the _Create Flowcell_ button near the top left of the table.
+1. On the _Sequencing Containers_ page, select the Illumina platform and click the _Create Flowcell_ button near the top left of the table.
 1. Select _NextSeq 550_ platform. Only active (non-retired) models are available.
 1. Select _4 Lane_ for the size of the container.
 1. Enter the short name of your project as the serial number (_e.g._ `PROJ`, `PCSI`, `FFPE`).
@@ -70,10 +70,10 @@ Containers can be associated as soon as the Run and Container are both created.
 1. On the _Runs_ page, select the Illumina platform and click the _Create Illumina Run_ button near the top left corner of the table.
 1. Select _NB551056 (NextSeq 550)_ from the sequencers list. Only active (non-retired) sequencers are available.
 1. Enter a unique and memorable _Alias_ for your run.
-1. In the _Run Path_ field, enter `path` as the file path to the sequencer output.
 1. Select _Sequencing Parameters_ `High 2×151`, near the top of the Run section.
+1. In the _Run Path_ field, enter `path` as the file path to the sequencer output.
 1. Check _Paired End_.
-1. Select the _Running_ status. Note that if MISO does not automatically detect runs from this sequencer, all status updates will have to be entered manually.
+1. Select _Status_ `Running`. Note that if MISO does not automatically detect runs from this sequencer, all status updates will have to be entered manually.
 1. Enter a date into _Start Date_.
 1. Click _Save_ in the upper right corner of the page.
 1. In the _Flow Cell_ section, click the _Add Flow Cell_ button.
