@@ -413,8 +413,7 @@ the table. The Sample Alias will have been filled in with aliases that end in D\
 
 # 4. Sample QCs
 
-Several QC methods are supported in MISO. Currently they must be entered individually per
-sample, but there are plans to add bulk QC in the near future.
+Several QC methods are supported in MISO.
 
 ## 4.1 Adding Individual Sample QCs
 
