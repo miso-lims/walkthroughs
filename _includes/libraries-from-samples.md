@@ -39,7 +39,7 @@ name)_(Tissue type)(Individual)_Li, e.g. `PROJ_P1_Li`.
     Select different indices for each library. Selecting the same index for two
     different libraries will it unwise to pool those two libraries
     together later.
-  * _Kit_: {% detailed == true ? "KAPA Hyper Prep" : "Any kit" %}
+  * _Kit_: {% if detailed == true %}KAPA Hyper Prep{% else %}Any kit{% endif %}
   * _Size (bp)_: 300
 {% if detailed == true %}
   * _Volume_: 100
