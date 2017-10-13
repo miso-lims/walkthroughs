@@ -1,7 +1,7 @@
 # Site title and subtitle. This is used in _includes/header.html
 title: 'MISO'
 subtitle: 'An open-source LIMS for NGS sequencing centres'
-miso_flavour: 'OICR'
+miso_flavour: 'OICR' 
 miso_colour: 'rgb(56,121,59)'
 
 # URL to source code, used in _includes/footer.html
@@ -12,10 +12,17 @@ codeurl: 'https://github.com/TGAC/miso-lims'
 # path (e.g. on GitHub pages) leave off the trailing slash, e.g. /my-project
 baseurl: '/miso-docs-oicr'
 
+# URL to your MISO instance for the training tutorial. This is used in
+# _includes/logging_in.md
+miso_url: 'http://miso.gsi.oicr.on.ca' 
 
-
-
-
+# Configuration for the sequencer name, platform, and sequencing parameters used
+# in sections 3 (libraries) and 4 (sequencing). Make sure these match an
+# existing and active sequencer and existing sequencing parameters for your MISO
+# instance.
+sequencer: 'NB551056'
+platform: 'NextSeq 550'
+seq_params: 'High 2×151'
 
 
 #--------------------------------------------------------------------------------

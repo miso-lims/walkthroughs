@@ -2,6 +2,9 @@
 layout: page
 category: walkthrough
 title: Samples Tutorial
+is-detailed: true
+quantity: 1
+section: 3.4
 
 ---
 
@@ -25,7 +28,8 @@ Download the worksheet for this section here: <a href="2-0-samples-worksheet">Sa
 <a name="login"/>
 
 # 1. Logging in
-{% include logging_in.md %}
+
+{% include logging_in.md detailed=page.is-detailed %}
 
 <a name="receipt" href="#" id="toplink">top</a>
 
@@ -65,21 +69,7 @@ the Project you created in the last session.
 All samples in MISO are entered using the bulk entry screen. We will start by 
 entering a single Sample for reference tissue from the Identity `ID1`.
 
-1. On the left hand menu under _Tracking_, click _Samples_.
-1. Click the _Create_ button at the top left of the table.
-1. Select Sample Class _Tissue_ and Quantity _1_.
-1. Click _Create_.
-1. Enter or select the following in the table:
-    1. _Sample Name_: leave blank. This will be auto-generated after save.
-    1. _Sample Alias_: leave blank. This will be auto-generated based on other
-information in this form.
-    1. _Description_: `Reference 1`.
-    1. _Date of Receipt_: Select a date
-    1. _Sample Type_: select `GENOMIC` from the drop down.
-    1. _Scientific Name_: `Homo sapiens`.
-1. _Matrix Barcode_: Use the hand-scanner or type a barcode into the pop-up.
-   Record the barcode in your worksheet. <img src="pics/blue_pencil.png">
-1. Project: Select the project you created in the last exercise.
+{% include samples-receiving.md detailed=page.is-detailed quantity=page.quantity %}
 1. _External Name_: this is the name of the *individual donor*, whether internal or 
     external. For example, an external name would be "Morgan" (internally we refer to 
     her as plain ol' MORG_0001).
@@ -90,6 +80,8 @@ information in this form.
    _Identity Alias_ field.
     * If there are no existing donors with the exact external name, the option of 
     `First Receipt (project short name)` will be available. 
+    * If more than one option is available in the _Identity Alias_ dropdown, the cell 
+    will be displayed with a light purple background.
     2. Select `First Receipt (project short name)` for the _Identity Alias_.
     1. _Donor Sex_: Select any item from the dropdown.
 1. Enter or select the following in the table:
@@ -99,7 +91,7 @@ information in this form.
     1. _Tube Number_: `1`
     1. _Lab_: Select `BioBank (University Health Network)` from the dropdown.
     1. _Secondary ID_: `BioBankID 1`. This is the Biobank ID or Tube ID.
-It may also be left blank.
+    It may also be left blank.
     1. _Material_: Select any from the drop-down.
     1. _QC Status_: select `Ready` from the drop down.
 1. At the upper right hand side, click _Save_.
@@ -186,7 +178,8 @@ filled out), _Sex_, _Tissue Origin_, _Tissue Type_, _Times Received_, _Tube Numb
 </td></tr></table>
 
 1. _Description_: Copying and pasting from Excel and Word is supported. 
-   Copy something from anywhere and press Ctrl+V on your keyboard to paste.
+   Copy something from anywhere and press Ctrl+V (Windows & Linux) or Command+V (Mac)
+   on your keyboard to paste.
 
 1. _Matrix Barcode_: you would normally use a hand-scanner or copy and paste a list of 
 barcodes from a spreadsheet. For each sample, select a barcode, scan or type it in, and record 
@@ -436,17 +429,7 @@ The QCs will now be visible on the sample's individual page.
 
 ## 4.2 Adding Bulk Sample QCs
 
-1. Select the samples you wish to edit:
-  * If you are continuing from the end of section **3.4** do not navigate away from the page. At the top left of the table after saving samples, click the _Add QCs_ button. Continue to step 2. Otherwise, select samples using the following:
-  1. On the _Samples_ page, enter your project name in the search box.
-  1. Check the boxes for the stock samples that you created in section 3.2.
-  1. Click _Add QCs_ at the top left of the table. 
-1. Enter `1` QC per sample and click _Add_.
-1. _Date_: enter today's date
-1. _Type_: `Qubit`
-1. _Result_: `33`
-1. Click _Save_.
-
+{% include samples-bulk-qc.md section=page.section %}
 
 
 <a name="boxes" href="#" id="toplink">top</a>
