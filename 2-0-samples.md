@@ -68,7 +68,7 @@ the Project you created in the last session.
 All samples in MISO are entered using the bulk entry screen. We will start by 
 entering a single Sample for reference tissue from the Identity `ID1`.
 
-{% include sample-receiving.md detailed=page.is-detailed quantity=page.quantity %}
+{% include samples-receiving.md detailed=page.is-detailed quantity=page.quantity %}
 1. _External Name_: this is the name of the *individual donor*, whether internal or 
     external. For example, an external name would be "Morgan" (internally we refer to 
     her as plain ol' MORG_0001).

@@ -42,7 +42,7 @@ single or pooled _Dilutions._
 
 Samples are most easily entered into MISO using the bulk entry screen.
 
-{% include sample-receiving.md detailed=page.is-detailed quantity=page.quantity %}
+{% include samples-receiving.md detailed=page.is-detailed quantity=page.quantity %}
     1. _QC Passed?_: `True`
 1. At the upper right hand side, click _Save_.
 
