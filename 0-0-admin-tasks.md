@@ -13,7 +13,6 @@ Table of Contents
     <li><a href="#users">Adding Users</a></li>
     <li><a href="#perms">Creating groups and adding users to them</a></li>
     <li><a href="#inst">Adding new instruments</a></li>
-    <li><a href="#subproj">Configuring subprojects</a></li>
     <li><a href="#reports">Creating project and monthly reports</a></li>
 </ol>
 </div>
@@ -45,31 +44,7 @@ making them part of the following Active Directory groups:
 
 {% include admin-new-inst.md contact=page.contact-admin %}
 
-<a name="subproj" href="#" id="toplink">top</a>
-
-# 5. Configuring sub-projects
-
-Samples in a project can be assigned a sub-project designation. The sub-project
-is primarily a label for human use.
-If you haven't yet set up a project, continue to the
-next section first.
-
-1. On the left hand menu under _Institute Defaults_ section, click _Subprojects_.
-1. Click the _Add_ button at the top left of the table.
-1. Enter quantity `1` and click `Create`. 
-    * Select the main Project from the drop-down
-    * Fill in the alias and description.
-    * Select the priority from the drop-down. Eventually this will flag high-priority samples in the MISO interface.
-    * Select `Human hg19 random` from the Reference Genome dropdown
-1. Click _Save_ in the top right corner of the page.
-
-Once a subproject is set up, it can be selected when creating Samples.
-
-<a name="reports" href="#" id="toplink">top</a>
-
-# 6. Creating project and monthly reports
-
-If you require a report, please {{ page.contact-admin }} for assistance.
+{% include admin-reports.md contact=page.contact-admin %}
 
 
 <a href="index">Home</a> | <a href="1-0-project-coordination">Project Coordination tutorial</a> > 
