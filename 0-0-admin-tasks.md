@@ -2,6 +2,7 @@
 layout: page
 category: walkthrough
 title: Administration tasks
+contact-admin: email gsi@oicr.on.ca or file a JIRA ticket in _GSI Common_
 
 ---
 
@@ -40,63 +41,9 @@ making them part of the following Active Directory groups:
     * If the person is to be added as an admin: `MISO_ROLE_ADMIN` and `MISO_ROLE_INTERNAL` groups.
     * If the person is not to be given admin access: `MISO_ROLE_INTERNAL` group.
 
-<a name="perms" href="#" id="toplink">top</a>
+{% include admin-groups.md %}
 
-# 3. Creating groups and adding users to them
-
-_Groups_ permit fine-grained control over who has view and/or edit access to an
-item in MISO. There is a default group in MISO for "all internal users".
-There are also groups for Watchers, but these features are not yet fully functional. 
-
-## 3.1 Create a Group
-
-To create a new group:
-
-1. Select the _Groups_ link in the left-hand menu.
-1. Select the _Add Group_ link near the top right corner.
-
-The _Edit Group_ page will display a number of fields that you can fill in.
-1. Enter a unique _Name_. The name must contain only letters or numbers. It
-   cannot contain spaces or punctuation.
-1. Enter a _Description_ of your group.
-1. Select your user as the only member of your group.
-1. Click the _Save_ button at the upper right.
-
-<a name="inst" href="#" id="toplink">top</a>
-
-# 4. Adding new instruments
-
-New sequencing machines must be added to MISO so that MISO can be made aware of the
-runs that use them.
-
-## 4.1 Add a new model of sequencer
-
-If MISO does not yet have this type of sequencer in the database, you will need 
-to contact your MISO administrator to put the new model into MISO before you can 
-add a new sequencer of that model.
-
-1. Please email gsi@oicr.on.ca or file a JIRA ticket in _GSI Common_ to add the new sequencer 
-model to MISO. Include the following information:
-    * Sequencer manufacturer (Platform)
-    * Model
-    * Standard read lengths you anticipate using for sequencing (_e.g._ 1x250, 2x126)
-
-## 4.1 Add a new sequencer 
-
-1. Click the _My Account_ tab at the top of the page.
-1. Click _Configure_ in the _Sequencing Machines_ section.
-1. Click the _Add Sequencer_ link in the top right corner.
-1. Fill in the fields of the new row that is inserted at the top of the table:
-    * _Name_: enter the serial number (case-sensitive)
-    * _Platform_: select a platform from the dropdown menu
-    * _Hostname_: enter `localhost`
-1. Click _Add_ to save the new sequencer.
-
-## 4.2 Set up MISO to be aware of aware of the sequencer's output
-
-1. Please email gsi@oicr.on.ca or file a JIRA ticket in _GSI Common_. Give the name of the new 
-sequencing machine and indicate that you would like GSI to add the 
-sequencing machine's output folder to the notification server properties file.
+{% include admin-new-inst.md contact=page.contact-admin %}
 
 <a name="subproj" href="#" id="toplink">top</a>
 
@@ -107,14 +54,14 @@ is primarily a label for human use.
 If you haven't yet set up a project, continue to the
 next section first.
 
-1. Click on the _My Account_ tab at the top of the page.
-1. In the _Institute Defaults_ section, click on _Subprojects_.
-1. Click on the _New Subproject_ button. 
+1. On the left hand menu under _Institute Defaults_ section, click _Subprojects_.
+1. Click the _Add_ button at the top left of the table.
+1. Enter quantity `1` and click `Create`. 
     * Select the main Project from the drop-down
     * Fill in the alias and description.
     * Select the priority from the drop-down. Eventually this will flag high-priority samples in the MISO interface.
     * Select `Human hg19 random` from the Reference Genome dropdown
-1. Click _Add_.
+1. Click _Save_ in the top right corner of the page.
 
 Once a subproject is set up, it can be selected when creating Samples.
 
@@ -122,9 +69,7 @@ Once a subproject is set up, it can be selected when creating Samples.
 
 # 6. Creating project and monthly reports
 
-MISO has some basic reporting capabilities. However, it also seems to contain
-dragons which periodically kill all of MISO when they are disturbed. If you require a report, 
-please email gsi@oicr.on.ca for assistance.
+If you require a report, please {{ page.contact-admin }} for assistance.
 
 
 <a href="index">Home</a> | <a href="1-0-project-coordination">Project Coordination tutorial</a> > 
