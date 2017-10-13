@@ -2,6 +2,8 @@
 layout: page
 category: walkthrough
 title: Libraries tutorial
+is-detailed: true
+section: **2.1** or **2.2**
 
 ---
 
@@ -55,48 +57,7 @@ inbox.
 
 {% include inboxes.md %}
 
-
-## 2.1 Bulk propagate aliquots into libraries
-
-In this section, you will use the aliquots created already and create
-libraries.
-
-1. On the _Samples_ page, enter your project name into the search box.
-1. Check the gDNA aliquot samples to turn into libraries. These samples are the
-ones that end in `_D_1`:
-  - `PROJ_0001_Br_P_nn_1-1_D_1`
-  - `PROJ_0001_Ly_R_nn_1-1_D_1`
-  - `PROJ_0002_Br_P_nn_1-1_D_1`
-  - `PROJ_0002_Ly_R_nn_1-1_D_1`
-1. Click the _Propagate_ button at the top left of the table.
-1. Note that "Propagate to libraries" is the title of the box, as gDNA aliquot 
-samples can only be propagated to libraries. Choose _1_ replicate.
-1. Click _Propagate_.
-1. A table will appear. Enter the library information:
-  * _Library Name_: Leave blank as this will be filled in automatically after save.
-  * _Library Alias_: Leave blank as this will be filled in automatically.
-  For more information about Library nomenclature, see
-  <a href="https://wiki.oicr.on.ca/display/MCPHERSON/LIMS+Guidelines#LIMSGuidelines-LibraryNomenclature" 
-  target="_new">Library Nomenclature</a>.
-  * _Matrix Barcode_: As before, usually this would be scanned by the hand
-    scanner. In this tutorial, enter matrix barcodes in the form (Short
-name)_(Tissue type)(Individual)_Li, e.g. `PROJ_P1_Li`.
-  * _Description_: Library (Tissue type)(individual), e.g. `Library P1`
-  * _Design_: EX
-  * _Platform_: Illumina
-  * _Type_: Paired End
-  * _Index Kit_: Nextera DNA Dual Index
-  * _Index 1_ and _Index 2_: Select any combination of indices you wish.
-    Select different indices for each library. Selecting the same index for two
-    different libraries will it unwise to pool those two libraries
-    together later.
-  * _Kit_: KAPA Hyper Prep
-  * _Size (bp)_: 300
-  * _Volume_: 100
-1. Choose _Save_.
-
-Note that for dual-index libraries, only the first index needs to be
-specified. The second is optional.
+{% include libraries-from-samples.md detailed=page.is-detailed %}
 
 
 ## 2.2 Bulk propagate aliquots to libraries from Box page
@@ -123,42 +84,7 @@ indices at a particular plate location. Once the libraries are sorted based on t
 parent sample's location, the indices can be copy-pasted in the order that the 
 robot requires.
 
-<a name="qcs" href="#" id="toplink">top</a>
-
-# 3. Quality control
-There are three way to indicate library quality in MISO: 1)
-Enter quantitative QC values under the _Library QC_ section; 2) The overall pre-sequencing quality
-flag _QC passed_; and 3) The post-sequencing quality control _Low quality
-library_.
-
-## 3.1 Library QC
-After measuring the insert size or concentration, this information can be
-entered into each library.
-
-1. Select the libraries you wish to edit:
-  * If you are continuing from the end of sections **2.1** or **2.2**, do not navigate away from the page. At the top left of the table after saving libraries, click the _Add QCs_ button. Continue to step 2. Otherwise, select libraries using the following:
-  1. On the _Libraries_ page, enter your project name in the search box.
-  1. Check the boxes for the libraries that you created in sections **2.1** or **2.2**.
-  1. Click _Add QCs_ at the top left of the table. 
-1. Enter `1` QC per library and click _Add_.
-1. _Date_: enter today's date
-1. _Type_: `qPCR`
-1. _Result_: `22`
-1. Click _Save_.
-
-
-## 3.2 QC passed
-_QC Passed_ is a simple pass/fail flag for a library to decide if it is good
-enough for sequencing. If not measured, this can be left as "Unknown".
-
-1. From the _Libraries_ page, find the `PROJ_0001_Br_P_PE_300_EX` library using
-the search box and click the sample link.
-1. Change _QC passed_ from _Unknown_ to _True_.
-1. Click _Save_.
-
-## 3.3 Low Quality Sequencing
-Libraries can be marked as having low sequencing quality, which will be shown
-after the _Run_ exercises.
+{% include libraries-qc.md detailed=page.is-detailed section=page.section %}
 
 <a name="boxes" href="#" id="toplink">top</a>
 
@@ -170,139 +96,19 @@ use.
 {% include outboxes.md %}
 
 
-<a name="props2" href="#" id="toplink">top</a>
-
-# 5. Propagating libraries to dilutions
-
-A library cannot be directly loaded into a _lane_ in a _sequencing container_
-(flowcell/SMRTcell) in MISO. A dilution must be made and then many dilutions
-(or just one) can be mixed into a _pool_ for sequencing.
-
-_Orders_ are requests for sequencing pools a certain number of times. They are
-used to keep track of sequencing progress for project management and book-keeping.
-
-## 5.1 Bulk creating Library Dilutions
-Dilutions can be made in bulk from libraries.
-
-<img src="pics/flow-dilution.svg"/>
-
-In this exercise, we will create 4 library dilutions from the libraries we
-made previously.
-
-1. On the _Libraries_ page, check all the libraries just created.
-  - `PROJ_0001_Br_P_PE_300_EX`
-  - `PROJ_0001_Ly_R_PE_300_EX`
-  - `PROJ_0002_Br_P_PE_300_EX`
-  - `PROJ_0002_Ly_R_PE_300_EX`
-1. From the toolbar, select _Make dilutions_.
-  * Note that the _Make dilutions_ option is available after bulk creating 
-or bulk editing libraries.
-1. Enter the dilution information:
-  * _Conc._: (use any number you wish)
-  * _Creation Date_: (use the current date)
-1. Click _Save_.
+{% include libraries-to-dilutions.md detailed=page.is-detailed %}
 
 
-<a name="pools"  href="#" id="toplink">top</a>
+{% include libraries-dils-to-pools.md %}
 
-# 6. Creating Pools
 
-Pools are the last step for libraries before sequencing and represent the
-entity that is loaded onto the flowcell lane or SMRTcell. A "pool" can have one or more
-library dilutions in it. Every lane of sequencing contains only one pool. 
+{% include libraries-orders.md %}
 
-<img src="pics/flow-pool.svg"/>
 
-## 6.1 Bulk creating a Pool
-
-Here we will pool all of the dilutions we added previously to make a single pool
-of 4 dilutions.
-
-1. Select the dilutions you wish to pool:
-  * If you are still on the bulk dilutions page from section **5.1** do not navigate away from the page. Continue to step 2. Otherwise, select dilutions using the following:
-  1. On the _Dilutions_ page, select the dilutions created.
-1. From the toolbar at the top left, click _Pool Together_.
-1. Enter the pool information:
-  * _Alias_: A short description of the pool contents. Enter the project name
-followed by `_POOL` (e.g. `PROJ_POOL`)
-  * _Description_: A longer free-text description of the pool.
-  * _Creation Date_: Select a date.
-  * _Concentration_: Enter a concentration.
-  * _Volume_: Enter a pool volume.
-  * _Ready to Run_: Whether or not the pool is ready for sequencing. This flag
-     is used together with the Order to show the pool is ready to be sequenced.
-     Make sure this is _True_.
-1. Click _Save_.
-
-<a name="orders"  href="#" id="toplink">top</a>
-
-# 7. Ordering sequencing
-
-Orders are created on the pool to be sequenced, and include the quantity of sequencing
-required (counted in lanes/SMRT cells), and the sequencing chemistry
-required (on Illumina).
-
-## 7.1 Creating an Order
-
-1. Select the pools you wish to create orders for:
-  * If you are still on the bulk pools page from section **6.1** do not navigate away from the page. Continue to step 2. Otherwise, select pools using the following:
-  1. On the  _Pools_ page, select the pool you just created.
-1. From the toolbar, click _Create Order_:
-1. Select the instrument for sequencing: `NextSeq 550`
-1. Fill in the new order box:
-  - _Sequencing Parameters_: Select `High 2×151` chemistry.
-  - _Lane Count_: the number of lanes that should run for this pool. Enter `2`.
-1. Click _Save_.
-1. Click on the pool you just added an order to.
-1. The order will now be visible in the _Requested Orders_ section.
-1. The outstanding sequencing required will be visible under _Order Status_.
-
-The language will vary depending on the platform (_i.e._, PacBio containers
-will show _SMRTcell Count_ instead of _Lane Count_).
-
-## 7.2  Checking for unfulfilled orders
-The _Orders_ page is used to decide what needs to be sequenced.
-
-1. From the navigation menu, choose _Orders_.
-1. Verify that the pool you just created is listed in the _Active_ tab.
-
-Columns on this page will disappear if there are no entries (_e.g._,
-the _Failed_ column will not be shown if there are no failed runs). When enough
-lanes have been sequenced, the row will disappear from the _Active_ tab,
-but remain in the _All_ tab. Lanes currently being sequenced will be marked as
-in-progress and remain on the _Active_ tab until the run transitions to
-_Completed_.
-
-A pool can have many orders. Orders for the same platform and chemistry are
-summed when displayed on this page.
-
-<a name="trouble" href="#" id="toplink">top</a>
-
-# Troubleshooting
-
-## How do I correct an index on a library?
-The index can be changed on either the individual library page or the bulk edit page.
-
-1. From _Tracking_, _Library_, select the library that needs to be changed.
-1. If necessary, change _Index Family_. If selected, the indices will be erased.
-1. Select the correct index under _Indices_. If the index family supports dual barcoding, another drop down will appear.
+{% include libraries-trouble.md %}
 
 ## What if I assign a library to the wrong parent aliquot?
 Please email gsi@oicr.on.ca or file a JIRA ticket in GSI Common to get assistance from the MISO team.
-
-## What if I forget to put a library dilution in a pool?
-If the library dilution has not been created:
-
-1. From _Tracking_, _Library_, check the library that needs to be added.
-1. From the toolbar, click _Make Dilution_.
-1. Fill out the new row in the table, then click _Save_.
-
-Once the dilution exists:
-
-1. From _Tracking_, _Pool_, select the pool that needs the additional library dilution.
-1. In the _Available Dilutions_ section, enter the library name, library alias, or dilution name in the _Search_ box.
-1. Find the correct dilution in the list and check it.
-1. Click _Add_ on the toolbar.
 
 ## How do I change the targeted sequencing type on a library?
 Targeted sequencing is connected to the dilution since the same library can be used for multiple targeted sequencing panels.
@@ -323,14 +129,6 @@ Kits can be added easily:
 1. Carefully select the _Kit Type_ and _Platform_. This will determine what the kit can be used for.
 1. Click _Save_.
 
-## How do I make bulk orders?
-Making orders in bulk require the order be consistent for all pools.
-
-1. From _Tracking_, _Pools_, select all the pools needing an order.
-1. Click _Create Order_, and enter the information as for a single order.
-
-A new order will be create for each pool with the same information.
-
 ## How are matrix tube barcodes assigned to tubes?
 Barcodes can be assigned on an individual edit page or in bulk.
 
@@ -349,10 +147,6 @@ To change many libraries:
 1. Repeat for all the libraries.
 1. Click _Save_.
 
-## What is the importance of selecting a study since it prevents the sequencing stage from adding pools to the lane containers?
-The study is important for submitting to the ERA. Although we are not using
-that feature of MISO, it's required that all projects have at least one study
-and that it is required when adding a pool to a lane.
 
 < <a href="2-0-samples">Samples tutorial</a> | <a href="index">Home</a> | <a href="4-0-sequencing">Sequencing tutorial</a> >
 

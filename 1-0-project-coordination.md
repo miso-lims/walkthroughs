@@ -7,7 +7,7 @@ sequencing pancreatic tumors, references, cell lines and xenografts as part of
 the International Cancer Genome Consortium, and the FFPER project sequences
 samples from a bio-bank with a number of different preparations and treatments
 in order to determine the impact of each on data quality.
-is-oicr: true
+is-detailed: true
 
 ---
 
@@ -24,7 +24,7 @@ Table of Contents
 Download the worksheet for this section here: <a href="1-0-project-coordination-worksheet">Project coordination Worksheet</a>. 
 </div>
 
-{% include project-new.md project-example=page.project-example oicr=page.is-oicr %}
+{% include project-new.md project-example=page.project-example detailed=page.is-detailed %}
 
 <a name="subproj" href="#" id="toplink">top</a>
 

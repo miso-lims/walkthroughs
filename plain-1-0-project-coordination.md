@@ -3,7 +3,7 @@ layout: page
 category: walkthrough
 title: Project Coordinator tasks
 project-example: 
-is-oicr: false
+is-detailed: false
 
 ---
 
@@ -19,11 +19,11 @@ Table of Contents
 Download the worksheet for this section here: <a href="1-0-project-coordination-worksheet">Project coordination Worksheet</a>.
 </div>
 
-{% include project-new.md project-example=page.project-example oicr=page.is-oicr %}
+{% include project-new.md project-example=page.project-example detailed=page.is-detailed %}
 
 
 Now that your project has been created, continue to make your first samples.
 
 
-<a href="plain-0-0-admin-tasks">Admin tasks tutorial</a> | <a href="plain-index">Home</a> | <a href="plain-2-0-samples">Samples tutorial</a> >
+< <a href="plain-0-0-admin-tasks">Admin tasks tutorial</a> | <a href="plain-index">Home</a> | <a href="plain-2-0-samples">Samples tutorial</a> >
 

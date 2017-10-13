@@ -13,7 +13,6 @@ Table of Contents
     <li><a href="#users">Adding Users</a></li>
     <li><a href="#perms">Creating groups and adding users to them</a></li>
     <li><a href="#inst">Adding new instruments</a></li>
-    <li><a href="#subproj">Configuring subprojects</a></li>
     <li><a href="#reports">Creating project and monthly reports</a></li>
 </ol>
 </div>
@@ -59,5 +58,4 @@ to the `ROLE_ADMIN` group.
 {% include admin-reports.md contact=page.contact-admin %}
 
 
-<a href="plain-index">Home</a> | <a href="plain-1-0-project-coordination">Project Coordination tutorial</a> >
-
+< <a href="plain-index">Home</a> | <a href="plain-1-0-project-coordination">Project Coordination tutorial</a> >
