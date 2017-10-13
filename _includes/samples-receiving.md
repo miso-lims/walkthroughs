@@ -15,7 +15,7 @@ symbol with numbers of your choosing.
 {% endif %}
     1. _Date of Receipt_: Select a date
     1. _Sample Type_: select `GENOMIC` from the drop down.
-    1. _Scientific Name_: {% detailed == true ? "`Homo sapiens`" : "`Triticum aestivum`" %}.
+    1. _Scientific Name_: {% if detailed == true %}`Homo sapiens`{% else %}`Triticum aestivum`{% endif %}.
 {% if detailed == true %}
     1. _Matrix Barcode_: Use the hand-scanner or type a barcode into the pop-up.
    Record the barcode in your worksheet. <img src="pics/blue_pencil.png">

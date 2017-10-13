@@ -1,6 +1,6 @@
-## 2.1 Bulk propagate {% detailed == true ? "aliquots" : "samples" %} into libraries
+## 2.1 Bulk propagate {% if detailed == true %}aliquots{% else %}samples{% endif %} into libraries
 
-In this section, you will use the {% detailed == true ? "aliquots" : "samples" %} 
+In this section, you will use the {% if detailed == true %}aliquots{% else %}samples{% endif %} 
 created already to create libraries.
 
 1. On the _Samples_ page, enter your project name into the search box.
