@@ -93,7 +93,7 @@ Several QC methods are supported in MISO.
 
 Finally, scan the samples you made into the outbox so the libraries team can take over.
 
-{% include outbox.md %}
+{% include outboxes.md %}
 
 < <a href="plain-1-0-project-coordination">Project coordination tutorial</a> | <a href="plain-index">Home</a> | <a href="plain-3-0-libraries">Libraries tutorial</a> >
 
