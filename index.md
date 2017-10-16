@@ -6,7 +6,7 @@ title: "Getting Started with OICR MISO"
 
 {% if site.miso_flavour == 'OICR' %}
 This walkthrough is intended for new users of [OICR](http://oicr.on.ca)'s MISO flavour. 
-For the original flavour, see [the walkthrough here] (plain-index).
+For the original flavour, see [the walkthrough here](plain-index).
 
 # Tutorials By Team
 

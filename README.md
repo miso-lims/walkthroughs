@@ -6,7 +6,19 @@ system for the [Ontario Institute for Cancer Research (OICR)](http://www.oicr.on
 
 * [September 2016 Training Workshop](http://oicr-gsi.github.io/miso-docs-oicr/)
 
-To update this document for your own MISO training, update the `_config.yaml` file:
+This tutorial leads users through the steps required to enter data in MISO. Users may
+complete all sections of the tutorial, or just the sections which apply to their 
+lab tasks.
+
+
+To configure this document for your own MISO training, first fork this repo.
+(You could rename it if you don't want `-oicr` in the repo title)
+
+Then, update the `_config.yaml` file:
   * `miso_url`: add the URL to your MISO training instance
   * `miso_flavour`: change to `default` to use the MISO defaults. Only keep it as
 `OICR` if you are using OICR's sample hierarchy and naming conventions.
+
+Finally, deploy the tutorial to 
+[GitHub Pages](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/)
+or elsewhere.
