@@ -46,7 +46,7 @@ inbox.
 
 {% include libraries-from-samples.md detailed=page.is-detailed %}
 
-{% include libraries-qc.md detailed=page.is-detailed created-section=page.section %}
+{% include libraries-qc.md created-section=page.section %}
 
 <a name="boxes" href="#" id="toplink">top</a>
 
