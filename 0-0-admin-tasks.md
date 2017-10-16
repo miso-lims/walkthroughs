@@ -4,7 +4,6 @@ category: walkthrough
 title: Administration tasks
 contact-admin: email gsi@oicr.on.ca or file a JIRA ticket in _GSI Common_
 is-detailed: true
-miso-url: http://miso.gsi.oicr.on.ca
 
 ---
 
@@ -23,7 +22,7 @@ Table of Contents
 
 # 1. Logging in
 
-{% include logging_in.md detailed=page.is-detailed misoUrl=page.miso-url %}
+{% include logging_in.md detailed=page.is-detailed %}
 
 
 In order to perform the tasks in this section you must be a MISO admin.

@@ -20,8 +20,8 @@ will first need to get a username and password by following the steps in the
 
 Try to log in now:
 
-1. Click on <a href="{{ misoUrl }}"
-target="\_new" >{{ misoUrl }}</a>.
+1. Click on <a href="{{ site.miso_url }}"
+target="\_new" >{{ site.miso_url }}</a>.
 1. Enter your
 username (e.g. jdoe) and password and click the Login button.
 {% if detailed == true %}

@@ -4,7 +4,6 @@ category: walkthrough
 title: Project Coordinator tasks
 project-example: 
 is-detailed: false
-miso-url: YOUR MISO SITE ADDRESS
 
 ---
 
@@ -20,7 +19,7 @@ Table of Contents
 
 # 1. Logging in
 
-{% include logging_in.md detailed=page.is-detailed misoUrl=page.miso-url %}
+{% include logging_in.md detailed=page.is-detailed %}
 
 
 <div id="infobox">

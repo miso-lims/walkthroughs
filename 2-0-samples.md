@@ -5,7 +5,6 @@ title: Samples Tutorial
 is-detailed: true
 quantity: 1
 section: **3.4**
-miso-url: YOUR MISO SITE ADDRESS
 
 ---
 
@@ -30,7 +29,7 @@ Download the worksheet for this section here: <a href="2-0-samples-worksheet">Sa
 
 # 1. Logging in
 
-{% include logging_in.md detailed=page.is-detailed misoUrl=page.miso-url %}
+{% include logging_in.md detailed=page.is-detailed %}
 
 <a name="receipt" href="#" id="toplink">top</a>
 
