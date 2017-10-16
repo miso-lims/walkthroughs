@@ -3,7 +3,7 @@ layout: page
 category: walkthrough
 title: Libraries tutorial
 is-detailed: false
-section: 2.1
+section: "2.1"
 
 ---
 
