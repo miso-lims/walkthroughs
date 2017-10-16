@@ -4,6 +4,7 @@ category: walkthrough
 title: Libraries tutorial
 is-detailed: true
 section: **2.1** or **2.2**
+miso-url: http://miso.gsi.oicr.on.ca
 
 ---
 
@@ -30,7 +31,8 @@ Download the worksheet for this section here: <a href="3-0-libraries-worksheet">
 
 # 1. Logging in
 
-{% include logging_in.md %}
+{% include logging_in.md detailed=page.is-detailed misoUrl=page.miso-url %}
+
 
 <a name="props1" href="#" id="toplink">top</a>
 

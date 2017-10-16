@@ -3,6 +3,8 @@ layout: page
 category: walkthrough
 title: Sequencing tutorial
 contact: your MISO administrator
+is-detailed: false
+miso-url: YOUR MISO SITE ADDRESS
 
 ---
 
@@ -29,7 +31,7 @@ Download the worksheet for this section here: <a href="4-0-sequencing-worksheet"
 
 # 1. Logging in
 
-{% include logging_in.md %}
+{% include logging_in.md detailed=page.is-detailed misoUrl=page.miso-url %}
 
 <a name="orders" href="#" id="toplink">top</a>
 

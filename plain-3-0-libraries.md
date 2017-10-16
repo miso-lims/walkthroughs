@@ -1,8 +1,10 @@
-yout: page
+---
+layout: page
 category: walkthrough
 title: Libraries tutorial
 is-detailed: false
 section: **2.1**
+miso-url: YOUR MISO SITE ADDRESS
 
 ---
 
@@ -24,7 +26,7 @@ Table of Contents
 
 # 1. Logging in
 
-{% include logging_in.md %}
+{% include logging_in.md detailed=page.is-detailed misoUrl=page.miso-url %}
 
 <a name="props1" href="#" id="toplink">top</a>
 

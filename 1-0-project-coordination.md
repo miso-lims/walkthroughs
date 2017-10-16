@@ -8,6 +8,7 @@ the International Cancer Genome Consortium, and the FFPER project sequences
 samples from a bio-bank with a number of different preparations and treatments
 in order to determine the impact of each on data quality.
 is-detailed: true
+miso-url: http://miso.gsi.oicr.on.ca
 
 ---
 
@@ -19,6 +20,13 @@ Table of Contents
     <li><a href="#subproj">Configuring sub-projects</a></li>
 </ol>
 </div>
+
+<a name="login"/>
+
+# 1. Logging in
+
+{% include logging_in.md detailed=page.is-detailed misoUrl=page.miso-url %}
+
 
 <div id="infobox">
 Download the worksheet for this section here: <a href="1-0-project-coordination-worksheet">Project coordination Worksheet</a>. 
