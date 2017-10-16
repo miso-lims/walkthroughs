@@ -11,12 +11,12 @@ After measuring the insert size or concentration, this information can be
 entered into each library.
 
 1. Select the libraries you wish to edit:
-  * If you are continuing from the end of section {{ created-section }}, do not 
+  * If you are continuing from the end of the section where you created libraries, do not 
 navigate away from the page. At the top left of the table after saving libraries,
 click the _Add QCs_ button. Continue to step 2. Otherwise, select libraries using
 the following:
   1. On the _Libraries_ page, enter your project name in the search box.
-  1. Check the boxes for the libraries that you created in section {{ created-section }}.
+  1. Check the boxes for the libraries that you created previously.
   1. Click _Add QCs_ at the top left of the table.
 1. Enter `1` QC per library and click _Add_.
 1. _Date_: enter today's date
