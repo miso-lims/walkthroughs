@@ -3,7 +3,7 @@ layout: page
 category: walkthrough
 title: Libraries tutorial
 is-detailed: true
-section: **2.1** or **2.2**
+section: 2.1 or 2.2
 
 ---
 
@@ -100,7 +100,7 @@ use.
 {% include libraries-to-dilutions.md detailed=page.is-detailed %}
 
 
-{% include libraries-dils-to-pools.md %}
+{% include libraries-dils-to-pools.md detailed=page.is-detailed %}
 
 
 {% include libraries-orders.md %}

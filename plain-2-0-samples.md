@@ -4,7 +4,7 @@ category: walkthrough
 title: Samples Tutorial
 is-detailed: false
 quantity: 1
-section: **2.3**
+section: 2.3
 
 ---
 

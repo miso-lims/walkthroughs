@@ -3,6 +3,12 @@
 In this section, you will use the {% if detailed == true %}aliquots{% else %}samples{% endif %} 
 created already to create libraries.
 
+{% if detailed == true %}
+<img src="pics/flow-aliquot.svg"/>
+{% else %}
+<img src="pics/plain-flow-aliquot.svg"/>
+{% endif %}
+
 1. On the _Samples_ page, enter your project name into the search box.
 {% if detailed == true %}
 1. Check the gDNA aliquot samples to turn into libraries. These samples are the

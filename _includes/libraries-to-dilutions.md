@@ -12,7 +12,11 @@ used to keep track of sequencing progress for project management and book-keepin
 ## 5.1 Bulk creating Library Dilutions
 Dilutions can be made in bulk from libraries.
 
+{% if detailed == true %}
 <img src="pics/flow-dilution.svg"/>
+{% else %}
+<img srg="pics/plain-flow-dilution.svg"/>
+{% endif %}
 
 In this exercise, we will create 4 library dilutions from the libraries we
 made previously.
