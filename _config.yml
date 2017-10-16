@@ -16,8 +16,13 @@ baseurl: '/miso-docs-oicr'
 # _includes/logging_in.md
 miso_url: 'http://miso.gsi.oicr.on.ca' 
 
-
-
+# Configuration for the sequencer name, platform, and sequencing parameters used
+# in sections 3 (libraries) and 4 (sequencing). Make sure these match an
+# existing and active sequencer and existing sequencing parameters for your MISO
+# instance.
+sequencer: 'NB551056'
+platform: 'NextSeq 550'
+seq_params: 'High 2×151'
 
 
 #--------------------------------------------------------------------------------

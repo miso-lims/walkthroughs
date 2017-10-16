@@ -12,9 +12,9 @@ required (on Illumina).
   * If you are still on the bulk pools page from section **6.1** do not navigate away from the page. Continue to step 2. Otherwise, select pools using the following:
   1. On the  _Pools_ page, select the pool you just created.
 1. From the toolbar, click _Create Order_:
-1. Select the instrument for sequencing: `NextSeq 550`
+1. Select the instrument for sequencing: `{{ site.platform }}`
 1. Fill in the new order box:
-  - _Sequencing Parameters_: Select `High 2×151` chemistry.
+  - _Sequencing Parameters_: Select `{{ site.seq_params }}` chemistry.
   - _Lane Count_: the number of lanes that should run for this pool. Enter `2`.
 1. Click _Save_.
 1. Click on the pool you just added an order to.

@@ -18,6 +18,10 @@ Then, update the `_config.yaml` file:
   * `miso_url`: add the URL to your MISO training instance
   * `miso_flavour`: change to `default` to use the MISO defaults. Only keep it as
 `OICR` if you are using OICR's sample hierarchy and naming conventions.
+  * `sequencer`: change to the name of an active sequencer in your MISO instance.
+  * `platform`: the name of the platform of the selected sequencer
+  * `seq_params`: the name of a sequencing parameters value associated with the 
+selected sequencer
 
 Finally, deploy the tutorial to 
 [GitHub Pages](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/)

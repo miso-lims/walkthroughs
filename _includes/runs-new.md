@@ -15,7 +15,7 @@ Containers can be associated as soon as the Run and Container are both created.
 ## 3.1 Create a Container
 
 1. On the _Sequencing Containers_ page, select the Illumina platform and click the _Create Flowcell_ button near the top left of the table.
-1. Select _NextSeq 550_ platform. Only active (non-retired) models are available.
+1. Select _{{ site.platform}}_ platform. Only active (non-retired) models are available.
 1. Select _4 Lane_ for the size of the container.
 1. Enter the name of your project as the serial number.
 1. Click _Save_ in the upper right corner of the page.
@@ -23,9 +23,9 @@ Containers can be associated as soon as the Run and Container are both created.
 ## 3.2 Create a Run
 
 1. On the _Runs_ page, select the Illumina platform and click the _Create Illumina Run_ button near the top left corner of the table.
-1. Select _NB551056 (NextSeq 550)_ from the sequencers list. Only active (non-retired) sequencers are available.
+1. Select _{{ site.sequencer}} ({{ site.platform }})_ from the sequencers list. Only active (non-retired) sequencers are available.
 1. Enter a unique and memorable _Alias_ for your run.
-1. Select _Sequencing Parameters_ `High 2×151`, near the top of the Run section.
+1. Select _Sequencing Parameters_ `{{ site.seq_params }}`, near the top of the Run section.
 1. In the _Run Path_ field, enter `path` as the file path to the sequencer output.
 1. Check _Paired End_.
 1. Select _Status_ `Running`. Note that if MISO does not automatically detect runs from this sequencer, all status updates will have to be entered manually.
@@ -82,7 +82,7 @@ libraries can be flagged as having low sequencing quality. The
 "Low Quality Sequencing" indicator causes any pool containing this library to be
 flagged, so that it can be checked before it is sequenced again.
 
-1. From the _Libraries_ page, find the `PROJ_0002_Ly_R_PE_300_EX` library
+1. From the _Libraries_ page, find one of your libraries
 and click the link.
 1. Check _Low Quality Sequencing_.
 1. Click _Save_.
