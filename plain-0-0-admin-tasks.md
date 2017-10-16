@@ -46,11 +46,6 @@ that you use for other services at your institute, users cannot be manually adde
 Users must be added by IT; once added, users can log in to MISO using their existing credentials 
 (LDAP or Active Directory).
 
-OICR uses Active Directory authentication for MISO. Users must be added by IT; once added,
-they can then log in to MISO using their email credentials.
-  * IT must add users to the `ROLE_INTERNAL` group, and admins must additionally be added
-to the `ROLE_ADMIN` group.
-
 {% include admin-groups.md %}
 
 {% include admin-new-inst.md contact=page.contact-admin %}
