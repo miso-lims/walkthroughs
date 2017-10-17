@@ -14,7 +14,7 @@ lab tasks.
 To configure this document for your own MISO training, first fork this repo.
 (You could rename it if you don't want `-oicr` in the repo title)
 
-Then, update the `_config.yaml` file:
+Then, update the `_config.yml` file:
   * `miso_url`: add the URL to your MISO training instance
   * `miso_flavour`: change to `default` to use the MISO defaults. Only keep it as
 `OICR` if you are using OICR's sample hierarchy and naming conventions.
@@ -22,9 +22,9 @@ Then, update the `_config.yaml` file:
   * `platform`: the name of the platform of the selected sequencer
   * `seq_params`: the name of a sequencing parameters value associated with the 
 selected sequencer
-  * `admin`: the MISO administrator at your site. Could be a team or an
+  * `miso_admin`: the MISO administrator at your site. Could be a team or an
 individual.
-  * `admin-contact`: the preferred way to contact the MISO administrator at your site.
+  * `miso_admin_contact`: the preferred way to contact the MISO administrator at your site.
 
 Finally, deploy the tutorial to 
 [GitHub Pages](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/)
