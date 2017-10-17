@@ -2,7 +2,6 @@
 layout: page
 category: walkthrough
 title: Administration tasks
-contact-admin: contact your MISO administrator
 is-detailed: false
 
 ---
@@ -48,9 +47,9 @@ Users must be added by IT; once added, users can log in to MISO using their exis
 
 {% include admin-groups.md %}
 
-{% include admin-new-inst.md contact=page.contact-admin %}
+{% include admin-new-inst.md %}
 
-{% include admin-reports.md contact=page.contact-admin %}
+{% include admin-reports.md %}
 
 
 < <a href="plain-index">Home</a> | <a href="plain-1-0-project-coordination">Project Coordination tutorial</a> >

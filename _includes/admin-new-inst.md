@@ -11,7 +11,7 @@ If MISO does not yet have this type of sequencer in the database, you will need
 to contact your MISO administrator to put the new model into MISO before you can 
 add a new sequencer of that model.
 
-1. Please {{ include.contact }}  to add the new sequencer 
+1. Please {{ site.admin-contact }}  to add the new sequencer 
 model to MISO. Include the following information:
     * Sequencer manufacturer (Platform)
     * Model
@@ -30,7 +30,7 @@ model to MISO. Include the following information:
 
 ## 4.2 Set up MISO to be aware of aware of the sequencer's output
 
-1. Please {{ include.contact }}. Give the name of the new 
+1. Please {{ site.admin-contact }}. Give the name of the new 
 sequencing machine and indicate that you would like them to add the 
 sequencing machine's output folder to the notification server properties file.
 
