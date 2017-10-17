@@ -15,7 +15,7 @@ Containers can be associated as soon as the Run and Container are both created.
 ## 3.1 Create a Container
 
 1. On the _Sequencing Containers_ page, select the Illumina platform and click the _Create Flowcell_ button near the top left of the table.
-1. Select _{{ site.platform}}_ platform. Only active (non-retired) models are available.
+1. Select _{{ site.platform }}_ platform. Only active (non-retired) models are available.
 1. Select _4 Lane_ for the size of the container.
 1. Enter the name of your project as the serial number.
 1. Click _Save_ in the upper right corner of the page.
@@ -94,7 +94,8 @@ will be flagged.
 1. Find your pool using the lanes table. It will be flagged red.
 
 ## 5.2 Setting Per-Lane QCs
-Sometimes a particular lane is bad. MISO allows setting a per-lane QC. This does _not_ prevent analysis. Contact {{ contact }} when a lane should not be analysed.
+Sometimes a particular lane is bad. MISO allows setting a per-lane QC. This does 
+_not_ prevent analysis. Contact {{ site.admin }} when a lane should not be analysed.
 
 1. Go to your run page.
 1. Check the first run.

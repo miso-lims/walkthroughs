@@ -2,7 +2,6 @@
 layout: page
 category: walkthrough
 title: Sequencing tutorial
-contact: GSI
 is-detailed: true
 
 ---
@@ -46,7 +45,7 @@ work.
 
 {% include inboxes.md %}
 
-{% include runs-new.md contact=page.contact %}
+{% include runs-new.md %}
 
 {% include runs-trouble.md %}
 

@@ -2,7 +2,6 @@
 layout: page
 category: walkthrough
 title: Administration tasks
-contact-admin: email gsi@oicr.on.ca or file a JIRA ticket in _GSI Common_
 is-detailed: true
 
 ---
@@ -43,9 +42,9 @@ making them part of the following Active Directory groups:
 
 {% include admin-groups.md %}
 
-{% include admin-new-inst.md contact=page.contact-admin %}
+{% include admin-new-inst.md %}
 
-{% include admin-reports.md contact=page.contact-admin %}
+{% include admin-reports.md %}
 
 
 <a href="index">Home</a> | <a href="1-0-project-coordination">Project Coordination tutorial</a> > 

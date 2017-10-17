@@ -22,6 +22,9 @@ Then, update the `_config.yaml` file:
   * `platform`: the name of the platform of the selected sequencer
   * `seq_params`: the name of a sequencing parameters value associated with the 
 selected sequencer
+  * `admin`: the MISO administrator at your site. Could be a team or an
+individual.
+  * `admin-contact`: the preferred way to contact the MISO administrator at your site.
 
 Finally, deploy the tutorial to 
 [GitHub Pages](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/)
