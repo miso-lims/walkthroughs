@@ -26,8 +26,8 @@ seq_params: 'High 2×151'
 
 # Configuration for inidcating who the MISO administrator is and how to contact
 # them
-admin: 'GSI'
-admin-contact: 'email gsi@oicr.on.ca or file a JIRA ticket in _GSI Common_'
+miso_admin: 'GSI'
+miso_admin_contact: 'email gsi@oicr.on.ca or file a JIRA ticket in _GSI Common_'
 
 #--------------------------------------------------------------------------------
 # Settings for Jekyll - should not need to be modified.
