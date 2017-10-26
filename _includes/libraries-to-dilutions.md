@@ -12,7 +12,7 @@ used to keep track of sequencing progress for project management and book-keepin
 ## 5.1 Bulk creating Library Dilutions
 Dilutions can be made in bulk from libraries.
 
-{% if detailed == true %}
+{% if include.detailed == true %}
 <img src="pics/flow-dilution.svg"/>
 {% else %}
 <img srg="pics/plain-flow-dilution.svg"/>
@@ -28,7 +28,7 @@ or bulk editing libraries.
 1. Enter the dilution information:
   * _Conc._: (use any number you wish)
   * _Creation Date_: (use the current date)
-{% if detailed == true %}
+{% if include.detailed == true %}
   * _Targeted Sequencing_: select any targeted sequencing value
 {% endif %}
 1. Click _Save_.

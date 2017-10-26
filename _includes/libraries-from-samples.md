@@ -1,16 +1,16 @@
-## 2.1 Bulk propagate {% if detailed == true %}aliquots{% else %}samples{% endif %} into libraries
+## 2.1 Bulk propagate {% if include.detailed == true %}aliquots{% else %}samples{% endif %} into libraries
 
-In this section, you will use the {% if detailed == true %}aliquots{% else %}samples{% endif %} 
+In this section, you will use the {% if include.detailed == true %}aliquots{% else %}samples{% endif %} 
 created already to create libraries.
 
-{% if detailed == true %}
+{% if include.detailed == true %}
 <img src="pics/flow-aliquot.svg"/>
 {% else %}
 <img src="pics/plain-flow-aliquot.svg"/>
 {% endif %}
 
 1. On the _Samples_ page, enter your project name into the search box.
-{% if detailed == true %}
+{% if include.detailed == true %}
 1. Check the gDNA aliquot samples to turn into libraries. These samples are the
 ones that end in `_D_1`:
   - `PROJ_0001_Br_P_nn_1-1_D_1`
@@ -26,7 +26,7 @@ ones that end in `_D_1`:
 1. A table will appear. Enter the library information:
   * _Library Name_: Leave blank as this will be filled in automatically after save.
   * _Library Alias_: Leave blank as this will be filled in automatically.
-{% if detailed == true %}
+{% if include.detailed == true %}
   For more information about Library nomenclature, see
   <a href="https://wiki.oicr.on.ca/display/MCPHERSON/LIMS+Guidelines#LIMSGuidelines-LibraryNomenclature" 
   target="_new">Library Nomenclature</a>.
@@ -45,9 +45,9 @@ name)_(Tissue type)(Individual)_Li, e.g. `PROJ_P1_Li`.
     Select different indices for each library. Selecting the same index for two
     different libraries will it unwise to pool those two libraries
     together later.
-  * _Kit_: {% if detailed == true %}KAPA Hyper Prep{% else %}Any kit{% endif %}
+  * _Kit_: {% if include.detailed == true %}KAPA Hyper Prep{% else %}Any kit{% endif %}
   * _Size (bp)_: 300
-{% if detailed == true %}
+{% if include.detailed == true %}
   * _Volume_: 100
 {% endif %}
 1. Choose _Save_.
