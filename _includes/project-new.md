@@ -17,7 +17,7 @@ a Project proposal. In this part of this workshop, we will create projects, set
 permissions, and familiarize ourselves with the project overview page.
 
 Projects represent a sequencing effort toward a particular goal, usually led by
-a particular group or principal investigator. {{ project-example }}
+a particular group or principal investigator. {{ include.project-example }}
 
 In this workshop, you will make your own project where you will create samples,
 libraries and other entities.
@@ -41,7 +41,7 @@ The _Create Project_ page will display with a number of fields that you can fill
 with a project. The aliases must be a unique and contain only letters or
 numbers. It cannot contain spaces or punctuation. e.g. `DoIt4Science` (be creative!).
 Record this alias in your worksheet. <img src="pics/blue_pencil.png">
-{% if detailed == true %}
+{% if include.detailed == true %}
 1. Enter a _Short Name_ for your project. The short name should be 2-5 letters in
 all CAPS and related to the project alias. This short name will be used to
 automatically generate sample and library names. e.g. short name: `DI4S`.
@@ -62,7 +62,7 @@ Record the short name in your worksheet. <img src="pics/blue_pencil.png">
     by Genomics leadership.
   * Pending : We are waiting for the project to start.
   * Approved : Project has been approved by Genomics leadership.
-{% if detailed == true %}
+{% if include.detailed == true %}
 1. Select the _Reference Genome_ `Human hg19 random`. This should be the primary
 species that will be sequenced in the course of the project. Xenografts count
 as human.

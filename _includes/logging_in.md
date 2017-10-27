@@ -1,4 +1,4 @@
-{% if detailed == true %}
+{% if include.detailed == true %}
 Much like the old Geospiza LIMS, you need to log in to MISO LIMS in order to
 make changes to any LIMS entities. 
 Logging in lets MISO record any changes you make on entities you have access to.
@@ -24,7 +24,7 @@ Try to log in now:
 target="\_new" >{{ site.miso_url }}</a>.
 1. Enter your
 username (e.g. jdoe) and password and click the Login button.
-{% if detailed == true %}
+{% if include.detailed == true %}
 MISO uses the same username and password as your OICR email account.
 {% endif %}
 

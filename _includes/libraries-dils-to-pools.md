@@ -6,7 +6,7 @@ Pools are the last step for libraries before sequencing and represent the
 entity that is loaded onto the flowcell lane or SMRTcell. A "pool" can have one or more
 library dilutions in it. Every lane of sequencing contains only one pool.
 
-{% if detailed == true %}
+{% if include.detailed == true %}
 <img src="pics/flow-pool.svg"/>
 {% else %}
 <img src="pics/plain-flow-pool.svg"/>
