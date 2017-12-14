@@ -28,8 +28,6 @@ or bulk editing libraries.
 1. Enter the dilution information:
   * _Conc._: (use any number you wish)
   * _Creation Date_: (use the current date)
-{% if include.detailed == true %}
   * _Targeted Sequencing_: select any targeted sequencing value
-{% endif %}
 1. Click _Save_.
 

@@ -28,7 +28,4 @@ followed by `_POOL` (e.g. `PROJ_POOL`)
   * _Creation Date_: Select a date.
   * _Concentration_: Enter a concentration.
   * _Volume_: Enter a pool volume.
-  * _Ready to Run_: Whether or not the pool is ready for sequencing. This flag
-     is used together with the Order to show the pool is ready to be sequenced.
-     Make sure this is _True_.
 1. Click _Save_.
