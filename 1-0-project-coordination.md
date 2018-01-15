@@ -2,11 +2,7 @@
 layout: page
 category: walkthrough
 title: Project Coordinator tasks
-project-example: For example, the PCSI project is
-sequencing pancreatic tumors, references, cell lines and xenografts as part of
-the International Cancer Genome Consortium, and the FFPER project sequences
-samples from a bio-bank with a number of different preparations and treatments
-in order to determine the impact of each on data quality.
+project-example: For example, the PCSI project is sequencing pancreatic tumors, references, cell lines and xenografts as part of the International Cancer Genome Consortium, and the FFPER project sequences samples from a bio-bank with a number of different preparations and treatments in order to determine the impact of each on data quality.
 is-detailed: true
 
 ---
