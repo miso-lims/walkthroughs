@@ -41,7 +41,7 @@
 Table of Contents
 <ol>
    <li><a href="#login">Logging In</a></li>
-   <li><a href="#props1">Propagating aliquots to libraries</a></li>
+   <li><a href="#props1">Propagating samples to libraries</a></li>
    <li><a href="#qcs">Adding Library QCs</a></li>
    <li><a href="#props2">Propagating libraries to dilutions</a></li>
    <li><a href="#boxes">Scanning libraries into your outbox</a></li>
@@ -51,22 +51,15 @@ Table of Contents
 </ol>
 </div>
 
-<div id="infobox">
-Download the worksheet for this section here: <a href="3-0-libraries-worksheet">Libraries Worksheet</a>.
-</div>
-
 <p><a name="login"></a></p>
 
 <h1 id="logging-in">1. Logging in</h1>
 
-<p>Much like the old Geospiza LIMS, you need to log in to MISO LIMS in order to
-make changes to any LIMS entities. 
-Logging in lets MISO record any changes you make on entities you have access to.</p>
-
-<p>If you were able to log in to Geospiza LIMS, you already have the correct
-permissions and can proceed to logging in. If you are a new user, you will need
-to contact <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#104;&#101;&#108;&#112;&#100;&#101;&#115;&#107;&#064;&#111;&#105;&#099;&#114;&#046;&#111;&#110;&#046;&#099;&#097;">&#104;&#101;&#108;&#112;&#100;&#101;&#115;&#107;&#064;&#111;&#105;&#099;&#114;&#046;&#111;&#110;&#046;&#099;&#097;</a> so that they put you into the appropriate
-Active Directory group, <code class="highlighter-rouge">MISO_ROLE_INTERNAL</code>.</p>
+<p>You need to log in to MISO LIMS in order to make changes to any LIMS entities. 
+Logging in lets MISO record any changes you make on entities you have access to.
+If you are a new user and have not been given a username and password, you 
+will first need to get a username and password by following the steps in the
+<a href="plain-0-0-admin-tasks#users">Adding Users</a> section.</p>
 
 <hr />
 
@@ -78,32 +71,22 @@ Active Directory group, <code class="highlighter-rouge">MISO_ROLE_INTERNAL</code
 username (e.g. jdoe) and password and click the Login button.</li>
 </ol>
 
-<p>MISO uses the same username and password as your OICR email account.</p>
-
 <p>If all goes well, you should see the MISO Dashboard and see a message at the
 top right: &quot;Logged in as: <strong>jdoe</strong>&quot;.</p>
 
 <p><a name="props1" href="#" id="toplink">top</a></p>
 
-<h1 id="propagating-aliquots-to-libraries">2. Propagating aliquots to libraries</h1>
+<h1 id="propagating-samples-to-libraries">2. Propagating samples to libraries</h1>
 
 <p>A <em>library</em> is made from one sample for a single target <em>platform</em> and
 has a specific <em>design</em> associated with it that decides the <em>selection</em>
 and <em>strategies</em> used to make the library. A library may also have <em>indices</em>
-(primers/sequencing barcodes/molecular IDs) and QC information.</p>
+(primers/sequencing barcodes/molecular IDs) and QC information.
+can aliquots into your inbox</p>
 
-<p><img src="pics/flow-library.svg" /></p>
+<h2 id="scan-samples-into-your-inbox">2.0 Scan samples into your inbox</h2>
 
-<p>MISO stores two important pieces of information about how a library was generated:
-the <em>selection</em> (e.g., PCR, cDNA) and the <em>strategy</em> (e.g., WGS, WXS,
-amplicon). A <em>design</em> captures both a selection and strategy and the list
-of allowed designs is limited based on the sample type (<em>e.g.</em>, a cDNA sample
-can only have SM, WT, or MR library designs and these lock the selection and
-strategy type accordingly).</p>
-
-<h2 id="scan-aliquots-into-your-inbox">2.0 Scan aliquots into your inbox</h2>
-
-<p>First, we accept the aliquots made by the samples team and put them into your
+<p>First, we accept the samples made by the samples team and put them into your
 inbox.</p>
 
 <p>Boxes hold samples, libraries, and pools. They do not track reagents or
@@ -174,25 +157,19 @@ A03</code>).</li>
 <p>Boxes can be used to store Samples, Libraries and Pools and one box can store all
 three types.</p>
 
-<h2 id="bulk-propagate-aliquots-into-libraries">2.1 Bulk propagate aliquots into libraries</h2>
+<h2 id="bulk-propagate-samples-into-libraries">2.1 Bulk propagate samples into libraries</h2>
 
-<p>In this section, you will use the aliquots 
+<p>In this section, you will use the samples 
 created already to create libraries.</p>
 
-<p><img src="pics/flow-aliquot.svg" /></p>
+<p><img src="pics/plain-flow-aliquot.svg" /></p>
 
 <ol>
   <li>
     <p>On the <em>Samples</em> page, enter your project name into the search box.</p>
   </li>
-  <li>Check the gDNA aliquot samples to turn into libraries. These samples are the
-ones that end in <code class="highlighter-rouge">_D_1</code>:
-    <ul>
-      <li><code class="highlighter-rouge">PROJ_0001_Br_P_nn_1-1_D_1</code></li>
-      <li><code class="highlighter-rouge">PROJ_0001_Ly_R_nn_1-1_D_1</code></li>
-      <li><code class="highlighter-rouge">PROJ_0002_Br_P_nn_1-1_D_1</code></li>
-      <li><code class="highlighter-rouge">PROJ_0002_Ly_R_nn_1-1_D_1</code></li>
-    </ul>
+  <li>
+    <p>Check the samples to turn into libraries.</p>
   </li>
   <li>Click the <em>Propagate</em> button at the top left of the table.</li>
   <li>Note that &quot;Propagate to libraries&quot; is the title of the box. Choose <em>1</em> replicate.</li>
@@ -205,15 +182,10 @@ ones that end in <code class="highlighter-rouge">_D_1</code>:
   </li>
 </ol>
 
-<p>For more information about Library nomenclature, see
-  <a href="https://wiki.oicr.on.ca/display/MCPHERSON/LIMS+Guidelines#LIMSGuidelines-LibraryNomenclature" target="_new">Library Nomenclature</a>.
-  * <em>Matrix Barcode</em>: As before, usually this would be scanned by the hand
-    scanner. In this tutorial, enter matrix barcodes in the form (Short
-name)<em>(Tissue type)(Individual)_Li, e.g. <code class="highlighter-rouge">PROJ_P1_Li</code>.
-  * _Description</em>: Library (Tissue type)(individual), e.g. <code class="highlighter-rouge">Library P1</code>
-  * <em>Design</em>: EX</p>
-
 <ul>
+  <li>
+    <p><em>Description</em>: Library #, e.g. <code class="highlighter-rouge">Library 1</code></p>
+  </li>
   <li><em>Platform</em>: Illumina</li>
   <li><em>Type</em>: Paired End</li>
   <li><em>Index Kit</em>: Nextera DNA Dual Index</li>
@@ -221,11 +193,8 @@ name)<em>(Tissue type)(Individual)_Li, e.g. <code class="highlighter-rouge">PROJ
 Select different indices for each library. Selecting the same index for two
 different libraries will it unwise to pool those two libraries
 together later.</li>
-  <li><em>Kit</em>: KAPA Hyper Prep</li>
-  <li>
-    <p><em>Size (bp)</em>: 300</p>
-  </li>
-  <li><em>Volume</em>: 100</li>
+  <li><em>Kit</em>: Any kit</li>
+  <li><em>Size (bp)</em>: 300</li>
 </ul>
 
 <ol>
@@ -234,35 +203,6 @@ together later.</li>
 
 <p>Note that for dual-index libraries, only the first index needs to be 
 specified. The second is optional.</p>
-
-<h2 id="bulk-propagate-aliquots-to-libraries-from-box-page">2.2 Bulk propagate aliquots to libraries from Box page</h2>
-
-<p>In this section, you will use the aliquots created already and create libraries.
-These libraries can be sorted based on the parent sample&#39;s location within the box,
-and indices can be added based on the box position.</p>
-
-<ol>
-  <li>On the <em>Boxes</em> page, find your box and click on its link.</li>
-  <li>Select all the aliquots in your box by either control-clicking all the aliquots
-in the box (command-click on a Mac). If the aliquots are all in one row or column,
-you can click on the row/column header to select all items in that row or column. 
-Use control-click (or command-click) to select more than one row or column.</li>
-  <li>Click the <em>Propagate</em> button at the top left of the box contents table. If the 
-top left of the box contents table indicates that more than one type of element is
-selected, de-select the non-aliquot tubes and then click <em>Propagate</em>.</li>
-  <li>Choose <em>1</em> replicate.</li>
-  <li>Click <em>Propagate</em>.</li>
-  <li>From the bulk libraries table, you can now sort the libraries you are creating
-based on their parent sample&#39;s position within the box. Sorting can be done by 
-rows (<code class="highlighter-rouge">A01</code>, <code class="highlighter-rouge">A02</code>, <code class="highlighter-rouge">B01</code>, <code class="highlighter-rouge">B02</code>, &#8230;) or columns (<code class="highlighter-rouge">A01</code>, <code class="highlighter-rouge">B01</code>, <code class="highlighter-rouge">A02</code>, <code class="highlighter-rouge">B02</code>, &#8230;).
-    <ul>
-      <li>This may be useful when using the Sciclone robot to create libraries and add 
-indices at a particular plate location. Once the libraries are sorted based on the
-parent sample&#39;s location, the indices can be copy-pasted in the order that the 
-robot requires.</li>
-    </ul>
-  </li>
-</ol>
 
 <p><a name="qcs" href="#" id="toplink">top</a></p>
 
@@ -366,7 +306,7 @@ used to keep track of sequencing progress for project management and book-keepin
 <h2 id="bulk-creating-library-dilutions">5.1 Bulk creating Library Dilutions</h2>
 <p>Dilutions can be made in bulk from libraries.</p>
 
-<p><img src="pics/flow-dilution.svg" /></p>
+<p><img srg="pics/plain-flow-dilution.svg" /></p>
 
 <p>In this exercise, we will create 4 library dilutions from the libraries we
 made previously.</p>
@@ -385,13 +325,6 @@ or bulk editing libraries.</li>
       <li><em>Creation Date</em>: (use the current date)</li>
     </ul>
   </li>
-</ol>
-
-<ul>
-  <li><em>Targeted Sequencing</em>: select any targeted sequencing value</li>
-</ul>
-
-<ol>
   <li>Click <em>Save</em>.</li>
 </ol>
 
@@ -403,7 +336,7 @@ or bulk editing libraries.</li>
 entity that is loaded onto the flowcell lane or SMRTcell. A &quot;pool&quot; can have one or more
 library dilutions in it. Every lane of sequencing contains only one pool.</p>
 
-<p><img src="pics/flow-pool.svg" /></p>
+<p><img src="pics/plain-flow-pool.svg" /></p>
 
 <h2 id="bulk-creating-a-pool">6.1 Bulk creating a Pool</h2>
 
@@ -527,60 +460,12 @@ summed when displayed on this page.</p>
 
 <p>A new order will be create for each pool with the same information.</p>
 
-<h2 id="what-if-i-assign-a-library-to-the-wrong-parent-aliquot">What if I assign a library to the wrong parent aliquot?</h2>
-<p>Please email gsi@oicr.on.ca or file a JIRA ticket in GSI Common to get assistance from the MISO team.</p>
-
-<h2 id="how-do-i-change-the-targeted-sequencing-type-on-a-library">How do I change the targeted sequencing type on a library?</h2>
-<p>Targeted sequencing is connected to the dilution since the same library can be used for multiple targeted sequencing panels.</p>
-
-<ol>
-  <li>From <em>Tracking</em>, <em>Dilutions</em>, check the library dilutions that need to be changed.</li>
-  <li>From the toolbar, click <em>Edit</em>.</li>
-  <li>Select a new <em>Targeted Sequencing</em> from the list.</li>
-  <li>Click <em>Save</em>.</li>
-</ol>
-
-<h2 id="how-can-i-add-a-new-targeted-sequencing-type-kit-or-anything-else-in-drop-down-menus">How can I add a new targeted sequencing type, kit, or anything else in drop-down menus?</h2>
-<p>For targeted sequencing and indices, please email gsi@oicr.on.ca or file a JIRA ticket in GSI Common to get assistance from the MISO team.</p>
-
-<p>Kits can be added easily:</p>
-
-<ol>
-  <li>From <em>Tracking</em>, <em>Kits</em>, select the type of kit you want to add.</li>
-  <li>Click <em>Create Kit Descriptor</em>.</li>
-  <li>Fill in the form. The <em>Stock Level</em> is not currently used, so leave it at zero.</li>
-  <li>Carefully select the <em>Kit Type</em> and <em>Platform</em>. This will determine what the kit can be used for.</li>
-  <li>Click <em>Save</em>.</li>
-</ol>
-
-<h2 id="how-are-matrix-tube-barcodes-assigned-to-tubes">How are matrix tube barcodes assigned to tubes?</h2>
-<p>Barcodes can be assigned on an individual edit page or in bulk.</p>
-
-<p>To change a single library:</p>
-
-<ol>
-  <li>From <em>Tracking</em>, <em>Library</em>, select the library that needs to be changed.</li>
-  <li>Clear the field labelled <em>Matrix Barcode</em>.</li>
-  <li>Scan the barcode.</li>
-  <li>Click <em>Save</em>.</li>
-</ol>
-
-<p>To change many libraries:</p>
-
-<ol>
-  <li>From <em>Tracking</em>, <em>Library</em>, check the box beside each library that needs to be changed.</li>
-  <li>From the toolbar, click <em>Edit</em>.</li>
-  <li>Select the cell in the <em>Matrix Barcode</em> column for the library and scan the barcode.</li>
-  <li>Repeat for all the libraries.</li>
-  <li>Click <em>Save</em>.</li>
-</ol>
-
 <table>
   <tbody>
     <tr>
-      <td>&lt; <a href="2-0-samples">Samples tutorial</a></td>
-      <td><a href="index">Home</a></td>
-      <td><a href="4-0-sequencing">Sequencing tutorial</a> &gt;</td>
+      <td>&lt; <a href="plain-2-0-samples">Samples tutorial</a></td>
+      <td><a href="plain-index">Home</a></td>
+      <td><a href="plain-4-0-sequencing">Sequencing tutorial</a> &gt;</td>
     </tr>
   </tbody>
 </table>

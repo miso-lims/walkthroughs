@@ -52,14 +52,11 @@ Table of Contents
 
 <h1 id="logging-in">1. Logging in</h1>
 
-<p>Much like the old Geospiza LIMS, you need to log in to MISO LIMS in order to
-make changes to any LIMS entities. 
-Logging in lets MISO record any changes you make on entities you have access to.</p>
-
-<p>If you were able to log in to Geospiza LIMS, you already have the correct
-permissions and can proceed to logging in. If you are a new user, you will need
-to contact <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#104;&#101;&#108;&#112;&#100;&#101;&#115;&#107;&#064;&#111;&#105;&#099;&#114;&#046;&#111;&#110;&#046;&#099;&#097;">&#104;&#101;&#108;&#112;&#100;&#101;&#115;&#107;&#064;&#111;&#105;&#099;&#114;&#046;&#111;&#110;&#046;&#099;&#097;</a> so that they put you into the appropriate
-Active Directory group, <code class="highlighter-rouge">MISO_ROLE_INTERNAL</code>.</p>
+<p>You need to log in to MISO LIMS in order to make changes to any LIMS entities. 
+Logging in lets MISO record any changes you make on entities you have access to.
+If you are a new user and have not been given a username and password, you 
+will first need to get a username and password by following the steps in the
+<a href="plain-0-0-admin-tasks#users">Adding Users</a> section.</p>
 
 <hr />
 
@@ -71,31 +68,32 @@ Active Directory group, <code class="highlighter-rouge">MISO_ROLE_INTERNAL</code
 username (e.g. jdoe) and password and click the Login button.</li>
 </ol>
 
-<p>MISO uses the same username and password as your OICR email account.</p>
-
 <p>If all goes well, you should see the MISO Dashboard and see a message at the
 top right: &quot;Logged in as: <strong>jdoe</strong>&quot;.</p>
 
 <p>In order to perform the tasks in this section you must be a MISO admin.
-Email IT, CC Morgan Taschuk and request to be added to the <code class="highlighter-rouge">MISO_ROLE_ADMIN</code>
-Active Directory group.</p>
+Contact your MISO administrator to gain admin status.</p>
 
 <p><a name="users" href="#" id="toplink">top</a></p>
 
 <h1 id="adding-users">2. Adding Users</h1>
 
-<p>OICR uses Active Directory authentication for MISO. Users must be added by IT; once added,
-they can then log in to MISO using their email credentials.</p>
+<p>The method of adding users varies by MISO installation.</p>
+
+<p>If you were able to log in at the beginning of this tutorial using a user name and/or password
+you chose, you can add new users.</p>
 
 <ol>
-  <li>Please email ithelpdesk@oicr.on.ca and CC Morgan Taschuk to request that the user be added to MISO LIMS by 
-making them part of the following Active Directory groups:
-    <ul>
-      <li>If the person is to be added as an admin: <code class="highlighter-rouge">MISO_ROLE_ADMIN</code> and <code class="highlighter-rouge">MISO_ROLE_INTERNAL</code> groups.</li>
-      <li>If the person is not to be given admin access: <code class="highlighter-rouge">MISO_ROLE_INTERNAL</code> group.</li>
-    </ul>
-  </li>
+  <li>On the left hand menu under the <em>User Administration</em> section, click <em>Users</em>.</li>
+  <li>Click the <em>Add</em> button at the top left of the table.</li>
+  <li>Enter the new user&#39;s login name (all one word), email, and a password.</li>
+  <li>Click <em>Save</em> in the top right corner.</li>
 </ol>
+
+<p>If you were able to log in at the beginning of this tutorial using a user name and password 
+that you use for other services at your institute, users cannot be manually added by administrators.
+Users must be added by IT; once added, users can log in to MISO using their existing credentials 
+(LDAP or Active Directory).</p>
 
 <p><a name="perms" href="#" id="toplink">top</a></p>
 
@@ -178,8 +176,8 @@ sequencing machine&#39;s output folder to the notification server properties fil
 <table>
   <tbody>
     <tr>
-      <td><a href="index">Home</a></td>
-      <td><a href="1-0-project-coordination">Project Coordination tutorial</a> &gt;</td>
+      <td>&lt; <a href="plain-index">Home</a></td>
+      <td><a href="plain-1-0-project-coordination">Project Coordination tutorial</a> &gt;</td>
     </tr>
   </tbody>
 </table>
