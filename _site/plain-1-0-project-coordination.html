@@ -42,7 +42,6 @@ Table of Contents
 <ol>
     <li><a href="#login">Logging In</a></li>
     <li><a href="#proj">Creating Projects</a></li>
-    <li><a href="#subproj">Configuring sub-projects</a></li>
 </ol>
 </div>
 
@@ -50,14 +49,11 @@ Table of Contents
 
 <h1 id="logging-in">1. Logging in</h1>
 
-<p>Much like the old Geospiza LIMS, you need to log in to MISO LIMS in order to
-make changes to any LIMS entities. 
-Logging in lets MISO record any changes you make on entities you have access to.</p>
-
-<p>If you were able to log in to Geospiza LIMS, you already have the correct
-permissions and can proceed to logging in. If you are a new user, you will need
-to contact <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#104;&#101;&#108;&#112;&#100;&#101;&#115;&#107;&#064;&#111;&#105;&#099;&#114;&#046;&#111;&#110;&#046;&#099;&#097;">&#104;&#101;&#108;&#112;&#100;&#101;&#115;&#107;&#064;&#111;&#105;&#099;&#114;&#046;&#111;&#110;&#046;&#099;&#097;</a> so that they put you into the appropriate
-Active Directory group, <code class="highlighter-rouge">MISO_ROLE_INTERNAL</code>.</p>
+<p>You need to log in to MISO LIMS in order to make changes to any LIMS entities. 
+Logging in lets MISO record any changes you make on entities you have access to.
+If you are a new user and have not been given a username and password, you 
+will first need to get a username and password by following the steps in the
+<a href="plain-0-0-admin-tasks#users">Adding Users</a> section.</p>
 
 <hr />
 
@@ -69,27 +65,22 @@ Active Directory group, <code class="highlighter-rouge">MISO_ROLE_INTERNAL</code
 username (e.g. jdoe) and password and click the Login button.</li>
 </ol>
 
-<p>MISO uses the same username and password as your OICR email account.</p>
-
 <p>If all goes well, you should see the MISO Dashboard and see a message at the
 top right: &quot;Logged in as: <strong>jdoe</strong>&quot;.</p>
 
 <div id="infobox">
-Download the worksheet for this section here: <a href="1-0-project-coordination-worksheet">Project coordination Worksheet</a>. 
+Download the worksheet for this section here: <a href="1-0-project-coordination-worksheet">Project coordination Worksheet</a>.
 </div>
 
 <p><a name="login"></a></p>
 
 <h1 id="logging-in-1">1. Logging in</h1>
 
-<p>Much like the old Geospiza LIMS, you need to log in to MISO LIMS in order to
-make changes to any LIMS entities. 
-Logging in lets MISO record any changes you make on entities you have access to.</p>
-
-<p>If you were able to log in to Geospiza LIMS, you already have the correct
-permissions and can proceed to logging in. If you are a new user, you will need
-to contact <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#104;&#101;&#108;&#112;&#100;&#101;&#115;&#107;&#064;&#111;&#105;&#099;&#114;&#046;&#111;&#110;&#046;&#099;&#097;">&#104;&#101;&#108;&#112;&#100;&#101;&#115;&#107;&#064;&#111;&#105;&#099;&#114;&#046;&#111;&#110;&#046;&#099;&#097;</a> so that they put you into the appropriate
-Active Directory group, <code class="highlighter-rouge">MISO_ROLE_INTERNAL</code>.</p>
+<p>You need to log in to MISO LIMS in order to make changes to any LIMS entities. 
+Logging in lets MISO record any changes you make on entities you have access to.
+If you are a new user and have not been given a username and password, you 
+will first need to get a username and password by following the steps in the
+<a href="plain-0-0-admin-tasks#users">Adding Users</a> section.</p>
 
 <hr />
 
@@ -100,8 +91,6 @@ Active Directory group, <code class="highlighter-rouge">MISO_ROLE_INTERNAL</code
   <li>Enter your
 username (e.g. jdoe) and password and click the Login button.</li>
 </ol>
-
-<p>MISO uses the same username and password as your OICR email account.</p>
 
 <p>If all goes well, you should see the MISO Dashboard and see a message at the
 top right: &quot;Logged in as: <strong>jdoe</strong>&quot;.</p>
@@ -118,7 +107,7 @@ a Project proposal. In this part of this workshop, we will create projects, set
 permissions, and familiarize ourselves with the project overview page.</p>
 
 <p>Projects represent a sequencing effort toward a particular goal, usually led by
-a particular group or principal investigator. For example, the PCSI project is sequencing pancreatic tumors, references, cell lines and xenografts as part of the International Cancer Genome Consortium, and the FFPER project sequences samples from a bio-bank with a number of different preparations and treatments in order to determine the impact of each on data quality.</p>
+a particular group or principal investigator.</p>
 
 <p>In this workshop, you will make your own project where you will create samples,
 libraries and other entities.</p>
@@ -147,10 +136,7 @@ numbers. It cannot contain spaces or punctuation. e.g. <code class="highlighter-
 Record this alias in your worksheet. <img src="pics/blue_pencil.png" /></p>
   </li>
   <li>
-    <p>Enter a <em>Short Name</em> for your project. The short name should be 2-5 letters in
-all CAPS and related to the project alias. This short name will be used to
-automatically generate sample and library names. e.g. short name: <code class="highlighter-rouge">DI4S</code>.
-Record the short name in your worksheet. <img src="pics/blue_pencil.png" /></p>
+    <p>Leave the <em>Short Name</em> field blank.</p>
   </li>
   <li>In the <em>Description</em> field, enter <code class="highlighter-rouge">MISO training workshop [Date]</code></li>
   <li>Choose the amount of <em>Progress</em> that your project has accomplished:
@@ -169,9 +155,7 @@ Record the short name in your worksheet. <img src="pics/blue_pencil.png" /></p>
     </ul>
   </li>
   <li>
-    <p>Select the <em>Reference Genome</em> <code class="highlighter-rouge">Human hg19 random</code>. This should be the primary
-species that will be sequenced in the course of the project. Xenografts count
-as human.</p>
+    <p>Leave the <em>Reference Genome</em> as <code class="highlighter-rouge">Unknown</code>.</p>
   </li>
   <li>In the <em>Permissions</em> section, select <code class="highlighter-rouge">your name</code> from the <em>Owner</em> drop-down.</li>
   <li>
@@ -262,42 +246,18 @@ project (e.g. Project Information form, REB).</p>
   <li>Find a document or image that is appropriate for your study</li>
 </ol>
 
-<p><a name="subproj" href="#" id="toplink">top</a></p>
-
-<h1 id="configuring-sub-projects">5. Configuring sub-projects</h1>
-
-<p>Samples in a project can be assigned a sub-project designation. The sub-project
-is primarily a label for human use.
-If you haven&#39;t yet set up a project, continue to the
-next section first.</p>
-
-<ol>
-  <li>On the left hand menu under the <em>Institute Defaults</em> section, click <em>Subprojects</em>.</li>
-  <li>Click the <em>Add</em> button at the top left of the table.</li>
-  <li>Enter quantity <code class="highlighter-rouge">1</code> and click <code class="highlighter-rouge">Create</code>.
-    <ul>
-      <li>Select the main Project from the drop-down</li>
-      <li>Fill in the alias and description.</li>
-      <li>Select the priority from the drop-down. Eventually this will flag high-priority samples in the MISO interface.</li>
-      <li>Select <code class="highlighter-rouge">Human hg19 random</code> from the Reference Genome dropdown</li>
-    </ul>
-  </li>
-  <li>Click <em>Save</em> in the top right corner of the page.</li>
-</ol>
-
-<p>Once a subproject is set up, it can be selected when creating Samples.</p>
-
 <p>Now that your project has been created, continue to make your first samples.</p>
 
 <table>
   <tbody>
     <tr>
-      <td>&lt; <a href="0-0-admin-tasks">Admin tasks tutorial</a></td>
-      <td><a href="index">Home</a></td>
-      <td><a href="2-0-samples">Samples tutorial</a> &gt;</td>
+      <td>&lt; <a href="plain-0-0-admin-tasks">Admin tasks tutorial</a></td>
+      <td><a href="plain-index">Home</a></td>
+      <td><a href="plain-2-0-samples">Samples tutorial</a> &gt;</td>
     </tr>
   </tbody>
 </table>
+
 
 
                     </div>

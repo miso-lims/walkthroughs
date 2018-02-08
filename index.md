@@ -17,6 +17,7 @@ These tutorials have associated worksheets, linked at the top of the tutorial. S
 1. [Samples](2-0-samples)
 1. [Libraries](3-0-libraries)
 1. [Sequencing](4-0-sequencing)
+1. [Arrays](5-0-arrays)
 
 
 {% else %}
@@ -31,5 +32,6 @@ These tutorials have associated worksheets, linked at the top of the tutorial. S
 1. [Samples](plain-2-0-samples)
 1. [Libraries](plain-3-0-libraries)
 1. [Sequencing](plain-4-0-sequencing)
+1. [Arrays](plain-5-0-arrays)
 
 {% endif %}
