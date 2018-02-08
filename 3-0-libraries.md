@@ -84,11 +84,13 @@ indices at a particular plate location. Once the libraries are sorted based on t
 parent sample's location, the indices can be copy-pasted in the order that the 
 robot requires.
 
+{% include libraries-receipt.md detailed=page.is-detailed %}
+
 {% include libraries-qc.md %}
 
 <a name="boxes" href="#" id="toplink">top</a>
 
-# 4. Scanning libraries into your outbox
+# 5. Scanning libraries into your outbox
 
 Scan the libraries you just created into the outbox for the sequencing team to
 use.

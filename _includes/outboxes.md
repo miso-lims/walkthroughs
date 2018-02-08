@@ -26,7 +26,7 @@ disappear from the original.
 1. In the current tab, go to the _Boxes_ page, find the _TUTORIAL\_OUTBOX_ box. This box was previously
 created by the MISO developers for the tutorial.
 1. Choose an empty position and enter one of your barcodes.
-1. Click _Lookup_ and _Update Position_.
+1. Click _Search_ and _Update Position_.
 1. Go back to your own Box and refresh the page. The sample was removed.
 1. Repeat this process for the rest of the samples/libraries that you are transferring to the next team.
 

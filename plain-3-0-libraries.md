@@ -34,7 +34,6 @@ A _library_ is made from one sample for a single target _platform_ and
 has a specific _design_ associated with it that decides the _selection_
 and _strategies_ used to make the library. A library may also have _indices_
 (primers/sequencing barcodes/molecular IDs) and QC information.
-can aliquots into your inbox
 
 ## 2.0 Scan samples into your inbox
 
@@ -45,11 +44,13 @@ inbox.
 
 {% include libraries-from-samples.md detailed=page.is-detailed %}
 
+{% include libraries-receipt.md detailed=page.is-detailed %}
+
 {% include libraries-qc.md %}
 
 <a name="boxes" href="#" id="toplink">top</a>
 
-# 4. Scanning libraries into your outbox
+# 5. Scanning libraries into your outbox
 
 Scan the libraries you just created into the outbox for the sequencing team to
 use.

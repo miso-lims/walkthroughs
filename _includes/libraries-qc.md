@@ -1,12 +1,12 @@
 <a name="qcs" href="#" id="toplink">top</a>
 
-# 3. Quality control
+# 4. Quality control
 There are three way to indicate library quality in MISO: 1)
 Enter quantitative QC values under the _Library QC_ section; 2) The overall 
 pre-sequencing quality flag _QC passed_; and 3) The post-sequencing quality
 control _Low quality library_.
 
-## 3.1 Library QC
+## 4.1 Library QC
 After measuring the insert size or concentration, this information can be
 entered into each library.
 
@@ -25,7 +25,7 @@ the following:
 1. Click _Save_.
 
 
-## 3.2 QC passed
+## 4.2 QC passed
 _QC Passed_ is a simple pass/fail flag for a library to decide if it is good
 enough for sequencing. If not measured, this can be left as "Unknown".
 
@@ -34,7 +34,7 @@ box and click the sample link.
 1. Change _QC passed_ from _Unknown_ to _True_.
 1. Click _Save_.
 
-## 3.3 Low Quality Sequencing
+## 4.3 Low Quality Sequencing
 Libraries can be marked as having low sequencing quality, which will be shown
 after the _Run_ exercises.
 

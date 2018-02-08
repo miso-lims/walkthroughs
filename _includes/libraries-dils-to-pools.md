@@ -1,6 +1,6 @@
 <a name="pools"  href="#" id="toplink">top</a>
 
-# 6. Creating Pools
+# 7. Creating Pools
 
 Pools are the last step for libraries before sequencing and represent the
 entity that is loaded onto the flowcell lane or SMRTcell. A "pool" can have one or more
@@ -12,7 +12,7 @@ library dilutions in it. Every lane of sequencing contains only one pool.
 <img src="pics/plain-flow-pool.svg"/>
 {% endif %}
 
-## 6.1 Bulk creating a Pool
+## 7.1 Bulk creating a Pool
 
 Here we will pool all of the dilutions we added previously to make a single pool
 of 4 dilutions.

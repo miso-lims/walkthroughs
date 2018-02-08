@@ -1,12 +1,12 @@
 <a name="orders"  href="#" id="toplink">top</a>
 
-# 7. Ordering sequencing
+# 8. Ordering sequencing
 
 Orders are created on the pool to be sequenced, and include the quantity of sequencing
 required (counted in lanes/SMRT cells), and the sequencing chemistry
 required (on Illumina).
 
-## 7.1 Creating an Order
+## 8.1 Creating an Order
 
 1. Select the pools you wish to create orders for:
   * If you are still on the bulk pools page from section **6.1** do not navigate away from the page. Continue to step 2. Otherwise, select pools using the following:
@@ -24,7 +24,7 @@ required (on Illumina).
 The language will vary depending on the platform (_i.e._, PacBio containers
 will show _SMRTcell Count_ instead of _Lane Count_).
 
-## 7.2  Checking for unfulfilled orders
+## 8.2  Checking for unfulfilled orders
 The _Orders_ page is used to decide what needs to be sequenced.
 
 1. From the navigation menu, choose _Orders_.
