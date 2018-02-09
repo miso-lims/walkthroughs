@@ -142,7 +142,9 @@ pools that were made in previous steps. Collect the appropriate matrix tubes/bar
 
 <ol>
   <li>Click on a position in the displayed <em>Contents</em> grid.</li>
-  <li>Enter a matrix barcode into the box on the right and click <em>Lookup</em>.</li>
+  <li>Enter a matrix barcode into the <em>Search</em> box on the right and click <em>Lookup</em>.
+Normally a hand scanner would be used. You can also search for items by their
+name or alias</li>
   <li>Click <em>Update Position</em>.
     <ul>
       <li>&#9888; The <em>Save</em> button at the top of the page does not work for
@@ -200,35 +202,33 @@ ones that end in <code class="highlighter-rouge">_D_1</code>:
   <li>A table will appear. Enter the library information:
     <ul>
       <li><em>Library Name</em>: Leave blank as this will be filled in automatically after save.</li>
-      <li><em>Library Alias</em>: Leave blank as this will be filled in automatically.</li>
-    </ul>
-  </li>
-</ol>
+      <li>
+        <p><em>Library Alias</em>: Leave blank as this will be filled in automatically.</p>
 
-<p>For more information about Library nomenclature, see
-  <a href="https://wiki.oicr.on.ca/display/MCPHERSON/LIMS+Guidelines#LIMSGuidelines-LibraryNomenclature" target="_new">Library Nomenclature</a>.
-  * <em>Matrix Barcode</em>: As before, usually this would be scanned by the hand
-    scanner. In this tutorial, enter matrix barcodes in the form (Short
-name)<em>(Tissue type)(Individual)_Li, e.g. <code class="highlighter-rouge">PROJ_P1_Li</code>.
-  * _Description</em>: Library (Tissue type)(individual), e.g. <code class="highlighter-rouge">Library P1</code>
-  * <em>Design</em>: EX</p>
-
-<ul>
-  <li><em>Platform</em>: Illumina</li>
-  <li><em>Type</em>: Paired End</li>
-  <li><em>Index Kit</em>: Nextera DNA Dual Index</li>
-  <li><em>Index 1</em> and <em>Index 2</em>: Select any combination of indices you wish.
+        <p>For more information about Library nomenclature, see
+ <a href="https://wiki.oicr.on.ca/display/MCPHERSON/LIMS+Guidelines#LIMSGuidelines-LibraryNomenclature" target="_new">Library Nomenclature</a>.</p>
+      </li>
+      <li><em>Matrix Barcode</em>: As before, usually this would be scanned by the hand
+scanner. In this tutorial, enter matrix barcodes in the form
+(Short name)_(Tissue type)(Individual)_Li, e.g. <code class="highlighter-rouge">PROJ_P1_Li</code>.</li>
+      <li><em>Description</em>: Library (Tissue type)(individual), e.g. <code class="highlighter-rouge">Library P1</code></li>
+      <li>
+        <p><em>Design</em>: EX</p>
+      </li>
+      <li><em>Platform</em>: Illumina</li>
+      <li><em>Type</em>: Paired End</li>
+      <li><em>Index Kit</em>: Nextera DNA Dual Index</li>
+      <li><em>Index 1</em> and <em>Index 2</em>: Select any combination of indices you wish.
 Select different indices for each library. Selecting the same index for two
 different libraries will it unwise to pool those two libraries
 together later.</li>
-  <li><em>Kit</em>: KAPA Hyper Prep</li>
-  <li>
-    <p><em>Size (bp)</em>: 300</p>
+      <li><em>Kit</em>: KAPA Hyper Prep</li>
+      <li>
+        <p><em>Size (bp)</em>: 300</p>
+      </li>
+      <li><em>Volume</em>: 100</li>
+    </ul>
   </li>
-  <li><em>Volume</em>: 100</li>
-</ul>
-
-<ol>
   <li>Choose <em>Save</em>.</li>
 </ol>
 
@@ -264,15 +264,74 @@ robot requires.</li>
   </li>
 </ol>
 
+<p><a name="receipt" href="#" id="toplink">top</a></p>
+
+<h1 id="receiving-libraries">3. Receiving Libraries</h1>
+
+<p>Propagating libraries from samples is only possible if there are existing samples to propagate from,
+and only makes sense if the libraries were prepared in-house. Libraries may also be received without
+the samples. The sample information is still required, but it can all be entered in one step.</p>
+
+<p>When a library is entered in this way, the automatically-created sample hierarchy will include an
+Identity, Tissue, Stock, and Aliquot. Existing Identities and Tissues may be included in the hierarchy
+if they match the data entered.</p>
+
+<h2 id="entering-received-libraries">3.1 Entering received Libraries</h2>
+
+<ol>
+  <li>On the left hand menu under <em>Tracking</em>, click <em>Libraries</em>.</li>
+  <li>
+    <p>Click the <em>Receive</em> button at the top of the table.</p>
+  </li>
+  <li>
+    <p>In the dialog, select <em>Aliquot Class</em>: gDNA (aliquot), and <em>Quantity</em>: 1, and click <em>Receive</em></p>
+  </li>
+  <li>Select or enter the following data:</li>
+</ol>
+
+<ul>
+  <li><em>Sample Type</em>: select <code class="highlighter-rouge">GENOMIC</code> from the drop-down.</li>
+  <li><em>Sci. Name</em>: Homo sapiens</li>
+  <li>
+    <p><em>Project</em>: Select your project from the drop-down.</p>
+  </li>
+  <li><em>External Name</em>: Enter <code class="highlighter-rouge">PROJ_ID10</code>, replacing the <code class="highlighter-rouge">PROJ</code> with your own project name. The
+  <em>Identity Alias</em> column should change to show <code class="highlighter-rouge">First Receipt (PROJ)</code>.</li>
+  <li><em>Donor Sex</em>: select any option from the drop-down.</li>
+  <li><em>Tissue Origin</em>: select Pa (Pancreas) from the drop-down.</li>
+  <li><em>Tissue Type</em>: select P (Primary tumour) from the drop-down.</li>
+  <li><em>Times Received</em>: 1</li>
+  <li>
+    <p><em>Tube Number</em>: 1</p>
+  </li>
+  <li>
+    <p><em>Date of receipt</em>: select today&#39;s date</p>
+  </li>
+  <li>
+    <p><em>Design</em>: select WG from the drop-down</p>
+  </li>
+  <li><em>Platform</em>: select Illumina from the drop-down</li>
+  <li>
+    <p><em>Type</em>: select Paired End from the drop-down</p>
+  </li>
+  <li><em>Index Kit</em>: select No indices from the drop-down</li>
+  <li><em>Kit</em>: select any option from the drop-down</li>
+  <li><em>Size (bp)</em>: 430
+    <ol>
+      <li>Click <em>Save</em> at the top right</li>
+    </ol>
+  </li>
+</ul>
+
 <p><a name="qcs" href="#" id="toplink">top</a></p>
 
-<h1 id="quality-control">3. Quality control</h1>
+<h1 id="quality-control">4. Quality control</h1>
 <p>There are three way to indicate library quality in MISO: 1)
 Enter quantitative QC values under the <em>Library QC</em> section; 2) The overall 
 pre-sequencing quality flag <em>QC passed</em>; and 3) The post-sequencing quality
 control <em>Low quality library</em>.</p>
 
-<h2 id="library-qc">3.1 Library QC</h2>
+<h2 id="library-qc">4.1 Library QC</h2>
 <p>After measuring the insert size or concentration, this information can be
 entered into each library.</p>
 
@@ -295,7 +354,7 @@ the following:</li>
   <li>Click <em>Save</em>.</li>
 </ol>
 
-<h2 id="qc-passed">3.2 QC passed</h2>
+<h2 id="qc-passed">4.2 QC passed</h2>
 <p><em>QC Passed</em> is a simple pass/fail flag for a library to decide if it is good
 enough for sequencing. If not measured, this can be left as &quot;Unknown&quot;.</p>
 
@@ -306,13 +365,13 @@ box and click the sample link.</li>
   <li>Click <em>Save</em>.</li>
 </ol>
 
-<h2 id="low-quality-sequencing">3.3 Low Quality Sequencing</h2>
+<h2 id="low-quality-sequencing">4.3 Low Quality Sequencing</h2>
 <p>Libraries can be marked as having low sequencing quality, which will be shown
 after the <em>Run</em> exercises.</p>
 
 <p><a name="boxes" href="#" id="toplink">top</a></p>
 
-<h1 id="scanning-libraries-into-your-outbox">4. Scanning libraries into your outbox</h1>
+<h1 id="scanning-libraries-into-your-outbox">5. Scanning libraries into your outbox</h1>
 
 <p>Scan the libraries you just created into the outbox for the sequencing team to
 use.</p>
@@ -347,14 +406,14 @@ disappear from the original.</p>
   <li>In the current tab, go to the <em>Boxes</em> page, find the <em>TUTORIAL_OUTBOX</em> box. This box was previously
 created by the MISO developers for the tutorial.</li>
   <li>Choose an empty position and enter one of your barcodes.</li>
-  <li>Click <em>Lookup</em> and <em>Update Position</em>.</li>
+  <li>Click <em>Search</em> and <em>Update Position</em>.</li>
   <li>Go back to your own Box and refresh the page. The sample was removed.</li>
   <li>Repeat this process for the rest of the samples/libraries that you are transferring to the next team.</li>
 </ol>
 
 <p><a name="props2" href="#" id="toplink">top</a></p>
 
-<h1 id="propagating-libraries-to-dilutions">5. Propagating libraries to dilutions</h1>
+<h1 id="propagating-libraries-to-dilutions">6. Propagating libraries to dilutions</h1>
 
 <p>A library cannot be directly loaded into a <em>lane</em> in a <em>sequencing container</em>
 (flowcell/SMRTcell) in MISO. A dilution must be made and then many dilutions
@@ -363,7 +422,7 @@ created by the MISO developers for the tutorial.</li>
 <p><em>Orders</em> are requests for sequencing pools a certain number of times. They are
 used to keep track of sequencing progress for project management and book-keeping.</p>
 
-<h2 id="bulk-creating-library-dilutions">5.1 Bulk creating Library Dilutions</h2>
+<h2 id="bulk-creating-library-dilutions">6.1 Bulk creating Library Dilutions</h2>
 <p>Dilutions can be made in bulk from libraries.</p>
 
 <p><img src="pics/flow-dilution.svg" /></p>
@@ -397,7 +456,7 @@ or bulk editing libraries.</li>
 
 <p><a name="pools" href="#" id="toplink">top</a></p>
 
-<h1 id="creating-pools">6. Creating Pools</h1>
+<h1 id="creating-pools">7. Creating Pools</h1>
 
 <p>Pools are the last step for libraries before sequencing and represent the
 entity that is loaded onto the flowcell lane or SMRTcell. A &quot;pool&quot; can have one or more
@@ -405,7 +464,7 @@ library dilutions in it. Every lane of sequencing contains only one pool.</p>
 
 <p><img src="pics/flow-pool.svg" /></p>
 
-<h2 id="bulk-creating-a-pool">6.1 Bulk creating a Pool</h2>
+<h2 id="bulk-creating-a-pool">7.1 Bulk creating a Pool</h2>
 
 <p>Here we will pool all of the dilutions we added previously to make a single pool
 of 4 dilutions.</p>
@@ -436,13 +495,13 @@ followed by <code class="highlighter-rouge">_POOL</code> (e.g. <code class="high
 
 <p><a name="orders" href="#" id="toplink">top</a></p>
 
-<h1 id="ordering-sequencing">7. Ordering sequencing</h1>
+<h1 id="ordering-sequencing">8. Ordering sequencing</h1>
 
 <p>Orders are created on the pool to be sequenced, and include the quantity of sequencing
 required (counted in lanes/SMRT cells), and the sequencing chemistry
 required (on Illumina).</p>
 
-<h2 id="creating-an-order">7.1 Creating an Order</h2>
+<h2 id="creating-an-order">8.1 Creating an Order</h2>
 
 <ol>
   <li>Select the pools you wish to create orders for:
@@ -468,7 +527,7 @@ required (on Illumina).</p>
 <p>The language will vary depending on the platform (<em>i.e.</em>, PacBio containers
 will show <em>SMRTcell Count</em> instead of <em>Lane Count</em>).</p>
 
-<h2 id="checking-for-unfulfilled-orders">7.2  Checking for unfulfilled orders</h2>
+<h2 id="checking-for-unfulfilled-orders">8.2  Checking for unfulfilled orders</h2>
 <p>The <em>Orders</em> page is used to decide what needs to be sequenced.</p>
 
 <ol>

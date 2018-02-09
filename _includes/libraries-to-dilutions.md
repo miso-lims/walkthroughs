@@ -1,6 +1,6 @@
 <a name="props2" href="#" id="toplink">top</a>
 
-# 5. Propagating libraries to dilutions
+# 6. Propagating libraries to dilutions
 
 A library cannot be directly loaded into a _lane_ in a _sequencing container_
 (flowcell/SMRTcell) in MISO. A dilution must be made and then many dilutions
@@ -9,7 +9,7 @@ A library cannot be directly loaded into a _lane_ in a _sequencing container_
 _Orders_ are requests for sequencing pools a certain number of times. They are
 used to keep track of sequencing progress for project management and book-keeping.
 
-## 5.1 Bulk creating Library Dilutions
+## 6.1 Bulk creating Library Dilutions
 Dilutions can be made in bulk from libraries.
 
 {% if include.detailed == true %}

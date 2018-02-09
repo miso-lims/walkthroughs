@@ -27,28 +27,28 @@ ones that end in `_D_1`:
   * _Library Name_: Leave blank as this will be filled in automatically after save.
   * _Library Alias_: Leave blank as this will be filled in automatically.
 {% if include.detailed == true %}
-  For more information about Library nomenclature, see
-  <a href="https://wiki.oicr.on.ca/display/MCPHERSON/LIMS+Guidelines#LIMSGuidelines-LibraryNomenclature" 
-  target="_new">Library Nomenclature</a>.
-  * _Matrix Barcode_: As before, usually this would be scanned by the hand
-    scanner. In this tutorial, enter matrix barcodes in the form (Short
-name)_(Tissue type)(Individual)_Li, e.g. `PROJ_P1_Li`.
-  * _Description_: Library (Tissue type)(individual), e.g. `Library P1`
-  * _Design_: EX
+        For more information about Library nomenclature, see
+        <a href="https://wiki.oicr.on.ca/display/MCPHERSON/LIMS+Guidelines#LIMSGuidelines-LibraryNomenclature" 
+        target="_new">Library Nomenclature</a>.
+    * _Matrix Barcode_: As before, usually this would be scanned by the hand
+      scanner. In this tutorial, enter matrix barcodes in the form
+      (Short name)_(Tissue type)(Individual)_Li, e.g. `PROJ_P1_Li`.
+    * _Description_: Library (Tissue type)(individual), e.g. `Library P1`
+    * _Design_: EX
 {% else %}
-  * _Description_: Library #, e.g. `Library 1`
+    * _Description_: Library #, e.g. `Library 1`
 {% endif %}
-  * _Platform_: Illumina
-  * _Type_: Paired End
-  * _Index Kit_: Nextera DNA Dual Index
-  * _Index 1_ and _Index 2_: Select any combination of indices you wish.
-    Select different indices for each library. Selecting the same index for two
-    different libraries will it unwise to pool those two libraries
-    together later.
-  * _Kit_: {% if include.detailed == true %}KAPA Hyper Prep{% else %}Any kit{% endif %}
-  * _Size (bp)_: 300
+    * _Platform_: Illumina
+    * _Type_: Paired End
+    * _Index Kit_: Nextera DNA Dual Index
+    * _Index 1_ and _Index 2_: Select any combination of indices you wish.
+      Select different indices for each library. Selecting the same index for two
+      different libraries will it unwise to pool those two libraries
+      together later.
+    * _Kit_: {% if include.detailed == true %}KAPA Hyper Prep{% else %}Any kit{% endif %}
+    * _Size (bp)_: 300
 {% if include.detailed == true %}
-  * _Volume_: 100
+    * _Volume_: 100
 {% endif %}
 1. Choose _Save_.
 

@@ -32,7 +32,9 @@ You can now fill the box with the tissues, stocks, aliquots, libraries, or
 pools that were made in previous steps. Collect the appropriate matrix tubes/barcodes now.
 
 1. Click on a position in the displayed _Contents_ grid.
-1. Enter a matrix barcode into the box on the right and click _Lookup_.
+1. Enter a matrix barcode into the _Search_ box on the right and click _Lookup_.
+Normally a hand scanner would be used. You can also search for items by their
+name or alias
 1. Click _Update Position_. 
   * &#9888; The _Save_ button at the top of the page does not work for
     individual positions, only for _Box Information_.
