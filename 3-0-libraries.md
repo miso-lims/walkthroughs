@@ -110,63 +110,9 @@ use.
 {% include libraries-trouble.md %}
 
 ## What if I assign a library to the wrong parent aliquot?
-Please email gsi@oicr.on.ca or file a JIRA ticket in GSI Common to get assistance from the MISO team.
-
-## How do I change the targeted sequencing type on a library?
-Targeted sequencing is connected to the dilution since the same library can be used for multiple targeted sequencing panels.
-
-1. From _Tracking_, _Dilutions_, check the library dilutions that need to be changed.
-1. From the toolbar, click _Edit_.
-1. Select a new _Targeted Sequencing_ from the list.
-1. Click _Save_.
-
-## How can I add a new targeted sequencing type, kit, or anything else in drop-down menus?
-For targeted sequencing and indices, please email gsi@oicr.on.ca or file a JIRA ticket in GSI Common to get assistance from the MISO team.
-
-Kits can be added easily:
-
-1. From _Tracking_, _Kits_, select the type of kit you want to add.
-1. Click _Create Kit Descriptor_.
-1. Fill in the form. The _Stock Level_ is not currently used, so leave it at zero.
-1. Carefully select the _Kit Type_ and _Platform_. This will determine what the kit can be used for.
-1. Click _Save_.
-
-## How are matrix tube barcodes assigned to tubes?
-Barcodes can be assigned on an individual edit page or in bulk.
-
-To change a single library:
-
-1. From _Tracking_, _Library_, select the library that needs to be changed.
-1. Clear the field labelled _Matrix Barcode_.
-1. Scan the barcode.
-1. Click _Save_.
-
-To change many libraries:
-
-1. From _Tracking_, _Library_, check the box beside each library that needs to be changed.
-1. From the toolbar, click _Edit_.
-1. Select the cell in the _Matrix Barcode_ column for the library and scan the barcode.
-1. Repeat for all the libraries.
-1. Click _Save_.
-
-## How can I delete a library?
-Libraries can be deleted from the Libraries list page by selecting the libraries and clicking _Delete_. A
-library cannot be deleted if it has any dilutions. Only the library's creator or an admin can delete a library.
-Deleted items are listed on the Deletions list page.
-
-## How can I delete a dilution?
-Dilutions can be deleted from the Dilutions list page by selecting the dilutions and clicking _Delete_. A
-dilution cannot be deleted if it has been added to any pools. Only the dilution's creator or an admin can
-delete a dilution. Deleted items are listed on the Deletions list page.
-
-## How can I delete a pool?
-Pools can be deleted from the Pools list page by selecting the pools and clicking _Delete_. A pool cannot
-be deleted if it has been added to any partitions. Any associated orders will be deleted along with a pool.
-Only the pool's creator or an admin can delete a pool. Deleted items are listed on the Deletions list page.
-
-## How can I delete an order?
-Orders can be deleted from the Edit Pool page by selecting the orders and clicking _Delete_. A
-library cannot be deleted if it has any dilutions. Deleted items are listed on the Deletions list page.
+You can delete the library and re-create it. If this is not appropriate because the
+library is already included in a sequencer run, please file a JIRA ticket in GSI Common
+to get assistance from the MISO team.
 
 
 < <a href="2-0-samples">Samples tutorial</a> | <a href="index">Home</a> | <a href="4-0-sequencing">Sequencing tutorial</a> >
