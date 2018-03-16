@@ -149,6 +149,25 @@ To change many libraries:
 1. Repeat for all the libraries.
 1. Click _Save_.
 
+## How can I delete a library?
+Libraries can be deleted from the Libraries list page by selecting the libraries and clicking _Delete_. A
+library cannot be deleted if it has any dilutions. Only the library's creator or an admin can delete a library.
+Deleted items are listed on the Deletions list page.
+
+## How can I delete a dilution?
+Dilutions can be deleted from the Dilutions list page by selecting the dilutions and clicking _Delete_. A
+dilution cannot be deleted if it has been added to any pools. Only the dilution's creator or an admin can
+delete a dilution. Deleted items are listed on the Deletions list page.
+
+## How can I delete a pool?
+Pools can be deleted from the Pools list page by selecting the pools and clicking _Delete_. A pool cannot
+be deleted if it has been added to any partitions. Any associated orders will be deleted along with a pool.
+Only the pool's creator or an admin can delete a pool. Deleted items are listed on the Deletions list page.
+
+## How can I delete an order?
+Orders can be deleted from the Edit Pool page by selecting the orders and clicking _Delete_. A
+library cannot be deleted if it has any dilutions. Deleted items are listed on the Deletions list page.
+
 
 < <a href="2-0-samples">Samples tutorial</a> | <a href="index">Home</a> | <a href="4-0-sequencing">Sequencing tutorial</a> >
 

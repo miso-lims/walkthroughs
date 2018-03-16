@@ -472,18 +472,23 @@ Please email gsi@oicr.on.ca or file a JIRA ticket in GSI Common to get assistanc
 
 **What do I have to enter if receiving a pre-made library?**
 
-MISO does not yet accept direct receipt of libraries. In cases where libraries are
-received, you are required to first create the aliquot and then propagate the library from it.
-The aliquot may be created by using the _Create_ button, or by propagating
-from an existing tissue or stock Sample. Propagating libraries is detailed in a later tutorial:
-[Propagating aliquots to libraries](3-0-libraries#props1)
+You do not need to create any samples before receiving a library. Library receipt is detailed in a later
+tutorial: [Receiving Libraries](3-0-libraries#receipt)
 
 **How can I add a new lab, tissue material, tissue type, tissue origin, or add anything else in drop-down menus?**
+
 Some of these items can be added directly:
 
 1. From the _Institute Defaults_ section of the menu, click the category of interest.
 1. Click _Add_ from the toolbar.
 1. Enter the appropriate information.
 1. Click _Create_.
+
+**How can I delete samples?**
+
+Samples can be deleted from the Samples list page by selecting the samples and clicking _Delete_. A
+sample cannot be deleted if it has any child samples or libraries. Only the sample's creator or an
+admin can delete a sample. Deleted items are listed on the Deletions list page.
+
 
 < <a href="1-0-project-coordination">Project coordination tutorial</a> | <a href="index">Home</a> | <a href="3-0-libraries">Libraries tutorial</a> >
