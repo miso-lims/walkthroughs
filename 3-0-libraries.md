@@ -111,7 +111,7 @@ use.
 
 ## What if I assign a library to the wrong parent aliquot?
 You can delete the library and re-create it. If this is not appropriate because the
-library is already included in a sequencer run, please file a JIRA ticket in GSI Common
+library is already included in a sequencer run, please {{ site.miso_admin_contact }}
 to get assistance from the MISO team.
 
 

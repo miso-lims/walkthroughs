@@ -41,7 +41,7 @@ Targeted sequencing is connected to the dilution since the same library can be u
 1. Click _Save_.
 
 ## How can I add a new targeted sequencing type, kit, or anything else in drop-down menus?
-For targeted sequencing and indices, please email gsi@oicr.on.ca or file a JIRA ticket in GSI Common to get assistance from the MISO team.
+For targeted sequencing and indices, please {{ site.miso_admin_contact }} to get assistance from the MISO team.
 
 Kits can be added easily:
 
@@ -72,18 +72,20 @@ To change many libraries:
 ## How can I delete a library?
 Libraries can be deleted from the Libraries list page by selecting the libraries and clicking _Delete_. A
 library cannot be deleted if it has any dilutions. Only the library's creator or an admin can delete a library.
-Deleted items are listed on the Deletions list page.
+Deleted items are listed on the Deletions list page. Deleting a library is permanent and cannot be undone.
 
 ## How can I delete a dilution?
 Dilutions can be deleted from the Dilutions list page by selecting the dilutions and clicking _Delete_. A
 dilution cannot be deleted if it has been added to any pools. Only the dilution's creator or an admin can
-delete a dilution. Deleted items are listed on the Deletions list page.
+delete a dilution. Deleted items are listed on the Deletions list page. Deleting a dilution is permanent
+and cannot be undone.
 
 ## How can I delete a pool?
 Pools can be deleted from the Pools list page by selecting the pools and clicking _Delete_. A pool cannot
 be deleted if it has been added to any partitions. Any associated orders will be deleted along with a pool.
 Only the pool's creator or an admin can delete a pool. Deleted items are listed on the Deletions list page.
+Deleting a pool is permanent and cannot be undone.
 
 ## How can I delete an order?
 Orders can be deleted from the Edit Pool page by selecting the orders and clicking _Delete_. Deleted items
-are listed on the Deletions list page.
+are listed on the Deletions list page.  Deleting an order is permanent and cannot be undone.

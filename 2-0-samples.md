@@ -488,7 +488,8 @@ Some of these items can be added directly:
 
 Samples can be deleted from the Samples list page by selecting the samples and clicking _Delete_. A
 sample cannot be deleted if it has any child samples or libraries. Only the sample's creator or an
-admin can delete a sample. Deleted items are listed on the Deletions list page.
+admin can delete a sample. Deleted items are listed on the Deletions list page. Deleting a sample is
+permanent and cannot be undone.
 
 
 < <a href="1-0-project-coordination">Project coordination tutorial</a> | <a href="index">Home</a> | <a href="3-0-libraries">Libraries tutorial</a> >
