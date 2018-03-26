@@ -96,5 +96,17 @@ Finally, scan the samples you made into the outbox so the libraries team can tak
 
 {% include outboxes.md %}
 
+<a name="trouble" href="#" id="toplink">top</a>
+
+# Troubleshooting
+
+**How can I delete samples?**
+
+Samples can be deleted from the Samples list page by selecting the samples and clicking _Delete_. A
+sample cannot be deleted if it has any libraries. Only the sample's creator or an admin can delete a
+sample. Deleted items are listed on the Deletions list page. Deleting a sample is permanent and cannot
+be undone.
+
+
 < <a href="plain-1-0-project-coordination">Project coordination tutorial</a> | <a href="plain-index">Home</a> | <a href="plain-3-0-libraries">Libraries tutorial</a> >
 
