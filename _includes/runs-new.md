@@ -4,27 +4,28 @@
 
 MISO supports runs from Illumina, PacBio, Oxford Nanopore, and other sequencers, so 
 the terms used for instrument runs and associated libraries are intentionally 
-different from those used by the vendor. Every time a sequencer is loaded and
-sequencing begins, a _Run_ is created. Illumina and PacBio Runs are picked up
-automatically from the instrument, while runs for other platforms must be created
-manually. A _Sequencing Container_ is the link between the library information
-and the instrument Run, and contains one or more lanes. Each Illumina lane, PacBio
-SMRT cell, or Oxford Nanopore flow cell is loaded with exactly one _Pool_.  Runs and
+different from those used by the vendor. A MISO _Run_ represents a sequencing run 
+where the sequencer has been loaded and sequencing has begun. The run scanner can be
+configured to detect new Illumina and PacBio runs and automatically create
+corresponding runs in MISO, while runs for other platforms must be created manually.
+A _Sequencing Container_ is the link between the library information and the
+instrument Run, and contains one or more lanes. Each Illumina lane, PacBio SMRT 
+cell, or Oxford Nanopore flow cell is loaded with exactly one _Pool_.  Runs and
 Containers can be associated as soon as the Run and Container have both been created.
 
 ## 3.1 Create a Container
 
 1. On the _Sequencing Containers_ page, select the Illumina platform and click the
    _Create Flowcell_ button near the top left of the table.
-1. Select _{{ site.flowcell }}_ from the dialog. Only active (non-retired) models are
+1. Select _{{ site.flowcell }}_ from the dialog. Only active (non-archived) models are
    available.
 1. Enter the name of your project as the serial number.
 1. Click _Save_ in the upper right corner of the page.
 
 ## 3.2 Create a Run
 
-1. On the _Runs_ page, select the Illumina platform and click the _Add Illumina Run_
-   button near the top left corner of the table.
+1. On the _Sequencer Runs_ page, select the Illumina platform and click the 
+   _Add Illumina Run_ button near the top left corner of the table.
 1. Select _{{ site.sequencer }} ({{ site.platform }})_ from the sequencers list. Only
    active (non-retired) sequencers are available.
 1. Enter a unique and memorable _Alias_ for your run.
@@ -50,8 +51,8 @@ about the quality of the run similar to the on-instrument applications like SAV.
 This includes statistics like percent pass filter, the percent of bases with
 Qscores over 30, and cluster density.
 
-1. From the _Runs_ page, find the run assigned to you for this tutorial. Click
-on the run alias to go to the run page.
+1. From the _Sequencer Runs_ page, find the run assigned to you for this tutorial.
+Click on the run alias to go to the run page.
 1. Scroll down to the _Metrics_ section and examine the sequencing metrics for
 this run.
 
@@ -69,7 +70,7 @@ _Sequencing Container_.
 
 ## 5.1 Add a pool to a run
 
-1. On the Run assigned to you, scroll down to the _Lanes_ section.
+1. On the page of the Run assigned to you, scroll down to the _Lanes_ section.
 1. Check the first the lane.
 1. Click _Assign Pool_ from the toolbar.
 1. Search for the pool you previously created. Try _Outstanding Orders (Matched Chemistry)_.
@@ -121,14 +122,14 @@ Lastly, place the libraries/pools in your outbox for storage.
 
 <a name="service" href="#" id="toplink">top</a>
 
-# 7. Adding Service Records to Sequencers
+# 7. Adding Service Records to Instruments
 
-Each sequencer can have one or more associated service records.
+Each instrument can have one or more associated service records.
 
-1. Select _Sequencers_.
-1. Choose an individual sequencer.
+1. Select _Instruments_.
+1. Choose an individual instrument.
 1. Use the blue arrow to expand the _Service Records_ section.
-1. From _Options_, choose _Add Sequencer Record_.
+1. From _Options_, choose _Add Service Record_.
 1. Fill in the form as follows:
   * _Title_: a short description of the work (_e.g._, `Remove gremlin from sequencer`)
   * _Description_: a long description of the work (_e.g._, `A gremlin was found outside of the terrible 80s movie. It had developed a taste for polymerase.`)
