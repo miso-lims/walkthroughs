@@ -20,9 +20,10 @@ miso_url: 'http://miso.gsi.oicr.on.ca'
 # in sections 3 (libraries) and 4 (sequencing). Make sure these match an
 # existing and active sequencer and existing sequencing parameters for your MISO
 # instance.
-sequencer: 'NB551056'
-platform: 'NextSeq 550'
-seq_params: 'High 2×151'
+sequencer: 'D00331'
+platform: 'Illumina HiSeq 2500'
+flowcell: 'HiSeq PE Flow Cell v4'
+seq_params: 'V4 2×101'
 
 # Configuration for inidcating who the MISO administrator is and how to contact
 # them
