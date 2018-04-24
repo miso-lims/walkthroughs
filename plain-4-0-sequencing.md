@@ -15,7 +15,7 @@ Table of Contents
    <li><a href="#aruns">Working with automatically created runs</a></li>
    <li><a href="#pools">Adding Pools to Runs</a></li>
    <li><a href="#boxes">Scanning libraries into your outbox</a></li>
-   <li><a href="#service">Adding Service Records to Sequencers</a></li>
+   <li><a href="#service">Adding Service Records to Instruments</a></li>
    <li><a href="#trouble">Troubleshooting</a></li>
 </ol>
 </div>
