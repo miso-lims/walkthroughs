@@ -19,12 +19,13 @@ model to MISO. Include the following information:
 
 ## 4.1 Add a new sequencer 
 
-1. Click the _My Account_ tab at the top of the page.
-1. Click _Configure_ in the _Sequencing Machines_ section.
-1. Click the _Add Sequencer_ link in the top right corner.
+1. Click the _Home_ tab at the top of the page.
+1. Click _Instruments_ in the _Tracking_ section.
+1. Click the _Add_ link in the top left corner.
 1. Fill in the fields of the new row that is inserted at the top of the table:
-    * _Name_: enter the serial number (case-sensitive)
+    * _Instrument Name_: enter the instrument name (case-sensitive)
     * _Platform_: select a platform from the dropdown menu
+    * _Serial Number_: enter the serial number (case-sensitive)
     * _Hostname_: enter `localhost`
 1. Click _Add_ to save the new sequencer.
 
