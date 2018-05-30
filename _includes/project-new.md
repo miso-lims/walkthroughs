@@ -32,7 +32,7 @@ To create a new project:
 
 1. After logging in, click the _My Projects_ tab at the top of the MISO
 dashboard.
-1. Select the _Add_ button at the top right corner.
+1. Select the _Add_ button at the top left corner.
 
 The _Create Project_ page will display with a number of fields that you can fill in.
 
@@ -51,17 +51,18 @@ Record the short name in your worksheet. <img src="pics/blue_pencil.png">
 {% endif %}
 1. In the _Description_ field, enter `MISO training workshop [Date]`
 1. Choose the amount of _Progress_ that your project has accomplished:
-  * Unknown : I was told to enter this data and I does what they tells me.
-  * Active : We are receiving/have received samples and are actively working on
+  * UNKNOWN : I was told to enter this data and I does what they tells me.
+  * ACTIVE : We are receiving/have received samples and are actively working on
     this project.
-  * Inactive : Project is not yet done, but waiting for external collaborators,
+  * INACTIVE : Project is not yet done, but waiting for external collaborators,
     REB approval, papers to be published, etc.
-  * Cancelled : Project was scrapped because we did not get funding/samples/REB
+  * CANCELLED : Project was scrapped because we did not get funding/samples/REB
     approval.
-  * Proposed : Project Initiation form has been received and is awaiting go-ahead
+  * PROPOSED : Project Initiation form has been received and is awaiting go-ahead
     by Genomics leadership.
-  * Pending : We are waiting for the project to start.
-  * Approved : Project has been approved by Genomics leadership.
+  * PENDING : We are waiting for the project to start.
+  * APPROVED : Project has been approved by Genomics leadership.
+  * COMPLETED : Project that has been completed.
 {% if include.detailed == true %}
 1. Select the _Reference Genome_ `Human hg19 random`. This should be the primary
 species that will be sequenced in the course of the project. Xenografts count
@@ -83,8 +84,9 @@ specific to this project and used by MISO to track the project internally.
 
 In order to make sure MISO is SRA-compliant, you must add a _Study_ to your Project. Studies are legacy objects that are not really used in the current system, but need to be added anyway.
 
-1. Click on the _Studies_ section to expand the section.
-1. Click _Add_ at the top left of the table.
+1. Click the _My Projects_ tab at the top of the MISO dashboard.
+1. Click on your Project _Name_ to expand it.
+1. Click _Add_ at the top left of the _Studies_ table.
 1. Much like creating a Project, enter:
   1. Alias (letters and numbers only): this can have any name, but make sure
 it is recognizable as belonging to your Project.
@@ -96,7 +98,7 @@ sequencing type, select `Other`.
 
 ## 2.2 My Projects tab
 
-1. Click again on the _My Projects_ tab.
+1. Click _My Projects_ in the _Tracking_ section.
 
 You will see a list of all of the projects you have access to in MISO.
 
