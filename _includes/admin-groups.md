@@ -11,9 +11,9 @@ There are also groups for Watchers, but these features are not yet fully functio
 To create a new group:
 
 1. Select the _Groups_ link in the left-hand menu.
-1. Select the _Add Group_ link near the top right corner.
+1. Select the _Add_ button near the top left corner.
 
-The _Edit Group_ page will display a number of fields that you can fill in.
+The _Create Group_ page will display a number of fields that you can fill in.
 1. Enter a unique _Name_. The name must contain only letters or numbers. It
    cannot contain spaces or punctuation.
 1. Enter a _Description_ of your group.
