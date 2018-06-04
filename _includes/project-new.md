@@ -79,9 +79,10 @@ project you just created. Notice that the Project ID and Name now have values.
 The Project ID will be an integer, and the Name will begin with PRO. These are
 specific to this project and used by MISO to track the project internally.
 
-### 2.1.1 Add a Study
+### 2.1.1 Add a Study (optional)
 
-In order to make sure MISO is SRA-compliant, you must add a _Study_ to your Project. Studies are legacy objects that are not really used in the current system, but need to be added anyway.
+If you plan to upload your project data to the SRA, you must add a _Study_ to 
+your Project.
 
 1. Click on the _Studies_ section to expand the section.
 1. Click _Add_ at the top left of the table.
