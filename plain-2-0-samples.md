@@ -11,22 +11,13 @@ section: 2.3
 <div id="toc">
 Table of Contents
 <ol>
-    <li><a href="#login">Logging In</a></li>
+    <li><a href="#logging_in">Logging In</a></li>
     <li><a href="#receipt">Receiving Samples</a></li>
     <li><a href="#qcs">Adding Sample QCs</a></li>
     <li><a href="#boxes">Scanning samples into the outbox</a></li>
     <li><a href="#trouble">Troubleshooting</a></li>
 </ol>
 </div>
-
-<div id="infobox">
-Download the worksheet for this section here: <a href="2-0-samples-worksheet">Samples Worksheet</a>.
-</div>
-
-
-<a name="login"/>
-
-# 1. Logging in
 
 {% include logging_in.md detailed=page.is-detailed %}
 
@@ -61,9 +52,9 @@ Copy and pasting from Excel and Word is supported. Press Ctrl+V (Windows & Linux
 Command+V (Mac) on your keyboard to paste.
 
 
-## 2.2 Scanning tissues and stocks into a Box
+## 2.2 Scanning Samples into a Box
 
-In this section we will add the stocks and tissues you just received into your
+In this section we will add the Samples you just received into your
 inbox for further work.
 
 {% include inboxes.md %}
@@ -82,6 +73,8 @@ Samples can be edited in bulk. Assume that we wish to update the description of 
 1. Change the _Description_ value: any value
 1. Click _Save_.
 
+<a name="qcs" href="#" id="toplink">top</a>
+
 # 3. Sample QCs
 
 Several QC methods are supported in MISO.
@@ -89,6 +82,8 @@ Several QC methods are supported in MISO.
 ## 3.1 Adding Bulk Sample QCs
 
 {% include samples-bulk-qc.md section=page.section %}
+
+<a name="boxes" href="#" id="toplink">top</a>
 
 # 4. Scanning samples into outboxes
 
@@ -100,12 +95,7 @@ Finally, scan the samples you made into the outbox so the libraries team can tak
 
 # Troubleshooting
 
-**How can I delete samples?**
-
-Samples can be deleted from the Samples list page by selecting the samples and clicking _Delete_. A
-sample cannot be deleted if it has any libraries. Only the sample's creator or an admin can delete a
-sample. Deleted items are listed on the Deletions list page. Deleting a sample is permanent and cannot
-be undone.
+{% include samples-trouble.md %}
 
 
 < <a href="plain-1-0-project-coordination">Project coordination tutorial</a> | <a href="plain-index">Home</a> | <a href="plain-3-0-libraries">Libraries tutorial</a> >

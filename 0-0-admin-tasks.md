@@ -9,11 +9,11 @@ is-detailed: true
 <div id="toc">
 Table of Contents
 <ol>
-    <li><a href="#login">Logging In</a></li>
+    <li><a href="#logging_in">Logging In</a></li>
     <li><a href="#users">Adding Users</a></li>
-    <li><a href="#perms">Creating groups and adding users to them</a></li>
-    <li><a href="#inst">Adding new instruments</a></li>
-    <li><a href="#reports">Creating project and monthly reports</a></li>
+    <li><a href="#admin-groups">Creating groups and adding users to them</a></li>
+    <li><a href="#admin-new-inst">Adding new instruments</a></li>
+    <li><a href="#admin-reports">Creating project and monthly reports</a></li>
 </ol>
 </div>
 

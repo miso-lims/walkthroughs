@@ -9,21 +9,17 @@ is-detailed: false
 <div id="toc">
 Table of Contents
 <ol>
-   <li><a href="#login">Logging In</a></li>
+   <li><a href="#logging_in">Logging In</a></li>
    <li><a href="#scan">Scan samples into your inbox</a></li>
    <li><a href="#arrays">Creating an Array</a></li>
-   <li><a href="#arrayruns">Creating an Array Run</a></li>
+   <li><a href="#array-runs">Creating an Array Run</a></li>
 </ol>
 </div>
 
 
-<a name="login"/>
-
-# 1. Logging in
-
 {% include logging_in.md detailed=page.is-detailed %}
 
-<a name="scan"/>
+<a name="scan" href="#" id="toplink">top</a>
 
 # 2. Scan samples into your inbox
 
@@ -40,4 +36,4 @@ work.
 
 {% include array-runs.md %}
 
-< <a href="4-0-sequencing">Sequencing tutorial</a> | <a href="plain-index">Home</a> >
+< <a href="plain-index">Home</a> >

@@ -1,4 +1,4 @@
-<a name="perms" href="#" id="toplink">top</a>
+<a name="admin-groups" href="#" id="toplink">top</a>
 
 # 3. Creating groups and adding users to them
 

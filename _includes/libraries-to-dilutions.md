@@ -1,4 +1,4 @@
-<a name="props2" href="#" id="toplink">top</a>
+<a name="libraries-to-dilutions" href="#" id="toplink">top</a>
 
 # 6. Propagating libraries to dilutions
 

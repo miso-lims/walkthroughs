@@ -1,4 +1,4 @@
-<a name="receipt"  href="#" id="toplink">top</a>
+<a name="libraries-receipt"  href="#" id="toplink">top</a>
 
 # 3. Receiving Libraries
 

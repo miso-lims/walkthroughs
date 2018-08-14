@@ -11,7 +11,7 @@ section: 3.4
 <div id="toc">
 Table of Contents
 <ol>
-    <li><a href="#login">Logging In</a></li>
+    <li><a href="#logging_in">Logging In</a></li>
     <li><a href="#receipt">Receiving Samples</a></li>
     <li><a href="#props">Propagating Samples</a></li>
     <li><a href="#qcs">Adding Sample QCs</a></li>
@@ -23,11 +23,6 @@ Table of Contents
 <div id="infobox">
 Download the worksheet for this section here: <a href="2-0-samples-worksheet">Samples Worksheet</a>.
 </div>
-
-
-<a name="login"/>
-
-# 1. Logging in
 
 {% include logging_in.md detailed=page.is-detailed %}
 
@@ -446,6 +441,8 @@ take over.
 
 # Troubleshooting
 
+{% include samples-trouble.md %}
+
 **How do you work with multiple samples derived from the same identity (i.e. DNA and RNA from one tissue slide, DNA from metastasis and control)**
 
 On the _Samples_ page, you can enter the identity's alias into the search box to filter the list.
@@ -470,11 +467,6 @@ or file a JIRA ticket in GSI Common to get assistance from the MISO team.
 
 Please email gsi@oicr.on.ca or file a JIRA ticket in GSI Common to get assistance from the MISO team.
 
-**What do I have to enter if receiving a pre-made library?**
-
-You do not need to create any samples before receiving a library. Library receipt is detailed in a later
-tutorial: [Receiving Libraries](3-0-libraries#receipt)
-
 **How can I add a new lab, tissue material, tissue type, tissue origin, or add anything else in drop-down menus?**
 
 Some of these items can be added directly:
@@ -483,13 +475,6 @@ Some of these items can be added directly:
 1. Click _Add_ from the toolbar.
 1. Enter the appropriate information.
 1. Click _Create_.
-
-**How can I delete samples?**
-
-Samples can be deleted from the Samples list page by selecting the samples and clicking _Delete_. A
-sample cannot be deleted if it has any child samples or libraries. Only the sample's creator or an
-admin can delete a sample. Deleted items are listed on the Deletions list page. Deleting a sample is
-permanent and cannot be undone.
 
 
 < <a href="1-0-project-coordination">Project coordination tutorial</a> | <a href="index">Home</a> | <a href="3-0-libraries">Libraries tutorial</a> >
