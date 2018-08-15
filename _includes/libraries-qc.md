@@ -1,4 +1,4 @@
-<a name="qcs" href="#" id="toplink">top</a>
+<a name="libraries-qc" href="#" id="toplink">top</a>
 
 # 4. Quality control
 There are three way to indicate library quality in MISO: 1)

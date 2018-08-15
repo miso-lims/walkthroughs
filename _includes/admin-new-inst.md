@@ -1,4 +1,4 @@
-<a name="inst" href="#" id="toplink">top</a>
+<a name="admin-new-inst" href="#" id="toplink">top</a>
 
 # 4. Adding new instruments
 

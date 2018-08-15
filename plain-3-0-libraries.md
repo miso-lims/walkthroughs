@@ -9,20 +9,17 @@ is-detailed: false
 <div id="toc">
 Table of Contents
 <ol>
-   <li><a href="#login">Logging In</a></li>
+   <li><a href="#logging_in">Logging In</a></li>
    <li><a href="#props1">Propagating samples to libraries</a></li>
-   <li><a href="#qcs">Adding Library QCs</a></li>
-   <li><a href="#props2">Propagating libraries to dilutions</a></li>
+   <li><a href="#libraries-receipt">Receiving Libraries</a></li>
+   <li><a href="#libraries-qc">Adding Library QCs</a></li>
    <li><a href="#boxes">Scanning libraries into your outbox</a></li>
-   <li><a href="#pools">Creating Pools</a></li>
-   <li><a href="#orders">Ordering sequencing</a></li>
-   <li><a href="#trouble">Troubleshooting</a></li>
+   <li><a href="#libraries-to-dilutions">Propagating libraries to dilutions</a></li>
+   <li><a href="#libraries-dils-to-pools">Creating Pools</a></li>
+   <li><a href="#libraries-orders">Ordering sequencing</a></li>
+   <li><a href="#libraries-trouble">Troubleshooting</a></li>
 </ol>
 </div>
-
-<a name="login"/>
-
-# 1. Logging in
 
 {% include logging_in.md detailed=page.is-detailed %}
 

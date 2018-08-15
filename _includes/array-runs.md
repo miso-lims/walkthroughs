@@ -1,3 +1,5 @@
+<a name="array-runs" href="#" id="toplink">top</a>
+
 # 4. Create an Array Run
 
 1. On the _Array Runs_ page, click the _Add_ button

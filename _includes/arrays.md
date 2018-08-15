@@ -1,4 +1,4 @@
-<a name="narrays" href="#" id="toplink">top</a>
+<a name="arrays" href="#" id="toplink">top</a>
 
 # 3. Arrays
 

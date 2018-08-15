@@ -1,4 +1,4 @@
-<a name="login"/>
+<a name="project-new"/>
 
 # 1. Logging in
 
