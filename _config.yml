@@ -22,8 +22,16 @@ miso_url: 'http://miso.gsi.oicr.on.ca'
 # instance.
 sequencer: 'D00331'
 platform: 'Illumina HiSeq 2500'
+platform_type: 'Illumina'
 flowcell: 'HiSeq PE Flow Cell v4'
 seq_params: 'V4 2×101'
+
+#
+ont_sequencer: 'MN16303'
+ont_platform: 'MinION'
+ont_flowcell: 'FLO-MIN107'
+ont_seq_params: 'Sequencing Run'
+
 
 # Configuration for inidcating who the MISO administrator is and how to contact
 # them

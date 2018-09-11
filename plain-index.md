@@ -19,4 +19,5 @@ Make note of the items you've created when sections are marked with a blue penci
 Other tutorials:
 
 1. [Arrays](plain-5-0-arrays)
+1. [Oxford Nanopore](plain-6-0-oxford-nanopore)
 
