@@ -4,20 +4,20 @@ To create a new project:
 
 1. After logging in, click the _My Projects_ tab at the top of the MISO
 dashboard.
-1. Select the _Add_ button at the top right corner.
-
-The _Create Project_ page will display with a number of fields that you can fill in.
-
+1. Select the _Add_ button at the top right corner. The _Create Project_ page will
+display with a number of fields that you can fill in.
 1. Ignore Project ID and Name, since they are set by MISO once the Project is saved.
 1. Enter a unique _Alias_. The alias is a name, chosen by us, that is associated
-with a project. The aliases must be a unique and contain only letters or
-numbers. It cannot contain spaces or punctuation. e.g. `DoIt4Science` (be creative!).
-Record this alias in your worksheet. <img src="pics/blue_pencil.png">
+with a project. The alias must be unique and contain only letters or numbers. It
+cannot contain spaces or punctuation. e.g. `DoIt4Science` (be creative!).
+{% if include.worksheet %}Record this alias in your worksheet.
+<img src="pics/blue_pencil.png">{% endif %}
 {% if include.detailed == true %}
 1. Enter a _Short Name_ for your project. The short name should be 2-5 letters in
 all CAPS and related to the project alias. This short name will be used to
 automatically generate sample and library names. e.g. short name: `DI4S`.
-Record the short name in your worksheet. <img src="pics/blue_pencil.png">
+{% if include.worksheet %}Record the short name in your worksheet.
+<img src="pics/blue_pencil.png">{% endif %}
 {% else %}
 1. Leave the _Short Name_ field blank.
 {% endif %}

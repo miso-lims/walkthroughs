@@ -19,8 +19,6 @@ Table of Contents
 
 <a name="login"/>
 
-# 1. Logging in
-
 {% include logging_in.md detailed=page.is-detailed %}
 
 

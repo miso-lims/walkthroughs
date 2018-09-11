@@ -1,10 +1,3 @@
-<a name="project-new"/>
-
-# 1. Logging in
-
-{% include logging_in.md %}
-
-
 <a name="proj" href="#" id="toplink">top</a>
 
 # 2. Creating projects
@@ -26,7 +19,7 @@ Most pages have a "Quick Help" tab at the top right under the Save
 button where you can find basic information about the current page.
 
 
-{% include project-create.md detailed=include.detailed section=2.1 %}
+{% include project-create.md detailed=include.detailed section=2.1 worksheet=true %}
 
 ### 2.1.1 Add a Study (optional)
 
@@ -46,9 +39,8 @@ sequencing type, select `Other`.
 
 ## 2.2 My Projects tab
 
-1. Click again on the _My Projects_ tab.
-
-You will see a list of all of the projects you have access to in MISO.
+1. Click again on the _My Projects_ tab. You will see a list of all of the projects
+you have access to in MISO.
 
 1. Find the project you just created in the list. You can sort any column in the
 table by clicking the column header. You can also search for your project by

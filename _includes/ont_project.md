@@ -7,4 +7,4 @@ different _Samples_, _Experiments_ and _Runs_. Samples are attached to Projects 
 they are often processed into _Libraries_ and then _Dilutions_, which are then
 _Pooled_ and sequenced. We will create a new project for our Oxford Nanopore Samples.
 
-{% include project-create.md detailed=include.detailed section=2.1 %}
+{% include project-create.md detailed=include.detailed section=2.1 worksheet=false %}
