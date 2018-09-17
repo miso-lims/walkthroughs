@@ -14,10 +14,7 @@ keep track of sequencing progress for project management and book-keeping.
 toolbar. Otherwise, go to the Libraries page, select the library you created in
 the previous exercise, and click the _Make dilutions_ button.
 1. Click the _Create_ button in the dialog that pops up.
-1. Enter the dilution information:
-  * _Conc._: Enter a concentration.
-  * _Creation Date_: Select the current date.
-1. Click _Save_.
+1. Leave the default values and click _Save_.
 
 ## 4.2 Creating a Pool
 
@@ -28,11 +25,9 @@ button in the toolbar. Otherwise, go to the Dilutions page, select the dilution 
 in the previous exercise, and click the _Pool separately_ button.
 1. Click the _Create_ button in the dialog that pops up.
 1. Enter the pool information:
-  * _Pool Alias_: Leave the automatically-generated alias.
-  * _Creation Date_: Select the current date.
-  * _Concentration_: Enter a concentration.
   * _Volume_: Enter a volume.
-1. Clikc _Save_.
+1. Leave the remaining fields at their default values and click _Save_.
+1. A dialog will pop up, warning you about saving without a barcode. Click _Save_ again.
 
 ## 4.3 Creating an Order
 

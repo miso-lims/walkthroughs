@@ -35,8 +35,7 @@ to be recycled. This should be left blank for now, and may be filled out later.
 1. Select _{{ include.sequencer }} ({{ include.platform }})_ from the sequencers list. Only
    active (non-retired) sequencers are available.
 1. Enter a unique and memorable _Alias_ for your run.
-1. Select _Sequencing Parameters_ `{{ include.seq_params }}`, near the top of the Run
-   section.
+1. Select _Sequencing Parameters_ `{{ include.seq_params }}`
 1. In the _Run Path_ field, enter `path` as the file path to the sequencer output.
 {% if include.platform_type != 'Oxford Nanopore' %}
 1. Check _Paired End_.
@@ -49,5 +48,5 @@ to be recycled. This should be left blank for now, and may be filled out later.
 1. Enter a date into _Start Date_.
 1. Click _Save_ in the upper right corner of the page.
 1. In the _Flow Cell_ section, click the _Add Flow Cell_ button.
-1. Enter the flow cell serial number of the container you have just created and click
-   the _Add_ button.
+1. Enter the flow cell serial number of the container you created in exercise
+   {{include.section}}.1 and click the _Add_ button.

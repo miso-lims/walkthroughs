@@ -6,8 +6,9 @@ _Sequencing Container_.
 1. On the Edit Run page, scroll down to the _Flow Cells_ section.
 1. Select the only flow cell (Number 1).
 1. Click _Assign Pool_ from the toolbar.
-1. Search for the pool you previously created. Try _Outstanding Orders (Matched Chemistry)_.
-1. Click the pool from the list.
+1. Choose _Outstanding Orders (Matched Chemistry)_ to see the Pools which have orders
+   matching the run parameters.
+1. Click the pool that you created in exercise 4.2.
 
 Now check on the Order.
  

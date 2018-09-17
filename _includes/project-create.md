@@ -41,7 +41,8 @@ as human.
 {% else %}
 1. Leave the _Reference Genome_ as `Unknown`.
 {% endif %}
-1. In the _Permissions_ section, select `your name` from the _Owner_ drop-down.
+1. In the _Permissions_ section, ensure that your name is selected in the _Owner_
+   drop-down.
 1. Make sure that _Allow all internal users access?_ is selected.
 
 1. Click the _Save_ button at the upper right.
