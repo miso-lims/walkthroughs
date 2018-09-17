@@ -22,6 +22,7 @@ These tutorials have associated worksheets, linked at the top of the tutorial. S
 Other tutorials:
 
 1. [Arrays](5-0-arrays)
+1. [Oxford Nanopore](6-0-oxford-nanopore)
 
 
 {% else %}
@@ -41,5 +42,6 @@ Make note of the items you've created when sections are marked with a blue penci
 Other tutorials:
 
 1. [Arrays](plain-5-0-arrays)
+1. [Oxford Nanopore](plain-6-0-oxford-nanopore)
 
 {% endif %}

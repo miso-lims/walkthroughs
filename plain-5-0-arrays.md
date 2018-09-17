@@ -16,7 +16,6 @@ Table of Contents
 </ol>
 </div>
 
-
 {% include logging_in.md detailed=page.is-detailed %}
 
 <a name="scan" href="#" id="toplink">top</a>
@@ -28,11 +27,7 @@ work.
 
 {% include inboxes.md %}
 
-<a name="arrays"/>
-
 {% include arrays.md detailed=page.is-detailed %}
-
-<a name="arrayruns"/>
 
 {% include array-runs.md %}
 

@@ -32,7 +32,8 @@ work.
 
 {% include inboxes.md %}
 
-{% include runs-new.md %}
+{% include runs-new.md section=3 flowcell=site.flowcell sequencer=site.sequencer
+  platform=site.platform platform_type=site.platform_type seq_params=site.seq_params %}
 
 {% include runs-auto.md %}
 

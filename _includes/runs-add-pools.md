@@ -17,5 +17,5 @@ _Sequencing Container_.
 
 Now check on the Order.
  
-1. Click on the _Orders_ page and verify that the _Remaining_ column now
+1. Click on the _Active Orders_ page and verify that the _Remaining_ column now
 shows 1 for the pool you added to the run.
