@@ -8,7 +8,7 @@ an Array Scanner. Arrays can have different layouts depending on the chip model.
 # 4.1. Create an Array
 
 1. On the _Arrays_ page, click the _Add_ button
-1. Choose _Array Model_ "Infinium MethylationEPIC-8 BeadChip.
+1. Choose _Array Model_ "Infinium MethylationEPIC-8 BeadChip."
 1. Enter a unique _Alias_ and _Serial Number_ for your Array
 1. Click _Save_. The array must be saved before samples can be added to it
 1. Add the samples that you created in the previous exercise to the Array. The user interface is similar to Boxes:

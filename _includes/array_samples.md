@@ -22,13 +22,16 @@ added to arrays, so we will receive Aliquots directly in this walkthrough.{% end
     * _STR Status_: Not Submitted
     * _QC Status_: Ready
     * _Purpose_: Extra
+1. Enter "PROJ_1" for the _External Name_ of the first sample, replacing "PROJ" with your own project's shortname.
+1. Enter "PROJ_2", "PROJ_3", etc... for the _External Name_ of each remaining sample, incrementing by 1 each time so
+   that they each have a unique _External Name_.
+1. Enter the same values into the _Matrix Barcode_ column that you used for the _External Names_.
 {% else %}
     * _QC Passed?_: True
 1. Enter a _Sample Alias_ in the form "PROJ_S#_#" for each sample. Replace "PROJ" with the short name of your project,
    and replace the "#" symbol with numbers of your choosing.
+1. Enter "PROJ_1" for the _Matrix Barcode_ of the first sample, replacing "PROJ" with your own project's shortname.
+1. Enter "PROJ_2", "PROJ_3", etc... for the _Matrix Barcode_ of each remaining sample, incrementing by 1 each time so
+   that they each have a unique _Matrix Barcode_.
 {% endif %}
-1. Enter "PROJ_1" for the _External Name_ of the first sample, replacing "PROJ" with your own project's shortname
-1. Enter "PROJ_2", "PROJ_3", etc... for the _External Name_ of each sample, incrementing by 1 each time so that they
-   each have a unique _External Name_.
-1. Enter the same values into the _Matrix Barcode_ column that you used for the _External Names_.
 1. Click _Save_ at the top right.
