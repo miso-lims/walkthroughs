@@ -10,9 +10,10 @@ is-detailed: true
 Table of Contents
 <ol>
    <li><a href="#logging_in">Logging In</a></li>
-   <li><a href="#scan">Scan samples into your inbox</a></li>
-   <li><a href="#arrays">Creating an Array</a></li>
-   <li><a href="#array-runs">Creating an Array Run</a></li>
+   <li><a href="#project">Creating a Project</a></li>
+   <li><a href="#array-samples">Receiving Samples</a></li>
+   <li><a href="#array-arrays">Creating Arrays</a></li>
+   <li><a href="#array-runs">Creating Array Runs</a></li>
 </ol>
 </div>
 
@@ -20,15 +21,13 @@ Table of Contents
 
 <a name="scan" href="#" id="toplink">top</a>
 
-# 2. Scan samples into your inbox
+{% include array_project.md detailed=page.is-detailed %}
 
-First, scan the samples from the samples team into your inbox for further
-work.
+{% include array_samples.md detailed=page.is-detailed %}
 
-{% include inboxes.md %}
+{% include array_arrays.md detailed=page.is-detailed %}
 
-{% include arrays.md detailed=page.is-detailed %}
-
-{% include array-runs.md %}
+{% include array_runs.md detailed=page.is-detailed %}
 
 < <a href="index">Home</a> >
+
