@@ -41,8 +41,6 @@ that you use for other services at your institute, users cannot be manually adde
 Users must be added by IT; once added, users can log in to MISO using their existing credentials 
 (LDAP or Active Directory).
 
-{% include admin-groups.md %}
-
 {% include admin-new-inst.md %}
 
 {% include admin-reports.md %}
