@@ -38,8 +38,6 @@ making them part of the following Active Directory groups:
     * If the person is to be added as an admin: `MISO_ROLE_ADMIN` and `MISO_ROLE_INTERNAL` groups.
     * If the person is not to be given admin access: `MISO_ROLE_INTERNAL` group.
 
-{% include admin-groups.md %}
-
 {% include admin-new-inst.md %}
 
 {% include admin-reports.md %}

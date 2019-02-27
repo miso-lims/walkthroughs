@@ -45,8 +45,6 @@ work.
 
 # 6. Scanning libraries/pools into your outbox
 
-Lastly, place the libraries/pools in your outbox for storage.
-
 {% include outboxes.md %}
 
 {% include service-records.md %}

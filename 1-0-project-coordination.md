@@ -30,15 +30,14 @@ Download the worksheet for this section here: <a href="1-0-project-coordination-
 
 Samples in a project can be assigned a sub-project designation. The sub-project
 is primarily a label for human use.
-If you haven't yet set up a project, continue to the
-next section first.
 
-1. On the left hand menu under the _Institute Defaults_ section, click _Subprojects_.
+1. On the left hand menu in the _Institute Defaults_ section, click _Subprojects_.
 1. Click the _Add_ button at the top left of the table.
-1. Enter quantity `1` and click `Create`.
+1. Enter quantity `1` and click _Create_.
     * Select the main Project from the drop-down
     * Fill in the alias and description.
-    * Select the priority from the drop-down. Eventually this will flag high-priority samples in the MISO interface.
+    * Select the priority from the drop-down. This will cause high-priority items
+      to display priority messages in the MISO interface.
     * Select `Human hg19 random` from the Reference Genome dropdown
 1. Click _Save_ in the top right corner of the page.
 

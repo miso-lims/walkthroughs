@@ -63,7 +63,7 @@ These libraries can be sorted based on the parent sample's location within the b
 and indices can be added based on the box position.
 
 1. On the _Boxes_ page, find your box and click on its link.
-1. Select all the aliquots in your box by either control-clicking all the aliquots
+1. Select all the aliquots in your box by control-clicking all the aliquots
 in the box (command-click on a Mac). If the aliquots are all in one row or column,
 you can click on the row/column header to select all items in that row or column. 
 Use control-click (or command-click) to select more than one row or column.
@@ -88,9 +88,6 @@ robot requires.
 <a name="boxes" href="#" id="toplink">top</a>
 
 # 5. Scanning libraries into your outbox
-
-Scan the libraries you just created into the outbox for the sequencing team to
-use.
 
 {% include outboxes.md %}
 

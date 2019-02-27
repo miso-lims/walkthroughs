@@ -22,11 +22,12 @@ In this exercise, we will create 4 library dilutions from the libraries we
 made previously.
 
 1. On the _Libraries_ page, check all the libraries just created.
-1. From the toolbar, select _Make dilutions_.
+1. From the toolbar, select _Make dilutions_. Click _Create_ in the dialog.
   * Note that the _Make dilutions_ option is also available after bulk creating
-or bulk editing libraries.
+    or bulk editing libraries.
 1. Enter the dilution information:
   * _Conc._: (use any number you wish)
+  * _Conc. Units_: ng/µL
   * _Creation Date_: (use the current date)
   * _Targeted Sequencing_: select any targeted sequencing value
 1. Click _Save_.

@@ -4,7 +4,7 @@ To create a new project:
 
 1. After logging in, click the _My Projects_ tab at the top of the MISO
 dashboard.
-1. Select the _Add_ button at the top right corner. The _Create Project_ page will
+1. Click the _Add_ button at the top left corner. The _Create Project_ page will
 display with a number of fields that you can fill in.
 1. Ignore Project ID and Name, since they are set by MISO once the Project is saved.
 1. Enter a unique _Alias_. The alias is a name, chosen by us, that is associated
@@ -41,10 +41,6 @@ as human.
 {% else %}
 1. Leave the _Reference Genome_ as `Unknown`.
 {% endif %}
-1. In the _Permissions_ section, ensure that your name is selected in the _Owner_
-   drop-down.
-1. Make sure that _Allow all internal users access?_ is selected.
-
 1. Click the _Save_ button at the upper right.
 
 Upon save, you will be taken to the _Edit Project_ page, where you can see the

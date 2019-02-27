@@ -4,8 +4,8 @@
  
 The _Orders_ page is used to decide what needs to be sequenced.
 
-1. From the navigation menu, choose _Orders_.
-1. Verify that the pool you just created is listed in the _Active_ tab.
+1. From the navigation menu, choose _Active Orders_.
+1. Verify that the pool you just created is listed.
 
 Columns on this page will disappear if there are no entries (_e.g._,
 the _Failed_ column will not be shown if there are no failed runs). When enough
