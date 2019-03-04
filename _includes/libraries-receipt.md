@@ -1,4 +1,4 @@
-<a name="libraries-receipt"  href="#" id="toplink">top</a>
+<a name="receipt"  href="#" id="toplink">top</a>
 
 # {{include.section}}. Receiving Libraries
 
@@ -14,7 +14,7 @@ if they match the data entered.
 
 ## {{include.section}}.1 Entering received Libraries
 
-1. On the left hand menu under _Tracking_, click _Libraries_.
+1. On the left hand menu under _Preparation_, click _Libraries_.
 1. Click the _Receive_ button at the top of the table.
 {% if include.detailed == true %}
 1. In the dialog, select _Aliquot Class_: gDNA (aliquot), and _Quantity_: 1, and click _Receive_
@@ -27,7 +27,7 @@ of your choosing.{% endif %}
   * _Sample Type_: select `GENOMIC` from the drop-down.
   * _Project_: Select your project from the drop-down.
   * _Sci. Name_: Homo sapiens{% if include.detailed == true %}
-  * _External Name_: Enter `PROJ_ID10`, replacing the `PROJ` with your own project name. The
+  * _External Name_: Enter `PROJ_ID10`, replacing the `PROJ` with your own project short name. The
   _Identity Alias_ column should change to show `First Receipt (PROJ)`.
   * _Donor Sex_: select any option from the drop-down.
   * _Tissue Origin_: select Pa (Pancreas) from the drop-down.

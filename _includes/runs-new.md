@@ -5,7 +5,7 @@
 MISO supports runs from Illumina, PacBio, Oxford Nanopore, and other sequencers, so 
 the terms used for instrument runs and associated libraries are intentionally 
 different from those used by the vendor. A MISO _Run_ represents a sequencing run 
-where the sequencer has been loaded and sequencing has begun. The run scanner can be
+where the sequencer has been loaded and sequencing has begun. The Run Scanner can be
 configured to detect new Illumina and PacBio runs and automatically create
 corresponding runs in MISO, while runs for other platforms must be created manually.
 A _Sequencing Container_ is the link between the library information and the
@@ -30,7 +30,7 @@ to be recycled. This should be left blank for now, and may be filled out later.
 
 ## {{include.section}}.2 Create a Run
 
-1. On the _Sequencer Runs_ page, select the {{ include.platform_type }} platform and click the 
+1. On the _Sequencing Runs_ page, select the {{ include.platform_type }} platform and click the 
    _Add {{include.platform_type}} Run_ button near the top left corner of the table.
 1. Select _{{ include.sequencer }} ({{ include.platform }})_ from the sequencers list. Only
    active (non-retired) sequencers are available.

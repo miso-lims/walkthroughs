@@ -77,9 +77,10 @@ Samples can be edited in bulk. Assume that we wish to update the description of 
 
 # 3. Sample QCs
 
-Several QC methods are supported in MISO.
+Several QC methods are supported in MISO. The same process can be used to add QCs to a
+single or multiple samples at once.
 
-## 3.1 Adding Bulk Sample QCs
+## 3.1 Adding Sample QCs
 
 {% include samples-bulk-qc.md section=page.section %}
 
@@ -95,7 +96,7 @@ Finally, scan the samples you made into the outbox so the libraries team can tak
 
 # Troubleshooting
 
-{% include samples-trouble.md %}
+{% include samples-trouble.md detailed=page.is-detailed %}
 
 
 < <a href="plain-1-0-project-coordination">Project coordination tutorial</a> | <a href="plain-index">Home</a> | <a href="plain-3-0-libraries">Libraries tutorial</a> >

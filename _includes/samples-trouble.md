@@ -8,4 +8,4 @@ permanent and cannot be undone.
 **What do I have to enter if receiving a pre-made library?**
  
 You do not need to create any samples before receiving a library. Library receipt is detailed in a later
-tutorial: [Receiving Libraries](3-0-libraries#receipt)
+tutorial: [Receiving Libraries]({% if include.detailed == false %}plain-{% endif %}3-0-libraries#receipt)

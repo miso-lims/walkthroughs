@@ -21,7 +21,7 @@ ones that end in `_D_1`:
 1. Check the samples to turn into libraries.
 {% endif %}
 1. Click the _Propagate_ button at the top left of the table.
-1. Note that "Propagate to libraries" is the title of the box. Choose _1_ replicate.
+1. Note that "Propagate to Library" is the title of the dialog. Choose _1_ replicate.
 1. Click _Propagate_.
 1. A table will appear. Enter the library information:
   * _Library Name_: Leave blank as this will be filled in automatically after save.
@@ -42,13 +42,14 @@ ones that end in `_D_1`:
     * _Type_: Paired End
     * _Index Kit_: Nextera DNA Dual Index
     * _Index 1_ and _Index 2_: Select any combination of indices you wish.
-      Select different indices for each library. Selecting the same index for two
-      different libraries will it unwise to pool those two libraries
+      Select different indices for each library. Selecting the same indices for two
+      different libraries would make it unwise to pool those two libraries
       together later.
     * _Kit_: {% if include.detailed == true %}KAPA Hyper Prep{% else %}Any kit{% endif %}
     * _Size (bp)_: 300
 {% if include.detailed == true %}
     * _Volume_: 100
+    * _Vol. Units_: µL
 {% endif %}
 1. Choose _Save_.
 

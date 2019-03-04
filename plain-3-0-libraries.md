@@ -49,9 +49,6 @@ inbox.
 
 # 5. Scanning libraries into your outbox
 
-Scan the libraries you just created into the outbox for the sequencing team to
-use.
-
 {% include outboxes.md %}
 
 
