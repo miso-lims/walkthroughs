@@ -65,7 +65,7 @@ AAAAAATTTTTT
 GAAAAACCCCCC
 ```
 
-Click _Calculate_. Notice that the first two sequences are not considered indices even
+Click _Calculate_. Notice that the first two sequences are not considered duplicates even
 though index 1 is the exact same. Only the second and third sequences are considered near
 matches.
 
@@ -77,7 +77,7 @@ Rather than copying them from another source, or typing in the index sequences y
 you can also choose indices from MISO to compare.
 
 1. Click _Clear_ to reset the form.
-1. From the _Indices_ list below the form, check the checkboxes beside any 5 indices
+1. From the _Indices_ list below the form, select any 5 indices.
 1. Click _Add_ from the toolbar. The sequences will appear in the _Indices_ box of the
    tool above.
 1. Click _Calculate_ to check for duplicates or near matches.
