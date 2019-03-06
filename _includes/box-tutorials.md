@@ -20,7 +20,7 @@ We are going to need some items to play with, so we will create a few pools:
 
 <a name="box-new" href="#">top</a>
 
-# 3. Create a Box
+# 3. Creating a Box
 
 Create a box to use for the rest of this walkthrough:
 
@@ -38,7 +38,7 @@ Create a box to use for the rest of this walkthrough:
 
 <img src="pics/box-selecting.png" id="figure">
 
-1. On the Edit Box page, scroll down to the Contents section. You will see a diagram
+1. On the _Edit Box_ page, scroll down to the _Contents_ section. You will see a diagram
    containing many circles. Each circle represents a position in the box. These are
    labelled with row letters and column numbers.
 1. Hover your mouse over one of the circles. It will display a tooltip showing the
@@ -55,7 +55,7 @@ Create a box to use for the rest of this walkthrough:
 1. Click one of the column labels - the numbers at the top of the diagram. The entire
    column will be selected.
 1. Below the diagram, click the _Select All_ button. All positions will be selected.
-1. click the _Select Odd Columns_ button. Columns 1, 3, 5, 7, 9, and 11 will be selected.
+1. Click the _Select Odd Columns_ button. Columns 1, 3, 5, 7, 9, and 11 will be selected.
    This (and the _Select Even Columns_ option) can be especially useful when a robot is
    working on your samples and may do something such as creating libraries in the
    even-numbered columns from samples in the odd-numbered columns.
@@ -74,7 +74,7 @@ Create a box to use for the rest of this walkthrough:
 
 # 6. Replacing items
 
-You can add an item to a position that already has an item. this will cause the existing
+You can add an item to a position that already has an item. This will cause the existing
 item to be replaced. The existing item is removed from the box and its location is then
 unknown.
 
@@ -107,7 +107,7 @@ unknown.
 
 # 9. Removing multiple items
 
-1. Select the rest of the positions you've added pools to.
+1. Select the rest of the filled positions.
 1. Click the _Remove Selected_ button. Click _Remove_ again in the warning dialog.
    The box should now be empty.
 

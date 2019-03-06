@@ -11,7 +11,7 @@ Table of Contents
 <ol>
     <li><a href="#logging_in">Logging In</a></li>
     <li><a href="#box-data">Creating Some Test Data</a></li>
-    <li><a href="#box-new">Create a Box</a></li>
+    <li><a href="#box-new">Creating a Box</a></li>
     <li><a href="#box-selecting">Selecting Positions</a></li>
     <li><a href="#box-add-single">Adding Individual Items</a></li>
     <li><a href="#box-replace-single">Replacing Items</a></li>
