@@ -1,6 +1,7 @@
 <a name="quick-help"/>
 
-## Quick Help
+## 2.0 Quick Help
+The Quick Help section at the top of the bulk tables page contains instructions for how to interact with multiple table cells at once. 
 
 1. In the _Preparation_ menu on the left sidebar, click on **Libraries**.
 1. At the top left of the _Libraries_ table, click **Receive**.
@@ -8,17 +9,12 @@
     * Aliquot Class: **gDNA (aliquot)**{% endif %}
     * Quantity: **5**
 1. Click **Receive**.
-
-The Quick Help section at the top of the page contains instructions for how to interact with multiple table cells at once. 
-
 1. Click the **Quick Help** header at the top right of the page, under the save button. 
     * To close the Quick Help section, click again on the **Quick Help** header. 
 
-## Bulk Data Entry
-
 <a name="copy-paste"/>
 
-### Copy & Paste
+## 3.0 Copy & Paste
 If you have a spreadsheet that already has the sample information and you need to enter this into MISO, copy-pasting is often the fastest way to do this. 
 
 1. Open the _Quick Help_. Note which key combination your current computer uses to paste. 
@@ -33,14 +29,16 @@ If you have a spreadsheet that already has the sample information and you need t
 |GENOMIC|
 |GENOMIC|
 
-### Fill many
+<a name="fill-many"/>
+
+## 4.0 Fill Many
 Entering the same data in all rows can be done by using the "fill from once cell" feature. Enter the data in one cell, then you can fill in multiple cells by:
   * double-clicking the square in the bottom right corner of that cell to fill in all cells below.
   * clicking the square in the bottom right corner of that cell, then dragging the mouse up or down the selected number of rows to fill those cells with the initial value.
 
 <a name="fill-down-drag"/>
 
-#### Drag (fills up or down)
+### 4.1 Fill Many: Drag (fills up or down)
 1. Type **10XT** in the _last_ row of the _Project_ column. 
 1. Click on the "10XT" project short name in the dropdown menu.
     * The cell will have a blue border with a blue square in the bottom right corner. (If you do not see the blue square, click on another cell and then click again on the cell that contains your project short name.)
@@ -49,7 +47,7 @@ Entering the same data in all rows can be done by using the "fill from once cell
 
 <a name="fill-down-click"/>
 
-#### Double-click (fills down)
+### 4.2 Fill Many: Double-click (fills down)
 1. Type your project's short name in the _first_ row of the _Project_ column.
 1. Click on your project in the dropdown menu.
     * The cell will have a blue border with a blue square in the bottom right corner. (If you do not see the blue square, click on another cell and then click again on the cell that contains your project short name.)
@@ -61,22 +59,21 @@ Entering the same data in all rows can be done by using the "fill from once cell
 You can test this out:
 1. Fill in values in the top row for the _Tissue Origin_, _Tissue Type_, _Times Received_, and _Tube Number_ columns.
 1. Click the _Tissue Origin_ cell, then press **Shift**, click the _Tube Number_ cell, and release the Shift key.
-    * All the cells between _Tissue Origin_ and _Tube Number_ will be selected. 1. Double-click or drag down on the blue square in the bottom right corner of the _Tube Number_ cell.
+    * All the cells between _Tissue Origin_ and _Tube Number_ will be selected.
+1. Double-click or drag down on the blue square in the bottom right corner of the _Tube Number_ cell.
     * All the cells in all the selected columns will change to contain the values from the first row.
 {% endif %}
 
 <a name="fill-down-increment"/>
 
-### Incrementing fill down
+### 4.3 Fill Many: Incrementing (fill down)
 If the values in a column need to each be one greater than the value in the row before it, you can fill the column using the incremental fill down.
 
 1. In the first two rows of the _Matrix Barcode_ column, enter the following (substituting _XX_ for your initials):
-
-|Matrix Barcode|
-|-------------|
-|TEST_XX01|
-|TEST_XX02|
-
+    |Matrix Barcode|
+    |-------------|
+    |TEST_XX01|
+    |TEST_XX02|
 1. In the _Matrix Barcode_ column, click the cell in the first row, then press **Shift**, click the cell in the second row, and release both the mouse button and the Shift key. 
     * The top two cells will be surrounded by a border, with a blue square in the bottom right corner of the lower cell. 
 1. Double-click on the blue square, and the cells below will be filled in with an incrementing pattern: 1-2-3-4-5. 
@@ -87,7 +84,7 @@ If the values in a column need to each be one greater than the value in the row 
 
 <a name="fill-by-row-column"/>
 
-### Fill Boxes by Row or Column
+## 5.0 Fill Boxes by Row or Column
 Samples, libraries, dilutions, or pools can be bulk-added to a box from within the bulk tables pages. Selecting the **Fill Boxes by Row** option adds the tubes in the displayed order, going from left to right, and top to bottom (see Figure 1). Selecting the **Fill Boxes by Column** option adds the tubes in the displayed order from top to bottom, and left to right (see Figure 2).
 
 <table border="1">
@@ -111,7 +108,7 @@ Samples, libraries, dilutions, or pools can be bulk-added to a box from within t
 
 <a name="check-qcs"/>
 
-### Check QCs (Libraries only)
+## 6.0 Check QCs (Libraries only)
 The _Check QCs_ feature can be used to automatically update the _QC Passed?_ column values based on the values in the _Size (bp)_, _Volume_, or _Conc._ columns.
 
 1. Return to your _Create Libraries_ bulk table (or [click here](https://miso.gsi.oicr.on.ca/miso/library/bulk/receive?quantity=5&projectId=&sampleClassId=15) if you have navigated away from the page).
@@ -141,7 +138,7 @@ The _Check QCs_ feature can be used to automatically update the _QC Passed?_ col
 
 <a name="export"/>
 
-### Export
+## 7.0 Export
 The current state of the bulk table data can be exported at any time. Exports can be saved as Microsoft Excel, Open Document Format, or Comma-delimited Data (CSV) files.
 
 1. Return to your _Create Libraries_ bulk table (or [click here](https://miso.gsi.oicr.on.ca/miso/library/bulk/receive?quantity=5&projectId=&sampleClassId=15) if you have navigated away from the page).
@@ -152,13 +149,14 @@ The current state of the bulk table data can be exported at any time. Exports ca
 
 <a name="import"/>
 
-### Import
+## 8.0 Import
 A spreadsheet can be uploaded to a bulk table page, and any matching data from the spreadsheet will be entered in the table.
-    * In order to match, the spreadsheet column header must exactly match the bulk table column header.
-    * Spreadsheet upload will fail if:
-        * the spreadsheet contains columns whose headers don't match any headers in the bulk table
-        * the spreadsheet contains more rows than the bulk table does
-    * If the spreadsheet cells contain invalid data, the data will still be entered in the table.
+  * In order to match, the spreadsheet column header must exactly match the bulk table column header.
+  * Spreadsheet upload will fail if:
+      * the spreadsheet contains columns whose headers don't match any headers in the bulk table
+      * the spreadsheet contains more rows than the bulk table does
+  * If the spreadsheet cells contain invalid data, the data will still be entered in the table.
+  * If the spreadsheet contains fewer columns than the table does, the table data for columns not in the spreadsheet will remain unchanged.
 
 1. Open the spreadsheet you downloaded in the [Export](#export) section.
 1. Delete all columns to the right of the _Sci. Name_ column.
@@ -167,24 +165,25 @@ A spreadsheet can be uploaded to a bulk table page, and any matching data from t
 1. Return to your _Create Libraries_ bulk table (or [click here](https://miso.gsi.oicr.on.ca/miso/library/bulk/receive?quantity=5&projectId=&sampleClassId=15) if you have navigated away from the page).
 1. Click **Import**.
 1. Choose the spreadsheet you edited, and click **Import**.
-    * The cell values will change.
+    * The cell values of the columns from the spreadsheet will change.
         * If invalid values are not immediately highlighted as such, you can force validation by clicking **Save**.
+    * The cell values of the columns not present in the spreadsheet will be unaffected by the import.
 
-## Miscellaneous
+# Miscellaneous
 
 <a name="cell-colours"/>
 
-### Cell Colours
+## 9.0 Cell Colours
 Some of the cells in a table can have different colours, each of which indicates a specific meaning:
   * Red: cell needs to be filled with valid data. (Empty cell is invalid){% if include.detailed == true %}
   * Yellow (_Sample/Library Alias_ only): this alias is non-standard, and whatever is entered here will be saved (validation will be skipped). [Click here to see a non-standard alias](https://miso.gsi.oicr.on.ca/miso/sample/bulk/edit?ids=236)
   * Purple (_Identity Alias_ only): This cell is automatically filled in, but there are other items in the dropdown.
     * To test this: [Click here](https://miso.gsi.oicr.on.ca/miso/sample/bulk/new?quantity=1&projectId=&sampleClassId=16) and enter **10XT** in the _Project_ column and **1** in the _External Name_ column. 
-      *The _Identity Alias_ cell will be purple, and if you click on the down arrow in the cell, you will see more items in the menu.{% endif %}
+      * The _Identity Alias_ cell will be purple, and if you click on the down arrow in the cell, you will see more items in the menu.{% endif %}
 
 <a name="read-only"/>
 
-### Read-Only Cells
+## 10.0 Read-Only Cells
 Read-only cells cannot be edited directly. They contain lighter text than cells you can interact with. For instance, the _Sample Class_ cells will be read-only. The _Sample Name_, _Library Name_, _Dilution Name_, and _Pool Name_ columns will all be automatically filled in after the item is created.
 
 {% if include.detailed == true %}
@@ -200,7 +199,7 @@ Sometimes, a read-only cell becomes editable once another cell has been changed.
 
 <a name="dependent-cells"/>
 
-### Dependent Cells
+## 11.0 Dependent Cells
 Some cells change (dropdown items, required vs optional, read-only vs editable) according to the value of other cells. For instance, on the bulk _Create Libraries_ and _Edit Libraries_ pages:{% if include.detailed == true %}
   * Selecting a _Template_ (if available) will lock in values for some or all of _Design_, _Code_, _Platform_, _Type_, _Index Kit_, and _Kit_.
   * Selecting a _Design_ will lock in values for some or all of _Code_, _Selection_, _Strategy_. {% endif %}

@@ -25,6 +25,7 @@ Other tutorials:
 1. [Oxford Nanopore](6-0-oxford-nanopore)
 1. [Working with Boxes](7-0-boxes)
 1. [Checking Index Distance](8-0-index-distance)
+1. [Working with Tables](9-0-bulk-tables)
 
 
 {% else %}
@@ -45,7 +46,8 @@ Other tutorials:
 
 1. [Arrays](plain-5-0-arrays)
 1. [Oxford Nanopore](plain-6-0-oxford-nanopore)
-1. [Working with Boxes](7-0-boxes)
-1. [Checking Index Distance](8-0-index-distance)
+1. [Working with Boxes](plain-7-0-boxes)
+1. [Checking Index Distance](plain-8-0-index-distance)
+1. [Working with Tables](plain-9-0-bulk-tables)
 
 {% endif %}
