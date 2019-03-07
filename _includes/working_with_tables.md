@@ -1,6 +1,6 @@
 <a name="quick-help"/>
 
-## 2.0 Quick Help
+# 2. Quick Help
 The Quick Help section at the top of the bulk tables page contains instructions for how to interact with multiple table cells at once. 
 
 1. In the _Preparation_ menu on the left sidebar, click on **Libraries**.
@@ -14,7 +14,7 @@ The Quick Help section at the top of the bulk tables page contains instructions 
 
 <a name="copy-paste"/>
 
-## 3.0 Copy & Paste
+# 3. Copy & Paste
 If you have a spreadsheet that already has the sample information and you need to enter this into MISO, copy-pasting is often the fastest way to do this. 
 
 1. Open the _Quick Help_. Note which key combination your current computer uses to paste. 
@@ -31,14 +31,14 @@ If you have a spreadsheet that already has the sample information and you need t
 
 <a name="fill-many"/>
 
-## 4.0 Fill Many
+# 4. Fill Many
 Entering the same data in all rows can be done by using the "fill from once cell" feature. Enter the data in one cell, then you can fill in multiple cells by:
   * double-clicking the square in the bottom right corner of that cell to fill in all cells below.
   * clicking the square in the bottom right corner of that cell, then dragging the mouse up or down the selected number of rows to fill those cells with the initial value.
 
 <a name="fill-down-drag"/>
 
-### 4.1 Fill Many: Drag (fills up or down)
+## 4.1 Fill Many: Drag (fills up or down)
 1. Type **10XT** in the _last_ row of the _Project_ column. 
 1. Click on the "10XT" project short name in the dropdown menu.
     * The cell will have a blue border with a blue square in the bottom right corner. (If you do not see the blue square, click on another cell and then click again on the cell that contains your project short name.)
@@ -47,7 +47,7 @@ Entering the same data in all rows can be done by using the "fill from once cell
 
 <a name="fill-down-click"/>
 
-### 4.2 Fill Many: Double-click (fills down)
+## 4.2 Fill Many: Double-click (fills down)
 1. Type your project's short name in the _first_ row of the _Project_ column.
 1. Click on your project in the dropdown menu.
     * The cell will have a blue border with a blue square in the bottom right corner. (If you do not see the blue square, click on another cell and then click again on the cell that contains your project short name.)
@@ -64,9 +64,9 @@ You can test this out:
     * All the cells in all the selected columns will change to contain the values from the first row.
 {% endif %}
 
-<a name="fill-down-increment"/>
+<a name="fill-down-incrementing"/>
 
-### 4.3 Fill Many: Incrementing (fill down)
+## 4.3 Fill Many: Incrementing (fill down)
 If the values in a column need to each be one greater than the value in the row before it, you can fill the column using the incremental fill down.
 
 1. In the first two rows of the _Matrix Barcode_ column, enter the following (substituting _XX_ for your initials):
@@ -82,11 +82,11 @@ If the values in a column need to each be one greater than the value in the row 
     * A copied pattern of 1-2-1-2-1 may briefly be seen, but will be overridden by the incrementing pattern.
 
 
-## Table Actions
+# Table Actions
 
 <a name="fill-by-row-column"/>
 
-## 5.0 Fill Boxes by Row or Column
+# 5. Fill Boxes by Row or Column
 Samples, libraries, dilutions, or pools can be bulk-added to a box from within the bulk tables pages. Selecting the **Fill Boxes by Row** option adds the tubes in the displayed order, going from left to right, and top to bottom (see Figure 1). Selecting the **Fill Boxes by Column** option adds the tubes in the displayed order from top to bottom, and left to right (see Figure 2).
 
 <table border="1">
@@ -110,7 +110,7 @@ Samples, libraries, dilutions, or pools can be bulk-added to a box from within t
 
 <a name="check-qcs"/>
 
-## 6.0 Check QCs (Libraries only)
+# 6. Check QCs (Libraries only)
 The _Check QCs_ feature can be used to automatically update the _QC Passed?_ column values based on the values in the _Size (bp)_, _Volume_, or _Conc._ columns.
 
 1. Return to your _Create Libraries_ bulk table (or [click here](https://miso.gsi.oicr.on.ca/miso/library/bulk/receive?quantity=5&projectId=&sampleClassId=15) if you have navigated away from the page).
@@ -140,7 +140,7 @@ The _Check QCs_ feature can be used to automatically update the _QC Passed?_ col
 
 <a name="export"/>
 
-## 7.0 Export
+# 7. Export
 The current state of the bulk table data can be exported at any time. Exports can be saved as Microsoft Excel, Open Document Format, or Comma-delimited Data (CSV) files.
 
 1. Return to your _Create Libraries_ bulk table (or [click here](https://miso.gsi.oicr.on.ca/miso/library/bulk/receive?quantity=5&projectId=&sampleClassId=15) if you have navigated away from the page).
@@ -151,7 +151,7 @@ The current state of the bulk table data can be exported at any time. Exports ca
 
 <a name="import"/>
 
-## 8.0 Import
+# 8. Import
 A spreadsheet can be uploaded to a bulk table page, and any matching data from the spreadsheet will be entered in the table.
   * In order to match, the spreadsheet column header must exactly match the bulk table column header.
   * Spreadsheet upload will fail if:
@@ -175,7 +175,7 @@ A spreadsheet can be uploaded to a bulk table page, and any matching data from t
 
 <a name="cell-colours"/>
 
-## 9.0 Cell Colours
+# 9. Cell Colours
 Some of the cells in a table can have different colours, each of which indicates a specific meaning:
   * Red: cell needs to be filled with valid data. (Empty cell is invalid){% if include.detailed == true %}
   * Yellow (_Sample/Library Alias_ only): this alias is non-standard, and whatever is entered here will be saved (validation will be skipped). [Click here to see a non-standard alias](https://miso.gsi.oicr.on.ca/miso/sample/bulk/edit?ids=236)
@@ -185,7 +185,7 @@ Some of the cells in a table can have different colours, each of which indicates
 
 <a name="read-only"/>
 
-## 10.0 Read-Only Cells
+# 10. Read-Only Cells
 Read-only cells cannot be edited directly. They contain lighter text than cells you can interact with. For instance, the _Sample Class_ cells will be read-only. The _Sample Name_, _Library Name_, _Dilution Name_, and _Pool Name_ columns will all be automatically filled in after the item is created.
 
 {% if include.detailed == true %}
@@ -201,7 +201,7 @@ Sometimes, a read-only cell becomes editable once another cell has been changed.
 
 <a name="dependent-cells"/>
 
-## 11.0 Dependent Cells
+# 11. Dependent Cells
 Some cells change (dropdown items, required vs optional, read-only vs editable) according to the value of other cells. For instance, on the bulk _Create Libraries_ and _Edit Libraries_ pages:{% if include.detailed == true %}
   * Selecting a _Template_ (if available) will lock in values for some or all of _Design_, _Code_, _Platform_, _Type_, _Index Kit_, and _Kit_.
   * Selecting a _Design_ will lock in values for some or all of _Code_, _Selection_, _Strategy_. {% endif %}

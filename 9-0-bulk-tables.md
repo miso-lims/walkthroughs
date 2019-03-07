@@ -13,6 +13,7 @@ Table of Contents
    <li><a href="#quick-help">Quick Help</a></li>
    <li><a href="#copy-paste">Copy & Paste</a></li>
    <li><a href="#fill-many">Fill Many</a></li>
+   <li><a href="#fill-by-row-column">Fill Boxes by Row or Column</a></li>
    <li><a href="#check-qcs">Check QCs</a></li>
    <li><a href="#export">Export</a></li>
    <li><a href="#import">Import</a></li>
