@@ -70,10 +70,12 @@ You can test this out:
 If the values in a column need to each be one greater than the value in the row before it, you can fill the column using the incremental fill down.
 
 1. In the first two rows of the _Matrix Barcode_ column, enter the following (substituting _XX_ for your initials):
+
     |Matrix Barcode|
     |-------------|
     |TEST_XX01|
     |TEST_XX02|
+
 1. In the _Matrix Barcode_ column, click the cell in the first row, then press **Shift**, click the cell in the second row, and release both the mouse button and the Shift key. 
     * The top two cells will be surrounded by a border, with a blue square in the bottom right corner of the lower cell. 
 1. Double-click on the blue square, and the cells below will be filled in with an incrementing pattern: 1-2-3-4-5. 
