@@ -422,6 +422,25 @@ The QCs will now be visible on the sample's individual page.
 {% include outboxes.md %}
 
 
+<a name="advanced-search" href="#" id="toplink">top</a>
+
+# 5. Advanced Search
+
+Some of the list pages feature advanced search functionality which allows you to narrow down the
+items displayed by specifying which attributes you would like to search by. Any list featuring
+advanced search will display a question mark in a black circle beside the _Search_ bar.
+
+1. Go to the _Samples_ list page.
+1. Hover your mouse pver the question mark icon beside the _Search_ box. The list of search terms
+   that you can use is displayed.
+1. Click the question mark icon. A dialog appears detailing the search syntax in more detail.
+1. Click the _X_ in the top right corner of the dialog to dismiss it.
+1. In the _Search_ box, type `PROJ created:today is:real`, replacing `PROJ` with the short name of
+   your own project, and hit _Enter_ on your keyboard. All of the samples you created in your
+   project today will appear. The ghost samples that were automatically created will be excluded
+   from the list.
+
+
 <a name="trouble" href="#" id="toplink">top</a>
 
 # Troubleshooting
