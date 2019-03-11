@@ -7,16 +7,27 @@ title: Sequencing worksheet
 
 <img src="pics/blue_pencil.png"> Worksheet to accompany [Sequencing walkthrough](4-0-sequencing).
 
+## 2.1 Scan pools into your inbox
+
+**Inbox Alias**: ___________________________________________________________________________________
+
+**Inbox Box Use**: ___________________________________________________________________________________
+
+
 ## 3.1 Create a container
 
-<table>
-<tr><th>Container name></th></tr>
-<tr><td width="75%">&nbsp;<br>&nbsp;</td></tr>
-</table>
+**Container Serial Number**: ___________________________________________________________________________________
 
-## 3.2 & 3.3 Working with runs
+## 3.2 Create a run
 
-<table>
-<tr><th>Auto-detected Run</th><th>Created run</th></tr>
-<tr><td width="50%"></td><td width="50%">&nbsp;<br>&nbsp;</td></tr>
-</table>
+**Run Alias**: ___________________________________________________________________________________
+
+## 4. Working with automatically created runs
+
+**Assigned run**: ___________________________________________________________________________________
+
+## 6. Scanning libraries/pools into your outbox
+
+**Outbox Alias**: ___________________________________________________________________________________
+
+**Outbox Box Use**: ___________________________________________________________________________________

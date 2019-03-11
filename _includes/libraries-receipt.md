@@ -43,6 +43,6 @@ of your choosing.{% endif %}
   * _Index Kit_: select No indices from the drop-down
   * _Kit_: select {{include.kit}} from the drop-down
   * _Size (bp)_: 430
-1. Click _Save_ at the top right
+1. Click _Save_ at the top right. Record the Library alias and barcode in your worksheet. <img src="pics/blue_pencil.png">
 
 

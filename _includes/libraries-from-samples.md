@@ -51,7 +51,7 @@ ones that end in `_D_1`:
     * _Volume_: 100
     * _Vol. Units_: µL
 {% endif %}
-1. Choose _Save_.
+1. Choose _Save_. Record the Library aliases and barcodes in your worksheet. <img src="pics/blue_pencil.png">
 
 Note that for dual-index libraries, only the first index needs to be 
 specified. The second is optional.

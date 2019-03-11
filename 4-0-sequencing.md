@@ -30,10 +30,9 @@ Download the worksheet for this section here: <a href="4-0-sequencing-worksheet"
 {% include uorders.md %}
 
 
-## 2.1 Scan libraries into your inbox
+## 2.1 Scan pools into your inbox
 
-First, scan the libraries from the libraries team into your inbox for further
-work.
+First, scan the pools from the libraries team into your inbox for further work.
 
 {% include inboxes.md %}
 

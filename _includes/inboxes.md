@@ -24,6 +24,7 @@ If you haven't already created an inbox, create one now:
    1. _Description_: a human description of the box purpose  `gDNA ready for
       library prep for <project>`.
    1. _Box Use_: The contents of the box. Select an appropriate use for your entities.
+      Record the use in your worksheet. <img src="pics/blue_pencil.png">
    1. _Box Size_: Select `8 x 12 scannable`.
 1. Click _Save_.
 

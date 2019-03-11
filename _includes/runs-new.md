@@ -20,7 +20,8 @@ Containers can be associated as soon as the Run and Container have both been cre
 1. Select _{{ include.platform }}_ from the dialog.
 1. Select _{{ include.flowcell }}_ from the dialog. Only active (non-archived) models are
    available.
-1. Enter the name of your project as the serial number.
+1. Enter the name of your project as the serial number. Record the serial number in your
+   worksheet. <img src="pics/blue_pencil.png">
 {% if include.platform_type == 'Oxford Nanopore' %}
 1. Select a _Pore Version_.
 1. Select a _Received Date_. The _Returned Date_ is the date that the flow cell was returned
@@ -34,7 +35,7 @@ to be recycled. This should be left blank for now, and may be filled out later.
    _Add {{include.platform_type}} Run_ button near the top left corner of the table.
 1. Select _{{ include.sequencer }} ({{ include.platform }})_ from the sequencers list. Only
    active (non-retired) sequencers are available.
-1. Enter a unique and memorable _Alias_ for your run.
+1. Enter a unique and memorable _Alias_ for your run. Record the alias in your worksheet. <img src="pics/blue_pencil.png">
 1. Select _Sequencing Parameters_ `{{ include.seq_params }}`
 1. In the _Run Path_ field, enter `path` as the file path to the sequencer output.
 {% if include.platform_type != 'Oxford Nanopore' %}
