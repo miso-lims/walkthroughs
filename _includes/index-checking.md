@@ -66,7 +66,7 @@ GAAAAACCCCCC
 ```
 
 Click _Calculate_. Notice that the first two sequences are not considered duplicates even
-though index 1 is the exact same. Only the second and third sequences are considered near
+though index 1 is the exact same. Only the first and third sequences are considered near
 matches.
 
 <a name="index-distance-miso" href="#">top</a>

@@ -6,10 +6,11 @@ We are going to need some items to play with, so we will create a few pools:
 
 1. Go to the _Dilutions_ page.
 1. Select any five dilutions from the list.
-1. Click _Pool Separately_ in the toolbar. Click _Create_ in the dialog.
+1. Click _Pool Separately_ in the toolbar. **DO NOT** check the _Create New Box_ option
+   in the dialog. Click _Create_.
 1. Enter the following attributes for the pools. Replace 'XX' with your own initials:
     
-    | Alias | Matrix Barcode | Volume | Vol. Units |
+    | Pool Alias | Matrix Barcode | Volume | Vol. Units |
     | XX_POOL_1 | XX_A01 | 5 | µL |
     | XX_POOL_2 | XX_A02 | 5 | µL |
     | XX_POOL_3 | XX_A03 | 5 | µL |
@@ -123,7 +124,8 @@ each position.
 
 1. Ensure that your box is empty. If there are any items remaining in it, remove them
    as detailed in the previous exercise.
-1. From the _Options_ menu in the _Contents_ bar, click _Fill by Barcode Pattern_.
+1. From the _Options_ menu in the _Contents_ bar above the diagram, click _Fill by Barcode
+   Pattern_.
 1. In the dialog, enter _Prefix_ `XX_`, replacing `XX` with your own initials.
 1. Select Standard suffixes. This means that the barcode pattern contains the name of
    the position where the item should be stored. e.g. the item with barcode `XX_A01`
