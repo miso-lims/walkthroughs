@@ -126,15 +126,14 @@ The _Check QCs_ feature can be used to automatically update the _QC Passed?_ col
 1. Use the [incrementing fill](#fill-down-incrementing) to fill in the _Size (bp)_, _Volume_, and _Conc._ columns.
     * Note that the _Vol. Units_ column does not contain numbers and so cannot be incrementally filled down.
 1. Click **Check QCs**.
-1. In the _Size_ section, select **>** from the dropdown menu and enter **303** into the input field.
+1. In the _Size_ section, select **=** from the dropdown menu and enter **303** into the input field.
+1. Leave the _Volume_ and _Concentration_ sections set to **ignore**.
 1. Click **Check**.
     * Note that the _QC Passed?_ values have changed.
 1. Click **Check QCs**.
-1. In the _Volume_ section, select **=** from the dropdown menu and enter **12** into the input field.
-1. Click **Check**.
-    * Note that the _QC Passed?_ values have changed.
-1. Click **Check QCs**.
-1. In the _Concentration_ section, select **<=** from the dropdown menu and enter **3** into the input field.
+1. In the _Volume_ section, select **>** from the dropdown menu and enter **10** into the input field.
+1. In the _Concentration_ section, select **<=** from the dropdown menu and enter **4** into the input field.
+1. Leave the _Size_ section set to **ignore**.
 1. Click **Check**.
     * Note that the _QC Passed?_ values have changed.
 
