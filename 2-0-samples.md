@@ -431,7 +431,7 @@ items displayed by specifying which attributes you would like to search by. Any 
 advanced search will display a question mark in a black circle beside the _Search_ bar.
 
 1. Go to the _Samples_ list page.
-1. Hover your mouse pver the question mark icon beside the _Search_ box. The list of search terms
+1. Hover your mouse over the question mark icon beside the _Search_ box. The list of search terms
    that you can use is displayed.
 1. Click the question mark icon. A dialog appears detailing the search syntax in more detail.
 1. Click the _X_ in the top right corner of the dialog to dismiss it.
