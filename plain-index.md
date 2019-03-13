@@ -22,4 +22,4 @@ Other tutorials:
 1. [Oxford Nanopore](plain-6-0-oxford-nanopore)
 1. [Working with Boxes](plain-7-0-boxes)
 1. [Checking Index Distance](plain-8-0-index-distance)
-
+1. [Working with Tables](plain-9-0-bulk-tables)
