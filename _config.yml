@@ -10,7 +10,7 @@ codeurl: 'https://github.com/TGAC/miso-lims'
 
 # Keep as an empty string if served up at the root. If served up at a specific
 # path (e.g. on GitHub pages) leave off the trailing slash, e.g. /my-project
-baseurl: '/miso-docs-oicr'
+baseurl: '/walkthroughs'
 
 # URL to your MISO instance for the training tutorial. This is used in
 # _includes/logging_in.md
