@@ -68,8 +68,8 @@ button where you can find basic information about the current page.
 
 ## 2.1 Creating a new project
 
-1. After logging in, click the _My Projects_ tab at the top of the MISO
-dashboard. 
+1. After logging in, click the _Projects_ link under _Preparation_ in the menu on the left side of
+the screen.
 1. Select the _Add Project_ button at the top right corner. 
 
 The _Create Project_ page will display with a number of fields that you can fill out.
@@ -128,12 +128,10 @@ sequencing type, select `Other`.
 1. Click the _Save_ button at the upper right.
 
 
-## 2.2 My Projects tab
+## 2.2 Projects List
 
-1. Click again on the _My Projects_ tab. 
-
-You will see a list of all of the projects you have access to in MISO.
-
+1. Click again on the _Projects_ link under _Preparation_ in the menu on the left side of the
+screen. You will see a list of all of the projects you have access to in MISO.
 1. Find the project you just created in the list. You can sort any column in the
 table by clicking the column header. You can also search for your project by
 any of the displayed columns and the table will filter as you type. 

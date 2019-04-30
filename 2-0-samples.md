@@ -104,7 +104,8 @@ Record the alias in your worksheet. <img src="pics/blue_pencil.png">
 
 ## 2.2 Automatically created Samples
 
-1. Click the _My Projects_ tab at the top and select your project from the list.
+1. Click the _Projects_ link under _Preparation_ in the menu on the left side of the screen and
+select your project from the list.
 1. Open the _Samples_ section on the _Edit Project_ page to see your newly
 created samples.
 
