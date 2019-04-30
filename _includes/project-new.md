@@ -35,11 +35,10 @@ your Project.
 1. Click the _Save_ button at the upper right.
 
 
-## 2.2 My Projects tab
+## 2.2 Projects List
 
-1. Click again on the _My Projects_ tab. You will see a list of all of the projects
-in MISO.
-
+1. Click again on the _Projects_ link under _Preparation_ in the menu on the left side of the
+screen. You will see a list of all of the projects in MISO.
 1. Find the project you just created in the list. You can sort any column in the
 table by clicking the column header. You can also search for your project by
 any of the displayed columns and the table will filter as you type.
