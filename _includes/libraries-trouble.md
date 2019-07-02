@@ -25,10 +25,10 @@ Once the library aliquot exists:
 1. Find the correct aliquot in the list and check it.
 1. Click _Add_ on the toolbar.
 
-## How do I make bulk orders?
-Making orders in bulk can be done from the _Pools_ page:
+## How do I make bulk sequencing orders?
+Making sequencing orders in bulk can be done from the _Pools_ page:
 
-1. Select all the pools needing an order.
+1. Select all the pools needing sequencing.
 1. Click _Create Orders_ and enter the order information for each pool.
 
 ## How do I change the targeted sequencing type on a library?
@@ -82,10 +82,10 @@ is permanent and cannot be undone.
 
 ## How can I delete a pool?
 Pools can be deleted from the Pools list page by selecting the pools and clicking _Delete_. A pool cannot
-be deleted if it has been added to any partitions. Any associated orders will be deleted along with a pool.
+be deleted if it has been added to any partitions. Any associated sequencing orders will be deleted along with a pool.
 Only the pool's creator or an admin can delete a pool. Deleted items are listed on the Deletions list page.
 Deleting a pool is permanent and cannot be undone.
 
-## How can I delete an order?
-Orders can be deleted from the Edit Pool page by selecting the orders and clicking _Delete_. Deleted items
-are listed on the Deletions list page.  Deleting an order is permanent and cannot be undone.
+## How can I delete a sequencing order?
+Sequencing orders can be deleted from the Edit Pool page by selecting the orders and clicking _Delete_. Deleted items
+are listed on the Deletions list page.  Deleting a sequencing order is permanent and cannot be undone.
