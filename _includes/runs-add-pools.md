@@ -15,7 +15,7 @@ _Sequencing Container_.
 1. Search for the pool you previously created. Try _Outstanding Orders (Matched Chemistry)_.
 1. Click the pool from the list.
 
-Now check on the Order.
+Now check on the sequencing order.
  
-1. Click on the _Active Orders_ page and verify that the _Remaining_ column now
+1. Click on the _Outstanding Sequencing Orders_ page and verify that the _Remaining_ column now
 shows 1 for the pool you added to the run.

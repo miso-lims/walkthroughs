@@ -7,8 +7,8 @@
 
 1. How do you assign single lane failures (if possible)?
     * It is possible to add a lane QC which allows you to select one or more lanes and
-      set a status to indicate whether the lane should be considered for order fulfillment,
-      and whether the lane should be analysed.
+      set a status to indicate whether the lane should be considered for sequencing order
+      fulfillment, and whether the lane should be analysed.
 
 1. How do you fail flowcells? Or how does MISO detect failed runs?
     * If MISO automatically detects runs from this sequencer, then in most cases MISO will

@@ -6,7 +6,7 @@ A library cannot be directly loaded into a _lane_ in a _sequencing container_
 (flowcell/SMRTcell) in MISO. A library aliquot must be made and then many aliquots
 (or just one) can be mixed into a _pool_ for sequencing.
 
-_Orders_ are requests for sequencing pools a certain number of times. They are
+_Sequencing Orders_ are requests for sequencing pools a certain number of times. They are
 used to keep track of sequencing progress for project management and book-keeping.
 
 ## 6.1 Bulk creating Library Aliquots

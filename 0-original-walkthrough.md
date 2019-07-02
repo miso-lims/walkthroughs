@@ -13,7 +13,7 @@ Table of Contents
    <li><a href="#4">Propagating Samples</a></li>
    <li><a href="#5">Using Boxes</a></li>
    <li><a href="#6">Libraries</a></li>
-   <li><a href="#7">Library Aliquots, Pools, and Orders</a></li>
+   <li><a href="#7">Library Aliquots, Pools, and Sequencing Orders</a></li>
    <li><a href="#8">Runs and Sequencing Containers</a></li>
    <li><a href="#9">Sequencers</a></li>
 </ol>
@@ -756,13 +756,13 @@ e.g. `PROJ_P1_Li`.
 
 <a name="7"/><a href="#">top</a>
 
-# 7. Library Aliquots, Pools, and Orders
+# 7. Library Aliquots, Pools, and Sequencing Orders
 
 A library cannot be directly loaded into a _lane_ in a _sequencing container_
 (flowcell/SMRTcell) in MISO. A library aliquot must be made and then many aliquots
 (or just one) can be mixed into a _pool_ for sequencing.
 
-_Orders_ are requests for sequencing pools a certain number of times. They are
+_Sequencing Orders_ are requests for sequencing pools a certain number of times. They are
 used to keep track of sequencing progress for project management and book-keeping. 
 
 ## 7.1 Bulk creating Library Aliquots
@@ -803,7 +803,7 @@ followed by `_POOL` (e.g. `PROJ_POOL`)
   1. _Desired Concentration_: Enter a concentration.
   1. _Creation Date_: Select a date.
   1. _Ready to Run_: Whether or not the pool is ready for sequencing. This flag
-     is used together with the Order to show the pool is ready to be sequenced.
+     is used together with the Sequencing Order to show the pool is ready to be sequenced.
      Tick this box.
   1. _Volume_: Enter a pool volume.
 1. Click _Save_. The pool must be saved before you can add library aliquots to it.
@@ -811,25 +811,23 @@ followed by `_POOL` (e.g. `PROJ_POOL`)
    created previously. Select each aliquot and click the _Add_ button at the top of the
    table to add it to the pool.
 
-## 7.3 Creating an Order
-Orders are created on the pool to be sequenced, and include the quantity of sequencing
-required (counted in lanes/SMRT cells), and the sequencing chemistry
-required (on Illumina).
+## 7.3 Creating a Sequencing Order
+Sequencing orders are created on the pool to be sequenced, and include the quantity of sequencing
+required (counted in lanes/SMRT cells), and the sequencing chemistry required (on Illumina).
 
 1. On the Edit Pool page for the pool you just created, scroll down to the
-_Orders_ heading.
-1. Fill in the new order box:
-  - _Partitions_: the number of lanes/cells that should run for this pool. Enter
-`2`
-  - _Platform_: Select the instrument for sequencing. `Illumina - Illumina HiSeq 2500`
+_Requested Sequencing Orders_ section and click the "Create" button.
+1. Fill in the order details:
+  - _Instrument Model_: Select the instrument for sequencing. `Illumina - Illumina HiSeq 2500`
   - _Sequencing Parameters_: Select `v4 2×126` chemistry.
-1. Click _Add_. The order will now be visible in the _Orders_ section.
+  - _Partitions_: the number of lanes/cells that should run for this pool. Enter `2`
+1. Click _Add_. The sequencing order will now be visible in the _Requested Sequencing Orders_ section.
 
-### 7.3.1  Checking for unfulfilled orders
-The _Orders_ page is used to decide what needs to be sequenced.
+### 7.3.1  Checking for outstanding orders
+The _Sequencing Orders_ page is used to decide what needs to be sequenced.
 
-1. From the navigation menu, choose _Orders_.
-1. Verify that the pool you just created is listed in the _Unfulfilled_ tab.
+1. From the navigation menu, choose _Sequencing Orders - Outstanding_.
+1. Verify that the pool you just created is listed in the Illumina tab.
 
 Columns on this page will disappear if there are no entries (_e.g._,
 the _Failed_ column will not be shown if there are no failed runs). When enough
@@ -838,7 +836,7 @@ but remain in the _All_ tab. Lanes currently being sequenced will be marked as
 in-progress and remain on the _Unfulfilled_ tab until the run transitions to
 _Completed_.
 
-A pool can have many orders. Orders for the same platform and chemistry are
+A pool can have many sequencing orders. Sequencing orders for the same platform and chemistry are
 summed when displayed on this page.
 
 
@@ -891,9 +889,9 @@ _Sequencing Container_.
 
 The validation field is used only by cBot; leave it blank.
 
-Now check on the Order.
+Now check on the sequencing order.
 
-1. Click on the _Orders_ page and verify that the _Remaining_ column now
+1. Click on the _Sequencing Orders - Outstanding_ page and verify that the _Remaining_ column now
 shows 1 for the pool.
 
 
