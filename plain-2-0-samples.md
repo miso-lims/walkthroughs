@@ -28,7 +28,7 @@ Table of Contents
 A _Sample_ contains information about the material upon which the sequencing
 experiments are to be based. Samples can be used in any number of sequencing
 _Experiments_ in the form of a _Library_ that is processed further into
-single or pooled _Dilutions._
+single or pooled _Library Aliquots._
 
 ## 2.1 Receiving a Sample
 

@@ -1,1 +1,823 @@
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="577.38" height="200"><style xmlns="http://www.w3.org/1999/xhtml"></style><defs/><g transform="translate(0,0)"><g><rect fill="#FFFFFF" stroke="none" x="0" y="0" width="577.38" height="200"/></g><g transform="translate(0,0) matrix(1,0,0,1,80,80)"><g><g transform="translate(0,0) scale(0.7,0.4)"><g><path fill="#9fc5e8" stroke="none" d="M 0 0 L 100 0 Q 100 0 100 0 L 100 100 Q 100 100 100 100 L 0 100 Q 0 100 0 100 L 0 0 Q 0 0 0 0 Z"/><g transform="scale(1.4285714285714286,2.5)"><path fill="none" stroke="none" d="M 0 0 L 70 0 Q 70 0 70 0 L 70 40 Q 70 40 70 40 L 0 40 Q 0 40 0 40 L 0 0 Q 0 0 0 0 Z"/><path fill="none" stroke="#333333" d="M 0 0 M 0 0 L 70 0 Q 70 0 70 0 L 70 40 Q 70 40 70 40 L 0 40 Q 0 40 0 40 L 0 0 Q 0 0 0 0 Z" stroke-miterlimit="10" stroke-width="2"/></g></g></g></g></g><g transform="matrix(1,0,0,1,89,93)"><g transform="translate(12,0) matrix(1,0,0,1,0,0) translate(-12,0)"><g><rect fill="rgb(0,0,0)" stroke="none" x="0" y="0" width="52" height="14" fill-opacity="0"/></g></g><g transform="translate(12,0) matrix(1,0,0,1,0,0) translate(-12,0)"><g><rect fill="rgb(0,0,0)" stroke="none" x="0" y="0" width="52" height="14" fill-opacity="0"/></g></g><g transform="translate(12,0) matrix(1,0,0,1,0,0) translate(-12,0)"><g><rect fill="rgb(0,0,0)" stroke="none" x="6" y="0" width="40" height="14" fill-opacity="0"/></g></g><g transform="translate(12,0) matrix(1,0,0,1,0,0) translate(-12,0)"><g><rect fill="rgb(0,0,0)" stroke="none" x="6" y="0" width="40" height="14" fill-opacity="0"/></g><text fill="rgb(0, 0, 0)" stroke="none" font-family="Arial" font-size="12px" font-style="normal" font-weight="normal" text-decoration="" line-height="14px" x="6" y="12">Sample</text></g></g><g transform="translate(0,0) matrix(1,0,0,1,200,80)"><g><g transform="translate(0,0) scale(0.6,0.4)"><g><path fill="#FFFFFF" stroke="none" d="M 0 0 L 100 0 Q 100 0 100 0 L 100 100 Q 100 100 100 100 L 0 100 Q 0 100 0 100 L 0 0 Q 0 0 0 0 Z"/><g transform="scale(1.6666666666666667,2.5)"><path fill="none" stroke="none" d="M 0 0 L 60 0 Q 60 0 60 0 L 60 40 Q 60 40 60 40 L 0 40 Q 0 40 0 40 L 0 0 Q 0 0 0 0 Z"/><path fill="none" stroke="#333333" d="M 0 0 M 0 0 L 60 0 Q 60 0 60 0 L 60 40 Q 60 40 60 40 L 0 40 Q 0 40 0 40 L 0 0 Q 0 0 0 0 Z" stroke-miterlimit="10" stroke-width="2"/></g></g></g></g></g><g transform="matrix(1,0,0,1,209,93)"><g transform="translate(6,0) matrix(1,0,0,1,0,0) translate(-6,0)"><g><rect fill="rgb(0,0,0)" stroke="none" x="0" y="0" width="43" height="14" fill-opacity="0"/></g></g><g transform="translate(6,0) matrix(1,0,0,1,0,0) translate(-6,0)"><g><rect fill="rgb(0,0,0)" stroke="none" x="0" y="0" width="43" height="14" fill-opacity="0"/></g></g><g transform="translate(6,0) matrix(1,0,0,1,0,0) translate(-6,0)"><g><rect fill="rgb(0,0,0)" stroke="none" x="3" y="0" width="37" height="14" fill-opacity="0"/></g></g><g transform="translate(6,0) matrix(1,0,0,1,0,0) translate(-6,0)"><g><rect fill="rgb(0,0,0)" stroke="none" x="3" y="0" width="37" height="14" fill-opacity="0"/></g><text fill="rgb(0, 0, 0)" stroke="none" font-family="Arial" font-size="12px" font-style="normal" font-weight="normal" text-decoration="" line-height="14px" x="3" y="12">Library</text></g></g><g transform="translate(0,0) matrix(1,0,0,1,290,80)"><g><g transform="translate(0,0) scale(0.6,0.4)"><g><path fill="#FFFFFF" stroke="none" d="M 0 0 L 100 0 Q 100 0 100 0 L 100 100 Q 100 100 100 100 L 0 100 Q 0 100 0 100 L 0 0 Q 0 0 0 0 Z"/><g transform="scale(1.6666666666666667,2.5)"><path fill="none" stroke="none" d="M 0 0 L 60 0 Q 60 0 60 0 L 60 40 Q 60 40 60 40 L 0 40 Q 0 40 0 40 L 0 0 Q 0 0 0 0 Z"/><path fill="none" stroke="#333333" d="M 0 0 M 0 0 L 60 0 Q 60 0 60 0 L 60 40 Q 60 40 60 40 L 0 40 Q 0 40 0 40 L 0 0 Q 0 0 0 0 Z" stroke-miterlimit="10" stroke-width="2"/></g></g></g></g></g><g transform="matrix(1,0,0,1,299,93)"><g transform="translate(2,0) matrix(1,0,0,1,0,0) translate(-2,0)"><g><rect fill="rgb(0,0,0)" stroke="none" x="0" y="0" width="43" height="14" fill-opacity="0"/></g></g><g transform="translate(2,0) matrix(1,0,0,1,0,0) translate(-2,0)"><g><rect fill="rgb(0,0,0)" stroke="none" x="0" y="0" width="43" height="14" fill-opacity="0"/></g></g><g transform="translate(2,0) matrix(1,0,0,1,0,0) translate(-2,0)"><g><rect fill="rgb(0,0,0)" stroke="none" x="1" y="0" width="40" height="14" fill-opacity="0"/></g></g><g transform="translate(2,0) matrix(1,0,0,1,0,0) translate(-2,0)"><g><rect fill="rgb(0,0,0)" stroke="none" x="1" y="0" width="40" height="14" fill-opacity="0"/></g><text fill="rgb(0, 0, 0)" stroke="none" font-family="Arial" font-size="12px" font-style="normal" font-weight="normal" text-decoration="" line-height="14px" x="1" y="12">Dilution</text></g></g><g transform="translate(0,0) matrix(1,0,0,1,380,80)"><g><g transform="translate(0,0) scale(0.6,0.4)"><g><path fill="#FFFFFF" stroke="none" d="M 0 0 L 100 0 Q 100 0 100 0 L 100 100 Q 100 100 100 100 L 0 100 Q 0 100 0 100 L 0 0 Q 0 0 0 0 Z"/><g transform="scale(1.6666666666666667,2.5)"><path fill="none" stroke="none" d="M 0 0 L 60 0 Q 60 0 60 0 L 60 40 Q 60 40 60 40 L 0 40 Q 0 40 0 40 L 0 0 Q 0 0 0 0 Z"/><path fill="none" stroke="#333333" d="M 0 0 M 0 0 L 60 0 Q 60 0 60 0 L 60 40 Q 60 40 60 40 L 0 40 Q 0 40 0 40 L 0 0 Q 0 0 0 0 Z" stroke-miterlimit="10" stroke-width="2"/></g></g></g></g></g><g transform="matrix(1,0,0,1,389,93)"><g transform="translate(18,0) matrix(1,0,0,1,0,0) translate(-18,0)"><g><rect fill="rgb(0,0,0)" stroke="none" x="0" y="0" width="43" height="14" fill-opacity="0"/></g></g><g transform="translate(18,0) matrix(1,0,0,1,0,0) translate(-18,0)"><g><rect fill="rgb(0,0,0)" stroke="none" x="0" y="0" width="43" height="14" fill-opacity="0"/></g></g><g transform="translate(18,0) matrix(1,0,0,1,0,0) translate(-18,0)"><g><rect fill="rgb(0,0,0)" stroke="none" x="9" y="0" width="24" height="14" fill-opacity="0"/></g></g><g transform="translate(18,0) matrix(1,0,0,1,0,0) translate(-18,0)"><g><rect fill="rgb(0,0,0)" stroke="none" x="9" y="0" width="24" height="14" fill-opacity="0"/></g><text fill="rgb(0, 0, 0)" stroke="none" font-family="Arial" font-size="12px" font-style="normal" font-weight="normal" text-decoration="" line-height="14px" x="9" y="12">Pool</text></g></g><g transform="translate(0,0) matrix(1,0,0,1,470,80)"><g><g transform="translate(0,0) scale(0.8100000000000002,0.4)"><g><path fill="#FFFFFF" stroke="none" d="M 0 0 L 100 0 Q 100 0 100 0 L 100 100 Q 100 100 100 100 L 0 100 Q 0 100 0 100 L 0 0 Q 0 0 0 0 Z"/><g transform="scale(1.2345679012345676,2.5)"><path fill="none" stroke="none" d="M 0 0 L 81.00000000000001 0 Q 81.00000000000001 0 81.00000000000001 0 L 81.00000000000001 40 Q 81.00000000000001 40 81.00000000000001 40 L 0 40 Q 0 40 0 40 L 0 0 Q 0 0 0 0 Z"/><path fill="none" stroke="#333333" d="M 0 0 M 0 0 L 81.00000000000001 0 Q 81.00000000000001 0 81.00000000000001 0 L 81.00000000000001 40 Q 81.00000000000001 40 81.00000000000001 40 L 0 40 Q 0 40 0 40 L 0 0 Q 0 0 0 0 Z" stroke-miterlimit="10" stroke-width="2"/></g></g></g></g></g><g transform="matrix(1,0,0,1,480,93)"><g transform="translate(10,0) matrix(1,0,0,1,0,0) translate(-10,0)"><g><rect fill="rgb(0,0,0)" stroke="none" x="0" y="0" width="63" height="14" fill-opacity="0"/></g></g><g transform="translate(10,0) matrix(1,0,0,1,0,0) translate(-10,0)"><g><rect fill="rgb(0,0,0)" stroke="none" x="0" y="0" width="63" height="14" fill-opacity="0"/></g></g><g transform="translate(10,0) matrix(1,0,0,1,0,0) translate(-10,0)"><g><rect fill="rgb(0,0,0)" stroke="none" x="5" y="0" width="52" height="14" fill-opacity="0"/></g></g><g transform="translate(10,0) matrix(1,0,0,1,0,0) translate(-10,0)"><g><rect fill="rgb(0,0,0)" stroke="none" x="5" y="0" width="52" height="14" fill-opacity="0"/></g><text fill="rgb(0, 0, 0)" stroke="none" font-family="Arial" font-size="12px" font-style="normal" font-weight="normal" text-decoration="" line-height="14px" x="5" y="12">Container</text></g></g><g transform="translate(0,0) matrix(1,0,0,1,150,140)"><g><g transform="translate(0,0) scale(0.5,0.4)"><g><path fill="#FFFFFF" stroke="none" d="M 0 0 L 100 0 Q 100 0 100 0 L 100 100 Q 100 100 100 100 L 0 100 Q 0 100 0 100 L 0 0 Q 0 0 0 0 Z"/><g transform="scale(2,2.5)"><path fill="none" stroke="none" d="M 0 0 L 50 0 Q 50 0 50 0 L 50 40 Q 50 40 50 40 L 0 40 Q 0 40 0 40 L 0 0 Q 0 0 0 0 Z"/><path fill="none" stroke="#333333" d="M 0 0 M 0 0 L 50 0 Q 50 0 50 0 L 50 40 Q 50 40 50 40 L 0 40 Q 0 40 0 40 L 0 0 Q 0 0 0 0 Z" stroke-miterlimit="10" stroke-width="2"/></g></g></g></g></g><g transform="matrix(1,0,0,1,159,153)"><g transform="translate(20,0) matrix(1,0,0,1,0,0) translate(-20,0)"><g><rect fill="rgb(0,0,0)" stroke="none" x="0" y="0" width="33" height="14" fill-opacity="0"/></g></g><g transform="translate(20,0) matrix(1,0,0,1,0,0) translate(-20,0)"><g><rect fill="rgb(0,0,0)" stroke="none" x="0" y="0" width="33" height="14" fill-opacity="0"/></g></g><g transform="translate(20,0) matrix(1,0,0,1,0,0) translate(-20,0)"><g><rect fill="rgb(0,0,0)" stroke="none" x="10" y="0" width="14" height="14" fill-opacity="0"/></g></g><g transform="translate(20,0) matrix(1,0,0,1,0,0) translate(-20,0)"><g><rect fill="rgb(0,0,0)" stroke="none" x="10" y="0" width="14" height="14" fill-opacity="0"/></g><text fill="rgb(0, 0, 0)" stroke="none" font-family="Arial" font-size="12px" font-style="normal" font-weight="normal" text-decoration="" line-height="14px" x="10" y="12">Kit</text></g></g><g transform="matrix(1,0,0,1,145.5,70)"><image width="84" height="60" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAAA8CAYAAAD4zJ32AAABRElEQVR4Xu3WwQ0BURhF4asCOqIkHVACFVICHcifjI1ILJx475czGwvJTXzOm5lVvFCBFbrmWASFIxBUUFgAnrNQQWEBeM5CBYUF4DkLFRQWgOcsVFBYAJ6zUEFhAXjOQgWFBeA5CxUUFoDnLFRQWACes1BBYQF4zkIFhQXguY6F7pOsk5yT3GCPr+e6gW6SXJLUZ2GeZoPtBloF7ZIck2yXnKaC7Qj6PJZTwr4DrX//8PXNZNzA0GL/EfS+3Fvr/vrzh1b3I18nqY5+XUMhnweyI2gBTgfZFbRel67Le+gURb4+KjoWWi/2BTvkHvnpWdsR9NNvGvq9oDC/oILCAvCchQoKC8BzFiooLADPWaigsAA8Z6GCwgLwnIUKCgvAcxYqKCwAz1mooLAAPGehgsIC8JyFCgoLwHMWKigsAM9ZKAz6AK/eJD2JUwcWAAAAAElFTkSuQmCC" transform="translate(0,0)"/></g><g transform="matrix(1,0,0,1,170,70)"><image width="60" height="74" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAABKCAYAAADnhzeuAAADIklEQVR4Xu3aTehVRRjH8Y+2MCSSFkIgmujCoBZhmS6UJHIhIkqhQW0UE8MIBRfiwpd2QWAShSCKii+ImG+0CFqYbnKhYIQSFZgYoRBkCaGYIg/MhT917v2/HTj3P2ceuJt7uWfmO7/fzDPzzBmnZTGuZbwKcO6KF4WLwpmNQLF0ZoL+D6coXBTObASKpTMTtCxaxdLF0pmNQLF0ZoKWVbpYulg6sxEols5M0LJK123pXZiEb3Eev/abY+oGvpOAO5xXEvzpNACN89cNPB3LsRDLKuhu4WOcaUr9uoGDcRpWYgVe7SLpahxoQu46gddiHV4eAPILvsNbmIhQeDHC6o1EHcDP4BCWJIJ/cRa7MR/b0/dh41WIed5YjBZ4AY7j2UTwCWKl/gf703yOnz7CjsYoBzQ8UuDx2Jo+T+BmmrcX8RJOIRawvxJ0pKm+iJECf4YPE0GknLBqwEWEwhvwfYLtq1w8EuA38WWCO4p3K6TbmMD7QtWBnRgu8PO4nFbc2EktwoO+o+rRoeEAP5XSyUz8jFfw91iCjb4OB7gzN//E7KZ2SqMd4KECR9q5kQbotbSZGG3bjfx/qMCf4wPsxKZGelpTo0MB7qgbufc5/F5T2408ZijAsUV8HwdTvm2ko3U1OhjwVFxHqBsp6ae6Gm7qOYMBb0v74K+wtKlO1tnuYMCxN56bzrYn6my4qWf1Ao7aVOTcR3g6nYCa6mdt7fYCjj3yYVxA5N4sohfwEbyDLakOlTVwDETYOWwd59s46mUR3RSel7aPf2ByFqQJohtwnGc/xT681wbgL7A+VSH3tAH4G7yB13GuDcBxFIyCenyiQJdNVM3hCbiH+3gyG9Iei9aL+AHX8EIbgDtVybg9qLoQG9NjUGXpzWlnNearG1XKVAF3inWRluLwn1VUAe/FmnTjdzIr2i5l2mN4O11rft0G4KhuxNVnHAnjaJhVVFk6bvoCdg4uZUXbxdIBGbf4kY+vtgH4R8zCjFSxzIq5ytK/YUq61b+dFW0XS3fetYrC3d02AD9Mhfd4lSEqllnFYHXprGADpgBnJ+l/gFqn8GNBZ3JLroQ3lQAAAABJRU5ErkJggg==" transform="translate(0,0)"/></g><g transform="matrix(1,0,0,1,255.5,70)"><image width="64" height="60" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAA8CAYAAADWibxkAAABGElEQVRoQ+2WwQ3CQAwENxVAR1ASHUAJUCGUAB0gS+GDkHjFu5InnzzysG8868ui4c8y/PwCAAYMJ0AEhgvAEiQCRGA4ASIwXABuASJABIYTIALDBeAWIAJEYDgBIjBcgJZb4CRpJ+km6ZkGfOsI7CXdJdW7Dn9NA7E1gBr4UdJF0mGdfhSIDgAf6yNB/AJQ0zo3ZtVqRAKA17obaj+0L8nuCJRZFYV6rAf/GN4BoA4cd/AuAHX9Pdb/gIiJf++2DgPqR6hAWDL+b5l3APjXg/U7AKz4A4pjQMAQrC1ggBV/QHEMCBiCtQUMsOIPKI4BAUOwtoABVvwBxTEgYAjWFjDAij+gOAYEDMHaAgZY8QcUx4CAIVhbeAPOPSQ9oqxtewAAAABJRU5ErkJggg==" transform="translate(0,0)"/></g><g transform="matrix(1,0,0,1,345.5,70)"><image width="64" height="60" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAA8CAYAAADWibxkAAABGElEQVRoQ+2WwQ3CQAwENxVAR1ASHUAJUCGUAB0gS+GDkHjFu5InnzzysG8868ui4c8y/PwCAAYMJ0AEhgvAEiQCRGA4ASIwXABuASJABIYTIALDBeAWIAJEYDgBIjBcgJZb4CRpJ+km6ZkGfOsI7CXdJdW7Dn9NA7E1gBr4UdJF0mGdfhSIDgAf6yNB/AJQ0zo3ZtVqRAKA17obaj+0L8nuCJRZFYV6rAf/GN4BoA4cd/AuAHX9Pdb/gIiJf++2DgPqR6hAWDL+b5l3APjXg/U7AKz4A4pjQMAQrC1ggBV/QHEMCBiCtQUMsOIPKI4BAUOwtoABVvwBxTEgYAjWFjDAij+gOAYEDMHaAgZY8QcUx4CAIVhbeAPOPSQ9oqxtewAAAABJRU5ErkJggg==" transform="translate(0,0)"/></g><g transform="matrix(1,0,0,1,435.5,70)"><image width="64" height="60" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAA8CAYAAADWibxkAAABGElEQVRoQ+2WwQ3CQAwENxVAR1ASHUAJUCGUAB0gS+GDkHjFu5InnzzysG8868ui4c8y/PwCAAYMJ0AEhgvAEiQCRGA4ASIwXABuASJABIYTIALDBeAWIAJEYDgBIjBcgJZb4CRpJ+km6ZkGfOsI7CXdJdW7Dn9NA7E1gBr4UdJF0mGdfhSIDgAf6yNB/AJQ0zo3ZtVqRAKA17obaj+0L8nuCJRZFYV6rAf/GN4BoA4cd/AuAHX9Pdb/gIiJf++2DgPqR6hAWDL+b5l3APjXg/U7AKz4A4pjQMAQrC1ggBV/QHEMCBiCtQUMsOIPKI4BAUOwtoABVvwBxTEgYAjWFjDAij+gOAYEDMHaAgZY8QcUx4CAIVhbeAPOPSQ9oqxtewAAAABJRU5ErkJggg==" transform="translate(0,0)"/></g></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:xhtml="http://www.w3.org/1999/xhtml"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="577.38"
+   height="200"
+   id="svg294"
+   sodipodi:docname="plain-flow-aliquot.svg"
+   inkscape:version="0.92.4 (unknown)">
+  <metadata
+     id="metadata298">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2495"
+     inkscape:window-height="1416"
+     id="namedview296"
+     showgrid="false"
+     inkscape:zoom="2.029859"
+     inkscape:cx="142.66618"
+     inkscape:cy="288.83509"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g292" />
+  <xhtml:style />
+  <defs
+     id="defs2" />
+  <g
+     transform="translate(0,0)"
+     id="g292">
+    <g
+       id="g6"
+       transform="translate(4.7898491,0.2612645)">
+      <rect
+         x="0"
+         y="0"
+         width="577.38"
+         height="200"
+         id="rect4"
+         style="fill:#ffffff;stroke:none" />
+    </g>
+    <g
+       transform="translate(0,0) matrix(1,0,0,1,80,80)"
+       id="g22">
+      <g
+         id="g20">
+        <g
+           transform="translate(0,0) scale(0.7,0.4)"
+           id="g18">
+          <g
+             id="g16">
+            <path
+               fill="#9fc5e8"
+               stroke="none"
+               d="M 0 0 L 100 0 Q 100 0 100 0 L 100 100 Q 100 100 100 100 L 0 100 Q 0 100 0 100 L 0 0 Q 0 0 0 0 Z"
+               id="path8" />
+            <g
+               transform="scale(1.4285714285714286,2.5)"
+               id="g14">
+              <path
+                 fill="none"
+                 stroke="none"
+                 d="M 0 0 L 70 0 Q 70 0 70 0 L 70 40 Q 70 40 70 40 L 0 40 Q 0 40 0 40 L 0 0 Q 0 0 0 0 Z"
+                 id="path10" />
+              <path
+                 fill="none"
+                 stroke="#333333"
+                 d="M 0 0 M 0 0 L 70 0 Q 70 0 70 0 L 70 40 Q 70 40 70 40 L 0 40 Q 0 40 0 40 L 0 0 Q 0 0 0 0 Z"
+                 stroke-miterlimit="10"
+                 stroke-width="2"
+                 id="path12" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="matrix(1,0,0,1,89,93)"
+       id="g50">
+      <g
+         transform="translate(12,0) matrix(1,0,0,1,0,0) translate(-12,0)"
+         id="g28">
+        <g
+           id="g26">
+          <rect
+             fill="rgb(0,0,0)"
+             stroke="none"
+             x="0"
+             y="0"
+             width="52"
+             height="14"
+             fill-opacity="0"
+             id="rect24" />
+        </g>
+      </g>
+      <g
+         transform="translate(12,0) matrix(1,0,0,1,0,0) translate(-12,0)"
+         id="g34">
+        <g
+           id="g32">
+          <rect
+             fill="rgb(0,0,0)"
+             stroke="none"
+             x="0"
+             y="0"
+             width="52"
+             height="14"
+             fill-opacity="0"
+             id="rect30" />
+        </g>
+      </g>
+      <g
+         transform="translate(12,0) matrix(1,0,0,1,0,0) translate(-12,0)"
+         id="g40">
+        <g
+           id="g38">
+          <rect
+             fill="rgb(0,0,0)"
+             stroke="none"
+             x="6"
+             y="0"
+             width="40"
+             height="14"
+             fill-opacity="0"
+             id="rect36" />
+        </g>
+      </g>
+      <g
+         transform="translate(12,0) matrix(1,0,0,1,0,0) translate(-12,0)"
+         id="g48">
+        <g
+           id="g44">
+          <rect
+             fill="rgb(0,0,0)"
+             stroke="none"
+             x="6"
+             y="0"
+             width="40"
+             height="14"
+             fill-opacity="0"
+             id="rect42" />
+        </g>
+        <text
+           fill="rgb(0, 0, 0)"
+           stroke="none"
+           font-family="Arial"
+           font-size="12px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration=""
+           line-height="14px"
+           x="6"
+           y="12"
+           id="text46">Sample</text>
+      </g>
+    </g>
+    <g
+       transform="translate(0,0) matrix(1,0,0,1,200,80)"
+       id="g66">
+      <g
+         id="g64">
+        <g
+           transform="translate(0,0) scale(0.6,0.4)"
+           id="g62">
+          <g
+             id="g60">
+            <path
+               fill="#FFFFFF"
+               stroke="none"
+               d="M 0 0 L 100 0 Q 100 0 100 0 L 100 100 Q 100 100 100 100 L 0 100 Q 0 100 0 100 L 0 0 Q 0 0 0 0 Z"
+               id="path52" />
+            <g
+               transform="scale(1.6666666666666667,2.5)"
+               id="g58">
+              <path
+                 fill="none"
+                 stroke="none"
+                 d="M 0 0 L 60 0 Q 60 0 60 0 L 60 40 Q 60 40 60 40 L 0 40 Q 0 40 0 40 L 0 0 Q 0 0 0 0 Z"
+                 id="path54" />
+              <path
+                 fill="none"
+                 stroke="#333333"
+                 d="M 0 0 M 0 0 L 60 0 Q 60 0 60 0 L 60 40 Q 60 40 60 40 L 0 40 Q 0 40 0 40 L 0 0 Q 0 0 0 0 Z"
+                 stroke-miterlimit="10"
+                 stroke-width="2"
+                 id="path56" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="matrix(1,0,0,1,209,93)"
+       id="g94">
+      <g
+         transform="translate(6,0) matrix(1,0,0,1,0,0) translate(-6,0)"
+         id="g72">
+        <g
+           id="g70">
+          <rect
+             fill="rgb(0,0,0)"
+             stroke="none"
+             x="0"
+             y="0"
+             width="43"
+             height="14"
+             fill-opacity="0"
+             id="rect68" />
+        </g>
+      </g>
+      <g
+         transform="translate(6,0) matrix(1,0,0,1,0,0) translate(-6,0)"
+         id="g78">
+        <g
+           id="g76">
+          <rect
+             fill="rgb(0,0,0)"
+             stroke="none"
+             x="0"
+             y="0"
+             width="43"
+             height="14"
+             fill-opacity="0"
+             id="rect74" />
+        </g>
+      </g>
+      <g
+         transform="translate(6,0) matrix(1,0,0,1,0,0) translate(-6,0)"
+         id="g84">
+        <g
+           id="g82">
+          <rect
+             fill="rgb(0,0,0)"
+             stroke="none"
+             x="3"
+             y="0"
+             width="37"
+             height="14"
+             fill-opacity="0"
+             id="rect80" />
+        </g>
+      </g>
+      <g
+         transform="translate(6,0) matrix(1,0,0,1,0,0) translate(-6,0)"
+         id="g92">
+        <g
+           id="g88">
+          <rect
+             fill="rgb(0,0,0)"
+             stroke="none"
+             x="3"
+             y="0"
+             width="37"
+             height="14"
+             fill-opacity="0"
+             id="rect86" />
+        </g>
+        <text
+           fill="rgb(0, 0, 0)"
+           stroke="none"
+           font-family="Arial"
+           font-size="12px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration=""
+           line-height="14px"
+           x="3"
+           y="12"
+           id="text90">Library</text>
+      </g>
+    </g>
+    <g
+       transform="translate(288.43242,104.90722)"
+       id="g110">
+      <g
+         id="g108">
+        <g
+           transform="scale(0.6,0.4)"
+           id="g106">
+          <g
+             id="g104"
+             transform="translate(2.9029389,-61.832598)">
+            <path
+               d="m 0,0 h 100 q 0,0 0,0 v 100 q 0,0 0,0 H 0 q 0,0 0,0 V 0 q 0,0 0,0 z"
+               id="path96"
+               inkscape:connector-curvature="0"
+               style="fill:#ffffff;stroke:none" />
+            <g
+               transform="scale(1.6666667,2.5)"
+               id="g102">
+              <path
+                 d="m 0,0 h 60 q 0,0 0,0 v 40 q 0,0 0,0 H 0 q 0,0 0,0 V 0 q 0,0 0,0 z"
+                 id="path98"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:none" />
+              <path
+                 d="m 0,0 m 0,0 h 60 q 0,0 0,0 v 40 q 0,0 0,0 H 0 q 0,0 0,0 V 0 q 0,0 0,0 z"
+                 stroke-miterlimit="10"
+                 id="path100"
+                 inkscape:connector-curvature="0"
+                 style="fill:none;stroke:#333333;stroke-width:2;stroke-miterlimit:10" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(301.75437,94.246554)"
+       id="g138">
+      <g
+         id="g116">
+        <g
+           id="g114">
+          <rect
+             x="0"
+             y="0"
+             width="43"
+             height="14"
+             id="rect112"
+             style="fill:#000000;fill-opacity:0;stroke:none" />
+        </g>
+      </g>
+      <g
+         id="g122">
+        <g
+           id="g120">
+          <rect
+             x="0"
+             y="0"
+             width="43"
+             height="14"
+             id="rect118"
+             style="fill:#000000;fill-opacity:0;stroke:none" />
+        </g>
+      </g>
+      <g
+         id="g128">
+        <g
+           id="g126">
+          <rect
+             x="1"
+             y="0"
+             width="40"
+             height="14"
+             id="rect124"
+             style="fill:#000000;fill-opacity:0;stroke:none" />
+        </g>
+      </g>
+      <g
+         transform="translate(-0.08708817,-9.9068562)"
+         id="g136">
+        <g
+           id="g132">
+          <rect
+             x="1"
+             y="0"
+             width="40"
+             height="14"
+             id="rect130"
+             style="fill:#000000;fill-opacity:0;stroke:none" />
+        </g>
+        <text
+           font-size="12px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration=""
+           line-height="14px"
+           x="1"
+           y="12"
+           id="text134"
+           style="font-style:normal;font-weight:normal;font-size:12px;line-height:14px;font-family:Arial;fill:#000000;stroke:none">Library</text>
+      </g>
+      <g
+         transform="translate(-1.6927535,4.567519)"
+         id="g136-3">
+        <g
+           id="g132-6">
+          <rect
+             x="1"
+             y="0"
+             width="40"
+             height="14"
+             id="rect130-7"
+             style="fill:#000000;fill-opacity:0;stroke:none" />
+        </g>
+        <text
+           font-size="12px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration=""
+           line-height="14px"
+           x="1"
+           y="12"
+           id="text134-5"
+           style="font-style:normal;font-weight:normal;font-size:12px;line-height:14px;font-family:Arial;fill:#000000;stroke:none">Aliquot</text>
+      </g>
+    </g>
+    <g
+       transform="translate(0,0) matrix(1,0,0,1,380,80)"
+       id="g154">
+      <g
+         id="g152">
+        <g
+           transform="translate(0,0) scale(0.6,0.4)"
+           id="g150">
+          <g
+             id="g148">
+            <path
+               fill="#FFFFFF"
+               stroke="none"
+               d="M 0 0 L 100 0 Q 100 0 100 0 L 100 100 Q 100 100 100 100 L 0 100 Q 0 100 0 100 L 0 0 Q 0 0 0 0 Z"
+               id="path140" />
+            <g
+               transform="scale(1.6666666666666667,2.5)"
+               id="g146">
+              <path
+                 fill="none"
+                 stroke="none"
+                 d="M 0 0 L 60 0 Q 60 0 60 0 L 60 40 Q 60 40 60 40 L 0 40 Q 0 40 0 40 L 0 0 Q 0 0 0 0 Z"
+                 id="path142" />
+              <path
+                 fill="none"
+                 stroke="#333333"
+                 d="M 0 0 M 0 0 L 60 0 Q 60 0 60 0 L 60 40 Q 60 40 60 40 L 0 40 Q 0 40 0 40 L 0 0 Q 0 0 0 0 Z"
+                 stroke-miterlimit="10"
+                 stroke-width="2"
+                 id="path144" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="matrix(1,0,0,1,389,93)"
+       id="g182">
+      <g
+         transform="translate(18,0) matrix(1,0,0,1,0,0) translate(-18,0)"
+         id="g160">
+        <g
+           id="g158">
+          <rect
+             fill="rgb(0,0,0)"
+             stroke="none"
+             x="0"
+             y="0"
+             width="43"
+             height="14"
+             fill-opacity="0"
+             id="rect156" />
+        </g>
+      </g>
+      <g
+         transform="translate(18,0) matrix(1,0,0,1,0,0) translate(-18,0)"
+         id="g166">
+        <g
+           id="g164">
+          <rect
+             fill="rgb(0,0,0)"
+             stroke="none"
+             x="0"
+             y="0"
+             width="43"
+             height="14"
+             fill-opacity="0"
+             id="rect162" />
+        </g>
+      </g>
+      <g
+         transform="translate(18,0) matrix(1,0,0,1,0,0) translate(-18,0)"
+         id="g172">
+        <g
+           id="g170">
+          <rect
+             fill="rgb(0,0,0)"
+             stroke="none"
+             x="9"
+             y="0"
+             width="24"
+             height="14"
+             fill-opacity="0"
+             id="rect168" />
+        </g>
+      </g>
+      <g
+         transform="translate(18,0) matrix(1,0,0,1,0,0) translate(-18,0)"
+         id="g180">
+        <g
+           id="g176">
+          <rect
+             fill="rgb(0,0,0)"
+             stroke="none"
+             x="9"
+             y="0"
+             width="24"
+             height="14"
+             fill-opacity="0"
+             id="rect174" />
+        </g>
+        <text
+           fill="rgb(0, 0, 0)"
+           stroke="none"
+           font-family="Arial"
+           font-size="12px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration=""
+           line-height="14px"
+           x="9"
+           y="12"
+           id="text178">Pool</text>
+      </g>
+    </g>
+    <g
+       transform="translate(0,0) matrix(1,0,0,1,470,80)"
+       id="g198">
+      <g
+         id="g196">
+        <g
+           transform="translate(0,0) scale(0.8100000000000002,0.4)"
+           id="g194">
+          <g
+             id="g192">
+            <path
+               fill="#FFFFFF"
+               stroke="none"
+               d="M 0 0 L 100 0 Q 100 0 100 0 L 100 100 Q 100 100 100 100 L 0 100 Q 0 100 0 100 L 0 0 Q 0 0 0 0 Z"
+               id="path184" />
+            <g
+               transform="scale(1.2345679012345676,2.5)"
+               id="g190">
+              <path
+                 fill="none"
+                 stroke="none"
+                 d="M 0 0 L 81.00000000000001 0 Q 81.00000000000001 0 81.00000000000001 0 L 81.00000000000001 40 Q 81.00000000000001 40 81.00000000000001 40 L 0 40 Q 0 40 0 40 L 0 0 Q 0 0 0 0 Z"
+                 id="path186" />
+              <path
+                 fill="none"
+                 stroke="#333333"
+                 d="M 0 0 M 0 0 L 81.00000000000001 0 Q 81.00000000000001 0 81.00000000000001 0 L 81.00000000000001 40 Q 81.00000000000001 40 81.00000000000001 40 L 0 40 Q 0 40 0 40 L 0 0 Q 0 0 0 0 Z"
+                 stroke-miterlimit="10"
+                 stroke-width="2"
+                 id="path188" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="matrix(1,0,0,1,480,93)"
+       id="g226">
+      <g
+         transform="translate(10,0) matrix(1,0,0,1,0,0) translate(-10,0)"
+         id="g204">
+        <g
+           id="g202">
+          <rect
+             fill="rgb(0,0,0)"
+             stroke="none"
+             x="0"
+             y="0"
+             width="63"
+             height="14"
+             fill-opacity="0"
+             id="rect200" />
+        </g>
+      </g>
+      <g
+         transform="translate(10,0) matrix(1,0,0,1,0,0) translate(-10,0)"
+         id="g210">
+        <g
+           id="g208">
+          <rect
+             fill="rgb(0,0,0)"
+             stroke="none"
+             x="0"
+             y="0"
+             width="63"
+             height="14"
+             fill-opacity="0"
+             id="rect206" />
+        </g>
+      </g>
+      <g
+         transform="translate(10,0) matrix(1,0,0,1,0,0) translate(-10,0)"
+         id="g216">
+        <g
+           id="g214">
+          <rect
+             fill="rgb(0,0,0)"
+             stroke="none"
+             x="5"
+             y="0"
+             width="52"
+             height="14"
+             fill-opacity="0"
+             id="rect212" />
+        </g>
+      </g>
+      <g
+         transform="translate(10,0) matrix(1,0,0,1,0,0) translate(-10,0)"
+         id="g224">
+        <g
+           id="g220">
+          <rect
+             fill="rgb(0,0,0)"
+             stroke="none"
+             x="5"
+             y="0"
+             width="52"
+             height="14"
+             fill-opacity="0"
+             id="rect218" />
+        </g>
+        <text
+           fill="rgb(0, 0, 0)"
+           stroke="none"
+           font-family="Arial"
+           font-size="12px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration=""
+           line-height="14px"
+           x="5"
+           y="12"
+           id="text222">Container</text>
+      </g>
+    </g>
+    <g
+       transform="translate(0,0) matrix(1,0,0,1,150,140)"
+       id="g242">
+      <g
+         id="g240">
+        <g
+           transform="translate(0,0) scale(0.5,0.4)"
+           id="g238">
+          <g
+             id="g236">
+            <path
+               fill="#FFFFFF"
+               stroke="none"
+               d="M 0 0 L 100 0 Q 100 0 100 0 L 100 100 Q 100 100 100 100 L 0 100 Q 0 100 0 100 L 0 0 Q 0 0 0 0 Z"
+               id="path228" />
+            <g
+               transform="scale(2,2.5)"
+               id="g234">
+              <path
+                 fill="none"
+                 stroke="none"
+                 d="M 0 0 L 50 0 Q 50 0 50 0 L 50 40 Q 50 40 50 40 L 0 40 Q 0 40 0 40 L 0 0 Q 0 0 0 0 Z"
+                 id="path230" />
+              <path
+                 fill="none"
+                 stroke="#333333"
+                 d="M 0 0 M 0 0 L 50 0 Q 50 0 50 0 L 50 40 Q 50 40 50 40 L 0 40 Q 0 40 0 40 L 0 0 Q 0 0 0 0 Z"
+                 stroke-miterlimit="10"
+                 stroke-width="2"
+                 id="path232" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="matrix(1,0,0,1,159,153)"
+       id="g270">
+      <g
+         transform="translate(20,0) matrix(1,0,0,1,0,0) translate(-20,0)"
+         id="g248">
+        <g
+           id="g246">
+          <rect
+             fill="rgb(0,0,0)"
+             stroke="none"
+             x="0"
+             y="0"
+             width="33"
+             height="14"
+             fill-opacity="0"
+             id="rect244" />
+        </g>
+      </g>
+      <g
+         transform="translate(20,0) matrix(1,0,0,1,0,0) translate(-20,0)"
+         id="g254">
+        <g
+           id="g252">
+          <rect
+             fill="rgb(0,0,0)"
+             stroke="none"
+             x="0"
+             y="0"
+             width="33"
+             height="14"
+             fill-opacity="0"
+             id="rect250" />
+        </g>
+      </g>
+      <g
+         transform="translate(20,0) matrix(1,0,0,1,0,0) translate(-20,0)"
+         id="g260">
+        <g
+           id="g258">
+          <rect
+             fill="rgb(0,0,0)"
+             stroke="none"
+             x="10"
+             y="0"
+             width="14"
+             height="14"
+             fill-opacity="0"
+             id="rect256" />
+        </g>
+      </g>
+      <g
+         transform="translate(20,0) matrix(1,0,0,1,0,0) translate(-20,0)"
+         id="g268">
+        <g
+           id="g264">
+          <rect
+             fill="rgb(0,0,0)"
+             stroke="none"
+             x="10"
+             y="0"
+             width="14"
+             height="14"
+             fill-opacity="0"
+             id="rect262" />
+        </g>
+        <text
+           fill="rgb(0, 0, 0)"
+           stroke="none"
+           font-family="Arial"
+           font-size="12px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration=""
+           line-height="14px"
+           x="10"
+           y="12"
+           id="text266">Kit</text>
+      </g>
+    </g>
+    <g
+       transform="matrix(1,0,0,1,145.5,70)"
+       id="g274">
+      <image
+         width="84"
+         height="60"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAAA8CAYAAAD4zJ32AAABRElEQVR4Xu3WwQ0BURhF4asCOqIkHVACFVICHcifjI1ILJx475czGwvJTXzOm5lVvFCBFbrmWASFIxBUUFgAnrNQQWEBeM5CBYUF4DkLFRQWgOcsVFBYAJ6zUEFhAXjOQgWFBeA5CxUUFoDnLFRQWACes1BBYQF4zkIFhQXguY6F7pOsk5yT3GCPr+e6gW6SXJLUZ2GeZoPtBloF7ZIck2yXnKaC7Qj6PJZTwr4DrX//8PXNZNzA0GL/EfS+3Fvr/vrzh1b3I18nqY5+XUMhnweyI2gBTgfZFbRel67Le+gURb4+KjoWWi/2BTvkHvnpWdsR9NNvGvq9oDC/oILCAvCchQoKC8BzFiooLADPWaigsAA8Z6GCwgLwnIUKCgvAcxYqKCwAz1mooLAAPGehgsIC8JyFCgoLwHMWKigsAM9ZKAz6AK/eJD2JUwcWAAAAAElFTkSuQmCC"
+         transform="translate(0,0)"
+         id="image272" />
+    </g>
+    <g
+       transform="matrix(1,0,0,1,170,70)"
+       id="g278">
+      <image
+         width="60"
+         height="74"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAABKCAYAAADnhzeuAAADIklEQVR4Xu3aTehVRRjH8Y+2MCSSFkIgmujCoBZhmS6UJHIhIkqhQW0UE8MIBRfiwpd2QWAShSCKii+ImG+0CFqYbnKhYIQSFZgYoRBkCaGYIg/MhT917v2/HTj3P2ceuJt7uWfmO7/fzDPzzBmnZTGuZbwKcO6KF4WLwpmNQLF0ZoL+D6coXBTObASKpTMTtCxaxdLF0pmNQLF0ZoKWVbpYulg6sxEols5M0LJK123pXZiEb3Eev/abY+oGvpOAO5xXEvzpNACN89cNPB3LsRDLKuhu4WOcaUr9uoGDcRpWYgVe7SLpahxoQu46gddiHV4eAPILvsNbmIhQeDHC6o1EHcDP4BCWJIJ/cRa7MR/b0/dh41WIed5YjBZ4AY7j2UTwCWKl/gf703yOnz7CjsYoBzQ8UuDx2Jo+T+BmmrcX8RJOIRawvxJ0pKm+iJECf4YPE0GknLBqwEWEwhvwfYLtq1w8EuA38WWCO4p3K6TbmMD7QtWBnRgu8PO4nFbc2EktwoO+o+rRoeEAP5XSyUz8jFfw91iCjb4OB7gzN//E7KZ2SqMd4KECR9q5kQbotbSZGG3bjfx/qMCf4wPsxKZGelpTo0MB7qgbufc5/F5T2408ZijAsUV8HwdTvm2ko3U1OhjwVFxHqBsp6ae6Gm7qOYMBb0v74K+wtKlO1tnuYMCxN56bzrYn6my4qWf1Ao7aVOTcR3g6nYCa6mdt7fYCjj3yYVxA5N4sohfwEbyDLakOlTVwDETYOWwd59s46mUR3RSel7aPf2ByFqQJohtwnGc/xT681wbgL7A+VSH3tAH4G7yB13GuDcBxFIyCenyiQJdNVM3hCbiH+3gyG9Iei9aL+AHX8EIbgDtVybg9qLoQG9NjUGXpzWlnNearG1XKVAF3inWRluLwn1VUAe/FmnTjdzIr2i5l2mN4O11rft0G4KhuxNVnHAnjaJhVVFk6bvoCdg4uZUXbxdIBGbf4kY+vtgH4R8zCjFSxzIq5ytK/YUq61b+dFW0XS3fetYrC3d02AD9Mhfd4lSEqllnFYHXprGADpgBnJ+l/gFqn8GNBZ3JLroQ3lQAAAABJRU5ErkJggg=="
+         transform="translate(0,0)"
+         id="image276" />
+    </g>
+    <g
+       transform="matrix(1,0,0,1,255.5,70)"
+       id="g282">
+      <image
+         width="64"
+         height="60"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAA8CAYAAADWibxkAAABGElEQVRoQ+2WwQ3CQAwENxVAR1ASHUAJUCGUAB0gS+GDkHjFu5InnzzysG8868ui4c8y/PwCAAYMJ0AEhgvAEiQCRGA4ASIwXABuASJABIYTIALDBeAWIAJEYDgBIjBcgJZb4CRpJ+km6ZkGfOsI7CXdJdW7Dn9NA7E1gBr4UdJF0mGdfhSIDgAf6yNB/AJQ0zo3ZtVqRAKA17obaj+0L8nuCJRZFYV6rAf/GN4BoA4cd/AuAHX9Pdb/gIiJf++2DgPqR6hAWDL+b5l3APjXg/U7AKz4A4pjQMAQrC1ggBV/QHEMCBiCtQUMsOIPKI4BAUOwtoABVvwBxTEgYAjWFjDAij+gOAYEDMHaAgZY8QcUx4CAIVhbeAPOPSQ9oqxtewAAAABJRU5ErkJggg=="
+         transform="translate(0,0)"
+         id="image280" />
+    </g>
+    <g
+       transform="matrix(1,0,0,1,345.5,70)"
+       id="g286">
+      <image
+         width="64"
+         height="60"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAA8CAYAAADWibxkAAABGElEQVRoQ+2WwQ3CQAwENxVAR1ASHUAJUCGUAB0gS+GDkHjFu5InnzzysG8868ui4c8y/PwCAAYMJ0AEhgvAEiQCRGA4ASIwXABuASJABIYTIALDBeAWIAJEYDgBIjBcgJZb4CRpJ+km6ZkGfOsI7CXdJdW7Dn9NA7E1gBr4UdJF0mGdfhSIDgAf6yNB/AJQ0zo3ZtVqRAKA17obaj+0L8nuCJRZFYV6rAf/GN4BoA4cd/AuAHX9Pdb/gIiJf++2DgPqR6hAWDL+b5l3APjXg/U7AKz4A4pjQMAQrC1ggBV/QHEMCBiCtQUMsOIPKI4BAUOwtoABVvwBxTEgYAjWFjDAij+gOAYEDMHaAgZY8QcUx4CAIVhbeAPOPSQ9oqxtewAAAABJRU5ErkJggg=="
+         transform="translate(0,0)"
+         id="image284" />
+    </g>
+    <g
+       transform="matrix(1,0,0,1,435.5,70)"
+       id="g290">
+      <image
+         width="64"
+         height="60"
+         preserveAspectRatio="none"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAA8CAYAAADWibxkAAABGElEQVRoQ+2WwQ3CQAwENxVAR1ASHUAJUCGUAB0gS+GDkHjFu5InnzzysG8868ui4c8y/PwCAAYMJ0AEhgvAEiQCRGA4ASIwXABuASJABIYTIALDBeAWIAJEYDgBIjBcgJZb4CRpJ+km6ZkGfOsI7CXdJdW7Dn9NA7E1gBr4UdJF0mGdfhSIDgAf6yNB/AJQ0zo3ZtVqRAKA17obaj+0L8nuCJRZFYV6rAf/GN4BoA4cd/AuAHX9Pdb/gIiJf++2DgPqR6hAWDL+b5l3APjXg/U7AKz4A4pjQMAQrC1ggBV/QHEMCBiCtQUMsOIPKI4BAUOwtoABVvwBxTEgYAjWFjDAij+gOAYEDMHaAgZY8QcUx4CAIVhbeAPOPSQ9oqxtewAAAABJRU5ErkJggg=="
+         transform="translate(0,0)"
+         id="image288" />
+    </g>
+  </g>
+</svg>

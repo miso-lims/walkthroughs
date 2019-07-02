@@ -1,5 +1,5 @@
 
-Boxes hold samples, libraries, dilutions, and pools. They do not track 
+Boxes hold samples, libraries, library aliquots, and pools. They do not track 
 reagents or primers. Boxes are separated into _uses_ for different kinds
 of storage (_e.g._, tissue samples versus extracted DNA), but there is no
 check that items in a box match. Each box also has a _size_ that includes
@@ -32,7 +32,7 @@ Upon clicking save, a graphic of the box will appear.
 
 <img src="pics/5-empty-box.png" id="figure">
 
-You can now fill the box with the tissues, stocks, aliquots, libraries, dilutions, or
+You can now fill the box with the tissues, stocks, aliquots, libraries, library aliquots, or
 pools that were made in previous steps. Collect the appropriate matrix tubes/barcodes now.
 
 1. Click on a position in the displayed _Contents_ grid.
@@ -42,7 +42,7 @@ name or alias
 1. Click _Update Position_. 
   * &#9888; The _Save_ button at the top of the page does not work for
     individual positions, only for _Box Information_.
-1. Repeat for as many samples/libraries/dilutions/pools as you want.
+1. Repeat for as many samples/libraries/library aliquots/pools as you want.
 
 The table below the box diagram shows the position and information for the
 currently selected sample. If you would like to see all of the samples in the
@@ -62,6 +62,6 @@ Boxes can be found either from the Sample or Library page or the _Boxes_ page.
    or _Library Information_ section. Click on the link to go to the Box (e.g.
    `PROJ_OUTBOX, A03`).
 
-Boxes can be used to store Samples, Libraries, Dilutions, and Pools and one box can
+Boxes can be used to store Samples, Libraries, Library Aliquots, and Pools and one box can
 store all four types.
 

@@ -13,7 +13,7 @@ Table of Contents
    <li><a href="#4">Propagating Samples</a></li>
    <li><a href="#5">Using Boxes</a></li>
    <li><a href="#6">Libraries</a></li>
-   <li><a href="#7">Dilutions, Pools, and Orders</a></li>
+   <li><a href="#7">Library Aliquots, Pools, and Orders</a></li>
    <li><a href="#8">Runs and Sequencing Containers</a></li>
    <li><a href="#9">Sequencers</a></li>
 </ol>
@@ -47,7 +47,7 @@ top right: "Logged in as: **jdoe**".
 
 A _Project_ contains information about a set of _Studies_ that may comprise many
 different _Samples_, _Experiments_ and _Runs_. Samples are attached to Projects as
-they are often processed into _Dilutions_, which are then _Pooled_ and sequenced.
+they are often processed into _Library Aliquots_, which are then _Pooled_ and sequenced.
 Projects also have Overviews, which hold information about a Project proposal.
 In this part of this workshop, we will create projects, set permissions, and
 familiarize ourselves with the project overview page.
@@ -146,7 +146,7 @@ well as all of the entities associated with that project, such as the samples,
 libraries, pools, and runs.
 
 Once you create different entities for your project like _Samples, Libraries,
-Library Dilutions, Pools_ and _Runs_, you can view and search them on this page.
+Library Aliquots, Pools_ and _Runs_, you can view and search them on this page.
 Each section can be expanded by clicking on its name or the arrow next to it.
 The tables under each section can be sorted by the column header or searched
 using the field in the upper right. The _Options_ menu above the search bar
@@ -192,7 +192,7 @@ Now that your project has been created, continue to make your first samples.
 A _Sample_ contains information about the material upon which the sequencing
 experiments are to be based. Samples can be used in any number of sequencing
 _Experiments_ in the form of a _Library_ that is often processed further into
-pooled _Dilutions._
+pooled _Library ALiquots._
 
 Every received Sample must have an _Identity_. The Identity corresponds to the
 individual or organism with whom the sample originated, i.e. the donor. MISO
@@ -758,21 +758,21 @@ e.g. `PROJ_P1_Li`.
 
 <a name="7"/><a href="#">top</a>
 
-# 7. Dilutions, Pools, and Orders
+# 7. Library Aliquots, Pools, and Orders
 
 A library cannot be directly loaded into a _lane_ in a _sequencing container_
-(flowcell/SMRTcell) in MISO. A dilution must be made and then many dilutions
+(flowcell/SMRTcell) in MISO. A library aliquot must be made and then many aliquots
 (or just one) can be mixed into a _pool_ for sequencing.
 
 _Orders_ are requests for sequencing pools a certain number of times. They are
 used to keep track of sequencing progress for project management and book-keeping. 
 
-## 7.1 Bulk creating Library Dilutions
-Dilutions can be made in bulk from libraries.
+## 7.1 Bulk creating Library Aliquots
+Library Aliquots can be made in bulk from libraries.
 
-<img src="pics/flow-dilution.svg"/>
+<img src="pics/flow-library-aliquot.svg"/>
 
-In this exercise, we will create 4 library dilutions from the libraries we
+In this exercise, we will create 4 library aliquots from the libraries we
 made previously.
 
 1. On the _Libraries_ page, check all the libraries just created.
@@ -780,26 +780,24 @@ made previously.
   - `PROJ_0001_Ly_R_PE_300_EX`
   - `PROJ_0002_Br_P_PE_300_EX`
   - `PROJ_0002_Ly_R_PE_300_EX`
-1. From the _Bulk actions_ drop down, select _Make dilutions from selected_ and click _Go_.
-1. Enter the concentrations of the dilutions (use any number you wish).
+1. Click the _Make aliquots_ button at the top of the table. In the dialog that appears,
+   click _Create_.
+1. Enter the concentrations of the aliquots (use any number you wish).
 1. Click _Save_.
-
-Dilutions are a bit ephemeral in MISO: there is no list for all the dilutions.
-To see the dilutions for a library, view the library page. At present,
-Dilutions cannot be saved in Boxes.
 
 ## 7.2 Pools
 Pools are the last step for libraries before sequencing and represent the
 entity that is loaded onto the flowcell lane or SMRTcell. A "pool" can have one or more
-library dilutions in it. They are equivalent to "worksets" in Geospiza, but are
+library aliquots in it. They are equivalent to "worksets" in Geospiza, but are
 required for every lane of sequencing.
 
 <img src="pics/flow-pool.svg"/>
 
-Here we will all all of the dilutions we added previously to make a single pool
+Here we will use all of the library aliquots we added previously to make a single pool
 of 4.
 
-1. On the _Pools_ page, under the _Illumina_ tab, select _Options_ → _Add Pool_.
+1. On the _Pools_ page, under the _Illumina_ tab, click the _Add_ button at the top of
+   the table.
 1. Enter the _Pool Information_:
   1. _Alias_: A short description of the pool contents. Enter the project name
 followed by `_POOL` (e.g. `PROJ_POOL`)
@@ -811,9 +809,10 @@ followed by `_POOL` (e.g. `PROJ_POOL`)
      is used together with the Order to show the pool is ready to be sequenced.
      Tick this box.
   1. _Volume_: Enter a pool volume.
-1. In the _Pooled Elements_ section, use the search box to find the dilutions created previously.
-1. For each dilution, press the _+_ button to add the dilution to the pool.
-1. Click _Save_.
+1. Click _Save_. The pool must be saved before you can add library aliquots to it.
+1. In the _Available Library Aliquots_ section, use the search box to find the aliquots
+   created previously. Select each aliquot and click the _Add_ button at the top of the
+   table to add it to the pool.
 
 ## 7.3 Creating an Order
 Orders are created on the pool to be sequenced, and include the quantity of sequencing
