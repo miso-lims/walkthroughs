@@ -1,10 +1,10 @@
-<a name="libraries-dils-to-pools"  href="#" id="toplink">top</a>
+<a name="libraries-library-aliquots-to-pools"  href="#" id="toplink">top</a>
 
 # 7. Creating Pools
 
 Pools are the last step for libraries before sequencing and represent the
 entity that is loaded onto the flowcell lane or SMRTcell. A "pool" can have one or more
-library dilutions in it. Every lane of sequencing contains only one pool.
+library aliquots in it. Every lane of sequencing contains only one pool.
 
 {% if include.detailed == true %}
 <img src="pics/flow-pool.svg"/>
@@ -14,12 +14,12 @@ library dilutions in it. Every lane of sequencing contains only one pool.
 
 ## 7.1 Bulk creating a Pool
 
-Here we will pool all of the dilutions we added previously to make a single pool
-of 4 dilutions.
+Here we will pool all of the aliquots we added previously to make a single pool
+of 4 aliquots.
 
-1. Select the dilutions you wish to pool:
-  * If you are still on the bulk dilutions page from section **6.1** do not navigate away
-    from the page. Otherwise, go to the _Dilutions_ page, and select the dilutions you created.
+1. Select the library aliquots you wish to pool:
+  * If you are still on the bulk library aliquots page from section **6.1** do not navigate away
+    from the page. Otherwise, go to the _Library Aliquots_ page, and select the aliquots you created.
 1. From the toolbar at the top left, click _Pool Together_. Click _Create_ in the dialog.
 1. Enter the pool information:
   * _Alias_: A short description of the pool contents. Enter the project short name

@@ -14,8 +14,8 @@ Table of Contents
    <li><a href="#libraries-receipt">Receiving Libraries</a></li>
    <li><a href="#libraries-qc">Adding Library QCs</a></li>
    <li><a href="#boxes">Scanning libraries into your outbox</a></li>
-   <li><a href="#libraries-to-dilutions">Propagating libraries to dilutions</a></li>
-   <li><a href="#libraries-dils-to-pools">Creating Pools</a></li>
+   <li><a href="#libraries-to-library-aliquots">Propagating libraries to library aliquots</a></li>
+   <li><a href="#libraries-library-aliquots-to-pools">Creating Pools</a></li>
    <li><a href="#libraries-orders">Ordering sequencing</a></li>
    <li><a href="#libraries-trouble">Troubleshooting</a></li>
 </ol>
@@ -52,10 +52,10 @@ inbox.
 {% include outboxes.md %}
 
 
-{% include libraries-to-dilutions.md detailed=page.is-detailed %}
+{% include libraries-to-library-aliquots.md detailed=page.is-detailed %}
 
 
-{% include libraries-dils-to-pools.md detailed=page.is-detailed %}
+{% include libraries-library-aliquots-to-pools.md detailed=page.is-detailed %}
 
 
 {% include libraries-orders.md %}

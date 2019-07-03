@@ -13,7 +13,7 @@
    width="577.38"
    height="200"
    id="svg294"
-   sodipodi:docname="plain-flow-cell.svg"
+   sodipodi:docname="plain-flow-library-aliquot.svg"
    inkscape:version="0.92.4 (unknown)">
   <metadata
      id="metadata298">
@@ -430,7 +430,7 @@
           <g
              id="g148">
             <path
-               fill="#9fc5e8"
+               fill="#FFFFFF"
                stroke="none"
                d="M 0 0 L 100 0 Q 100 0 100 0 L 100 100 Q 100 100 100 100 L 0 100 Q 0 100 0 100 L 0 0 Q 0 0 0 0 Z"
                id="path140" />
@@ -545,7 +545,7 @@
           <g
              id="g192">
             <path
-               fill="#9fc5e8"
+               fill="#FFFFFF"
                stroke="none"
                d="M 0 0 L 100 0 Q 100 0 100 0 L 100 100 Q 100 100 100 100 L 0 100 Q 0 100 0 100 L 0 0 Q 0 0 0 0 Z"
                id="path184" />

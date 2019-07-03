@@ -33,7 +33,7 @@ Download the worksheet for this section here: <a href="2-0-samples-worksheet">Sa
 A _Sample_ contains information about the material upon which the sequencing
 experiments are to be based. Samples can be used in any number of sequencing
 _Experiments_ in the form of a _Library_ that is processed further into
-single or pooled _Dilutions._
+single or pooled _Library Aliquots._
 
 Every received Sample must have an _Identity_. The Identity corresponds to the
 individual or organism from whom the sample originated, i.e. the donor. MISO

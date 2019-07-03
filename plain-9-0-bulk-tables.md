@@ -27,7 +27,7 @@ Table of Contents
 
 # Working with Tables
 
-Creating and editing samples, libraries, dilutions, pools, and orders are done on the bulk table pages, where you can quickly enter information into spreadsheet-like tables. This tutorial will help you get to know the features available on the bulk table pages.
+Creating and editing samples, libraries, library aliquots, pools, and orders are done on the bulk table pages, where you can quickly enter information into spreadsheet-like tables. This tutorial will help you get to know the features available on the bulk table pages.
 
 {% include logging_in.md detailed=page.is-detailed %}
 

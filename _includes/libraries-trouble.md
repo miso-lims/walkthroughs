@@ -10,18 +10,19 @@ The index can be changed on either the individual library page or the bulk edit 
 1. Select the correct index under _Indices_. If the index family supports dual barcoding, another drop down will appear.
 
 
-## What if I forget to put a library dilution in a pool?
-If the library dilution has not been created:
+## What if I forget to put a library aliquot in a pool?
+If the library aliquot has not been created:
 
 1. From the _Libraries_ page, check the library that needs to be added.
-1. From the toolbar, click _Make Dilution_.
+1. From the toolbar, click _Make aliquots_.
 1. Fill out the new row in the table, then click _Save_.
 
-Once the dilution exists:
+Once the library aliquot exists:
 
-1. From the _Pools_ page, select the pool that needs the additional library dilution.
-1. In the _Available Dilutions_ section, enter the library name, library alias, or dilution name in the _Search_ box.
-1. Find the correct dilution in the list and check it.
+1. From the _Pools_ page, select the pool that needs the additional library aliquot.
+1. In the _Available Library Aliquots_ section, enter the library name, library alias, or library
+   aliquot name in the _Search_ box.
+1. Find the correct aliquot in the list and check it.
 1. Click _Add_ on the toolbar.
 
 ## How do I make bulk orders?
@@ -31,9 +32,10 @@ Making orders in bulk can be done from the _Pools_ page:
 1. Click _Create Orders_ and enter the order information for each pool.
 
 ## How do I change the targeted sequencing type on a library?
-Targeted sequencing is connected to the dilution since the same library can be used for multiple targeted sequencing panels.
+Targeted sequencing is connected to the library aliquot since the same library can be used for
+multiple targeted sequencing panels.
 
-1. From the _Dilutions_ page, check the library dilutions that need to be changed.
+1. From the _Library Aliquots_ page, check the library aliquots that need to be changed.
 1. From the toolbar, click _Edit_.
 1. Select a new _Targeted Sequencing_ from the list.
 1. Click _Save_.
@@ -69,14 +71,14 @@ To change many libraries:
 
 ## How can I delete a library?
 Libraries can be deleted from the Libraries list page by selecting the libraries and clicking _Delete_. A
-library cannot be deleted if it has any dilutions. Only the library's creator or an admin can delete a library.
+library cannot be deleted if it has any aliquots. Only the library's creator or an admin can delete a library.
 Deleted items are listed on the Deletions list page. Deleting a library is permanent and cannot be undone.
 
-## How can I delete a dilution?
-Dilutions can be deleted from the Dilutions list page by selecting the dilutions and clicking _Delete_. A
-dilution cannot be deleted if it has been added to any pools. Only the dilution's creator or an admin can
-delete a dilution. Deleted items are listed on the Deletions list page. Deleting a dilution is permanent
-and cannot be undone.
+## How can I delete a library aliquot?
+Library aliquots can be deleted from the Library Aliquots list page by selecting the aliquots and clicking
+_Delete_. A library aliquot cannot be deleted if it has been added to any pools. Only the aliquot's creator or
+an admin can delete an aliquot. Deleted items are listed on the Deletions list page. Deleting a library aliquot
+is permanent and cannot be undone.
 
 ## How can I delete a pool?
 Pools can be deleted from the Pools list page by selecting the pools and clicking _Delete_. A pool cannot

@@ -87,7 +87,7 @@ If the values in a column need to each be one greater than the value in the row 
 <a name="fill-by-row-column"/>
 
 # 5. Fill Boxes by Row or Column
-Samples, libraries, dilutions, or pools can be bulk-added to a box from within the bulk tables pages. Selecting the **Fill Boxes by Row** option adds the tubes in the displayed order, going from left to right, and top to bottom (see Figure 1). Selecting the **Fill Boxes by Column** option adds the tubes in the displayed order from top to bottom, and left to right (see Figure 2).
+Samples, libraries, library aliquots, or pools can be bulk-added to a box from within the bulk tables pages. Selecting the **Fill Boxes by Row** option adds the tubes in the displayed order, going from left to right, and top to bottom (see Figure 1). Selecting the **Fill Boxes by Column** option adds the tubes in the displayed order from top to bottom, and left to right (see Figure 2).
 
 <table border="1">
 <tr>
@@ -185,7 +185,10 @@ Some of the cells in a table can have different colours, each of which indicates
 <a name="read-only"/>
 
 # 10. Read-Only Cells
-Read-only cells cannot be edited directly. They contain lighter text than cells you can interact with. For instance, the _Sample Class_ cells will be read-only. The _Sample Name_, _Library Name_, _Dilution Name_, and _Pool Name_ columns will all be automatically filled in after the item is created.
+Read-only cells cannot be edited directly. They contain lighter text than cells you can interact
+with. For instance, the _Sample Class_ cells will be read-only. The _Sample Name_, _Library Name_,
+_Library Aliquot Name_, and _Pool Name_ columns will all be automatically filled in after the item
+is created.
 
 {% if include.detailed == true %}
 Sometimes, a read-only cell becomes editable once another cell has been changed.

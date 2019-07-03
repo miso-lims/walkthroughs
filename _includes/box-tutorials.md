@@ -4,8 +4,8 @@
 
 We are going to need some items to play with, so we will create a few pools:
 
-1. Go to the _Dilutions_ page.
-1. Select any five dilutions from the list.
+1. Go to the _Library Aliquots_ page.
+1. Select any five library aliquots from the list.
 1. Click _Pool Separately_ in the toolbar. **DO NOT** check the _Create New Box_ option
    in the dialog. Click _Create_.
 1. Enter the following attributes for the pools. Replace 'XX' with your own initials:

@@ -4,7 +4,7 @@
 
 A _Project_ contains information about a set of _Studies_ that may comprise many
 different _Samples_, _Experiments_ and _Runs_. Samples are attached to Projects and
-they are often processed into _Libraries_ and then _Dilutions_, which are then
+they are often processed into _Libraries_ and then _Library Aliquots_, which are then
 _Pooled_ and sequenced. This part of the workshop details creating a new project.
 
 Projects represent a sequencing effort toward a particular goal, usually led by
@@ -53,7 +53,7 @@ well as all of the entities associated with that project, such as the samples,
 libraries, pools, and runs.
 
 Once you create different entities for your project like _Samples, Libraries,
-Library Dilutions, Pools_ and _Runs_, you can view and search them on this page.
+Library Aliquots, Pools_ and _Runs_, you can view and search them on this page.
 Each section can be expanded by clicking on its name or the arrow next to it.
 The tables under each section can be sorted by clicking the column header or
 searched using the field in the upper right.
