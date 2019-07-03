@@ -23,14 +23,12 @@ Table of Contents
 
 # 1. Logging In
 
-Much like the old Geospiza LIMS, you need to log in to MISO LIMS in order to
-make changes to any LIMS entities. Logging in lets us record any changes you
-make and also allows us to set appropriate permissions.
+You need to log in to MISO LIMS in order to make changes to any LIMS entities.
+Logging in lets us record any changes you make and also allows us to set appropriate
+permissions.
 
-If you were able to log in to Geospiza LIMS, you already have the correct
-permissions and can proceed to logging in. If you are a new user, you will need
-to contact <ithelpdesk@oicr.on.ca> so that they put you into the appropriate
-Active Directory group, `MISO_ROLE_INTERNAL`.
+If you are a new user, you will need to contact <ithelpdesk@oicr.on.ca> so that they
+can put you into the appropriate Active Directory group, `MISO_ROLE_INTERNAL`.
 
 1. Click on <a href="http://miso.gsi.oicr.on.ca"
 target="\_new" >http://miso.gsi.oicr.on.ca</a>.
@@ -788,8 +786,7 @@ made previously.
 ## 7.2 Pools
 Pools are the last step for libraries before sequencing and represent the
 entity that is loaded onto the flowcell lane or SMRTcell. A "pool" can have one or more
-library aliquots in it. They are equivalent to "worksets" in Geospiza, but are
-required for every lane of sequencing.
+library aliquots in it.
 
 <img src="pics/flow-pool.svg"/>
 

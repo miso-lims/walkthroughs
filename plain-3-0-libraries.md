@@ -14,7 +14,7 @@ Table of Contents
    <li><a href="#libraries-receipt">Receiving Libraries</a></li>
    <li><a href="#libraries-qc">Adding Library QCs</a></li>
    <li><a href="#boxes">Scanning libraries into your outbox</a></li>
-   <li><a href="#libraries-to-library-aliquotss">Propagating libraries to library aliquots</a></li>
+   <li><a href="#libraries-to-library-aliquots">Propagating libraries to library aliquots</a></li>
    <li><a href="#libraries-library-aliquots-to-pools">Creating Pools</a></li>
    <li><a href="#libraries-orders">Ordering sequencing</a></li>
    <li><a href="#libraries-trouble">Troubleshooting</a></li>
