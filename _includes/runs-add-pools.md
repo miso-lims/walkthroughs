@@ -1,13 +1,13 @@
 <a name="runs-add-pools" href="#" id="toplink">top</a>
 
-# 5. Adding pools to runs
+# 6. Adding pools to runs
  
 The Run (representing an instrument run) is associated with Pools using a
 _Sequencing Container_.
 
 <img src="pics/flow-cell.svg"/>
  
-## 5.1 Add a pool to a run
+## 6.1 Add a pool to a run
  
 1. On the page of the Run assigned to you, scroll down to the _Lanes_ section.
 1. Check the first the lane.
