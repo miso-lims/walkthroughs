@@ -1,6 +1,6 @@
 <a name="runs-auto" href="#" id="toplink">top</a>
 
-# 4. Working with automatically created runs
+# 5. Working with automatically created runs
  
 Shortly after an instrument begins imaging, MISO should detect it
 and create a _Run_. As sequencing continues, MISO will pull back information

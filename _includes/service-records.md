@@ -1,6 +1,6 @@
 <a name="service-records" href="#" id="toplink">top</a>
 
-# 7. Adding Service Records to Instruments
+# 8. Adding Service Records to Instruments
 
 Each instrument can have one or more associated service records.
 

@@ -1,6 +1,6 @@
 <a name="runs-trouble" href="#" id="toplink">top</a>
 
-# 8. Troubleshooting
+# 9. Troubleshooting
 
 1. When instruments break down, how do you log failures into the system?
     * Add a service record as in <a href="#service">7: Adding Service Records to Sequencers</a>

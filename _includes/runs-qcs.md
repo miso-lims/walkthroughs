@@ -1,6 +1,6 @@
 <a name="runs-qcs" href="#" id="toplink">top</a>
 
-## 5.2 Mark a library as Low Quality
+## 6.2 Mark a library as Low Quality
  
 Not every library realises its full potential. After sequencing, specific
 libraries can be flagged as having low sequencing quality. The
@@ -18,7 +18,7 @@ will be flagged.
 1. Go back to your Run page.
 1. Find your pool using the lanes table. It will be flagged red.
 
-## 5.3 Setting Per-Lane QCs
+## 6.3 Setting Per-Lane QCs
 
 Sometimes a particular lane is bad or for other reasons should not be analysed. MISO
 allows setting a per-lane QC. Lane QCs indicate whether a lane should be considered

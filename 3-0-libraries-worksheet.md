@@ -39,7 +39,12 @@ title: Libraries tutorial worksheet
 **Outbox Box Use**: ___________________________________________________________________________________
 
 
-## 7.1 Bulk creating a pool
+## 7.1 Creating a pool order
+
+**Pool Order Alias**: ___________________________________________________________________________________
+
+
+## 8.1 Bulk creating a pool
 
 <table>
 <tr><th>Pool Alias</th></tr>
