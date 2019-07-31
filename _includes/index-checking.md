@@ -14,14 +14,14 @@ you identify indices which may be inadvisable to multiplex together.
 
    ```
    AAAAAAAA
-   AAAAAACC
-   CCAAAACC
+   AAAAACCC
+   CCAAACCC
    AAAAAAAA
    ```
    
 1. Click _Calculate_. The results pane will show you that there is a duplicate (AAAAAAAA),
-   and that two of the sequences are a near match, only differing by 2 bases. (AAAAAAAA and
-   CAAAAAAA).
+   and that two of the sequences are a near match, only differing by 2 bases. (AAAAACCC and
+   CCAAACCC).
 
 <a name="index-distance-length" href="#">top</a>
 
