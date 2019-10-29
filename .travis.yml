@@ -2,7 +2,7 @@ language: ruby
 git:
   depth: 3
 rvm:
-  - 2.2
+  - 2.3
 cache: bundler
 script:
   - bundle exec jekyll build
