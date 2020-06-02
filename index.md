@@ -5,14 +5,15 @@ title: "Getting Started with OICR MISO"
 ---
 
 {% if site.miso_flavour == 'OICR' %}
-This walkthrough is intended for new users of [OICR](http://oicr.on.ca)'s MISO flavour. 
+This walkthrough is intended for new users of [OICR](http://oicr.on.ca)'s MISO flavour.
 For the original flavour, see [the walkthrough here](plain-index).
 
-# Tutorials By Team
+# Tutorials
 
 These tutorials have associated worksheets, linked at the top of the tutorial. Sections to record in the worksheet are marked with a blue pencil. <img src="pics/blue_pencil.png">
 
-1. [Admin tasks](0-0-admin-tasks)
+1. [Introduction to MISO](0-0-0-introduction)
+1. [Administration tasks](0-0-admin-tasks)
 1. [Project coordination](1-0-project-coordination)
 1. [Samples](2-0-samples)
 1. [Libraries](3-0-libraries)
@@ -35,7 +36,8 @@ This walkthrough is intended for new MISO users.
 
 Make note of the items you've created when sections are marked with a blue pencil. <img src="pics/blue_pencil.png">
 
-1. [Admin tasks](plain-0-0-admin-tasks)
+1. [Introduction to MISO](0-0-0-introduction)
+1. [Administration tasks](0-0-admin-tasks)
 1. [Project coordination](plain-1-0-project-coordination)
 1. [Samples](plain-2-0-samples)
 1. [Libraries](plain-3-0-libraries)

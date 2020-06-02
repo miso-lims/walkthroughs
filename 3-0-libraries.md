@@ -6,6 +6,9 @@ is-detailed: true
 
 ---
 
+<object data="presentations/libraries.pdf" width="800" height="500" type='application/pdf'> </object>
+
+
 <div id="toc">
 Table of Contents
 <ol>
@@ -66,19 +69,19 @@ and indices can be added based on the box position.
 1. On the _Boxes_ page, find your box and click on its link.
 1. Select all the aliquots in your box by control-clicking all the aliquots
 in the box (command-click on a Mac). If the aliquots are all in one row or column,
-you can click on the row/column header to select all items in that row or column. 
+you can click on the row/column header to select all items in that row or column.
 Use control-click (or command-click) to select more than one row or column.
-1. Click the _Propagate_ button at the top left of the box contents table. If the 
+1. Click the _Propagate_ button at the top left of the box contents table. If the
 top left of the box contents table indicates that more than one type of element is
 selected, de-select the non-aliquot tubes and then click _Propagate_.
 1. Choose _1_ replicate.
 1. Click _Propagate_.
 1. From the bulk libraries table, you can now sort the libraries you are creating
-based on their parent sample's position within the box. Sorting can be done by 
+based on their parent sample's position within the box. Sorting can be done by
 rows (`A01`, `A02`, `B01`, `B02`, ...) or columns (`A01`, `B01`, `A02`, `B02`, ...).
-  * This may be useful when using the Sciclone robot to create libraries and add 
+  * This may be useful when using the Sciclone robot to create libraries and add
 indices at a particular plate location. Once the libraries are sorted based on the
-parent sample's location, the indices can be copy-pasted in the order that the 
+parent sample's location, the indices can be copy-pasted in the order that the
 robot requires.
 
 {% include libraries-receipt.md detailed=page.is-detailed section=3
@@ -114,4 +117,3 @@ to get assistance from the MISO team.
 
 
 < <a href="2-0-samples">Samples tutorial</a> | <a href="index">Home</a> | <a href="4-0-sequencing">Sequencing tutorial</a> >
-

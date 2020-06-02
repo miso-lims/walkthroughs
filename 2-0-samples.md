@@ -8,6 +8,14 @@ section: 3.4
 
 ---
 
+<video muted autoplay controls>
+    <source src="presentations/miso_samples.mp4" type="video/mp4">
+</video>
+
+[Download the PDF]({{ '/presentations/samples.pdf' | prepend: site.baseurl }})
+
+
+
 <div id="toc">
 Table of Contents
 <ol>
@@ -63,21 +71,21 @@ the Project you created in the last session.
 
 ## 2.1 Entering a Tissue
 
-All samples in MISO are entered using the bulk entry screen. We will start by 
+All samples in MISO are entered using the bulk entry screen. We will start by
 entering a single Sample for reference tissue from the Identity `ID1`.
 
 {% include samples-receiving.md detailed=page.is-detailed quantity=page.quantity %}
-    1. _External Name_: this is the name of the *individual donor*, whether internal or 
-       external. For example, an external name would be "Morgan" (internally we refer to 
+    1. _External Name_: this is the name of the *individual donor*, whether internal or
+       external. For example, an external name would be "Morgan" (internally we refer to
        her as plain ol' MORG_0001).
         * Enter `PROJ_ID1` in the _External Name_ field, replacing `PROJ` with your project's
-          short name. Record this in your worksheet.  <img src="pics/blue_pencil.png"> 
-            * Once you enter an external name, MISO will go and find any existing donors with 
-              external name(s) that match this, and will add them to the dropdown menu for the 
+          short name. Record this in your worksheet.  <img src="pics/blue_pencil.png">
+            * Once you enter an external name, MISO will go and find any existing donors with
+              external name(s) that match this, and will add them to the dropdown menu for the
               _Identity Alias_ field.
-            * If there are no existing donors with the exact external name, the option of 
-              `First Receipt (project short name)` will be available. 
-            * If more than one option is available in the _Identity Alias_ dropdown, the cell 
+            * If there are no existing donors with the exact external name, the option of
+              `First Receipt (project short name)` will be available.
+            * If more than one option is available in the _Identity Alias_ dropdown, the cell
               will be displayed with a light purple background.
     1. Select `First Receipt (project short name)` for the _Identity Alias_.
     1. _Donor Sex_: Select any item from the dropdown.
@@ -100,7 +108,7 @@ lines. For more information about Sample nomenclature, see <a
 href="https://wiki.oicr.on.ca/display/GENOMICS/LIMS+Guidelines#LIMSGuidelines-SampleNomenclature"
 target="_new">Sample Nomenclature</a> on the GENOMICS wiki.
 
-Record the alias in your worksheet. <img src="pics/blue_pencil.png"> 
+Record the alias in your worksheet. <img src="pics/blue_pencil.png">
 
 ## 2.2 Automatically created Samples
 
@@ -174,12 +182,12 @@ cell. You can also click and drag to only fill in a certain number of cells.
 1. Fill in the columns in the same way for: _Sample Type_, _Project_, _Donor Sex_,
    _Tissue Origin_, _Tissue Type_, _Times Received_, _Tube Number_, _Material_, and
    _QC Status_.
-1. _Description_: Copying and pasting from Excel and Word is supported. 
+1. _Description_: Copying and pasting from Excel and Word is supported.
    Copy something from anywhere and press Ctrl+V (Windows & Linux) or Command+V (Mac)
    on your keyboard to paste.
 
-1. _Matrix Barcode_: you would normally use a hand-scanner or copy and paste a list of 
-barcodes from a spreadsheet. For each sample, select a barcode, scan or type it in, and record 
+1. _Matrix Barcode_: you would normally use a hand-scanner or copy and paste a list of
+barcodes from a spreadsheet. For each sample, select a barcode, scan or type it in, and record
 it in your worksheet. <img src="pics/blue_pencil.png">
 1. _External Name_:  Again, this is the name of the *individual*, whether internal or external.
 Here's a suggested list. Replace `PROJ` with your own project short name.
@@ -190,10 +198,10 @@ Here's a suggested list. Replace `PROJ` with your own project short name.
   1. Because you've already created an Identity with the external name `PROJ_ID1`, it is found as a match
 to the external name you entered for the top row. In the `Identity Alias` dropdown menu for the first row,
 select the existing Identity.
-  1. Select `First Receipt` from the dropdown menu in each remaining cell of the `Identity Alias` column. 
+  1. Select `First Receipt` from the dropdown menu in each remaining cell of the `Identity Alias` column.
 
 Some fields cannot be filled down, so enter each of those separately. If you
-have a label with an incrementing number (_e.g._, `1`, `2`), enter two rows, select them, 
+have a label with an incrementing number (_e.g._, `1`, `2`), enter two rows, select them,
 then double click the blue square.
 
 1. _Secondary ID_: enter `BioBankID 2` in the second row. Select the _Secondary Identifier_
@@ -201,7 +209,7 @@ fields for rows 1 and 2, then double click the blue square to fill down rows 3 a
 1. Click _Save_ at the upper right hand corner.
 
 If everything is correct, the _Sample Alias_ and _Sample Name_ will be auto-generated for each row and
-the samples will be saved. 
+the samples will be saved.
 Record the external name, sample class, alias, and barcode in your worksheet. <img src="pics/blue_pencil.png">
 If you navigate back to your _Edit Project_ page, there should be nine Samples:
 
@@ -236,7 +244,7 @@ material of an existing Identity.
   * _Project_: Select your project.
   * _Scientific Name_: `Homo sapiens`.
   * _External Name_: `PROJ_ID2` (where `PROJ` is your project's short name) .
-  * _Identity Alias_: The existing identity should be selected automatically 
+  * _Identity Alias_: The existing identity should be selected automatically
     in the dropdown menu.
   * _Tissue Origin_: `nn (Unknown)`
   * _Tissue Type_: `R (Reference or non-tumour, non-diseased tissue sample)`
@@ -273,7 +281,7 @@ hidden from the MISO interface.
 # 2.5 Scanning tissues and stocks into a Box
 
 In this section we will add the stocks and tissues you just received into your
-inbox for further work. 
+inbox for further work.
 
 {% include inboxes.md %}
 
@@ -369,8 +377,8 @@ items.".
 Propagate again from the 4 _gDNA (stock)_ samples to _gDNA (aliquot)_.
 
 1. If you are continuing from the end of section **3.3 Bulk Editing**, do not
-  navigate away from the page. 
-    1. At the top left of the table after saving samples, click the _Propagate_ button. 
+  navigate away from the page.
+    1. At the top left of the table after saving samples, click the _Propagate_ button.
     1. Enter _1_ for the number of replicates (child samples to be created from each parent)
     and _gDNA (aliquot)_ for the type of child sample. Continue to step 3.
 1. Otherwise, select samples using the following:
