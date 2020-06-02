@@ -6,6 +6,9 @@ is-detailed: true
 
 ---
 
+<object data="presentations/miso_array_training.pdf" width="800" height="500" type='application/pdf'> </object>
+
+
 <div id="toc">
 Table of Contents
 <ol>
@@ -30,4 +33,3 @@ Table of Contents
 {% include array_runs.md detailed=page.is-detailed %}
 
 < <a href="index">Home</a> >
-
