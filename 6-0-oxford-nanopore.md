@@ -6,6 +6,9 @@ is-detailed: true
 
 ---
 
+<object data="presentations/miso_ont_training.pdf" width="800" height="500" type='application/pdf'> </object>
+
+
 <div id="toc">
 Table of Contents
 <ol>
@@ -34,4 +37,3 @@ Table of Contents
 {% include ont_runs_add_pools.md %}
 
 < <a href="index">Home</a> >
-

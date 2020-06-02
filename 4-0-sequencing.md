@@ -6,6 +6,9 @@ is-detailed: true
 
 ---
 
+<object data="presentations/sequencing.pdf" width="800" height="500" type='application/pdf'> </object>
+
+
 <div id="toc">
 Table of Contents
 <ol>
