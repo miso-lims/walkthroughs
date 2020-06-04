@@ -30,14 +30,3 @@ Finally, deploy the tutorial to
 [GitHub Pages](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/)
 or elsewhere.
 
-## Large files
-
-Large files (e.g. MP4s) in this repository are tracked with [Git Large File Storage](https://git-lfs.github.com/)
-
-To get started:
-
-1. Install `git-lfs`
-2. Register files with `git lfs track FILE`. This puts an entry into `.gitattributes`.
-3. Add to a commit and push as normal.
-
-
