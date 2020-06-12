@@ -1,2 +1,0 @@
-presentations/miso_intro.mp4 filter=lfs diff=lfs merge=lfs -text
-presentations/miso_samples.mp4 filter=lfs diff=lfs merge=lfs -text
