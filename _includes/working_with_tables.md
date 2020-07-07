@@ -32,27 +32,25 @@ If you have a spreadsheet that already has the sample information and you need t
 <a name="fill-many"/>
 
 # 4. Fill Many
-Entering the same data in all rows can be done by using the "fill from once cell" feature. Enter the data in one cell, then you can fill in multiple cells by:
-  * double-clicking the square in the bottom right corner of that cell to fill in all cells below.
-  * clicking the square in the bottom right corner of that cell, then dragging the mouse up or down the selected number of rows to fill those cells with the initial value.
+Entering the same data in all rows can be done by using the fill handle. The fill handle is the square that appears at the bottom right corner of the cell you have selected. Enter the data in one cell, then you can fill in multiple cells by:
+  * double-clicking the fill handle to fill in all cells below.
+  * clicking the fill handle and dragging the mouse up or down through other cells to fill those cells with the initial value.
 
 <a name="fill-down-drag"/>
 
 ## 4.1 Fill Many: Drag (fills up or down)
-1. Type **10XT** in the _last_ row of the _Project_ column. 
-1. Click on the "10XT" project short name in the dropdown menu.
-    * The cell will have a blue border with a blue square in the bottom right corner. (If you do not see the blue square, click on another cell and then click again on the cell that contains your project short name.)
-1. Click on the blue square and hold the mouse button down as you drag up to the top row in the _Project_ column. Release the mouse button.
-    * The cells will all change to contain the 10XT project short name.
+1. Select a project from the dropdown in the _last_ row of the _Project_ column.
+    * The cell will have a blue border with a blue square (the fill handle) in the bottom right corner. If you do not see the fill handle, click on another cell and then click again on the project cell.
+1. Click on the fill handle and hold the mouse button down as you drag up to the top row in the _Project_ column. Release the mouse button.
+    * The cells will all change to the same project.
 
 <a name="fill-down-click"/>
 
 ## 4.2 Fill Many: Double-click (fills down)
-1. Type your project's short name in the _first_ row of the _Project_ column.
-1. Click on your project in the dropdown menu.
-    * The cell will have a blue border with a blue square in the bottom right corner. (If you do not see the blue square, click on another cell and then click again on the cell that contains your project short name.)
-1. Double-click on the blue square in the bottom right corner of the cell that contains your project short name.
-    * The cells below it will all change to contain your project short name.
+1. Select any project from the dropdown in the _first_ row of the _Project_ column.
+    * The cell will have a blue border with a blue square (the fill handle) in the bottom right corner. If you do not see the fill handle, click on another cell and then click again on the project cell.
+1. Double-click on the fill handle.
+    * The cells below it will all change to the same project.
 
 *Note*: multiple columns can be filled down at once. 
 {% if include.detailed == true %}
@@ -77,8 +75,8 @@ If the values in a column need to each be one greater than the value in the row 
     |TEST_XX02|
 
 1. In the _Matrix Barcode_ column, click the cell in the first row, then press **Shift**, click the cell in the second row, and release both the mouse button and the Shift key. 
-    * The top two cells will be surrounded by a border, with a blue square in the bottom right corner of the lower cell. 
-1. Double-click on the blue square, and the cells below will be filled in with an incrementing pattern: 1-2-3-4-5. 
+    * The top two cells will be surrounded by a border, with the fill handle in the bottom right corner of the lower cell. 
+1. Double-click on the fill handle, and the cells below will be filled in with an incrementing pattern: 1-2-3-4-5. 
     * A copied pattern of 1-2-1-2-1 may briefly be seen, but will be overridden by the incrementing pattern.
 
 
@@ -100,7 +98,7 @@ Samples, libraries, library aliquots, or pools can be bulk-added to a box from w
 </tr>
 </table> 
 
-1. Return to your _Create Libraries_ bulk table (or [click here](https://miso.gsi.oicr.on.ca/miso/library/bulk/receive?quantity=5&projectId=&sampleClassId=15) if you have navigated away from the page).
+1. Return to your _Create Libraries_ bulk table.
 1. In the top row of the _Box Search_ column, enter the alias of the box you created earlier, or enter **BOX1267**. Once the top row of the _Box Alias_ column displays a box alias value, [fill down](#fill-down-drag) the _Box Alias_ column.
 1. Click **Fill Boxes by Row**.
     * The _Position_ column will be filled in. Note the pattern of the positions.

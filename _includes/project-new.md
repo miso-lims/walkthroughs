@@ -27,23 +27,24 @@ your Project.
 1. Click on the _Studies_ header to expand the section.
 1. Click the _Add_ button at the top left of the table.
 1. Much like creating a Project, enter:
-  1. Alias (letters and numbers only): this can have any name, but make sure
-     it is recognizable as belonging to your Project.
-  1. Description: any free-text description
-  1. Select a Study Type from the drop-down menu. Unless you are certain of the
-     sequencing type, select `Other`.
+    * _Alias_ (letters and numbers only): this can have any name, but make sure
+       it is recognizable as belonging to your Project.
+    * _Description_: any free-text description
+    * _Study Type_: Select an option from the drop-down menu. Unless you are certain
+      of the sequencing type, select `Other`.
 1. Click the _Save_ button at the upper right.
 
 
 ## 2.2 Projects List
 
-1. Click again on the _Projects_ link under _Preparation_ in the menu on the left side of the
-screen. You will see a list of all of the projects in MISO.
-1. Find the project you just created in the list. You can sort any column in the
-table by clicking the column header. You can also search for your project by
-any of the displayed columns and the table will filter as you type.
-1. Click on the link in the Project Name, Short Name or Alias (they all go to the
-same page).
+1. Click again on the _Projects_ link under _Preparation_ in the menu on the left
+   side of the screen. You will see a list of all of the projects in MISO.
+1. Find the project you just created in the list. You can sort by any column in the
+   table by clicking the column header. You can also search for your project by
+   name, alias, short name, or description by typing text into the _Search_ box at
+   the top right and pressing the _Enter_ key on your keyboard.
+1. Click on the link in the Project Name, Short Name or Alias column (they all go to
+   the same page).
 
 
 ## 2.3 Edit Project page
@@ -52,8 +53,8 @@ The _Edit Project_ page is used for viewing basic information about a project as
 well as all of the entities associated with that project, such as the samples,
 libraries, pools, and runs.
 
-Once you create different entities for your project like _Samples, Libraries,
-Library Aliquots, Pools_ and _Runs_, you can view and search them on this page.
+Once you create different entities for your project like samples, libraries,
+library aliquots, pools, and runs, you can view and search them on this page.
 Each section can be expanded by clicking on its name or the arrow next to it.
 The tables under each section can be sorted by clicking the column header or
 searched using the field in the upper right.

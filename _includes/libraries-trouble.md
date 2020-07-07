@@ -20,10 +20,11 @@ If the library aliquot has not been created:
 Once the library aliquot exists:
 
 1. From the _Pools_ page, select the pool that needs the additional library aliquot.
-1. In the _Available Library Aliquots_ section, enter the library name, library alias, or library
-   aliquot name in the _Search_ box.
-1. Find the correct aliquot in the list and check it.
-1. Click _Add_ on the toolbar.
+1. In the _Library Aliquots_ section, click the `Add` button.
+1. Enter the library aliquot name, alias, or barcode in the search dialog and click _Search_.
+1. Select the correct aliquot in the list and click _Next_.
+1. Leave the default proportion of `1` and click _Add_.
+1. Click the _Save_ button at the top right of the page.
 
 ## How do I make bulk sequencing orders?
 Making sequencing orders in bulk can be done from the _Pools_ page:

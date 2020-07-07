@@ -93,9 +93,8 @@ entering a single Sample for reference tissue from the Identity `ID1`.
     1. _Tissue Type_: `R (Reference or non-tumour, non-diseased tissue sample)`
     1. _Times Received_: `1`
     1. _Tube Number_: `1`
-    1. _Lab_: Select `BioBank (University Health Network)` from the dropdown.
-    1. _Secondary ID_: `BioBankID 1`. This is the Biobank ID or Tube ID.
-    It may also be left blank.
+    1. _Secondary ID_: `BioBankID 1`. This is the Biobank ID or Tube ID. It may also be left
+       blank.
     1. _Material_: Select any from the drop-down.
     1. _QC Status_: select `Ready` from the drop down.
 1. At the upper right hand side, click _Save_.
@@ -131,7 +130,7 @@ in the following tutorials.
 
 ## 2.3 Entering bulk Tissues
 
-Next, we will create four more Tissue Samples for individuals 1-5.
+Next, we will create four more Tissue Samples for individuals 1-4.
 
 1. If you are still on the Project page from section **2.2**, click the _Create_
    button at the top left of the Samples table and continue to step 2. Otherwise:
@@ -150,17 +149,19 @@ Enter the following values into the **first row only**.
 1. _Sample Alias_: leave blank. Again, this will be automatically generated from
 the rest of the table.
 1. Select or enter the following data in the first row:
-  * _Date of Receipt_: select a date
+  * _Date of Receipt_: select a date.
+  * _Received From_: Select any lab.
+  * _Received By_: Select any group.
   * _Sample Type_: select `GENOMIC` from the drop-down.
   * _Project_: if you chose to create new samples from the Project page,
     the project will already be entered. If you chose to create new samples
-    from the Samples page, select your project from the drop-down.
+    from the Samples page, select your project's short name from the drop-down.
+  * _Subproject_: Select the subproject you created.
   * _Donor Sex_: select any item from the drop-down.
   * _Tissue Origin_: select `Br (Breast)` from the drop-down.
   * _Tissue Type_: select `P (Primary Tumour)` from the drop-down.
   * _Times Received_: 1
   * _Tube Number_: 1
-  * _Lab_: select `BioBank (University Health Network)` from the drop-down.
   * _Secondary ID_: enter `BioBankID 1`.
   * _Material_: Select any item from the drop down.
   * _QC Status_: Select `Ready` from the drop down.
@@ -187,18 +188,23 @@ cell. You can also click and drag to only fill in a certain number of cells.
    on your keyboard to paste.
 
 1. _Matrix Barcode_: you would normally use a hand-scanner or copy and paste a list of
-barcodes from a spreadsheet. For each sample, select a barcode, scan or type it in, and record
-it in your worksheet. <img src="pics/blue_pencil.png">
+barcodes from a spreadsheet. For each sample, select a barcode and scan or type it in. If
+you were not given barcodes to use, enter the following instead, replacing `PROJ` with your
+project's short name. Record the barcodes in your worksheet. <img src="pics/blue_pencil.png">
+    - `PROJ-201`
+    - `PROJ-202`
+    - `PROJ-203`
+    - `PROJ-204`
 1. _External Name_:  Again, this is the name of the *individual*, whether internal or external.
 Here's a suggested list. Replace `PROJ` with your own project short name.
     - `PROJ_ID1`
     - `PROJ_ID2`
     - `PROJ_ID3`
     - `PROJ_ID4`
-  1. Because you've already created an Identity with the external name `PROJ_ID1`, it is found as a match
+1. Because you've already created an Identity with the external name `PROJ_ID1`, it is found as a match
 to the external name you entered for the top row. In the `Identity Alias` dropdown menu for the first row,
 select the existing Identity.
-  1. Select `First Receipt` from the dropdown menu in each remaining cell of the `Identity Alias` column.
+1. Select `First Receipt` from the dropdown menu in each remaining cell of the `Identity Alias` column.
 
 Some fields cannot be filled down, so enter each of those separately. If you
 have a label with an incrementing number (_e.g._, `1`, `2`), enter two rows, select them,
@@ -240,8 +246,11 @@ material of an existing Identity.
     information in this table.
   * _Description_: `Stock 1`.
   * _Date of receipt_: select a date.
+  * _Received From_: Select any lab.
+  * _Received By_: Select any group.
   * _Sample Type_: select `GENOMIC` from the drop-down.
-  * _Project_: Select your project.
+  * _Project_: Select your project's short name from the drop-down.
+  * _Subproject_: Select the subproject you created.
   * _Scientific Name_: `Homo sapiens`.
   * _External Name_: `PROJ_ID2` (where `PROJ` is your project's short name) .
   * _Identity Alias_: The existing identity should be selected automatically
@@ -250,7 +259,6 @@ material of an existing Identity.
   * _Tissue Type_: `R (Reference or non-tumour, non-diseased tissue sample)`
   * _Times Received_: `1`
   * _Tube Number_: `1`
-  * _Lab_: `BioBank (University Health Network)`.
   * _Secondary ID_: `BioBankID 6`.
   * _STR Status_: select any value from the dropdown menu.
   * _Volume_: `300`
@@ -258,8 +266,8 @@ material of an existing Identity.
   * _QC Status_: select `Ready` from the dropdown.
 1. At the upper right hand side, click _Save_.
 
-When you click 'Save', the alias will be filled in. Record the external identity,
-sample class, alias and barcode in your worksheet. <img src="pics/blue_pencil.png">
+When you click 'Save', the alias will be filled in. Record the external name,
+sample class, and alias in your worksheet. <img src="pics/blue_pencil.png">
 Stock aliases are created from their tissue alias by appending _\_D\_S#_ or _\_R\_S#_.
 For example, the first DNA stock that derives from a tissue `PROJ_0002_Ly_R_nn_1-1` has
 the name `PROJ_0002_Ly_R_nn_1-1_D_S1`.
@@ -338,7 +346,12 @@ that you created in section 2.3. They will have names that end with `_Br_P_nn_1-
 1. Fill out the table:
   * _Description_: Free text description. In this case, use "Stock (Tissue
   Type)(Individual)". (e.g. `Stock P2` for `PROJ_0002_Br_P_nn_1-1`)
-  * _Matrix Barcode_: choose a barcode for each stock and record it on your worksheet.<img src="pics/blue_pencil.png">
+  * _Matrix Barcode_: choose a barcode for each stock. If you were not given barcodes to use,
+    enter the following instead, replacing `PROJ` with your project's short name. Record the
+    barcodes on your worksheet. <img src="pics/blue_pencil.png">
+        * `PROJ-301`
+        * `PROJ-302`
+        * `PROJ-303`
   * _STR Status_: select any value from the drop-down
   * _Volume_: `300`
   * _Vol. Units_: `µL`
@@ -357,17 +370,15 @@ In this case we will update several fields of 4 stock samples. We will use the
 stocks we entered in the previous step as well as the reference stock entered in
 part 2.4 of this tutorial.
 
-1. Select the samples you wish to edit:
-  * If you are continuing from the end of section **3.2 Bulk Propagate Samples**, do not
-  navigate away from the page. At the top left of the table after saving samples, click
-  the _Edit_ button. Continue to step 2. Otherwise, select samples using the following:
-    1. On the _Samples_ page, enter your project name in the search box.
-    1. Check the boxes for the stock samples (propagated and received) that you created in
-    sections 2.4 and 3.2. These are the samples with aliases that end with `_D_S1`.
+1. On the _Samples_ page, enter your project name in the search box.
+1. Check the boxes for the stock samples (propagated and received) that you created in
+   sections 2.4 and 3.2. These are the samples with aliases that end with `_D_S1`.
 1. Click the _Edit_ button at the top left of the table.
 1. Add a _Concentration_ value: any number
 1. Change the _QC Status_ column to `Ready` for all rows.
-1. Enter a _Matrix Barcode_ for the stock entered in section 2.4 and record it on your worksheet. <img src="pics/blue_pencil.png">
+1. Enter a _Matrix Barcode_ for the stock entered in section 2.4. If you weren't given a
+   barcode to use, enter `PROJ-401`, replacing `PROJ` with your project's short name. Record
+   the barcode on your worksheet. <img src="pics/blue_pencil.png">
 1. Click _Save_.
 
 Upon successful save, a green status will show at the top that says "Saved 4
@@ -392,7 +403,12 @@ Propagate again from the 4 _gDNA (stock)_ samples to _gDNA (aliquot)_.
   save.
   * _Description_: Free text description. In this case, use "Aliquot (Tissue
   Type)(Individual)". (e.g. `Aliquot P2` for `PROJ_0002_Br_P_nn_1-1_D_S1`)
-  * _Matrix Barcode_: choose a barcode for each aliquot and record it on your worksheet. <img src="pics/blue_pencil.png">
+  * _Matrix Barcode_: choose a barcode for each aliquot. If you weren't given barcodes to
+    use, enter the following instead. Record the barcodes on your worksheet. <img src="pics/blue_pencil.png">
+        * `PROJ-501`
+        * `PROJ-502`
+        * `PROJ-503`
+        * `PROJ-504`
   * _QC Status_: Select `Ready`
   * _Purpose_: Select `Library`
 1. Click _Save_.

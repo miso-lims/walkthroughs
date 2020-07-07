@@ -17,8 +17,9 @@ create or link a sequencing order after a pool is linked.
 1. At the bottom of the _Order Information_ section, click _Create Pool_.
 1. A dialog will appear to confirm the aliquots and proportions of the pool. Click _Yes_ to
    continue.
-1. The next dialog allows you to enter pool information. Set the alias to the project short name
-   followed by `_POOL_2` (e.g. `PROJ_POOL_2`). Leave the other fields at their default values.
+1. The next dialog allows you to enter pool information. Set the alias to the project's
+   {% if include.detailed == true %}short{% endif %} name followed by `_POOL_2` (e.g.
+   `PROJ_POOL_2`). Leave the other fields at their default values.
 1. Click _Save_. The newly created pool will be linked to the pool order and options to create
    or link a sequencing order will appear.
 

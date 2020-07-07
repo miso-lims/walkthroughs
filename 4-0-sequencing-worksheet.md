@@ -14,19 +14,19 @@ title: Sequencing worksheet
 **Inbox Box Use**: ___________________________________________________________________________________
 
 
-## 3.1 Create a container
+## 4.1 Create a container
 
 **Container Serial Number**: ___________________________________________________________________________________
 
-## 3.2 Create a run
+## 4.2 Create a run
 
 **Run Alias**: ___________________________________________________________________________________
 
-## 4. Working with automatically created runs
+## 5. Working with automatically created runs
 
 **Assigned run**: ___________________________________________________________________________________
 
-## 6. Scanning libraries/pools into your outbox
+## 7. Scanning libraries/pools into your outbox
 
 **Outbox Alias**: ___________________________________________________________________________________
 

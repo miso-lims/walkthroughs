@@ -18,10 +18,10 @@ Library aliquots can be made in bulk from libraries.
 <img srg="pics/plain-flow-library-aliquot.svg"/>
 {% endif %}
 
-In this exercise, we will create 4 library aliquots from the libraries we
-made previously.
+In this exercise, we will create library aliquots from the libraries we made previously.
 
-1. On the _Libraries_ page, check all the libraries just created.
+1. On the _Libraries_ page, check {% if include.detailed == true %}all five{% else %}both{% endif %}
+   of the libraries you created.
 1. From the toolbar, select _Make aliquots_. Click _Create_ in the dialog.
   * Note that the _Make aliquots_ option is also available after bulk creating
     or bulk editing libraries.
@@ -29,6 +29,8 @@ made previously.
   * _Conc._: (use any number you wish)
   * _Conc. Units_: ng/µL
   * _Creation Date_: (use the current date)
+{% if include.detailed == true %}
   * _Targeted Sequencing_: select any targeted sequencing value
+{% endif %}
 1. Click _Save_.
 
