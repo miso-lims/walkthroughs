@@ -19,6 +19,10 @@ Table of Contents
 </ol>
 </div>
 
+<div id="infobox">
+Download the worksheet for this section here: <a href="plain-2-0-samples-worksheet">Samples Worksheet</a>.
+</div>
+
 {% include logging_in.md detailed=page.is-detailed %}
 
 <a name="receipt" href="#" id="toplink">top</a>
@@ -32,7 +36,7 @@ single or pooled _Library Aliquots._
 
 ## 2.1 Receiving a Sample
 
-Samples are most easily entered into MISO using the bulk entry screen.
+Samples are entered into MISO using the bulk entry screen.
 
 {% include samples-receiving.md detailed=page.is-detailed quantity=page.quantity %}
     1. _QC Passed?_: `True`
@@ -65,10 +69,10 @@ Samples can be edited in bulk. Assume that we wish to update the description of 
 
 1. Select the sample you wish to edit: 
   * If you are continuing from the end of section **2.1 Receiving a Sample**, do not
-  navigate away from the page. At the top left of the table after saving samples, click
-  the _Edit_ button. Continue to step 2. Otherwise, select samples using the following:
+  navigate away from the page. At the top left of the table after saving, click
+  the _Edit_ button. Continue to step 2. Otherwise, use the following:
     1. On the _Samples_ page, enter your project name in the search box.
-    1. Check the boxes for the samples that you created in section 2.1.
+    1. Check the box for the sample that you created in section 2.1.
 1. Click the _Edit_ button at the top left of the table.
 1. Change the _Description_ value: any value
 1. Click _Save_.
@@ -82,13 +86,11 @@ single or multiple samples at once.
 
 ## 3.1 Adding Sample QCs
 
-{% include samples-bulk-qc.md section=page.section %}
+{% include samples-bulk-qc.md section=page.section detailed=page.is-detailed %}
 
 <a name="boxes" href="#" id="toplink">top</a>
 
 # 4. Scanning samples into outboxes
-
-Finally, scan the samples you made into the outbox so the libraries team can take over.
 
 {% include outboxes.md %}
 

@@ -22,25 +22,29 @@ Table of Contents
 </ol>
 </div>
 
+<div id="infobox">
+Download the worksheet for this section here: <a href="4-0-sequencing-worksheet">Sequencing Worksheet</a>.
+</div>
+
 {% include logging_in.md detailed=page.is-detailed %}
 
 {% include uorders.md %}
 
-## 2.1 Scan libraries into your inbox
+## 2.1 Scan pools into your inbox
 
-First, scan the libraries from the libraries team into your inbox for further
+First, scan the pools from the libraries team into your inbox for further
 work.
 
 {% include inboxes.md %}
 
-{% include sequencing-pool-orders.md %}
+{% include sequencing-pool-orders.md detailed=page.is-detailed %}
 
 {% include runs-new.md section=4 flowcell=site.flowcell sequencer=site.sequencer
   platform=site.platform platform_type=site.platform_type seq_params=site.seq_params %}
 
 {% include runs-auto.md %}
 
-{% include runs-add-pools.md %}
+{% include runs-add-pools.md detailed=page.is-detailed %}
 
 {% include runs-qcs.md %}
 

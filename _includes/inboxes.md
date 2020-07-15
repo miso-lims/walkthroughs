@@ -9,7 +9,7 @@ by a standard row letter + column number format (_e.g._, C05).
 
 ---------------------------
 
-In this exercise, we are going to take tissues/samples/libraries from the
+In this exercise, we are going to take samples/libraries/pools from the
 previous team/collaborator by scanning them out of the previous box and into a
 newly created 'inbox'. 
 
@@ -19,21 +19,21 @@ If you haven't already created an inbox, create one now:
 1. Click _Add_ at the top right of the table.
 1. In the _Create Boxes_ dialog, leave the _Quantity_ at 1 and click _Create_.
 1. On the _Create Box_ page, enter the following information:
-   1. Alias: `XX Inbox`, replacing `XX` with your own initials. Record this name in your
+   1. Alias: `XX Inbox`, replacing `XX` with your own initials. Record this alias in your
       worksheet. <img src="pics/blue_pencil.png">
    1. _Description_: a human description of the box purpose  `gDNA ready for
       library prep for <project>`.
    1. _Box Use_: The contents of the box. Select an appropriate use for your entities.
       Record the use in your worksheet. <img src="pics/blue_pencil.png">
-   1. _Box Size_: Select `8 x 12 scannable`.
+   1. _Box Size_: Select `8 x 12 Storage (scannable)`.
 1. Click _Save_.
 
 Upon clicking save, a graphic of the box will appear.
 
 <img src="pics/5-empty-box.png" id="figure">
 
-You can now fill the box with the tissues, stocks, aliquots, libraries, library aliquots, or
-pools that were made in previous steps. Collect the appropriate matrix tubes/barcodes now.
+You can now fill the box with the samples, libraries, library aliquots, or pools that
+were made in previous steps. Collect the appropriate matrix tubes/barcodes now.
 
 1. Click on a position in the displayed _Contents_ grid.
 1. Enter a matrix barcode into the _Search_ box on the right and click _Lookup_.

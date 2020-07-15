@@ -12,6 +12,7 @@ required (on Illumina).
 1. On the  _Pools_ page, select the pool you just created.
 1. From the toolbar, click _Create Orders_.
 1. Enter the order information:
+  - _Purpose_: `Production`
   - _Instrument Model_: Select the instrument for sequencing: `{{ site.platform }}`.
   - _Sequencing Parameters_: Select `{{ site.seq_params }}` chemistry.
   - _Partitions_: the number of lanes that should run for this pool. Enter `2`.

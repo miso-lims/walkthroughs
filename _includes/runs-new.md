@@ -6,7 +6,7 @@ MISO supports runs from Illumina, PacBio, Oxford Nanopore, and other sequencers,
 the terms used for instrument runs and associated libraries are intentionally 
 different from those used by the vendor. A MISO _Run_ represents a sequencing run 
 where the sequencer has been loaded and sequencing has begun. The Run Scanner can be
-configured to detect new Illumina and PacBio runs and automatically create
+configured to detect new Illumina, PacBio, and Oxford Nanopore runs and automatically create
 corresponding runs in MISO, while runs for other platforms must be created manually.
 A _Sequencing Container_ is the link between the library information and the
 instrument Run, and contains one or more lanes. Each Illumina lane, PacBio SMRT 

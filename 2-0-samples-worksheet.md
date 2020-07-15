@@ -30,7 +30,6 @@ title: Samples walkthrough worksheet
 <table>
 <tr><th>External Identity</th><th>Sample Class</th><th>Alias</th><th>Matrix Barcode</th></tr>
 <tr><td width="20%"></td><td width="25%"></td><td width="35%"></td><td width="20%">&nbsp;<br>&nbsp;<br>&nbsp;</td></tr>
-<tr><td></td><td></td><td></td><td>&nbsp;<br>&nbsp;<br>&nbsp;</td></tr>
 </table>
 
 

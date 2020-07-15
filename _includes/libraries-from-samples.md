@@ -1,24 +1,21 @@
 ## 2.1 Bulk propagate {% if include.detailed == true %}aliquots{% else %}samples{% endif %} into libraries
 
-In this section, you will use the {% if include.detailed == true %}aliquots{% else %}samples{% endif %} 
-created already to create libraries.
-
 {% if include.detailed == true %}
+In this section, you will use the sample aliquots created already to create libraries.
+
 <img src="pics/flow-aliquot.svg"/>
 {% else %}
+In this section, you will use the sample created already to create a library.
+
 <img src="pics/plain-flow-aliquot.svg"/>
 {% endif %}
 
-1. On the _Samples_ page, enter your project name into the search box.
+1. On the _Samples_ page, enter your project's {% if include.detailed == true %}short{% endif %} name into the search box.
 {% if include.detailed == true %}
-1. Check the gDNA aliquot samples to turn into libraries. These samples are the
-ones that end in `_D_1`:
-  - `PROJ_0001_Br_P_nn_1-1_D_1`
-  - `PROJ_0001_Ly_R_nn_1-1_D_1`
-  - `PROJ_0002_Br_P_nn_1-1_D_1`
-  - `PROJ_0002_Ly_R_nn_1-1_D_1`
+1. Check the 4 gDNA aliquot samples to turn into libraries. These samples are the
+ones that end in `_D_1`.
 {% else %}
-1. Check the samples to turn into libraries.
+1. Check the sample to turn into a library.
 {% endif %}
 1. Click the _Propagate_ button at the top left of the table.
 1. Note that "Propagate to Library" is the title of the dialog. Choose _1_ replicate.
@@ -40,6 +37,10 @@ ones that end in `_D_1`:
 {% endif %}
     * _Platform_: Illumina
     * _Type_: Paired End
+{% if include.detailed == false %}
+    * _Selection_: Select any
+    * _Strategy_: Select any
+{% endif %}
     * _Index Kit_: Nextera DNA Dual Index
     * _Index 1_ and _Index 2_: Select any combination of indices you wish.
       Select different indices for each library. Selecting the same indices for two

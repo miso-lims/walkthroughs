@@ -22,6 +22,10 @@ Table of Contents
 </ol>
 </div>
 
+<div id="infobox">
+Download the worksheet for this section here: <a href="plain-3-0-libraries-worksheet">Libraries Worksheet</a>.
+</div>
+
 {% include logging_in.md detailed=page.is-detailed %}
 
 <a name="props1" href="#" id="toplink">top</a>
@@ -42,7 +46,8 @@ inbox.
 
 {% include libraries-from-samples.md detailed=page.is-detailed %}
 
-{% include libraries-receipt.md detailed=page.is-detailed section=3 %}
+{% include libraries-receipt.md detailed=page.is-detailed section=3
+  platform='Illumina' type='Paired End' kit='any option' %}
 
 {% include libraries-qc.md %}
 
@@ -56,7 +61,7 @@ inbox.
 {% include libraries-to-library-aliquots.md detailed=page.is-detailed %}
 
 
-{% include libraries-pool-orders.md %}
+{% include libraries-pool-orders.md detailed=page.is-detailed %}
 
 
 {% include libraries-library-aliquots-to-pools.md detailed=page.is-detailed %}

@@ -42,6 +42,10 @@ as human.
 1. Leave the _Reference Genome_ as `Unknown`.
 {% endif %}
 1. Click the _Save_ button at the upper right.
+1. MISO will generate an ID and name for the project. The name be 'PRO' followed
+   by the ID (e.g. "PRO123"). {% if include.worksheet %}Record this name in your
+   worksheet. <img src="pics/blue_pencil.png">{% endif %}
+   
 
 Upon save, you will be taken to the _Edit Project_ page, where you can see the
 project you just created. Notice that the Project ID and Name now have values.
