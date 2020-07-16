@@ -2,9 +2,12 @@
 layout: page
 category: walkthrough
 title: Sequencing tutorial
-is-detailed: false
+is-detailed: true
 
 ---
+
+<object data="presentations/sequencing.pdf" width="800" height="500" type='application/pdf'> </object>
+
 
 <div id="toc">
 Table of Contents
@@ -23,7 +26,7 @@ Table of Contents
 </div>
 
 <div id="infobox">
-Download the worksheet for this section here: <a href="4-0-sequencing-worksheet">Sequencing Worksheet</a>.
+Download the worksheet for this section here: <a href="worksheet-detailed-sequencing">Sequencing Worksheet</a>.
 </div>
 
 {% include logging_in.md detailed=page.is-detailed %}
@@ -32,8 +35,7 @@ Download the worksheet for this section here: <a href="4-0-sequencing-worksheet"
 
 ## 2.1 Scan pools into your inbox
 
-First, scan the pools from the libraries team into your inbox for further
-work.
+First, scan the pools from the libraries team into your inbox for further work.
 
 {% include inboxes.md %}
 
@@ -58,4 +60,4 @@ work.
 
 {% include runs-trouble.md %}
 
-< <a href="plain-3-0-libraries">Libraries tutorial</a> | <a href="plain-index">Home</a> >
+< <a href="tutorial-detailed-libraries">Libraries</a> | <a href="index">Home</a> | <a href="tutorial-detailed-index-distance">Checking Index Distance</a> >

@@ -20,7 +20,7 @@ Table of Contents
 </div>
 
 <div id="infobox">
-Download the worksheet for this section here: <a href="plain-2-0-samples-worksheet">Samples Worksheet</a>.
+Download the worksheet for this section here: <a href="worksheet-plain-samples">Samples Worksheet</a>.
 </div>
 
 {% include logging_in.md detailed=page.is-detailed %}
@@ -42,8 +42,8 @@ Samples are entered into MISO using the bulk entry screen.
     1. _QC Passed?_: `True`
 1. At the upper right hand side, click _Save_.
 
-Like in Excel, you can fill down a column by double-clicking the square at the lower 
-right hand side of a selected cell. You can also click and drag to only fill in a 
+Like in Excel, you can fill down a column by double-clicking the square at the lower
+right hand side of a selected cell. You can also click and drag to only fill in a
 certain number of cells.
 
 <table border="1"><tr><td>
@@ -52,7 +52,7 @@ certain number of cells.
 <img src="pics/fill-down-2.png"/>
 </td></tr></table>
 
-Copy and pasting from Excel and Word is supported. Press Ctrl+V (Windows & Linux) or 
+Copy and pasting from Excel and Word is supported. Press Ctrl+V (Windows & Linux) or
 Command+V (Mac) on your keyboard to paste.
 
 
@@ -67,7 +67,7 @@ inbox for further work.
 
 Samples can be edited in bulk. Assume that we wish to update the description of the samples.
 
-1. Select the sample you wish to edit: 
+1. Select the sample you wish to edit:
   * If you are continuing from the end of section **2.1 Receiving a Sample**, do not
   navigate away from the page. At the top left of the table after saving, click
   the _Edit_ button. Continue to step 2. Otherwise, use the following:
@@ -101,5 +101,4 @@ single or multiple samples at once.
 {% include samples-trouble.md detailed=page.is-detailed %}
 
 
-< <a href="plain-1-0-project-coordination">Project coordination tutorial</a> | <a href="plain-index">Home</a> | <a href="plain-3-0-libraries">Libraries tutorial</a> >
-
+< <a href="tutorial-plain-project-coordination">Project Coordination</a> | <a href="index-plain">Home</a> | <a href="tutorial-plain-libraries">Libraries</a> >

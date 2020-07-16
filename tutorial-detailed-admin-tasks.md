@@ -43,4 +43,4 @@ making them part of the following Active Directory groups:
 {% include admin-reports.md %}
 
 
-< <a href="0-0-0-introduction">Introduction to MISO</a> | <a href="index">Home</a> | <a href="1-0-project-coordination">Project Coordination tutorial</a> > 
+< <a href="tutorial-detailed-introduction">Introduction</a> | <a href="index">Home</a> | <a href="tutorial-detailed-boxes">Working with Boxes</a> >

@@ -5,7 +5,7 @@ title: Sequencing worksheet
 
 
 
-<img src="pics/blue_pencil.png"> Worksheet to accompany [Sequencing walkthrough](4-0-sequencing).
+<img src="pics/blue_pencil.png"> Worksheet to accompany [Sequencing tutorial](tutorial-detailed-sequencing).
 
 ## 2.1 Scan pools into your inbox
 

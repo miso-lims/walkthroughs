@@ -27,7 +27,7 @@ Table of Contents
 </div>
 
 <div id="infobox">
-Download the worksheet for this section here: <a href="3-0-libraries-worksheet">Libraries Worksheet</a>.
+Download the worksheet for this section here: <a href="worksheet-detailed-libraries">Libraries Worksheet</a>.
 </div>
 
 {% include logging_in.md detailed=page.is-detailed %}
@@ -116,4 +116,4 @@ library is already included in a sequencer run, please {{ site.miso_admin_contac
 to get assistance from the MISO team.
 
 
-< <a href="2-0-samples">Samples tutorial</a> | <a href="index">Home</a> | <a href="4-0-sequencing">Sequencing tutorial</a> >
+< <a href="tutorial-detailed-samples">Samples</a> | <a href="index">Home</a> | <a href="tutorial-detailed-sequencing">Sequencing</a> >

@@ -32,3 +32,5 @@ Table of Contents
 
 {% include box-tutorials.md %}
 
+
+< <a href="tutorial-detailed-admin-tasks">Administration Tasks</a> | <a href="index">Home</a> | <a href="tutorial-detailed-bulk-tables">Working with Tables</a> >
