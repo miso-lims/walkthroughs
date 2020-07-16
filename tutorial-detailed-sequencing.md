@@ -26,7 +26,7 @@ Table of Contents
 </div>
 
 <div id="infobox">
-Download the worksheet for this section here: <a href="worksheet-detailed-sequencing">Sequencing Worksheet</a>.
+Print the worksheet for this section here: <a href="worksheet-detailed-sequencing">Sequencing Worksheet</a>.
 </div>
 
 {% include logging_in.md detailed=page.is-detailed %}
@@ -41,8 +41,7 @@ First, scan the pools from the libraries team into your inbox for further work.
 
 {% include sequencing-pool-orders.md detailed=page.is-detailed %}
 
-{% include runs-new.md section=4 flowcell=site.flowcell sequencer=site.sequencer
-  platform=site.platform platform_type=site.platform_type seq_params=site.seq_params %}
+{% include runs-new.md section=4 %}
 
 {% include runs-auto.md %}
 

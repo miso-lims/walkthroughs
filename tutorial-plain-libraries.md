@@ -23,7 +23,7 @@ Table of Contents
 </div>
 
 <div id="infobox">
-Download the worksheet for this section here: <a href="worksheet-plain-libraries">Libraries Worksheet</a>.
+Print the worksheet for this section here: <a href="worksheet-plain-libraries">Libraries Worksheet</a>.
 </div>
 
 {% include logging_in.md detailed=page.is-detailed %}
@@ -46,8 +46,7 @@ inbox.
 
 {% include libraries-from-samples.md detailed=page.is-detailed %}
 
-{% include libraries-receipt.md detailed=page.is-detailed section=3
-  platform='Illumina' type='Paired End' kit='any option' %}
+{% include libraries-receipt.md detailed=page.is-detailed section=3 %}
 
 {% include libraries-qc.md %}
 

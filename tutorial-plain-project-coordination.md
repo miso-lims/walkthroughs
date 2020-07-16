@@ -16,7 +16,7 @@ Table of Contents
 </div>
 
 <div id="infobox">
-Download the worksheet for this section here: <a href="worksheet-plain-project-coordination">Project coordination Worksheet</a>.
+Print the worksheet for this section here: <a href="worksheet-plain-project-coordination">Project coordination Worksheet</a>.
 </div>
 
 {% include logging_in.md detailed=page.is-detailed %}

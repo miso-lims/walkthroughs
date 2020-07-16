@@ -21,7 +21,7 @@ First, create a new box:
   1. _Description_: a human description of the box purpose  “gDNA ready for
     library prep for <project>”.
   1. _Use_: The contents of the box. Select an appropriate use for your entities.
-  1. _Size_: Select `8 x 12 scannable`.
+  1. _Size_: Select `{{ site.box_size }}`.
 1. Click _Save_.
 
 Upon clicking save, a graphic of the box will appear.
@@ -35,7 +35,7 @@ pools you made in previous steps.
 1. Enter a matrix barcode into the _Search_ box on the right and click _Lookup_.
 Normally a hand scanner would be used. You can also search for items by their
 name or alias
-1. Click _Update Position_. 
+1. Click _Update Position_.
   * &#9888; The _Save_ button at the top of the page does not work for
     individual positions, only for _Box Information_.
 1. Repeat for as many samples/libraries/pools as you want.
@@ -68,7 +68,7 @@ used up. Discarding the tube sets the volume of the sample to 0 and marks it as
 "discarded",and removes it from its box.
 
 1. Click on one of the positions in the box with a tube. The position, alias,
-   and barcode will appear to the right or below the box graphic. 
+   and barcode will appear to the right or below the box graphic.
    Right-click on the alias and pick "Open in new tab" to load the details page.
 1. Go back to the Box page in the other tab. Make sure the tube is still selected in
    the Box and click _Discard Tube_. Click "OK" in the pop-up.
@@ -86,4 +86,3 @@ created by the MISO developers for the tutorial.
 1. Choose an empty position and enter one of your barcodes.
 1. Click _Lookup_ and _Update Position_.
 1. Go back to your own Box and refresh the page. The sample was removed.
-
