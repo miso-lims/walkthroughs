@@ -20,7 +20,7 @@ Table of Contents
 </div>
 
 <div id="infobox">
-Download the worksheet for this section here: <a href="worksheet-plain-samples">Samples Worksheet</a>.
+Print the worksheet for this section here: <a href="worksheet-plain-samples">Samples Worksheet</a>.
 </div>
 
 {% include logging_in.md detailed=page.is-detailed %}
@@ -68,11 +68,10 @@ inbox for further work.
 Samples can be edited in bulk. Assume that we wish to update the description of the samples.
 
 1. Select the sample you wish to edit:
-  * If you are continuing from the end of section **2.1 Receiving a Sample**, do not
-  navigate away from the page. At the top left of the table after saving, click
-  the _Edit_ button. Continue to step 2. Otherwise, use the following:
-    1. On the _Samples_ page, enter your project name in the search box.
-    1. Check the box for the sample that you created in section 2.1.
+    * If you are continuing from the end of section **2.1 Receiving a Sample**, do not navigate away from the page. At
+      the top left of the table after saving, click the _Edit_ button. Continue to step 3. Otherwise, use the following:
+        1. On the _Samples_ page, enter your project name in the search box.
+        1. Check the box for the sample that you created in section 2.1.
 1. Click the _Edit_ button at the top left of the table.
 1. Change the _Description_ value: any value
 1. Click _Save_.

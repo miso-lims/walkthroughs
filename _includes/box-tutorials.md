@@ -9,14 +9,14 @@ We are going to need some items to play with, so we will create a few pools:
 1. Click _Pool Separately_ in the toolbar. **DO NOT** check the _Create New Box_ option
    in the dialog. Click _Create_.
 1. Enter the following attributes for the pools. Replace 'XX' with your own initials:
-    
+
     | Pool Alias | Matrix Barcode | Volume | Vol. Units |
     | XX_POOL_1 | XX_A01 | 5 | µL |
     | XX_POOL_2 | XX_A02 | 5 | µL |
     | XX_POOL_3 | XX_A03 | 5 | µL |
     | XX_POOL_4 | XX_A04 | 5 | µL |
     | XX_POOL_5 | XX_A05 | 5 | µL |
-    
+
 1. Click _Save_ at the top right.
 
 <a name="box-new" href="#">top</a>
@@ -29,8 +29,8 @@ Create a box to use for the rest of this walkthrough:
 1. Click _Add_ in the toolbar. In the dialog, set _Quantity_ to `1` and click _Create_.
 1. Fill out the box information as follows.
     * _Alias_: `XX Test Box` (replace `XX` with your own initials)
-    * _Box Use_: Sequencing
-    * _Box Size_: 8 x 12 scannable
+    * _Box Use_: Choose any option.
+    * _Box Size_: {{ site.box_size }}
 1. Click _Save_ at the top right.
 
 <a name="box-selecting" href="#">top</a>
@@ -182,4 +182,3 @@ To discard all remaining items in the box:
 1. From the _Options_ menu in the _Contents_ bar, select _Discard All Contents_. In the
    dialog, click _Discard_ to confirm. All remaining items are discarded at once and
    disappear from the box.
-

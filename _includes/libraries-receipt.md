@@ -45,15 +45,13 @@ if they match the data entered.
 {% if include.detailed == true %}
     * _Design_: select WG from the drop-down
 {% endif %}
-    * _Platform_: select {{include.platform}} from the drop-down
-    * _Type_: select {{include.type}} from the drop-down
+    * _Platform_: select {{site.platform_type}} from the drop-down
+    * _Type_: select {{site.library_type}} from the drop-down
 {% if include.detailed == false %}
     * _Selection_: PCR
     * _Strategy_: WGS
 {% endif %}
     * _Index Kit_: select No indices from the drop-down
-    * _Kit_: select {{include.kit}} from the drop-down
+    * _Kit_: select any option from the drop-down
     * _Size (bp)_: 430
 1. Click _Save_ at the top right. Record the Library alias and barcode in your worksheet. <img src="pics/blue_pencil.png">
-
-

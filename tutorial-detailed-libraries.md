@@ -27,7 +27,7 @@ Table of Contents
 </div>
 
 <div id="infobox">
-Download the worksheet for this section here: <a href="worksheet-detailed-libraries">Libraries Worksheet</a>.
+Print the worksheet for this section here: <a href="worksheet-detailed-libraries">Libraries Worksheet</a>.
 </div>
 
 {% include logging_in.md detailed=page.is-detailed %}
@@ -84,8 +84,7 @@ indices at a particular plate location. Once the libraries are sorted based on t
 parent sample's location, the indices can be copy-pasted in the order that the
 robot requires.
 
-{% include libraries-receipt.md detailed=page.is-detailed section=3
-  platform='Illumina' type='Paired End' kit='any option' %}
+{% include libraries-receipt.md detailed=page.is-detailed section=3 %}
 
 {% include libraries-qc.md %}
 

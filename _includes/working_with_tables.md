@@ -1,7 +1,7 @@
 <a name="quick-help"/>
 
 # 2. Quick Help
-The Quick Help section at the top of the bulk tables page contains instructions for how to interact with multiple table cells at once. 
+The Quick Help section at the top of the bulk tables page contains instructions for how to interact with multiple table cells at once.
 
 1. In the _Preparation_ menu on the left sidebar, click on **Libraries**.
 1. At the top left of the _Libraries_ table, click **Receive**.
@@ -9,15 +9,15 @@ The Quick Help section at the top of the bulk tables page contains instructions 
     * Aliquot Class: **gDNA (aliquot)**{% endif %}
     * Quantity: **5**
 1. Click **Receive**.
-1. Click the **Quick Help** header at the top right of the page, under the save button. 
-    * To close the Quick Help section, click again on the **Quick Help** header. 
+1. Click the **Quick Help** header at the top right of the page, under the save button.
+    * To close the Quick Help section, click again on the **Quick Help** header.
 
 <a name="copy-paste"/>
 
 # 3. Copy & Paste
-If you have a spreadsheet that already has the sample information and you need to enter this into MISO, copy-pasting is often the fastest way to do this. 
+If you have a spreadsheet that already has the sample information and you need to enter this into MISO, copy-pasting is often the fastest way to do this.
 
-1. Open the _Quick Help_. Note which key combination your current computer uses to paste. 
+1. Open the _Quick Help_. Note which key combination your current computer uses to paste.
 1. Copy the items from the table below (do not copy the "Sample Type" cell).
 1. Click in the first row of the _Sample Type_ column, and use the key combination to paste.
 
@@ -52,7 +52,7 @@ Entering the same data in all rows can be done by using the fill handle. The fil
 1. Double-click on the fill handle.
     * The cells below it will all change to the same project.
 
-*Note*: multiple columns can be filled down at once. 
+*Note*: multiple columns can be filled down at once.
 {% if include.detailed == true %}
 You can test this out:
 1. Fill in values in the top row for the _Tissue Origin_, _Tissue Type_, _Times Received_, and _Tube Number_ columns.
@@ -74,9 +74,9 @@ If the values in a column need to each be one greater than the value in the row 
     |TEST_XX01|
     |TEST_XX02|
 
-1. In the _Matrix Barcode_ column, click the cell in the first row, then press **Shift**, click the cell in the second row, and release both the mouse button and the Shift key. 
-    * The top two cells will be surrounded by a border, with the fill handle in the bottom right corner of the lower cell. 
-1. Double-click on the fill handle, and the cells below will be filled in with an incrementing pattern: 1-2-3-4-5. 
+1. In the _Matrix Barcode_ column, click the cell in the first row, then press **Shift**, click the cell in the second row, and release both the mouse button and the Shift key.
+    * The top two cells will be surrounded by a border, with the fill handle in the bottom right corner of the lower cell.
+1. Double-click on the fill handle, and the cells below will be filled in with an incrementing pattern: 1-2-3-4-5.
     * A copied pattern of 1-2-1-2-1 may briefly be seen, but will be overridden by the incrementing pattern.
 
 
@@ -96,10 +96,12 @@ Samples, libraries, library aliquots, or pools can be bulk-added to a box from w
 <td>Figure 1: The Fill Boxes by Row pattern</td>
 <td>Figure 2: The Fill Boxes by Column pattern</td>
 </tr>
-</table> 
+</table>
 
 1. Return to your _Create Libraries_ bulk table.
-1. In the top row of the _Box Search_ column, enter the alias of the box you created earlier, or enter **BOX1267**. Once the top row of the _Box Alias_ column displays a box alias value, [fill down](#fill-down-drag) the _Box Alias_ column.
+1. In the top row of the _Box Search_ column, enter the alias of the box you created in the Working with Boxes tutorial.
+   Once the top row of the _Box Alias_ column displays a box alias value, [fill down](#fill-down-drag) the _Box Alias_
+   column.
 1. Click **Fill Boxes by Row**.
     * The _Position_ column will be filled in. Note the pattern of the positions.
 1. Delete the value in the top row of the _Position_ column. Fill down the rest of the _Position_ column so that all cells are empty.
@@ -177,7 +179,7 @@ Some of the cells in a table can have different colours, each of which indicates
   * Red: cell needs to be filled with valid data. (Empty cell is invalid){% if include.detailed == true %}
   * Yellow (_Sample/Library Alias_ only): this alias is non-standard, and whatever is entered here will be saved (validation will be skipped). [Click here to see a non-standard alias](https://miso.gsi.oicr.on.ca/miso/sample/bulk/edit?ids=236)
   * Purple (_Identity Alias_ only): This cell is automatically filled in, but there are other items in the dropdown.
-    * To test this: [Click here](https://miso.gsi.oicr.on.ca/miso/sample/bulk/new?quantity=1&projectId=&sampleClassId=16) and enter **10XT** in the _Project_ column and **1** in the _External Name_ column. 
+    * To test this: [Click here](https://miso.gsi.oicr.on.ca/miso/sample/bulk/new?quantity=1&projectId=&sampleClassId=16) and enter **10XT** in the _Project_ column and **1** in the _External Name_ column.
       * The _Identity Alias_ cell will be purple, and if you click on the down arrow in the cell, you will see more items in the menu.{% endif %}
 
 <a name="read-only"/>

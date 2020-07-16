@@ -1,5 +1,5 @@
 
-Boxes hold samples, libraries, library aliquots, and pools. They do not track 
+Boxes hold samples, libraries, library aliquots, and pools. They do not track
 reagents or primers. Boxes are separated into _uses_ for different kinds
 of storage (_e.g._, tissue samples versus extracted DNA), but there is no
 check that items in a box match. Each box also has a _size_ that includes
@@ -11,7 +11,7 @@ by a standard row letter + column number format (_e.g._, C05).
 
 In this exercise, we are going to take samples/libraries/pools from the
 previous team/collaborator by scanning them out of the previous box and into a
-newly created 'inbox'. 
+newly created 'inbox'.
 
 If you haven't already created an inbox, create one now:
 
@@ -25,7 +25,7 @@ If you haven't already created an inbox, create one now:
       library prep for <project>`.
    1. _Box Use_: The contents of the box. Select an appropriate use for your entities.
       Record the use in your worksheet. <img src="pics/blue_pencil.png">
-   1. _Box Size_: Select `8 x 12 Storage (scannable)`.
+   1. _Box Size_: Select `{{ site.box_size }}`.
 1. Click _Save_.
 
 Upon clicking save, a graphic of the box will appear.
@@ -39,7 +39,7 @@ were made in previous steps. Collect the appropriate matrix tubes/barcodes now.
 1. Enter a matrix barcode into the _Search_ box on the right and click _Lookup_.
 Normally a hand scanner would be used. You can also search for items by their
 name or alias
-1. Click _Update Position_. 
+1. Click _Update Position_.
   * &#9888; The _Save_ button at the top of the page does not work for
     individual positions, only for _Box Information_.
 1. Repeat for as many samples/libraries/library aliquots/pools as you want.
@@ -64,4 +64,3 @@ Boxes can be found either from the Sample or Library page or the _Boxes_ page.
 
 Boxes can be used to store Samples, Libraries, Library Aliquots, and Pools and one box can
 store all four types.
-

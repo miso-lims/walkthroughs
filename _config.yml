@@ -1,32 +1,30 @@
-# Site title and subtitle. This is used in _includes/header.html
+# Site title and subtitle
 title: 'MISO'
 subtitle: 'An open-source LIMS for NGS sequencing centres'
 miso_flavour: 'OICR'
 miso_colour: 'rgb(56,121,59)'
 
-# URL to source code, used in _includes/footer.html
+# URL to source code
 codeurl: 'https://github.com/miso-lims/miso-lims'
-
 
 # Keep as an empty string if served up at the root. If served up at a specific
 # path (e.g. on GitHub pages) leave off the trailing slash, e.g. /my-project
 baseurl: '/walkthroughs'
 
-# URL to your MISO instance for the training tutorial. This is used in
-# _includes/logging_in.md
+# URL to your MISO instance for the training tutorial
 miso_url: 'http://miso.gsi.oicr.on.ca'
 
-# Configuration for the sequencer name, platform, and sequencing parameters used
-# in sections 3 (libraries) and 4 (sequencing). Make sure these match an
-# existing and active sequencer and existing sequencing parameters for your MISO
-# instance.
+# Configuration for important site-specific values used in the tutorials. Make
+# sure these match existing items in your MISO instance.
+box_size: '8x12 Storage (scannable)'
 sequencer: 'D00331'
 platform: 'Illumina HiSeq 2500'
 platform_type: 'Illumina'
+library_type: 'Paired End'
+index_kit: 'Nextera DNA Dual Index'
 flowcell: 'HiSeq PE Flow Cell v4'
 seq_params: 'V4 2×101'
 
-#
 ont_sequencer: 'MN16303'
 ont_platform: 'MinION'
 ont_flowcell: 'FLO-MIN107'

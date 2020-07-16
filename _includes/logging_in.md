@@ -12,7 +12,7 @@ Active Directory group, `MISO_ROLE_INTERNAL`.
 {% else %}
 If you are a new user and have not been given a username and password, you
 will first need to get a username and password by following the steps in the
-<a href="plain-0-0-admin-tasks#users">Adding Users</a> section.
+<a href="tutorial-plain-admin-tasks#users">Adding Users</a> section.
 {% endif %}
 
 -----------
