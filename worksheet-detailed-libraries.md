@@ -5,7 +5,7 @@ title: Libraries tutorial worksheet
 
 
 
-<img src="pics/blue_pencil.png"> Worksheet to accompany [Libraries tutorial](3-0-libraries).
+<img src="pics/blue_pencil.png"> Worksheet to accompany [Libraries tutorial](tutorial-detailed-libraries).
 
 ## 2.0 Scanning aliquots into your inbox
 
@@ -50,5 +50,3 @@ title: Libraries tutorial worksheet
 <tr><th>Pool Alias</th></tr>
 <tr><td width="500">&nbsp;<br>&nbsp;</td></tr>
 </table>
-
-

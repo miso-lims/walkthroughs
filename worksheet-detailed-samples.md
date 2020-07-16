@@ -3,7 +3,7 @@ layout: page
 title: Samples walkthrough worksheet
 ---
 
-<img src="pics/blue_pencil.png"> Worksheet to accompany [Samples team tutorial](2-0-samples).
+<img src="pics/blue_pencil.png"> Worksheet to accompany [Samples tutorial](tutorial-detailed-samples).
 
 ## 2.1 Entering a tissue
 
@@ -73,4 +73,3 @@ title: Samples walkthrough worksheet
 **Outbox Alias**: ___________________________________________________________________________________
 
 **Outbox Box Use**: ___________________________________________________________________________________
-

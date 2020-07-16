@@ -29,7 +29,7 @@ Table of Contents
 </div>
 
 <div id="infobox">
-Download the worksheet for this section here: <a href="2-0-samples-worksheet">Samples Worksheet</a>.
+Download the worksheet for this section here: <a href="worksheet-detailed-samples">Samples Worksheet</a>.
 </div>
 
 {% include logging_in.md detailed=page.is-detailed %}
@@ -508,4 +508,4 @@ Some of these items can be added directly:
 For items that you are not able to add via _Institute Defaults_, Please email gsi@oicr.on.ca
 or file a JIRA ticket in GSI Common to get assistance from the MISO team.
 
-< <a href="1-0-project-coordination">Project coordination tutorial</a> | <a href="index">Home</a> | <a href="3-0-libraries">Libraries tutorial</a> >
+< <a href="tutorial-detailed-project-coordination">Project Coordination</a> | <a href="index">Home</a> | <a href="tutorial-detailed-libraries">Libraries</a> >

@@ -2,7 +2,6 @@
 layout: page
 category: walkthrough
 title: Introduction to MISO
-is-detailed: true
 
 ---
 
@@ -14,4 +13,4 @@ is-detailed: true
 [Download the PDF]({{ '/presentations/intro.pdf' | prepend: site.baseurl }})
 
 
-<a href="index">Home</a> | <a href="0-0-admin-tasks">Administration Tasks</a> >
+<a href="index">Home</a> | <a href="tutorial-detailed-admin-tasks">Administration Tasks</a> >

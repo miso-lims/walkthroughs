@@ -26,7 +26,7 @@ Contact your MISO administrator to gain admin status.
 
 # 2. Adding Users
 
-The method of adding users varies by MISO installation. 
+The method of adding users varies by MISO installation.
 
 If you were able to log in at the beginning of this tutorial using a user name and/or password
 you chose, you can add new users.
@@ -36,9 +36,9 @@ you chose, you can add new users.
 1. Enter the new user's login name (all one word), email, and a password.
 1. Click _Save_ in the top right corner.
 
-If you were able to log in at the beginning of this tutorial using a user name and password 
+If you were able to log in at the beginning of this tutorial using a user name and password
 that you use for other services at your institute, users cannot be manually added by administrators.
-Users must be added by IT; once added, users can log in to MISO using their existing credentials 
+Users must be added by IT; once added, users can log in to MISO using their existing credentials
 (LDAP or Active Directory).
 
 {% include admin-new-inst.md %}
@@ -46,4 +46,4 @@ Users must be added by IT; once added, users can log in to MISO using their exis
 {% include admin-reports.md %}
 
 
-< <a href="plain-index">Home</a> | <a href="plain-1-0-project-coordination">Project Coordination tutorial</a> >
+< <a href="tutorial-plain-introduction">Introduction</a> | <a href="pindex-plain">Home</a> | <a href="tutorial-plain-boxes">Working with Boxes</a> >

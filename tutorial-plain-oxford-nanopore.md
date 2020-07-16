@@ -2,12 +2,9 @@
 layout: page
 category: walkthrough
 title: Oxford Nanopore tutorial
-is-detailed: true
+is-detailed: false
 
 ---
-
-<object data="presentations/miso_ont_training.pdf" width="800" height="500" type='application/pdf'> </object>
-
 
 <div id="toc">
 Table of Contents
@@ -36,4 +33,4 @@ Table of Contents
 
 {% include ont_runs_add_pools.md %}
 
-< <a href="index">Home</a> >
+< <a href="tutorial-plain-arrays">Arrays</a> | <a href="index-plain">Home</a>

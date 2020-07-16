@@ -32,4 +32,4 @@ Table of Contents
 
 {% include array_runs.md detailed=page.is-detailed %}
 
-< <a href="index">Home</a> >
+< <a href="tutorial-detailed-index-distance">Checking Index Distance</a> | <a href="index">Home</a> | <a href="tutorial-detailed-oxford-nanopore">Oxford Nanopore</a> >

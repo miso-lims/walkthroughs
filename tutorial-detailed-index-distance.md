@@ -2,7 +2,7 @@
 layout: page
 category: walkthrough
 title: Checking Index Distance
-is-detailed: false
+is-detailed: true
 
 ---
 
@@ -23,3 +23,5 @@ Table of Contents
 
 {% include index-checking.md %}
 
+
+< <a href="tutorial-detailed-sequencing">Sequencing</a> | <a href="index">Home</a> | <a href="tutorial-detailed-arrays">Arrays</a> >

@@ -2,7 +2,7 @@
 layout: page
 category: walkthrough
 title: Working with Tables
-is-detailed: true
+is-detailed: false
 
 ---
 
@@ -12,7 +12,9 @@ Table of Contents
    <li><a href="#logging_in">Logging In</a></li>
    <li><a href="#quick-help">Quick Help</a></li>
    <li><a href="#copy-paste">Copy & Paste</a></li>
-   <li><a href="#fill-many">Fill Many</a></li>
+   <li><a href="#fill-down-drag">Fill many: drag</a></li>
+   <li><a href="#fill-down-click">Fill many: double-click</a></li>
+   <li><a href="#fill-down-increment">Fill many: incrementing</a></li>
    <li><a href="#fill-by-row-column">Fill Boxes by Row or Column</a></li>
    <li><a href="#check-qcs">Check QCs</a></li>
    <li><a href="#export">Export</a></li>
@@ -31,3 +33,5 @@ Creating and editing samples, libraries, library aliquots, pools, and orders are
 
 {% include working_with_tables.md detailed=page.is-detailed %}
 
+
+< <a href="tutorial-plain-boxes">Working with Boxes</a> | <a href="index-plain">Home</a> | <a href="tutorial-plain-project-coordination">Project Coordination</a> >

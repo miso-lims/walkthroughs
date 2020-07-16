@@ -5,7 +5,7 @@ title: Project coordination worksheet
 
 
 
-<img src="pics/blue_pencil.png"> Worksheet to accompany [Project coordination tutorial](1-0-project-coordination).
+<img src="pics/blue_pencil.png"> Worksheet to accompany [Project Coordination tutorial](tutorial-detailed-project-coordination).
 
 ## 2.1 Creating a new project
 
@@ -14,4 +14,3 @@ Project alias:__________________________________________________________________
 Project short name: ____________________________
 
 Project name: ____________________________
-

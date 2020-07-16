@@ -23,7 +23,7 @@ Table of Contents
 </div>
 
 <div id="infobox">
-Download the worksheet for this section here: <a href="plain-3-0-libraries-worksheet">Libraries Worksheet</a>.
+Download the worksheet for this section here: <a href="worksheet-plain-libraries">Libraries Worksheet</a>.
 </div>
 
 {% include logging_in.md detailed=page.is-detailed %}
@@ -73,6 +73,4 @@ inbox.
 {% include libraries-trouble.md %}
 
 
-< <a href="plain-2-0-samples">Samples tutorial</a> | <a href="plain-index">Home</a> | <a href="plain-4-0-sequencing">Sequencing tutorial</a> >
-
-
+< <a href="tutorial-plain-samples">Samples</a> | <a href="index-plain">Home</a> | <a href="tutorial-plain-sequencing">Sequencing</a> >

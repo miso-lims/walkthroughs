@@ -29,5 +29,4 @@ Table of Contents
 
 {% include array_runs.md detailed=page.is-detailed %}
 
-< <a href="plain-index">Home</a> >
-
+< <a href="tutorial-plain-index-distance">Checking Index Distance</a> | <a href="index-plain">Home</a> | <a href="tutorial-plain-oxford-nanopore">Oxford Nanopore</a> >

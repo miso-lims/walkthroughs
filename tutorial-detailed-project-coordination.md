@@ -17,7 +17,7 @@ Table of Contents
 </div>
 
 <div id="infobox">
-Download the worksheet for this section here: <a href="1-0-project-coordination-worksheet">Project coordination Worksheet</a>. 
+Download the worksheet for this section here: <a href="worksheet-detailed-project-coordination">Project coordination Worksheet</a>.
 </div>
 
 {% include logging_in.md detailed=page.is-detailed %}
@@ -47,4 +47,4 @@ Once a subproject is set up, it can be selected when creating Samples.
 Now that your project has been created, continue to make your first samples.
 
 
-< <a href="0-0-admin-tasks">Admin tasks tutorial</a> | <a href="index">Home</a> | <a href="2-0-samples">Samples tutorial</a> > 
+< <a href="tutorial-detailed-bulk-tables">Working with Tables</a> | <a href="index">Home</a> | <a href="tutorial-detailed-samples">Samples</a> >
