@@ -20,7 +20,7 @@ Library aliquots can be made in bulk from libraries.
 
 In this exercise, we will create library aliquots from the libraries we made previously.
 
-1. On the _Libraries_ page, check {% if include.detailed == true %}all five{% else %}both{% endif %}
+1. On the _Libraries_ page, check all {% if include.detailed == true %}five{% else %}six{% endif %}
    of the libraries you created.
 1. From the toolbar, select _Make aliquots_. Click _Create_ in the dialog.
   * Note that the _Make aliquots_ option is also available after bulk creating
@@ -33,4 +33,3 @@ In this exercise, we will create library aliquots from the libraries we made pre
   * _Targeted Sequencing_: select any targeted sequencing value
 {% endif %}
 1. Click _Save_.
-

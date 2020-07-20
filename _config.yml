@@ -25,6 +25,13 @@ index_kit: 'Nextera DNA Dual Index'
 flowcell: 'HiSeq PE Flow Cell v4'
 seq_params: 'V4 2×101'
 
+# values only affecting plain sample mode
+plain_sample1_alias: 'PROJ_S01_0001'
+plain_sample2_alias: 'PROJ_S02_0001'
+plain_sample3_alias: 'PROJ_S03_0001'
+# samples 4 and 5 are autofilled based on incrementing pattern from 2 and 3
+
+# values for Ocford Nanopore tutorial
 ont_sequencer: 'MN16303'
 ont_platform: 'MinION'
 ont_flowcell: 'FLO-MIN107'

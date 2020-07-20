@@ -4,7 +4,6 @@ category: walkthrough
 title: Samples Tutorial
 is-detailed: false
 quantity: 1
-section: 2.3
 
 ---
 
@@ -42,36 +41,33 @@ Samples are entered into MISO using the bulk entry screen.
     1. _QC Passed?_: `True`
 1. At the upper right hand side, click _Save_.
 
-Like in Excel, you can fill down a column by double-clicking the square at the lower
-right hand side of a selected cell. You can also click and drag to only fill in a
-certain number of cells.
+## 2.2 Entering Bulk Samples
 
-<table border="1"><tr><td>
-<img src="pics/fill-down-1.png"/>
-</td><td>
-<img src="pics/fill-down-2.png"/>
-</td></tr></table>
+Next we will create four more samples.
 
-Copy and pasting from Excel and Word is supported. Press Ctrl+V (Windows & Linux) or
-Command+V (Mac) on your keyboard to paste.
+{% include samples-receiving-bulk.md detailed=page.is-detailed %}
+
+If you navigate back to your _Edit Project_ page, there should now be five samples.
+
+## 2.3 Receipt Transfers
+
+{% include receipt-transfer.md detailed=page.is-detailed items_exercise="2.2" type="sample"
+  type_plural="samples" %}
 
 
-## 2.2 Scanning Samples into a Box
+## 2.4 Scanning Samples into a Box
 
 In this section we will add the Samples you just received into your
 inbox for further work.
 
 {% include inboxes.md %}
 
-## 2.3 Bulk Editing
+## 2.5 Bulk Editing
 
 Samples can be edited in bulk. Assume that we wish to update the description of the samples.
 
-1. Select the sample you wish to edit:
-    * If you are continuing from the end of section **2.1 Receiving a Sample**, do not navigate away from the page. At
-      the top left of the table after saving, click the _Edit_ button. Continue to step 3. Otherwise, use the following:
-        1. On the _Samples_ page, enter your project name in the search box.
-        1. Check the box for the sample that you created in section 2.1.
+1. On the _Samples_ page, enter your project name in the search box and press the `Enter` key on your keyboard.
+1. Check the boxes for the samples that you created in exercise 2.2.
 1. Click the _Edit_ button at the top left of the table.
 1. Change the _Description_ value: any value
 1. Click _Save_.
@@ -80,12 +76,9 @@ Samples can be edited in bulk. Assume that we wish to update the description of 
 
 # 3. Sample QCs
 
-Several QC methods are supported in MISO. The same process can be used to add QCs to a
-single or multiple samples at once.
-
 ## 3.1 Adding Sample QCs
 
-{% include samples-bulk-qc.md section=page.section detailed=page.is-detailed %}
+{% include bulk-qc.md detailed=page.is-detailed items_section="2.2" type="sample" type_plural="samples" %}
 
 <a name="boxes" href="#" id="toplink">top</a>
 

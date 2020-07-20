@@ -25,7 +25,7 @@ title: Samples walkthrough worksheet
 </table>
 
 
-## 2.4 Receiving stock DNA/RNA
+## 2.5 Receiving stock DNA/RNA
 
 <table>
 <tr><th>External Identity</th><th>Sample Class</th><th>Alias</th><th>Matrix Barcode</th></tr>
@@ -33,7 +33,7 @@ title: Samples walkthrough worksheet
 </table>
 
 
-## 2.5 Scanning tissues and stocks into a box
+## 2.6 Scanning tissues and stocks into a box
 
 **Inbox Alias**: ___________________________________________________________________________________
 

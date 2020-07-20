@@ -86,6 +86,11 @@ robot requires.
 
 {% include libraries-receipt.md detailed=page.is-detailed section=3 %}
 
+## 3.2 Receipt Transfers
+
+{% include receipt-transfer.md detailed=page.is-detailed items_exercise="3.1" type="library"
+  type_plural="libraries" %}
+
 {% include libraries-qc.md %}
 
 <a name="boxes" href="#" id="toplink">top</a>

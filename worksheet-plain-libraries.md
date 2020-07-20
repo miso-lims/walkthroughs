@@ -26,6 +26,10 @@ title: Libraries tutorial worksheet
 <table>
 <tr><th>Library Alias</th><th>Matrix Barcode</th></tr>
 <tr><td width="500">&nbsp;<br>&nbsp;</td><td width="300">&nbsp;<br>&nbsp;</td></tr>
+<tr><td>&nbsp;<br>&nbsp;</td><td>&nbsp;<br>&nbsp;</td></tr>
+<tr><td>&nbsp;<br>&nbsp;</td><td>&nbsp;<br>&nbsp;</td></tr>
+<tr><td>&nbsp;<br>&nbsp;</td><td>&nbsp;<br>&nbsp;</td></tr>
+<tr><td>&nbsp;<br>&nbsp;</td><td>&nbsp;<br>&nbsp;</td></tr>
 </table>
 
 
