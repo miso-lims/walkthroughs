@@ -16,7 +16,8 @@ library aliquots in it. Every lane of sequencing contains only one pool.
 
 Here we will pool all of the library aliquots we added previously to make a single pool.
 
-1. On the _Library Aliquots_ page, check the {% if include.detailed == true %}five{% else %}two{% endif %} library aliquots you created.
+1. On the _Library Aliquots_ page, check the {% if include.detailed == true %}five{% else %}six{% endif %} library
+   aliquots you created.
 1. From the toolbar at the top left, click _Pool Together_. Click _Create_ in the dialog.
 1. Enter the pool information:
   * _Alias_: A short description of the pool contents. Enter the project

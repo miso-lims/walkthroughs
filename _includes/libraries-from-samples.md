@@ -5,35 +5,32 @@ In this section, you will use the sample aliquots created already to create libr
 
 <img src="pics/flow-aliquot.svg"/>
 {% else %}
-In this section, you will use the sample created already to create a library.
+In this section, you will use the samples created already to create libraries.
 
 <img src="pics/plain-flow-aliquot.svg"/>
 {% endif %}
 
-1. On the _Samples_ page, enter your project's {% if include.detailed == true %}short{% endif %} name into the search box.
+1. On the _Samples_ page, enter your project's {% if include.detailed == true %}short{% endif %} name into the search
+   box and press the `Enter` key on your keyboard.
 {% if include.detailed == true %}
-1. Check the 4 gDNA aliquot samples to turn into libraries. These samples are the
-ones that end in `_D_1`.
+1. Check the 4 gDNA aliquot samples to turn into libraries. These samples are the ones that end in `_D_1`.
 {% else %}
-1. Check the sample to turn into a library.
+1. Check the 5 samples created previously to turn into libraries.
 {% endif %}
 1. Click the _Propagate_ button at the top left of the table.
 1. Note that "Propagate to Library" is the title of the dialog. Choose _1_ replicate.
 1. Click _Propagate_.
 1. A table will appear. Enter the library information:
-  * _Library Name_: Leave blank as this will be filled in automatically after save.
-  * _Library Alias_: Leave blank as this will be filled in automatically.
+    * _Library Name_: Leave blank as this will be filled in automatically after save.
+    * _Library Alias_: Leave blank as this will be filled in automatically.
+    * _Matrix Barcode_: As before, usually this would be scanned by the hand scanner. In this tutorial, enter matrix
+      barcodes in the form `(project {% if include.detailed %}short{% endif %} name)_(row number)_lib`, e.g.
+      `PROJ_1_lib`.
 {% if include.detailed == true %}
-        For more information about Library nomenclature, see
-        <a href="https://wiki.oicr.on.ca/display/MCPHERSON/LIMS+Guidelines#LIMSGuidelines-LibraryNomenclature"
-        target="_new">Library Nomenclature</a>.
-    * _Matrix Barcode_: As before, usually this would be scanned by the hand
-      scanner. In this tutorial, enter matrix barcodes in the form
-      (Short name)_(Tissue type)(Individual)_Li, e.g. `PROJ_P1_Li`.
-    * _Description_: Library (Tissue type)(individual), e.g. `Library P1`
+    * _Description_: `Library ((Tissue type)(individual))`, e.g. `Library P1`
     * _Design_: Select any
 {% else %}
-    * _Description_: Library #, e.g. `Library 1`
+    * _Description_: `Library (row number)`, e.g. `Library 1`
 {% endif %}
     * _Platform_: {{ site.platform_type }}
     * _Type_: {{ site.library_type }}
@@ -47,10 +44,10 @@ ones that end in `_D_1`.
       different libraries would make it unwise to pool those two libraries
       together later.
     * _Kit_: Select any
-    * _Size (bp)_: 300
+    * _Size (bp)_: `300`
 {% if include.detailed == true %}
-    * _Volume_: 100
-    * _Vol. Units_: µL
+    * _Volume_: `100`
+    * _Vol. Units_: `µL`
 {% endif %}
 1. Choose _Save_. Record the Library aliases and barcodes in your worksheet. <img src="pics/blue_pencil.png">
 

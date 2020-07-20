@@ -9,7 +9,7 @@
        information in this form.
     1. _Description_: `Reference 1`.
 {% else %}
-    1. _Sample Alias_: enter a sample alias like `PRO1_S#_#`. Replace `PRO1` with
+    1. _Sample Alias_: enter a sample alias like `{{ site.plain_sample1_alias }}`. Replace `PRO1` with
        your project's name, and replace the `#` symbol with numbers of your
        choosing. Record the alias on your worksheet. <img src="pics/blue_pencil.png">
     1. _Description_: `Wheat`
