@@ -4,7 +4,7 @@
 
 Each instrument can have one or more associated service records.
 
-1. Select _Instruments_.
+1. From the main menu, click _Instruments_.
 1. Choose an individual instrument.
 1. Use the blue arrow to expand the _Service Records_ section.
 1. Click the _Add_ button at the top of the table.

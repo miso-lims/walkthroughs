@@ -6,7 +6,7 @@ title: Introduction to MISO
 ---
 
 
-<video muted autoplay controls>
+<video controls>
     <source src="presentations/miso_intro.mp4" type="video/mp4">
 </video>
 
