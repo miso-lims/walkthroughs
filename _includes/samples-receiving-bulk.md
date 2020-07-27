@@ -1,33 +1,33 @@
 1. On the left hand menu under _Preparation_, click _Samples_.
 1. Click the _Create_ button at the top left of the table.
-1. Choose {% if include.detailed %}Sample Class _Tissue_ and{% endif %} Quantity _4_.
+1. Choose {% if include.detailed %}Sample Class `{{ site.tissue_class }}` and{% endif %} Quantity `4`.
 1. Click _Create_.
 
 A table will appear with the requested number of samples in table format. We
-will fill in the first row and use the quick-fill option to fill in the rest of
+will fill in the first row and use the quick-fill feature to fill in the rest of
 the table.
 
 1. Select or enter the following data in the **first row only**:
     * _Name_: leave blank. This will be automatically generated after save.
 {% if include.detailed %}
-    * _Alias_: leave blank. Again, this will be automatically generated from the rest of the table.
+    * _Alias_: leave blank. Again, this will be automatically generated.
 {% else %}
     * _Alias_: `{{ site.plain_sample2_alias }}`
 {% endif %}
-    * _Date of Receipt_: Select today's date.
+    * _Date of Receipt_: Select yesterday's date.
     * _Time of Receipt_: `9:00 am`
     * _Received From_: Select any lab.
     * _Received By_: Select any group.
-    * _Sample Type_: Select `GENOMIC` from the drop-down.
+    * _Sample Type_: `GENOMIC`
     * _Project_: Select your project's {% if include.detailed %}short{% endif %} name from the drop-down.
 {% if include.detailed %}
     * _Subproject_: Select the subproject you created.
 {% endif %}
-    * _Sci. Name_: Select any item from the dropdown.
+    * _Sci. Name_: `{{ site.scientific_name }}`
 {% if include.detailed %}
     * _Donor Sex_: Select any item from the drop-down.
-    * _Tissue Origin_: `Br (Breast)`
-    * _Tissue Type_: `P (Primary Tumour)`
+    * _Tissue Origin_: `{{ site.tissue_origin_2 }}`
+    * _Tissue Type_: `{{ site.tissue_type_2 }}`
     * _Times Received_: `1`
     * _Tube Number_: `1`
     * _Secondary ID_: `BioBankID 1`.
@@ -73,9 +73,9 @@ Here's a suggested list. Replace `PROJ` with your own project short name.
     - `PROJ_ID2`
     - `PROJ_ID3`
     - `PROJ_ID4`
-1. Because you've already created an Identity with the external name `PROJ_ID1`, it is found as a match
+1. Because you've already created an {{ site.identity_class }} with the external name `PROJ_ID1`, it is found as a match
 to the external name you entered for the top row. In the `Identity Alias` dropdown menu for the first row,
-select the existing Identity.
+select the existing {{ site.identity_class }}.
 1. Select `First Receipt` from the dropdown menu in each remaining cell of the `Identity Alias` column.
 {% endif %}
 

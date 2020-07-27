@@ -74,15 +74,18 @@ Use control-click (or command-click) to select more than one row or column.
 1. Click the _Propagate_ button at the top left of the box contents table. If the
 top left of the box contents table indicates that more than one type of element is
 selected, de-select the non-aliquot tubes and then click _Propagate_.
-1. Choose _1_ replicate.
+1. In the dialog that appears, choose `1` replicate. If necessary, choose to propagate to `Library`.
 1. Click _Propagate_.
-1. From the bulk libraries table, you can now sort the libraries you are creating
-based on their parent sample's position within the box. Sorting can be done by
-rows (`A01`, `A02`, `B01`, `B02`, ...) or columns (`A01`, `B01`, `A02`, `B02`, ...).
-  * This may be useful when using the Sciclone robot to create libraries and add
-indices at a particular plate location. Once the libraries are sorted based on the
-parent sample's location, the indices can be copy-pasted in the order that the
-robot requires.
+1. Click the _Sort_ button at the top of the table.
+1. In the dialog that appears, choose `Sample Location (by rows)` as the _Primary Sort_.
+   Leave all other options at their default values.
+1. Click _Sort_. The libraries you are creating are now sorted based on their parent sample's position within the box.
+   Sorting can be done by rows (`A01`, `A02`, `B01`, `B02`, ...) or columns (`A01`, `B01`, `A02`, `B02`, ...).
+    * This may be useful when using the Sciclone robot to create libraries and add
+      indices at a particular plate location. Once the libraries are sorted based on the
+      parent sample's location, the indices can be copy-pasted in the same order that the
+      robot requires.
+1. Do not save these libraries.
 
 {% include libraries-receipt.md detailed=page.is-detailed section=3 %}
 
@@ -103,7 +106,7 @@ robot requires.
 {% include libraries-to-library-aliquots.md detailed=page.is-detailed %}
 
 
-{% include libraries-pool-orders.md %}
+{% include libraries-pool-orders.md detailed=page.is-detailed %}
 
 
 {% include libraries-library-aliquots-to-pools.md detailed=page.is-detailed %}
@@ -115,9 +118,10 @@ robot requires.
 {% include libraries-trouble.md %}
 
 ## What if I assign a library to the wrong parent aliquot?
+
 You can delete the library and re-create it. If this is not appropriate because the
 library is already included in a sequencer run, please {{ site.miso_admin_contact }}
-to get assistance from the MISO team.
+to get assistance from {{ site.miso_admin }}.
 
 
 < <a href="tutorial-detailed-samples">Samples</a> | <a href="index">Home</a> | <a href="tutorial-detailed-sequencing">Sequencing</a> >

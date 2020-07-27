@@ -10,15 +10,15 @@ In this section, you will use the samples created already to create libraries.
 <img src="pics/plain-flow-aliquot.svg"/>
 {% endif %}
 
-1. On the _Samples_ page, enter your project's {% if include.detailed == true %}short{% endif %} name into the search
+1. On the _Samples_ page, enter your project's {% if include.detailed %}short{% endif %} name into the search
    box and press the `Enter` key on your keyboard.
-{% if include.detailed == true %}
-1. Check the 4 gDNA aliquot samples to turn into libraries. These samples are the ones that end in `_D_1`.
+{% if include.detailed %}
+1. Check the 4 {{ site.aliquot_class }} samples created previously.
 {% else %}
-1. Check the 5 samples created previously to turn into libraries.
+1. Check the 5 samples created previously.
 {% endif %}
 1. Click the _Propagate_ button at the top left of the table.
-1. Note that "Propagate to Library" is the title of the dialog. Choose _1_ replicate.
+1. In the dialog that appears, choose `1` replicate. If necessary, choose to propagate to `Library`.
 1. Click _Propagate_.
 1. A table will appear. Enter the library information:
     * _Library Name_: Leave blank as this will be filled in automatically after save.

@@ -23,13 +23,13 @@ In this exercise, we will create library aliquots from the libraries we made pre
 1. On the _Libraries_ page, check all {% if include.detailed == true %}five{% else %}six{% endif %}
    of the libraries you created.
 1. From the toolbar, select _Make aliquots_. Click _Create_ in the dialog.
-  * Note that the _Make aliquots_ option is also available after bulk creating
-    or bulk editing libraries.
+    * Note that the _Make aliquots_ option is also available after bulk creating
+      or bulk editing libraries.
 1. Enter the library aliquot information:
-  * _Conc._: (use any number you wish)
-  * _Conc. Units_: ng/µL
-  * _Creation Date_: (use the current date)
+    * _Conc._: Enter any number you wish.
+    * _Conc. Units_: `ng/µL`
+    * _Creation Date_: Select the current date.
 {% if include.detailed == true %}
-  * _Targeted Sequencing_: select any targeted sequencing value
+    * _Targeted Sequencing_: Select any targeted sequencing value.
 {% endif %}
 1. Click _Save_.

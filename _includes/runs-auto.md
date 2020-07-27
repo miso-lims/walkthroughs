@@ -1,7 +1,10 @@
 <a name="runs-auto" href="#" id="toplink">top</a>
 
 # 5. Working with automatically created runs
- 
+
+This exercise looks at a run created by Run Scanner. If your site is not using Run Scanner, you should skip this
+exercise.
+
 Shortly after an instrument begins imaging, MISO should detect it
 and create a _Run_. As sequencing continues, MISO will pull back information
 about the quality of the run similar to the on-instrument applications like SAV.

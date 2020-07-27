@@ -21,7 +21,7 @@ button where you can find basic information about the current page.
 
 ### 2.1.1 Add a Study (optional)
 
-If you plan to upload your project data to the ENA, you must add a _Study_ to 
+If you plan to upload your project data to the ENA, you must add a _Study_ to
 your Project.
 
 1. Click on the _Studies_ header to expand the section.

@@ -28,8 +28,8 @@ Print the worksheet for this section here: <a href="worksheet-detailed-project-c
 
 # 3. Configuring sub-projects
 
-Samples in a project can be assigned a sub-project designation. The sub-project
-is primarily a label for human use.
+Samples in a project can be assigned a sub-project designation. The sub-project is primarily a label for human use.
+Sub-projects are an optional feature - a project is not required to have sub-projects.
 
 1. On the left hand menu in the _Institute Defaults_ section, click _Subprojects_.
 1. Click the _Add_ button at the top left of the table.
@@ -38,7 +38,7 @@ is primarily a label for human use.
     * Fill in the alias and description.
     * Select the priority from the drop-down. This will cause high-priority items
       to display priority messages in the MISO interface.
-    * Select `Human hg19 random` from the Reference Genome dropdown
+    * Select `{{ site.scientific_name }}` from the Reference Genome dropdown
 1. Click _Save_ in the top right corner of the page.
 
 Once a subproject is set up, it can be selected when creating Samples.

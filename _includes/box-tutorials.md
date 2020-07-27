@@ -11,11 +11,11 @@ We are going to need some items to play with, so we will create a few pools:
 1. Enter the following attributes for the pools. Replace 'XX' with your own initials:
 
     | Pool Alias | Matrix Barcode | Volume | Vol. Units |
-    | XX_POOL_1 | XX_A01 | 5 | µL |
-    | XX_POOL_2 | XX_A02 | 5 | µL |
-    | XX_POOL_3 | XX_A03 | 5 | µL |
-    | XX_POOL_4 | XX_A04 | 5 | µL |
-    | XX_POOL_5 | XX_A05 | 5 | µL |
+    | XX_POOL_1 | XX-A01 | 5 | µL |
+    | XX_POOL_2 | XX-A02 | 5 | µL |
+    | XX_POOL_3 | XX-A03 | 5 | µL |
+    | XX_POOL_4 | XX-A04 | 5 | µL |
+    | XX_POOL_5 | XX-A05 | 5 | µL |
 
 1. Click _Save_ at the top right.
 
@@ -30,7 +30,7 @@ Create a box to use for the rest of this walkthrough:
 1. Fill out the box information as follows.
     * _Alias_: `XX Test Box` (replace `XX` with your own initials)
     * _Box Use_: Choose any option.
-    * _Box Size_: {{ site.box_size }}
+    * _Box Size_: `{{ site.box_size }}`
 1. Click _Save_ at the top right.
 
 <a name="box-selecting" href="#">top</a>
@@ -126,9 +126,9 @@ each position.
    as detailed in the previous exercise.
 1. From the _Options_ menu in the _Contents_ bar above the diagram, click _Fill by Barcode
    Pattern_.
-1. In the dialog, enter _Prefix_ `XX_`, replacing `XX` with your own initials.
+1. In the dialog, enter _Prefix_ `XX-`, replacing `XX` with your own initials.
 1. Select Standard suffixes. This means that the barcode pattern contains the name of
-   the position where the item should be stored. e.g. the item with barcode `XX_A01`
+   the position where the item should be stored. e.g. the item with barcode `XX-A01`
    should be stored in position `A01`.
 1. Click _Fill_. Your pools are all added to the box in the positions specified in
    their barcodes.
@@ -164,6 +164,7 @@ You can discard items from the Edit Box page:
    again to confirm. The item is removed from the box.
 1. Return again to the other tab and refresh the page. The pool's volume is now set to 0
    and it is marked as discarded.
+1. Close this extra tab - the one showing the Edit Pool page. Return to the Edit Box tab.
 
 <a name="box-discard-multiple" href="#">top</a>
 

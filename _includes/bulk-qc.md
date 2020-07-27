@@ -3,7 +3,7 @@ Several QC methods are supported in MISO. The same process can be used to add QC
 
 1. On the _{{ include.type_plural | capitalize }}_ list page, enter your project's
    {% if include.detailed == true %}short{% endif %} name in the search box and press the `Enter` key on your keyboard.
-1. Check the boxes for the {{ include.type_plural }} that you created in section {{ include.items_section }}.
+1. Check the boxes for the {{ include.type_plural }} that you created in exercise {{ include.items_section }}.
 1. Click _Add QCs_ at the top left of the table.
 1. Enter `1` QC per {{ include.type }} and `1` control per QC, and click _Add_.
 1. Fill out the table for each row as follows:

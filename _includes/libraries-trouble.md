@@ -3,6 +3,7 @@
 # Troubleshooting
 
 ## How do I correct an index on a library?
+
 The index can be changed on either the individual library page or the bulk edit page.
 
 1. From the _Libraries_ page, click the name or alias of the library that needs to be changed.
@@ -11,6 +12,7 @@ The index can be changed on either the individual library page or the bulk edit 
 
 
 ## What if I forget to put a library aliquot in a pool?
+
 If the library aliquot has not been created:
 
 1. From the _Libraries_ page, check the library that needs to be added.
@@ -27,12 +29,14 @@ Once the library aliquot exists:
 1. Click the _Save_ button at the top right of the page.
 
 ## How do I make bulk sequencing orders?
+
 Making sequencing orders in bulk can be done from the _Pools_ page:
 
 1. Select all the pools needing sequencing.
 1. Click _Create Orders_ and enter the order information for each pool.
 
 ## How do I change the targeted sequencing type on a library?
+
 Targeted sequencing is connected to the library aliquot since the same library can be used for
 multiple targeted sequencing panels.
 
@@ -42,17 +46,11 @@ multiple targeted sequencing panels.
 1. Click _Save_.
 
 ## How can I add a new targeted sequencing type, kit, or anything else in drop-down menus?
-For targeted sequencing and indices, please {{ site.miso_admin_contact }} to get assistance from the MISO team.
 
-Kits can be added easily:
-
-1. From the _Kits_ page, located in the _Misc_ menu, select the type of kit you want to add.
-1. Click _Add_.
-1. Fill in the form. The _Stock Level_ is not currently used, so leave it at zero.
-1. Carefully select the _Kit Type_ and _Platform_. This will determine what the kit can be used for.
-1. Click _Save_.
+Please {{ site.miso_admin_contact }} to get assistance from {{ site.miso_admin }}.
 
 ## How are matrix tube barcodes assigned to tubes?
+
 Barcodes can be assigned on an individual edit page or in bulk.
 
 To change a single library:
@@ -71,22 +69,26 @@ To change many libraries:
 1. Click _Save_.
 
 ## How can I delete a library?
+
 Libraries can be deleted from the Libraries list page by selecting the libraries and clicking _Delete_. A
 library cannot be deleted if it has any aliquots. Only the library's creator or an admin can delete a library.
 Deleted items are listed on the Deletions list page. Deleting a library is permanent and cannot be undone.
 
 ## How can I delete a library aliquot?
+
 Library aliquots can be deleted from the Library Aliquots list page by selecting the aliquots and clicking
 _Delete_. A library aliquot cannot be deleted if it has been added to any pools. Only the aliquot's creator or
 an admin can delete an aliquot. Deleted items are listed on the Deletions list page. Deleting a library aliquot
 is permanent and cannot be undone.
 
 ## How can I delete a pool?
+
 Pools can be deleted from the Pools list page by selecting the pools and clicking _Delete_. A pool cannot
 be deleted if it has been added to any partitions. Any associated sequencing orders will be deleted along with a pool.
 Only the pool's creator or an admin can delete a pool. Deleted items are listed on the Deletions list page.
 Deleting a pool is permanent and cannot be undone.
 
 ## How can I delete a sequencing order?
+
 Sequencing orders can be deleted from the Edit Pool page by selecting the orders and clicking _Delete_. Deleted items
 are listed on the Deletions list page.  Deleting a sequencing order is permanent and cannot be undone.
