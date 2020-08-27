@@ -6,6 +6,8 @@ title: "Getting Started with MISO"
 These are the tutorials for Detailed Sample Mode. [See the Plain Sample Mode tutorials here](index-plain).
 If you don't know which mode to choose, ask your MISO administrator.
 
+This walkthrough is tailored to the configuration of MISO at {{site.miso_flavour}}.
+
 This walkthrough is intended for new MISO users. Some tutorials have printable
 worksheets, linked at the top of the tutorial. Sections to record in the worksheet
 are marked with a blue pencil. <img src="pics/blue_pencil.png">
