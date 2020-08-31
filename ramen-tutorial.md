@@ -8,7 +8,12 @@ RAMEN is an inventory tracking system developed by [Ontario Institute for Cancer
 
 For more information, please email [Morgan Taschuk](mailto:morgan.taschuk@oicr.on.ca).
 
-<object data="presentations/RAMENTraining.pdf" width="800" height="500" type='application/pdf'> </object>
+<video controls>
+    <source src="presentations/ramen.mp4" type="video/mp4">
+</video>
+
+[Download the PDF]({{ '/presentations/ramen.pdf' | prepend: site.baseurl }})
+
 
 
 # RAMEN Tutorials
@@ -197,4 +202,3 @@ page or the _Edit Product_ page.
    shows all checkouts for all products and all users
 1. Find your checkouts in the list. If you don't see them, you can enter your name in the _Search_
    box to filter the table
-

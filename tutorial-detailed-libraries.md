@@ -6,7 +6,12 @@ is-detailed: true
 
 ---
 
-<object data="presentations/libraries.pdf" width="800" height="500" type='application/pdf'> </object>
+<video controls>
+    <source src="presentations/miso_libraries.mp4" type="video/mp4">
+</video>
+
+[Download the PDF]({{ '/presentations/miso_libraries.pdf' | prepend: site.baseurl }})
+
 
 
 <div id="toc">

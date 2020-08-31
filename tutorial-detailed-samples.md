@@ -10,7 +10,7 @@ is-detailed: true
     <source src="presentations/miso_samples.mp4" type="video/mp4">
 </video>
 
-[Download the PDF]({{ '/presentations/samples.pdf' | prepend: site.baseurl }})
+[Download the PDF]({{ '/presentations/miso_samples.pdf' | prepend: site.baseurl }})
 
 
 
