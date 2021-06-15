@@ -46,7 +46,8 @@ First, scan the pools from the libraries team into your inbox for further work.
 
 {% include sequencing-pool-orders.md detailed=page.is-detailed %}
 
-{% include runs-new.md section=4 %}
+{% include runs-new.md section=4 flowcell=site.flowcell sequencer=site.sequencer
+  platform=site.platform platform_type=site.platform_type seq_params=site.seq_params %}
 
 {% include runs-auto.md %}
 

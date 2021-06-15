@@ -1,6 +1,6 @@
 1. On the left hand menu under _Preparation_, click _Samples_.
 1. Click the _Create_ button at the top left of the table.
-1. Choose {% if include.detailed %}Sample Class `{{ site.tissue_class }}` and{% endif %} Quantity `4`.
+1. Choose {% if include.detailed %}Sample Category `{{ site.tissue_class }}` and{% endif %} Quantity `4`.
 1. Click _Create_.
 
 A table will appear with the requested number of samples in table format. We

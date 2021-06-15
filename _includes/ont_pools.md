@@ -14,7 +14,8 @@ keep track of sequencing progress for project management and book-keeping.
 toolbar. Otherwise, go to the Libraries page, select the library you created in
 the previous exercise, and click the _Make aliquots_ button.
 1. Click the _Create_ button in the dialog that pops up.
-1. Leave the default values and click _Save_.
+1. Select _QC Status_ `{{site.detailed_qc_status_good}}`
+1. Leave the default values for everything else and click _Save_.
 
 ## 4.2 Creating a Pool
 
@@ -35,10 +36,11 @@ in the previous exercise, and click the _Pool separately_ button.
 button in the toolbar. Otherwise, go to the Pools page, select the pool you created in the
 previous exercise, and click the _Create Orders_ button.
 1. Enter the order information:
-  * _Instrument Model_: MinION
-  * _Sequencing Parameters_: Sequencing Run
+  * _Purpose_: `Production`
+  * _Instrument Model_: `{{site.ont_platform}}`
+  * _Container Model_: `{{site.ont_flowcell}}`
+  * _Sequencing Parameters_: `Sequencing Run`
   * _Partitions_: 2
 1. Click _Save_.
 1. Go to the _Outstanding Sequencing Orders_ page and select the _Oxford Nanopore_ tab. The order you just
 created should show up here.
-

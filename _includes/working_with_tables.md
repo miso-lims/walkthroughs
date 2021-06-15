@@ -62,11 +62,12 @@ Entering the same data in all rows can be done by using the fill handle. The fil
 1. Double-click on the fill handle.
     * The cells below it will all change to the same project.
 
-*Note*: multiple columns can be filled down at once.
+*Note*: multiple columns can be filled at once.
 {% if include.detailed == true %}
 You can test this out:
 1. Fill in values in the top row for the _Tissue Origin_, _Tissue Type_, _Times Received_, and _Tube Number_ columns.
-1. Click the _Tissue Origin_ cell, then press **Shift**, click the _Tube Number_ cell, and release the Shift key.
+1. Click the first row _Tissue Origin_ cell, then press **Shift**, click the first row _Tube Number_ cell, and release the
+   Shift key.
     * All the cells between _Tissue Origin_ and _Tube Number_ will be selected.
 1. Double-click or drag down on the blue square in the bottom right corner of the _Tube Number_ cell.
     * All the cells in all the selected columns will change to contain the values from the first row.
@@ -192,20 +193,17 @@ A spreadsheet can be uploaded to a bulk table page, and any matching data from t
 # 9. Cell Colours
 
 Some of the cells in a table can have different colours, each of which indicates a specific meaning:
-  * Red: cell needs to be filled with valid data (empty cell is invalid).{% if include.detailed == true %}
-  * Yellow (_Sample/Library Alias_ only): this alias is non-standard, and whatever is entered here will be saved
-    (validation will be skipped).
-  * Purple (_Identity Alias_ only): This cell is automatically filled in, but there are other items in the dropdown that
-    you may wish to select instead.{% endif %}
+  * Red: cell needs to be filled with valid data (empty cell is invalid).
+  * Yellow: the value is valid, but you may want to double-check to ensure it is correct. For example,
+    the value may be non-standard, or other options may be available.
 
 <a name="read-only"/>
 
 # 10. Read-Only Cells
 
 Read-only cells cannot be edited directly. They contain lighter text than cells you can interact
-with. For instance, the _Sample Class_ cells will be read-only. The _Sample Name_, _Library Name_,
-_Library Aliquot Name_, and _Pool Name_ columns will all be automatically filled in after the item
-is created.
+with. For instance, the _Sample Class_ cells will be read-only. The _Name_ column will be
+automatically filled in after the item is created.
 
 Sometimes, a read-only cell becomes editable once another cell has been changed.
 1. Return to your _Create Libraries_ bulk table.

@@ -2,9 +2,9 @@
 
 # 9. Ordering sequencing
 
-Sequencing orders are created on the pool to be sequenced, and include the quantity of sequencing
-required (counted in lanes/SMRT cells), and the sequencing chemistry
-required (on Illumina).
+Sequencing orders are created on the pool to be sequenced, and include the
+quantity of sequencing required (counted in lanes/SMRT cells), and the
+sequencing chemistry required (for Illumina).
 
 ## 9.1 Creating a Sequencing Order
 
@@ -14,6 +14,7 @@ required (on Illumina).
 1. Enter the order information:
   - _Purpose_: Select any.
   - _Instrument Model_: Select the instrument for sequencing: `{{ site.platform }}`.
+  - _Container Model_: Select `{{ site.flowcell }}`.
   - _Sequencing Parameters_: Select `{{ site.seq_params }}` chemistry.
   - _Partitions_: the number of lanes that should run for this pool. Enter `2`.
 1. Click _Save_.

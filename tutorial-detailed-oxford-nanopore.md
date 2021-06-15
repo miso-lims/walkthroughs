@@ -27,7 +27,7 @@ Table of Contents
 {% include ont_project.md detailed=page.is-detailed %}
 
 {% include libraries-receipt.md detailed=page.is-detailed section=3 platform='Oxford Nanopore'
-  type='1D Genomic DNA by ligation' kit='Ligation Sequencing Kit 1D' %}
+  type=site.ont_library_type %}
 
 {% include ont_pools.md detailed=page.is-detailed %}
 

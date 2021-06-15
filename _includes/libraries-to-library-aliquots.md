@@ -26,10 +26,13 @@ In this exercise, we will create library aliquots from the libraries we made pre
     * Note that the _Make aliquots_ option is also available after bulk creating
       or bulk editing libraries.
 1. Enter the library aliquot information:
+    * _QC Status_: `{{ site.detailed_qc_status_good }}`
     * _Conc._: Enter any number you wish.
     * _Conc. Units_: `ng/µL`
     * _Creation Date_: Select the current date.
+    * _Kit_: Select any.
+    * _Kit Lot_: Enter today's date, e.g. `2021-06-15`
 {% if include.detailed == true %}
-    * _Targeted Sequencing_: Select any targeted sequencing value.
+    * _Targeted Sequencing_: Select any if there are options available.
 {% endif %}
 1. Click _Save_.
