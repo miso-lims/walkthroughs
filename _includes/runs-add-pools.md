@@ -20,6 +20,7 @@ _Sequencing Container_.
 1. Search for the pool created by the libraries team that you scanned into
    your inbox in exercise 2.1. Try _Outstanding Orders (Matched Chemistry)_.
 1. Click the pool from the list.
+1. Enter any number for the loading concentration and click `OK`.
 
 Now check on the sequencing order.
 

@@ -45,13 +45,14 @@ if they match the data entered.
 {% if include.detailed == true %}
     * _Design_: Select any.
 {% endif %}
-    * _Platform_: `{{site.platform_type}}`
-    * _Type_: `{{site.library_type}}`
+    * _Platform_: `{{include.platform}}`
+    * _Type_: `{{include.type}}`
 {% if include.detailed == false %}
     * _Selection_: `PCR`
     * _Strategy_: `WGS`
 {% endif %}
     * _Index Kit_: `No indices`
     * _Kit_: Select any.
+    * _QC Status_: `{{site.detailed_qc_status_good}}`
     * _Size (bp)_: `430`
 1. Click _Save_ at the top right. Record the Library alias and barcode in your worksheet. <img src="pics/blue_pencil.png">

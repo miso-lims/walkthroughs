@@ -41,24 +41,23 @@ experiments are to be based. Samples can be used in any number of sequencing
 _experiments_ in the form of a _library_ that is processed further into
 single or pooled _library aliquots._
 
-Every received sample must have an identity. The identity corresponds to the individual or organism from whom the sample
-originated, i.e. the donor. MISO requires you to assign an external name, which is usually an identifier from another
-institution like a Donor ID.
+Every received sample must have an identity. The identity corresponds to the
+individual or organism from whom the sample originated, i.e. the donor. MISO
+requires you to assign an external name, which is usually an identifier from
+another institution like a Donor ID.
 
-When sample material is received, it may come in many different forms, called _sample classes_ in MISO. Here are some
-examples of sample classes, though these may differ based on your site's configuration.
+When sample material is received, it may come in many different forms, called
+_sample classes_ in MISO. Sample classes are divided into _sample categories_,
+including
 
 * Tissue
-* Curls
-* LCM Tube
-* Slides
-* gDNA (untreated or whole genome amplified)
-* cDNA
-* whole RNA
-* Single Cell
+* Tissue Processing
+* Stock
+* Aliquot
 
-Depending on which sample class is chosen, different fields appear on the _Create Sample_ page, as these classes have
-different information associated with them.
+Depending on which sample category is chosen, different fields appear on the
+_Create Sample_ page, as these categories have different information associated
+with them.
 
 In this workshop, we will create six samples with four different identities in
 the project you created in the last session.
@@ -147,7 +146,7 @@ In this section, we will 'receive' a single stock DNA tube from the tissue mater
 
 1. On the left hand menu under _Preparation_, click _Samples_.
 1. Click the _Create_ button at the top left of the table.
-1. Select Sample Class `{{ site.stock_class }}` and Quantity `1`.
+1. Select Sample Category `Stock` and Quantity `1`.
 1. Click _Create_.
 1. In the table, enter or select the following:
   * _Sample Name_: Leave blank. This will be auto-generated after save.  
@@ -156,11 +155,12 @@ In this section, we will 'receive' a single stock DNA tube from the tissue mater
   * _Date of receipt_: Select a date.
   * _Received From_: Select any lab.
   * _Received By_: Select any group.
-  * _Sample Type_: Select `GENOMIC` from the drop-down.
   * _Project_: Select your project's short name from the drop-down.
   * _Subproject_: Select the subproject you created.
+  * _Sample Class_: Select `{{ site.stock_class }}` from the drop-down.
+  * _Sample Type_: Select `GENOMIC` from the drop-down.
   * _Scientific Name_: `{{ site.scientific_name }}`.
-  * _External Name_: `PROJ_ID2` (where `PROJ` is your project's short name) .
+  * _External Name_: `PROJ_ID2` (where `PROJ` is your project's short name).
   * _Identity Alias_: The existing identity should be selected automatically
     in the dropdown menu.
   * _Tissue Origin_: `{{ site.tissue_origin_3 }}`
@@ -218,19 +218,20 @@ Create a {{ site.slide_class }} from one of your Tissue samples.
 1. On the _Samples_ page, enter your project name in the search box.
 1. Check the box for the {{ site.tissue_class }} you created in exercise 2.1. It will have tissue origin
    {{ site.tissue_origin_1 }} and tissue type {{ site.tissue_type_1 }}.
-1. Click _Propagate_ button at the top left of the table.
-1. Enter `1` replicates to `{{ site.slide_class }}`.
+1. Click the _Propagate_ button at the top left of the table.
+1. Enter `1` replicates to `Tissue Processing`.
 1. Click _Propagate_.
 1. Fill out the table:
   * _Description_: CV Slides
+  * _Sample Class_: `{{ site.slide_class }}`
+  * _Sample Type_: `OTHER`
   * _Slides_: 3
-  * _Discards_: 0
   * _Stain_: Choose any option from the dropdown.
   * _QC Status_: `{{ site.detailed_qc_status_good }}`
 1. Click _Save_.
 
-Upon successful save, a green status will show at the top that says "Saved 1
-items". The sample name and  alias will have been filled in automatically.
+Upon successful save, a green status bar will show at the top that says "Saved 1
+items". The sample name and alias will have been filled in automatically.
 Record the alias in your worksheet. <img src="pics/blue_pencil.png">
 
 ## 3.2 Bulk Propagate Samples
@@ -242,7 +243,7 @@ create stocks for library preparation.
 1. Check the boxes for any three of the the {{ site.tissue_class }} samples with tissue type {{ site.tissue_type_2 }}
    that you created in section 2.3.
 1. Click the _Propagate_ button at the top left of the table.
-1. Enter `1` replicates to `{{ site.stock_class }}`.
+1. Enter `1` replicates to `Stock`.
 1. Click _Propagate_.
 1. Fill out the table:
   * _Description_: Free text description. In this case, use "Stock (Tissue Type)(Individual)". (e.g. `Stock P2`)
@@ -252,14 +253,17 @@ create stocks for library preparation.
         * `PROJ-301`
         * `PROJ-302`
         * `PROJ-303`
+  * _Sample Class_: `{{ site.stock_class }}`
+  * _Sample Type_: Select any value if one is not selected automatically.
   * _STR Status_: Select any value from the drop-down.
   * _Volume_: `300`
   * _Vol. Units_: `µL`
   * _QC Status_: `Not Ready`
 1. Click _Save_.
 
-Upon successful save, a green status will show at the top that says "Saved 3 items". The sample names and aliases will
-have been filled in automatically. Record the aliases in your worksheet. <img src="pics/blue_pencil.png">
+Upon successful save, a green status bar will show at the top that says "Saved 3
+items". The sample names and aliases will have been filled in automatically.
+Record the aliases in your worksheet. <img src="pics/blue_pencil.png">
 
 ## 3.3 Bulk Editing
 
@@ -281,7 +285,8 @@ part 2.4 of this tutorial.
    the barcode on your worksheet. <img src="pics/blue_pencil.png">
 1. Click _Save_.
 
-Upon successful save, a green status will show at the top that says "Saved 4 items.".
+Upon successful save, a green status bar will show at the top that says "Saved 4
+items.".
 
 ## 3.4 Creating Aliquots
 
@@ -291,12 +296,12 @@ Propagate again from the 4 _{{ site.stock_class }}_ samples to _{{ site.aliquot_
   navigate away from the page.
     1. At the top left of the table after saving samples, click the _Propagate_ button.
     1. Enter `1` for the number of replicates (child samples to be created from each parent)
-    and `{{ site.aliquot_class }}` for the type of child sample. Continue to step 3.
+       and `Aliquot` for the category of child sample. Continue to step 3.
 1. Otherwise, select samples using the following:
     1. On the _Samples_ page, enter your project name in the search box.
     1. Check the boxes for the {{ site.stock_class }} samples.
     1. Click the _Propagate_ button at the top of the table.
-    1. A dialog will appear. Select `1` replicate of `{{ site.aliquot_class }}` and click _Propagate_.
+    1. A dialog will appear. Select `1` replicate to `Aliquot` and click _Propagate_.
 1. Fill out the table:
     * _Sample Alias_: Skip this field. It will be automatically filled in upon save.
     * _Description_: Free text description. In this case, use "Aliquot (Tissue Type)(Individual)". (e.g. `Aliquot P2`)
@@ -307,12 +312,15 @@ Propagate again from the 4 _{{ site.stock_class }}_ samples to _{{ site.aliquot_
         * `PROJ-502`
         * `PROJ-503`
         * `PROJ-504`
-    * _QC Status_: Select `{{ site.detailed_qc_status_good }}`
+    * _Sample Class_: Select `{{ site.aliquot_class }}`.
+    * _Sample Type_: Select any value if one is not selected automatically.
+    * _QC Status_: Select `{{ site.detailed_qc_status_good }}`.
     * _Purpose_: Select any option from the dropdown.
 1. Click _Save_.
 
-Upon successful save, a green status will show at the top that says "Saved 4 items". Buttons to allow editing the
-samples or propagating them will show at the top of the table. The sample names and aliases will have been filled in
+Upon successful save, a green status bar will show at the top that says "Saved 4
+items". Buttons to allow editing the samples or propagating them will show at
+the top of the table. The sample names and aliases will have been filled in
 automatically. Record these on your worksheet. <img src="pics/blue_pencil.png">
 
 
@@ -345,7 +353,7 @@ advanced search will display a question mark in a black circle beside the _Searc
 1. Go to the _Samples_ list page.
 1. Hover your mouse over the question mark icon beside the _Search_ box. The list of search terms
    that you can use is displayed.
-1. Click the question mark icon. A dialog appears detailing the search syntax in more detail.
+1. Click the question mark icon. A dialog appears describing the search syntax in more detail.
 1. Click the _X_ in the top right corner of the dialog to dismiss it.
 1. In the _Search_ box, type `PROJ entered:today is:real`, replacing `PROJ` with the short name of
    your own project, and hit _Enter_ on your keyboard. All of the samples you created in your
@@ -364,7 +372,7 @@ advanced search will display a question mark in a black circle beside the _Searc
 On the _Samples_ page, you can enter the identity's alias into the search box to filter the list.
 If the samples you are looking for have more of their alias in common, you can enter as much as
 they share to further narrow the search. e.g. to find all stock samples made from tissue
-`PROJ_0001_04`, you could search for "PROJ_0001_04".
+`PROJ_0001_04`, you could search for `PROJ_0001_04`.
 
 Once you have found all of the samples you wish to work with, select them by clicking the
 checkboxes on the left, and choose a bulk action from the menu at the bottom.
@@ -388,7 +396,8 @@ parent sample.
 
 Some of these items can be added directly:
 
-1. From the _Misc_ or _Institute Defaults_ section of the menu, click the category of interest.
+1. From the _Misc_ or _Configuration_ section of the menu, click the category of
+   interest.
 1. Click _Add_ from the toolbar.
 1. Enter the appropriate information.
 1. Click _Create_.

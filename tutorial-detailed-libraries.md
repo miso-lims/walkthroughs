@@ -92,7 +92,8 @@ selected, de-select the non-aliquot tubes and then click _Propagate_.
       robot requires.
 1. Do not save these libraries.
 
-{% include libraries-receipt.md detailed=page.is-detailed section=3 %}
+{% include libraries-receipt.md detailed=page.is-detailed section=3
+  platform=site.platform_type type=site.library_type %}
 
 ## 3.2 Receipt Transfers
 

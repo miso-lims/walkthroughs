@@ -15,15 +15,15 @@ Containers can be associated as soon as the Run and Container have both been cre
 
 ## {{include.section}}.1 Create a Container
 
-1. On the _Sequencing Containers_ page, select the {{site.platform_type}} platform and
+1. On the _Sequencing Containers_ page, select the {{include.platform_type}} platform and
    click the _Add ..._ button near the top left of the table. The text on this button
    will vary depending on the platform
-1. Select _{{ site.platform }}_ from the dialog.
-1. Select _{{ site.flowcell }}_ from the dialog. Only active (non-archived) models are
+1. Select `{{ include.platform }}` from the dialog.
+1. Select `{{ include.flowcell }}` from the dialog. Only active (non-archived) models are
    available.
 1. Enter the name of your project as the serial number. Record the serial number in your
    worksheet. <img src="pics/blue_pencil.png">
-{% if site.platform_type == 'Oxford Nanopore' %}
+{% if include.platform_type == 'Oxford Nanopore' %}
 1. Select a _Pore Version_.
 1. Select a _Received Date_. The _Returned Date_ is the date that the flow cell was returned
 to be recycled. This should be left blank for now, and may be filled out later.
@@ -32,14 +32,14 @@ to be recycled. This should be left blank for now, and may be filled out later.
 
 ## {{include.section}}.2 Create a Run
 
-1. On the _Sequencing Runs_ page, select the {{ site.platform_type }} platform and click the
-   _Add {{site.platform_type}} Run_ button near the top left corner of the table.
-1. Select _{{ site.sequencer }} ({{ site.platform }})_ from the sequencers list. Only
+1. On the _Sequencing Runs_ page, select the {{ include.platform_type }} platform and click the
+   _Add {{include.platform_type}} Run_ button near the top left corner of the table.
+1. Select _{{ include.sequencer }} ({{ include.platform }})_ from the sequencers list. Only
    active (non-retired) sequencers are available.
 1. Enter a unique and memorable _Alias_ for your run. Record the alias in your worksheet. <img src="pics/blue_pencil.png">
-1. Select _Sequencing Parameters_ `{{ site.seq_params }}`
+1. Select _Sequencing Parameters_ `{{ include.seq_params }}`
 1. In the _Run Path_ field, enter `path` as the file path to the sequencer output.
-{% if site.platform_type != 'Oxford Nanopore' %}
+{% if include.platform_type != 'Oxford Nanopore' %}
 1. Check _Paired End_.
 {% else %}
 1. Enter a _MinKNOW version_.

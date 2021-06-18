@@ -14,14 +14,15 @@ entered into each library.
 
 {% include bulk-qc.md detailed=include.detailed items_section="2.1" type="library" type_plural="libraries" %}
 
-## 4.2 QC passed
+## 4.2 QC status
 
-_QC Passed_ is a simple pass/fail flag for a library to decide if it is good
-enough for sequencing. If not measured, this can be left as "Unknown".
+_QC Status_ describes the quality of a library and may be used to indicate
+whether it is good enough for sequencing.
 
 1. From the _Libraries_ page, find one of your libraries using the search
 box and click the library name or alias link.
-1. Change _QC passed_ from _Unknown_ to _True_.
+1. Change _QC passed_ from `{{ site.detailed_qc_status_pending }}` to
+   `{{ site.detailed_qc_status_good }}`.
 1. Click _Save_.
 
 ## 4.3 Low Quality Sequencing

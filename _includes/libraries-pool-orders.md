@@ -14,10 +14,11 @@ order to pass on the requirements.
 1. Enter the order information:
    * _Alias_: Enter the project {% if include.detailed == true %}short{% endif %} name followed by ` Order 1` (e.g.
      `PROJ Order 1`)
-   * _Purpose_: Production
+   * _Purpose_: `Production`
    * _Specify sequencing requirements?_: Yes
    * _Platform_: `{{ site.platform_type }}`
    * _Instrument Model_: `{{ site.platform }}`
+   * _Container Model_: `{{ site.flowcell }}`
    * _Sequencing Parameters_: `{{ site.seq_params }}`
    * _Partitions required_: 1
    * _Draft_: No

@@ -5,10 +5,15 @@
 1. When instruments break down, how do you log failures into the system?
     * Add a service record as in <a href="#service-records">8: Adding Service Records to Sequencers</a>
 
-1. How do you assign single lane failures (if possible)?
-    * It is possible to add a lane QC which allows you to select one or more lanes and
-      set a status to indicate whether the lane should be considered for sequencing order
-      fulfillment, and whether the lane should be analysed.
+1. How do you assign single lane failures?
+    * It is possible to select one or more lanes on the Edit Run page and set a
+      QC status to indicate whether the lane should be considered for sequencing
+      order fulfillment, and whether the lane should be analysed.
+
+1. How do you assign QC status to individual libraries within a lane?
+    * A "run-library" refers to an individual library within a lane. Its QC
+      status can be set using the controls on the Library Aliquots table on the
+      Edit Run page.
 
 1. How do you fail flowcells? Or how does MISO detect failed runs?
     * If MISO automatically detects runs from this sequencer, then in most cases MISO will

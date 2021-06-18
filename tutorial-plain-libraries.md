@@ -46,7 +46,8 @@ inbox.
 
 {% include libraries-from-samples.md detailed=page.is-detailed %}
 
-{% include libraries-receipt.md detailed=page.is-detailed section=3 %}
+{% include libraries-receipt.md detailed=page.is-detailed section=3
+  platform=site.platform_type type=site.library_type %}
 
 ## 3.2 Receipt Transfers
 

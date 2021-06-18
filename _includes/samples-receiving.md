@@ -1,6 +1,6 @@
 1. On the left hand menu under _Preparation_, click _Samples_.
 1. Click the _Create_ button at the top left of the table.
-1. Select {% if include.detailed == true %}Sample Class `{{ site.tissue_class }}` and{% endif %} Quantity `1`.
+1. Select {% if include.detailed == true %}Sample Category `{{ site.tissue_class }}` and{% endif %} Quantity `1`.
 1. Click _Create_.
 1. Enter or select the following in the table:
     1. _Sample Name_: leave blank. This will be auto-generated after save.
@@ -14,6 +14,7 @@
     1. _Description_: `Wheat`
 {% endif %}
     1. _Date of Receipt_: Select a date
+    1. _Time of Receipt_: Enter a time
     1. _Received From_: Select any lab
     1. _Received By_: Select any group. If there are no options in the dropdown,
        ask your MISO administrator to add you to an appropriate group.

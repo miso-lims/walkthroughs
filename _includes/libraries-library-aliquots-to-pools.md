@@ -29,4 +29,5 @@ Here we will pool all of the library aliquots we added previously to make a sing
   * _Conc. Units_: `ng/µL`
   * _Volume_: Enter a pool volume.
   * _Vol. Units_: `µL`
+  * _QC Status_: `{{ site.detailed_qc_status_good }}`
 1. Click _Save_. Record the Pool alias in your worksheet. <img src="pics/blue_pencil.png">

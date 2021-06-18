@@ -31,7 +31,7 @@ Print the worksheet for this section here: <a href="worksheet-detailed-project-c
 Samples in a project can be assigned a sub-project designation. The sub-project is primarily a label for human use.
 Sub-projects are an optional feature - a project is not required to have sub-projects.
 
-1. On the left hand menu in the _Institute Defaults_ section, click _Subprojects_.
+1. On the left hand menu in the _Misc_ section, click _Subprojects_.
 1. Click the _Add_ button at the top left of the table.
 1. Enter quantity `1` and click _Create_.
     * Select the main Project from the drop-down
