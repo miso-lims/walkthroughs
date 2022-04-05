@@ -11,7 +11,7 @@ about the quality of the run similar to the on-instrument applications like SAV.
 This includes statistics like percent pass filter, the percent of bases with
 Qscores over 30, and cluster density.
 
-1. From the _Sequencing Runs_ page, find the run assigned to you for this tutorial.
+1. From the _Sequencing Runs_ page, find the run `{{ site.run_scanner_run }}`.
    Click on the run alias to go to the run page.
 1. Scroll down to the _Metrics_ section and examine the sequencing metrics for
    this run.

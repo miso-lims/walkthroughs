@@ -16,6 +16,7 @@ miso_url: 'http://miso.gsi.oicr.on.ca'
 
 # Configuration for important site-specific values used in the tutorials. Make
 # sure these match existing items in your MISO instance.
+pipeline: 'Research'
 box_size: '8x12 Storage (scannable)'
 sequencer: 'D00331'
 platform: 'Illumina HiSeq 2500'
@@ -28,6 +29,7 @@ library_type: 'Paired End'
 index_kit: 'Nextera DNA Dual Index'
 flowcell: 'HiSeq PE Flow Cell v4'
 seq_params: 'V4 2×101'
+run_scanner_run: '220120_A00469_0263_AH3YMFDSX3'
 lane_qc_bad: 'Failed: Other problem'
 
 # values only affecting plain sample mode

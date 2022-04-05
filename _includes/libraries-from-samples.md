@@ -23,11 +23,6 @@ In this section, you will use the samples created already to create libraries.
 1. A table will appear. Enter the library information:
     * _Library Name_: Leave blank as this will be filled in automatically after save.
     * _Library Alias_: Leave blank as this will be filled in automatically.
-{% if include.detailed == true %}
-    * _Description_: `Library ((Tissue type)(individual))`, e.g. `Library P1`
-{% else %}
-    * _Description_: `Library (row number)`, e.g. `Library 1`
-{% endif %}
     * _Matrix Barcode_: As before, usually this would be scanned by the hand scanner. In this tutorial, enter matrix
       barcodes in the form `(project {% if include.detailed %}short{% endif %} name)_(row number)_lib`, e.g.
       `PROJ_1_lib`.

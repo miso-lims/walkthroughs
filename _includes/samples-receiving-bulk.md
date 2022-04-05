@@ -18,11 +18,11 @@ the table.
     * _Time of Receipt_: `9:00 am`
     * _Received From_: Select any lab.
     * _Received By_: Select any group.
-    * _Sample Type_: `GENOMIC`
     * _Project_: Select your project's {% if include.detailed %}short{% endif %} name from the drop-down.
 {% if include.detailed %}
     * _Subproject_: Select the subproject you created.
 {% endif %}
+    * _Sample Type_: `GENOMIC`
     * _Sci. Name_: `{{ site.scientific_name }}`
 {% if include.detailed %}
     * _Donor Sex_: Select any item from the drop-down.
@@ -30,8 +30,9 @@ the table.
     * _Tissue Type_: `{{ site.tissue_type_2 }}`
     * _Times Received_: `1`
     * _Tube Number_: `1`
-    * _Secondary ID_: `BioBankID 1`.
+    * _Secondary ID_: `BioBankID 2`.
     * _Material_: Select any item from the drop down.
+    * _Tiempoint_: `T1`
     * _QC Status_: `Ready`
 {% else %}
     * _QC Passed?_: `True`
@@ -53,9 +54,9 @@ Command+V (Mac) on your keyboard to paste into the selected cell(s).
 1. Click the _Date of Receipt_ cell in the first row. A blue square will appear at
    the lower right hand corner of the cell. Double click it to fill in the rest of the
    column with the same date.
-1. Fill in the columns in the same way for: _Time of Receipt_, _Received From_, _Received By_, _Sample Type_, _Project_,
+1. Fill in the columns in the same way for: _Time of Receipt_, _Received From_, _Received By_, _Project_, _Sample Type_,
    _Sci. Name_, {% if include.detailed %} _Subproject_, _Donor Sex_, _Tissue Origin_, _Tissue Type_, _Times Received_,
-   _Tube Number_, _Material_, and _QC Status_ {% else %} _QC Passed?_{% endif %}.
+   _Tube Number_, _Material_, _Timepoint_, and _QC Status_ {% else %} _QC Status_{% endif %}.
 1. Copy text from another program and paste it into the _Description_ cell.
 
 1. _Matrix Barcode_: you would normally use a hand-scanner or copy and paste a list of
@@ -83,7 +84,7 @@ If you have a label with an incrementing number (_e.g._, `1`, `2`), enter two ro
 blue square.
 
 {% if include.detailed %}
-1. _Secondary ID_: enter `BioBankID 2` in the second row. Select the _Secondary Identifier_ fields for rows 1 and 2,
+1. _Secondary ID_: enter `BioBankID 3` in the second row. Select the _Secondary Identifier_ fields for rows 1 and 2,
    then double click the blue square to fill down rows 3 and 4.
 {% else %}
 1. _Alias_: enter `{{ site.plain_sample3_alias }}` in the second row. Select the _Alias_ fields for rows 1 and 2, then

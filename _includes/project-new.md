@@ -19,21 +19,6 @@ button where you can find basic information about the current page.
 
 {% include project-create.md detailed=include.detailed section=2.1 worksheet=true %}
 
-### 2.1.1 Add a Study (optional)
-
-If you plan to upload your project data to the ENA, you must add a _Study_ to
-your Project.
-
-1. Click on the _Studies_ header to expand the section.
-1. Click the _Add_ button at the top left of the table.
-1. Much like creating a Project, enter:
-    * _Alias_ (letters and numbers only): this can have any name, but make sure
-       it is recognizable as belonging to your Project.
-    * _Description_: any free-text description
-    * _Study Type_: Select an option from the drop-down menu. Unless you are certain
-      of the sequencing type, select `Other`.
-1. Click the _Save_ button at the upper right.
-
 
 ## 2.2 Projects List
 
@@ -63,7 +48,7 @@ searched using the field in the upper right.
 
 ### 2.3.1 Add Project Files
 
-In the _Project Files_ section, you can add attach any necessary documents to the
+In the _Project Files_ section, you can attach any necessary documents to the
 project (e.g. Project Information form, REB).
 
 1. On the Edit Project page, click the _Project Files_ header to expand the section.
