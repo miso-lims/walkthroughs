@@ -24,5 +24,5 @@ _Sequencing Container_.
 
 Now check on the sequencing order.
 
-1. Click on the _Outstanding Sequencing Orders_ page and verify that the _Remaining_ column now shows 1 for the pool you
+1. Click on the _Outstanding Sequencing Orders_ page and verify that the _Running_ column now shows 1 for the pool you
    added to the run.

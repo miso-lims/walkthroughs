@@ -4,7 +4,7 @@
 
 There are three ways to indicate library quality in MISO: 1)
 Enter quantitative QC values under the _Library QC_ section; 2) The overall
-pre-sequencing quality flag _QC passed_; and 3) The post-sequencing quality
+pre-sequencing quality field _QC Status_; and 3) The post-sequencing quality
 control flag _Low quality library_.
 
 ## 4.1 Library QC

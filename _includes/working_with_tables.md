@@ -126,10 +126,10 @@ Samples, libraries, library aliquots, or pools can be bulk-added to a box from w
 
 # 6. Check QCs (Libraries only)
 
-The _Check QCs_ feature can be used to automatically update the _QC Passed?_ column values based on the values in the _Size (bp)_, _Volume_, or _Conc._ columns.
+The _Check QCs_ feature can be used to automatically update the _QC Status_ column values based on the values in the _Size (bp)_, _Volume_, or _Conc._ columns.
 
 1. Return to your _Create Libraries_ bulk table.
-1. Ensure all _QC Passed?_ cells are set to **Unknown**.
+1. Ensure all _QC Status_ cells are empty.
 1. In the top row, enter the following values:
     * _Size (bp)_: **300**
     * _Volume_: **10**
@@ -144,13 +144,13 @@ The _Check QCs_ feature can be used to automatically update the _QC Passed?_ col
 1. In the _Size_ section, select **=** from the dropdown menu and enter **303** into the input field.
 1. Leave the _Volume_ and _Concentration_ sections set to **ignore**.
 1. Click **Check**.
-    * Note that the _QC Passed?_ values have changed.
+    * Note that the _QC Status_ values have changed.
 1. Click **Check QCs**.
 1. In the _Volume_ section, select **>** from the dropdown menu and enter **10** into the input field.
 1. In the _Concentration_ section, select **<=** from the dropdown menu and enter **4** into the input field.
 1. Leave the _Size_ section set to **ignore**.
 1. Click **Check**.
-    * Note that the _QC Passed?_ values have changed.
+    * Note that the _QC Status_ values have changed.
 
 <a name="export"/>
 
@@ -159,7 +159,7 @@ The _Check QCs_ feature can be used to automatically update the _QC Passed?_ col
 The current state of the bulk table data can be exported at any time. Exports can be saved as Microsoft Excel, Open Document Format, or Comma-delimited Data (CSV) files.
 
 1. Return to your _Create Libraries_ bulk table.
-1. Click **Export Data** at the top of the table.
+1. Click **Export** at the top of the table.
 1. Select **Microsoft Excel** format.
 1. Click **Export**.
     * The spreadsheet will begin downloading.

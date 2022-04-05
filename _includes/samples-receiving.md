@@ -22,7 +22,6 @@
        If you weren't given any barcodes to use, enter one like `PROJ-101`,
        replacing `PROJ` with your project's {% if include.detailed == true %}short{% endif %}
        name. Record the barcode on your worksheet. <img src="pics/blue_pencil.png">
-    1. _Sample Type_: select `GENOMIC` from the drop down.
     1. _Project_: Select the {% if include.detailed %}short{% endif %} name of the project you created in the last
        exercise.
 {% if include.detailed %}
@@ -31,4 +30,5 @@
        information. It can sometimes take a few minutes for the new subproject option
        to become available.
 {% endif %}
+    1. _Sample Type_: select `GENOMIC` from the drop down.
     1. _Scientific Name_: `{{ site.scientific_name }}`.

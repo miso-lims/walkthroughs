@@ -38,7 +38,7 @@ Sub-projects are an optional feature - a project is not required to have sub-pro
     * Fill in the alias and description.
     * Select the priority from the drop-down. This will cause high-priority items
       to display priority messages in the MISO interface.
-    * Select `{{ site.scientific_name }}` from the Reference Genome dropdown
+    * Select `{{ site.reference_genome }}` from the Reference Genome dropdown
 1. Click _Save_ in the top right corner of the page.
 
 Once a subproject is set up, it can be selected when creating Samples.

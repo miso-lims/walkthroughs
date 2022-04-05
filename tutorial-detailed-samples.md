@@ -91,6 +91,7 @@ donor `PROJ_ID1`.
     1. _Secondary ID_: `BioBankID 1`. This is the Biobank ID or Tube ID. It may also be left
        blank.
     1. _Material_: Select any from the drop-down.
+    1. _Timepoint_: `T1`
     1. _QC Status_: select `Ready` from the drop down.
 1. At the upper right hand side, click _Save_.
 
@@ -168,6 +169,7 @@ In this section, we will 'receive' a single stock DNA tube from the tissue mater
   * _Times Received_: `1`
   * _Tube Number_: `1`
   * _Secondary ID_: `BioBankID 6`.
+  * _Timepoint_: `T1`
   * _STR Status_: select any value from the dropdown menu.
   * _Volume_: `300`
   * _Vol. Units_: `µL`
@@ -215,7 +217,7 @@ created from the tissue.
 
 Create a {{ site.slide_class }} from one of your Tissue samples.
 
-1. On the _Samples_ page, enter your project name in the search box.
+1. On the _Samples_ page, enter your project short name in the search box.
 1. Check the box for the {{ site.tissue_class }} you created in exercise 2.1. It will have tissue origin
    {{ site.tissue_origin_1 }} and tissue type {{ site.tissue_type_1 }}.
 1. Click the _Propagate_ button at the top left of the table.
@@ -239,14 +241,13 @@ Record the alias in your worksheet. <img src="pics/blue_pencil.png">
 For three of the {{ site.tissue_class }} samples created previously (by bulk entry), we will
 create stocks for library preparation.
 
-1. On the _Samples_ page, enter your project name in the search box.
+1. On the _Samples_ page, enter your project short name in the search box.
 1. Check the boxes for any three of the the {{ site.tissue_class }} samples with tissue type {{ site.tissue_type_2 }}
    that you created in section 2.3.
 1. Click the _Propagate_ button at the top left of the table.
 1. Enter `1` replicates to `Stock`.
 1. Click _Propagate_.
 1. Fill out the table:
-  * _Description_: Free text description. In this case, use "Stock (Tissue Type)(Individual)". (e.g. `Stock P2`)
   * _Matrix Barcode_: Choose a barcode for each stock. If you were not given barcodes to use,
     enter the following instead, replacing `PROJ` with your project's short name. Record the
     barcodes on your worksheet. <img src="pics/blue_pencil.png">
@@ -274,7 +275,7 @@ In this case we will update several fields of 4 stock samples. We will use the
 stocks we entered in the previous step as well as the reference stock entered in
 part 2.4 of this tutorial.
 
-1. On the _Samples_ page, enter your project name in the search box.
+1. On the _Samples_ page, enter your project short name in the search box.
 1. Check the boxes for the {{ site.stock_class }} samples (propagated and received) that you created in
    sections 2.4 and 3.2.
 1. Click the _Edit_ button at the top left of the table.
@@ -294,17 +295,14 @@ Propagate again from the 4 _{{ site.stock_class }}_ samples to _{{ site.aliquot_
 
 1. If you are continuing from the end of section **3.3 Bulk Editing**, do not
   navigate away from the page.
-    1. At the top left of the table after saving samples, click the _Propagate_ button.
-    1. Enter `1` for the number of replicates (child samples to be created from each parent)
-       and `Aliquot` for the category of child sample. Continue to step 3.
+    1. At the top left of the table after saving samples, click the _Propagate_ button and continue to step 3.
 1. Otherwise, select samples using the following:
-    1. On the _Samples_ page, enter your project name in the search box.
+    1. On the _Samples_ page, enter your project short name in the search box.
     1. Check the boxes for the {{ site.stock_class }} samples.
     1. Click the _Propagate_ button at the top of the table.
-    1. A dialog will appear. Select `1` replicate to `Aliquot` and click _Propagate_.
+1. A dialog will appear. Select `1` replicate to `Aliquot` and click _Propagate_.
 1. Fill out the table:
     * _Sample Alias_: Skip this field. It will be automatically filled in upon save.
-    * _Description_: Free text description. In this case, use "Aliquot (Tissue Type)(Individual)". (e.g. `Aliquot P2`)
     * _Matrix Barcode_: choose a barcode for each aliquot. If you weren't given barcodes to use, enter the following
       instead, replacing `PROJ` with your project's short name. Record the barcodes on your worksheet.
       <img src="pics/blue_pencil.png">

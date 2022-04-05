@@ -26,11 +26,11 @@ if they match the data entered.
     * _Sample Alias_: Enter a sample alias like `{{ site.plain_sample6_alias }}`, replacing `PROJ` with your project's
       name.
 {% endif %}
-    * _Sample Type_: `GENOMIC`
     * _Project_: Select your project from the drop-down.
 {% if include.detailed %}
     * _Subproject_: Select the subproject you created.
 {% endif %}
+    * _Sample Type_: `GENOMIC`
     * _Sci. Name_: `{{ site.scientific_name }}`{% if include.detailed == true %}
     * _External Name_: Enter `PROJ_ID10`, replacing the `PROJ` with your own project short name. The
       _Identity Alias_ column should change to show `First Receipt (PROJ)`.
@@ -38,10 +38,12 @@ if they match the data entered.
     * _Tissue Origin_: `{{ site.tissue_origin_4 }}`
     * _Tissue Type_: `{{ site.tissue_type_2 }}`
     * _Times Received_: `1`
-    * _Tube Number_: `1`{% endif %}
+    * _Tube Number_: `1`
+    * _Timepoint_: `Week 8`{% endif %}
     * _Date of receipt_: Select today's date
     * _Received From_: Select any lab.
     * _Received By_: Select any group.
+    * _Matrix Barcode_: Enter `PROJ_lib5`, replacing `PROJ` with your own project short name.
 {% if include.detailed == true %}
     * _Design_: Select any.
 {% endif %}
