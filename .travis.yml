@@ -1,8 +1,0 @@
-language: ruby
-git:
-  depth: 3
-rvm:
-  - 2.7
-cache: bundler
-script:
-  - bundle exec jekyll build
