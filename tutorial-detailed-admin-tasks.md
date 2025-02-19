@@ -25,15 +25,7 @@ Table of Contents
 
 <a name="users" href="#" id="toplink">top</a>
 
-# 2. Adding Users
-
-OICR uses Active Directory authentication for MISO. Users must be added by IT; once added,
-they can then log in to MISO using their email credentials.
-
-1. Please email ithelpdesk@oicr.on.ca and CC Morgan Taschuk to request that the user be added to MISO LIMS by
-making them part of the following Active Directory groups:
-    * If the person is to be added as an admin: `MISO_ROLE_ADMIN` and `MISO_ROLE_INTERNAL` groups.
-    * If the person is not to be given admin access: `MISO_ROLE_INTERNAL` group.
+{% include adding_users.md detailed=page.is-detailed %}
 
 {% include admin-new-inst.md %}
 
