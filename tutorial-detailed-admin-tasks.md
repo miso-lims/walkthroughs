@@ -21,10 +21,7 @@ Table of Contents
 
 {% include logging_in.md detailed=page.is-detailed %}
 
-
-In order to perform the tasks in this section you must be a MISO admin.
-Email IT, CC Morgan Taschuk and request to be added to the `MISO_ROLE_ADMIN`
-Active Directory group.
+{% include it-contact.md detailed=page.is-detailed %}
 
 <a name="users" href="#" id="toplink">top</a>
 
