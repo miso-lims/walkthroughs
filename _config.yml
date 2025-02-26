@@ -64,6 +64,9 @@ ont_seq_params: 'Sequencing Run'
 miso_admin: 'GSI'
 miso_admin_contact: 'email gsi@oicr.on.ca or file a JIRA ticket in _GSI Common_'
 
+# Configuration for indicating IT or technical support and who to contact
+support: 'ithelpdesk@oicr.on.ca'
+
 #--------------------------------------------------------------------------------
 # Settings for Jekyll - should not need to be modified.
 #--------------------------------------------------------------------------------
